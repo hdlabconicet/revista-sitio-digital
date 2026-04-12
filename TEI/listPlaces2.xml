@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listPlace xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <place xml:id="berlin">
+        <placeName>Berlín</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2950159</idno>
+    </place>
+    
+    <place xml:id="nueva_york">
+        <placeName>Nueva York</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/5128581</idno>
+    </place>
+    
+    <place xml:id="glencoe">
+        <placeName>Glencoe</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+            <region type="state">Illinois</region>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4894078</idno>
+    </place>
+    
+    <place xml:id="chicago">
+        <placeName>Chicago</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4887398</idno>
+    </place>
+    
+    <place xml:id="atenas">
+        <placeName>Atenas</placeName>
+        <location>
+            <country key="GR">Grecia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/264371</idno>
+    </place>
+    
+    <place xml:id="holanda">
+        <placeName>Países Bajos</placeName>
+        <location>
+            <country key="NL">Países Bajos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2750405</idno>
+    </place>
+    
+    <place xml:id="inglaterra">
+        <placeName>Inglaterra</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6269131</idno>
+    </place>
+    
+    <place xml:id="francia">
+        <placeName>Francia</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3017382</idno>
+    </place>
+    
+    <place xml:id="alemania">
+        <placeName>Alemania</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2921044</idno>
+    </place>
+    
+    <place xml:id="reino_napoles">
+        <placeName>Reino de Nápoles</placeName>
+        <placeName type="official" xml:lang="la">Regnum Neapolitanum</placeName>    
+        <state type="existence"><desc><date from="1282" to="1816">1282-1816</date></desc></state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q173065</idno>
+    </place>
+    
+    <place xml:id="monte_cassino">
+        <placeName>Abadía de Montecassino</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3173005</idno>
+    </place>
+    
+    <place xml:id="turena">
+        <placeName>Turena</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q605051</idno>
+    </place>
+    
+    <place xml:id="espania">
+        <placeName>España</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2510769</idno>
+    </place>
+    
+    <place xml:id="buenos_aires_ciudad">
+        <placeName>Buenos Aires</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3435910</idno>
+    </place>
+    
+    <place xml:id="ciudad_mexico">
+        <placeName>Ciudad de México</placeName>
+        <location>
+            <country key="MX">México</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3530597</idno>
+    </place>
+    
+    <place xml:id="pittsburgh">
+        <placeName>Pittsburgh</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/5206379</idno>
+    </place>
+    
+    <place xml:id="paris">
+        <placeName>París</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2988507</idno>
+    </place>
+    
+    <place xml:id="santiago_chile">
+        <placeName>Santiago de Chile</placeName>
+        <location>
+            <country key="CL">Chile</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3871336</idno>
+    </place>
+    
+    <place xml:id="habana">
+        <placeName>La Habana</placeName>
+        <location>
+            <country key="CU">Cuba</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3553478</idno>
+    </place>
+    
+    <place xml:id="roma">
+        <placeName>Roma</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3169070</idno>
+    </place>
+    
+    <place xml:id="polonia">
+        <placeName>Polonia</placeName>
+        <location>
+            <country key="PL">Polonia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/798544</idno>
+    </place>
+    
+    <place xml:id="argentina">
+        <placeName>Argentina</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3865483</idno>
+    </place>
+    
+    <place xml:id="cuba">
+        <placeName>Cuba</placeName>
+        <location>
+            <country key="CU">Cuba</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3562981</idno>
+    </place>
+    
+    <place xml:id="brasil">
+        <placeName>Brasil</placeName>
+        <location>
+            <country key="BR">Brasil</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3469034</idno>
+    </place>
+    
+    <place xml:id="fray_bentos">
+        <placeName>Fray Bentos</placeName>
+        <location>
+            <country key="UY">Uruguay</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3442568</idno>
+    </place>
+    
+    <place xml:id="estados_unidos">
+        <placeName>Estados Unidos</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6252001</idno>
+    </place>
+    
+    <place xml:id="estacion_dominguez">
+        <placeName>Villa Domínguez (Estación Domínguez)</placeName>
+        <location>
+            <region>Entre Ríos</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3435030</idno>
+    </place>
+    
+    <place xml:id="entre_rios">
+        <placeName>Entre Ríos</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3434137</idno>
+    </place>
+    
+    <place xml:id="moises_ville">
+        <placeName>Moisés Ville</placeName>
+        <location>
+            <region>Santa Fe</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3844053</idno>
+    </place>
+    
+    <place xml:id="santa_fe">
+        <placeName>Provincia de Santa Fe</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3836276</idno>
+    </place>
+    
+    <place xml:id="medan">
+        <placeName>Médan</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2994785</idno>
+    </place>
+    
+    <place xml:id="isla_diablo">
+        <placeName>Isla del Diablo</placeName>
+        <location>
+            <country key="GF">Guayana Francesa</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3381836</idno>
+    </place>
+    
+    <place xml:id="argelia">
+        <placeName>Argelia</placeName>
+        <location>
+            <country key="DZ">Argelia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2589581</idno>
+    </place>
+    
+    <place xml:id="rusia">
+        <placeName>Rusia</placeName>
+        <location>
+            <country key="RU">Rusia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2017370</idno>
+    </place>
+    
+    <place xml:id="palestina">
+        <placeName>Palestina</placeName>
+        <location>
+            <country key="PS">Palestina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6254930</idno>
+    </place>
+    
+    <place xml:id="hungria">
+        <placeName>Hungría</placeName>
+        <location>
+            <country key="HU">Hungría</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/719819</idno>
+    </place>
+    
+    <place xml:id="dresden">
+        <placeName>Dresden</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2935022</idno>
+    </place>
+    
+    <place xml:id="israel">
+        <placeName>Israel</placeName>
+        <location>
+            <country key="IL">Israel</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/294640</idno>
+    </place>
+    
+    <place xml:id="york">
+        <placeName>York</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2633352</idno>
+    </place>
+    
+    <place xml:id="auvernia">
+        <placeName>Auvernia</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1193946</idno>
+    </place>
+    
+    <place xml:id="frankfurt">
+        <placeName>Frankfurt am Main</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2925533</idno>
+    </place>
+    
+    <place xml:id="francia_ii_republica">
+        <placeName>Segunda República Francesa</placeName>
+        <placeName type="official" xml:lang="fr">République française</placeName>
+        <state type="existence"><desc><date from="1848-02-24" to="1852-12-02">1848-1852</date></desc></state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q58326</idno>     
+    </place>
+    
+    <place xml:id="bratislava">
+        <placeName>Bratislava</placeName>
+        <location>
+            <country key="SK">Eslovaquia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3060972</idno>
+    </place>
+    
+    <place xml:id="hamburgo">
+        <placeName>Hamburgo</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2911298</idno>
+    </place>
+    
+    <place xml:id="vilna">
+        <placeName>Vilna</placeName>
+        <location>
+            <country key="LT">Lituania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/593116</idno>
+    </place>
+    
+    <place xml:id="wothinia">
+        <placeName>Volinia</placeName>
+        <placeName type="variant">Wothinia</placeName>
+        <location>
+            <region>Europa del Este</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7530</idno>
+    </place>
+    
+    <place xml:id="odesa">
+        <placeName>Odesa</placeName>
+        <location>
+            <country key="UA">Ucrania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/698740</idno>
+    </place>
+    
+    <place xml:id="crimea">
+        <placeName>Crimea</placeName>
+        <location>
+            <region>Mar Negro</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7835</idno>
+    </place>
+    
+    <place xml:id="ii_imperio_francia">
+        <placeName>Segundo Imperio Francés</placeName>
+        <placeName type="official" xml:lang="fr">Second Empire</placeName>
+        <state type="existence"><desc><date from="1852-12-02" to="1870-09-04">1852-1870</date></desc></state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q71092</idno>
+    </place>
+    
+    <place xml:id="aix">
+        <placeName>Aix-en-Provence</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3038354</idno>
+    </place>
+    
+    <place xml:id="marsella">
+        <placeName>Marsella</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2995469</idno>
+    </place>
+    
+    <place xml:id="anjou">
+        <placeName>Anjou</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q107426</idno>
+    </place>
+    
+    <place xml:id="colonia_alemania">
+        <placeName>Colonia</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2886242</idno>
+    </place>
+    
+    <place xml:id="londres">
+        <placeName>Londres</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2643743</idno>
+    </place>
+    
+    <place xml:id="praga">
+        <placeName>Praga</placeName>
+        <location>
+            <country key="CZ">República Checa</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3067696</idno>
+    </place>
+    
+    <place xml:id="jerusalen">
+        <placeName>Jerusalén</placeName>
+        <location>
+            <country key="IL">Israel</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/281184</idno>
+    </place>
+    
+    <place xml:id="friburgo">
+        <placeName>Friburgo</placeName>
+        <location>
+            <country key="CH">Suiza</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2660718</idno>
+    </place>
+    
+    <place xml:id="leipzig">
+        <placeName>Leipzig</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2879139</idno>
+    </place>
+    
+    <place xml:id="bruselas">
+        <placeName>Bruselas</placeName>
+        <location>
+            <country key="BE">Bélgica</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2800866</idno>
+    </place>
+    
+    <place xml:id="filadelfia">
+        <placeName>Filadelfia</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4560349</idno>
+    </place>
+    
+    <place xml:id="edinburgo">
+        <placeName>Edimburgo</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2650225</idno>
+    </place>
+    
+    <place xml:id="babilonia">
+        <placeName>Babilonia</placeName>
+        <location>
+            <country key="IQ">Irak</country>
+            <region>Mesopotamia</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5684</idno>
+    </place>
+    
+    <place xml:id="egipto">
+        <placeName>Egipto</placeName>
+        <location>
+            <country key="EG">Egipto</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/357994</idno>
+    </place>
+    
+    <place xml:id="danubio_rio">
+        <placeName>Río Danubio</placeName>
+        <location>
+            <region>Europa Central y Oriental</region>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/791630</idno>
+    </place>
+    
+    <place xml:id="africa_septentrional">
+        <placeName>África septentrional</placeName>
+        <location>
+            <region>África</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q27381</idno>
+    </place>
+    
+    <place xml:id="mar_rojo">
+        <placeName>Mar Rojo</placeName>
+        <location>
+            <region>África / Asia</region>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/350155</idno>
+    </place>
+    
+    <place xml:id="foligno">
+        <placeName>Foligno</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3176854</idno>
+    </place>
+    
+    <place xml:id="sodoma">
+        <placeName>Sodoma</placeName>
+        <location>
+            <region>Canaán</region>
+            <region>Mar Muerto</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3297078</idno>
+    </place>
+    
+    <place xml:id="argel">
+        <placeName>Argel</placeName>
+        <location>
+            <country key="DZ">Argelia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2507480</idno>
+    </place>
+    
+    <place xml:id="varsovia">
+        <placeName>Varsovia</placeName>
+        <location>
+            <country key="PL">Polonia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/756135</idno>
+    </place>
+    
+    <place xml:id="gomorra">
+        <placeName>Gomorra</placeName>
+        <location>
+            <region>Canaán</region>
+            <region>Mar Muerto</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1069011</idno>
+    </place>
+    
+    <place xml:id="valle_mamre">
+        <placeName>Mamre</placeName>
+        <placeName type="variant">Valle de Mamre</placeName>
+        <location>
+            <region>Hebrón</region>
+            <region>Canaán</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2143048</idno>
+    </place>
+    
+    <place xml:id="sinai">
+        <placeName>Monte Sinaí</placeName>
+        <location>
+            <country key="EG">Egipto</country>
+            <region>Península del Sinaí</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q377485</idno>
+    </place>
+    
+    <place xml:id="samaria">
+        <placeName>Samaria</placeName>
+        <location>
+            <region>Canaán</region>
+            <region>Cisjordania</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1757438</idno>
+    </place>
+    
+    <place xml:id="antony_francia">
+        <placeName>Antony</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3232845</idno>
+    </place>
+    
+    <place xml:id="gdansk">
+        <placeName>Gdańsk</placeName>
+        <placeName type="variant" xml:lang="de">Danzig</placeName>
+        <location>
+            <country key="PL">Polonia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3099434</idno>
+    </place>
+    
+    <place xml:id="caracas">
+        <placeName>Caracas</placeName>
+        <location>
+            <country key="VE">Venezuela</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3646738</idno>
+    </place>
+    
+    <place xml:id="america">
+        <placeName>América</placeName>
+        <location>
+            <region type="continent">América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q828</idno>
+    </place>
+    
+    <place xml:id="america_norte">
+        <placeName>América del Norte</placeName>
+        <location>
+            <region type="continent">América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q49</idno>
+    </place>
+    
+    <place xml:id="america_sur">
+        <placeName>América del Sur</placeName>
+        <location>
+            <region type="continent">América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q18</idno>
+    </place>
+    
+    <place xml:id="america_latina">
+        <placeName>América Latina</placeName>
+        <location>
+            <region type="cultural_region">América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q12585</idno>
+    </place>
+    
+    <place xml:id="hispanoamerica">
+        <placeName>Hispanoamérica</placeName>
+        <location>
+            <region type="cultural_region">América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q653884</idno>
+    </place>
+    
+    <place xml:id="junin_peru">
+        <placeName>Junín</placeName>
+        <location>
+            <country key="PE">Perú</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3937486</idno>
+    </place>
+    
+    <place xml:id="madrid">
+        <placeName>Madrid</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3117735</idno>
+    </place>
+    
+    <place xml:id="mexico">
+        <placeName>México</placeName>
+        <location>
+            <country key="MX">México</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3996063</idno>
+    </place>
+    
+    <place xml:id="anvers">
+        <placeName>Amberes</placeName>
+        <placeName type="variant" xml:lang="fr">Anvers</placeName>
+        <location>
+            <country key="BE">Bélgica</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2803138</idno>
+    </place>
+    
+    <place xml:id="italia">
+        <placeName>Italia</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3175395</idno>
+    </place>
+    
+    <place xml:id="babel">
+        <placeName>Babel</placeName>
+        <placeName type="variant">Torre de Babel</placeName>
+        <location>
+            <region type="biblical">Sinar</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q41213</idno>
+    </place>
+    
+    <place xml:id="irlanda">
+        <placeName>Irlanda</placeName>
+        <location>
+            <country key="IE">Irlanda</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2963597</idno>
+    </place>
+    
+    <place xml:id="austria">
+        <placeName>Austria</placeName>
+        <location>
+            <country key="AT">Austria</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2782113</idno>
+    </place>
+    
+    <place xml:id="suiza">
+        <placeName>Suiza</placeName>
+        <location>
+            <country key="CH">Suiza</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2658434</idno>
+    </place>
+    
+    <place xml:id="paises_bajos">
+        <placeName>Países Bajos</placeName>
+        <location>
+            <country key="NL">Países Bajos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2750405</idno>
+    </place>
+    
+    <place xml:id="escocia">
+        <placeName>Escocia</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2638360</idno>
+    </place>
+    
+    <place xml:id="marruecos">
+        <placeName>Marruecos</placeName>
+        <location>
+            <country key="MA">Marruecos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2542007</idno>
+    </place>
+    
+    <place xml:id="canada">
+        <placeName>Canadá</placeName>
+        <location>
+            <country key="CA">Canadá</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6251999</idno>
+    </place>
+    
+    <place xml:id="uzbekistan">
+        <placeName>Uzbekistán</placeName>
+        <location>
+            <country key="UZ">Uzbekistán</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/1512440</idno>
+    </place>
+    
+    <place xml:id="iran">
+        <placeName>Irán</placeName>
+        <location>
+            <country key="IR">Irán</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/130758</idno>
+    </place>
+    
+    <place xml:id="suecia">
+        <placeName>Suecia</placeName>
+        <location>
+            <country key="SE">Suecia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2661886</idno>
+    </place>
+    
+    <place xml:id="turquia">
+        <placeName>Turquía</placeName>
+        <location>
+            <country key="TR">Turquía</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/298795</idno>
+    </place>
+    
+    <place xml:id="dinamarca">
+        <placeName>Dinamarca</placeName>
+        <location>
+            <country key="DK">Dinamarca</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2623032</idno>
+    </place>
+    
+    <place xml:id="judea">
+        <placeName>Judea</placeName>
+        <location>
+            <region>Canaán</region>
+            <country key="PS">Palestina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/283445</idno>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q104028</idno>
+    </place>
+    
+    <place xml:id="moscu">
+        <placeName>Moscú</placeName>
+        <location>
+            <country key="RU">Rusia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/524901</idno>
+    </place>
+    
+    <place xml:id="belgica">
+        <placeName>Bélgica</placeName>
+        <location>
+            <country key="BE">Bélgica</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2802361</idno>
+    </place>
+    
+    <place xml:id="grecia">
+        <placeName>Grecia</placeName>
+        <location>
+            <country key="GR">Grecia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/390903</idno>
+    </place>
+    
+    <place xml:id="reino_unido">
+        <placeName>Reino Unido</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2635167</idno>
+    </place>
+    
+    <place xml:id="bulgaria">
+        <placeName>Bulgaria</placeName>
+        <location>
+            <country key="BG">Bulgaria</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/732800</idno>
+    </place>
+    
+    <place xml:id="japon">
+        <placeName>Japón</placeName>
+        <location>
+            <country key="JP">Japón</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/1861060</idno>
+    </place>
+    
+    <place xml:id="letonia">
+        <placeName>Letonia</placeName>
+        <location>
+            <country key="LV">Letonia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/458258</idno>
+    </place>
+    
+    <place xml:id="vietnam">
+        <placeName>Vietnam</placeName>
+        <location>
+            <country key="VN">Vietnam</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/1562822</idno>
+    </place>
+    
+    <place xml:id="arabia_saudita">
+        <placeName>Arabia Saudita</placeName>
+        <location>
+            <country key="SA">Arabia Saudita</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/102358</idno>
+    </place>
+    
+    <place xml:id="colombia">
+        <placeName>Colombia</placeName>
+        <location>
+            <country key="CO">Colombia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3686110</idno>
+    </place>
+    
+    <place xml:id="uruguay">
+        <placeName>Uruguay</placeName>
+        <location>
+            <country key="UY">Uruguay</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3439705</idno>
+    </place>
+    
+    <place xml:id="republica_checa">
+        <placeName>República Checa</placeName>
+        <location>
+            <country key="CZ">República Checa</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3077311</idno>
+    </place>
+    
+    <place xml:id="bielorrusia">
+        <placeName>Bielorrusia</placeName>
+        <location>
+            <country key="BY">Bielorrusia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/630336</idno>
+    </place>
+    
+    <place xml:id="ucrania">
+        <placeName>Ucrania</placeName>
+        <location>
+            <country key="UA">Ucrania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/690791</idno>
+    </place>
+    
+    <place xml:id="nicaragua">
+        <placeName>Nicaragua</placeName>
+        <location>
+            <country key="NI">Nicaragua</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3617476</idno>
+    </place>
+    
+    <place xml:id="chile">
+        <placeName>Chile</placeName>
+        <location>
+            <country key="CL">Chile</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3895114</idno>
+    </place>
+    
+    <place xml:id="galilea">
+        <placeName>Galilea</placeName>
+        <location>
+            <region>Canaán</region>
+            <country key="IL">Israel</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/294932</idno>
+    </place>
+    
+    <place xml:id="ecuador">
+        <placeName>Ecuador</placeName>
+        <location>
+            <country key="EC">Ecuador</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3658394</idno>
+    </place>
+    
+    <place xml:id="guatemala">
+        <placeName>Guatemala</placeName>
+        <location>
+            <country key="GT">Guatemala</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3595528</idno>
+    </place>
+    
+    <place xml:id="republica_dominicana">
+        <placeName>República Dominicana</placeName>
+        <location>
+            <country key="DO">República Dominicana</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3508796</idno>
+    </place>
+    
+    <place xml:id="peru">
+        <placeName>Perú</placeName>
+        <location>
+            <country key="PE">Perú</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3932488</idno>
+    </place>
+    
+    <place xml:id="etiopia">
+        <placeName>Etiopía</placeName>
+        <location>
+            <country key="ET">Etiopía</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/337996</idno>
+    </place>
+    
+    <place xml:id="tunez">
+        <placeName>Túnez</placeName>
+        <location>
+            <country key="TN">Túnez</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2464461</idno>
+    </place>
+    
+    <place xml:id="santander">
+        <placeName>Santander</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3109718</idno>
+    </place>
+    
+    <place xml:id="portugal">
+        <placeName>Portugal</placeName>
+        <location>
+            <country key="PT">Portugal</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2264397</idno>
+    </place>
+    
+    <place xml:id="lisboa">
+        <placeName>Lisboa</placeName>
+        <location>
+            <country key="PT">Portugal</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2267057</idno>
+    </place>
+    
+    <place xml:id="lima">
+        <placeName>Lima</placeName>
+        <location>
+            <country key="PE">Perú</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3936456</idno>
+    </place>
+    
+    <place xml:id="africa">
+        <placeName>África</placeName>
+        <location>
+            <region type="continent">África</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15</idno>
+    </place>
+    
+    <place xml:id="saint_martin_ardeche">
+        <placeName>Saint-Martin-d'Ardèche</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2978427</idno>
+    </place>
+    
+    <place xml:id="bourg_saint_andeol">
+        <placeName>Bourg-Saint-Andéol</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3030953</idno>
+    </place>
+    
+    <place xml:id="perpignan">
+        <placeName>Perpiñán</placeName>
+        <placeName type="variant" xml:lang="fr">Perpignan</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2987914</idno>
+    </place>
+    
+    <place xml:id="andorra">
+        <placeName>Andorra</placeName>
+        <location>
+            <country key="AD">Andorra</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3041565</idno>
+    </place>
+    
+    <place xml:id="seo_de_urgel">
+        <placeName>Seo de Urgel</placeName>
+        <placeName type="variant" xml:lang="ca">La Seu d'Urgell</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3109143</idno>
+    </place>
+    
+    <place xml:id="barcelona">
+        <placeName>Barcelona</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3128760</idno>
+    </place>
+    
+    <place xml:id="san_sebastian_espania">
+        <placeName>San Sebastián</placeName>
+        <placeName type="variant" xml:lang="eu">Donostia</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3110044</idno>
+    </place>
+    
+    <place xml:id="venezuela">
+        <placeName>Venezuela</placeName>
+        <location>
+            <country key="VE">Venezuela</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3625428</idno>
+    </place>
+    
+    <place xml:id="francia_iii_republica">
+        <placeName>Tercera República Francesa</placeName>
+        <placeName type="official" xml:lang="fr">République française</placeName>
+        <state type="existence">
+            <desc><date from="1870-09-04" to="1940-07-10">1870-1940</date></desc>
+        </state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q70802</idno>      
+    </place>
+    
+    <place xml:id="dalmacia">
+        <placeName>Dalmacia</placeName>
+        <location>
+            <region type="historical">Provincia Romana</region>
+            <country key="HR">Croacia</country> </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/8378497</idno>
+    </place>
+    
+    <place xml:id="islas_malvinas">
+        <placeName>Islas Malvinas</placeName>
+        <location>
+            <country key="FK">Islas Malvinas</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3474414</idno>
+    </place>
+    
+    <place xml:id="union_sovietica">
+        <placeName>Unión Soviética</placeName>        
+        <state type="existence">
+            <desc><date from="1922-12-30" to="1991-12-26">1922-1991</date></desc>
+        </state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15180</idno>      
+    </place>
+    
+    <place xml:id="berlin_oriental">
+        <placeName>Berlín Oriental</placeName>
+        <state type="existence">
+            <desc><date from="1949-10-07" to="1990-10-03">1949-1990</date></desc>
+        </state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q56037</idno>      
+    </place>
+    
+    <place xml:id="puerto_argentino">
+        <placeName>Puerto Argentino</placeName>
+        <location>
+            <country key="FK">Islas Malvinas</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3426691</idno>
+    </place>
+    
+    <place xml:id="santa_elena">
+        <placeName>Santa Elena</placeName>
+        <location>
+            <country key="SH">Santa Elena</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3370751</idno>
+    </place>
+    
+    <place xml:id="oxford">
+        <placeName>Oxford</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2640729</idno>
+    </place>
+    
+    <place xml:id="china">
+        <placeName>China</placeName>
+        <location>
+            <country key="CN">China</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/1814991</idno>
+    </place>
+    
+    <place xml:id="rumania">
+        <placeName>Rumania</placeName>
+        <location>
+            <country key="RO">Rumania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/798549</idno>
+    </place>
+    
+    <place xml:id="paraguay">
+        <placeName>Paraguay</placeName>
+        <location>
+            <country key="PY">Paraguay</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3437598</idno>
+    </place>
+    
+    <place xml:id="finlandia">
+        <placeName>Finlandia</placeName>
+        <location>
+            <country key="FI">Finlandia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/660013</idno>
+    </place>
+    
+    <place xml:id="san_telmo">
+        <placeName>San Telmo</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3428113</idno>
+    </place>
+    
+    <place xml:id="buenos_aires_provincia">
+        <placeName>Provincia de Buenos Aires</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3435907</idno>
+    </place>
+    
+    <place xml:id="cordoba_argentina">
+        <placeName>Provincia de Córdoba</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3860255</idno>
+    </place>
+    
+    <place xml:id="san_luis_provincia">
+        <placeName>Provincia de San Luis</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3837029</idno>
+    </place>
+    
+    <place xml:id="la_rioja">
+        <placeName>Provincia de La Rioja</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3848949</idno>
+    </place>
+    
+    <place xml:id="toulouse">
+        <placeName>Toulouse</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2972315</idno>
+    </place>
+    
+    <place xml:id="vaticano">
+        <placeName>Vaticano</placeName>
+        <location>
+            <country key="VA">Ciudad del Vaticano</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3164670</idno>
+    </place>
+    
+    <place xml:id="europa">
+        <placeName>Europa</placeName>
+        <location>
+            <region>Europa</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q46</idno>
+    </place>
+    
+    <place xml:id="tucuman">
+        <placeName>Provincia de Tucumán</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3833578</idno>
+    </place>
+    
+    <place xml:id="jaen">
+        <placeName>Jaén</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2516395</idno>
+    </place>
+    
+    <place xml:id="san_isidro">
+        <placeName>San Isidro</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3428983</idno>
+    </place>
+    
+    <place xml:id="bosque_boulogne">
+        <placeName>Bosque de Boulogne</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q209626</idno>
+    </place>
+    
+    <place xml:id="montevideo">
+        <placeName>Montevideo</placeName>
+        <location>
+            <country key="UY">Uruguay</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3441575</idno>
+    </place>
+    
+    <place xml:id="amsterdam">
+        <placeName>Ámsterdam</placeName>
+        <location>
+            <country key="NL">Países Bajos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2759794</idno>
+    </place>
+    
+    <place xml:id="el_salvador">
+        <placeName>El Salvador</placeName>
+        <location>
+            <country key="SV">El Salvador</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3585968</idno>
+    </place>
+    
+    <place xml:id="guyana">
+        <placeName>Guyana</placeName>
+        <location>
+            <country key="GY">Guyana</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3378535</idno>
+    </place>
+    
+    <place xml:id="dublin">
+        <placeName>Dublín</placeName>
+        <location>
+            <country key="IE">Irlanda</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2964574</idno>
+    </place>
+    
+    <place xml:id="australia">
+        <placeName>Australia</placeName>
+        <location>
+            <country key="AU">Australia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2077456</idno>
+    </place>
+    
+    <place xml:id="san_pablo_brasil">
+        <placeName>San Pablo</placeName>
+        <location>
+            <country key="BR">Brasil</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3448439</idno>
+    </place>
+    
+    <place xml:id="trieste">
+        <placeName>Trieste</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3165185</idno>
+    </place>
+    
+    <place xml:id="madagascar">
+        <placeName>Madagascar</placeName>
+        <location>
+            <country key="MG">Madagascar</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/1062947</idno>
+    </place>
+    
+    <place xml:id="viena">
+        <placeName>Viena</placeName>
+        <location>
+            <country key="AT">Austria</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2761369</idno>
+    </place>
+    
+    <place xml:id="bolivia">
+        <placeName>Bolivia</placeName>
+        <location>
+            <country key="BO">Bolivia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3923057</idno>
+    </place>
+    
+    <place xml:id="rio_janeiro">
+        <placeName>Río de Janeiro</placeName>
+        <location>
+            <country key="BR">Brasil</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3451190</idno>
+    </place>
+    
+    <place xml:id="ginebra">
+        <placeName>Ginebra</placeName>
+        <location>
+            <country key="CH">Suiza</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2660646</idno>
+    </place>
+    
+    <place xml:id="mendoza">
+        <placeName>Mendoza</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3844419</idno>
+    </place>
+    
+    <place xml:id="punta_vacas">
+        <placeName>Punta de Vacas</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3839917</idno>
+    </place>
+    
+    <place xml:id="poitiers">
+        <placeName>Poitiers</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2986495</idno>
+    </place>
+    
+    <place xml:id="munich">
+        <placeName>Múnich</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2867714</idno>
+    </place>
+    
+    <place xml:id="cartago">
+        <placeName>Cartago</placeName>
+        <location>
+            <country key="TN">Túnez</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6343</idno>
+    </place>
+    
+    <place xml:id="libia">
+        <placeName>Libia</placeName>
+        <location>
+            <country key="LY">Libia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2215636</idno>
+    </place>
+    
+    <place xml:id="troya">
+        <placeName>Troya</placeName>
+        <location>
+            <country key="TR">Turquía</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q22647</idno>
+    </place>
+    
+    <place xml:id="la_plata">
+        <placeName>La Plata</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3432043</idno>
+    </place>
+    
+    <place xml:id="appenzell">
+        <placeName>Appenzell</placeName>
+        <location>
+            <country key="CH">Suiza</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2661740</idno>
+    </place>
+    
+    <place xml:id="silesia">
+        <placeName>Silesia</placeName>
+        <location>
+            <region type="historical">Región histórica de Europa Central</region>
+            <country key="PL">Polonia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q81720</idno>
+    </place>
+    
+    <place xml:id="ganso_verde">
+        <placeName>Pradera del Ganso</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3426996</idno>
+    </place>
+    
+    <place xml:id="tigre_argentina">
+        <placeName>Tigre</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3427753</idno>
+    </place>
+    
+    <place xml:id="greenwich">
+        <placeName>Greenwich</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2647937</idno>
+    </place>
+    
+    <place xml:id="santillana_mar">
+        <placeName>Santillana del Mar</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6360721</idno>
+    </place>
+    
+    <place xml:id="huelgas_burgos">
+        <placeName>Monasterio de Santa María la Real de las Huelgas</placeName>
+        <location>
+            <country key="ES">España</country>
+            <settlement>Burgos</settlement>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1539949</idno>
+    </place>
+    
+    <place xml:id="lujan">
+        <placeName>Luján</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3430988</idno>
+    </place>
+    
+    <place xml:id="constitucion">
+        <placeName>Constitución</placeName>
+        <location>
+            <settlement>Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/11524942</idno>
+    </place>
+    
+    <place xml:id="azul">
+        <placeName>Azul</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3436197</idno>
+    </place>
+    
+    <place xml:id="tapiales">
+        <placeName>Tapiales</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3427818</idno>
+    </place>
+    
+    <place xml:id="imperio_austro_hungaro">
+        <placeName>Imperio Austrohúngaro</placeName>
+        <state type="existence">
+            <desc>
+                <date from="1867-03-30" to="1918-10-31">1867-1918</date>
+            </desc>
+        </state>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q28513</idno>
+    </place>
+    
+    <place xml:id="gran_bretania">
+        <placeName>Gran Bretaña</placeName>
+        <location>
+            <region type="geographic">Isla</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q23666</idno>
+    </place>
+    
+    <place xml:id="cabo_virgenes">
+        <placeName>Cabo Vírgenes</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/12552319</idno>
+    </place>
+    
+    <place xml:id="oceano_atlantico">
+        <placeName>Océano Atlántico</placeName>
+        <location>
+            <region type="geographic">Océano</region>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3373405</idno>
+    </place>
+    
+    <place xml:id="oceano_pacifico">
+        <placeName>Océano Pacífico</placeName>
+        <location>
+            <region type="geographic">Océano</region>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2363254</idno>
+    </place>
+    
+    <place xml:id="treveris">
+        <placeName>Tréveris</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2821164</idno>
+    </place>
+    
+    <place xml:id="catalunia">
+        <placeName>Cataluña</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3336901</idno>
+    </place>
+    
+    <place xml:id="mar_dulce">
+        <placeName>Mar Dulce (Río de la Plata)</placeName>
+        <location>
+            <region>Cuenca del Plata</region>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <country key="UY" ref="#uruguay">Uruguay</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q35827</idno>
+    </place>
+    
+    <place xml:id="rio_plata">
+        <placeName>Río de la Plata</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+            <country key="UY">Uruguay</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q35827</idno>
+    </place>
+    
+    <place xml:id="rio_rhin">
+        <placeName>Río Rin</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+            <country key="FR">Francia</country>
+            <country key="CH">Suiza</country>
+            <country key="NL">Países Bajos</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q584</idno>
+    </place>
+    
+    <place xml:id="rio_parana">
+        <placeName>Río Paraná</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+            <country key="BR">Brasil</country>
+            <country key="PY">Paraguay</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q127892</idno>
+    </place>
+    
+    <place xml:id="isla_martin_garcia">
+        <placeName>Isla Martín García</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3430802</idno>
+    </place>
+    
+    <place xml:id="renania">
+        <placeName>Renania</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <note>Región histórica a orillas del Rin (Rheinland).</note>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q152243</idno>
+    </place>
+    
+    <place xml:id="salzburgo">
+        <placeName>Salzburgo</placeName>
+        <country key="AT">Austria</country>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2766824</idno>
+    </place>
+    
+    <place xml:id="napoles">
+        <placeName>Nápoles</placeName>
+        <country key="IT">Italia</country>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3172394</idno>
+    </place>
+    
+    <place xml:id="austin">
+        <placeName>Austin</placeName>
+        <country key="US">Estados Unidos</country>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4671654</idno>
+    </place>
+    
+    <place xml:id="corrientes">
+        <placeName>Corrientes</placeName>
+        <country key="AR">Argentina</country>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3435214</idno>
+    </place>
+    
+    <place xml:id="pompeya">
+        <placeName>Pompeya</placeName>
+        <country key="IT">Italia</country>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q43332</idno>
+    </place>
+    
+    <place xml:id="castillo_chambord">
+        <placeName>Castillo de Chambord</placeName>
+        <country key="FR">Francia</country>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q205367</idno>
+    </place>
+    
+    <place xml:id="rio_liffey">
+        <placeName>Río Liffey</placeName>
+        <country key="IE">Irlanda</country>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2962947</idno>
+    </place>
+    
+    <place xml:id="patagonia">
+        <placeName>Patagonia</placeName>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1507</idno>
+    </place>
+    
+    <place xml:id="croisset">
+        <placeName>Croisset</placeName>
+        <location>
+            <settlement key="Canteleu">Canteleu</settlement>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/3231467</idno>
+    </place>
+    
+    <place xml:id="lacio">
+        <placeName>Lacio</placeName>
+        <location>
+            <country key="IT" ref="#italia">Italia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1048669</idno>
+    </place>
+    
+    <place xml:id="plaza_mayo">
+        <placeName>Plaza de Mayo</placeName>
+        <location>
+            <settlement key="Buenos Aires">Buenos Aires</settlement>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1126357</idno>
+    </place>
+    
+    <place xml:id="san_petersburgo">
+        <placeName>San Petersburgo</placeName>
+        <location>
+            <country key="RU">Rusia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/498817</idno>
+    </place>
+    
+    <place xml:id="edimburgo">
+        <placeName>Edimburgo</placeName>
+        <location>
+            <country key="GB">Reino Unido</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2650225</idno>
+    </place>
+    
+    <place xml:id="samoa">
+        <placeName>Samoa</placeName>
+        <location>
+            <country key="WS">Samoa</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4034894</idno>
+    </place>
+    
+    <place xml:id="avellaneda">
+        <placeName>Avellaneda</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3436227</idno>
+    </place>
+    
+    <place xml:id="dock_sud">
+        <placeName>Dock Sud</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3435050</idno>
+    </place>
+    
+    <place xml:id="belgrano_argentina">
+        <placeName>Belgrano</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/7931939</idno>
+    </place>
+    
+    <place xml:id="boedo">
+        <placeName>Boedo</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/11524950</idno>
+    </place>
+    
+    <place xml:id="nueva_pompeya">
+        <placeName>Nueva Pompeya</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3430387</idno>
+    </place>
+    
+    <place xml:id="mataderos">
+        <placeName>Mataderos</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/11524960</idno>
+    </place>
+    
+    <place xml:id="lanus">
+        <placeName>Lanús</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3432135</idno>
+    </place>
+    
+    <place xml:id="valentin_alsina">
+        <placeName>Valentín Alsina</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3427474</idno>
+    </place>
+    
+    <place xml:id="palermo_argentina">
+        <placeName>Palermo</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3430234</idno>
+    </place>
+    
+    <place xml:id="flores_argentina">
+        <placeName>Flores</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3433918</idno>
+    </place>
+    
+    <place xml:id="monserrat">
+        <placeName>Monserrat</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/11524952</idno>
+    </place>
+    
+    <place xml:id="san_cristobal">
+        <placeName>San Cristóbal</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3429153</idno>
+    </place>
+    
+    <place xml:id="recoleta">
+        <placeName>Recoleta</placeName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3429595</idno>
+    </place>
+    
+    <place xml:id="salta_provincia">
+        <placeName>Salta</placeName>
+        <location>
+            <region>Salta</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3838231</idno>
+    </place>
+    
+    <place xml:id="rosario">
+        <placeName>Rosario</placeName>
+        <location>
+            <region>Santa Fe</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3838574</idno>
+    </place>
+    
+    <place xml:id="tres_arroyos">
+        <placeName>Tres Arroyos</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3833857</idno>
+    </place>
+    
+    <place xml:id="ezeiza">
+        <placeName>Ezeiza</placeName>
+        <location>
+            <region>Buenos Aires</region>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/8063203</idno>
+    </place>
+    
+    <place xml:id="rio_mississipi">
+        <placeName>Río Misisipi</placeName>
+        <location>
+            <country key="US">Estados Unidos</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/4333587</idno>
+    </place>
+    
+    <place xml:id="baviera">
+        <placeName>Baviera</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2951839</idno>
+    </place>
+    
+    <place xml:id="lourdes_francia">
+        <placeName>Lourdes</placeName>
+        <location>
+            <country key="FR">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/6454530</idno>
+    </place>
+    
+    <place xml:id="eleusis">
+        <placeName>Eleusis</placeName>
+        <location>
+            <country key="GR">Grecia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/8133883</idno>
+    </place>
+    
+    <place xml:id="riachuelo">
+        <placeName>Riachuelo</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3429558</idno>
+    </place>
+    
+    <place xml:id="venecia">
+        <placeName>Venecia</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3164603</idno>
+    </place>
+    
+    <place xml:id="catamarca">
+        <placeName>Catamarca</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3862286</idno>
+    </place>
+    
+    <place xml:id="jujuy">
+        <placeName>Jujuy</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3853404</idno>
+    </place>
+    
+    <place xml:id="colastine">
+        <placeName>Colastiné</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3860886</idno>
+    </place>
+    
+    <place xml:id="milan">
+        <placeName>Milán</placeName>
+        <location>
+            <country key="IT">Italia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3173435</idno>
+    </place>
+    
+    <place xml:id="howth">
+        <placeName>Howth</placeName>
+        <location>
+            <country key="IE">Irlanda</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2963722</idno>
+    </place>
+    
+    <place xml:id="clontarf">
+        <placeName>Clontarf</placeName>
+        <location>
+            <country key="IE">Irlanda</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2965339</idno>
+    </place>
+    
+    <place xml:id="moron">
+        <placeName>Morón</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3430544</idno>
+    </place>
+    
+    <place xml:id="saint_germain_des_pres">
+        <placeName>Saint-Germain-des-Prés</placeName>
+        <location>
+            <settlement>París</settlement>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2979807</idno>
+    </place>
+    
+    <place xml:id="las_landas">
+        <placeName>Las Landas</placeName>
+        <location>
+            <region>Nueva Aquitania</region>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3007868</idno>
+    </place>
+    
+    <place xml:id="maginot">
+        <placeName>Línea Maginot</placeName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q162746</idno>
+    </place>
+    
+    <place xml:id="buschdorf">
+        <placeName>Buschdorf (Boust)</placeName>
+        <location>
+            <settlement>Boust</settlement>
+            <region>Mosela</region>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3030786</idno>
+    </place>
+    
+    <place xml:id="lorena_francia">
+        <placeName>Lorena</placeName>
+        <location>
+            <region>Gran Este</region>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2997551</idno>
+    </place>
+    
+    <place xml:id="carcel_mamertina">
+        <placeName>Cárcel Mamertina</placeName>
+        <location>
+            <settlement>Roma</settlement>
+            <country key="IT" ref="#italia">Italia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1035634</idno>
+    </place>
+    
+    <place xml:id="merida_venezuela">
+        <placeName>Mérida</placeName>
+        <location>
+            <settlement>Mérida</settlement>
+            <region>Estado Mérida</region>
+            <country key="VE" ref="#venezuela">Venezuela</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3632308</idno>
+    </place>
+    
+    <place xml:id="villa_crespo">
+        <placeName>Villa Crespo</placeName>
+        <location>
+            <settlement>Buenos Aires</settlement>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/11524934</idno>
+    </place>
+    
+    <place xml:id="montmartre">
+        <placeName>Montmartre</placeName>
+        <location>
+            <settlement>París</settlement>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/12908830</idno>
+    </place>
+    
+    <place xml:id="obelisco">
+        <placeName>Obelisco de Buenos Aires</placeName>
+        <location>
+            <settlement>Buenos Aires</settlement>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q831389</idno>
+    </place>
+    
+    <place xml:id="plaza_once">
+        <placeName>Plaza Miserere (Once)</placeName>
+        <location>
+            <settlement>Buenos Aires</settlement>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1064141</idno>
+    </place>
+    
+    <place xml:id="santiago_del_estero">
+        <placeName>Santiago del Estero</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3835868</idno>
+    </place>
+    
+    <place xml:id="tebas">
+        <placeName>Tebas</placeName>
+        <location>
+            <country key="GR">Grecia</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q11225429</idno>
+    </place>
+   
+    <place xml:id="america_central">
+        <placeName>América Central</placeName>
+        <location>
+            <region>América</region>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q27611</idno>
+    </place>
+    
+    <place xml:id="sevilla">
+        <placeName>Sevilla</placeName>
+        <location>
+            <country key="ES">España</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/2510911</idno>
+    </place>
+    
+    <place xml:id="republica_federal_alemana">
+        <placeName>República Federal de Alemania</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q713750</idno>
+    </place>
+    
+    <place xml:id="nuremberg">
+        <placeName>Nuremberg</placeName>
+        <location>
+            <country key="DE">Alemania</country>
+        </location>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2090</idno>
+    </place>
+    
+    <place xml:id="jaluit">
+        <placeName>Jaluit</placeName>
+        <location>
+            <country key="MH">Islas Marshall</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/7303501</idno>
+    </place>
+    
+    <place xml:id="tandil">
+        <placeName>Tandil</placeName>
+        <location>
+            <country key="AR">Argentina</country>
+        </location>
+        <idno type="URI" subtype="geonames">https://www.geonames.org/3427832</idno>
+    </place>
+    
+    
+    
+    
+    
+    
+</listPlace>

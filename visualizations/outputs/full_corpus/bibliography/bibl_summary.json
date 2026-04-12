@@ -1,0 +1,85 @@
+{
+  "issue_id": "full_corpus",
+  "generated": "2026-04-12T17:37:38.241522",
+  "total_title_refs": 1143,
+  "unique_works_cited": 454,
+  "top_10_works": [
+    {
+      "bibl_id": "revista_sitio",
+      "title": "Sitio",
+      "author": null,
+      "count": 70
+    },
+    {
+      "bibl_id": "gombrowicz_ferdydurke",
+      "title": "Ferdydurke",
+      "author": "Gombrowicz, Witold",
+      "count": 33
+    },
+    {
+      "bibl_id": "puig_traicion",
+      "title": "La traición de Rita Hayworth",
+      "author": "Puig, Manuel",
+      "count": 27
+    },
+    {
+      "bibl_id": "bloy_salvacion",
+      "title": "Le Salut par les Juifs",
+      "author": "Bloy, Léon",
+      "count": 23
+    },
+    {
+      "bibl_id": "cervantes_quijote",
+      "title": "El ingenioso hidalgo don Quijote de la Mancha",
+      "author": "Cervantes, Miguel de",
+      "count": 22
+    },
+    {
+      "bibl_id": "marmol_amalia",
+      "title": "Amalia",
+      "author": "Mármol, José",
+      "count": 20
+    },
+    {
+      "bibl_id": "joyce_ulises",
+      "title": "Ulysses",
+      "author": "Joyce, James",
+      "count": 18
+    },
+    {
+      "bibl_id": "diario_clarin",
+      "title": "Clarín",
+      "author": null,
+      "count": 17
+    },
+    {
+      "bibl_id": "hernandez_menos_julia",
+      "title": "Menos Julia",
+      "author": "Hernández, Felisberto",
+      "count": 16
+    },
+    {
+      "bibl_id": "zola_argent",
+      "title": "L'Argent",
+      "author": "Zola, Émile",
+      "count": 15
+    }
+  ],
+  "genre_distribution": {
+    "m": 861,
+    "unknown": 33,
+    "a": 71,
+    "j": 174,
+    "s": 2,
+    "null": 2
+  },
+  "language_distribution": {
+    "es": 978,
+    "de": 6,
+    "fr": 133,
+    "ru": 2,
+    "en": 24
+  },
+  "network_nodes": 487,
+  "network_edges": 614
+}

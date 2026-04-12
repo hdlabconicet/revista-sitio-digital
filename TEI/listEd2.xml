@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listOrg xmlns="http://www.tei-c.org/ns/1.0">
+
+    <org xml:id="ed_anagrama">
+    <orgName>Editorial Anagrama</orgName>
+    <location>
+        <country key="ES" ref="#espania">España</country>
+    </location>
+    <event type="founding"><p><date when="1969"/></p></event>
+    <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q8772125</idno>
+</org>
+
+    <org xml:id="ed_minuit">
+        <orgName>Les Éditions de Minuit</orgName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="founding"><p><date when="1941"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q273829</idno>
+    </org>
+
+    <org xml:id="ed_flammarion">
+        <orgName>Éditions Flammarion</orgName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="founding"><p><date when="1875"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3117417</idno>
+    </org>
+
+    <org xml:id="ed_seuil">
+        <orgName>Éditions du Seuil</orgName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="founding"><p><date when="1935"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2635075</idno>
+    </org>
+
+    <org xml:id="ed_monte_avila">
+        <orgName>Monte Ávila Editores</orgName>
+        <location>
+            <country key="VE" ref="#venezuela">Venezuela</country>
+        </location>
+        <event type="founding"><p><date when="1968"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6904972</idno>
+    </org>
+
+    <org xml:id="ed_sudamericana">
+        <orgName>Editorial Sudamericana</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1939"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5818714</idno>
+    </org>
+
+    <org xml:id="ed_emece">
+        <orgName>Emecé Editores</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1939"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3820907</idno>
+    </org>
+
+    <org xml:id="ed_universitaria">
+        <orgName>Editorial Universitaria</orgName>
+        <location>
+            <country key="CL" ref="#chile">Chile</country>
+        </location>
+        <event type="founding"><p><date when="1947"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q10981248</idno>
+    </org>
+
+    <org xml:id="ed_sur">
+        <orgName>Editorial Sur</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1933"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q21530408</idno>
+    </org>
+
+    <org xml:id="ed_argos">
+        <orgName>Editorial Argos</orgName>
+        <location>
+            <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="publishing"><p><date when="1947"/></p></event>
+    </org>
+
+    <org xml:id="ed_soirat">
+        <orgName>A. Soirat, Éditeur</orgName>
+        <location>
+            <placeName ref="#paris">París</placeName>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="publishing"><p><date when="1887"/></p></event>
+    </org>
+
+    <org xml:id="ed_eudeba">
+        <orgName>Eudeba (Editorial Universitaria de Buenos Aires)</orgName>
+        <location>
+            <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1958"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q8772143</idno>
+    </org>
+
+    <org xml:id="ed_gallimard">
+        <orgName>Éditions Gallimard</orgName>
+        <location>
+            <placeName ref="#paris">París</placeName>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="founding"><p><date when="1911"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q273819</idno>
+    </org>
+
+    <org xml:id="ed_biblioteca_ayacucho">
+        <orgName>Biblioteca Ayacucho</orgName>
+        <location>
+            <placeName ref="#caracas">Caracas</placeName>
+            <country key="VE" ref="#venezuela">Venezuela</country>
+        </location>
+        <event type="founding"><p><date when="1974"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4903476</idno>
+    </org>
+
+    <org xml:id="ed_aguilar">
+        <orgName>Editorial Aguilar</orgName>
+        <location>
+            <placeName ref="#madrid">Madrid</placeName>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1923"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q27734641</idno>
+    </org>
+
+    <org xml:id="ed_afrodisio_aguado">
+        <orgName>Editorial Afrodisio Aguado</orgName>
+        <location>
+            <placeName ref="#madrid">Madrid</placeName>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1929"/></p></event>
+    </org>
+
+    <org xml:id="ed_fce">
+        <orgName>Fondo de Cultura Económica</orgName>
+        <location>
+            <placeName ref="#ciudad_mexico">Ciudad de México</placeName>
+            <country key="MX" ref="#mexico">México</country>
+        </location>
+        <event type="founding"><p><date when="1934"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3031850</idno>
+    </org>
+
+    <org xml:id="ed_joaquin_mortiz">
+        <orgName>Editorial Joaquín Mortiz</orgName>
+        <location>
+            <placeName ref="#ciudad_mexico">Ciudad de México</placeName>
+            <country key="MX" ref="#mexico">México</country>
+        </location>
+        <event type="founding"><p><date when="1962"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5932261</idno>
+    </org>
+
+    <org xml:id="ed_schocken">
+        <orgName>Schocken Verlag</orgName>
+        <location>
+            <placeName ref="#berlin">Berlín</placeName>
+            <country key="DE" ref="#alemania">Alemania</country>
+        </location>
+        <event type="founding"><p><date when="1931"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1020343</idno>
+    </org>
+
+    <org xml:id="ed_political_science">
+        <orgName>Academy of Political Science</orgName>
+        <location>
+            <placeName ref="#nueva_york">Nueva York</placeName>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1880"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4671521</idno>
+    </org>
+
+    <org xml:id="ed_free_press">
+        <orgName>The Free Press</orgName>
+        <location>
+            <placeName ref="#nueva_york">Nueva York</placeName>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1947"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5499961</idno>
+    </org>
+
+    <org xml:id="ed_basic_books">
+        <orgName>Basic Books</orgName>
+        <location>
+            <placeName ref="#nueva_york">Nueva York</placeName>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1950"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4034881</idno>
+    </org>
+
+    <org xml:id="ed_univ_chicago_press">
+        <orgName>University of Chicago Press</orgName>
+        <location>
+            <placeName ref="#chicago">Chicago</placeName>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1891"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1814982</idno>
+    </org>
+
+    <org xml:id="ed_rialp">
+        <orgName>Ediciones Rialp</orgName>
+        <location>
+            <placeName ref="#madrid">Madrid</placeName>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1948"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q8771956</idno>
+    </org>
+
+    <org xml:id="ed_casa_americas">
+        <orgName>Fondo Editorial Casa de las Américas</orgName>
+        <location>
+            <placeName ref="#habana">La Habana</placeName>
+            <country key="CU" ref="#cuba">Cuba</country>
+        </location>
+        <event type="founding"><p><date when="1959"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q195794</idno>
+    </org>
+
+    <org xml:id="ed_revue_fontaine">
+        <orgName>Editions de la Revue Fontaine</orgName>
+        <location>
+            <placeName ref="#paris">París / Argel</placeName>
+        </location>
+    </org>
+
+    <org xml:id="ed_seix_barral">
+        <orgName>Editorial Seix Barral</orgName>
+        <location>
+            <placeName ref="#barcelona">Barcelona</placeName>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1911"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3477948</idno>
+    </org>
+
+    <org xml:id="ed_viking_press">
+        <orgName>Viking Press</orgName>
+        <location>
+            <placeName ref="#nueva_york">Nueva York</placeName>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1925"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q921536</idno>
+    </org>
+
+    <org xml:id="ed_tiempo_nuevo">
+        <orgName>Editorial Tiempo Nuevo</orgName>
+        <location>
+            <placeName ref="#caracas">Caracas</placeName>
+            <country key="VE" ref="#venezuela">Venezuela</country>
+        </location>
+    </org>
+
+    <org xml:id="ed_fabril">
+        <orgName>Compañía General Fabril Editora</orgName>
+        <location>
+            <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1958"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q73854435</idno>
+    </org>
+
+    <org xml:id="ed_alfaguara">
+        <orgName>Editorial Alfaguara</orgName>
+        <location>
+            <placeName ref="#madrid">Madrid</placeName>
+            <country key="ES">España</country>
+        </location>
+        <event type="founding"><p><date when="1964"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2834782</idno>
+    </org>
+
+    <org xml:id="ed_barral">
+        <orgName>Barral Editores</orgName>
+        <location>
+            <placeName ref="#barcelona">Barcelona</placeName>
+            <country key="ES">España</country>
+        </location>
+        <event type="founding"><p><date when="1970"/></p></event>
+    </org>
+
+    <org xml:id="ed_legasa">
+        <orgName>Editorial Legasa</orgName>
+        <location>
+            <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName>
+            <country key="AR">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1979"/></p></event>
+    </org>
+
+    <org xml:id="ed_losada">
+        <orgName>Editorial Losada</orgName>
+        <location>
+            <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName>
+            <country key="AR">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1938"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5338733</idno>
+    </org>
+
+    <org xml:id="ed_estrada">
+        <orgName>Editorial Estrada</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1869"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19494414</idno>
+    </org>
+
+    <org xml:id="ed_tiempo_contemporaneo">
+        <orgName>Editorial Tiempo Contemporáneo</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding">
+            <p><date when="1967"/></p>
+        </event>
+    </org>
+
+    <org xml:id="ed_puf">
+        <orgName>Presses Universitaires de France (PUF)</orgName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+        </location>
+        <event type="founding"><p><date when="1921"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1892146</idno>
+    </org>
+
+    <org xml:id="ed_univ_texas_press">
+        <orgName>University of Texas Press</orgName>
+        <location>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1950"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4005866</idno>
+    </org>
+
+    <org xml:id="ed_ceal">
+        <orgName>Centro Editor de América Latina (CEAL)</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1966"/></p></event>
+        <event type="dissolution"><p><date when="1995"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5761241</idno>
+    </org>
+
+    <org xml:id="ed_peninsula">
+        <orgName>Ediciones Península</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1964"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q124872671</idno>
+    </org>
+
+    <org xml:id="ed_laia">
+        <orgName>Editorial Laia</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1972"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q11918022</idno>
+    </org>
+
+    <org xml:id="ed_gedisa">
+        <orgName>Editorial Gedisa</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1977"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5818640</idno>
+    </org>
+    
+    <org xml:id="ed_guadarrama">
+        <orgName>Ediciones Guadarrama</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1955"/></p></event>
+    </org>
+    
+    <org xml:id="ed_bruguera">
+        <orgName>Editorial Bruguera</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1910"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3275000</idno>
+    </org>
+    
+    <org xml:id="ed_argos_vergara">
+        <orgName>Editorial Argos Vergara</orgName>
+        <location>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1977"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q118810272</idno>
+    </org>
+    
+    <org xml:id="ed_celtia">
+        <orgName>Editorial Celtia</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding">
+            <p><date notBefore="1980" notAfter="1982">c. 1980</date></p>
+        </event>
+    </org>
+    
+    <org xml:id="ed_sigloxxi">
+        <orgName>Siglo XXI Editores</orgName>
+        <location>
+            <country key="MX" ref="#mexico">México</country>
+        </location>
+        <event type="founding"><p><date when="1965"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6128174</idno>
+    </org>
+    
+    <org xml:id="ed_paidos">
+        <orgName>Editorial Paidós</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1945"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5817898</idno>
+    </org>
+    
+    <org xml:id="ed_jorge_alvarez">
+        <orgName>Editorial Jorge Álvarez</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1963"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q11681282</idno>
+    </org>
+    
+    <org xml:id="ed_siglo_veinte">
+        <orgName>Editorial Siglo Veinte</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1943"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19434173</idno>
+    </org>
+    
+    <org xml:id="ed_rioplatense">
+        <orgName>Editorial Rioplatense</orgName>
+        <location>
+            <country key="UY" ref="#uruguay">Uruguay</country>
+        </location>
+        <event type="founding"><p><date when="1918"/></p></event>
+    </org>
+    
+    <org xml:id="ed_anaconda">
+        <orgName>Editorial Anaconda</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1932"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q113946253</idno>
+    </org>
+    
+    <org xml:id="ed_plus_ultra">
+        <orgName>Editorial Plus Ultra</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1964"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q127742049</idno>
+    </org>
+    
+    <org xml:id="ed_hrw">
+        <orgName>Holt, Rinehart and Winston</orgName>
+        <location>
+            <country key="US" ref="#estados_unidos">Estados Unidos</country>
+        </location>
+        <event type="founding"><p><date when="1960"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q21809817</idno>
+    </org>
+    
+    <org xml:id="ed_troquel">
+        <orgName>Editorial Troquel</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1953"/></p></event>
+    </org>
+    
+    <org xml:id="ed_arca_calicanto">
+        <orgName>Arca/Calicanto</orgName>
+        <location>
+            <country key="UY" ref="#uruguay">Uruguay</country>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1976"/></p></event>
+    </org>
+    
+    <org xml:id="ed_bosch">
+        <orgName>Librería Bosch (Editorial Bosch)</orgName>
+        <location>
+            <settlement ref="#barcelona">Barcelona</settlement>
+            <country key="ES" ref="#espania">España</country>
+        </location>
+        <event type="founding"><p><date when="1889"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q11918020</idno>
+    </org>
+    
+    <org xml:id="ed_folios">
+        <orgName>Editorial Folios</orgName>
+        <location>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+            <country key="AR" ref="#argentina">Argentina</country>
+        </location>
+        <event type="founding"><p><date when="1981"/></p></event>
+    </org>
+    
+    <org xml:id="ed_adelphi">
+        <orgName>Adelphi Edizioni</orgName>
+        <location>
+            <settlement ref="#milan">Milán</settlement>
+            <country key="IT" ref="#italia">Italia</country>
+        </location>
+        <event type="founding"><p><date when="1962"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q355301</idno>
+    </org>
+    
+    <org xml:id="ed_arayu">
+        <orgName>Editorial Arayú</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1953"/></p></event>
+    </org>
+    
+    <org xml:id="ed_hachette">
+        <orgName>Librería Hachette S.A.</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1932"/></p></event>
+    </org>
+    
+    <org xml:id="ed_estudio_cedis">
+        <orgName>Estudio Cedis</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1975"/></p></event>
+    </org>
+    
+    <org xml:id="ed_libreria_jurista">
+        <orgName>Librería del Jurista</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1973"/></p></event>
+    </org>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+</listOrg>

@@ -1,0 +1,49 @@
+country,count,median_birth_year
+Argentina,66,1913.5
+France,44,1897.5
+Germany,21,1818.0
+Italy,16,1500.5
+United Kingdom,13,1795.0
+United States,9,1897.0
+Spain,6,1680.5
+Ireland,5,1854.0
+Greece,3,-428.0
+Austria,3,1887.0
+Cuba,3,1923.0
+Russia,3,1861.0
+Switzerland,3,1875.0
+Uruguay,3,1926.0
+"Edimburgo, Escocia",2,1780.5
+Denmark,2,1809.0
+Poland,2,1846.0
+"San Petersburgo, Imperio Ruso",2,1894.0
+Desconocido,1,-325.0
+"Dundee, Escocia",1,1872.0
+"El Biar, Argelia",1,1930.0
+Buenos Aires,1,1878.0
+Bulgaria,1,1939.0
+Chile,1,1893.0
+Belgium,1,1908.0
+"Andes, República Romana",1,-70.0
+"Bucarest, Rumania",1,1913.0
+Czech Republic,1,1883.0
+China,1,-369.0
+Hungary,1,1885.0
+"Guthrie, Kentucky, EE. UU.",1,1905.0
+Escocia,1,1795.0
+Nicaragua,1,1867.0
+Netherlands,1,1632.0
+"Murray, Kentucky, EE. UU.",1,1906.0
+"Moscú, Imperio Ruso",1,1821.0
+Mexico,1,1914.0
+Imperio Romano,1,354.0
+Imperio Austríaco,1,1856.0
+Imperio Medo,1,-628.0
+"Sliven, Bulgaria",1,1941.0
+"Sherbrooke, Canadá",1,1912.0
+Peru,1,1936.0
+"Rezekne, Letonia",1,1894.0
+"Oriol, Imperio Ruso",1,1895.0
+"Sorochyntsi, Ucrania",1,1809.0
+"Viena, Imperio Austrohúngaro",1,1874.0
+Virreinato del Río de la Plata,1,1805.0

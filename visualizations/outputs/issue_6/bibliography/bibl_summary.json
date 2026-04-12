@@ -1,0 +1,78 @@
+{
+  "issue_id": "issue_6",
+  "generated": "2026-04-12T17:37:36.068668",
+  "total_title_refs": 64,
+  "unique_works_cited": 20,
+  "top_10_works": [
+    {
+      "bibl_id": "revista_sitio",
+      "title": "Sitio",
+      "author": null,
+      "count": 30
+    },
+    {
+      "bibl_id": "codigo_justicia_militar",
+      "title": "Código de Justicia Militar",
+      "author": "Estado Argentino",
+      "count": 7
+    },
+    {
+      "bibl_id": "revista_la_ley",
+      "title": "La Ley",
+      "author": null,
+      "count": 5
+    },
+    {
+      "bibl_id": "codigo_penal",
+      "title": "Código Penal de la Nación Argentina",
+      "author": "Estado Argentino",
+      "count": 3
+    },
+    {
+      "bibl_id": "clausewitz_guerra",
+      "title": "Vom Kriege",
+      "author": "Carl von Clausewitz",
+      "count": 2
+    },
+    {
+      "bibl_id": "codigo_honor",
+      "title": "Código de honor comentado",
+      "author": "José Rivanera",
+      "count": 2
+    },
+    {
+      "bibl_id": "revista_fin_siglo",
+      "title": "Fin de siglo",
+      "author": null,
+      "count": 2
+    },
+    {
+      "bibl_id": "kierkegaard_angustia",
+      "title": "El concepto de la angustia",
+      "author": "Søren Kierkegaard",
+      "count": 1
+    },
+    {
+      "bibl_id": "diario_la_nacion",
+      "title": "La Nación",
+      "author": null,
+      "count": 1
+    },
+    {
+      "bibl_id": "fierro_obediencia",
+      "title": "La obediencia debida en el ámbito penal y militar",
+      "author": "Guillermo Fierro",
+      "count": 1
+    }
+  ],
+  "genre_distribution": {
+    "j": 38,
+    "m": 20,
+    "a": 6
+  },
+  "language_distribution": {
+    "es": 64
+  },
+  "network_nodes": 25,
+  "network_edges": 29
+}

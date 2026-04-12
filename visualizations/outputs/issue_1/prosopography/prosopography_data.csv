@@ -1,0 +1,367 @@
+id,name,birth_year,death_year,birth_place_raw,country,region,period,wikidata,lifespan
+jorge_jinkis,Jorge Jinkis,1943.0,,Argentina,Argentina,Latin America,World Wars Era,,
+friedrich_nietzsche,Friedrich Nietzsche,1844.0,1900.0,Prusia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q9358,56.0
+samuel_beckett,Samuel Beckett,1906.0,1989.0,Irlanda,Ireland,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q37327,83.0
+leo_strauss,Leo Strauss,1899.0,1973.0,Alemania,Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q77144,74.0
+ernest_renan,Joseph Renan,1823.0,1892.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q157155,69.0
+leon_bloy,Léon Bloy,1846.0,1917.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q462666,71.0
+martin_lutero,Martín Lutero,1483.0,1546.0,Sacro Imperio Romano Germánico (actual Alemania),Germany,Western Europe,Renaissance,http://www.wikidata.org/entity/Q9554,63.0
+leopoldo_lugones,Leopoldo Lugones,1874.0,1938.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q188875,64.0
+paul_valery,Ambroise Valéry,1871.0,1945.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q200639,74.0
+eduardo_gruner,Eduardo Grüner,1946.0,,Argentina,Argentina,Latin America,Contemporary,http://www.wikidata.org/entity/Q56582734,
+maurice_blanchot,Maurice Blanchot,1907.0,2003.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q315210,96.0
+kafka,Franz Kafka,1883.0,1924.0,"Praga, Imperio Austrohúngaro",Czech Republic,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q905,41.0
+james_joyce,James Joyce,1882.0,1941.0,Irlanda,Ireland,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q6882,59.0
+louis_ferdinand_celine,Louis-Ferdinand Céline,1894.0,1961.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q151820,67.0
+william_faulkner,William Faulkner,1897.0,1962.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q38392,65.0
+borges,Jorge Borges,1899.0,1986.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q909,87.0
+simonides,de Ceos Simónides,-556.0,-468.0,Grecia,Greece,Southern Europe / Classical,Antiquity (Archaic),http://www.wikidata.org/entity/Q273003,88.0
+horacio,Quinto Horacio,-65.0,-8.0,República Romana (actual Italia),Italy,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q6197,57.0
+ezra_pound,Ezra Pound,1885.0,1972.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q163366,87.0
+oscar_masotta,Óscar Masotta,1930.0,1979.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q7106131,49.0
+luis_gusman,Luis Gusmán,1944.0,,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q5679615,
+mallarme,Stéphane Mallarmé,1842.0,1898.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q767,56.0
+andre_gide,André Gide,1869.0,1951.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q47484,82.0
+john_donne,John Donne,1572.0,1631.0,Inglaterra,United Kingdom,Western Europe,Renaissance,http://www.wikidata.org/entity/Q140412,59.0
+spinoza,Baruch Spinoza,1632.0,1677.0,República de los Países Bajos,Netherlands,Western Europe,Early Modern,http://www.wikidata.org/entity/Q35802,45.0
+maquiavelo,Niccolò Machiavelli,1469.0,1527.0,República de Florencia (actual Italia),Italy,Western Europe,Renaissance,http://www.wikidata.org/entity/Q1399,58.0
+tucidides,Tucídides,-460.0,-400.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q41683,60.0
+aristoteles,Aristóteles,-384.0,-322.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q868,62.0
+platon,Platón,-428.0,-348.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q859,80.0
+thomas_hobbes,Thomas Hobbes,1588.0,1679.0,Inglaterra,United Kingdom,Western Europe,Renaissance,http://www.wikidata.org/entity/Q37621,91.0
+socrates,Sócrates,-470.0,-399.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q913,71.0
+william_lecky,William Lecky,1838.0,1903.0,Irlanda,Ireland,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q725927,65.0
+parmenides,de Elea Parménides,-515.0,-450.0,Grecia Antigua (Magna Grecia),Greece,Southern Europe / Classical,Antiquity (Archaic),http://www.wikidata.org/entity/Q125551,65.0
+homero,Homero,-750.0,-700.0,Grecia Antigua,Greece,Southern Europe / Classical,Antiquity (Archaic),http://www.wikidata.org/entity/Q6691,50.0
+jean_bodin,Jean Bodin,1530.0,1596.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q190944,66.0
+edmund_burke,Edmund Burke,1729.0,1797.0,Irlanda,Ireland,Western Europe,Early Modern,http://www.wikidata.org/entity/Q165792,68.0
+nicolas_condorcet,Nicolas Condorcet,1743.0,1794.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q201477,51.0
+thomas_carlyle,Thomas Carlyle,1795.0,1881.0,Escocia,Escocia,Other/Unknown,Revolutionary Era,http://www.wikidata.org/entity/Q151403,86.0
+averroes,Averroes,1126.0,1198.0,Al-Ándalus (actual España),Spain,Western Europe,Medieval,http://www.wikidata.org/entity/Q39837,72.0
+gotthold_lessing,Gotthold Lessing,1729.0,1781.0,Sacro Imperio Romano Germánico (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q34628,52.0
+schleiermacher,Friedrich Schleiermacher,1768.0,1834.0,Prusia (actual Polonia),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q76576,66.0
+edward_gibbon,Edward Gibbon,1737.0,1794.0,Inglaterra,United Kingdom,Western Europe,Early Modern,http://www.wikidata.org/entity/Q161841,57.0
+eusebio_de_cesarea,de Cesarea Eusebio,263.0,339.0,Imperio Romano (actual Israel),Israel,Middle East,Hellenistic/Roman,http://www.wikidata.org/entity/Q142999,76.0
+james_shotwell,James Shotwell,1874.0,1965.0,Canadá,Canadá,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q1236629,91.0
+montesquieu,Charles-Louis Montesquieu,1689.0,1755.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q15975,66.0
+laboulaye,Édouard Laboulaye,1811.0,1883.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q274429,72.0
+george_sabine,George Sabine,1880.0,1961.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q1507581,81.0
+anaxagoras,Anaxágoras,-500.0,-428.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q83041,72.0
+protagoras,Protágoras,-490.0,-420.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q169243,70.0
+xenofon,Jenofonte,-431.0,-354.0,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q129772,77.0
+avicena,Avicena,980.0,1037.0,Imperio Samánida (actual Uzbekistán),Imperio Samánida,Other/Unknown,Medieval,http://www.wikidata.org/entity/Q8011,57.0
+maimonides,Maimónides,1138.0,1204.0,Al-Ándalus (actual España),Spain,Western Europe,Medieval,http://www.wikidata.org/entity/Q127398,66.0
+grotius,Hugo Grotius,1583.0,1645.0,República de los Países Bajos,Netherlands,Western Europe,Renaissance,http://www.wikidata.org/entity/Q154959,62.0
+rene_descartes,René Descartes,1596.0,1650.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q9191,54.0
+john_locke,John Locke,1632.0,1704.0,Inglaterra,United Kingdom,Western Europe,Early Modern,http://www.wikidata.org/entity/Q9353,72.0
+pierre_bayle,Pierre Bayle,1647.0,1706.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q214816,59.0
+christian_wolff,Christian Wolff,1679.0,1754.0,Alemania (actual Polonia),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q76510,75.0
+voltaire,Voltaire,1694.0,1778.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q9068,84.0
+rousseau,Jean-Jacques Rousseau,1712.0,1778.0,República de Ginebra (actual Suiza),Switzerland,Western Europe,Early Modern,http://www.wikidata.org/entity/Q6527,66.0
+kant,Immanuel Kant,1724.0,1804.0,Prusia (actual Rusia),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q9312,80.0
+tomas_moro,Tomás Moro,1478.0,1535.0,Inglaterra,United Kingdom,Western Europe,Renaissance,http://www.wikidata.org/entity/Q42544,57.0
+alcibiades,Alcibíades,-450.0,-404.0,Grecia Antigua (Atenas),Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q187982,46.0
+rabelais,François Rabelais,1494.0,1553.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q131018,59.0
+soren_kierkegaard,Søren Kierkegaard,1813.0,1855.0,Dinamarca,Denmark,Scandinavia,Revolutionary Era,http://www.wikidata.org/entity/Q6512,42.0
+bocaccio,Giovanni Boccaccio,1313.0,1375.0,República de Florencia (actual Italia),Italy,Western Europe,Medieval,http://www.wikidata.org/entity/Q721349,62.0
+petrarca,Francesco Petrarca,1304.0,1374.0,República de Florencia (actual Italia),Italy,Western Europe,Medieval,http://www.wikidata.org/entity/Q1401,70.0
+bosco,Hieronymus Bosch,1450.0,1516.0,Países Bajos Borgoñones,Netherlands,Western Europe,Renaissance,http://www.wikidata.org/entity/Q130531,66.0
+ciceron,Marco Cicerón,-106.0,-43.0,República Romana (actual Italia),Italy,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q1541,63.0
+quintiliano,Marco Quintiliano,35.0,100.0,Imperio Romano (actual España),Spain,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q193769,65.0
+jesus,de Nazaret Jesús,-4.0,30.0,Imperio Romano (Judea),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q302,34.0
+bajtin,Mijaíl Bajtín,1895.0,1975.0,"Oriol, Imperio Ruso","Oriol, Imperio Ruso",Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q185375,80.0
+hermes_trismegisto,Trismegisto Hermes,,,,,Other/Unknown,Unknown,http://www.wikidata.org/entity/Q192358,
+pierre_ronsard,Pierre Ronsard,1524.0,1585.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q49752,61.0
+du_bellay,Joachim Du Bellay,1522.0,1560.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q18420,38.0
+montaigne,Michel Montaigne,1533.0,1592.0,Francia,France,Western Europe,Renaissance,http://www.wikidata.org/entity/Q41568,59.0
+da_vinci,Leonardo Vinci,1452.0,1519.0,República de Florencia (actual Italia),Italy,Western Europe,Renaissance,http://www.wikidata.org/entity/Q762,67.0
+arcimboldo,Giuseppe Arcimboldo,1526.0,1593.0,Ducado de Milán (actual Italia),Italy,Western Europe,Renaissance,http://www.wikidata.org/entity/Q7751,67.0
+lacan,Jacques Lacan,1901.0,1981.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q169906,80.0
+maurits_escher,Maurits Escher,1898.0,1972.0,Países Bajos,Netherlands,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q1470,74.0
+della_mirandola,Giovanni Pico della Mirandola,1463.0,1494.0,Ducado de Mirandola (actual Italia),Italy,Western Europe,Renaissance,http://www.wikidata.org/entity/Q182128,31.0
+erich_auerbach,Erich Auerbach,1892.0,1957.0,Imperio alemán,Imperio alemán,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q57603,65.0
+luciano_samosata,de Samósata Luciano,125.0,180.0,Imperio Romano (actual Turquía),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q177847,55.0
+nicolas_copernico,Nicolás Copérnico,1473.0,1543.0,Reino de Polonia (actual Polonia),Poland,Eastern Europe,Renaissance,http://www.wikidata.org/entity/Q619,70.0
+andres_vesalio,Andrés Vesalio,1514.0,1564.0,Países Bajos de los Habsburgo (actual Bélgica),Netherlands,Western Europe,Renaissance,http://www.wikidata.org/entity/Q170267,50.0
+ernst_curtius,Ernst Curtius,1814.0,1896.0,Confederación Germánica (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q61407,82.0
+baudelaire,Charles Baudelaire,1821.0,1867.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q501,46.0
+martin_heidegger,Martin Heidegger,1889.0,1976.0,Imperio alemán (actual Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q48301,87.0
+pascal,Blaise Pascal,1623.0,1662.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q1290,39.0
+fermat,Pierre Fermat,1607.0,1665.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q75655,58.0
+michel_foucault,Michel Foucault,1926.0,1984.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q44272,58.0
+spitzer,Leo Spitzer,1887.0,1960.0,Imperio Austrohúngaro (actual Austria),Austria,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q78739,73.0
+ts_eliot,T. Eliot,1888.0,1965.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q37767,77.0
+harold_bloom,Harold Bloom,1930.0,2019.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q345612,89.0
+edgar_allan_poe,Edgar Poe,1809.0,1849.0,Estados Unidos,United States,North America,Revolutionary Era,http://www.wikidata.org/entity/Q16867,40.0
+de_dieguez,Manuel Diéguez,1922.0,2024.0,Francia (actual Marruecos),France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q3286958,102.0
+todorov,Tzvetan Todorov,1939.0,2017.0,Bulgaria,Bulgaria,Other/Unknown,World Wars Era,http://www.wikidata.org/entity/Q313852,78.0
+georges_bataille,Georges Bataille,1897.0,1962.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q207359,65.0
+merleau_ponty,Maurice Merleau-Ponty,1908.0,1961.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q212639,53.0
+romero_martinez,Miguel Romero Martínez,1945.0,2014.0,España,Spain,Western Europe,Contemporary,,69.0
+simmias,de Tebas Simmias,-430.0,,Grecia Antigua,Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q928470,
+miguel_d_ors,Miguel d'Ors,1946.0,,España,Spain,Western Europe,Contemporary,http://www.wikidata.org/entity/Q6015319,
+michel_leiris,Michel Leiris,1901.0,1990.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q462591,89.0
+mario_levin,Mario Levin,1944.0,,Argentina,Argentina,Latin America,World Wars Era,,
+luis_bunuel,Luis Buñuel,1900.0,1983.0,España,Spain,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q51545,83.0
+carlos_saura,Carlos Saura,1932.0,2023.0,España,Spain,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q295855,91.0
+tarkovsky,Andrei Tarkovsky,1932.0,1986.0,Unión Soviética,Unión Soviética,Other/Unknown,World Wars Era,http://www.wikidata.org/entity/Q853,54.0
+andrzej_wajda,Andrzej Wajda,1926.0,2016.0,Polonia,Poland,Eastern Europe,World Wars Era,http://www.wikidata.org/entity/Q106685,90.0
+john_cassavetes,John Cassavetes,1929.0,1989.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q51488,60.0
+alfred_hitchcock,Alfred Hitchcock,1899.0,1980.0,Inglaterra,United Kingdom,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q7374,81.0
+king_vidor,King Vidor,1894.0,1982.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q51133,88.0
+alain_resnais,Alain Resnais,1922.0,2014.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q218022,92.0
+mizoguchi,Kenji Mizoguchi,1898.0,1956.0,Japón,Japan,Asia,Long 19th Century,http://www.wikidata.org/entity/Q55401,58.0
+orson_welles,Orson Welles,1915.0,1985.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q24829,70.0
+fritz_lang,Fritz Lang,1890.0,1976.0,Imperio Austrohúngaro (actual Austria),Austria,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q19504,86.0
+andre_bazin,André Bazin,1918.0,1958.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q362544,40.0
+sergei_eisenstein,Sergei Eisenstein,1898.0,1948.0,Imperio Ruso (actual Letonia),Imperio Ruso,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q8003,50.0
+carl_dreyer,Carl Dreyer,1889.0,1968.0,Dinamarca,Denmark,Scandinavia,Long 19th Century,http://www.wikidata.org/entity/Q51127,79.0
+pascal_bonitzer,Pascal Bonitzer,1946.0,,Francia,France,Western Europe,Contemporary,http://www.wikidata.org/entity/Q289645,
+adolfo_aristarain,Adolfo Aristarain,1943.0,,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q2657842,
+erwin_panofsky,Erwin Panofsky,1892.0,1968.0,Imperio alemán (actual Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q57656,76.0
+antonello_da_messina,da Messina Antonello,1430.0,1479.0,Reino de Sicilia (actual Italia),Italy,Western Europe,Renaissance,https://www.wikidata.org/wiki/Q5594,49.0
+durero,Alberto Durero,1471.0,1528.0,Sacro Imperio Romano Germánico (actual Alemania),Germany,Western Europe,Renaissance,http://www.wikidata.org/entity/Q5580,57.0
+velazquez,Diego Velázquez,1599.0,1660.0,España,Spain,Western Europe,Renaissance,http://www.wikidata.org/entity/Q297,61.0
+felipeiv,IV Felipe,1605.0,1665.0,España,Spain,Western Europe,Early Modern,https://www.wikidata.org/wiki/Q691402,60.0
+cremonini,Leonardo Cremonini,1925.0,2010.0,Italia,Italy,Western Europe,World Wars Era,https://www.wikidata.org/wiki/Q982526,85.0
+bacon,Francis Bacon,1909.0,1992.0,Irlanda,Ireland,Western Europe,Long 19th Century,https://www.wikidata.org/wiki/Q154340,83.0
+valerio_adami,Valerio Adami,1935.0,,Italia,Italy,Western Europe,World Wars Era,https://www.wikidata.org/wiki/Q562139,
+ralph_goings,Ralph Goings,1928.0,2016.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q459309,88.0
+monory,Jacques Monory,1924.0,2018.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q3159599,94.0
+dino_buzzati,Dino Buzzati,1906.0,1972.0,Italia,Italy,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q242095,66.0
+robert_bresson,Robert Bresson,1901.0,1999.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q55391,98.0
+straub,Jean-Marie Straub,1933.0,2022.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q20747245,89.0
+duras,Marguerite Duras,1914.0,1996.0,Indochina Francesa (actual Vietnam),France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q153248,82.0
+antonioni,Michelangelo Antonioni,1912.0,2007.0,Italia,Italy,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q55433,95.0
+alex_barbier,Alex Barbier,1950.0,2019.0,Francia,France,Western Europe,Contemporary,http://www.wikidata.org/entity/Q2832896,69.0
+jean_luc_godard,Jean-Luc Godard,1930.0,2022.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q53001,92.0
+jean_eustache,Jean Eustache,1938.0,1981.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q966198,43.0
+francois_truffaut,François Truffaut,1932.0,1984.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q53002,52.0
+ana_barrenechea,Ana Barrenechea,1913.0,2007.0,Argentina,Argentina,Latin America,Long 19th Century,,94.0
+roland_barthes,Roland Barthes,1915.0,1980.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q179109,65.0
+bioy_casares,Adolfo Bioy Casares,1914.0,1999.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q298035,85.0
+silvina_ocampo,Silvina Ocampo,1903.0,1993.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q442829,90.0
+alejo_carpentier,Alejo Carpentier,1904.0,1980.0,Suiza,Switzerland,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q216466,76.0
+julio_cortazar,Julio Cortázar,1914.0,1984.0,Bélgica,Belgium,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q174210,70.0
+anderson_imbert,Enrique Anderson Imbert,1910.0,2000.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q1343944,90.0
+mahoma,Mahoma,570.0,632.0,Arabia (actual Arabia Saudita),Arabia,Other/Unknown,Medieval,http://www.wikidata.org/entity/Q9458,62.0
+godofredo_viterbo,de Viterbo Godofredo,1120.0,1195.0,Estados Pontificios (actual Italia),Italy,Western Europe,Medieval,http://www.wikidata.org/entity/Q614256,75.0
+jacquemart_de_hesdin,Jacquemart Hesdin,1355.0,1414.0,Francia (Artois),France,Western Europe,Medieval,http://www.wikidata.org/entity/Q2211325,59.0
+virgilio_piniera,Virgilio Piñera,1912.0,1979.0,Cuba,Cuba,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q941701,67.0
+garcia_marquez,Gabriel García Márquez,1927.0,2014.0,Colombia,Colombia,Latin America,World Wars Era,http://www.wikidata.org/entity/Q5878,87.0
+emir_rodriguez_monegal,Emir Rodríguez Monegal,1921.0,1985.0,Uruguay,Uruguay,Latin America,World Wars Era,http://www.wikidata.org/entity/Q195008,64.0
+witold_gombrowicz,Witold Gombrowicz,1904.0,1969.0,Polonia (Imperio Ruso),Poland,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q275175,65.0
+ernesto_sabato,Ernesto Sabato,1911.0,2011.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q186630,100.0
+freud,Sigmund Freud,1856.0,1939.0,Imperio Austríaco (actual República Checa),Imperio Austríaco,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q9215,83.0
+cecilia_de_benedetti,Cecilia Benedit de Debenedetti,1895.0,1984.0,Argentina,Argentina,Latin America,Long 19th Century,,89.0
+luis_thonis,Luis Thonis,1949.0,,Argentina,Argentina,Latin America,Contemporary,,
+felisberto_hernandez,Felisberto Hernández,1902.0,1964.0,Uruguay,Uruguay,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q714097,62.0
+plinio,el Viejo Plinio,23.0,79.0,Imperio Romano (actual Italia),Italy,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q82778,56.0
+zenon,de Elea Zenón,-490.0,-430.0,Grecia Antigua (Magna Grecia),Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q132157,60.0
+marcel_proust,Marcel Proust,1871.0,1922.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q7199,51.0
+edmund_husserl,Edmund Husserl,1859.0,1938.0,Imperio Austríaco (Actual República Checa),Imperio Austríaco,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q58586,79.0
+henri_bergson,Henri Bergson,1859.0,1941.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q42156,82.0
+macedonio_fernandez,Macedonio Fernández,1874.0,1952.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q1334326,78.0
+zaratustra,Zaratustra,-628.0,-551.0,Imperio Medo (actual Irán),Imperio Medo,Other/Unknown,Antiquity (Archaic),http://www.wikidata.org/entity/Q35811,77.0
+gilbert_ryle,Gilbert Ryle,1900.0,1976.0,Inglaterra,United Kingdom,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q313386,76.0
+julio_cesar,Julio César,-100.0,-44.0,República Romana (actual Italia),Italy,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q1048,56.0
+ciro_grande,II Ciro,-600.0,-530.0,Imperio Medo (actual Irán),Imperio Medo,Other/Unknown,Antiquity (Archaic),http://www.wikidata.org/entity/Q8423,70.0
+jonathan_swift,Jonathan Swift,1667.0,1745.0,Irlanda,Ireland,Western Europe,Early Modern,http://www.wikidata.org/entity/Q41166,78.0
+juan_garcia_ponce,Juan García Ponce,1932.0,2003.0,México,Mexico,Latin America,World Wars Era,http://www.wikidata.org/entity/Q3753476,71.0
+robert_musil,Robert Musil,1880.0,1942.0,Imperio Austrohúngaro (Actual Austria),Austria,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q78487,62.0
+klossowski,Pierre Klossowski,1905.0,2001.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q203674,96.0
+roberto_echavarren,Roberto Echavarren,1944.0,,Uruguay,Uruguay,Latin America,World Wars Era,http://www.wikidata.org/entity/Q6109718,
+edouard_drumont,Édouard Drumont,1844.0,1917.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q274297,73.0
+emile_zola,Émile Zola,1840.0,1902.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q504,62.0
+julian_martel,Julián Martel,1867.0,1896.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q34205090,29.0
+ramon_alcalde,Ramón Alcalde,1951.0,2021.0,Argentina,Argentina,Latin America,Contemporary,http://www.wikidata.org/entity/Q75653349,70.0
+silvina_bullrich,Silvina Bullrich,1915.0,1990.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q456762,75.0
+carlos_moyano_llerena,Carlos Moyano Llerena,1914.0,2005.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q6404482,91.0
+george_gilder,George Gilder,1939.0,,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q3760499,
+ronald_reagan,Ronald Reagan,1911.0,2004.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q9960,93.0
+adam_smith,Adam Smith,1723.0,1790.0,Escocia,Escocia,Other/Unknown,Early Modern,http://www.wikidata.org/entity/Q9381,67.0
+juan_alemann,Juan Alemann,1927.0,2024.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q5947079,97.0
+hugo_wast,Hugo Wast,1883.0,1962.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q321110,79.0
+jacob_brafman,Jacob Brafman,1825.0,1879.0,Imperio Ruso (actual Bielorrusia),Russia,Eastern Europe,Revolutionary Era,http://www.wikidata.org/entity/Q4096142,54.0
+august_rohling,August Rohling,1839.0,1931.0,Prusia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q72137,92.0
+horangel,Horacio Tirigall,1927.0,2021.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q16575906,94.0
+jose_uriburu,José Uriburu,1868.0,1932.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q363555,64.0
+agustin_justo,Agustín Justo,1876.0,1943.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q365352,67.0
+mussolini,Benito Mussolini,1883.0,1945.0,Italia,Italy,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q23559,62.0
+adolf_hitler,Adolf Hitler,1889.0,1945.0,Imperio Austrohúngaro (Actual Austria),Austria,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q352,56.0
+victor_manuel2,II Víctor Manuel,1820.0,1878.0,Reino de Cerdeña (actual Italia),Italy,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q168691,58.0
+otto_von_bismarck,Otto Bismarck,1815.0,1898.0,Prusia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q8442,83.0
+alberto_gerchunoff,Alberto Gerchunoff,1883.0,1950.0,Imperio Ruso (actual Ucrania),Imperio Ruso,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q458186,67.0
+adolphe_cremieux,Adolphe Crémieux,1796.0,1880.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q260047,84.0
+theodor_herzl,Theodor Herzl,1860.0,1904.0,Imperio Austríaco (actual Hungría),Hungary,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q44003,44.0
+san_jorge,San Jorge,275.0,303.0,Imperio Romano (actual Turquía),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q48438,28.0
+alfred_dreyfus,Alfred Dreyfus,1859.0,1935.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q171826,76.0
+huysmans,Joris-Karl Huysmans,1848.0,1907.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q210798,59.0
+paul_bourget,Paul Bourget,1852.0,1935.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q198644,83.0
+alphonse_daudet,Alphonse Daudet,1840.0,1897.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q228546,57.0
+edmond_goncourt,Edmond Goncourt,1822.0,1896.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q1249210,74.0
+claretie,Jules Claretie,1840.0,1913.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q912271,73.0
+platelle,Henri Platelle,1921.0,2011.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q3131799,90.0
+scholl,Aurélien Scholl,1833.0,1902.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q2872062,69.0
+maupassant,Guy Maupassant,1850.0,1893.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q9327,43.0
+uzanne,Octave Uzanne,1851.0,1931.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q960277,80.0
+bonnieres,Robert Bonnières,1850.0,1905.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q428451,55.0
+fournel,Victor Fournel,1829.0,1894.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q3557307,65.0
+george_eliot,George Eliot,1819.0,1880.0,Inglaterra,United Kingdom,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q131333,61.0
+coronel_henry,Hubert-Joseph Henry,1846.0,1898.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q981772,52.0
+esterhazy,Ferdinand Esterhazy,1847.0,1923.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q379463,76.0
+paulo_iv,IV Paulo,1476.0,1559.0,Reino de Nápoles (actual Italia),Italy,Western Europe,Renaissance,http://www.wikidata.org/entity/Q101430,83.0
+alejandroii,II Alejandro,1818.0,1881.0,"Moscú, Imperio Ruso","Moscú, Imperio Ruso",Other/Unknown,Revolutionary Era,http://www.wikidata.org/entity/Q83171,63.0
+adolf_stoecker,Adolf Stoecker,1835.0,1909.0,Prusia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q63479,74.0
+geza_onody,Géza Onody,1848.0,1924.0,Reino de Hungría (Imperio Austríaco),Hungary,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q1471811,76.0
+jules_isaac,Jules Isaac,1877.0,1963.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q329560,86.0
+bernard_lazare,Bernard Lazare,1865.0,1903.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q822562,38.0
+shakespeare,William Shakespeare,1564.0,1616.0,Inglaterra,United Kingdom,Western Europe,Renaissance,http://www.wikidata.org/entity/Q692,52.0
+walter_scott,Walter Scott,1771.0,1832.0,Escocia,Escocia,Other/Unknown,Early Modern,http://www.wikidata.org/entity/Q79025,61.0
+balzac,Honoré Balzac,1799.0,1850.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q9711,51.0
+sainte_beuve,Charles Sainte-Beuve,1804.0,1869.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q1063392,65.0
+chaucer,Geoffrey Chaucer,1343.0,1400.0,Inglaterra,United Kingdom,Western Europe,Medieval,http://www.wikidata.org/entity/Q5683,57.0
+creso,Creso,-596.0,-546.0,Lidia (actual Turquía),Lidia,Other/Unknown,Antiquity (Archaic),http://www.wikidata.org/entity/Q184462,50.0
+gustave_flaubert,Gustave Flaubert,1821.0,1880.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q43444,59.0
+champfleury,Jules Champfleury,1821.0,1889.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q744488,68.0
+jules_goncourt,Jules Goncourt,1830.0,1870.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q1234248,40.0
+charles_dickens,Charles Dickens,1812.0,1870.0,Inglaterra,United Kingdom,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q5686,58.0
+george_sand,George Sand,1804.0,1876.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q3816,72.0
+isaac_pereire,Isaac Pereire,1806.0,1880.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q1673436,74.0
+emile_pereire,Émile Pereire,1800.0,1875.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q19260104,75.0
+victor_hugo,Victor Hugo,1802.0,1885.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q535,83.0
+leon_xiii,XIII León,1810.0,1903.0,Estados Pontificios (actual Italia),Italy,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q43922,93.0
+eugene_bontoux,Eugène Bontoux,1820.0,1905.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q3371183,85.0
+joan_miro,Joan Miró,1893.0,1983.0,España,Spain,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q152384,90.0
+juarez_celman,Miguel Juárez Celman,1844.0,1909.0,Argentina,Argentina,Latin America,Revolutionary Era,http://www.wikidata.org/entity/Q438892,65.0
+ludovico_halevy,Ludovic Halévy,1834.0,1908.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q723585,74.0
+geoffroy_saint_hilaire,Isidore Geoffroy Saint-Hilaire,1805.0,1861.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q521190,56.0
+charles_darwin,Charles Darwin,1809.0,1882.0,Inglaterra,United Kingdom,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q1035,73.0
+jean_martin_charcot,Jean-Martin Charcot,1825.0,1893.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q20710,68.0
+marcial,Marco Marcial,40.0,103.0,Imperio Romano (Hispania),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q2098,63.0
+herodias,Herodías,-15.0,39.0,"Jerusalén, Reino de Judea (Imperio Romano)",United States,North America,Hellenistic/Roman,http://www.wikidata.org/entity/Q230091,54.0
+johann_lavater,Johann Lavater,1741.0,1801.0,Suiza,Switzerland,Western Europe,Early Modern,http://www.wikidata.org/entity/Q123918,60.0
+louis_blanc,Louis Blanc,1811.0,1882.0,España,Spain,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q355112,71.0
+adolphe_thiers,Adolphe Thiers,1797.0,1877.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q5738,80.0
+franz_bopp,Franz Bopp,1791.0,1867.0,Electorado de Maguncia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q76934,76.0
+poncio_pilatos,Poncio Pilato,,,Imperio Romano (actual Italia),Italy,Western Europe,Unknown,http://www.wikidata.org/entity/Q17131,
+jules_michelet,Jules Michelet,1798.0,1874.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q310791,76.0
+karl_marx,Karl Marx,1818.0,1883.0,Prusia (actual Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q9061,65.0
+anatole_france,Anatole France,1844.0,1924.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q42443,80.0
+robert_misrahi,Robert Misrahi,1926.0,2023.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q3435931,97.0
+francois_zola,François Zola,1796.0,1847.0,República de Venecia (actual Italia),Italy,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q3086081,51.0
+lev_urusof,Lev Urusov,1877.0,1933.0,Imperio Ruso,Imperio Ruso,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q12763,56.0
+joseph_bollery,Joseph Bollery,1880.0,1973.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q52668608,93.0
+gustav_janouch,Gustav Janouch,1903.0,1968.0,Imperio Austrohúngaro (actual Austria),Austria,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q328537,65.0
+raissa_umansof,Raïssa Oumançoff,1883.0,1960.0,Imperio Ruso,Imperio Ruso,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q1648752,77.0
+jacques_maritain,Jacques Maritain,1882.0,1973.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q45723,91.0
+ruben_dario,Rubén Darío,1867.0,1916.0,Nicaragua,Nicaragua,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q173767,49.0
+dante_alighieri,Dante Alighieri,1265.0,1321.0,República de Florencia (actual Italia),Italy,Western Europe,Medieval,http://www.wikidata.org/entity/Q1067,56.0
+ernest_hello,Ernest Hello,1828.0,1885.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q557496,57.0
+arthur_meyer,Arthur Meyer,1844.0,1924.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q2865261,80.0
+paul_verlaine,Paul Verlaine,1844.0,1896.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q755,52.0
+san_pablo_persona,de Tarso Pablo,5.0,67.0,Imperio Romano (actual Turquía),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q9200,62.0
+san_jose,San José,-50.0,20.0,Imperio Romano (Judea),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q128267,70.0
+fiodor_dostoyevski,Fiódor Dostoyevski,1821.0,1881.0,"Moscú, Imperio Ruso","Moscú, Imperio Ruso",Other/Unknown,Revolutionary Era,http://www.wikidata.org/entity/Q991,60.0
+jeanne_molbech,Jeanne Molbech,1859.0,1950.0,Dinamarca,Denmark,Scandinavia,Long 19th Century,http://www.wikidata.org/entity/Q58187437,91.0
+morris_rosenfeld,Morris Rosenfeld,1862.0,1923.0,Polonia (Imperio Ruso),Poland,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q126519,61.0
+moses_hadas,Moses Hadas,1900.0,1966.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q4476165,66.0
+jose_bianco,José Bianco,1908.0,1986.0,Argentina,Argentina,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q1709049,78.0
+san_juan_persona,San Juan,6.0,100.0,Imperio Romano (Galilea),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q328804,94.0
+san_agustin,de Hipona Agustín,354.0,430.0,Imperio Romano (actual Argelia),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q8018,76.0
+san_pedro_persona,San Pedro,-1.0,67.0,Imperio Romano (Galilea),Imperio Romano,Other/Unknown,Hellenistic/Roman,http://www.wikidata.org/entity/Q33923,68.0
+midas,Midas,,,Frigia (actual Turquía),Frigia,Other/Unknown,Unknown,http://www.wikidata.org/entity/Q308398,
+san_francisco_asis,de Asís Francisco,1181.0,1226.0,Ducado de Spoleto (actual Italia),Italy,Western Europe,Medieval,http://www.wikidata.org/entity/Q676555,45.0
+ptolomeo,I Ptolomeo,-367.0,-282.0,Reino de Macedonia (actual Grecia),Greece,Southern Europe / Classical,Classical Antiquity,http://www.wikidata.org/entity/Q168261,85.0
+antioco,IV Antíoco,-215.0,-164.0,Imperio Seléucida (actual Italia),Italy,Western Europe,Hellenistic/Roman,http://www.wikidata.org/entity/Q3356,51.0
+felipe_augusto,II Felipe,1165.0,1223.0,Francia,France,Western Europe,Medieval,http://www.wikidata.org/entity/Q34428,58.0
+federico_barbarroja,I Federico,1122.0,1190.0,Ducado de Suabia (actual Alemania),Germany,Western Europe,Medieval,http://www.wikidata.org/entity/Q79789,68.0
+san_lucas,San Lucas,,84.0,Imperio Romano (actual Turquía),Imperio Romano,Other/Unknown,Unknown,http://www.wikidata.org/entity/Q128538,
+la_fontaine,Jean La Fontaine,1621.0,1695.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q49496,74.0
+stendhal,Stendhal,1783.0,1842.0,Francia,France,Western Europe,Early Modern,http://www.wikidata.org/entity/Q502,59.0
+melville,Herman Melville,1819.0,1891.0,Estados Unidos,United States,North America,Revolutionary Era,http://www.wikidata.org/entity/Q4985,72.0
+cabrera_infante,Guillermo Cabrera Infante,1929.0,2005.0,Cuba,Cuba,Latin America,World Wars Era,http://www.wikidata.org/entity/Q302675,76.0
+luis_chitarroni,Luis Chitarroni,1958.0,2023.0,Argentina,Argentina,Latin America,Contemporary,http://www.wikidata.org/entity/Q112121650,65.0
+ken_russell,Ken Russell,1927.0,2011.0,Inglaterra,United Kingdom,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q55249,84.0
+juan_goytisolo,Juan Goytisolo,1931.0,2017.0,España,Spain,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q353762,86.0
+severo_sarduy,Severo Sarduy,1937.0,1993.0,Cuba,Cuba,Latin America,World Wars Era,http://www.wikidata.org/entity/Q528804,56.0
+joseph_conrad,Joseph Conrad,1857.0,1924.0,Imperio Ruso (actual Ucrania),Imperio Ruso,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q82925,67.0
+robert_montgomery,Robert Montgomery,1904.0,1981.0,Estados Unidos,United States,North America,Long 19th Century,http://www.wikidata.org/entity/Q366956,77.0
+jose_donoso,José Donoso,1924.0,1996.0,Chile,Chile,Latin America,World Wars Era,http://www.wikidata.org/entity/Q439761,72.0
+marcel_duchamp,Marcel Duchamp,1887.0,1968.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q5912,81.0
+laurence_sterne,Laurence Sterne,1713.0,1768.0,Irlanda,Ireland,Western Europe,Early Modern,http://www.wikidata.org/entity/Q218960,55.0
+jose_valverde,José Valverde,1926.0,1996.0,España,Spain,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q1116470,70.0
+vladimir_nabokov,Vladimir Nabokov,1899.0,1977.0,"San Petesburgo, Imperio Ruso","San Petesburgo, Imperio Ruso",Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q36591,78.0
+alfred_korzybski,Alfred Korzybski,1879.0,1950.0,Polonia (Imperio Ruso),Poland,Eastern Europe,Long 19th Century,http://www.wikidata.org/entity/Q333402,71.0
+jose_marti,José Martí,1853.0,1895.0,Capitanía General de Cuba (actual Cuba),Cuba,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q103285,42.0
+gunter_grass,Günter Grass,1927.0,2015.0,Ciudad Libre de Danzig (actual Polonia),Poland,Eastern Europe,World Wars Era,http://www.wikidata.org/entity/Q6538,88.0
+miguel_saenz,Miguel Sáenz,1932.0,,Protectorado español de Marruecos,Protectorado español de Marruecos,Other/Unknown,World Wars Era,http://www.wikidata.org/entity/Q6015176,
+esteban_echeverria,Esteban Echeverría,1805.0,1851.0,Virreinato del Río de la Plata,Virreinato del Río de la Plata,Other/Unknown,Revolutionary Era,http://www.wikidata.org/entity/Q188859,46.0
+enrique_pezzoni,Enrique Pezzoni,1926.0,1989.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q10934058,63.0
+henry_james,Henry James,1843.0,1916.0,Estados Unidos,United States,North America,Revolutionary Era,http://www.wikidata.org/entity/Q170509,73.0
+sylvia_molloy,Sylvia Molloy,1938.0,2022.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q42904745,84.0
+jose_joaquin_olmedo,José Olmedo,1780.0,1847.0,Virreinato de Nueva Granada (actual Ecuador),Virreinato de Nueva Granada,Other/Unknown,Early Modern,http://www.wikidata.org/entity/Q981503,67.0
+jose_maria_heredia,José Heredia,1803.0,1839.0,Capitanía General de Cuba (actual Cuba),Cuba,Latin America,Revolutionary Era,http://www.wikidata.org/entity/Q609805,36.0
+estrada_cabrera,Manuel Estrada Cabrera,1857.0,1924.0,Guatemala,Guatemala,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q879169,67.0
+henriquez_urenia,Pedro Henríquez Ureña,1884.0,1946.0,República Dominicana,República Dominicana,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q1153831,62.0
+pedro_salinas,Pedro Salinas,1891.0,1951.0,España,Spain,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q379789,60.0
+octavio_paz,Octavio Paz,1914.0,1998.0,México,Mexico,Latin America,World Wars Era,http://www.wikidata.org/entity/Q46739,84.0
+lezama_lima,José Lezama Lima,1910.0,1976.0,Cuba,Cuba,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q366949,66.0
+juan_valera,Juan Valera,1824.0,1905.0,España,Spain,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q463630,81.0
+cornelio_agrippa,Heinrich Agrippa,1486.0,1535.0,Sacro Imperio Romano Germánico (actual Alemania),Germany,Western Europe,Renaissance,http://www.wikidata.org/entity/Q76568,49.0
+antoine_berman,Antoine Berman,1942.0,1991.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q2384842,49.0
+george_steiner,George Steiner,1929.0,2020.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q453288,91.0
+leonard_forster,Leonard Forster,1913.0,1997.0,Inglaterra,United Kingdom,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q18762027,84.0
+pieter_hooft,Pieter Hooft,1581.0,1647.0,República de los Países Bajos,Netherlands,Western Europe,Renaissance,http://www.wikidata.org/entity/Q10914484,66.0
+cervantes,Miguel Cervantes,1547.0,1616.0,España,Spain,Western Europe,Renaissance,http://www.wikidata.org/entity/Q5682,69.0
+john_milton,John Milton,1608.0,1674.0,Inglaterra,United Kingdom,Western Europe,Early Modern,http://www.wikidata.org/entity/Q79759,66.0
+franz_rosenzweig,Franz Rosenzweig,1886.0,1929.0,Imperio alemán,Imperio alemán,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q76710,43.0
+johann_herder,Johann Herder,1744.0,1803.0,Prusia (actual Polonia),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q155547,59.0
+edward_said,Edward Said,1935.0,2003.0,"Jerusalén, Mandato Británico de Palestina",United States,North America,World Wars Era,http://www.wikidata.org/entity/Q201538,68.0
+henri_meschonnic,Henri Meschonnic,1932.0,2009.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q1388925,77.0
+paul_celan,Paul Celan,1920.0,1970.0,Reino de Rumania (actual Ucrania),Reino de Rumania,Other/Unknown,World Wars Era,http://www.wikidata.org/entity/Q153905,50.0
+gaston_bachelard,Gaston Bachelard,1884.0,1962.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q270800,78.0
+novalis,Novalis,1772.0,1801.0,Electorado de Sajonia (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q60684,29.0
+goethe,Johann Goethe,1749.0,1832.0,Sacro Imperio Romano Germánico (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q5879,83.0
+holderlin,Johann Hölderlin,1770.0,1843.0,Ducado de Wurtemberg (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q75889,73.0
+valery_larbaud,Valery Larbaud,1881.0,1957.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q135640,76.0
+walter_benjamin,Walter Benjamin,1892.0,1940.0,Imperio alemán (actual Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q61078,48.0
+august_schlegel,August Schlegel,1767.0,1845.0,Electorado de Hannover (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q57281,78.0
+armand_robin,Armand Robin,1912.0,1961.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q2475297,49.0
+wilhelm_von_humboldt,Wilhelm Humboldt,1767.0,1835.0,Prusia (actual Alemania),Germany,Western Europe,Early Modern,http://www.wikidata.org/entity/Q77888,68.0
+gerard_nerval,Gérard Nerval,1808.0,1855.0,Francia,France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q191305,47.0
+stefan_george,Stefan George,1868.0,1933.0,Gran Ducado de Hesse (actual Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q57187,65.0
+rilke,Rainer Rilke,1875.0,1926.0,Imperio Austrohúngaro (actual República Checa),Imperio Austrohúngaro,Other/Unknown,Long 19th Century,http://www.wikidata.org/entity/Q76483,51.0
+nestor_perlongher,Néstor Perlongher,1949.0,1992.0,Argentina,Argentina,Latin America,Contemporary,http://www.wikidata.org/entity/Q7071482,43.0
+leonidas_lamborghini,Leónidas Lamborghini,1927.0,2009.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q918455,82.0
+ricardo_zelarayan,Ricardo Zelarayán,1940.0,2010.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q6108561,70.0
+marcelo_pichon_riviere,Marcelo Pichon Rivière,1944.0,2019.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q105475759,75.0
+osvaldo_lamborghini,Osvaldo Lamborghini,1940.0,1985.0,Argentina,Argentina,Latin America,World Wars Era,http://www.wikidata.org/entity/Q2036284,45.0
+leonora_carrington,Leonora Carrington,1917.0,2011.0,Inglaterra,United Kingdom,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q233207,94.0
+cesar_moro,César Moro,1903.0,1956.0,Perú,Peru,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q3010499,53.0
+max_ernst,Max Ernst,1891.0,1976.0,Imperio alemán (actual Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q154842,85.0
+renato_leduc,Renato Leduc,1897.0,1986.0,México,Mexico,Latin America,Long 19th Century,http://www.wikidata.org/entity/Q7312652,89.0
+benjamin_peret,Benjamin Péret,1899.0,1959.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q284769,60.0
+catherine_yarrow,Catherine Yarrow,1904.0,1990.0,Inglaterra,United Kingdom,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q55258020,86.0
+francisco_franco,Francisco Franco,1892.0,1975.0,España,Spain,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q29179,83.0
+federico_garcia_lorca,Federico García Lorca,1898.0,1936.0,España,Spain,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q41408,38.0
+gilbert_dubois,Claude-Gilbert Dubois,1933.0,,Francia,France,Western Europe,World Wars Era,,
+albert_beguin,Albert Béguin,1901.0,1957.0,Suiza,Switzerland,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q124251,56.0
+georges_bernanos,Georges Bernanos,1888.0,1948.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q315072,60.0
+hubert_colleye,Hubert Colleye,1883.0,1980.0,Bélgica,Belgium,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q59528161,97.0
+cecile_delhorbe,Cécile Delhorbe,1898.0,1985.0,Suiza,Switzerland,Western Europe,Long 19th Century,,87.0
+ismar_elbogen,Ismar Elbogen,1874.0,1943.0,Prusia (actual Polonia),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q65628,69.0
+stanislas_fumet,Stanislas Fumet,1896.0,1983.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q3496669,87.0
+charles_journet,Charles Journet,1891.0,1975.0,Suiza,Switzerland,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q115805,84.0
+marie_joseph_lory,Marie-Joseph Lory,1920.0,1993.0,Francia,France,Western Europe,World Wars Era,http://www.wikidata.org/entity/Q104529742,73.0
+jean_paul_sartre,Jean-Paul Sartre,1905.0,1980.0,Francia,France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q9364,75.0
+jonio_gonzalez,Jonio González,1954.0,,Argentina,Argentina,Latin America,Contemporary,,
+hilail_gildin,Hilail Gildin,1929.0,2015.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q5760715,86.0
+rf_byrnes,Robert Francis Byrnes,1917.0,1997.0,Estados Unidos,United States,North America,World Wars Era,http://www.wikidata.org/entity/Q27491436,80.0
+hugo_savino,Hugo Savino,1945.0,,Argentina,Argentina,Latin America,Contemporary,,
+mauricio_hirsch,Mauricio Hirsch,1831.0,1896.0,Múnich (Alemania),Germany,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q45214,65.0
+edmond_rothschild,Edmond Rothschild,1845.0,1934.0,"Boulogne-Billancourt, París (Francia)",France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q467167,89.0
+edelstein,Ludwig Edelstein,1902.0,1965.0,Berlín (Alemania),Germany,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q108178,63.0
+james_rothschild,James Rothschild,1792.0,1868.0,Fráncfort (Alemania),Germany,Western Europe,Revolutionary Era,,76.0
+pierre_mabille,Pierre Mabille,1904.0,1952.0,"Reims, Francia",France,Western Europe,Long 19th Century,http://www.wikidata.org/entity/Q3386058,48.0
+hippolyte_taine,Hippolyte Taine,1828.0,1893.0,"Vouziers, Francia",France,Western Europe,Revolutionary Era,http://www.wikidata.org/entity/Q297726,65.0

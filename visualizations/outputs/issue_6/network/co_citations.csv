@@ -1,0 +1,31 @@
+person_a,person_b,id_a,id_b,co_citation_count
+Jorge Antonio Bergés,Jorge Antonio Bacqué,jorge_antonio_berges,jorge_bacque,2
+Jorge Antonio Bergés,Norberto Ricardo Cozzani,jorge_antonio_berges,norberto_cozzani,2
+Jorge Antonio Bergés,Juan Octavio Gauna,jorge_antonio_berges,juan_octavio_gauna,2
+Jorge Antonio Bacqué,Norberto Ricardo Cozzani,jorge_bacque,norberto_cozzani,2
+Jorge Antonio Bacqué,Juan Octavio Gauna,jorge_bacque,juan_octavio_gauna,2
+Norberto Ricardo Cozzani,Juan Octavio Gauna,norberto_cozzani,juan_octavio_gauna,2
+Ronald Reagan,Carlos Santiago Fayt,ronald_reagan,carlos_fayt,1
+Ronald Reagan,Enrique Santiago Petracchi,ronald_reagan,enrique_petracchi,1
+Ronald Reagan,Augusto César Belluscio,ronald_reagan,augusto_belluscio,1
+Ronald Reagan,Jorge Antonio Bergés,ronald_reagan,jorge_antonio_berges,1
+Ronald Reagan,Jorge Antonio Bacqué,ronald_reagan,jorge_bacque,1
+Ronald Reagan,Platón,ronald_reagan,platon,1
+Ronald Reagan,José Severo Caballero,ronald_reagan,jose_severo_caballero,1
+Ronald Reagan,Norberto Ricardo Cozzani,ronald_reagan,norberto_cozzani,1
+Ronald Reagan,César Jaroslavsky,ronald_reagan,cesar_jaroslavsky,1
+Ronald Reagan,Juan Octavio Gauna,ronald_reagan,juan_octavio_gauna,1
+Carlos Santiago Fayt,Enrique Santiago Petracchi,carlos_fayt,enrique_petracchi,1
+Carlos Santiago Fayt,Augusto César Belluscio,carlos_fayt,augusto_belluscio,1
+Carlos Santiago Fayt,Jorge Antonio Bergés,carlos_fayt,jorge_antonio_berges,1
+Carlos Santiago Fayt,Jorge Antonio Bacqué,carlos_fayt,jorge_bacque,1
+Carlos Santiago Fayt,Platón,carlos_fayt,platon,1
+Carlos Santiago Fayt,José Severo Caballero,carlos_fayt,jose_severo_caballero,1
+Carlos Santiago Fayt,Norberto Ricardo Cozzani,carlos_fayt,norberto_cozzani,1
+Carlos Santiago Fayt,César Jaroslavsky,carlos_fayt,cesar_jaroslavsky,1
+Carlos Santiago Fayt,Juan Octavio Gauna,carlos_fayt,juan_octavio_gauna,1
+Enrique Santiago Petracchi,Augusto César Belluscio,enrique_petracchi,augusto_belluscio,1
+Enrique Santiago Petracchi,Jorge Antonio Bergés,enrique_petracchi,jorge_antonio_berges,1
+Enrique Santiago Petracchi,Jorge Antonio Bacqué,enrique_petracchi,jorge_bacque,1
+Enrique Santiago Petracchi,Platón,enrique_petracchi,platon,1
+Enrique Santiago Petracchi,José Severo Caballero,enrique_petracchi,jose_severo_caballero,1

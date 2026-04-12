@@ -1,0 +1,676 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #0a0a0a;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="leon_bloy">leon_bloy</option>
+                                
+                                    <option value="jesus">jesus</option>
+                                
+                                    <option value="ezra_pound">ezra_pound</option>
+                                
+                                    <option value="alfred_hitchcock">alfred_hitchcock</option>
+                                
+                                    <option value="emile_zola">emile_zola</option>
+                                
+                                    <option value="freud">freud</option>
+                                
+                                    <option value="adolf_hitler">adolf_hitler</option>
+                                
+                                    <option value="baudelaire">baudelaire</option>
+                                
+                                    <option value="orson_welles">orson_welles</option>
+                                
+                                    <option value="tomas_moro">tomas_moro</option>
+                                
+                                    <option value="witold_gombrowicz">witold_gombrowicz</option>
+                                
+                                    <option value="san_pablo_persona">san_pablo_persona</option>
+                                
+                                    <option value="todorov">todorov</option>
+                                
+                                    <option value="ana_barrenechea">ana_barrenechea</option>
+                                
+                                    <option value="jonathan_swift">jonathan_swift</option>
+                                
+                                    <option value="lacan">lacan</option>
+                                
+                                    <option value="pascal">pascal</option>
+                                
+                                    <option value="jorge_jinkis">jorge_jinkis</option>
+                                
+                                    <option value="ernest_hello">ernest_hello</option>
+                                
+                                    <option value="ernest_renan">ernest_renan</option>
+                                
+                                    <option value="mallarme">mallarme</option>
+                                
+                                    <option value="schleiermacher">schleiermacher</option>
+                                
+                                    <option value="shakespeare">shakespeare</option>
+                                
+                                    <option value="friedrich_nietzsche">friedrich_nietzsche</option>
+                                
+                                    <option value="platon">platon</option>
+                                
+                                    <option value="ruben_dario">ruben_dario</option>
+                                
+                                    <option value="borges">borges</option>
+                                
+                                    <option value="virgilio_piniera">virgilio_piniera</option>
+                                
+                                    <option value="balzac">balzac</option>
+                                
+                                    <option value="samuel_beckett">samuel_beckett</option>
+                                
+                                    <option value="edgar_allan_poe">edgar_allan_poe</option>
+                                
+                                    <option value="gustave_flaubert">gustave_flaubert</option>
+                                
+                                    <option value="karl_marx">karl_marx</option>
+                                
+                                    <option value="sylvia_molloy">sylvia_molloy</option>
+                                
+                                    <option value="leonora_carrington">leonora_carrington</option>
+                                
+                                    <option value="mario_levin">mario_levin</option>
+                                
+                                    <option value="luis_thonis">luis_thonis</option>
+                                
+                                    <option value="luis_bunuel">luis_bunuel</option>
+                                
+                                    <option value="luis_chitarroni">luis_chitarroni</option>
+                                
+                                    <option value="victor_hugo">victor_hugo</option>
+                                
+                                    <option value="da_vinci">da_vinci</option>
+                                
+                                    <option value="james_joyce">james_joyce</option>
+                                
+                                    <option value="raissa_umansof">raissa_umansof</option>
+                                
+                                    <option value="eduardo_gruner">eduardo_gruner</option>
+                                
+                                    <option value="enrique_pezzoni">enrique_pezzoni</option>
+                                
+                                    <option value="ramon_alcalde">ramon_alcalde</option>
+                                
+                                    <option value="antoine_berman">antoine_berman</option>
+                                
+                                    <option value="leo_strauss">leo_strauss</option>
+                                
+                                    <option value="paul_valery">paul_valery</option>
+                                
+                                    <option value="michel_foucault">michel_foucault</option>
+                                
+                                    <option value="pascal_bonitzer">pascal_bonitzer</option>
+                                
+                                    <option value="aristoteles">aristoteles</option>
+                                
+                                    <option value="edouard_drumont">edouard_drumont</option>
+                                
+                                    <option value="luis_gusman">luis_gusman</option>
+                                
+                                    <option value="roland_barthes">roland_barthes</option>
+                                
+                                    <option value="joseph_conrad">joseph_conrad</option>
+                                
+                                    <option value="sergei_eisenstein">sergei_eisenstein</option>
+                                
+                                    <option value="georges_bataille">georges_bataille</option>
+                                
+                                    <option value="kafka">kafka</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "#eee"}, "id": "leon_bloy", "label": "L\u00e9on Bloy", "shape": "dot", "size": 29.047619047619047, "title": "L\u00e9on Bloy\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1846"}, {"color": "#0f3460", "font": {"color": "#eee"}, "id": "jesus", "label": "de Nazaret Jes\u00fas", "shape": "dot", "size": 15.714285714285714, "title": "de Nazaret Jes\u00fas\u003cbr\u003ePeriod: Hellenistic/Roman\u003cbr\u003eBirth: -4"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ezra_pound", "label": "Ezra Pound", "shape": "dot", "size": 13.80952380952381, "title": "Ezra Pound\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1885"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alfred_hitchcock", "label": "Alfred Hitchcock", "shape": "dot", "size": 13.80952380952381, "title": "Alfred Hitchcock\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1899"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "emile_zola", "label": "\u00c9mile Zola", "shape": "dot", "size": 19.523809523809526, "title": "\u00c9mile Zola\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1840"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "freud", "label": "Sigmund Freud", "shape": "dot", "size": 13.80952380952381, "title": "Sigmund Freud\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1856"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "adolf_hitler", "label": "Adolf Hitler", "shape": "dot", "size": 13.80952380952381, "title": "Adolf Hitler\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1889"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "baudelaire", "label": "Charles Baudelaire", "shape": "dot", "size": 17.61904761904762, "title": "Charles Baudelaire\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1821"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "orson_welles", "label": "Orson Welles", "shape": "dot", "size": 13.80952380952381, "title": "Orson Welles\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1915"}, {"color": "#e94560", "font": {"color": "#eee"}, "id": "tomas_moro", "label": "Tom\u00e1s Moro", "shape": "dot", "size": 13.80952380952381, "title": "Tom\u00e1s Moro\u003cbr\u003ePeriod: Renaissance\u003cbr\u003eBirth: 1478"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "witold_gombrowicz", "label": "Witold Gombrowicz", "shape": "square", "size": 15.714285714285714, "title": "Witold Gombrowicz\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1904"}, {"color": "#0f3460", "font": {"color": "#eee"}, "id": "san_pablo_persona", "label": "de Tarso Pablo", "shape": "dot", "size": 13.80952380952381, "title": "de Tarso Pablo\u003cbr\u003ePeriod: Hellenistic/Roman\u003cbr\u003eBirth: 5"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "todorov", "label": "Tzvetan Todorov", "shape": "dot", "size": 13.80952380952381, "title": "Tzvetan Todorov\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1939"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ana_barrenechea", "label": "Ana Barrenechea", "shape": "square", "size": 17.61904761904762, "title": "Ana Barrenechea\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1913"}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "jonathan_swift", "label": "Jonathan Swift", "shape": "dot", "size": 13.80952380952381, "title": "Jonathan Swift\u003cbr\u003ePeriod: Early Modern\u003cbr\u003eBirth: 1667"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lacan", "label": "Jacques Lacan", "shape": "dot", "size": 13.80952380952381, "title": "Jacques Lacan\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1901"}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "pascal", "label": "Blaise Pascal", "shape": "dot", "size": 15.714285714285714, "title": "Blaise Pascal\u003cbr\u003ePeriod: Early Modern\u003cbr\u003eBirth: 1623"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 23.333333333333332, "title": "Jorge Jinkis\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1943"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ernest_hello", "label": "Ernest Hello", "shape": "dot", "size": 13.80952380952381, "title": "Ernest Hello\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1828"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ernest_renan", "label": "Joseph Renan", "shape": "dot", "size": 13.80952380952381, "title": "Joseph Renan\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1823"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "mallarme", "label": "St\u00e9phane Mallarm\u00e9", "shape": "dot", "size": 13.80952380952381, "title": "St\u00e9phane Mallarm\u00e9\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1842"}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "schleiermacher", "label": "Friedrich Schleiermacher", "shape": "dot", "size": 13.80952380952381, "title": "Friedrich Schleiermacher\u003cbr\u003ePeriod: Early Modern\u003cbr\u003eBirth: 1768"}, {"color": "#e94560", "font": {"color": "#eee"}, "id": "shakespeare", "label": "William Shakespeare", "shape": "dot", "size": 15.714285714285714, "title": "William Shakespeare\u003cbr\u003ePeriod: Renaissance\u003cbr\u003eBirth: 1564"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "friedrich_nietzsche", "label": "Friedrich Nietzsche", "shape": "dot", "size": 13.80952380952381, "title": "Friedrich Nietzsche\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1844"}, {"color": "#16213e", "font": {"color": "#eee"}, "id": "platon", "label": "Plat\u00f3n", "shape": "dot", "size": 13.80952380952381, "title": "Plat\u00f3n\u003cbr\u003ePeriod: Classical Antiquity\u003cbr\u003eBirth: -428"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ruben_dario", "label": "Rub\u00e9n Dar\u00edo", "shape": "dot", "size": 13.80952380952381, "title": "Rub\u00e9n Dar\u00edo\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1867"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges", "label": "Jorge Borges", "shape": "dot", "size": 23.333333333333332, "title": "Jorge Borges\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1899"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "virgilio_piniera", "label": "Virgilio Pi\u00f1era", "shape": "dot", "size": 15.714285714285714, "title": "Virgilio Pi\u00f1era\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1912"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "balzac", "label": "Honor\u00e9 Balzac", "shape": "dot", "size": 15.714285714285714, "title": "Honor\u00e9 Balzac\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1799"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "samuel_beckett", "label": "Samuel Beckett", "shape": "dot", "size": 17.61904761904762, "title": "Samuel Beckett\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1906"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "edgar_allan_poe", "label": "Edgar Poe", "shape": "dot", "size": 13.80952380952381, "title": "Edgar Poe\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1809"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "gustave_flaubert", "label": "Gustave Flaubert", "shape": "dot", "size": 13.80952380952381, "title": "Gustave Flaubert\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1821"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "karl_marx", "label": "Karl Marx", "shape": "dot", "size": 13.80952380952381, "title": "Karl Marx\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1818"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "sylvia_molloy", "label": "Sylvia Molloy", "shape": "dot", "size": 23.333333333333332, "title": "Sylvia Molloy\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1938"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "leonora_carrington", "label": "Leonora Carrington", "shape": "square", "size": 15.714285714285714, "title": "Leonora Carrington\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1917"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "mario_levin", "label": "Mario Levin", "shape": "square", "size": 21.428571428571427, "title": "Mario Levin\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1944"}, {"color": "#1abc9c", "font": {"color": "#eee"}, "id": "luis_thonis", "label": "Luis Thonis", "shape": "square", "size": 27.142857142857142, "title": "Luis Thonis\u003cbr\u003ePeriod: Contemporary\u003cbr\u003eBirth: 1949"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "luis_bunuel", "label": "Luis Bu\u00f1uel", "shape": "dot", "size": 13.80952380952381, "title": "Luis Bu\u00f1uel\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1900"}, {"color": "#1abc9c", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 21.428571428571427, "title": "Luis Chitarroni\u003cbr\u003ePeriod: Contemporary\u003cbr\u003eBirth: 1958"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "victor_hugo", "label": "Victor Hugo", "shape": "dot", "size": 13.80952380952381, "title": "Victor Hugo\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1802"}, {"color": "#e94560", "font": {"color": "#eee"}, "id": "da_vinci", "label": "Leonardo Vinci", "shape": "dot", "size": 13.80952380952381, "title": "Leonardo Vinci\u003cbr\u003ePeriod: Renaissance\u003cbr\u003eBirth: 1452"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "james_joyce", "label": "James Joyce", "shape": "dot", "size": 17.61904761904762, "title": "James Joyce\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1882"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "raissa_umansof", "label": "Ra\u00efssa Ouman\u00e7off", "shape": "dot", "size": 13.80952380952381, "title": "Ra\u00efssa Ouman\u00e7off\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1883"}, {"color": "#1abc9c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 50.0, "title": "Eduardo Gr\u00fcner\u003cbr\u003ePeriod: Contemporary\u003cbr\u003eBirth: 1946"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "enrique_pezzoni", "label": "Enrique Pezzoni", "shape": "square", "size": 21.428571428571427, "title": "Enrique Pezzoni\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1926"}, {"color": "#1abc9c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 44.285714285714285, "title": "Ram\u00f3n Alcalde\u003cbr\u003ePeriod: Contemporary\u003cbr\u003eBirth: 1951"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "antoine_berman", "label": "Antoine Berman", "shape": "square", "size": 23.333333333333332, "title": "Antoine Berman\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1942"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "leo_strauss", "label": "Leo Strauss", "shape": "dot", "size": 25.238095238095237, "title": "Leo Strauss\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1899"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paul_valery", "label": "Ambroise Val\u00e9ry", "shape": "dot", "size": 17.61904761904762, "title": "Ambroise Val\u00e9ry\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1871"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "michel_foucault", "label": "Michel Foucault", "shape": "dot", "size": 15.714285714285714, "title": "Michel Foucault\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1926"}, {"color": "#1abc9c", "font": {"color": "#eee"}, "id": "pascal_bonitzer", "label": "Pascal Bonitzer", "shape": "dot", "size": 17.61904761904762, "title": "Pascal Bonitzer\u003cbr\u003ePeriod: Contemporary\u003cbr\u003eBirth: 1946"}, {"color": "#16213e", "font": {"color": "#eee"}, "id": "aristoteles", "label": "Arist\u00f3teles", "shape": "dot", "size": 15.714285714285714, "title": "Arist\u00f3teles\u003cbr\u003ePeriod: Classical Antiquity\u003cbr\u003eBirth: -384"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "edouard_drumont", "label": "\u00c9douard Drumont", "shape": "dot", "size": 13.80952380952381, "title": "\u00c9douard Drumont\u003cbr\u003ePeriod: Revolutionary Era\u003cbr\u003eBirth: 1844"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 13.80952380952381, "title": "Luis Gusm\u00e1n\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1944"}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "roland_barthes", "label": "Roland Barthes", "shape": "dot", "size": 13.80952380952381, "title": "Roland Barthes\u003cbr\u003ePeriod: World Wars Era\u003cbr\u003eBirth: 1915"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joseph_conrad", "label": "Joseph Conrad", "shape": "dot", "size": 13.80952380952381, "title": "Joseph Conrad\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1857"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sergei_eisenstein", "label": "Sergei Eisenstein", "shape": "dot", "size": 13.80952380952381, "title": "Sergei Eisenstein\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1898"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "georges_bataille", "label": "Georges Bataille", "shape": "dot", "size": 15.714285714285714, "title": "Georges Bataille\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1897"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kafka", "label": "Franz Kafka", "shape": "dot", "size": 15.714285714285714, "title": "Franz Kafka\u003cbr\u003ePeriod: Long 19th Century\u003cbr\u003eBirth: 1883"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "leon_bloy", "to": "raissa_umansof", "value": 1}, {"arrows": "to", "from": "leon_bloy", "to": "jesus", "value": 54}, {"arrows": "to", "from": "leon_bloy", "to": "edouard_drumont", "value": 4}, {"arrows": "to", "from": "leon_bloy", "to": "shakespeare", "value": 1}, {"arrows": "to", "from": "leon_bloy", "to": "balzac", "value": 1}, {"arrows": "to", "from": "leon_bloy", "to": "pascal", "value": 1}, {"arrows": "to", "from": "leon_bloy", "to": "san_pablo_persona", "value": 1}, {"arrows": "to", "from": "leon_bloy", "to": "ernest_hello", "value": 1}, {"arrows": "to", "from": "emile_zola", "to": "balzac", "value": 1}, {"arrows": "to", "from": "emile_zola", "to": "gustave_flaubert", "value": 1}, {"arrows": "to", "from": "emile_zola", "to": "edgar_allan_poe", "value": 1}, {"arrows": "to", "from": "emile_zola", "to": "georges_bataille", "value": 1}, {"arrows": "to", "from": "witold_gombrowicz", "to": "luis_gusman", "value": 1}, {"arrows": "to", "from": "witold_gombrowicz", "to": "freud", "value": 1}, {"arrows": "to", "from": "witold_gombrowicz", "to": "virgilio_piniera", "value": 1}, {"arrows": "to", "from": "ana_barrenechea", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "ana_barrenechea", "to": "borges", "value": 3}, {"arrows": "to", "from": "ana_barrenechea", "to": "virgilio_piniera", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "samuel_beckett", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "leo_strauss", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "ernest_renan", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "leon_bloy", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "sylvia_molloy", "to": "ruben_dario", "value": 41}, {"arrows": "to", "from": "sylvia_molloy", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "sylvia_molloy", "to": "victor_hugo", "value": 2}, {"arrows": "to", "from": "sylvia_molloy", "to": "baudelaire", "value": 2}, {"arrows": "to", "from": "sylvia_molloy", "to": "da_vinci", "value": 1}, {"arrows": "to", "from": "sylvia_molloy", "to": "borges", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "to": "jorge_jinkis", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "to": "jonathan_swift", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "to": "adolf_hitler", "value": 1}, {"arrows": "to", "from": "mario_levin", "to": "luis_bunuel", "value": 2}, {"arrows": "to", "from": "mario_levin", "to": "alfred_hitchcock", "value": 1}, {"arrows": "to", "from": "mario_levin", "to": "orson_welles", "value": 1}, {"arrows": "to", "from": "mario_levin", "to": "sergei_eisenstein", "value": 2}, {"arrows": "to", "from": "mario_levin", "to": "lacan", "value": 2}, {"arrows": "to", "from": "mario_levin", "to": "pascal_bonitzer", "value": 1}, {"arrows": "to", "from": "luis_thonis", "to": "paul_valery", "value": 2}, {"arrows": "to", "from": "luis_thonis", "to": "freud", "value": 1}, {"arrows": "to", "from": "luis_thonis", "to": "borges", "value": 13}, {"arrows": "to", "from": "luis_thonis", "to": "samuel_beckett", "value": 1}, {"arrows": "to", "from": "luis_thonis", "to": "james_joyce", "value": 2}, {"arrows": "to", "from": "luis_thonis", "to": "kafka", "value": 2}, {"arrows": "to", "from": "luis_thonis", "to": "jonathan_swift", "value": 1}, {"arrows": "to", "from": "luis_thonis", "to": "georges_bataille", "value": 1}, {"arrows": "to", "from": "luis_thonis", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "orson_welles", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "joseph_conrad", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "james_joyce", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "shakespeare", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "borges", "value": 2}, {"arrows": "to", "from": "luis_chitarroni", "to": "virgilio_piniera", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "kafka", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "james_joyce", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "to": "samuel_beckett", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "borges", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "ezra_pound", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "platon", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jesus", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "da_vinci", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "lacan", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "tomas_moro", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "baudelaire", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "pascal", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "michel_foucault", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "edgar_allan_poe", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "todorov", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "georges_bataille", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "luis_bunuel", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "karl_marx", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "roland_barthes", "value": 2}, {"arrows": "to", "from": "enrique_pezzoni", "to": "borges", "value": 2}, {"arrows": "to", "from": "enrique_pezzoni", "to": "ana_barrenechea", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "todorov", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "sylvia_molloy", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "michel_foucault", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "edouard_drumont", "value": 66}, {"arrows": "to", "from": "ramon_alcalde", "to": "leon_bloy", "value": 63}, {"arrows": "to", "from": "ramon_alcalde", "to": "emile_zola", "value": 47}, {"arrows": "to", "from": "ramon_alcalde", "to": "adolf_hitler", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "jesus", "value": 8}, {"arrows": "to", "from": "ramon_alcalde", "to": "shakespeare", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "balzac", "value": 14}, {"arrows": "to", "from": "ramon_alcalde", "to": "gustave_flaubert", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "baudelaire", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "victor_hugo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "pascal", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "karl_marx", "value": 6}, {"arrows": "to", "from": "ramon_alcalde", "to": "kafka", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "raissa_umansof", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "ruben_dario", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "ernest_hello", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "san_pablo_persona", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "antoine_berman", "to": "joseph_conrad", "value": 1}, {"arrows": "to", "from": "antoine_berman", "to": "samuel_beckett", "value": 2}, {"arrows": "to", "from": "antoine_berman", "to": "schleiermacher", "value": 4}, {"arrows": "to", "from": "antoine_berman", "to": "baudelaire", "value": 1}, {"arrows": "to", "from": "antoine_berman", "to": "mallarme", "value": 1}, {"arrows": "to", "from": "antoine_berman", "to": "ezra_pound", "value": 1}, {"arrows": "to", "from": "antoine_berman", "to": "james_joyce", "value": 1}, {"arrows": "to", "from": "leo_strauss", "to": "borges", "value": 1}, {"arrows": "to", "from": "leo_strauss", "to": "aristoteles", "value": 4}, {"arrows": "to", "from": "leo_strauss", "to": "platon", "value": 4}, {"arrows": "to", "from": "leo_strauss", "to": "ernest_renan", "value": 1}, {"arrows": "to", "from": "leo_strauss", "to": "schleiermacher", "value": 1}, {"arrows": "to", "from": "leo_strauss", "to": "tomas_moro", "value": 1}, {"arrows": "to", "from": "pascal_bonitzer", "to": "michel_foucault", "value": 1}, {"arrows": "to", "from": "pascal_bonitzer", "to": "sergei_eisenstein", "value": 2}, {"arrows": "to", "from": "pascal_bonitzer", "to": "alfred_hitchcock", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "mallarme", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -3000,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

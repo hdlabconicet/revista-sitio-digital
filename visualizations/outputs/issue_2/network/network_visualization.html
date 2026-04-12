@@ -1,0 +1,758 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="ramon_alcalde">ramon_alcalde</option>
+                                
+                                    <option value="kant">kant</option>
+                                
+                                    <option value="hector_grisafi">hector_grisafi</option>
+                                
+                                    <option value="eduardo_gruner">eduardo_gruner</option>
+                                
+                                    <option value="luis_gusman">luis_gusman</option>
+                                
+                                    <option value="jorge_jinkis">jorge_jinkis</option>
+                                
+                                    <option value="hugo_savino">hugo_savino</option>
+                                
+                                    <option value="ronald_reagan">ronald_reagan</option>
+                                
+                                    <option value="paul_groussac">paul_groussac</option>
+                                
+                                    <option value="alfredo_palacios">alfredo_palacios</option>
+                                
+                                    <option value="juan_domingo_peron">juan_domingo_peron</option>
+                                
+                                    <option value="costa_mendez">costa_mendez</option>
+                                
+                                    <option value="benjamin_menendez">benjamin_menendez</option>
+                                
+                                    <option value="juan_pablo_ii">juan_pablo_ii</option>
+                                
+                                    <option value="bernardo_neustadt">bernardo_neustadt</option>
+                                
+                                    <option value="leonidas">leonidas</option>
+                                
+                                    <option value="osvaldo_rossler">osvaldo_rossler</option>
+                                
+                                    <option value="borges">borges</option>
+                                
+                                    <option value="martinez_estrada">martinez_estrada</option>
+                                
+                                    <option value="friedrich_nietzsche">friedrich_nietzsche</option>
+                                
+                                    <option value="julio_cortazar">julio_cortazar</option>
+                                
+                                    <option value="san_martin">san_martin</option>
+                                
+                                    <option value="napoleon">napoleon</option>
+                                
+                                    <option value="enrique_santos_discepolo">enrique_santos_discepolo</option>
+                                
+                                    <option value="joseph_conrad">joseph_conrad</option>
+                                
+                                    <option value="aristoteles">aristoteles</option>
+                                
+                                    <option value="nicomaco">nicomaco</option>
+                                
+                                    <option value="rafael_alberto_arrieta">rafael_alberto_arrieta</option>
+                                
+                                    <option value="pedro_abelardo">pedro_abelardo</option>
+                                
+                                    <option value="eloisa">eloisa</option>
+                                
+                                    <option value="ricardo_piglia">ricardo_piglia</option>
+                                
+                                    <option value="leopoldo_lugones">leopoldo_lugones</option>
+                                
+                                    <option value="roberto_arlt">roberto_arlt</option>
+                                
+                                    <option value="jose_salas_subirat">jose_salas_subirat</option>
+                                
+                                    <option value="james_joyce">james_joyce</option>
+                                
+                                    <option value="santiago_rueda">santiago_rueda</option>
+                                
+                                    <option value="max_dickman">max_dickman</option>
+                                
+                                    <option value="garcia_marquez">garcia_marquez</option>
+                                
+                                    <option value="carl_jung">carl_jung</option>
+                                
+                                    <option value="jesus">jesus</option>
+                                
+                                    <option value="dante_alighieri">dante_alighieri</option>
+                                
+                                    <option value="william_blake">william_blake</option>
+                                
+                                    <option value="edgar_allan_poe">edgar_allan_poe</option>
+                                
+                                    <option value="baudelaire">baudelaire</option>
+                                
+                                    <option value="rimbaud">rimbaud</option>
+                                
+                                    <option value="mallarme">mallarme</option>
+                                
+                                    <option value="marcel_proust">marcel_proust</option>
+                                
+                                    <option value="paul_valery">paul_valery</option>
+                                
+                                    <option value="rilke">rilke</option>
+                                
+                                    <option value="kafka">kafka</option>
+                                
+                                    <option value="oscar_wilde">oscar_wilde</option>
+                                
+                                    <option value="lautreamont">lautreamont</option>
+                                
+                                    <option value="heraclito">heraclito</option>
+                                
+                                    <option value="parmenides">parmenides</option>
+                                
+                                    <option value="freud">freud</option>
+                                
+                                    <option value="leonid_andreiev">leonid_andreiev</option>
+                                
+                                    <option value="homero">homero</option>
+                                
+                                    <option value="victoria_ocampo">victoria_ocampo</option>
+                                
+                                    <option value="tata_ocampo">tata_ocampo</option>
+                                
+                                    <option value="manuel_ocampo">manuel_ocampo</option>
+                                
+                                    <option value="jose_hernandez">jose_hernandez</option>
+                                
+                                    <option value="florentina_ituarte">florentina_ituarte</option>
+                                
+                                    <option value="stendhal">stendhal</option>
+                                
+                                    <option value="maurice_blanchot">maurice_blanchot</option>
+                                
+                                    <option value="sarmiento">sarmiento</option>
+                                
+                                    <option value="alberto_laiseca">alberto_laiseca</option>
+                                
+                                    <option value="manuel_puig">manuel_puig</option>
+                                
+                                    <option value="osvaldo_lamborghini">osvaldo_lamborghini</option>
+                                
+                                    <option value="mika_waltari">mika_waltari</option>
+                                
+                                    <option value="henry_rider_haggard">henry_rider_haggard</option>
+                                
+                                    <option value="louis_ferdinand_celine">louis_ferdinand_celine</option>
+                                
+                                    <option value="alicia_gutierrez_reto">alicia_gutierrez_reto</option>
+                                
+                                    <option value="noemi_ulla">noemi_ulla</option>
+                                
+                                    <option value="franz_schubert">franz_schubert</option>
+                                
+                                    <option value="delia_pasini">delia_pasini</option>
+                                
+                                    <option value="arturo_carrera">arturo_carrera</option>
+                                
+                                    <option value="beatriz_castillo">beatriz_castillo</option>
+                                
+                                    <option value="eduardo_mallea">eduardo_mallea</option>
+                                
+                                    <option value="jorge_cruz">jorge_cruz</option>
+                                
+                                    <option value="liliana_heer">liliana_heer</option>
+                                
+                                    <option value="sylvia_molloy">sylvia_molloy</option>
+                                
+                                    <option value="luis_chitarroni">luis_chitarroni</option>
+                                
+                                    <option value="alejandra_pizarnik">alejandra_pizarnik</option>
+                                
+                                    <option value="andre_pieyre">andre_pieyre</option>
+                                
+                                    <option value="john_donne">john_donne</option>
+                                
+                                    <option value="octavio_paz">octavio_paz</option>
+                                
+                                    <option value="giordano_bruno">giordano_bruno</option>
+                                
+                                    <option value="fred_hoyle">fred_hoyle</option>
+                                
+                                    <option value="roland_barthes">roland_barthes</option>
+                                
+                                    <option value="yeats">yeats</option>
+                                
+                                    <option value="safo">safo</option>
+                                
+                                    <option value="sylvia_plath">sylvia_plath</option>
+                                
+                                    <option value="silvina_ocampo">silvina_ocampo</option>
+                                
+                                    <option value="olga_orozco">olga_orozco</option>
+                                
+                                    <option value="haroldo_campos">haroldo_campos</option>
+                                
+                                    <option value="goethe">goethe</option>
+                                
+                                    <option value="leonora_carrington">leonora_carrington</option>
+                                
+                                    <option value="pascal">pascal</option>
+                                
+                                    <option value="alfonso_xiii">alfonso_xiii</option>
+                                
+                                    <option value="francisco_franco">francisco_franco</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 34.61538461538461, "title": "\n        \u003cb\u003eRam\u00f3n Alcalde\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1951\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 24\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "kant", "label": "Immanuel Kant", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eImmanuel Kant\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1724\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "hector_grisafi", "label": "H\u00e9ctor Grisafi", "shape": "square", "size": 34.61538461538461, "title": "\n        \u003cb\u003eH\u00e9ctor Grisafi\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 24\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 34.61538461538461, "title": "\n        \u003cb\u003eEduardo Gr\u00fcner\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1946\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 24\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 50.0, "title": "\n        \u003cb\u003eLuis Gusm\u00e1n\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1944\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 39\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 38.717948717948715, "title": "\n        \u003cb\u003eJorge Jinkis\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1943\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 27\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "hugo_savino", "label": "Hugo Savino", "shape": "square", "size": 34.61538461538461, "title": "\n        \u003cb\u003eHugo Savino\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1945\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 24\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "ronald_reagan", "label": "Ronald Reagan", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eRonald Reagan\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1911\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "paul_groussac", "label": "Paul Groussac", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003ePaul Groussac\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1848\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "alfredo_palacios", "label": "Alfredo Palacios", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eAlfredo Palacios\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1878\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "juan_domingo_peron", "label": "Juan Domingo Per\u00f3n", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eJuan Domingo Per\u00f3n\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1895\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "costa_mendez", "label": "Nicanor Costa M\u00e9ndez", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eNicanor Costa M\u00e9ndez\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1922\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "benjamin_menendez", "label": "Mario Benjam\u00edn Men\u00e9ndez", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eMario Benjam\u00edn Men\u00e9ndez\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1930\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "juan_pablo_ii", "label": "Juan Pablo II Wojty\u0142a", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eJuan Pablo II Wojty\u0142a\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1920\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "bernardo_neustadt", "label": "Bernardo Neustadt", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eBernardo Neustadt\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1925\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "leonidas", "label": "Le\u00f3nidas I", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eLe\u00f3nidas I\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -540\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "osvaldo_rossler", "label": "Osvaldo Rossler", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eOsvaldo Rossler\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "borges", "label": "Jorge Borges", "shape": "dot", "size": 17.17948717948718, "title": "\n        \u003cb\u003eJorge Borges\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1899\u003cbr\u003e\n        Cited by: 7\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "martinez_estrada", "label": "Ezequiel Mart\u00ednez Estrada", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eEzequiel Mart\u00ednez Estrada\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1895\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#1abc9c", "font": {"color": "#eee"}, "id": "friedrich_nietzsche", "label": "Friedrich Nietzsche", "shape": "dot", "size": 17.17948717948718, "title": "\n        \u003cb\u003eFriedrich Nietzsche\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1844\u003cbr\u003e\n        Cited by: 7\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 5\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "julio_cortazar", "label": "Julio Cort\u00e1zar", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eJulio Cort\u00e1zar\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1914\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "san_martin", "label": "Jos\u00e9 de San Mart\u00edn", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eJos\u00e9 de San Mart\u00edn\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1778\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "napoleon", "label": "Napol\u00e9on Bonaparte", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eNapol\u00e9on Bonaparte\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1769\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "enrique_santos_discepolo", "label": "Enrique Santos Disc\u00e9polo", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eEnrique Santos Disc\u00e9polo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1901\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "joseph_conrad", "label": "Joseph Conrad", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eJoseph Conrad\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1857\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "aristoteles", "label": "Arist\u00f3teles", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eArist\u00f3teles\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -384\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "nicomaco", "label": "Nic\u00f3maco", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eNic\u00f3maco\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -384\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "rafael_alberto_arrieta", "label": "Rafael Alberto Arrieta", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eRafael Alberto Arrieta\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1889\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "pedro_abelardo", "label": "Pedro Abelardo", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003ePedro Abelardo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1079\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "eloisa", "label": "Elo\u00edsa", "shape": "dot", "size": 16.153846153846153, "title": "\n        \u003cb\u003eElo\u00edsa\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1101\u003cbr\u003e\n        Cited by: 6\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "ricardo_piglia", "label": "Ricardo Piglia", "shape": "dot", "size": 12.051282051282051, "title": "\n        \u003cb\u003eRicardo Piglia\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1940\u003cbr\u003e\n        Cited by: 2\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "leopoldo_lugones", "label": "Leopoldo Lugones", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eLeopoldo Lugones\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1874\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e74c3c", "font": {"color": "#eee"}, "id": "roberto_arlt", "label": "Roberto Arlt", "shape": "dot", "size": 12.051282051282051, "title": "\n        \u003cb\u003eRoberto Arlt\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1900\u003cbr\u003e\n        Cited by: 2\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 0\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "jose_salas_subirat", "label": "Jos\u00e9 Salas Subirat", "shape": "square", "size": 35.64102564102564, "title": "\n        \u003cb\u003eJos\u00e9 Salas Subirat\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1890\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 25\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "james_joyce", "label": "James Joyce", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eJames Joyce\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1882\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "santiago_rueda", "label": "Santiago Rueda", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSantiago Rueda\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1905\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "max_dickman", "label": "Max Dickmann", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eMax Dickmann\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1902\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "garcia_marquez", "label": "Gabriel Garc\u00eda M\u00e1rquez", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eGabriel Garc\u00eda M\u00e1rquez\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1927\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "carl_jung", "label": "Carl Gustav Jung", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eCarl Gustav Jung\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1875\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "jesus", "label": "de Nazaret Jes\u00fas", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003ede Nazaret Jes\u00fas\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -4\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "dante_alighieri", "label": "Dante Alighieri", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eDante Alighieri\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1265\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "william_blake", "label": "William Blake", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eWilliam Blake\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1757\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "edgar_allan_poe", "label": "Edgar Poe", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eEdgar Poe\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1809\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "baudelaire", "label": "Charles Baudelaire", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eCharles Baudelaire\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1821\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "rimbaud", "label": "Arthur Rimbaud", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eArthur Rimbaud\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1854\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "mallarme", "label": "St\u00e9phane Mallarm\u00e9", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSt\u00e9phane Mallarm\u00e9\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1842\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#9b59b6", "font": {"color": "#eee"}, "id": "marcel_proust", "label": "Marcel Proust", "shape": "dot", "size": 12.051282051282051, "title": "\n        \u003cb\u003eMarcel Proust\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1871\u003cbr\u003e\n        Cited by: 2\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 4\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "paul_valery", "label": "Ambroise Val\u00e9ry", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eAmbroise Val\u00e9ry\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1871\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "rilke", "label": "Rainer Rilke", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eRainer Rilke\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1875\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "kafka", "label": "Franz Kafka", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eFranz Kafka\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1883\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "oscar_wilde", "label": "Oscar Wilde", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eOscar Wilde\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1854\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "lautreamont", "label": "Comte Lautr\u00e9amont", "shape": "dot", "size": 12.051282051282051, "title": "\n        \u003cb\u003eComte Lautr\u00e9amont\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1846\u003cbr\u003e\n        Cited by: 2\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "heraclito", "label": "Her\u00e1clito", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eHer\u00e1clito\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -535\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "parmenides", "label": "de Elea Parm\u00e9nides", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003ede Elea Parm\u00e9nides\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -515\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "freud", "label": "Sigmund Freud", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSigmund Freud\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1856\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "leonid_andreiev", "label": "Leonid Andr\u00e9iev", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eLeonid Andr\u00e9iev\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1871\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#2ecc71", "font": {"color": "#eee"}, "id": "homero", "label": "Homero", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eHomero\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -750\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 2\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "victoria_ocampo", "label": "Victoria Ocampo", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eVictoria Ocampo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1890\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "tata_ocampo", "label": "Tata Ocampo", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eTata Ocampo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "manuel_ocampo", "label": "Manuel S. Ocampo", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eManuel S. Ocampo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "jose_hernandez", "label": "Jos\u00e9 Hern\u00e1ndez", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eJos\u00e9 Hern\u00e1ndez\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1834\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "florentina_ituarte", "label": "Florentina Ituarte", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eFlorentina Ituarte\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "stendhal", "label": "Stendhal", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eStendhal\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1783\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "maurice_blanchot", "label": "Maurice Blanchot", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eMaurice Blanchot\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1907\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "sarmiento", "label": "Domingo Faustino Sarmiento", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eDomingo Faustino Sarmiento\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1811\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "alberto_laiseca", "label": "Alberto Laiseca", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eAlberto Laiseca\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1941\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "manuel_puig", "label": "Manuel Puig", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eManuel Puig\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1932\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "osvaldo_lamborghini", "label": "Osvaldo Lamborghini", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eOsvaldo Lamborghini\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1940\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "mika_waltari", "label": "Mika Waltari", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eMika Waltari\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1908\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "henry_rider_haggard", "label": "Henry Rider Haggard", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eHenry Rider Haggard\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1856\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#3498db", "font": {"color": "#eee"}, "id": "louis_ferdinand_celine", "label": "Louis-Ferdinand C\u00e9line", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eLouis-Ferdinand C\u00e9line\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1894\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 1\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#f39c12", "font": {"color": "#eee"}, "id": "alicia_gutierrez_reto", "label": "Alicia Guti\u00e9rrez Reto", "shape": "square", "size": 12.051282051282051, "title": "\n        \u003cb\u003eAlicia Guti\u00e9rrez Reto\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 2\u003cbr\u003e\n        Community: 3\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#f39c12", "font": {"color": "#eee"}, "id": "noemi_ulla", "label": "Noem\u00ed Ulla", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eNoem\u00ed Ulla\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1941\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 3\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#f39c12", "font": {"color": "#eee"}, "id": "franz_schubert", "label": "Franz Schubert", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eFranz Schubert\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1797\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 3\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "delia_pasini", "label": "Delia Pasini", "shape": "square", "size": 12.051282051282051, "title": "\n        \u003cb\u003eDelia Pasini\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 1\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "arturo_carrera", "label": "Arturo Carrera", "shape": "dot", "size": 12.051282051282051, "title": "\n        \u003cb\u003eArturo Carrera\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1948\u003cbr\u003e\n        Cited by: 2\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#9b59b6", "font": {"color": "#eee"}, "id": "beatriz_castillo", "label": "Beatriz Castillo", "shape": "square", "size": 14.102564102564102, "title": "\n        \u003cb\u003eBeatriz Castillo\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1928\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 4\u003cbr\u003e\n        Community: 4\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#9b59b6", "font": {"color": "#eee"}, "id": "eduardo_mallea", "label": "Eduardo Mallea", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eEduardo Mallea\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1903\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 4\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#9b59b6", "font": {"color": "#eee"}, "id": "jorge_cruz", "label": "Jorge Cruz", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eJorge Cruz\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: None\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 4\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#1abc9c", "font": {"color": "#eee"}, "id": "liliana_heer", "label": "Liliana Heer", "shape": "square", "size": 12.051282051282051, "title": "\n        \u003cb\u003eLiliana Heer\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1943\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 2\u003cbr\u003e\n        Community: 5\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#1abc9c", "font": {"color": "#eee"}, "id": "sylvia_molloy", "label": "Sylvia Molloy", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSylvia Molloy\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1938\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 5\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 25.384615384615387, "title": "\n        \u003cb\u003eLuis Chitarroni\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1958\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 15\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "alejandra_pizarnik", "label": "Alejandra Pizarnik", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eAlejandra Pizarnik\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1936\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "andre_pieyre", "label": "Andr\u00e9 Pieyre de Mandiargues", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eAndr\u00e9 Pieyre de Mandiargues\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1909\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "john_donne", "label": "John Donne", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eJohn Donne\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1572\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "octavio_paz", "label": "Octavio Paz", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eOctavio Paz\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1914\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "giordano_bruno", "label": "Giordano Bruno", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eGiordano Bruno\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1548\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "fred_hoyle", "label": "Fred Hoyle", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eFred Hoyle\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1915\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "roland_barthes", "label": "Roland Barthes", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eRoland Barthes\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1915\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "yeats", "label": "William Butler Yeats", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eWilliam Butler Yeats\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1865\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "safo", "label": "Safo", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSafo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: -630\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "sylvia_plath", "label": "Sylvia Plath", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSylvia Plath\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1932\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "silvina_ocampo", "label": "Silvina Ocampo", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eSilvina Ocampo\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1903\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#e91e63", "font": {"color": "#eee"}, "id": "olga_orozco", "label": "Olga Orozco", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eOlga Orozco\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1920\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 6\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#00bcd4", "font": {"color": "#eee"}, "id": "haroldo_campos", "label": "Haroldo de Campos", "shape": "square", "size": 11.025641025641026, "title": "\n        \u003cb\u003eHaroldo de Campos\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1929\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 1\u003cbr\u003e\n        Community: 7\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#00bcd4", "font": {"color": "#eee"}, "id": "goethe", "label": "Johann Goethe", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eJohann Goethe\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1749\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 7\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#ff9800", "font": {"color": "#eee"}, "id": "leonora_carrington", "label": "Leonora Carrington", "shape": "square", "size": 13.076923076923077, "title": "\n        \u003cb\u003eLeonora Carrington\u003c/b\u003e\u003cbr\u003e\n        Type: author\u003cbr\u003e\n        Birth: 1917\u003cbr\u003e\n        Cited by: 0\u003cbr\u003e\n        Cites: 3\u003cbr\u003e\n        Community: 8\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#ff9800", "font": {"color": "#eee"}, "id": "pascal", "label": "Blaise Pascal", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eBlaise Pascal\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1623\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 8\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#ff9800", "font": {"color": "#eee"}, "id": "alfonso_xiii", "label": "Alfonso XIII de Borb\u00f3n", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eAlfonso XIII de Borb\u00f3n\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1886\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 8\n        "}, {"borderWidth": 2, "borderWidthSelected": 4, "color": "#ff9800", "font": {"color": "#eee"}, "id": "francisco_franco", "label": "Francisco Franco", "shape": "dot", "size": 11.025641025641026, "title": "\n        \u003cb\u003eFrancisco Franco\u003c/b\u003e\u003cbr\u003e\n        Type: cited\u003cbr\u003e\n        Birth: 1892\u003cbr\u003e\n        Cited by: 1\u003cbr\u003e\n        Cites: 0\u003cbr\u003e\n        Community: 8\n        "}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 5", "to": "borges", "value": 5}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 5", "to": "borges", "value": 5}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "hector_grisafi", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 5", "to": "borges", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 5", "to": "borges", "value": 5}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 2", "to": "victoria_ocampo", "value": 2}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 8", "to": "tata_ocampo", "value": 8}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "manuel_ocampo", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "jose_hernandez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "florentina_ituarte", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "stendhal", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "maurice_blanchot", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 2", "to": "sarmiento", "value": 2}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 4", "to": "alberto_laiseca", "value": 4}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "manuel_puig", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "osvaldo_lamborghini", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "ricardo_piglia", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "mika_waltari", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 1", "to": "henry_rider_haggard", "value": 1}, {"arrows": "to", "from": "luis_gusman", "title": "Citations: 2", "to": "louis_ferdinand_celine", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 10", "to": "borges", "value": 10}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 5", "to": "ricardo_piglia", "value": 5}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 1", "to": "leopoldo_lugones", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "title": "Citations: 2", "to": "roberto_arlt", "value": 2}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "kant", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "ronald_reagan", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "paul_groussac", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "costa_mendez", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "benjamin_menendez", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "juan_pablo_ii", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 2", "to": "bernardo_neustadt", "value": 2}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "leonidas", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 9", "to": "osvaldo_rossler", "value": 9}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 5", "to": "borges", "value": 5}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "julio_cortazar", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "san_martin", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "napoleon", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 2", "to": "enrique_santos_discepolo", "value": 2}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 5", "to": "joseph_conrad", "value": 5}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "aristoteles", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "nicomaco", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "rafael_alberto_arrieta", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "pedro_abelardo", "value": 1}, {"arrows": "to", "from": "hugo_savino", "title": "Citations: 1", "to": "eloisa", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 15", "to": "james_joyce", "value": 15}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "jorge_jinkis", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "borges", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "santiago_rueda", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "max_dickman", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "garcia_marquez", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 7", "to": "carl_jung", "value": 7}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "jesus", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "dante_alighieri", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "william_blake", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 2", "to": "edgar_allan_poe", "value": 2}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 2", "to": "baudelaire", "value": 2}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "rimbaud", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "mallarme", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "marcel_proust", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "rilke", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "kafka", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 3", "to": "oscar_wilde", "value": 3}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "lautreamont", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "heraclito", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "parmenides", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "freud", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 1", "to": "leonid_andreiev", "value": 1}, {"arrows": "to", "from": "jose_salas_subirat", "title": "Citations: 2", "to": "homero", "value": 2}, {"arrows": "to", "from": "alicia_gutierrez_reto", "title": "Citations: 1", "to": "noemi_ulla", "value": 1}, {"arrows": "to", "from": "alicia_gutierrez_reto", "title": "Citations: 2", "to": "franz_schubert", "value": 2}, {"arrows": "to", "from": "delia_pasini", "title": "Citations: 1", "to": "arturo_carrera", "value": 1}, {"arrows": "to", "from": "beatriz_castillo", "title": "Citations: 6", "to": "eduardo_mallea", "value": 6}, {"arrows": "to", "from": "beatriz_castillo", "title": "Citations: 1", "to": "roberto_arlt", "value": 1}, {"arrows": "to", "from": "beatriz_castillo", "title": "Citations: 1", "to": "marcel_proust", "value": 1}, {"arrows": "to", "from": "beatriz_castillo", "title": "Citations: 1", "to": "jorge_cruz", "value": 1}, {"arrows": "to", "from": "liliana_heer", "title": "Citations: 1", "to": "sylvia_molloy", "value": 1}, {"arrows": "to", "from": "liliana_heer", "title": "Citations: 1", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 7", "to": "alejandra_pizarnik", "value": 7}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "andre_pieyre", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "lautreamont", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "john_donne", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "octavio_paz", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "giordano_bruno", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "fred_hoyle", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 2", "to": "arturo_carrera", "value": 2}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "yeats", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "safo", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "sylvia_plath", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "silvina_ocampo", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "olga_orozco", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "title": "Citations: 1", "to": "delia_pasini", "value": 1}, {"arrows": "to", "from": "haroldo_campos", "title": "Citations: 1", "to": "goethe", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "title": "Citations: 1", "to": "pascal", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "title": "Citations: 1", "to": "alfonso_xiii", "value": 1}, {"arrows": "to", "from": "leonora_carrington", "title": "Citations: 1", "to": "francisco_franco", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -3000,
+            "springConstant": 0.05,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

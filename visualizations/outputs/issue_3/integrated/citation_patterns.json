@@ -1,0 +1,479 @@
+{
+  "overall": {
+    "citations_by_country": {
+      "Argentina": 437,
+      "France": 132,
+      "Austria": 42,
+      "Germany": 31,
+      "United Kingdom": 26,
+      "Switzerland": 21,
+      "United States": 20,
+      "Ireland": 14,
+      "Uruguay": 14,
+      "Greece": 13,
+      "Italy": 12,
+      "Spain": 11,
+      "Cartago, Túnez": 9,
+      "Belgium": 8,
+      "Czech Republic": 6,
+      "Cuba": 6,
+      "Imperio Austríaco": 5,
+      "Melbourne, Australia": 5,
+      "Libia": 5,
+      "Swansea, Gales": 4
+    },
+    "citations_by_region": {
+      "Latin America": 465,
+      "Western Europe": 299,
+      "North America": 20,
+      "Other/Unknown": 73,
+      "Eastern Europe": 13,
+      "Southern Europe / Classical": 13,
+      "Scandinavia": 2
+    },
+    "citations_by_period": {
+      "World Wars Era": 296,
+      "Renaissance": 10,
+      "Long 19th Century": 247,
+      "Revolutionary Era": 176,
+      "Early Modern": 44,
+      "Classical Antiquity": 10,
+      "Contemporary": 62,
+      "Unknown": 13,
+      "Antiquity (Archaic)": 4,
+      "Hellenistic/Roman": 19,
+      "Medieval": 4
+    }
+  },
+  "author_profiles": {
+    "luis_chitarroni": {
+      "name": "Luis Chitarroni",
+      "total_citations": 74,
+      "unique_citations": 31,
+      "countries_cited": {
+        "Argentina": 42,
+        "United States": 6,
+        "France": 6,
+        "United Kingdom": 5,
+        "Italy": 4,
+        "Swansea, Gales": 4,
+        "Ireland": 2,
+        "Germany": 1,
+        "Maesteg, Gales": 1,
+        "Antananarivo, Madagascar": 1
+      },
+      "regions_cited": {
+        "Latin America": 43,
+        "Western Europe": 19,
+        "North America": 6,
+        "Other/Unknown": 6
+      },
+      "periods_cited": {
+        "World Wars Era": 48,
+        "Renaissance": 1,
+        "Long 19th Century": 17,
+        "Revolutionary Era": 4,
+        "Early Modern": 4
+      }
+    },
+    "luis_gusman": {
+      "name": "Luis Gusmán",
+      "total_citations": 144,
+      "unique_citations": 44,
+      "countries_cited": {
+        "Argentina": 61,
+        "France": 42,
+        "Switzerland": 12,
+        "Melbourne, Australia": 5,
+        "Czech Republic": 4,
+        "Uruguay": 4,
+        "Greece": 2,
+        "United Kingdom": 2,
+        "Chile": 2,
+        "Austria": 1
+      },
+      "regions_cited": {
+        "Western Europe": 60,
+        "Eastern Europe": 5,
+        "Latin America": 67,
+        "Other/Unknown": 10,
+        "Southern Europe / Classical": 2
+      },
+      "periods_cited": {
+        "Long 19th Century": 24,
+        "Revolutionary Era": 74,
+        "Early Modern": 6,
+        "World Wars Era": 33,
+        "Classical Antiquity": 1,
+        "Unknown": 3,
+        "Hellenistic/Roman": 1,
+        "Antiquity (Archaic)": 1,
+        "Renaissance": 1
+      }
+    },
+    "jorge_jinkis": {
+      "name": "Jorge Jinkis",
+      "total_citations": 125,
+      "unique_citations": 38,
+      "countries_cited": {
+        "Argentina": 95,
+        "Uruguay": 6,
+        "Imperio Austríaco": 5,
+        "France": 4,
+        "Germany": 3,
+        "Buenos Aires": 3,
+        "Spain": 3,
+        "Switzerland": 2,
+        "Poland": 1,
+        "Greece": 1
+      },
+      "regions_cited": {
+        "Other/Unknown": 8,
+        "Eastern Europe": 1,
+        "Western Europe": 13,
+        "Southern Europe / Classical": 1,
+        "Latin America": 102
+      },
+      "periods_cited": {
+        "Long 19th Century": 27,
+        "Early Modern": 2,
+        "Classical Antiquity": 1,
+        "World Wars Era": 68,
+        "Renaissance": 3,
+        "Contemporary": 24
+      }
+    },
+    "nestor_perlongher": {
+      "name": "Néstor Perlongher",
+      "total_citations": 11,
+      "unique_citations": 9,
+      "countries_cited": {
+        "Argentina": 7,
+        "Switzerland": 2,
+        "Uruguay": 1
+      },
+      "regions_cited": {
+        "Latin America": 8,
+        "Other/Unknown": 1,
+        "Western Europe": 2
+      },
+      "periods_cited": {
+        "Contemporary": 3,
+        "Unknown": 2,
+        "World Wars Era": 3,
+        "Long 19th Century": 3
+      }
+    },
+    "ramon_alcalde": {
+      "name": "Ramón Alcalde",
+      "total_citations": 76,
+      "unique_citations": 42,
+      "countries_cited": {
+        "Argentina": 49,
+        "France": 5,
+        "Greece": 4,
+        "Switzerland": 3,
+        "Germany": 3,
+        "United Kingdom": 3,
+        "Italy": 2,
+        "Spain": 2,
+        "United States": 2,
+        "Chile": 1
+      },
+      "regions_cited": {
+        "Latin America": 50,
+        "Western Europe": 18,
+        "Southern Europe / Classical": 4,
+        "North America": 2,
+        "Other/Unknown": 2
+      },
+      "periods_cited": {
+        "Contemporary": 29,
+        "Long 19th Century": 17,
+        "World Wars Era": 13,
+        "Antiquity (Archaic)": 2,
+        "Hellenistic/Roman": 1,
+        "Medieval": 1,
+        "Early Modern": 3,
+        "Revolutionary Era": 6,
+        "Classical Antiquity": 2,
+        "Unknown": 1,
+        "Renaissance": 1
+      }
+    },
+    "eduardo_gruner": {
+      "name": "Eduardo Grüner",
+      "total_citations": 195,
+      "unique_citations": 89,
+      "countries_cited": {
+        "Argentina": 105,
+        "France": 21,
+        "Germany": 17,
+        "United Kingdom": 7,
+        "Belgium": 5,
+        "Spain": 4,
+        "Ireland": 3,
+        "San Petesburgo, Imperio Ruso": 3,
+        "Poland": 3,
+        "Cuba": 3
+      },
+      "regions_cited": {
+        "Latin America": 110,
+        "Western Europe": 61,
+        "Scandinavia": 2,
+        "Other/Unknown": 15,
+        "Eastern Europe": 4,
+        "North America": 2,
+        "Southern Europe / Classical": 1
+      },
+      "periods_cited": {
+        "Long 19th Century": 67,
+        "Early Modern": 26,
+        "Revolutionary Era": 46,
+        "World Wars Era": 45,
+        "Contemporary": 5,
+        "Renaissance": 2,
+        "Unknown": 2,
+        "Hellenistic/Roman": 2
+      }
+    },
+    "norma_gentili": {
+      "name": "norma_gentili",
+      "total_citations": 6,
+      "unique_citations": 3,
+      "countries_cited": {
+        "Argentina": 5,
+        "Austria": 1
+      },
+      "regions_cited": {
+        "Latin America": 5,
+        "Western Europe": 1
+      },
+      "periods_cited": {
+        "World Wars Era": 2,
+        "Long 19th Century": 3,
+        "Revolutionary Era": 1
+      }
+    },
+    "liliana_heer": {
+      "name": "Liliana Heer",
+      "total_citations": 7,
+      "unique_citations": 5,
+      "countries_cited": {
+        "Brazil": 3,
+        "Imperio Romano": 1,
+        "United States": 1,
+        "Austria": 1,
+        "Italy": 1
+      },
+      "regions_cited": {
+        "Latin America": 3,
+        "Other/Unknown": 1,
+        "North America": 1,
+        "Western Europe": 2
+      },
+      "periods_cited": {
+        "World Wars Era": 3,
+        "Hellenistic/Roman": 1,
+        "Revolutionary Era": 1,
+        "Early Modern": 2
+      }
+    },
+    "jorge_monteleone": {
+      "name": "Jorge Monteleone",
+      "total_citations": 93,
+      "unique_citations": 33,
+      "countries_cited": {
+        "Argentina": 59,
+        "France": 9,
+        "Ireland": 8,
+        "Imperio Ruso": 3,
+        "Moscú, Imperio Ruso": 3,
+        "United States": 2,
+        "Russia": 2,
+        "Rezekne, Letonia": 1,
+        "Czech Republic": 1,
+        "United Kingdom": 1
+      },
+      "regions_cited": {
+        "Latin America": 60,
+        "Other/Unknown": 8,
+        "Eastern Europe": 3,
+        "Western Europe": 20,
+        "North America": 2
+      },
+      "periods_cited": {
+        "World Wars Era": 44,
+        "Long 19th Century": 36,
+        "Medieval": 2,
+        "Revolutionary Era": 11
+      }
+    },
+    "hugo_savino": {
+      "name": "Hugo Savino",
+      "total_citations": 36,
+      "unique_citations": 20,
+      "countries_cited": {
+        "Argentina": 14,
+        "United States": 6,
+        "France": 5,
+        "United Kingdom": 4,
+        "Cuba": 2,
+        "Germany": 2,
+        "Uruguay": 1,
+        "Spain": 1,
+        "Belgium": 1
+      },
+      "regions_cited": {
+        "Latin America": 17,
+        "Western Europe": 13,
+        "North America": 6
+      },
+      "periods_cited": {
+        "World Wars Era": 26,
+        "Revolutionary Era": 1,
+        "Long 19th Century": 9
+      }
+    },
+    "beatriz_castillo": {
+      "name": "Beatriz Castillo",
+      "total_citations": 16,
+      "unique_citations": 9,
+      "countries_cited": {
+        "France": 10,
+        "Germany": 1,
+        "Belgium": 1,
+        "Netherlands": 1,
+        "Pikov, Ucrania": 1,
+        "Imperio Romano": 1,
+        "United States": 1
+      },
+      "regions_cited": {
+        "Western Europe": 13,
+        "Other/Unknown": 2,
+        "North America": 1
+      },
+      "periods_cited": {
+        "World Wars Era": 9,
+        "Renaissance": 2,
+        "Medieval": 1,
+        "Early Modern": 1,
+        "Revolutionary Era": 1,
+        "Hellenistic/Roman": 1,
+        "Contemporary": 1
+      }
+    },
+    "mercedes_roffe": {
+      "name": "Mercedes Roffé",
+      "total_citations": 56,
+      "unique_citations": 18,
+      "countries_cited": {
+        "France": 30,
+        "Cartago, Túnez": 9,
+        "Libia": 5,
+        "United Kingdom": 4,
+        "Greece": 2,
+        "Halicarnaso, Turquía": 1,
+        "Italy": 1,
+        "Amasya, Reino del Ponto": 1,
+        "Hipona, Imperio Romano": 1,
+        "Timișoara, Rumania": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 2,
+        "Western Europe": 36,
+        "Other/Unknown": 18
+      },
+      "periods_cited": {
+        "Classical Antiquity": 3,
+        "Long 19th Century": 5,
+        "Revolutionary Era": 29,
+        "Hellenistic/Roman": 12,
+        "Unknown": 5,
+        "World Wars Era": 2
+      }
+    },
+    "martin_heidegger": {
+      "name": "Martin Heidegger",
+      "total_citations": 46,
+      "unique_citations": 7,
+      "countries_cited": {
+        "Austria": 38,
+        "Greece": 3,
+        "Germany": 3,
+        "Imperio Medo": 1,
+        "Imperio Romano": 1
+      },
+      "regions_cited": {
+        "Western Europe": 41,
+        "Southern Europe / Classical": 3,
+        "Other/Unknown": 2
+      },
+      "periods_cited": {
+        "Long 19th Century": 39,
+        "Classical Antiquity": 3,
+        "Revolutionary Era": 2,
+        "Antiquity (Archaic)": 1,
+        "Hellenistic/Roman": 1
+      }
+    }
+  },
+  "cross_border": {
+    "Argentina": {
+      "Argentina": 432,
+      "United Kingdom": 26,
+      "United States": 20,
+      "Germany": 28,
+      "Italy": 12,
+      "France": 132,
+      "Swansea, Gales": 4,
+      "Maesteg, Gales": 1,
+      "Antananarivo, Madagascar": 1,
+      "Ireland": 14,
+      "Austria": 3,
+      "Mexico": 2,
+      "Switzerland": 21,
+      "Czech Republic": 6,
+      "Russia": 3,
+      "Moscú, Imperio Ruso": 4,
+      "Imperio Austríaco": 5,
+      "Poland": 4,
+      "Greece": 10,
+      "Buenos Aires": 4,
+      "Uruguay": 14,
+      "Spain": 11,
+      "Cuba": 6,
+      "Belgium": 8,
+      "Chile": 3,
+      "Melbourne, Australia": 5,
+      "Roma": 1,
+      "Netherlands": 2,
+      "Denmark": 2,
+      "Imperio Ruso": 4,
+      "Imperio Austrohúngaro": 1,
+      "San Petesburgo, Imperio Ruso": 3,
+      "Ruse, Bulgaria": 1,
+      "Virreinato del Río de la Plata": 3,
+      "Oriol, Imperio Ruso": 2,
+      "Imperio Romano": 3,
+      "Nicaragua": 1,
+      "Brazil": 3,
+      "Rezekne, Letonia": 1,
+      "Highland Park, EE.UU.": 1,
+      "Pikov, Ucrania": 1,
+      "Cartago, Túnez": 9,
+      "Halicarnaso, Turquía": 1,
+      "Amasya, Reino del Ponto": 1,
+      "Hipona, Imperio Romano": 1,
+      "Libia": 5,
+      "Timișoara, Rumania": 1
+    },
+    "Germany": {
+      "Austria": 38,
+      "Greece": 3,
+      "Germany": 3,
+      "Imperio Medo": 1,
+      "Imperio Romano": 1
+    }
+  }
+}

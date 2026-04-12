@@ -1,0 +1,431 @@
+{
+  "overall": {
+    "citations_by_country": {
+      "Argentina": 340,
+      "France": 196,
+      "Germany": 56,
+      "Italy": 34,
+      "United Kingdom": 25,
+      "United States": 23,
+      "Uruguay": 16,
+      "Ireland": 15,
+      "Netherlands": 12,
+      "Peru": 10,
+      "Nicaragua": 10,
+      "Cuba": 9,
+      "Oriol, Imperio Ruso": 9,
+      "Spain": 8,
+      "Czech Republic": 8,
+      "Edimburgo, Escocia": 6,
+      "Belgium": 5,
+      "Moscú, Imperio Ruso": 5,
+      "Virreinato del Río de la Plata": 4,
+      "Imperio Romano": 4
+    },
+    "citations_by_region": {
+      "Latin America": 379,
+      "Western Europe": 357,
+      "Other/Unknown": 77,
+      "North America": 23,
+      "Eastern Europe": 16,
+      "Southern Europe / Classical": 3,
+      "Scandinavia": 3,
+      "Asia": 1
+    },
+    "citations_by_period": {
+      "World Wars Era": 177,
+      "Long 19th Century": 444,
+      "Revolutionary Era": 150,
+      "Hellenistic/Roman": 6,
+      "Early Modern": 49,
+      "Unknown": 2,
+      "Antiquity (Archaic)": 2,
+      "Medieval": 5,
+      "Renaissance": 19,
+      "Classical Antiquity": 4,
+      "Contemporary": 1
+    }
+  },
+  "author_profiles": {
+    "ramon_alcalde": {
+      "name": "Ramón Alcalde",
+      "total_citations": 117,
+      "unique_citations": 72,
+      "countries_cited": {
+        "Argentina": 73,
+        "France": 15,
+        "Germany": 7,
+        "Netherlands": 3,
+        "Italy": 2,
+        "United Kingdom": 2,
+        "Spain": 1,
+        "Virreinato del Río de la Plata": 1,
+        "Imperio Romano": 1,
+        "Belgium": 1
+      },
+      "regions_cited": {
+        "Latin America": 74,
+        "Western Europe": 31,
+        "Other/Unknown": 9,
+        "Scandinavia": 1,
+        "North America": 1,
+        "Eastern Europe": 1
+      },
+      "periods_cited": {
+        "World Wars Era": 47,
+        "Long 19th Century": 41,
+        "Revolutionary Era": 17,
+        "Hellenistic/Roman": 3,
+        "Early Modern": 5,
+        "Classical Antiquity": 2,
+        "Renaissance": 2
+      }
+    },
+    "eduardo_gruner": {
+      "name": "Eduardo Grüner",
+      "total_citations": 277,
+      "unique_citations": 118,
+      "countries_cited": {
+        "France": 121,
+        "Argentina": 38,
+        "Germany": 22,
+        "Italy": 20,
+        "United States": 15,
+        "Peru": 10,
+        "Czech Republic": 7,
+        "Oriol, Imperio Ruso": 6,
+        "Netherlands": 3,
+        "Imperio Austríaco": 3
+      },
+      "regions_cited": {
+        "Latin America": 52,
+        "Western Europe": 175,
+        "Other/Unknown": 22,
+        "North America": 15,
+        "Eastern Europe": 9,
+        "Southern Europe / Classical": 2,
+        "Scandinavia": 2
+      },
+      "periods_cited": {
+        "World Wars Era": 55,
+        "Long 19th Century": 129,
+        "Revolutionary Era": 71,
+        "Hellenistic/Roman": 1,
+        "Early Modern": 11,
+        "Antiquity (Archaic)": 2,
+        "Medieval": 1,
+        "Renaissance": 7
+      }
+    },
+    "luis_gusman": {
+      "name": "Luis Gusmán",
+      "total_citations": 137,
+      "unique_citations": 78,
+      "countries_cited": {
+        "Argentina": 66,
+        "France": 31,
+        "Italy": 6,
+        "United Kingdom": 6,
+        "Germany": 3,
+        "Netherlands": 3,
+        "Poland": 2,
+        "Cuba": 2,
+        "Escocia": 2,
+        "United States": 2
+      },
+      "regions_cited": {
+        "Latin America": 69,
+        "Western Europe": 52,
+        "Other/Unknown": 11,
+        "Eastern Europe": 3,
+        "North America": 2
+      },
+      "periods_cited": {
+        "World Wars Era": 20,
+        "Long 19th Century": 71,
+        "Revolutionary Era": 30,
+        "Hellenistic/Roman": 1,
+        "Early Modern": 9,
+        "Renaissance": 4,
+        "Medieval": 1,
+        "Unknown": 1
+      }
+    },
+    "jorge_jinkis": {
+      "name": "Jorge Jinkis",
+      "total_citations": 53,
+      "unique_citations": 45,
+      "countries_cited": {
+        "Argentina": 32,
+        "France": 6,
+        "Germany": 3,
+        "Netherlands": 3,
+        "Spain": 1,
+        "Virreinato del Río de la Plata": 1,
+        "Imperio Romano": 1,
+        "Belgium": 1,
+        "Uruguay": 1,
+        "Buenos Aires": 1
+      },
+      "regions_cited": {
+        "Latin America": 33,
+        "Western Europe": 14,
+        "Other/Unknown": 6
+      },
+      "periods_cited": {
+        "World Wars Era": 16,
+        "Long 19th Century": 26,
+        "Revolutionary Era": 7,
+        "Hellenistic/Roman": 1,
+        "Early Modern": 3
+      }
+    },
+    "osvaldo_lamborghini": {
+      "name": "Osvaldo Lamborghini",
+      "total_citations": 1,
+      "unique_citations": 1,
+      "countries_cited": {},
+      "regions_cited": {
+        "Other/Unknown": 1
+      },
+      "periods_cited": {
+        "Unknown": 1
+      }
+    },
+    "juan_bautista_ritvo": {
+      "name": "Juan Bautista Ritvo",
+      "total_citations": 52,
+      "unique_citations": 33,
+      "countries_cited": {
+        "Argentina": 15,
+        "Germany": 11,
+        "Edimburgo, Escocia": 5,
+        "Ireland": 4,
+        "United Kingdom": 4,
+        "France": 3,
+        "Poland": 2,
+        "Italy": 2,
+        "Spain": 2,
+        "Greece": 1
+      },
+      "regions_cited": {
+        "Eastern Europe": 2,
+        "Latin America": 15,
+        "Western Europe": 27,
+        "Southern Europe / Classical": 1,
+        "Other/Unknown": 6,
+        "Asia": 1
+      },
+      "periods_cited": {
+        "Long 19th Century": 20,
+        "Revolutionary Era": 8,
+        "Early Modern": 18,
+        "Medieval": 2,
+        "Renaissance": 2,
+        "Classical Antiquity": 2
+      }
+    },
+    "maurice_blanchot": {
+      "name": "Maurice Blanchot",
+      "total_citations": 6,
+      "unique_citations": 4,
+      "countries_cited": {
+        "Germany": 5,
+        "France": 1
+      },
+      "regions_cited": {
+        "Western Europe": 6
+      },
+      "periods_cited": {
+        "Long 19th Century": 3,
+        "Early Modern": 3
+      }
+    },
+    "santiago_bullrich": {
+      "name": "Santiago Bullrich",
+      "total_citations": 18,
+      "unique_citations": 6,
+      "countries_cited": {
+        "Ireland": 8,
+        "United Kingdom": 8,
+        "United States": 2
+      },
+      "regions_cited": {
+        "Western Europe": 16,
+        "North America": 2
+      },
+      "periods_cited": {
+        "Long 19th Century": 7,
+        "Renaissance": 2,
+        "Revolutionary Era": 8,
+        "Medieval": 1
+      }
+    },
+    "luis_chitarroni": {
+      "name": "Luis Chitarroni",
+      "total_citations": 32,
+      "unique_citations": 13,
+      "countries_cited": {
+        "Argentina": 17,
+        "Germany": 5,
+        "United Kingdom": 4,
+        "France": 2,
+        "Sorochyntsi, Ucrania": 2,
+        "Russia": 1,
+        "United States": 1
+      },
+      "regions_cited": {
+        "Latin America": 17,
+        "Eastern Europe": 1,
+        "North America": 1,
+        "Western Europe": 11,
+        "Other/Unknown": 2
+      },
+      "periods_cited": {
+        "Long 19th Century": 23,
+        "Revolutionary Era": 8,
+        "World Wars Era": 1
+      }
+    },
+    "enrique_pezzoni": {
+      "name": "Enrique Pezzoni",
+      "total_citations": 16,
+      "unique_citations": 7,
+      "countries_cited": {
+        "Uruguay": 10,
+        "France": 3,
+        "Italy": 1,
+        "Argentina": 1,
+        "Austria": 1
+      },
+      "regions_cited": {
+        "Latin America": 11,
+        "Western Europe": 5
+      },
+      "periods_cited": {
+        "Long 19th Century": 11,
+        "Renaissance": 1,
+        "World Wars Era": 3,
+        "Revolutionary Era": 1
+      }
+    },
+    "raul_zoppi": {
+      "name": "Raul Zoppi",
+      "total_citations": 44,
+      "unique_citations": 3,
+      "countries_cited": {
+        "Argentina": 44
+      },
+      "regions_cited": {
+        "Latin America": 44
+      },
+      "periods_cited": {
+        "Long 19th Century": 44
+      }
+    },
+    "jorge_monteleone": {
+      "name": "Jorge Monteleone",
+      "total_citations": 89,
+      "unique_citations": 23,
+      "countries_cited": {
+        "Argentina": 41,
+        "France": 14,
+        "Nicaragua": 10,
+        "Cuba": 5,
+        "Rezekne, Letonia": 3,
+        "Italy": 3,
+        "Mexico": 3,
+        "Spain": 2,
+        "Murray, Kentucky, EE. UU.": 2,
+        "Guthrie, Kentucky, EE. UU.": 2
+      },
+      "regions_cited": {
+        "Latin America": 50,
+        "Western Europe": 20,
+        "Other/Unknown": 19
+      },
+      "periods_cited": {
+        "Long 19th Century": 68,
+        "Renaissance": 1,
+        "World Wars Era": 19,
+        "Contemporary": 1
+      }
+    },
+    "jorge_panesi": {
+      "name": "Jorge Panesi",
+      "total_citations": 17,
+      "unique_citations": 6,
+      "countries_cited": {
+        "Argentina": 13,
+        "United States": 2,
+        "Uruguay": 1,
+        "Oriol, Imperio Ruso": 1
+      },
+      "regions_cited": {
+        "Latin America": 14,
+        "North America": 2,
+        "Other/Unknown": 1
+      },
+      "periods_cited": {
+        "World Wars Era": 16,
+        "Long 19th Century": 1
+      }
+    }
+  },
+  "cross_border": {
+    "Argentina": {
+      "Argentina": 296,
+      "Germany": 51,
+      "Spain": 8,
+      "Virreinato del Río de la Plata": 4,
+      "France": 195,
+      "Imperio Romano": 4,
+      "Belgium": 5,
+      "Uruguay": 16,
+      "Buenos Aires": 4,
+      "El Biar, Argelia": 4,
+      "Sliven, Bulgaria": 4,
+      "Netherlands": 12,
+      "Moscú, Imperio Ruso": 5,
+      "Switzerland": 3,
+      "United States": 21,
+      "Czech Republic": 8,
+      "Italy": 34,
+      "Imperio Medo": 1,
+      "Greece": 3,
+      "United Kingdom": 17,
+      "Cuba": 9,
+      "Sherbrooke, Canadá": 1,
+      "San Petersburgo, Imperio Ruso": 2,
+      "Bulgaria": 1,
+      "Russia": 3,
+      "Ireland": 7,
+      "Oriol, Imperio Ruso": 9,
+      "Imperio Austríaco": 4,
+      "Austria": 3,
+      "Poland": 4,
+      "Escocia": 2,
+      "Edimburgo, Escocia": 6,
+      "Denmark": 3,
+      "Viena, Imperio Austrohúngaro": 1,
+      "Andes, República Romana": 1,
+      "Desconocido": 1,
+      "Dundee, Escocia": 1,
+      "China": 1,
+      "Bucarest, Rumania": 1,
+      "Hungary": 1,
+      "Peru": 10,
+      "Sorochyntsi, Ucrania": 2,
+      "Murray, Kentucky, EE. UU.": 2,
+      "Guthrie, Kentucky, EE. UU.": 2,
+      "Rezekne, Letonia": 3,
+      "Nicaragua": 10,
+      "Chile": 1,
+      "Mexico": 3
+    },
+    "France": {
+      "Germany": 5,
+      "France": 1
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "issue_id": "issue_2",
+  "generated": "2026-04-12T17:37:31.217160",
+  "total_title_refs": 228,
+  "unique_works_cited": 56,
+  "top_10_works": [
+    {
+      "bibl_id": "revista_sitio",
+      "title": "Sitio",
+      "author": null,
+      "count": 18
+    },
+    {
+      "bibl_id": "cervantes_quijote",
+      "title": "El ingenioso hidalgo don Quijote de la Mancha",
+      "author": "Cervantes, Miguel de",
+      "count": 18
+    },
+    {
+      "bibl_id": "joyce_ulises",
+      "title": "Ulysses",
+      "author": "Joyce, James",
+      "count": 15
+    },
+    {
+      "bibl_id": "diario_clarin",
+      "title": "Clarín",
+      "author": null,
+      "count": 13
+    },
+    {
+      "bibl_id": "rossler_cambalache",
+      "title": "rossler_cambalache",
+      "author": "",
+      "count": 12
+    },
+    {
+      "bibl_id": "borges_lopezyward",
+      "title": "Juan López y John Ward",
+      "author": "Borges, Jorge Luis",
+      "count": 12
+    },
+    {
+      "bibl_id": "diario_la_nacion",
+      "title": "La Nación",
+      "author": null,
+      "count": 7
+    },
+    {
+      "bibl_id": "kant_critica",
+      "title": "Crítica de la razón pura",
+      "author": "Kant, Immanuel",
+      "count": 6
+    },
+    {
+      "bibl_id": "plauto_miles_gloriosus",
+      "title": "Miles Gloriosus",
+      "author": "Plauto, Tito Maccio",
+      "count": 6
+    },
+    {
+      "bibl_id": "evangelio_san_juan",
+      "title": "Evangelio según San Juan",
+      "author": "Juan el Evangelista",
+      "count": 6
+    }
+  ],
+  "genre_distribution": {
+    "m": 156,
+    "j": 45,
+    "unknown": 13,
+    "a": 14
+  },
+  "language_distribution": {
+    "es": 213,
+    "en": 15
+  },
+  "network_nodes": 69,
+  "network_edges": 154
+}

@@ -1,0 +1,82 @@
+{
+  "issue_id": "issue_4-5",
+  "generated": "2026-04-12T17:37:34.711819",
+  "total_title_refs": 229,
+  "unique_works_cited": 107,
+  "top_10_works": [
+    {
+      "bibl_id": "puig_traicion",
+      "title": "La traición de Rita Hayworth",
+      "author": "Puig, Manuel",
+      "count": 27
+    },
+    {
+      "bibl_id": "hernandez_menos_julia",
+      "title": "Menos Julia",
+      "author": "Hernández, Felisberto",
+      "count": 16
+    },
+    {
+      "bibl_id": "hernandez_hortensias",
+      "title": "Las hortensias",
+      "author": "Hernández, Felisberto",
+      "count": 13
+    },
+    {
+      "bibl_id": "puig_maldicion",
+      "title": "Maldición eterna a quien lea estas páginas",
+      "author": "Puig, Manuel",
+      "count": 13
+    },
+    {
+      "bibl_id": "sartre_idiota",
+      "title": "El idiota de la familia",
+      "author": "Sartre, Jean-Paul",
+      "count": 9
+    },
+    {
+      "bibl_id": "revista_sitio",
+      "title": "Sitio",
+      "author": null,
+      "count": 6
+    },
+    {
+      "bibl_id": "hernandez_acomodador",
+      "title": "El acomodador",
+      "author": "Felisberto Hernández",
+      "count": 6
+    },
+    {
+      "bibl_id": "puig_beso",
+      "title": "El beso de la mujer araña",
+      "author": "Puig, Manuel",
+      "count": 6
+    },
+    {
+      "bibl_id": "revista_pie_de_pagina",
+      "title": "Pie de página",
+      "author": null,
+      "count": 4
+    },
+    {
+      "bibl_id": "melville_moby_dick",
+      "title": "Moby-Dick",
+      "author": "Melville, Herman",
+      "count": 4
+    }
+  ],
+  "genre_distribution": {
+    "j": 16,
+    "m": 188,
+    "a": 19,
+    "unknown": 4,
+    "null": 2
+  },
+  "language_distribution": {
+    "es": 216,
+    "fr": 12,
+    "en": 1
+  },
+  "network_nodes": 118,
+  "network_edges": 121
+}

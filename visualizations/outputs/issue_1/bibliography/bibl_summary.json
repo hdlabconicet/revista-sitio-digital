@@ -1,0 +1,84 @@
+{
+  "issue_id": "issue_1",
+  "generated": "2026-04-12T17:37:29.512180",
+  "total_title_refs": 351,
+  "unique_works_cited": 179,
+  "top_10_works": [
+    {
+      "bibl_id": "gombrowicz_ferdydurke",
+      "title": "Ferdydurke",
+      "author": "Gombrowicz, Witold",
+      "count": 32
+    },
+    {
+      "bibl_id": "bloy_salvacion",
+      "title": "Le Salut par les Juifs",
+      "author": "Bloy, Léon",
+      "count": 23
+    },
+    {
+      "bibl_id": "zola_argent",
+      "title": "L'Argent",
+      "author": "Zola, Émile",
+      "count": 15
+    },
+    {
+      "bibl_id": "cabrera_infante_habana",
+      "title": "La Habana para un infante difunto",
+      "author": "Cabrera Infante, Guillermo",
+      "count": 14
+    },
+    {
+      "bibl_id": "dario_prosas_profanas",
+      "title": "Prosas profanas y otros poemas",
+      "author": "Darío, Rubén",
+      "count": 14
+    },
+    {
+      "bibl_id": "drumont_france",
+      "title": "La France juive",
+      "author": "Drumont, Édouard",
+      "count": 13
+    },
+    {
+      "bibl_id": "bloy_desesperado",
+      "title": "Le Désespéré",
+      "author": "Bloy, Léon",
+      "count": 7
+    },
+    {
+      "bibl_id": "martel_bolsa",
+      "title": "La Bolsa",
+      "author": "Martel, Julián",
+      "count": 5
+    },
+    {
+      "bibl_id": "diario_libre_parole",
+      "title": "La Libre Parole",
+      "author": null,
+      "count": 5
+    },
+    {
+      "bibl_id": "scott_ivanhoe",
+      "title": "Ivanhoe",
+      "author": "Scott, Walter",
+      "count": 5
+    }
+  ],
+  "genre_distribution": {
+    "m": 293,
+    "unknown": 5,
+    "a": 23,
+    "j": 28,
+    "s": 2
+  },
+  "language_distribution": {
+    "es": 220,
+    "de": 6,
+    "fr": 119,
+    "ru": 2,
+    "en": 4
+  },
+  "network_nodes": 195,
+  "network_edges": 187
+}

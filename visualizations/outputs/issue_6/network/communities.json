@@ -1,0 +1,298 @@
+[
+  {
+    "community_id": 0,
+    "size": 24,
+    "members": [
+      {
+        "id": "jesus",
+        "name": "de Nazaret Jesús"
+      },
+      {
+        "id": "nicaragua",
+        "name": "nicaragua"
+      },
+      {
+        "id": "ovidio_riccheri",
+        "name": "Ovidio P. Riccheri"
+      },
+      {
+        "id": "freud",
+        "name": "Sigmund Freud"
+      },
+      {
+        "id": "jorge_antonio_berges",
+        "name": "Jorge Antonio Bergés"
+      },
+      {
+        "id": "ramon_camps",
+        "name": "Ramón Juan Alberto Camps"
+      },
+      {
+        "id": "juan_octavio_gauna",
+        "name": "Juan Octavio Gauna"
+      },
+      {
+        "id": "ramon_alcalde",
+        "name": "Ramón Alcalde"
+      },
+      {
+        "id": "leopoldo_galtieri",
+        "name": "Leopoldo Fortunato Galtieri"
+      },
+      {
+        "id": "carl_von_clausewitz",
+        "name": "Carl von Clausewitz"
+      },
+      {
+        "id": "juan_sourrouille",
+        "name": "Juan Vital Sourrouille"
+      },
+      {
+        "id": "mohamed_seineldin",
+        "name": "Mohamed Alí Seineldín"
+      },
+      {
+        "id": "miguel_etchecolatz",
+        "name": "Miguel Osvaldo Etchecolatz"
+      },
+      {
+        "id": "basilio_lami_dozo",
+        "name": "Basilio Lami Dozo"
+      },
+      {
+        "id": "san_agustin",
+        "name": "de Hipona Agustín"
+      },
+      {
+        "id": "jorge_bacque",
+        "name": "Jorge Antonio Bacqué"
+      },
+      {
+        "id": "tomas_de_torquemada",
+        "name": "Tomás de Torquemada"
+      },
+      {
+        "id": "jorge_anaya",
+        "name": "Jorge Isaac Anaya"
+      },
+      {
+        "id": "soren_kierkegaard",
+        "name": "Søren Kierkegaard"
+      },
+      {
+        "id": "norberto_cozzani",
+        "name": "Norberto Ricardo Cozzani"
+      },
+      {
+        "id": "adolf_eichmann",
+        "name": "Otto Adolf Eichmann"
+      },
+      {
+        "id": "guillermo_fierro",
+        "name": "Guillermo Jorge Fierro"
+      },
+      {
+        "id": "jose_caridi",
+        "name": "José Dante Caridi"
+      },
+      {
+        "id": "dante_caputo",
+        "name": "Dante Mario Antonio Caputo"
+      }
+    ]
+  },
+  {
+    "community_id": 1,
+    "size": 9,
+    "members": [
+      {
+        "id": "ronald_reagan",
+        "name": "Ronald Reagan"
+      },
+      {
+        "id": "mario_levin",
+        "name": "Mario Levin"
+      },
+      {
+        "id": "carlos_fayt",
+        "name": "Carlos Santiago Fayt"
+      },
+      {
+        "id": "augusto_belluscio",
+        "name": "Augusto César Belluscio"
+      },
+      {
+        "id": "enrique_petracchi",
+        "name": "Enrique Santiago Petracchi"
+      },
+      {
+        "id": "platon",
+        "name": "Platón"
+      },
+      {
+        "id": "jose_severo_caballero",
+        "name": "José Severo Caballero"
+      },
+      {
+        "id": "cesar_jaroslavsky",
+        "name": "César Jaroslavsky"
+      },
+      {
+        "id": "eduardo_gruner",
+        "name": "Eduardo Grüner"
+      }
+    ]
+  },
+  {
+    "community_id": 2,
+    "size": 22,
+    "members": [
+      {
+        "id": "dalmiro_saenz",
+        "name": "Dalmiro Antonio Sáenz"
+      },
+      {
+        "id": "julia_kristeva",
+        "name": "Julia Kristeva"
+      },
+      {
+        "id": "karl_marx",
+        "name": "Karl Marx"
+      },
+      {
+        "id": "david_vinias",
+        "name": "David Viñas"
+      },
+      {
+        "id": "eliseo_veron",
+        "name": "Eliseo Verón"
+      },
+      {
+        "id": "juan_carlos_ongania",
+        "name": "Juan Carlos Onganía"
+      },
+      {
+        "id": "oscar_landi",
+        "name": "Oscar Landi"
+      },
+      {
+        "id": "antonio_gramsci",
+        "name": "Antonio Gramsci"
+      },
+      {
+        "id": "alejandro_katz",
+        "name": "Gabriel Alejandro Katz"
+      },
+      {
+        "id": "noam_chomsky",
+        "name": "Avram Noam Chomsky"
+      },
+      {
+        "id": "charles_de_gaulle",
+        "name": "Charles André Joseph Marie de Gaulle"
+      },
+      {
+        "id": "oswald_ducrot",
+        "name": "Oswald Ducrot"
+      },
+      {
+        "id": "algirdas_greimas",
+        "name": "Algirdas Julien Greimas"
+      },
+      {
+        "id": "michel_foucault",
+        "name": "Michel Foucault"
+      },
+      {
+        "id": "francois_mitterrand",
+        "name": "François Mitterrand"
+      },
+      {
+        "id": "juan_domingo_peron",
+        "name": "Juan Domingo Perón"
+      },
+      {
+        "id": "lucia_aseff",
+        "name": "Lucía María Aseff"
+      },
+      {
+        "id": "beatriz_sarlo",
+        "name": "Beatriz Sarlo"
+      },
+      {
+        "id": "luis_gusman",
+        "name": "Luis Gusmán"
+      },
+      {
+        "id": "francois_recanati",
+        "name": "François Recanati"
+      },
+      {
+        "id": "jean_francois_lyotard",
+        "name": "Jean-François Lyotard"
+      },
+      {
+        "id": "jose_felix_uriburu",
+        "name": "José Félix Uriburu"
+      }
+    ]
+  },
+  {
+    "community_id": 3,
+    "size": 13,
+    "members": [
+      {
+        "id": "balzac",
+        "name": "Honoré Balzac"
+      },
+      {
+        "id": "oscar_igounet_padre",
+        "name": "Oscar Pablo Igounet"
+      },
+      {
+        "id": "alfredo_astiz",
+        "name": "Alfredo Ignacio Astiz"
+      },
+      {
+        "id": "horacio_gonzalez",
+        "name": "Horacio Luis González"
+      },
+      {
+        "id": "jorge_jinkis",
+        "name": "Jorge Jinkis"
+      },
+      {
+        "id": "raul_alfonsin",
+        "name": "Raúl Alfonsín"
+      },
+      {
+        "id": "osvaldo_bayer",
+        "name": "Osvaldo Jorge Bayer"
+      },
+      {
+        "id": "oscar_igounet_hijo",
+        "name": "Oscar Igounet"
+      },
+      {
+        "id": "julio_martinez_vivot",
+        "name": "Julio César Martínez Vivot"
+      },
+      {
+        "id": "raul_borras",
+        "name": "Raúl Andrés Borrás"
+      },
+      {
+        "id": "jose_rivanera",
+        "name": "José Nicolás Rivanera"
+      },
+      {
+        "id": "reynaldo_bignone",
+        "name": "Reynaldo Benito Antonio Bignone"
+      },
+      {
+        "id": "jean_paul_sartre",
+        "name": "Jean-Paul Sartre"
+      }
+    ]
+  }
+]

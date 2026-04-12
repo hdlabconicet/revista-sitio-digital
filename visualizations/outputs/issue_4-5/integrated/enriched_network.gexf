@@ -1,0 +1,2534 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-12">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+      <attribute id="1" title="country" type="string" />
+      <attribute id="2" title="region" type="string" />
+      <attribute id="3" title="period" type="string" />
+      <attribute id="4" title="birth_year" type="string" />
+    </attributes>
+    <nodes>
+      <node id="ramon_alcalde" label="Ramón Alcalde">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1951" />
+        </attvalues>
+      </node>
+      <node id="abelardo_castillo" label="Abelardo Castillo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1935" />
+        </attvalues>
+      </node>
+      <node id="eduardo_gruner" label="Eduardo Grüner">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1946" />
+        </attvalues>
+      </node>
+      <node id="luis_gusman" label="Luis Gusmán">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1944" />
+        </attvalues>
+      </node>
+      <node id="jorge_jinkis" label="Jorge Jinkis">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1943" />
+        </attvalues>
+      </node>
+      <node id="oswald_spengler" label="Oswald Spengler">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1880" />
+        </attvalues>
+      </node>
+      <node id="federico_sainz_de_robles" label="Federico Carlos Sainz de Robles">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1898" />
+        </attvalues>
+      </node>
+      <node id="esteban_echeverria" label="Esteban Echeverría">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Virreinato del Río de la Plata" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1805" />
+        </attvalues>
+      </node>
+      <node id="sarmiento" label="Domingo Faustino Sarmiento">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1811" />
+        </attvalues>
+      </node>
+      <node id="juan_bautista_alberdi" label="Juan Bautista Alberdi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1810" />
+        </attvalues>
+      </node>
+      <node id="leopoldo_lugones" label="Leopoldo Lugones">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1874" />
+        </attvalues>
+      </node>
+      <node id="manuel_galvez" label="Manuel Gálvez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1882" />
+        </attvalues>
+      </node>
+      <node id="martinez_estrada" label="Ezequiel Martínez Estrada">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="canal_feijoo" label="Bernardo Canal Feijóo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1897" />
+        </attvalues>
+      </node>
+      <node id="hector_murena" label="Héctor Murena">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1923" />
+        </attvalues>
+      </node>
+      <node id="carlos_astrada" label="Carlos Astrada">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1894" />
+        </attvalues>
+      </node>
+      <node id="jose_luis_romero" label="José Luis Romero">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1909" />
+        </attvalues>
+      </node>
+      <node id="luis_franco" label="Luis Franco">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1898" />
+        </attvalues>
+      </node>
+      <node id="raul_scalabrini_ortiz" label="Raúl Scalabrini Ortiz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1898" />
+        </attvalues>
+      </node>
+      <node id="arturo_jauretche" label="Arturo Jauretche">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1901" />
+        </attvalues>
+      </node>
+      <node id="david_vinias" label="David Viñas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1927" />
+        </attvalues>
+      </node>
+      <node id="oscar_masotta" label="Óscar Masotta">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="juan_jose_sebreli" label="Juan José Sebreli">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="leonardo_castellani" label="Leonardo Castellani">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1899" />
+        </attvalues>
+      </node>
+      <node id="ignacio_anzoategui" label="Ignacio Anzoátegui">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1905" />
+        </attvalues>
+      </node>
+      <node id="juan_jose_hernandez_arregui" label="Juan José Hernández Arregui">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1913" />
+        </attvalues>
+      </node>
+      <node id="abelardo_ramos" label="Jorge Abelardo Ramos">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1921" />
+        </attvalues>
+      </node>
+      <node id="milciades_penia" label="Milcíades Peña">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1933" />
+        </attvalues>
+      </node>
+      <node id="borges" label="Jorge Borges">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1899" />
+        </attvalues>
+      </node>
+      <node id="roberto_arlt" label="Roberto Arlt">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1900" />
+        </attvalues>
+      </node>
+      <node id="jaime_rest" label="Jaime Rest">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1927" />
+        </attvalues>
+      </node>
+      <node id="pierre_chaunu" label="Pierre Chaunu">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1923" />
+        </attvalues>
+      </node>
+      <node id="san_agustin" label="de Hipona Agustín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Imperio Romano" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Hellenistic/Roman" />
+          <attvalue for="4" value="354" />
+        </attvalues>
+      </node>
+      <node id="jean_paul_sartre" label="Jean-Paul Sartre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1905" />
+        </attvalues>
+      </node>
+      <node id="jean_yves_calvez" label="Jean-Yves Calvez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1927" />
+        </attvalues>
+      </node>
+      <node id="levi_strauss" label="Claude Lévi-Strauss">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Belgium" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1908" />
+        </attvalues>
+      </node>
+      <node id="angel_rama" label="Ángel Rama">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Uruguay" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1926" />
+        </attvalues>
+      </node>
+      <node id="alfredo_palacios" label="Alfredo Palacios">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Buenos Aires" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1878" />
+        </attvalues>
+      </node>
+      <node id="arturo_frondizi" label="Arturo Frondizi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1908" />
+        </attvalues>
+      </node>
+      <node id="hector_campora" label="Héctor Cámpora">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1909" />
+        </attvalues>
+      </node>
+      <node id="juan_domingo_peron" label="Juan Domingo Perón">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="raul_alfonsin" label="Raúl Alfonsín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1927" />
+        </attvalues>
+      </node>
+      <node id="louis_althusser" label="Louis Althusser">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1918" />
+        </attvalues>
+      </node>
+      <node id="roland_barthes" label="Roland Barthes">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1915" />
+        </attvalues>
+      </node>
+      <node id="jacques_derrida" label="Jacques Derrida">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="El Biar, Argelia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="julia_kristeva" label="Julia Kristeva">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Sliven, Bulgaria" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1941" />
+        </attvalues>
+      </node>
+      <node id="spinoza" label="Baruch Spinoza">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Netherlands" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1632" />
+        </attvalues>
+      </node>
+      <node id="friedrich_nietzsche" label="Friedrich Nietzsche">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1844" />
+        </attvalues>
+      </node>
+      <node id="fiodor_dostoyevski" label="Fiódor Dostoyevski">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Moscú, Imperio Ruso" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1821" />
+        </attvalues>
+      </node>
+      <node id="osvaldo_lamborghini" label="Osvaldo Lamborghini">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1940" />
+        </attvalues>
+      </node>
+      <node id="diana_bilmezis" label="Diana Bilmezis">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Unknown" />
+          <attvalue for="4" value="" />
+        </attvalues>
+      </node>
+      <node id="michel_foucault" label="Michel Foucault">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1926" />
+        </attvalues>
+      </node>
+      <node id="jean_starobinski" label="Jean Starobinski">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Switzerland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1920" />
+        </attvalues>
+      </node>
+      <node id="charles_olson" label="Charles Olson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1910" />
+        </attvalues>
+      </node>
+      <node id="walter_benjamin" label="Walter Benjamin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1892" />
+        </attvalues>
+      </node>
+      <node id="melville" label="Herman Melville">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1819" />
+        </attvalues>
+      </node>
+      <node id="kafka" label="Franz Kafka">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Czech Republic" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1883" />
+        </attvalues>
+      </node>
+      <node id="antonio_gramsci" label="Antonio Gramsci">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1891" />
+        </attvalues>
+      </node>
+      <node id="zaratustra" label="Zaratustra">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Imperio Medo" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Antiquity (Archaic)" />
+          <attvalue for="4" value="-628" />
+        </attvalues>
+      </node>
+      <node id="dante_alighieri" label="Dante Alighieri">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Medieval" />
+          <attvalue for="4" value="1265" />
+        </attvalues>
+      </node>
+      <node id="umberto_eco" label="Umberto Eco">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1932" />
+        </attvalues>
+      </node>
+      <node id="maurice_blanchot" label="Maurice Blanchot">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1907" />
+        </attvalues>
+      </node>
+      <node id="homero" label="Homero">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Greece" />
+          <attvalue for="2" value="Southern Europe / Classical" />
+          <attvalue for="3" value="Antiquity (Archaic)" />
+          <attvalue for="4" value="-750" />
+        </attvalues>
+      </node>
+      <node id="shakespeare" label="William Shakespeare">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1564" />
+        </attvalues>
+      </node>
+      <node id="gustave_flaubert" label="Gustave Flaubert">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1821" />
+        </attvalues>
+      </node>
+      <node id="italo_calvino" label="Italo Calvino">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Cuba" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1923" />
+        </attvalues>
+      </node>
+      <node id="ernst_curtius" label="Ernst Curtius">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1814" />
+        </attvalues>
+      </node>
+      <node id="northrop_frye" label="Northrop Frye">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Sherbrooke, Canadá" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1912" />
+        </attvalues>
+      </node>
+      <node id="george_steiner" label="George Steiner">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1929" />
+        </attvalues>
+      </node>
+      <node id="vladimir_propp" label="Vladimir Propp">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="San Petersburgo, Imperio Ruso" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="todorov" label="Tzvetan Todorov">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Bulgaria" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1939" />
+        </attvalues>
+      </node>
+      <node id="algirdas_greimas" label="Algirdas Julien Greimas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Russia" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1917" />
+        </attvalues>
+      </node>
+      <node id="paul_valery" label="Ambroise Valéry">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1871" />
+        </attvalues>
+      </node>
+      <node id="samuel_beckett" label="Samuel Beckett">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1906" />
+        </attvalues>
+      </node>
+      <node id="andre_malraux" label="André Malraux">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1901" />
+        </attvalues>
+      </node>
+      <node id="viktor_shklovski" label="Víktor Shklovski">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="San Petersburgo, Imperio Ruso" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1893" />
+        </attvalues>
+      </node>
+      <node id="henry_de_montherlant" label="Henry de Montherlant">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="edgar_allan_poe" label="Edgar Poe">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1809" />
+        </attvalues>
+      </node>
+      <node id="harold_bloom" label="Harold Bloom">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="jose_marmol" label="José Mármol">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1817" />
+        </attvalues>
+      </node>
+      <node id="bajtin" label="Mijaíl Bajtín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Oriol, Imperio Ruso" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="rabelais" label="François Rabelais">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1494" />
+        </attvalues>
+      </node>
+      <node id="henri_bergson" label="Henri Bergson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1859" />
+        </attvalues>
+      </node>
+      <node id="freud" label="Sigmund Freud">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Imperio Austríaco" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1856" />
+        </attvalues>
+      </node>
+      <node id="mallarme" label="Stéphane Mallarmé">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1842" />
+        </attvalues>
+      </node>
+      <node id="michael_riffaterre" label="Michael Riffaterre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1924" />
+        </attvalues>
+      </node>
+      <node id="ludwig_wittgenstein" label="Ludwig Wittgenstein">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Austria" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1889" />
+        </attvalues>
+      </node>
+      <node id="jean_luc_godard" label="Jean-Luc Godard">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="lisa_block" label="Lisa Block de Behar">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Uruguay" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1937" />
+        </attvalues>
+      </node>
+      <node id="giovanni_morelli" label="Giovanni Morelli">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1816" />
+        </attvalues>
+      </node>
+      <node id="carlo_ginzburg" label="Carlo Ginzburg">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1939" />
+        </attvalues>
+      </node>
+      <node id="perugino" label="Pietro Vannucci">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1448" />
+        </attvalues>
+      </node>
+      <node id="da_vinci" label="Leonardo Vinci">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1452" />
+        </attvalues>
+      </node>
+      <node id="botticelli" label="Sandro Botticelli">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1445" />
+        </attvalues>
+      </node>
+      <node id="cosme_tura" label="Cosimo Tura">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1430" />
+        </attvalues>
+      </node>
+      <node id="spitzer" label="Leo Spitzer">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Austria" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1887" />
+        </attvalues>
+      </node>
+      <node id="schleiermacher" label="Friedrich Schleiermacher">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1768" />
+        </attvalues>
+      </node>
+      <node id="wilhelm_dilthey" label="Wilhelm Dilthey">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1833" />
+        </attvalues>
+      </node>
+      <node id="gerard_genette" label="Gérard Genette">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="maupassant" label="Guy Maupassant">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1850" />
+        </attvalues>
+      </node>
+      <node id="nicolas_olivari" label="Nicolás Olivari">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1900" />
+        </attvalues>
+      </node>
+      <node id="benedetto_croce" label="Benedetto Croce">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1866" />
+        </attvalues>
+      </node>
+      <node id="edgar_wind" label="Edgar Wind">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1900" />
+        </attvalues>
+      </node>
+      <node id="macedonio_fernandez" label="Macedonio Fernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1874" />
+        </attvalues>
+      </node>
+      <node id="witold_gombrowicz" label="Witold Gombrowicz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Poland" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1904" />
+        </attvalues>
+      </node>
+      <node id="lezama_lima" label="José Lezama Lima">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Cuba" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1910" />
+        </attvalues>
+      </node>
+      <node id="thomas_carlyle" label="Thomas Carlyle">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Escocia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1795" />
+        </attvalues>
+      </node>
+      <node id="miguel_angel" label="Miguel Ángel Buonarroti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1475" />
+        </attvalues>
+      </node>
+      <node id="oscar_wilde" label="Oscar Wilde">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1854" />
+        </attvalues>
+      </node>
+      <node id="william_beckford" label="William Beckford">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1760" />
+        </attvalues>
+      </node>
+      <node id="robert_louis_stevenson" label="Robert Louis Stevenson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Edimburgo, Escocia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1850" />
+        </attvalues>
+      </node>
+      <node id="chesterton" label="Gilbert Keith Chesterton">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1874" />
+        </attvalues>
+      </node>
+      <node id="lord_byron" label="George Gordon Byron">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1788" />
+        </attvalues>
+      </node>
+      <node id="lucio_mansilla" label="Lucio V. Mansilla">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1831" />
+        </attvalues>
+      </node>
+      <node id="jacques_benigne_bossuet" label="Jacques-Bénigne Bossuet">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1627" />
+        </attvalues>
+      </node>
+      <node id="andre_gide" label="André Gide">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1869" />
+        </attvalues>
+      </node>
+      <node id="andre_breton" label="André Breton">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1896" />
+        </attvalues>
+      </node>
+      <node id="jacques_rigaut" label="Jacques Rigaut">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1898" />
+        </attvalues>
+      </node>
+      <node id="baudelaire" label="Charles Baudelaire">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1821" />
+        </attvalues>
+      </node>
+      <node id="julian_casal" label="Julián Casal">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Unknown" />
+          <attvalue for="4" value="" />
+        </attvalues>
+      </node>
+      <node id="pierre_loti" label="Julien Viaud">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1850" />
+        </attvalues>
+      </node>
+      <node id="paul_nizan" label="Paul Nizan">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1905" />
+        </attvalues>
+      </node>
+      <node id="jose_hernandez" label="José Hernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1834" />
+        </attvalues>
+      </node>
+      <node id="rimbaud" label="Arthur Rimbaud">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1854" />
+        </attvalues>
+      </node>
+      <node id="michel_leiris" label="Michel Leiris">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1901" />
+        </attvalues>
+      </node>
+      <node id="gilles_deleuze" label="Gilles Deleuze">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1925" />
+        </attvalues>
+      </node>
+      <node id="fenimore_cooper" label="James Fenimore Cooper">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1789" />
+        </attvalues>
+      </node>
+      <node id="marcel_schwob" label="Marcel Schwob">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1867" />
+        </attvalues>
+      </node>
+      <node id="carlos_correas" label="Carlos Correas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1931" />
+        </attvalues>
+      </node>
+      <node id="jean_genet" label="Jean Genet">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1910" />
+        </attvalues>
+      </node>
+      <node id="juan_carlos_ongania" label="Juan Carlos Onganía">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1914" />
+        </attvalues>
+      </node>
+      <node id="juan_manuel_rosas" label="Juan Manuel de Rosas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1793" />
+        </attvalues>
+      </node>
+      <node id="hans_christian_andersen" label="Hans Christian Andersen">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Denmark" />
+          <attvalue for="2" value="Scandinavia" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1805" />
+        </attvalues>
+      </node>
+      <node id="hugo_von_hofmannsthal" label="Hugo von Hofmannsthal">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Viena, Imperio Austrohúngaro" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1874" />
+        </attvalues>
+      </node>
+      <node id="teocrito" label="Teócrito">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Classical Antiquity" />
+          <attvalue for="4" value="-310" />
+        </attvalues>
+      </node>
+      <node id="torquato_tasso" label="Torquato Tasso">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1544" />
+        </attvalues>
+      </node>
+      <node id="edmund_spenser" label="Edmund Spenser">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1552" />
+        </attvalues>
+      </node>
+      <node id="lou_andreas_salome" label="Lou Andreas-Salomé">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Russia" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1861" />
+        </attvalues>
+      </node>
+      <node id="varo" label="Alfeno Varo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Hellenistic/Roman" />
+          <attvalue for="4" value="-100" />
+        </attvalues>
+      </node>
+      <node id="virgilio" label="Publio Virgilio">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Andes, República Romana" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Hellenistic/Roman" />
+          <attvalue for="4" value="-70" />
+        </attvalues>
+      </node>
+      <node id="marques_sade" label="Donatien Alphonse François de Sade">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1740" />
+        </attvalues>
+      </node>
+      <node id="ricardo_zelarayan" label="Ricardo Zelarayán">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1940" />
+        </attvalues>
+      </node>
+      <node id="rodolfo_fogwill" label="Rodolfo Fogwill">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1941" />
+        </attvalues>
+      </node>
+      <node id="euclides" label="Euclides">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Desconocido" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Classical Antiquity" />
+          <attvalue for="4" value="-325" />
+        </attvalues>
+      </node>
+      <node id="ernesto_sabato" label="Ernesto Sabato">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1911" />
+        </attvalues>
+      </node>
+      <node id="charles_dickens" label="Charles Dickens">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1812" />
+        </attvalues>
+      </node>
+      <node id="victor_hugo" label="Victor Hugo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1802" />
+        </attvalues>
+      </node>
+      <node id="emile_zola" label="Émile Zola">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1840" />
+        </attvalues>
+      </node>
+      <node id="guillermo_hudson" label="William Henry Hudson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1841" />
+        </attvalues>
+      </node>
+      <node id="johann_winckelmann" label="Johann Joachim Winckelmann">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1717" />
+        </attvalues>
+      </node>
+      <node id="balzac" label="Honoré Balzac">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1799" />
+        </attvalues>
+      </node>
+      <node id="paul_schreber" label="Daniel Paul Schreber">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1842" />
+        </attvalues>
+      </node>
+      <node id="evaristo_carriego" label="Evaristo Carriego">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1883" />
+        </attvalues>
+      </node>
+      <node id="juan_bautista_ritvo" label="Juan Bautista Ritvo">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1940" />
+        </attvalues>
+      </node>
+      <node id="kant" label="Immanuel Kant">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1724" />
+        </attvalues>
+      </node>
+      <node id="karl_marx" label="Karl Marx">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1818" />
+        </attvalues>
+      </node>
+      <node id="hegel" label="Georg Wilhelm Friedrich Hegel">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1770" />
+        </attvalues>
+      </node>
+      <node id="goethe" label="Johann Goethe">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1749" />
+        </attvalues>
+      </node>
+      <node id="cervantes" label="Miguel Cervantes">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1547" />
+        </attvalues>
+      </node>
+      <node id="george_berkeley" label="George Berkeley">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1685" />
+        </attvalues>
+      </node>
+      <node id="hg_wells" label="Herbert George Wells">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1866" />
+        </attvalues>
+      </node>
+      <node id="de_quincey" label="Thomas De Quincey">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1785" />
+        </attvalues>
+      </node>
+      <node id="arthur_schopenhauer" label="Arthur Schopenhauer">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Poland" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1788" />
+        </attvalues>
+      </node>
+      <node id="platon" label="Platón">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Greece" />
+          <attvalue for="2" value="Southern Europe / Classical" />
+          <attvalue for="3" value="Classical Antiquity" />
+          <attvalue for="4" value="-428" />
+        </attvalues>
+      </node>
+      <node id="patricio_de_azcarate" label="Patricio de Azcárate">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1800" />
+        </attvalues>
+      </node>
+      <node id="martin_heidegger" label="Martin Heidegger">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1889" />
+        </attvalues>
+      </node>
+      <node id="bartolome_mitre" label="Bartolomé Mitre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1821" />
+        </attvalues>
+      </node>
+      <node id="tomas_de_aquino" label="Tomás de Aquino">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Medieval" />
+          <attvalue for="4" value="1225" />
+        </attvalues>
+      </node>
+      <node id="carl_jung" label="Carl Gustav Jung">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Switzerland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1875" />
+        </attvalues>
+      </node>
+      <node id="lacan" label="Jacques Lacan">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1901" />
+        </attvalues>
+      </node>
+      <node id="david_hume" label="David Hume">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Edimburgo, Escocia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1711" />
+        </attvalues>
+      </node>
+      <node id="aldous_huxley" label="Aldous Huxley">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1894" />
+        </attvalues>
+      </node>
+      <node id="kemp_smith" label="Norman Kemp Smith">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Dundee, Escocia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1872" />
+        </attvalues>
+      </node>
+      <node id="georg_lichtenberg" label="Georg Christoph Lichtenberg">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1742" />
+        </attvalues>
+      </node>
+      <node id="tchuang_tzu" label="Zhou Zhuang">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="China" />
+          <attvalue for="2" value="Asia" />
+          <attvalue for="3" value="Classical Antiquity" />
+          <attvalue for="4" value="-369" />
+        </attvalues>
+      </node>
+      <node id="holderlin" label="Johann Hölderlin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1770" />
+        </attvalues>
+      </node>
+      <node id="santiago_bullrich" label="Santiago Bullrich">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Unknown" />
+          <attvalue for="4" value="" />
+        </attvalues>
+      </node>
+      <node id="james_joyce" label="James Joyce">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1882" />
+        </attvalues>
+      </node>
+      <node id="lewis_carroll" label="Lewis Carroll">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1832" />
+        </attvalues>
+      </node>
+      <node id="brian_boru" label="Brian Boru">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Ireland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Medieval" />
+          <attvalue for="4" value="941" />
+        </attvalues>
+      </node>
+      <node id="lucien_goldmann" label="Lucien Goldmann">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Bucarest, Rumania" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1913" />
+        </attvalues>
+      </node>
+      <node id="pierre_bourdieu" label="Pierre Bourdieu">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1930" />
+        </attvalues>
+      </node>
+      <node id="gyorgy_lukacs" label="György Lukács">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Hungary" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1885" />
+        </attvalues>
+      </node>
+      <node id="theodor_adorno" label="Theodor Adorno">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1903" />
+        </attvalues>
+      </node>
+      <node id="raymond_aron" label="Raymond Aron">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1905" />
+        </attvalues>
+      </node>
+      <node id="max_weber" label="Max Weber">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1864" />
+        </attvalues>
+      </node>
+      <node id="nicos_poulantzas" label="Nicos Poulantzas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Greece" />
+          <attvalue for="2" value="Southern Europe / Classical" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1936" />
+        </attvalues>
+      </node>
+      <node id="friedrich_schelling" label="Friedrich Wilhelm Joseph Schelling">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1775" />
+        </attvalues>
+      </node>
+      <node id="soren_kierkegaard" label="Søren Kierkegaard">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Denmark" />
+          <attvalue for="2" value="Scandinavia" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1813" />
+        </attvalues>
+      </node>
+      <node id="carl_von_clausewitz" label="Carl von Clausewitz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Early Modern" />
+          <attvalue for="4" value="1780" />
+        </attvalues>
+      </node>
+      <node id="severo_sarduy" label="Severo Sarduy">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Cuba" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1937" />
+        </attvalues>
+      </node>
+      <node id="mario_vargas_llosa" label="Mario Vargas Llosa">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Peru" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1936" />
+        </attvalues>
+      </node>
+      <node id="louis_ferdinand_celine" label="Louis-Ferdinand Céline">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1894" />
+        </attvalues>
+      </node>
+      <node id="william_faulkner" label="William Faulkner">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1897" />
+        </attvalues>
+      </node>
+      <node id="luis_chitarroni" label="Luis Chitarroni">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1958" />
+        </attvalues>
+      </node>
+      <node id="santiago_dabove" label="Santiago Dabove">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1889" />
+        </attvalues>
+      </node>
+      <node id="aleksandr_pushkin" label="Aleksandr Pushkin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Russia" />
+          <attvalue for="2" value="Eastern Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1799" />
+        </attvalues>
+      </node>
+      <node id="juan_filiberto" label="Juan de Dios Filiberto">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1885" />
+        </attvalues>
+      </node>
+      <node id="ernst_junger" label="Ernst Jünger">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Germany" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="philippe_aries" label="Philippe Ariès">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1914" />
+        </attvalues>
+      </node>
+      <node id="malcolm_lowry" label="Malcolm Lowry">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1909" />
+        </attvalues>
+      </node>
+      <node id="john_keats" label="John Keats">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1795" />
+        </attvalues>
+      </node>
+      <node id="percy_shelley" label="Percy Bysshe Shelley">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United Kingdom" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1792" />
+        </attvalues>
+      </node>
+      <node id="nikolai_gogol" label="Nikolai Gogol">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Sorochyntsi, Ucrania" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1809" />
+        </attvalues>
+      </node>
+      <node id="jean_martin_charcot" label="Jean-Martin Charcot">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1825" />
+        </attvalues>
+      </node>
+      <node id="enrique_pezzoni" label="Enrique Pezzoni">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1926" />
+        </attvalues>
+      </node>
+      <node id="felisberto_hernandez" label="Felisberto Hernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Uruguay" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1902" />
+        </attvalues>
+      </node>
+      <node id="arcimboldo" label="Giuseppe Arcimboldo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1526" />
+        </attvalues>
+      </node>
+      <node id="josefina_ludmer" label="Josefina Ludmer">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1939" />
+        </attvalues>
+      </node>
+      <node id="franz_schubert" label="Franz Schubert">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Austria" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Revolutionary Era" />
+          <attvalue for="4" value="1797" />
+        </attvalues>
+      </node>
+      <node id="walter_gieseking" label="Walter Gieseking">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1895" />
+        </attvalues>
+      </node>
+      <node id="raul_zoppi" label="Raul Zoppi">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Unknown" />
+          <attvalue for="4" value="" />
+        </attvalues>
+      </node>
+      <node id="ana_barrenechea" label="Ana Barrenechea">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1913" />
+        </attvalues>
+      </node>
+      <node id="adolfo_de_obieta" label="Adolfo de Obieta">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1912" />
+        </attvalues>
+      </node>
+      <node id="jorge_monteleone" label="Jorge Monteleone">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1957" />
+        </attvalues>
+      </node>
+      <node id="gongora" label="Luis de Góngora y Argote">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Renaissance" />
+          <attvalue for="4" value="1561" />
+        </attvalues>
+      </node>
+      <node id="cleanth_brooks" label="Cleanth Brooks">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Murray, Kentucky, EE. UU." />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1906" />
+        </attvalues>
+      </node>
+      <node id="robert_penn_warren" label="Robert Penn Warren">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Guthrie, Kentucky, EE. UU." />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1905" />
+        </attvalues>
+      </node>
+      <node id="tinianov" label="Yuri Tiniánov">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Rezekne, Letonia" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1894" />
+        </attvalues>
+      </node>
+      <node id="ruben_dario" label="Rubén Darío">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Nicaragua" />
+          <attvalue for="2" value="Other/Unknown" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1867" />
+        </attvalues>
+      </node>
+      <node id="vicente_garcia_huidobro" label="Vicente García-Huidobro">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Chile" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1893" />
+        </attvalues>
+      </node>
+      <node id="sylvia_molloy" label="Sylvia Molloy">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1938" />
+        </attvalues>
+      </node>
+      <node id="mario_praz" label="Mario Praz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Italy" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1896" />
+        </attvalues>
+      </node>
+      <node id="heinrich_wolfflin" label="Heinrich Wölfflin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Switzerland" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1864" />
+        </attvalues>
+      </node>
+      <node id="miguel_d_ors" label="Miguel d'Ors">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Spain" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1946" />
+        </attvalues>
+      </node>
+      <node id="octavio_paz" label="Octavio Paz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Mexico" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1914" />
+        </attvalues>
+      </node>
+      <node id="georges_bataille" label="Georges Bataille">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="France" />
+          <attvalue for="2" value="Western Europe" />
+          <attvalue for="3" value="Long 19th Century" />
+          <attvalue for="4" value="1897" />
+        </attvalues>
+      </node>
+      <node id="bettina_edelberg" label="Bettina Edelberg">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1921" />
+        </attvalues>
+      </node>
+      <node id="juan_jose_hernandez" label="Juan José Hernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1931" />
+        </attvalues>
+      </node>
+      <node id="jorge_panesi" label="Jorge Panesi">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="Contemporary" />
+          <attvalue for="4" value="1945" />
+        </attvalues>
+      </node>
+      <node id="manuel_puig" label="Manuel Puig">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1932" />
+        </attvalues>
+      </node>
+      <node id="ricardo_piglia" label="Ricardo Piglia">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="Argentina" />
+          <attvalue for="2" value="Latin America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1940" />
+        </attvalues>
+      </node>
+      <node id="rita_hayworth" label="Rita Hayworth">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1918" />
+        </attvalues>
+      </node>
+      <node id="tyrone_power" label="Tyrone Power">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="United States" />
+          <attvalue for="2" value="North America" />
+          <attvalue for="3" value="World Wars Era" />
+          <attvalue for="4" value="1914" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="ramon_alcalde" target="abelardo_castillo" id="0" weight="1" />
+      <edge source="ramon_alcalde" target="oswald_spengler" id="1" weight="1" />
+      <edge source="ramon_alcalde" target="federico_sainz_de_robles" id="2" weight="1" />
+      <edge source="ramon_alcalde" target="esteban_echeverria" id="3" weight="1" />
+      <edge source="ramon_alcalde" target="sarmiento" id="4" weight="2" />
+      <edge source="ramon_alcalde" target="juan_bautista_alberdi" id="5" weight="1" />
+      <edge source="ramon_alcalde" target="leopoldo_lugones" id="6" weight="1" />
+      <edge source="ramon_alcalde" target="manuel_galvez" id="7" weight="1" />
+      <edge source="ramon_alcalde" target="martinez_estrada" id="8" weight="1" />
+      <edge source="ramon_alcalde" target="canal_feijoo" id="9" weight="1" />
+      <edge source="ramon_alcalde" target="hector_murena" id="10" weight="1" />
+      <edge source="ramon_alcalde" target="carlos_astrada" id="11" weight="1" />
+      <edge source="ramon_alcalde" target="jose_luis_romero" id="12" weight="1" />
+      <edge source="ramon_alcalde" target="luis_franco" id="13" weight="1" />
+      <edge source="ramon_alcalde" target="raul_scalabrini_ortiz" id="14" weight="2" />
+      <edge source="ramon_alcalde" target="arturo_jauretche" id="15" weight="1" />
+      <edge source="ramon_alcalde" target="david_vinias" id="16" weight="2" />
+      <edge source="ramon_alcalde" target="oscar_masotta" id="17" weight="1" />
+      <edge source="ramon_alcalde" target="juan_jose_sebreli" id="18" weight="1" />
+      <edge source="ramon_alcalde" target="leonardo_castellani" id="19" weight="1" />
+      <edge source="ramon_alcalde" target="ignacio_anzoategui" id="20" weight="1" />
+      <edge source="ramon_alcalde" target="juan_jose_hernandez_arregui" id="21" weight="1" />
+      <edge source="ramon_alcalde" target="abelardo_ramos" id="22" weight="1" />
+      <edge source="ramon_alcalde" target="milciades_penia" id="23" weight="1" />
+      <edge source="ramon_alcalde" target="borges" id="24" weight="3" />
+      <edge source="ramon_alcalde" target="roberto_arlt" id="25" weight="5" />
+      <edge source="ramon_alcalde" target="jaime_rest" id="26" weight="1" />
+      <edge source="ramon_alcalde" target="pierre_chaunu" id="27" weight="1" />
+      <edge source="ramon_alcalde" target="san_agustin" id="28" weight="1" />
+      <edge source="ramon_alcalde" target="jean_paul_sartre" id="29" weight="2" />
+      <edge source="ramon_alcalde" target="jean_yves_calvez" id="30" weight="1" />
+      <edge source="ramon_alcalde" target="levi_strauss" id="31" weight="1" />
+      <edge source="ramon_alcalde" target="angel_rama" id="32" weight="1" />
+      <edge source="ramon_alcalde" target="alfredo_palacios" id="33" weight="1" />
+      <edge source="ramon_alcalde" target="arturo_frondizi" id="34" weight="1" />
+      <edge source="ramon_alcalde" target="hector_campora" id="35" weight="3" />
+      <edge source="ramon_alcalde" target="juan_domingo_peron" id="36" weight="1" />
+      <edge source="ramon_alcalde" target="raul_alfonsin" id="37" weight="1" />
+      <edge source="ramon_alcalde" target="louis_althusser" id="38" weight="1" />
+      <edge source="ramon_alcalde" target="roland_barthes" id="39" weight="1" />
+      <edge source="ramon_alcalde" target="jacques_derrida" id="40" weight="1" />
+      <edge source="ramon_alcalde" target="julia_kristeva" id="41" weight="1" />
+      <edge source="ramon_alcalde" target="spinoza" id="42" weight="3" />
+      <edge source="ramon_alcalde" target="friedrich_nietzsche" id="43" weight="4" />
+      <edge source="ramon_alcalde" target="fiodor_dostoyevski" id="44" weight="1" />
+      <edge source="ramon_alcalde" target="carlos_correas" id="45" weight="25" />
+      <edge source="ramon_alcalde" target="jean_genet" id="46" weight="5" />
+      <edge source="ramon_alcalde" target="juan_carlos_ongania" id="47" weight="1" />
+      <edge source="ramon_alcalde" target="juan_manuel_rosas" id="48" weight="1" />
+      <edge source="ramon_alcalde" target="hans_christian_andersen" id="49" weight="1" />
+      <edge source="ramon_alcalde" target="hugo_von_hofmannsthal" id="50" weight="1" />
+      <edge source="ramon_alcalde" target="teocrito" id="51" weight="1" />
+      <edge source="ramon_alcalde" target="torquato_tasso" id="52" weight="1" />
+      <edge source="ramon_alcalde" target="edmund_spenser" id="53" weight="1" />
+      <edge source="ramon_alcalde" target="lou_andreas_salome" id="54" weight="1" />
+      <edge source="ramon_alcalde" target="varo" id="55" weight="1" />
+      <edge source="ramon_alcalde" target="virgilio" id="56" weight="1" />
+      <edge source="ramon_alcalde" target="marques_sade" id="57" weight="1" />
+      <edge source="ramon_alcalde" target="osvaldo_lamborghini" id="58" weight="1" />
+      <edge source="ramon_alcalde" target="luis_gusman" id="59" weight="1" />
+      <edge source="ramon_alcalde" target="ricardo_zelarayan" id="60" weight="1" />
+      <edge source="ramon_alcalde" target="rodolfo_fogwill" id="61" weight="1" />
+      <edge source="ramon_alcalde" target="euclides" id="62" weight="1" />
+      <edge source="ramon_alcalde" target="ernesto_sabato" id="63" weight="1" />
+      <edge source="ramon_alcalde" target="charles_dickens" id="64" weight="1" />
+      <edge source="ramon_alcalde" target="victor_hugo" id="65" weight="1" />
+      <edge source="ramon_alcalde" target="emile_zola" id="66" weight="1" />
+      <edge source="ramon_alcalde" target="guillermo_hudson" id="67" weight="1" />
+      <edge source="ramon_alcalde" target="johann_winckelmann" id="68" weight="1" />
+      <edge source="ramon_alcalde" target="balzac" id="69" weight="1" />
+      <edge source="ramon_alcalde" target="paul_schreber" id="70" weight="1" />
+      <edge source="ramon_alcalde" target="evaristo_carriego" id="71" weight="1" />
+      <edge source="eduardo_gruner" target="abelardo_castillo" id="72" weight="1" />
+      <edge source="eduardo_gruner" target="oswald_spengler" id="73" weight="1" />
+      <edge source="eduardo_gruner" target="federico_sainz_de_robles" id="74" weight="1" />
+      <edge source="eduardo_gruner" target="esteban_echeverria" id="75" weight="1" />
+      <edge source="eduardo_gruner" target="sarmiento" id="76" weight="2" />
+      <edge source="eduardo_gruner" target="juan_bautista_alberdi" id="77" weight="1" />
+      <edge source="eduardo_gruner" target="leopoldo_lugones" id="78" weight="1" />
+      <edge source="eduardo_gruner" target="manuel_galvez" id="79" weight="1" />
+      <edge source="eduardo_gruner" target="martinez_estrada" id="80" weight="1" />
+      <edge source="eduardo_gruner" target="canal_feijoo" id="81" weight="1" />
+      <edge source="eduardo_gruner" target="hector_murena" id="82" weight="1" />
+      <edge source="eduardo_gruner" target="carlos_astrada" id="83" weight="1" />
+      <edge source="eduardo_gruner" target="jose_luis_romero" id="84" weight="1" />
+      <edge source="eduardo_gruner" target="luis_franco" id="85" weight="1" />
+      <edge source="eduardo_gruner" target="raul_scalabrini_ortiz" id="86" weight="1" />
+      <edge source="eduardo_gruner" target="arturo_jauretche" id="87" weight="1" />
+      <edge source="eduardo_gruner" target="david_vinias" id="88" weight="3" />
+      <edge source="eduardo_gruner" target="oscar_masotta" id="89" weight="2" />
+      <edge source="eduardo_gruner" target="juan_jose_sebreli" id="90" weight="1" />
+      <edge source="eduardo_gruner" target="leonardo_castellani" id="91" weight="1" />
+      <edge source="eduardo_gruner" target="ignacio_anzoategui" id="92" weight="1" />
+      <edge source="eduardo_gruner" target="juan_jose_hernandez_arregui" id="93" weight="1" />
+      <edge source="eduardo_gruner" target="abelardo_ramos" id="94" weight="1" />
+      <edge source="eduardo_gruner" target="milciades_penia" id="95" weight="1" />
+      <edge source="eduardo_gruner" target="borges" id="96" weight="2" />
+      <edge source="eduardo_gruner" target="roberto_arlt" id="97" weight="3" />
+      <edge source="eduardo_gruner" target="jaime_rest" id="98" weight="1" />
+      <edge source="eduardo_gruner" target="pierre_chaunu" id="99" weight="1" />
+      <edge source="eduardo_gruner" target="san_agustin" id="100" weight="1" />
+      <edge source="eduardo_gruner" target="jean_paul_sartre" id="101" weight="45" />
+      <edge source="eduardo_gruner" target="jean_yves_calvez" id="102" weight="1" />
+      <edge source="eduardo_gruner" target="levi_strauss" id="103" weight="2" />
+      <edge source="eduardo_gruner" target="angel_rama" id="104" weight="1" />
+      <edge source="eduardo_gruner" target="alfredo_palacios" id="105" weight="1" />
+      <edge source="eduardo_gruner" target="arturo_frondizi" id="106" weight="1" />
+      <edge source="eduardo_gruner" target="hector_campora" id="107" weight="1" />
+      <edge source="eduardo_gruner" target="juan_domingo_peron" id="108" weight="1" />
+      <edge source="eduardo_gruner" target="raul_alfonsin" id="109" weight="1" />
+      <edge source="eduardo_gruner" target="louis_althusser" id="110" weight="2" />
+      <edge source="eduardo_gruner" target="roland_barthes" id="111" weight="2" />
+      <edge source="eduardo_gruner" target="jacques_derrida" id="112" weight="1" />
+      <edge source="eduardo_gruner" target="julia_kristeva" id="113" weight="1" />
+      <edge source="eduardo_gruner" target="spinoza" id="114" weight="3" />
+      <edge source="eduardo_gruner" target="friedrich_nietzsche" id="115" weight="2" />
+      <edge source="eduardo_gruner" target="fiodor_dostoyevski" id="116" weight="2" />
+      <edge source="eduardo_gruner" target="michel_foucault" id="117" weight="5" />
+      <edge source="eduardo_gruner" target="jean_starobinski" id="118" weight="1" />
+      <edge source="eduardo_gruner" target="charles_olson" id="119" weight="5" />
+      <edge source="eduardo_gruner" target="walter_benjamin" id="120" weight="4" />
+      <edge source="eduardo_gruner" target="melville" id="121" weight="7" />
+      <edge source="eduardo_gruner" target="kafka" id="122" weight="7" />
+      <edge source="eduardo_gruner" target="antonio_gramsci" id="123" weight="2" />
+      <edge source="eduardo_gruner" target="zaratustra" id="124" weight="1" />
+      <edge source="eduardo_gruner" target="dante_alighieri" id="125" weight="1" />
+      <edge source="eduardo_gruner" target="umberto_eco" id="126" weight="2" />
+      <edge source="eduardo_gruner" target="maurice_blanchot" id="127" weight="3" />
+      <edge source="eduardo_gruner" target="homero" id="128" weight="1" />
+      <edge source="eduardo_gruner" target="shakespeare" id="129" weight="1" />
+      <edge source="eduardo_gruner" target="gustave_flaubert" id="130" weight="38" />
+      <edge source="eduardo_gruner" target="italo_calvino" id="131" weight="1" />
+      <edge source="eduardo_gruner" target="ernst_curtius" id="132" weight="1" />
+      <edge source="eduardo_gruner" target="northrop_frye" id="133" weight="1" />
+      <edge source="eduardo_gruner" target="george_steiner" id="134" weight="2" />
+      <edge source="eduardo_gruner" target="vladimir_propp" id="135" weight="1" />
+      <edge source="eduardo_gruner" target="todorov" id="136" weight="1" />
+      <edge source="eduardo_gruner" target="algirdas_greimas" id="137" weight="1" />
+      <edge source="eduardo_gruner" target="paul_valery" id="138" weight="1" />
+      <edge source="eduardo_gruner" target="samuel_beckett" id="139" weight="2" />
+      <edge source="eduardo_gruner" target="andre_malraux" id="140" weight="1" />
+      <edge source="eduardo_gruner" target="viktor_shklovski" id="141" weight="1" />
+      <edge source="eduardo_gruner" target="henry_de_montherlant" id="142" weight="1" />
+      <edge source="eduardo_gruner" target="edgar_allan_poe" id="143" weight="1" />
+      <edge source="eduardo_gruner" target="harold_bloom" id="144" weight="1" />
+      <edge source="eduardo_gruner" target="jose_marmol" id="145" weight="1" />
+      <edge source="eduardo_gruner" target="bajtin" id="146" weight="6" />
+      <edge source="eduardo_gruner" target="rabelais" id="147" weight="2" />
+      <edge source="eduardo_gruner" target="henri_bergson" id="148" weight="1" />
+      <edge source="eduardo_gruner" target="freud" id="149" weight="3" />
+      <edge source="eduardo_gruner" target="mallarme" id="150" weight="1" />
+      <edge source="eduardo_gruner" target="michael_riffaterre" id="151" weight="1" />
+      <edge source="eduardo_gruner" target="ludwig_wittgenstein" id="152" weight="1" />
+      <edge source="eduardo_gruner" target="jean_luc_godard" id="153" weight="1" />
+      <edge source="eduardo_gruner" target="lisa_block" id="154" weight="1" />
+      <edge source="eduardo_gruner" target="luis_gusman" id="155" weight="1" />
+      <edge source="eduardo_gruner" target="giovanni_morelli" id="156" weight="8" />
+      <edge source="eduardo_gruner" target="carlo_ginzburg" id="157" weight="2" />
+      <edge source="eduardo_gruner" target="perugino" id="158" weight="1" />
+      <edge source="eduardo_gruner" target="da_vinci" id="159" weight="1" />
+      <edge source="eduardo_gruner" target="botticelli" id="160" weight="1" />
+      <edge source="eduardo_gruner" target="cosme_tura" id="161" weight="1" />
+      <edge source="eduardo_gruner" target="spitzer" id="162" weight="1" />
+      <edge source="eduardo_gruner" target="schleiermacher" id="163" weight="1" />
+      <edge source="eduardo_gruner" target="wilhelm_dilthey" id="164" weight="1" />
+      <edge source="eduardo_gruner" target="gerard_genette" id="165" weight="1" />
+      <edge source="eduardo_gruner" target="maupassant" id="166" weight="5" />
+      <edge source="eduardo_gruner" target="nicolas_olivari" id="167" weight="1" />
+      <edge source="eduardo_gruner" target="benedetto_croce" id="168" weight="1" />
+      <edge source="eduardo_gruner" target="edgar_wind" id="169" weight="1" />
+      <edge source="eduardo_gruner" target="lucien_goldmann" id="170" weight="1" />
+      <edge source="eduardo_gruner" target="pierre_bourdieu" id="171" weight="1" />
+      <edge source="eduardo_gruner" target="gyorgy_lukacs" id="172" weight="1" />
+      <edge source="eduardo_gruner" target="theodor_adorno" id="173" weight="1" />
+      <edge source="eduardo_gruner" target="karl_marx" id="174" weight="2" />
+      <edge source="eduardo_gruner" target="raymond_aron" id="175" weight="1" />
+      <edge source="eduardo_gruner" target="max_weber" id="176" weight="1" />
+      <edge source="eduardo_gruner" target="nicos_poulantzas" id="177" weight="1" />
+      <edge source="eduardo_gruner" target="friedrich_schelling" id="178" weight="2" />
+      <edge source="eduardo_gruner" target="hegel" id="179" weight="3" />
+      <edge source="eduardo_gruner" target="soren_kierkegaard" id="180" weight="2" />
+      <edge source="eduardo_gruner" target="carl_von_clausewitz" id="181" weight="1" />
+      <edge source="eduardo_gruner" target="severo_sarduy" id="182" weight="1" />
+      <edge source="eduardo_gruner" target="mario_vargas_llosa" id="183" weight="10" />
+      <edge source="eduardo_gruner" target="lacan" id="184" weight="1" />
+      <edge source="eduardo_gruner" target="kant" id="185" weight="1" />
+      <edge source="eduardo_gruner" target="louis_ferdinand_celine" id="186" weight="2" />
+      <edge source="eduardo_gruner" target="william_faulkner" id="187" weight="1" />
+      <edge source="eduardo_gruner" target="baudelaire" id="188" weight="1" />
+      <edge source="eduardo_gruner" target="jean_genet" id="189" weight="1" />
+      <edge source="luis_gusman" target="abelardo_castillo" id="190" weight="1" />
+      <edge source="luis_gusman" target="oswald_spengler" id="191" weight="1" />
+      <edge source="luis_gusman" target="federico_sainz_de_robles" id="192" weight="1" />
+      <edge source="luis_gusman" target="esteban_echeverria" id="193" weight="1" />
+      <edge source="luis_gusman" target="sarmiento" id="194" weight="4" />
+      <edge source="luis_gusman" target="juan_bautista_alberdi" id="195" weight="1" />
+      <edge source="luis_gusman" target="leopoldo_lugones" id="196" weight="1" />
+      <edge source="luis_gusman" target="manuel_galvez" id="197" weight="1" />
+      <edge source="luis_gusman" target="martinez_estrada" id="198" weight="2" />
+      <edge source="luis_gusman" target="canal_feijoo" id="199" weight="1" />
+      <edge source="luis_gusman" target="hector_murena" id="200" weight="1" />
+      <edge source="luis_gusman" target="carlos_astrada" id="201" weight="1" />
+      <edge source="luis_gusman" target="jose_luis_romero" id="202" weight="1" />
+      <edge source="luis_gusman" target="luis_franco" id="203" weight="1" />
+      <edge source="luis_gusman" target="raul_scalabrini_ortiz" id="204" weight="1" />
+      <edge source="luis_gusman" target="arturo_jauretche" id="205" weight="1" />
+      <edge source="luis_gusman" target="david_vinias" id="206" weight="3" />
+      <edge source="luis_gusman" target="oscar_masotta" id="207" weight="2" />
+      <edge source="luis_gusman" target="juan_jose_sebreli" id="208" weight="1" />
+      <edge source="luis_gusman" target="leonardo_castellani" id="209" weight="1" />
+      <edge source="luis_gusman" target="ignacio_anzoategui" id="210" weight="1" />
+      <edge source="luis_gusman" target="juan_jose_hernandez_arregui" id="211" weight="1" />
+      <edge source="luis_gusman" target="abelardo_ramos" id="212" weight="1" />
+      <edge source="luis_gusman" target="milciades_penia" id="213" weight="1" />
+      <edge source="luis_gusman" target="borges" id="214" weight="14" />
+      <edge source="luis_gusman" target="roberto_arlt" id="215" weight="12" />
+      <edge source="luis_gusman" target="jaime_rest" id="216" weight="1" />
+      <edge source="luis_gusman" target="pierre_chaunu" id="217" weight="1" />
+      <edge source="luis_gusman" target="san_agustin" id="218" weight="1" />
+      <edge source="luis_gusman" target="jean_paul_sartre" id="219" weight="2" />
+      <edge source="luis_gusman" target="jean_yves_calvez" id="220" weight="1" />
+      <edge source="luis_gusman" target="levi_strauss" id="221" weight="1" />
+      <edge source="luis_gusman" target="angel_rama" id="222" weight="1" />
+      <edge source="luis_gusman" target="alfredo_palacios" id="223" weight="1" />
+      <edge source="luis_gusman" target="arturo_frondizi" id="224" weight="1" />
+      <edge source="luis_gusman" target="hector_campora" id="225" weight="1" />
+      <edge source="luis_gusman" target="juan_domingo_peron" id="226" weight="1" />
+      <edge source="luis_gusman" target="raul_alfonsin" id="227" weight="1" />
+      <edge source="luis_gusman" target="louis_althusser" id="228" weight="1" />
+      <edge source="luis_gusman" target="roland_barthes" id="229" weight="1" />
+      <edge source="luis_gusman" target="jacques_derrida" id="230" weight="1" />
+      <edge source="luis_gusman" target="julia_kristeva" id="231" weight="1" />
+      <edge source="luis_gusman" target="spinoza" id="232" weight="3" />
+      <edge source="luis_gusman" target="friedrich_nietzsche" id="233" weight="2" />
+      <edge source="luis_gusman" target="fiodor_dostoyevski" id="234" weight="1" />
+      <edge source="luis_gusman" target="macedonio_fernandez" id="235" weight="2" />
+      <edge source="luis_gusman" target="gustave_flaubert" id="236" weight="3" />
+      <edge source="luis_gusman" target="giovanni_morelli" id="237" weight="1" />
+      <edge source="luis_gusman" target="freud" id="238" weight="1" />
+      <edge source="luis_gusman" target="witold_gombrowicz" id="239" weight="2" />
+      <edge source="luis_gusman" target="maurice_blanchot" id="240" weight="3" />
+      <edge source="luis_gusman" target="lezama_lima" id="241" weight="2" />
+      <edge source="luis_gusman" target="mallarme" id="242" weight="7" />
+      <edge source="luis_gusman" target="thomas_carlyle" id="243" weight="2" />
+      <edge source="luis_gusman" target="edgar_allan_poe" id="244" weight="1" />
+      <edge source="luis_gusman" target="miguel_angel" id="245" weight="4" />
+      <edge source="luis_gusman" target="oscar_wilde" id="246" weight="1" />
+      <edge source="luis_gusman" target="william_beckford" id="247" weight="4" />
+      <edge source="luis_gusman" target="dante_alighieri" id="248" weight="1" />
+      <edge source="luis_gusman" target="robert_louis_stevenson" id="249" weight="1" />
+      <edge source="luis_gusman" target="chesterton" id="250" weight="1" />
+      <edge source="luis_gusman" target="lord_byron" id="251" weight="1" />
+      <edge source="luis_gusman" target="lucio_mansilla" id="252" weight="4" />
+      <edge source="luis_gusman" target="jacques_benigne_bossuet" id="253" weight="1" />
+      <edge source="luis_gusman" target="kafka" id="254" weight="1" />
+      <edge source="luis_gusman" target="andre_gide" id="255" weight="1" />
+      <edge source="luis_gusman" target="andre_breton" id="256" weight="1" />
+      <edge source="luis_gusman" target="jacques_rigaut" id="257" weight="1" />
+      <edge source="luis_gusman" target="baudelaire" id="258" weight="1" />
+      <edge source="luis_gusman" target="julian_casal" id="259" weight="1" />
+      <edge source="luis_gusman" target="pierre_loti" id="260" weight="1" />
+      <edge source="luis_gusman" target="paul_nizan" id="261" weight="1" />
+      <edge source="luis_gusman" target="jose_hernandez" id="262" weight="1" />
+      <edge source="luis_gusman" target="rimbaud" id="263" weight="2" />
+      <edge source="luis_gusman" target="michel_leiris" id="264" weight="1" />
+      <edge source="luis_gusman" target="gilles_deleuze" id="265" weight="1" />
+      <edge source="luis_gusman" target="fenimore_cooper" id="266" weight="1" />
+      <edge source="luis_gusman" target="marcel_schwob" id="267" weight="1" />
+      <edge source="jorge_jinkis" target="abelardo_castillo" id="268" weight="1" />
+      <edge source="jorge_jinkis" target="oswald_spengler" id="269" weight="1" />
+      <edge source="jorge_jinkis" target="federico_sainz_de_robles" id="270" weight="1" />
+      <edge source="jorge_jinkis" target="esteban_echeverria" id="271" weight="1" />
+      <edge source="jorge_jinkis" target="sarmiento" id="272" weight="2" />
+      <edge source="jorge_jinkis" target="juan_bautista_alberdi" id="273" weight="1" />
+      <edge source="jorge_jinkis" target="leopoldo_lugones" id="274" weight="1" />
+      <edge source="jorge_jinkis" target="manuel_galvez" id="275" weight="1" />
+      <edge source="jorge_jinkis" target="martinez_estrada" id="276" weight="1" />
+      <edge source="jorge_jinkis" target="canal_feijoo" id="277" weight="1" />
+      <edge source="jorge_jinkis" target="hector_murena" id="278" weight="1" />
+      <edge source="jorge_jinkis" target="carlos_astrada" id="279" weight="1" />
+      <edge source="jorge_jinkis" target="jose_luis_romero" id="280" weight="1" />
+      <edge source="jorge_jinkis" target="luis_franco" id="281" weight="1" />
+      <edge source="jorge_jinkis" target="raul_scalabrini_ortiz" id="282" weight="1" />
+      <edge source="jorge_jinkis" target="arturo_jauretche" id="283" weight="1" />
+      <edge source="jorge_jinkis" target="david_vinias" id="284" weight="1" />
+      <edge source="jorge_jinkis" target="oscar_masotta" id="285" weight="1" />
+      <edge source="jorge_jinkis" target="juan_jose_sebreli" id="286" weight="1" />
+      <edge source="jorge_jinkis" target="leonardo_castellani" id="287" weight="1" />
+      <edge source="jorge_jinkis" target="ignacio_anzoategui" id="288" weight="1" />
+      <edge source="jorge_jinkis" target="juan_jose_hernandez_arregui" id="289" weight="1" />
+      <edge source="jorge_jinkis" target="abelardo_ramos" id="290" weight="1" />
+      <edge source="jorge_jinkis" target="milciades_penia" id="291" weight="1" />
+      <edge source="jorge_jinkis" target="borges" id="292" weight="2" />
+      <edge source="jorge_jinkis" target="roberto_arlt" id="293" weight="3" />
+      <edge source="jorge_jinkis" target="jaime_rest" id="294" weight="1" />
+      <edge source="jorge_jinkis" target="pierre_chaunu" id="295" weight="1" />
+      <edge source="jorge_jinkis" target="san_agustin" id="296" weight="1" />
+      <edge source="jorge_jinkis" target="jean_paul_sartre" id="297" weight="2" />
+      <edge source="jorge_jinkis" target="jean_yves_calvez" id="298" weight="1" />
+      <edge source="jorge_jinkis" target="levi_strauss" id="299" weight="1" />
+      <edge source="jorge_jinkis" target="angel_rama" id="300" weight="1" />
+      <edge source="jorge_jinkis" target="alfredo_palacios" id="301" weight="1" />
+      <edge source="jorge_jinkis" target="arturo_frondizi" id="302" weight="1" />
+      <edge source="jorge_jinkis" target="hector_campora" id="303" weight="1" />
+      <edge source="jorge_jinkis" target="juan_domingo_peron" id="304" weight="1" />
+      <edge source="jorge_jinkis" target="raul_alfonsin" id="305" weight="1" />
+      <edge source="jorge_jinkis" target="louis_althusser" id="306" weight="1" />
+      <edge source="jorge_jinkis" target="roland_barthes" id="307" weight="1" />
+      <edge source="jorge_jinkis" target="jacques_derrida" id="308" weight="1" />
+      <edge source="jorge_jinkis" target="julia_kristeva" id="309" weight="1" />
+      <edge source="jorge_jinkis" target="spinoza" id="310" weight="3" />
+      <edge source="jorge_jinkis" target="friedrich_nietzsche" id="311" weight="2" />
+      <edge source="jorge_jinkis" target="fiodor_dostoyevski" id="312" weight="1" />
+      <edge source="osvaldo_lamborghini" target="diana_bilmezis" id="313" weight="1" />
+      <edge source="maurice_blanchot" target="martin_heidegger" id="314" weight="2" />
+      <edge source="maurice_blanchot" target="holderlin" id="315" weight="2" />
+      <edge source="maurice_blanchot" target="paul_valery" id="316" weight="1" />
+      <edge source="maurice_blanchot" target="kant" id="317" weight="1" />
+      <edge source="juan_bautista_ritvo" target="witold_gombrowicz" id="318" weight="1" />
+      <edge source="juan_bautista_ritvo" target="carlos_astrada" id="319" weight="4" />
+      <edge source="juan_bautista_ritvo" target="jose_hernandez" id="320" weight="1" />
+      <edge source="juan_bautista_ritvo" target="leopoldo_lugones" id="321" weight="2" />
+      <edge source="juan_bautista_ritvo" target="kant" id="322" weight="2" />
+      <edge source="juan_bautista_ritvo" target="karl_marx" id="323" weight="2" />
+      <edge source="juan_bautista_ritvo" target="hegel" id="324" weight="2" />
+      <edge source="juan_bautista_ritvo" target="dante_alighieri" id="325" weight="1" />
+      <edge source="juan_bautista_ritvo" target="goethe" id="326" weight="1" />
+      <edge source="juan_bautista_ritvo" target="cervantes" id="327" weight="1" />
+      <edge source="juan_bautista_ritvo" target="borges" id="328" weight="5" />
+      <edge source="juan_bautista_ritvo" target="george_berkeley" id="329" weight="4" />
+      <edge source="juan_bautista_ritvo" target="hg_wells" id="330" weight="1" />
+      <edge source="juan_bautista_ritvo" target="de_quincey" id="331" weight="1" />
+      <edge source="juan_bautista_ritvo" target="arthur_schopenhauer" id="332" weight="1" />
+      <edge source="juan_bautista_ritvo" target="shakespeare" id="333" weight="1" />
+      <edge source="juan_bautista_ritvo" target="platon" id="334" weight="1" />
+      <edge source="juan_bautista_ritvo" target="patricio_de_azcarate" id="335" weight="1" />
+      <edge source="juan_bautista_ritvo" target="macedonio_fernandez" id="336" weight="1" />
+      <edge source="juan_bautista_ritvo" target="baudelaire" id="337" weight="1" />
+      <edge source="juan_bautista_ritvo" target="friedrich_nietzsche" id="338" weight="1" />
+      <edge source="juan_bautista_ritvo" target="martin_heidegger" id="339" weight="1" />
+      <edge source="juan_bautista_ritvo" target="bartolome_mitre" id="340" weight="1" />
+      <edge source="juan_bautista_ritvo" target="sarmiento" id="341" weight="1" />
+      <edge source="juan_bautista_ritvo" target="tomas_de_aquino" id="342" weight="1" />
+      <edge source="juan_bautista_ritvo" target="carl_jung" id="343" weight="1" />
+      <edge source="juan_bautista_ritvo" target="lacan" id="344" weight="1" />
+      <edge source="juan_bautista_ritvo" target="david_hume" id="345" weight="5" />
+      <edge source="juan_bautista_ritvo" target="aldous_huxley" id="346" weight="1" />
+      <edge source="juan_bautista_ritvo" target="kemp_smith" id="347" weight="1" />
+      <edge source="juan_bautista_ritvo" target="henri_bergson" id="348" weight="1" />
+      <edge source="juan_bautista_ritvo" target="georg_lichtenberg" id="349" weight="2" />
+      <edge source="juan_bautista_ritvo" target="tchuang_tzu" id="350" weight="1" />
+      <edge source="santiago_bullrich" target="james_joyce" id="351" weight="5" />
+      <edge source="santiago_bullrich" target="shakespeare" id="352" weight="2" />
+      <edge source="santiago_bullrich" target="samuel_beckett" id="353" weight="2" />
+      <edge source="santiago_bullrich" target="melville" id="354" weight="2" />
+      <edge source="santiago_bullrich" target="lewis_carroll" id="355" weight="6" />
+      <edge source="santiago_bullrich" target="brian_boru" id="356" weight="1" />
+      <edge source="luis_chitarroni" target="santiago_dabove" id="357" weight="14" />
+      <edge source="luis_chitarroni" target="aleksandr_pushkin" id="358" weight="1" />
+      <edge source="luis_chitarroni" target="edgar_allan_poe" id="359" weight="1" />
+      <edge source="luis_chitarroni" target="macedonio_fernandez" id="360" weight="1" />
+      <edge source="luis_chitarroni" target="borges" id="361" weight="1" />
+      <edge source="luis_chitarroni" target="juan_filiberto" id="362" weight="1" />
+      <edge source="luis_chitarroni" target="ernst_junger" id="363" weight="5" />
+      <edge source="luis_chitarroni" target="philippe_aries" id="364" weight="1" />
+      <edge source="luis_chitarroni" target="malcolm_lowry" id="365" weight="1" />
+      <edge source="luis_chitarroni" target="john_keats" id="366" weight="2" />
+      <edge source="luis_chitarroni" target="percy_shelley" id="367" weight="1" />
+      <edge source="luis_chitarroni" target="nikolai_gogol" id="368" weight="2" />
+      <edge source="luis_chitarroni" target="jean_martin_charcot" id="369" weight="1" />
+      <edge source="enrique_pezzoni" target="felisberto_hernandez" id="370" weight="10" />
+      <edge source="enrique_pezzoni" target="arcimboldo" id="371" weight="1" />
+      <edge source="enrique_pezzoni" target="josefina_ludmer" id="372" weight="1" />
+      <edge source="enrique_pezzoni" target="michel_foucault" id="373" weight="1" />
+      <edge source="enrique_pezzoni" target="franz_schubert" id="374" weight="1" />
+      <edge source="enrique_pezzoni" target="walter_gieseking" id="375" weight="1" />
+      <edge source="enrique_pezzoni" target="roland_barthes" id="376" weight="1" />
+      <edge source="raul_zoppi" target="macedonio_fernandez" id="377" weight="36" />
+      <edge source="raul_zoppi" target="ana_barrenechea" id="378" weight="7" />
+      <edge source="raul_zoppi" target="adolfo_de_obieta" id="379" weight="1" />
+      <edge source="jorge_monteleone" target="leopoldo_lugones" id="380" weight="27" />
+      <edge source="jorge_monteleone" target="gongora" id="381" weight="1" />
+      <edge source="jorge_monteleone" target="roland_barthes" id="382" weight="6" />
+      <edge source="jorge_monteleone" target="lezama_lima" id="383" weight="2" />
+      <edge source="jorge_monteleone" target="severo_sarduy" id="384" weight="3" />
+      <edge source="jorge_monteleone" target="cleanth_brooks" id="385" weight="2" />
+      <edge source="jorge_monteleone" target="robert_penn_warren" id="386" weight="2" />
+      <edge source="jorge_monteleone" target="bajtin" id="387" weight="2" />
+      <edge source="jorge_monteleone" target="tinianov" id="388" weight="3" />
+      <edge source="jorge_monteleone" target="ruben_dario" id="389" weight="10" />
+      <edge source="jorge_monteleone" target="vicente_garcia_huidobro" id="390" weight="1" />
+      <edge source="jorge_monteleone" target="sylvia_molloy" id="391" weight="2" />
+      <edge source="jorge_monteleone" target="david_vinias" id="392" weight="3" />
+      <edge source="jorge_monteleone" target="canal_feijoo" id="393" weight="2" />
+      <edge source="jorge_monteleone" target="paul_valery" id="394" weight="2" />
+      <edge source="jorge_monteleone" target="mario_praz" id="395" weight="3" />
+      <edge source="jorge_monteleone" target="heinrich_wolfflin" id="396" weight="1" />
+      <edge source="jorge_monteleone" target="miguel_d_ors" id="397" weight="1" />
+      <edge source="jorge_monteleone" target="octavio_paz" id="398" weight="3" />
+      <edge source="jorge_monteleone" target="borges" id="399" weight="5" />
+      <edge source="jorge_monteleone" target="georges_bataille" id="400" weight="6" />
+      <edge source="jorge_monteleone" target="bettina_edelberg" id="401" weight="1" />
+      <edge source="jorge_monteleone" target="juan_jose_hernandez" id="402" weight="1" />
+      <edge source="jorge_panesi" target="manuel_puig" id="403" weight="12" />
+      <edge source="jorge_panesi" target="ricardo_piglia" id="404" weight="1" />
+      <edge source="jorge_panesi" target="rita_hayworth" id="405" weight="1" />
+      <edge source="jorge_panesi" target="tyrone_power" id="406" weight="1" />
+      <edge source="jorge_panesi" target="angel_rama" id="407" weight="1" />
+      <edge source="jorge_panesi" target="bajtin" id="408" weight="1" />
+    </edges>
+  </graph>
+</gexf>

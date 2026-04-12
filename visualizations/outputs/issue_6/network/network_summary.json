@@ -1,0 +1,320 @@
+{
+  "generated": "2026-04-12T17:37:34.795437",
+  "network_stats": {
+    "nodes": 68,
+    "edges": 109,
+    "density": 0.02392449517120281,
+    "num_authors": 5,
+    "num_cited_only": 63,
+    "num_communities": 4,
+    "reciprocity": 0.0,
+    "avg_in_degree": 1.6029411764705883,
+    "avg_out_degree": 1.6029411764705883
+  },
+  "top_cited": [
+    {
+      "id": "platon",
+      "name": "Platón",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "cesar_jaroslavsky",
+      "name": "César Jaroslavsky",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "juan_octavio_gauna",
+      "name": "Juan Octavio Gauna",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "jose_severo_caballero",
+      "name": "José Severo Caballero",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "augusto_belluscio",
+      "name": "Augusto César Belluscio",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "carlos_fayt",
+      "name": "Carlos Santiago Fayt",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "enrique_petracchi",
+      "name": "Enrique Santiago Petracchi",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "norberto_cozzani",
+      "name": "Norberto Ricardo Cozzani",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "jorge_antonio_berges",
+      "name": "Jorge Antonio Bergés",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "jorge_bacque",
+      "name": "Jorge Antonio Bacqué",
+      "centrality": 0.07462686567164178
+    },
+    {
+      "id": "raul_alfonsin",
+      "name": "Raúl Alfonsín",
+      "centrality": 0.029850746268656716
+    },
+    {
+      "id": "horacio_gonzalez",
+      "name": "Horacio Luis González",
+      "centrality": 0.029850746268656716
+    },
+    {
+      "id": "soren_kierkegaard",
+      "name": "Søren Kierkegaard",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "jesus",
+      "name": "de Nazaret Jesús",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "ramon_camps",
+      "name": "Ramón Juan Alberto Camps",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "ovidio_riccheri",
+      "name": "Ovidio P. Riccheri",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "miguel_etchecolatz",
+      "name": "Miguel Osvaldo Etchecolatz",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "freud",
+      "name": "Sigmund Freud",
+      "centrality": 0.014925373134328358
+    },
+    {
+      "id": "leopoldo_galtieri",
+      "name": "Leopoldo Fortunato Galtieri",
+      "centrality": 0.014925373134328358
+    }
+  ],
+  "top_pagerank": [
+    {
+      "id": "juan_octavio_gauna",
+      "name": "Juan Octavio Gauna",
+      "pagerank": 0.021837515560009412
+    },
+    {
+      "id": "jorge_bacque",
+      "name": "Jorge Antonio Bacqué",
+      "pagerank": 0.017739480228747342
+    },
+    {
+      "id": "norberto_cozzani",
+      "name": "Norberto Ricardo Cozzani",
+      "pagerank": 0.017141283972788655
+    },
+    {
+      "id": "jorge_antonio_berges",
+      "name": "Jorge Antonio Bergés",
+      "pagerank": 0.017141283972788655
+    },
+    {
+      "id": "horacio_gonzalez",
+      "name": "Horacio Luis González",
+      "pagerank": 0.016851178337545947
+    },
+    {
+      "id": "platon",
+      "name": "Platón",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "cesar_jaroslavsky",
+      "name": "César Jaroslavsky",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "jose_severo_caballero",
+      "name": "José Severo Caballero",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "augusto_belluscio",
+      "name": "Augusto César Belluscio",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "carlos_fayt",
+      "name": "Carlos Santiago Fayt",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "enrique_petracchi",
+      "name": "Enrique Santiago Petracchi",
+      "pagerank": 0.016543087716829972
+    },
+    {
+      "id": "raul_alfonsin",
+      "name": "Raúl Alfonsín",
+      "pagerank": 0.016009207332835472
+    },
+    {
+      "id": "eliseo_veron",
+      "name": "Eliseo Verón",
+      "pagerank": 0.015213371725643379
+    },
+    {
+      "id": "oscar_landi",
+      "name": "Oscar Landi",
+      "pagerank": 0.014821220846737128
+    },
+    {
+      "id": "oswald_ducrot",
+      "name": "Oswald Ducrot",
+      "pagerank": 0.014625145407284003
+    },
+    {
+      "id": "alejandro_katz",
+      "name": "Gabriel Alejandro Katz",
+      "pagerank": 0.014625145407284003
+    },
+    {
+      "id": "jose_rivanera",
+      "name": "José Nicolás Rivanera",
+      "pagerank": 0.01453287461224724
+    },
+    {
+      "id": "guillermo_fierro",
+      "name": "Guillermo Jorge Fierro",
+      "pagerank": 0.01443903990543019
+    },
+    {
+      "id": "david_vinias",
+      "name": "David Viñas",
+      "pagerank": 0.014429069967830879
+    }
+  ],
+  "top_betweenness": [
+    {
+      "id": "ramon_alcalde",
+      "name": "Ramón Alcalde",
+      "betweenness": 0.0
+    },
+    {
+      "id": "platon",
+      "name": "Platón",
+      "betweenness": 0.0
+    },
+    {
+      "id": "eduardo_gruner",
+      "name": "Eduardo Grüner",
+      "betweenness": 0.0
+    },
+    {
+      "id": "luis_gusman",
+      "name": "Luis Gusmán",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jorge_jinkis",
+      "name": "Jorge Jinkis",
+      "betweenness": 0.0
+    },
+    {
+      "id": "mario_levin",
+      "name": "Mario Levin",
+      "betweenness": 0.0
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "betweenness": 0.0
+    },
+    {
+      "id": "cesar_jaroslavsky",
+      "name": "César Jaroslavsky",
+      "betweenness": 0.0
+    },
+    {
+      "id": "juan_octavio_gauna",
+      "name": "Juan Octavio Gauna",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jose_severo_caballero",
+      "name": "José Severo Caballero",
+      "betweenness": 0.0
+    },
+    {
+      "id": "augusto_belluscio",
+      "name": "Augusto César Belluscio",
+      "betweenness": 0.0
+    },
+    {
+      "id": "carlos_fayt",
+      "name": "Carlos Santiago Fayt",
+      "betweenness": 0.0
+    },
+    {
+      "id": "enrique_petracchi",
+      "name": "Enrique Santiago Petracchi",
+      "betweenness": 0.0
+    },
+    {
+      "id": "norberto_cozzani",
+      "name": "Norberto Ricardo Cozzani",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jorge_antonio_berges",
+      "name": "Jorge Antonio Bergés",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jorge_bacque",
+      "name": "Jorge Antonio Bacqué",
+      "betweenness": 0.0
+    },
+    {
+      "id": "soren_kierkegaard",
+      "name": "Søren Kierkegaard",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jesus",
+      "name": "de Nazaret Jesús",
+      "betweenness": 0.0
+    },
+    {
+      "id": "ramon_camps",
+      "name": "Ramón Juan Alberto Camps",
+      "betweenness": 0.0
+    },
+    {
+      "id": "ovidio_riccheri",
+      "name": "Ovidio P. Riccheri",
+      "betweenness": 0.0
+    }
+  ]
+}

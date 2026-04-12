@@ -1,0 +1,2654 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-12">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+      <attribute id="1" title="birth_year" type="string" />
+      <attribute id="2" title="birth_place" type="string" />
+      <attribute id="3" title="wikidata" type="string" />
+    </attributes>
+    <nodes>
+      <node id="luis_chitarroni" label="Luis Chitarroni">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1958" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q112121650" />
+        </attvalues>
+      </node>
+      <node id="rodolfo_wilcock" label="Juan Rodolfo Wilcock">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1919" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1643790" />
+        </attvalues>
+      </node>
+      <node id="ben_jonson" label="Ben Jonson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1572" />
+          <attvalue for="2" value="Londres, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q193857" />
+        </attvalues>
+      </node>
+      <node id="ts_eliot" label="T. Eliot">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1888" />
+          <attvalue for="2" value="Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q37767" />
+        </attvalues>
+      </node>
+      <node id="auden" label="Wystan Hugh Auden">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1907" />
+          <attvalue for="2" value="York, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q178698" />
+        </attvalues>
+      </node>
+      <node id="evelyn_waugh" label="Evelyn Waugh">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1903" />
+          <attvalue for="2" value="Londres, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q107002" />
+        </attvalues>
+      </node>
+      <node id="jack_kerouac" label="Jack Kerouac">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Lowell, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q160534" />
+        </attvalues>
+      </node>
+      <node id="brahms" label="Johannes Brahms">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1833" />
+          <attvalue for="2" value="Hamburgo, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7294" />
+        </attvalues>
+      </node>
+      <node id="bioy_casares" label="Adolfo Bioy Casares">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1914" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q298035" />
+        </attvalues>
+      </node>
+      <node id="alberto_arbasino" label="Alberto Arbasino">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Voghera, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q521191" />
+        </attvalues>
+      </node>
+      <node id="alberto_moravia" label="Alberto Moravia">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1907" />
+          <attvalue for="2" value="Roma, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q161933" />
+        </attvalues>
+      </node>
+      <node id="henry_james" label="Henry James">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1843" />
+          <attvalue for="2" value="Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q170509" />
+        </attvalues>
+      </node>
+      <node id="marcel_proust" label="Marcel Proust">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1871" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7199" />
+        </attvalues>
+      </node>
+      <node id="ruggero_guarini" label="Ruggero Guarini">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1931" />
+          <attvalue for="2" value="Nápoles, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q19405228" />
+        </attvalues>
+      </node>
+      <node id="pasolini" label="Pier Paolo Pasolini">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Bolonia, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q25120" />
+        </attvalues>
+      </node>
+      <node id="dylan_thomas" label="Dylan Thomas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1914" />
+          <attvalue for="2" value="Swansea, Gales" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q191023" />
+        </attvalues>
+      </node>
+      <node id="vernon_watkins" label="Vernon Watkins">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1906" />
+          <attvalue for="2" value="Maesteg, Gales" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q325437" />
+        </attvalues>
+      </node>
+      <node id="felix_della_paolera" label="Félix Della Paolera">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1923" />
+          <attvalue for="2" value="Adrogué, Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="ivy_compton_burnett" label="Ivy Compton-Burnett">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1884" />
+          <attvalue for="2" value="Pinner, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q432322" />
+        </attvalues>
+      </node>
+      <node id="paul_valery" label="Ambroise Valéry">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1871" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q200639" />
+        </attvalues>
+      </node>
+      <node id="claude_simon" label="Claude Simon">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1913" />
+          <attvalue for="2" value="Antananarivo, Madagascar" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q131549" />
+        </attvalues>
+      </node>
+      <node id="borges" label="Jorge Borges">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1899" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q909" />
+        </attvalues>
+      </node>
+      <node id="jonathan_swift" label="Jonathan Swift">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1667" />
+          <attvalue for="2" value="Irlanda" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q41166" />
+        </attvalues>
+      </node>
+      <node id="erwin_schroedinger" label="Erwin Schrödinger">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1887" />
+          <attvalue for="2" value="Viena, Austria" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9130" />
+        </attvalues>
+      </node>
+      <node id="henri_landru" label="Henri Landru">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1869" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q534708" />
+        </attvalues>
+      </node>
+      <node id="mallarme" label="Stéphane Mallarmé">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1842" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q767" />
+        </attvalues>
+      </node>
+      <node id="sor_juana" label="Sor Juana Inés de la Cruz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1648" />
+          <attvalue for="2" value="San Miguel Nepantla, México" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q183074" />
+        </attvalues>
+      </node>
+      <node id="napoleon" label="Napoléon Bonaparte">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1769" />
+          <attvalue for="2" value="Ajaccio, Córcega, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q517" />
+        </attvalues>
+      </node>
+      <node id="james_joyce" label="James Joyce">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1882" />
+          <attvalue for="2" value="Irlanda" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6882" />
+        </attvalues>
+      </node>
+      <node id="edgardo_cozarinsky" label="Edgardo Cozarinsky">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1939" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q937897" />
+        </attvalues>
+      </node>
+      <node id="john_milton" label="John Milton">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1608" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q79759" />
+        </attvalues>
+      </node>
+      <node id="luis_gusman" label="Luis Gusmán">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1944" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5679615" />
+        </attvalues>
+      </node>
+      <node id="robert_walser" label="Robert Walser">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1878" />
+          <attvalue for="2" value="Biel/Bienne, Suiza" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q123075" />
+        </attvalues>
+      </node>
+      <node id="kafka" label="Franz Kafka">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1883" />
+          <attvalue for="2" value="Praga, Imperio Austrohúngaro" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q905" />
+        </attvalues>
+      </node>
+      <node id="robert_musil" label="Robert Musil">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1880" />
+          <attvalue for="2" value="Imperio Austrohúngaro (Actual Austria)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q78487" />
+        </attvalues>
+      </node>
+      <node id="charles_saint_beuve" label="Charles-Augustin Sainte-Beuve">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1804" />
+          <attvalue for="2" value="Boulogne-sur-Mer, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1063392" />
+        </attvalues>
+      </node>
+      <node id="goethe" label="Johann Goethe">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1749" />
+          <attvalue for="2" value="Sacro Imperio Romano Germánico (actual Alemania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5879" />
+        </attvalues>
+      </node>
+      <node id="henri_wallon" label="Henri Wallon">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1879" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q946417" />
+        </attvalues>
+      </node>
+      <node id="lev_tolstoi" label="Lev Tolstói">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1828" />
+          <attvalue for="2" value="Yásnaya Poliana, Rusia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7243" />
+        </attvalues>
+      </node>
+      <node id="fiodor_dostoyevski" label="Fiódor Dostoyevski">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1821" />
+          <attvalue for="2" value="Moscú, Imperio Ruso" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q991" />
+        </attvalues>
+      </node>
+      <node id="roberto_calasso" label="Roberto Calasso">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1941" />
+          <attvalue for="2" value="Florencia, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q669956" />
+        </attvalues>
+      </node>
+      <node id="jorge_jinkis" label="Jorge Jinkis">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1943" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="freud" label="Sigmund Freud">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1856" />
+          <attvalue for="2" value="Imperio Austríaco (actual República Checa)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9215" />
+        </attvalues>
+      </node>
+      <node id="witold_gombrowicz" label="Witold Gombrowicz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1904" />
+          <attvalue for="2" value="Polonia (Imperio Ruso)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q275175" />
+        </attvalues>
+      </node>
+      <node id="holderlin" label="Johann Hölderlin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1770" />
+          <attvalue for="2" value="Ducado de Wurtemberg (actual Alemania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q75889" />
+        </attvalues>
+      </node>
+      <node id="martin_heidegger" label="Martin Heidegger">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1889" />
+          <attvalue for="2" value="Imperio alemán (actual Alemania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q48301" />
+        </attvalues>
+      </node>
+      <node id="maurice_blanchot" label="Maurice Blanchot">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1907" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q315210" />
+        </attvalues>
+      </node>
+      <node id="socrates" label="Sócrates">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-470" />
+          <attvalue for="2" value="Grecia Antigua" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q913" />
+        </attvalues>
+      </node>
+      <node id="alfredo_palacios" label="Alfredo Palacios">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1878" />
+          <attvalue for="2" value="Buenos Aires" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2880118" />
+        </attvalues>
+      </node>
+      <node id="arturo_frondizi" label="Arturo Frondizi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1908" />
+          <attvalue for="2" value="Paso de los Libres, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q346658" />
+        </attvalues>
+      </node>
+      <node id="hector_campora" label="Héctor Cámpora">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1909" />
+          <attvalue for="2" value="Mercedes, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q356751" />
+        </attvalues>
+      </node>
+      <node id="juan_domingo_peron" label="Juan Domingo Perón">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1895" />
+          <attvalue for="2" value="Lobos, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q93330" />
+        </attvalues>
+      </node>
+      <node id="raul_alfonsin" label="Raúl Alfonsín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1927" />
+          <attvalue for="2" value="Chascomús, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q193062" />
+        </attvalues>
+      </node>
+      <node id="albino_gomez" label="Albino Gómez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1928" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="https://www.wikidata.org/wiki/Q42682222" />
+        </attvalues>
+      </node>
+      <node id="mario_benedetti" label="Mario Benedetti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1920" />
+          <attvalue for="2" value="Paso de los Toros, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q16285" />
+        </attvalues>
+      </node>
+      <node id="leon_rozitchner" label="León Rozitchner">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1924" />
+          <attvalue for="2" value="Chivilcoy, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9022151" />
+        </attvalues>
+      </node>
+      <node id="luis_gregorich" label="Luis Gregorich">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1928" />
+          <attvalue for="2" value="General Villegas, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q55229181" />
+        </attvalues>
+      </node>
+      <node id="carl_jung" label="Carl Gustav Jung">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1875" />
+          <attvalue for="2" value="Kesswil, Suiza" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q41532" />
+        </attvalues>
+      </node>
+      <node id="simone_beauvoir" label="Simone de Beauvoir">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1908" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7197" />
+        </attvalues>
+      </node>
+      <node id="juan_jose_sebreli" label="Juan José Sebreli">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5950521" />
+        </attvalues>
+      </node>
+      <node id="horacio_verbitsky" label="Horacio Verbitsky">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1942" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1337241" />
+        </attvalues>
+      </node>
+      <node id="david_vinias" label="David Viñas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1927" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q965392" />
+        </attvalues>
+      </node>
+      <node id="hector_murena" label="Héctor Murena">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1923" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1642834" />
+        </attvalues>
+      </node>
+      <node id="jose_isaacson" label="José Isaacson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q55949415" />
+        </attvalues>
+      </node>
+      <node id="jorge_manrique" label="Jorge Manrique">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1440" />
+          <attvalue for="2" value="Paredes de Nava, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q389233" />
+        </attvalues>
+      </node>
+      <node id="cervantes" label="Miguel Cervantes">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1547" />
+          <attvalue for="2" value="España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5682" />
+        </attvalues>
+      </node>
+      <node id="jean_paul_sartre" label="Jean-Paul Sartre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1905" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9364" />
+        </attvalues>
+      </node>
+      <node id="cesar_fernandez_moreno" label="César Fernández Moreno">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1919" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5796219" />
+        </attvalues>
+      </node>
+      <node id="enrique_santos_discepolo" label="Enrique Santos Discépolo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1901" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q765871" />
+        </attvalues>
+      </node>
+      <node id="che_guevara" label="Ernesto Guevara">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1928" />
+          <attvalue for="2" value="Rosario, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5809" />
+        </attvalues>
+      </node>
+      <node id="roberto_arlt" label="Roberto Arlt">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1900" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q188838" />
+        </attvalues>
+      </node>
+      <node id="ernesto_sabato" label="Ernesto Sabato">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1911" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q186630" />
+        </attvalues>
+      </node>
+      <node id="carlos_puebla" label="Carlos Puebla">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1917" />
+          <attvalue for="2" value="Manzanillo, Cuba" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q544283" />
+        </attvalues>
+      </node>
+      <node id="julio_cortazar" label="Julio Cortázar">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1914" />
+          <attvalue for="2" value="Bélgica" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q174210" />
+        </attvalues>
+      </node>
+      <node id="jorge_asis" label="Jorge Asís">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1946" />
+          <attvalue for="2" value="Avellaneda, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1703768" />
+        </attvalues>
+      </node>
+      <node id="ricardo_piglia" label="Ricardo Piglia">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1940" />
+          <attvalue for="2" value="Adrogué, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q583814" />
+        </attvalues>
+      </node>
+      <node id="nestor_perlongher" label="Néstor Perlongher">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1949" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7071482" />
+        </attvalues>
+      </node>
+      <node id="ramon_alcalde" label="Ramón Alcalde">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1951" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q75653349" />
+        </attvalues>
+      </node>
+      <node id="hector_grisafi" label="Héctor Grisafi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="eduardo_gruner" label="Eduardo Grüner">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1946" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q56582734" />
+        </attvalues>
+      </node>
+      <node id="hugo_savino" label="Hugo Savino">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1945" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="horacio_quiroga" label="Horacio Quiroga">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1878" />
+          <attvalue for="2" value="Salto, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q16864" />
+        </attvalues>
+      </node>
+      <node id="osvaldo_rossler" label="Osvaldo Rossler">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="alfonsina_storni" label="Alfonsina Storni">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1892" />
+          <attvalue for="2" value="Sala Capriasca, Suiza" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q238557" />
+        </attvalues>
+      </node>
+      <node id="gongora" label="Luis de Góngora y Argote">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1561" />
+          <attvalue for="2" value="Córdoba, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q219744" />
+        </attvalues>
+      </node>
+      <node id="leopoldo_galtieri" label="Leopoldo Fortunato Galtieri">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1926" />
+          <attvalue for="2" value="Caseros, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q124993" />
+        </attvalues>
+      </node>
+      <node id="jorge_anaya" label="Jorge Isaac Anaya">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1926" />
+          <attvalue for="2" value="Bahía Blanca, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2714985" />
+        </attvalues>
+      </node>
+      <node id="basilio_lami_dozo" label="Basilio Lami Dozo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1929" />
+          <attvalue for="2" value="Santiago del Estero, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2886883" />
+        </attvalues>
+      </node>
+      <node id="hesiodo" label="Hesíodo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-700" />
+          <attvalue for="2" value="Ascra, Antigua Grecia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q44233" />
+        </attvalues>
+      </node>
+      <node id="esquilo" label="Esquilo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-525" />
+          <attvalue for="2" value="Eleusis, Antigua Grecia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q40939" />
+        </attvalues>
+      </node>
+      <node id="horacio" label="Quinto Horacio">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-65" />
+          <attvalue for="2" value="República Romana (actual Italia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6197" />
+        </attvalues>
+      </node>
+      <node id="dante_alighieri" label="Dante Alighieri">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1265" />
+          <attvalue for="2" value="República de Florencia (actual Italia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1067" />
+        </attvalues>
+      </node>
+      <node id="moliere" label="Jean-Baptiste Poquelin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1622" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q687" />
+        </attvalues>
+      </node>
+      <node id="friedrich_schiller" label="Friedrich Schiller">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1759" />
+          <attvalue for="2" value="Marbach am Neckar, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q22670" />
+        </attvalues>
+      </node>
+      <node id="victor_hugo" label="Victor Hugo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1802" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q535" />
+        </attvalues>
+      </node>
+      <node id="emile_zola" label="Émile Zola">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1840" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q504" />
+        </attvalues>
+      </node>
+      <node id="sarmiento" label="Domingo Faustino Sarmiento">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1811" />
+          <attvalue for="2" value="San Juan, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q254041" />
+        </attvalues>
+      </node>
+      <node id="jose_hernandez" label="José Hernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1834" />
+          <attvalue for="2" value="Chacras de Perdriel, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q377623" />
+        </attvalues>
+      </node>
+      <node id="raul_gustavo_aguirre" label="Raúl Gustavo Aguirre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1927" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2134418" />
+        </attvalues>
+      </node>
+      <node id="roberto_raschella" label="Roberto Raschella">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q93387528" />
+        </attvalues>
+      </node>
+      <node id="pascal" label="Blaise Pascal">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1623" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1290" />
+        </attvalues>
+      </node>
+      <node id="miguel_unamuno" label="Miguel de Unamuno">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1864" />
+          <attvalue for="2" value="Bilbao, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q185085" />
+        </attvalues>
+      </node>
+      <node id="william_faulkner" label="William Faulkner">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1897" />
+          <attvalue for="2" value="Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q38392" />
+        </attvalues>
+      </node>
+      <node id="john_dos_passos" label="John Dos Passos">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1896" />
+          <attvalue for="2" value="Chicago, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q312407" />
+        </attvalues>
+      </node>
+      <node id="louis_ferdinand_celine" label="Louis-Ferdinand Céline">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1894" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q151820" />
+        </attvalues>
+      </node>
+      <node id="benjamin_menendez" label="Mario Benjamín Menéndez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Chañar Ladeado, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q196263" />
+        </attvalues>
+      </node>
+      <node id="pablo_neruda" label="Pablo Neruda">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1904" />
+          <attvalue for="2" value="Parral, Chile" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q34189" />
+        </attvalues>
+      </node>
+      <node id="aristoteles" label="Aristóteles">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-384" />
+          <attvalue for="2" value="Grecia Antigua" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q868" />
+        </attvalues>
+      </node>
+      <node id="friedrich_nietzsche" label="Friedrich Nietzsche">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1844" />
+          <attvalue for="2" value="Prusia (actual Alemania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9358" />
+        </attvalues>
+      </node>
+      <node id="epicuro" label="Epicuro">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-341" />
+          <attvalue for="2" value="Samos, Antigua Grecia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q43216" />
+        </attvalues>
+      </node>
+      <node id="winston_churchill" label="Winston Churchill">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1874" />
+          <attvalue for="2" value="Woodstock, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q8016" />
+        </attvalues>
+      </node>
+      <node id="margaret_tatcher" label="Margaret Thatcher">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1925" />
+          <attvalue for="2" value="Grantham, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7416" />
+        </attvalues>
+      </node>
+      <node id="alvaro_alsogaray" label="Álvaro Alsogaray">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1913" />
+          <attvalue for="2" value="Esperanza, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q8076665" />
+        </attvalues>
+      </node>
+      <node id="lisandro_de_la_torre" label="Lisandro de la Torre">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1868" />
+          <attvalue for="2" value="Rosario, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3543869" />
+        </attvalues>
+      </node>
+      <node id="raul_scalabrini_ortiz" label="Raúl Scalabrini Ortiz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1898" />
+          <attvalue for="2" value="Corrientes, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q4263301" />
+        </attvalues>
+      </node>
+      <node id="shakespeare" label="William Shakespeare">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1564" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q692" />
+        </attvalues>
+      </node>
+      <node id="francisco_franco" label="Francisco Franco">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1892" />
+          <attvalue for="2" value="España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q29179" />
+        </attvalues>
+      </node>
+      <node id="juan_manuel_rosas" label="Juan Manuel de Rosas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1793" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q311436" />
+        </attvalues>
+      </node>
+      <node id="jose_martinez_de_hoz" label="José Alfredo Martínez de Hoz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1925" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3326194" />
+        </attvalues>
+      </node>
+      <node id="costa_mendez" label="Nicanor Costa Méndez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Buenos Aires" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q612155" />
+        </attvalues>
+      </node>
+      <node id="roberto_alemann" label="Roberto Alemann">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2159408" />
+        </attvalues>
+      </node>
+      <node id="jose_marmol" label="José Mármol">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1817" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1709528" />
+        </attvalues>
+      </node>
+      <node id="daniel_moyano" label="Daniel Moyano">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q459450" />
+        </attvalues>
+      </node>
+      <node id="alejandro_dumas" label="Alexandre Dumas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1802" />
+          <attvalue for="2" value="Villers-Cotterêts, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q38337" />
+        </attvalues>
+      </node>
+      <node id="gustave_aimard" label="Gustave Aimard">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1818" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q472068" />
+        </attvalues>
+      </node>
+      <node id="morris_west" label="Morris West">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1916" />
+          <attvalue for="2" value="Melbourne, Australia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q471021" />
+        </attvalues>
+      </node>
+      <node id="lamartine" label="Alphonse de Lamartine">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1790" />
+          <attvalue for="2" value="Mâcon, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q188697" />
+        </attvalues>
+      </node>
+      <node id="mercedes_rosas" label="Mercedes Rosas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1810" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q104247432" />
+        </attvalues>
+      </node>
+      <node id="lord_byron" label="George Gordon Byron">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1788" />
+          <attvalue for="2" value="Londres, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5679" />
+        </attvalues>
+      </node>
+      <node id="florencio_varela" label="Florencio Varela">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1807" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5460859" />
+        </attvalues>
+      </node>
+      <node id="julian_aguero" label="Julián Agüero">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1776" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5956231" />
+        </attvalues>
+      </node>
+      <node id="agustina_rosas" label="Agustina Rosas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1816" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5660464" />
+        </attvalues>
+      </node>
+      <node id="pepa_lavalle" label="Pepa Lavalle">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="matilde_stewart" label="Matilde Pacheco Stewart">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1854" />
+          <attvalue for="2" value="Montevideo, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6787542" />
+        </attvalues>
+      </node>
+      <node id="clementina_battle" label="Clementina G. Battle">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="jacques_duprey" label="Jacques Duprey">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="sila" label="Lucio Cornelio Sila">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-138" />
+          <attvalue for="2" value="Roma" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q483783" />
+        </attvalues>
+      </node>
+      <node id="homero" label="Homero">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-750" />
+          <attvalue for="2" value="Grecia Antigua" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6691" />
+        </attvalues>
+      </node>
+      <node id="melchor_pacheco" label="Melchor Pacheco y Obes">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1809" />
+          <attvalue for="2" value="Montevideo, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6009460" />
+        </attvalues>
+      </node>
+      <node id="jules_michelet" label="Jules Michelet">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1798" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q310791" />
+        </attvalues>
+      </node>
+      <node id="george_sand" label="George Sand">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1804" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3816" />
+        </attvalues>
+      </node>
+      <node id="jose_artigas" label="José Gervasio Artigas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1764" />
+          <attvalue for="2" value="Montevideo, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q252847" />
+        </attvalues>
+      </node>
+      <node id="francois_guizot" label="François Guizot">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1787" />
+          <attvalue for="2" value="Nîmes, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q157324" />
+        </attvalues>
+      </node>
+      <node id="manuel_oribe" label="Manuel Oribe">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1792" />
+          <attvalue for="2" value="Montevideo, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q467987" />
+        </attvalues>
+      </node>
+      <node id="eugene_sue" label="Eugène Sue">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1804" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q315220" />
+        </attvalues>
+      </node>
+      <node id="haroldo_conti" label="Haroldo Conti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1925" />
+          <attvalue for="2" value="Chacabuco, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1585984" />
+        </attvalues>
+      </node>
+      <node id="rodolfo_walsh" label="Rodolfo Walsh">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1927" />
+          <attvalue for="2" value="Lamarque, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1111411" />
+        </attvalues>
+      </node>
+      <node id="paco_urondo" label="Francisco Urondo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Santa Fe, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1648047" />
+        </attvalues>
+      </node>
+      <node id="augusto_pinochet" label="Augusto Pinochet">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1915" />
+          <attvalue for="2" value="Valparaíso, Chile" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q368" />
+        </attvalues>
+      </node>
+      <node id="bosco" label="Hieronymus Bosch">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1450" />
+          <attvalue for="2" value="Países Bajos Borgoñones" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q130531" />
+        </attvalues>
+      </node>
+      <node id="martinez_estrada" label="Ezequiel Martínez Estrada">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1895" />
+          <attvalue for="2" value="San José de la Esquina, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q464737" />
+        </attvalues>
+      </node>
+      <node id="walter_benjamin" label="Walter Benjamin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1892" />
+          <attvalue for="2" value="Imperio alemán (actual Alemania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q61078" />
+        </attvalues>
+      </node>
+      <node id="gabriel_de_mably" label="Gabriel Bonnot de Mably">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1709" />
+          <attvalue for="2" value="Grenoble, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q202555" />
+        </attvalues>
+      </node>
+      <node id="soren_kierkegaard" label="Søren Kierkegaard">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1813" />
+          <attvalue for="2" value="Dinamarca" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6512" />
+        </attvalues>
+      </node>
+      <node id="george_steiner" label="George Steiner">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1929" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q453288" />
+        </attvalues>
+      </node>
+      <node id="heinrich_von_kleist" label="Heinrich von Kleist">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1777" />
+          <attvalue for="2" value="Frankfurt (Oder), Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q28494" />
+        </attvalues>
+      </node>
+      <node id="joseph_conrad" label="Joseph Conrad">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1857" />
+          <attvalue for="2" value="Imperio Ruso (actual Ucrania)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q82925" />
+        </attvalues>
+      </node>
+      <node id="rilke" label="Rainer Rilke">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1875" />
+          <attvalue for="2" value="Imperio Austrohúngaro (actual República Checa)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q76483" />
+        </attvalues>
+      </node>
+      <node id="samuel_beckett" label="Samuel Beckett">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1906" />
+          <attvalue for="2" value="Irlanda" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q37327" />
+        </attvalues>
+      </node>
+      <node id="vladimir_nabokov" label="Vladimir Nabokov">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1899" />
+          <attvalue for="2" value="San Petesburgo, Imperio Ruso" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q36591" />
+        </attvalues>
+      </node>
+      <node id="elias_canetti" label="Elias Canetti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1905" />
+          <attvalue for="2" value="Ruse, Bulgaria" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q80064" />
+        </attvalues>
+      </node>
+      <node id="lezama_lima" label="José Lezama Lima">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1910" />
+          <attvalue for="2" value="Cuba" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q366949" />
+        </attvalues>
+      </node>
+      <node id="johann_herder" label="Johann Herder">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1744" />
+          <attvalue for="2" value="Prusia (actual Polonia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q155547" />
+        </attvalues>
+      </node>
+      <node id="hippolyte_taine" label="Hippolyte Taine">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1828" />
+          <attvalue for="2" value="Vouziers, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q297726" />
+        </attvalues>
+      </node>
+      <node id="armando_roche" label="Armando Almada Roche">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1942" />
+          <attvalue for="2" value="Formosa, Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="gabriela_massuh" label="Gabriela Massuh">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1951" />
+          <attvalue for="2" value="San Miguel de Tucumán, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q109677143" />
+        </attvalues>
+      </node>
+      <node id="chesterton" label="Gilbert Keith Chesterton">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1874" />
+          <attvalue for="2" value="Kensington, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q183167" />
+        </attvalues>
+      </node>
+      <node id="de_quincey" label="Thomas De Quincey">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1785" />
+          <attvalue for="2" value="Mánchester, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q317160" />
+        </attvalues>
+      </node>
+      <node id="osvaldo_soriano" label="Osvaldo Soriano">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1943" />
+          <attvalue for="2" value="Mar del Plata, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1366957" />
+        </attvalues>
+      </node>
+      <node id="juan_jose_saer" label="Juan José Saer">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1937" />
+          <attvalue for="2" value="Serodino, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q712518" />
+        </attvalues>
+      </node>
+      <node id="manuel_puig" label="Manuel Puig">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1932" />
+          <attvalue for="2" value="General Villegas, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q284560" />
+        </attvalues>
+      </node>
+      <node id="hector_libertella" label="Héctor Libertella">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1945" />
+          <attvalue for="2" value="Bahía Blanca, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5963910" />
+        </attvalues>
+      </node>
+      <node id="william_gass" label="William Gass">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1924" />
+          <attvalue for="2" value="Fargo, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q304874" />
+        </attvalues>
+      </node>
+      <node id="rafael_lapesa" label="Rafael Lapesa">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1908" />
+          <attvalue for="2" value="Valencia, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2121312" />
+        </attvalues>
+      </node>
+      <node id="ferdinand_de_saussure" label="Ferdinand de Saussure">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1857" />
+          <attvalue for="2" value="Ginebra, Suiza" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q13230" />
+        </attvalues>
+      </node>
+      <node id="mario_teruggi" label="Mario A. Teruggi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="rodolfo_kusch" label="Rodolfo Kusch">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q6110534" />
+        </attvalues>
+      </node>
+      <node id="canal_feijoo" label="Bernardo Canal Feijóo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1897" />
+          <attvalue for="2" value="Santiago del Estero, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q16489661" />
+        </attvalues>
+      </node>
+      <node id="arcimboldo" label="Giuseppe Arcimboldo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1526" />
+          <attvalue for="2" value="Ducado de Milán (actual Italia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7751" />
+        </attvalues>
+      </node>
+      <node id="charles_perrault" label="Charles Perrault">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1628" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q128460" />
+        </attvalues>
+      </node>
+      <node id="miguel_briante" label="Miguel Briante">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1944" />
+          <attvalue for="2" value="General Belgrano, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5554422" />
+        </attvalues>
+      </node>
+      <node id="jose_luis_romero" label="José Luis Romero">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1909" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9014133" />
+        </attvalues>
+      </node>
+      <node id="etienne_de_condillac" label="Étienne Bonnot de Condillac">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1714" />
+          <attvalue for="2" value="Grenoble, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q272119" />
+        </attvalues>
+      </node>
+      <node id="jose_pablo_feinmann" label="José Pablo Feinmann">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1943" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1418232" />
+        </attvalues>
+      </node>
+      <node id="esteban_echeverria" label="Esteban Echeverría">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1805" />
+          <attvalue for="2" value="Virreinato del Río de la Plata" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q188859" />
+        </attvalues>
+      </node>
+      <node id="juan_bautista_alberdi" label="Juan Bautista Alberdi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1810" />
+          <attvalue for="2" value="San Miguel de Tucumán, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q722738" />
+        </attvalues>
+      </node>
+      <node id="plutarco" label="Plutarco">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="46" />
+          <attvalue for="2" value="Queronea, Grecia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q41523" />
+        </attvalues>
+      </node>
+      <node id="salvador_ruano" label="Salvador Ruano">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="hegel" label="Georg Wilhelm Friedrich Hegel">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1770" />
+          <attvalue for="2" value="Stuttgart, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9235" />
+        </attvalues>
+      </node>
+      <node id="nicolas_condorcet" label="Nicolas Condorcet">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1743" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q201477" />
+        </attvalues>
+      </node>
+      <node id="kant" label="Immanuel Kant">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1724" />
+          <attvalue for="2" value="Prusia (actual Rusia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q9312" />
+        </attvalues>
+      </node>
+      <node id="bajtin" label="Mijaíl Bajtín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1895" />
+          <attvalue for="2" value="Oriol, Imperio Ruso" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q185375" />
+        </attvalues>
+      </node>
+      <node id="guillermo_hudson" label="William Henry Hudson">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1841" />
+          <attvalue for="2" value="Quilmes, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q255470" />
+        </attvalues>
+      </node>
+      <node id="edward_gibbon" label="Edward Gibbon">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1737" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q161841" />
+        </attvalues>
+      </node>
+      <node id="charles_rollin" label="Charles Rollin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1661" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2471187" />
+        </attvalues>
+      </node>
+      <node id="william_whiston" label="William Whiston">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1667" />
+          <attvalue for="2" value="Norton, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q452091" />
+        </attvalues>
+      </node>
+      <node id="san_agustin" label="de Hipona Agustín">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="354" />
+          <attvalue for="2" value="Imperio Romano (actual Argelia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q8018" />
+        </attvalues>
+      </node>
+      <node id="charles_dickens" label="Charles Dickens">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1812" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5686" />
+        </attvalues>
+      </node>
+      <node id="charles_darwin" label="Charles Darwin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1809" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1035" />
+        </attvalues>
+      </node>
+      <node id="robert_cunninghame_graham" label="Robert Bontine Cunninghame Graham">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1852" />
+          <attvalue for="2" value="Londres, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q334633" />
+        </attvalues>
+      </node>
+      <node id="ricardo_rojas" label="Ricardo Rojas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1882" />
+          <attvalue for="2" value="San Miguel de Tucumán, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q347832" />
+        </attvalues>
+      </node>
+      <node id="leopoldo_lugones" label="Leopoldo Lugones">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1874" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q188875" />
+        </attvalues>
+      </node>
+      <node id="ruben_dario" label="Rubén Darío">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1867" />
+          <attvalue for="2" value="Nicaragua" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q173767" />
+        </attvalues>
+      </node>
+      <node id="macedonio_fernandez" label="Macedonio Fernández">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1874" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1334326" />
+        </attvalues>
+      </node>
+      <node id="defilippis_novoa" label="Francisco Defilippis Novoa">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1889" />
+          <attvalue for="2" value="Paraná, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1441939" />
+        </attvalues>
+      </node>
+      <node id="levi_strauss" label="Claude Lévi-Strauss">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1908" />
+          <attvalue for="2" value="Bruselas, Bélgica" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q128126" />
+        </attvalues>
+      </node>
+      <node id="paul_ricoeur" label="Paul Ricoeur">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1913" />
+          <attvalue for="2" value="Valence, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q192066" />
+        </attvalues>
+      </node>
+      <node id="giambattista_vico" label="Giambattista Vico">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1668" />
+          <attvalue for="2" value="Nápoles, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q178709" />
+        </attvalues>
+      </node>
+      <node id="carlos_altamirano" label="Carlos Altamirano">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1939" />
+          <attvalue for="2" value="Corrientes, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5749649" />
+        </attvalues>
+      </node>
+      <node id="beatriz_sarlo" label="Beatriz Sarlo">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1942" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q4408686" />
+        </attvalues>
+      </node>
+      <node id="fermin_chavez" label="Fermín Chávez">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1924" />
+          <attvalue for="2" value="Nogoyá, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2887481" />
+        </attvalues>
+      </node>
+      <node id="halperin_donghi" label="Tulio Halperín Donghi">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1926" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3541956" />
+        </attvalues>
+      </node>
+      <node id="michel_jarrety" label="Michel Jarrety">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1953" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q47466031" />
+        </attvalues>
+      </node>
+      <node id="hans_robert_jauss" label="Hans Robert Jauss">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1921" />
+          <attvalue for="2" value="Göppingen, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q61262" />
+        </attvalues>
+      </node>
+      <node id="octavio_paz" label="Octavio Paz">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1914" />
+          <attvalue for="2" value="México" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q46739" />
+        </attvalues>
+      </node>
+      <node id="arturo_roig" label="Arturo Andrés Roig">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1922" />
+          <attvalue for="2" value="Mendoza, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2865932" />
+        </attvalues>
+      </node>
+      <node id="jean_starobinski" label="Jean Starobinski">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1920" />
+          <attvalue for="2" value="Ginebra, Suiza" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q123507" />
+        </attvalues>
+      </node>
+      <node id="norma_gentili" label="norma_gentili">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="marta_lynch" label="Marta Lynch">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1925" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q434892" />
+        </attvalues>
+      </node>
+      <node id="wanda_sacher_masoch" label="Wanda von Sacher-Masoch">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1845" />
+          <attvalue for="2" value="Graz, Austria" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q113750" />
+        </attvalues>
+      </node>
+      <node id="liliana_heer" label="Liliana Heer">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1943" />
+          <attvalue for="2" value="Esperanza, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q473369" />
+        </attvalues>
+      </node>
+      <node id="osman_lins" label="Osman Lins">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1924" />
+          <attvalue for="2" value="Vitória de Santo Antão, Brasil" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q346790" />
+        </attvalues>
+      </node>
+      <node id="jesus" label="de Nazaret Jesús">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-4" />
+          <attvalue for="2" value="Imperio Romano (Judea)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q302" />
+        </attvalues>
+      </node>
+      <node id="melville" label="Herman Melville">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1819" />
+          <attvalue for="2" value="Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q4985" />
+        </attvalues>
+      </node>
+      <node id="mozart" label="Wolfgang Amadeus Mozart">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1756" />
+          <attvalue for="2" value="Salzburgo, Austria" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q254" />
+        </attvalues>
+      </node>
+      <node id="domenico_scarlatti" label="Domenico Scarlatti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1685" />
+          <attvalue for="2" value="Nápoles, Italia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q167837" />
+        </attvalues>
+      </node>
+      <node id="jorge_monteleone" label="Jorge Monteleone">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1957" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="osvaldo_lamborghini" label="Osvaldo Lamborghini">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1940" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2036284" />
+        </attvalues>
+      </node>
+      <node id="german_garcia" label="Germán García">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1944" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5878677" />
+        </attvalues>
+      </node>
+      <node id="alberto_laiseca" label="Alberto Laiseca">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1941" />
+          <attvalue for="2" value="Rosario, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2831782" />
+        </attvalues>
+      </node>
+      <node id="tinianov" label="Yuri Tiniánov">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1894" />
+          <attvalue for="2" value="Rezekne, Letonia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q368455" />
+        </attvalues>
+      </node>
+      <node id="oscar_masotta" label="Óscar Masotta">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1930" />
+          <attvalue for="2" value="Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7106131" />
+        </attvalues>
+      </node>
+      <node id="roland_barthes" label="Roland Barthes">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1915" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q179109" />
+        </attvalues>
+      </node>
+      <node id="chaucer" label="Geoffrey Chaucer">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1343" />
+          <attvalue for="2" value="Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5683" />
+        </attvalues>
+      </node>
+      <node id="jd_salinger" label="Jerome David Salinger">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1919" />
+          <attvalue for="2" value="Nueva York, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q79904" />
+        </attvalues>
+      </node>
+      <node id="nathaniel_hawthorne" label="Nathaniel Hawthorne">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1804" />
+          <attvalue for="2" value="Salem, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q69339" />
+        </attvalues>
+      </node>
+      <node id="gustave_flaubert" label="Gustave Flaubert">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1821" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q43444" />
+        </attvalues>
+      </node>
+      <node id="stanislaus_joyce" label="Stanislaus Joyce">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1884" />
+          <attvalue for="2" value="Dublín, Irlanda" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q326243" />
+        </attvalues>
+      </node>
+      <node id="richard_ellman" label="Richard Ellmann">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1918" />
+          <attvalue for="2" value="Highland Park, EE.UU." />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1233576" />
+        </attvalues>
+      </node>
+      <node id="santiago_dabove" label="Santiago Dabove">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1889" />
+          <attvalue for="2" value="Morón, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q7420248" />
+        </attvalues>
+      </node>
+      <node id="juan_filloy" label="Juan Filloy">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1894" />
+          <attvalue for="2" value="Córdoba, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q1388819" />
+        </attvalues>
+      </node>
+      <node id="salvador_dali" label="Salvador Dalí">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1904" />
+          <attvalue for="2" value="Figueres, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5577" />
+        </attvalues>
+      </node>
+      <node id="enrique_banchs" label="Enrique Banchs">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1888" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q575904" />
+        </attvalues>
+      </node>
+      <node id="degas" label="Edgar Degas">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1834" />
+          <attvalue for="2" value="París, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q46373" />
+        </attvalues>
+      </node>
+      <node id="italo_calvino" label="Italo Calvino">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1923" />
+          <attvalue for="2" value="Santiago de las Vegas, Cuba" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q154756" />
+        </attvalues>
+      </node>
+      <node id="ernest_hemingway" label="Ernest Hemingway">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1899" />
+          <attvalue for="2" value="Oak Park, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q23434" />
+        </attvalues>
+      </node>
+      <node id="charles_chaplin" label="Charles Chaplin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1889" />
+          <attvalue for="2" value="Londres, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q729356" />
+        </attvalues>
+      </node>
+      <node id="marilyn_monroe" label="Marilyn Monroe">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1926" />
+          <attvalue for="2" value="Los Ángeles, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q4616" />
+        </attvalues>
+      </node>
+      <node id="stan_laurel" label="Stan Laurel">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1890" />
+          <attvalue for="2" value="Ulverston, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q72869" />
+        </attvalues>
+      </node>
+      <node id="oliver_hardy" label="Oliver Hardy">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1892" />
+          <attvalue for="2" value="Harlem, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q72911" />
+        </attvalues>
+      </node>
+      <node id="marlon_brando" label="Marlon Brando">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1924" />
+          <attvalue for="2" value="Omaha, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q34012" />
+        </attvalues>
+      </node>
+      <node id="rimbaud" label="Arthur Rimbaud">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1854" />
+          <attvalue for="2" value="Charleville, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q493" />
+        </attvalues>
+      </node>
+      <node id="bertolt_brecht" label="Bertolt Brecht">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1898" />
+          <attvalue for="2" value="Augsburgo, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q38757" />
+        </attvalues>
+      </node>
+      <node id="francois_mitterrand" label="François Mitterrand">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1916" />
+          <attvalue for="2" value="Jarnac, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2038" />
+        </attvalues>
+      </node>
+      <node id="valery_giscard" label="Valéry Giscard d'Estaing">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1926" />
+          <attvalue for="2" value="Coblenza, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2124" />
+        </attvalues>
+      </node>
+      <node id="aquiles_fabregat" label="Aquiles Fabregat">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1938" />
+          <attvalue for="2" value="Montevideo, Uruguay" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q19720223" />
+        </attvalues>
+      </node>
+      <node id="luis_aguile" label="Luis Aguilé">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1936" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2187957" />
+        </attvalues>
+      </node>
+      <node id="joan_manuel_serrat" label="Joan Manuel Serrat">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1943" />
+          <attvalue for="2" value="Barcelona, España" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q312753" />
+        </attvalues>
+      </node>
+      <node id="diego_angelino" label="Diego Angelino">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1944" />
+          <attvalue for="2" value="Maciá, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5805872" />
+        </attvalues>
+      </node>
+      <node id="beatriz_castillo" label="Beatriz Castillo">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1928" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="" />
+        </attvalues>
+      </node>
+      <node id="philippe_aries" label="Philippe Ariès">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1914" />
+          <attvalue for="2" value="Blois, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q434571" />
+        </attvalues>
+      </node>
+      <node id="edgar_morin" label="Edgar Morin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1921" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q317880" />
+        </attvalues>
+      </node>
+      <node id="hans_memling" label="Hans Memling">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1430" />
+          <attvalue for="2" value="Seligenstadt, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q106851" />
+        </attvalues>
+      </node>
+      <node id="jan_van_eyck" label="Jan van Eyck">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1390" />
+          <attvalue for="2" value="Maaseik, Bélgica" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q102272" />
+        </attvalues>
+      </node>
+      <node id="jan_potocki" label="Jan Potocki">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1761" />
+          <attvalue for="2" value="Pikov, Ucrania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q367109" />
+        </attvalues>
+      </node>
+      <node id="karen_quinlan" label="Karen Ann Quinlan">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1954" />
+          <attvalue for="2" value="Scranton, Estados Unidos" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3175638" />
+        </attvalues>
+      </node>
+      <node id="mercedes_roffe" label="Mercedes Roffé">
+        <attvalues>
+          <attvalue for="0" value="author" />
+          <attvalue for="1" value="1954" />
+          <attvalue for="2" value="Buenos Aires, Argentina" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q5495435" />
+        </attvalues>
+      </node>
+      <node id="euripides" label="Eurípides">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-480" />
+          <attvalue for="2" value="Salamina, Grecia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q48305" />
+        </attvalues>
+      </node>
+      <node id="amilcar_barca" label="Amílcar Barca">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-275" />
+          <attvalue for="2" value="Cartago, Túnez" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q185101" />
+        </attvalues>
+      </node>
+      <node id="herodoto" label="Heródoto">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-484" />
+          <attvalue for="2" value="Halicarnaso, Turquía" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q2685" />
+        </attvalues>
+      </node>
+      <node id="plinio" label="el Viejo Plinio">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="23" />
+          <attvalue for="2" value="Imperio Romano (actual Italia)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q82778" />
+        </attvalues>
+      </node>
+      <node id="estrabon" label="Estrabón">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-64" />
+          <attvalue for="2" value="Amasya, Reino del Ponto" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q45936" />
+        </attvalues>
+      </node>
+      <node id="suetonio" label="Cayo Suetonio">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="70" />
+          <attvalue for="2" value="Hipona, Imperio Romano" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q10133" />
+        </attvalues>
+      </node>
+      <node id="mathos" label="Mathos">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="Libia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q3299086" />
+        </attvalues>
+      </node>
+      <node id="dante_gabriel_rossetti" label="Dante Gabriel Rossetti">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1828" />
+          <attvalue for="2" value="Londres, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q186748" />
+        </attvalues>
+      </node>
+      <node id="william_holman_hunt" label="William Holman Hunt">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1827" />
+          <attvalue for="2" value="Londres, Reino Unido" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q211763" />
+        </attvalues>
+      </node>
+      <node id="theophile_gautier" label="Théophile Gautier">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1811" />
+          <attvalue for="2" value="Tarbes, Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q183737" />
+        </attvalues>
+      </node>
+      <node id="john_ruskin" label="John Ruskin">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1819" />
+          <attvalue for="2" value="Londres, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q179126" />
+        </attvalues>
+      </node>
+      <node id="baudelaire" label="Charles Baudelaire">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1821" />
+          <attvalue for="2" value="Francia" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q501" />
+        </attvalues>
+      </node>
+      <node id="arnold_hauser" label="Arnold Hauser">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1892" />
+          <attvalue for="2" value="Timișoara, Rumania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q365852" />
+        </attvalues>
+      </node>
+      <node id="oscar_wilde" label="Oscar Wilde">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1854" />
+          <attvalue for="2" value="Dublín, Irlanda" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q30875" />
+        </attvalues>
+      </node>
+      <node id="aubrey_beardsley" label="Aubrey Beardsley">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1872" />
+          <attvalue for="2" value="Brighton, Inglaterra" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q272566" />
+        </attvalues>
+      </node>
+      <node id="georg_trakl" label="Georg Trakl">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1887" />
+          <attvalue for="2" value="Salzburgo, Austria" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q78476" />
+        </attvalues>
+      </node>
+      <node id="platon" label="Platón">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-428" />
+          <attvalue for="2" value="Grecia Antigua" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q859" />
+        </attvalues>
+      </node>
+      <node id="zaratustra" label="Zaratustra">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="-628" />
+          <attvalue for="2" value="Imperio Medo (actual Irán)" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q35811" />
+        </attvalues>
+      </node>
+      <node id="ludwig_von_ficker" label="Ludwig von Ficker">
+        <attvalues>
+          <attvalue for="0" value="cited" />
+          <attvalue for="1" value="1880" />
+          <attvalue for="2" value="Múnich, Alemania" />
+          <attvalue for="3" value="http://www.wikidata.org/entity/Q84897" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="luis_chitarroni" target="rodolfo_wilcock" id="0" weight="28" />
+      <edge source="luis_chitarroni" target="ben_jonson" id="1" weight="1" />
+      <edge source="luis_chitarroni" target="ts_eliot" id="2" weight="3" />
+      <edge source="luis_chitarroni" target="auden" id="3" weight="1" />
+      <edge source="luis_chitarroni" target="evelyn_waugh" id="4" weight="1" />
+      <edge source="luis_chitarroni" target="jack_kerouac" id="5" weight="1" />
+      <edge source="luis_chitarroni" target="brahms" id="6" weight="1" />
+      <edge source="luis_chitarroni" target="bioy_casares" id="7" weight="5" />
+      <edge source="luis_chitarroni" target="alberto_arbasino" id="8" weight="1" />
+      <edge source="luis_chitarroni" target="alberto_moravia" id="9" weight="1" />
+      <edge source="luis_chitarroni" target="henry_james" id="10" weight="2" />
+      <edge source="luis_chitarroni" target="marcel_proust" id="11" weight="1" />
+      <edge source="luis_chitarroni" target="ruggero_guarini" id="12" weight="1" />
+      <edge source="luis_chitarroni" target="pasolini" id="13" weight="1" />
+      <edge source="luis_chitarroni" target="dylan_thomas" id="14" weight="4" />
+      <edge source="luis_chitarroni" target="vernon_watkins" id="15" weight="1" />
+      <edge source="luis_chitarroni" target="felix_della_paolera" id="16" weight="1" />
+      <edge source="luis_chitarroni" target="ivy_compton_burnett" id="17" weight="1" />
+      <edge source="luis_chitarroni" target="paul_valery" id="18" weight="2" />
+      <edge source="luis_chitarroni" target="claude_simon" id="19" weight="1" />
+      <edge source="luis_chitarroni" target="borges" id="20" weight="2" />
+      <edge source="luis_chitarroni" target="jonathan_swift" id="21" weight="1" />
+      <edge source="luis_chitarroni" target="erwin_schroedinger" id="22" weight="1" />
+      <edge source="luis_chitarroni" target="henri_landru" id="23" weight="1" />
+      <edge source="luis_chitarroni" target="mallarme" id="24" weight="1" />
+      <edge source="luis_chitarroni" target="sor_juana" id="25" weight="1" />
+      <edge source="luis_chitarroni" target="napoleon" id="26" weight="1" />
+      <edge source="luis_chitarroni" target="james_joyce" id="27" weight="1" />
+      <edge source="luis_chitarroni" target="edgardo_cozarinsky" id="28" weight="1" />
+      <edge source="luis_chitarroni" target="john_milton" id="29" weight="1" />
+      <edge source="luis_chitarroni" target="diego_angelino" id="30" weight="5" />
+      <edge source="luis_gusman" target="robert_walser" id="31" weight="12" />
+      <edge source="luis_gusman" target="kafka" id="32" weight="4" />
+      <edge source="luis_gusman" target="robert_musil" id="33" weight="1" />
+      <edge source="luis_gusman" target="borges" id="34" weight="5" />
+      <edge source="luis_gusman" target="charles_saint_beuve" id="35" weight="1" />
+      <edge source="luis_gusman" target="goethe" id="36" weight="1" />
+      <edge source="luis_gusman" target="henri_wallon" id="37" weight="1" />
+      <edge source="luis_gusman" target="lev_tolstoi" id="38" weight="1" />
+      <edge source="luis_gusman" target="fiodor_dostoyevski" id="39" weight="1" />
+      <edge source="luis_gusman" target="roberto_calasso" id="40" weight="1" />
+      <edge source="luis_gusman" target="jose_marmol" id="41" weight="17" />
+      <edge source="luis_gusman" target="juan_manuel_rosas" id="42" weight="9" />
+      <edge source="luis_gusman" target="aristoteles" id="43" weight="1" />
+      <edge source="luis_gusman" target="daniel_moyano" id="44" weight="12" />
+      <edge source="luis_gusman" target="alejandro_dumas" id="45" weight="18" />
+      <edge source="luis_gusman" target="gustave_aimard" id="46" weight="13" />
+      <edge source="luis_gusman" target="morris_west" id="47" weight="5" />
+      <edge source="luis_gusman" target="david_vinias" id="48" weight="2" />
+      <edge source="luis_gusman" target="lamartine" id="49" weight="3" />
+      <edge source="luis_gusman" target="mercedes_rosas" id="50" weight="2" />
+      <edge source="luis_gusman" target="victor_hugo" id="51" weight="2" />
+      <edge source="luis_gusman" target="lord_byron" id="52" weight="2" />
+      <edge source="luis_gusman" target="florencio_varela" id="53" weight="1" />
+      <edge source="luis_gusman" target="julian_aguero" id="54" weight="1" />
+      <edge source="luis_gusman" target="agustina_rosas" id="55" weight="1" />
+      <edge source="luis_gusman" target="pepa_lavalle" id="56" weight="1" />
+      <edge source="luis_gusman" target="matilde_stewart" id="57" weight="1" />
+      <edge source="luis_gusman" target="clementina_battle" id="58" weight="1" />
+      <edge source="luis_gusman" target="jacques_duprey" id="59" weight="1" />
+      <edge source="luis_gusman" target="sila" id="60" weight="1" />
+      <edge source="luis_gusman" target="homero" id="61" weight="1" />
+      <edge source="luis_gusman" target="melchor_pacheco" id="62" weight="1" />
+      <edge source="luis_gusman" target="jules_michelet" id="63" weight="1" />
+      <edge source="luis_gusman" target="george_sand" id="64" weight="1" />
+      <edge source="luis_gusman" target="jose_artigas" id="65" weight="1" />
+      <edge source="luis_gusman" target="francois_guizot" id="66" weight="1" />
+      <edge source="luis_gusman" target="manuel_oribe" id="67" weight="1" />
+      <edge source="luis_gusman" target="eugene_sue" id="68" weight="1" />
+      <edge source="luis_gusman" target="haroldo_conti" id="69" weight="1" />
+      <edge source="luis_gusman" target="rodolfo_walsh" id="70" weight="2" />
+      <edge source="luis_gusman" target="paco_urondo" id="71" weight="2" />
+      <edge source="luis_gusman" target="augusto_pinochet" id="72" weight="2" />
+      <edge source="luis_gusman" target="bosco" id="73" weight="1" />
+      <edge source="luis_gusman" target="miguel_briante" id="74" weight="6" />
+      <edge source="jorge_jinkis" target="freud" id="75" weight="5" />
+      <edge source="jorge_jinkis" target="witold_gombrowicz" id="76" weight="1" />
+      <edge source="jorge_jinkis" target="holderlin" id="77" weight="1" />
+      <edge source="jorge_jinkis" target="martin_heidegger" id="78" weight="1" />
+      <edge source="jorge_jinkis" target="maurice_blanchot" id="79" weight="1" />
+      <edge source="jorge_jinkis" target="socrates" id="80" weight="1" />
+      <edge source="jorge_jinkis" target="alfredo_palacios" id="81" weight="3" />
+      <edge source="jorge_jinkis" target="arturo_frondizi" id="82" weight="1" />
+      <edge source="jorge_jinkis" target="hector_campora" id="83" weight="1" />
+      <edge source="jorge_jinkis" target="juan_domingo_peron" id="84" weight="3" />
+      <edge source="jorge_jinkis" target="raul_alfonsin" id="85" weight="1" />
+      <edge source="jorge_jinkis" target="albino_gomez" id="86" weight="1" />
+      <edge source="jorge_jinkis" target="mario_benedetti" id="87" weight="6" />
+      <edge source="jorge_jinkis" target="leon_rozitchner" id="88" weight="13" />
+      <edge source="jorge_jinkis" target="luis_gregorich" id="89" weight="7" />
+      <edge source="jorge_jinkis" target="carl_jung" id="90" weight="1" />
+      <edge source="jorge_jinkis" target="simone_beauvoir" id="91" weight="1" />
+      <edge source="jorge_jinkis" target="juan_jose_sebreli" id="92" weight="10" />
+      <edge source="jorge_jinkis" target="horacio_verbitsky" id="93" weight="1" />
+      <edge source="jorge_jinkis" target="david_vinias" id="94" weight="19" />
+      <edge source="jorge_jinkis" target="hector_murena" id="95" weight="1" />
+      <edge source="jorge_jinkis" target="jose_isaacson" id="96" weight="1" />
+      <edge source="jorge_jinkis" target="jorge_manrique" id="97" weight="1" />
+      <edge source="jorge_jinkis" target="cervantes" id="98" weight="1" />
+      <edge source="jorge_jinkis" target="jean_paul_sartre" id="99" weight="2" />
+      <edge source="jorge_jinkis" target="cesar_fernandez_moreno" id="100" weight="2" />
+      <edge source="jorge_jinkis" target="enrique_santos_discepolo" id="101" weight="2" />
+      <edge source="jorge_jinkis" target="che_guevara" id="102" weight="3" />
+      <edge source="jorge_jinkis" target="roberto_arlt" id="103" weight="1" />
+      <edge source="jorge_jinkis" target="ernesto_sabato" id="104" weight="3" />
+      <edge source="jorge_jinkis" target="carlos_puebla" id="105" weight="1" />
+      <edge source="jorge_jinkis" target="julio_cortazar" id="106" weight="1" />
+      <edge source="jorge_jinkis" target="jorge_asis" id="107" weight="1" />
+      <edge source="jorge_jinkis" target="ricardo_piglia" id="108" weight="1" />
+      <edge source="jorge_jinkis" target="nestor_perlongher" id="109" weight="23" />
+      <edge source="jorge_jinkis" target="alfonsina_storni" id="110" weight="1" />
+      <edge source="jorge_jinkis" target="goethe" id="111" weight="1" />
+      <edge source="jorge_jinkis" target="gongora" id="112" weight="1" />
+      <edge source="martin_heidegger" target="georg_trakl" id="113" weight="38" />
+      <edge source="martin_heidegger" target="platon" id="114" weight="2" />
+      <edge source="martin_heidegger" target="friedrich_nietzsche" id="115" weight="2" />
+      <edge source="martin_heidegger" target="zaratustra" id="116" weight="1" />
+      <edge source="martin_heidegger" target="aristoteles" id="117" weight="1" />
+      <edge source="martin_heidegger" target="jesus" id="118" weight="1" />
+      <edge source="martin_heidegger" target="ludwig_von_ficker" id="119" weight="1" />
+      <edge source="nestor_perlongher" target="ramon_alcalde" id="120" weight="1" />
+      <edge source="nestor_perlongher" target="hector_grisafi" id="121" weight="1" />
+      <edge source="nestor_perlongher" target="eduardo_gruner" id="122" weight="1" />
+      <edge source="nestor_perlongher" target="luis_gusman" id="123" weight="1" />
+      <edge source="nestor_perlongher" target="jorge_jinkis" id="124" weight="2" />
+      <edge source="nestor_perlongher" target="hugo_savino" id="125" weight="1" />
+      <edge source="nestor_perlongher" target="horacio_quiroga" id="126" weight="1" />
+      <edge source="nestor_perlongher" target="osvaldo_rossler" id="127" weight="1" />
+      <edge source="nestor_perlongher" target="alfonsina_storni" id="128" weight="2" />
+      <edge source="ramon_alcalde" target="nestor_perlongher" id="129" weight="28" />
+      <edge source="ramon_alcalde" target="alfonsina_storni" id="130" weight="3" />
+      <edge source="ramon_alcalde" target="leopoldo_galtieri" id="131" weight="2" />
+      <edge source="ramon_alcalde" target="jorge_anaya" id="132" weight="1" />
+      <edge source="ramon_alcalde" target="basilio_lami_dozo" id="133" weight="2" />
+      <edge source="ramon_alcalde" target="martin_heidegger" id="134" weight="1" />
+      <edge source="ramon_alcalde" target="hesiodo" id="135" weight="1" />
+      <edge source="ramon_alcalde" target="esquilo" id="136" weight="1" />
+      <edge source="ramon_alcalde" target="horacio" id="137" weight="1" />
+      <edge source="ramon_alcalde" target="dante_alighieri" id="138" weight="1" />
+      <edge source="ramon_alcalde" target="moliere" id="139" weight="1" />
+      <edge source="ramon_alcalde" target="friedrich_schiller" id="140" weight="1" />
+      <edge source="ramon_alcalde" target="victor_hugo" id="141" weight="1" />
+      <edge source="ramon_alcalde" target="emile_zola" id="142" weight="1" />
+      <edge source="ramon_alcalde" target="sarmiento" id="143" weight="1" />
+      <edge source="ramon_alcalde" target="jose_hernandez" id="144" weight="1" />
+      <edge source="ramon_alcalde" target="hugo_savino" id="145" weight="1" />
+      <edge source="ramon_alcalde" target="raul_gustavo_aguirre" id="146" weight="2" />
+      <edge source="ramon_alcalde" target="roberto_raschella" id="147" weight="1" />
+      <edge source="ramon_alcalde" target="pascal" id="148" weight="1" />
+      <edge source="ramon_alcalde" target="miguel_unamuno" id="149" weight="1" />
+      <edge source="ramon_alcalde" target="william_faulkner" id="150" weight="1" />
+      <edge source="ramon_alcalde" target="john_dos_passos" id="151" weight="1" />
+      <edge source="ramon_alcalde" target="louis_ferdinand_celine" id="152" weight="1" />
+      <edge source="ramon_alcalde" target="benjamin_menendez" id="153" weight="1" />
+      <edge source="ramon_alcalde" target="pablo_neruda" id="154" weight="1" />
+      <edge source="ramon_alcalde" target="aristoteles" id="155" weight="1" />
+      <edge source="ramon_alcalde" target="friedrich_nietzsche" id="156" weight="1" />
+      <edge source="ramon_alcalde" target="epicuro" id="157" weight="1" />
+      <edge source="ramon_alcalde" target="borges" id="158" weight="3" />
+      <edge source="ramon_alcalde" target="osvaldo_rossler" id="159" weight="1" />
+      <edge source="ramon_alcalde" target="winston_churchill" id="160" weight="1" />
+      <edge source="ramon_alcalde" target="margaret_tatcher" id="161" weight="1" />
+      <edge source="ramon_alcalde" target="alvaro_alsogaray" id="162" weight="1" />
+      <edge source="ramon_alcalde" target="lisandro_de_la_torre" id="163" weight="1" />
+      <edge source="ramon_alcalde" target="raul_scalabrini_ortiz" id="164" weight="1" />
+      <edge source="ramon_alcalde" target="shakespeare" id="165" weight="1" />
+      <edge source="ramon_alcalde" target="francisco_franco" id="166" weight="1" />
+      <edge source="ramon_alcalde" target="juan_manuel_rosas" id="167" weight="1" />
+      <edge source="ramon_alcalde" target="jose_martinez_de_hoz" id="168" weight="1" />
+      <edge source="ramon_alcalde" target="costa_mendez" id="169" weight="1" />
+      <edge source="ramon_alcalde" target="roberto_alemann" id="170" weight="1" />
+      <edge source="eduardo_gruner" target="martinez_estrada" id="171" weight="9" />
+      <edge source="eduardo_gruner" target="walter_benjamin" id="172" weight="2" />
+      <edge source="eduardo_gruner" target="gabriel_de_mably" id="173" weight="2" />
+      <edge source="eduardo_gruner" target="soren_kierkegaard" id="174" weight="2" />
+      <edge source="eduardo_gruner" target="george_steiner" id="175" weight="2" />
+      <edge source="eduardo_gruner" target="heinrich_von_kleist" id="176" weight="2" />
+      <edge source="eduardo_gruner" target="joseph_conrad" id="177" weight="1" />
+      <edge source="eduardo_gruner" target="kafka" id="178" weight="1" />
+      <edge source="eduardo_gruner" target="rilke" id="179" weight="1" />
+      <edge source="eduardo_gruner" target="james_joyce" id="180" weight="1" />
+      <edge source="eduardo_gruner" target="samuel_beckett" id="181" weight="2" />
+      <edge source="eduardo_gruner" target="vladimir_nabokov" id="182" weight="3" />
+      <edge source="eduardo_gruner" target="elias_canetti" id="183" weight="1" />
+      <edge source="eduardo_gruner" target="witold_gombrowicz" id="184" weight="3" />
+      <edge source="eduardo_gruner" target="louis_ferdinand_celine" id="185" weight="1" />
+      <edge source="eduardo_gruner" target="lezama_lima" id="186" weight="3" />
+      <edge source="eduardo_gruner" target="borges" id="187" weight="10" />
+      <edge source="eduardo_gruner" target="johann_herder" id="188" weight="7" />
+      <edge source="eduardo_gruner" target="hippolyte_taine" id="189" weight="1" />
+      <edge source="eduardo_gruner" target="armando_roche" id="190" weight="1" />
+      <edge source="eduardo_gruner" target="gabriela_massuh" id="191" weight="2" />
+      <edge source="eduardo_gruner" target="chesterton" id="192" weight="1" />
+      <edge source="eduardo_gruner" target="de_quincey" id="193" weight="1" />
+      <edge source="eduardo_gruner" target="ricardo_piglia" id="194" weight="5" />
+      <edge source="eduardo_gruner" target="jorge_asis" id="195" weight="1" />
+      <edge source="eduardo_gruner" target="osvaldo_soriano" id="196" weight="2" />
+      <edge source="eduardo_gruner" target="juan_jose_saer" id="197" weight="1" />
+      <edge source="eduardo_gruner" target="manuel_puig" id="198" weight="2" />
+      <edge source="eduardo_gruner" target="hector_libertella" id="199" weight="1" />
+      <edge source="eduardo_gruner" target="luis_gusman" id="200" weight="2" />
+      <edge source="eduardo_gruner" target="william_gass" id="201" weight="1" />
+      <edge source="eduardo_gruner" target="rafael_lapesa" id="202" weight="1" />
+      <edge source="eduardo_gruner" target="ferdinand_de_saussure" id="203" weight="1" />
+      <edge source="eduardo_gruner" target="william_faulkner" id="204" weight="1" />
+      <edge source="eduardo_gruner" target="gongora" id="205" weight="1" />
+      <edge source="eduardo_gruner" target="mario_teruggi" id="206" weight="1" />
+      <edge source="eduardo_gruner" target="rodolfo_kusch" id="207" weight="2" />
+      <edge source="eduardo_gruner" target="canal_feijoo" id="208" weight="1" />
+      <edge source="eduardo_gruner" target="arcimboldo" id="209" weight="1" />
+      <edge source="eduardo_gruner" target="charles_perrault" id="210" weight="1" />
+      <edge source="eduardo_gruner" target="david_vinias" id="211" weight="6" />
+      <edge source="eduardo_gruner" target="julio_cortazar" id="212" weight="3" />
+      <edge source="eduardo_gruner" target="miguel_briante" id="213" weight="1" />
+      <edge source="eduardo_gruner" target="jose_luis_romero" id="214" weight="3" />
+      <edge source="eduardo_gruner" target="etienne_de_condillac" id="215" weight="1" />
+      <edge source="eduardo_gruner" target="horacio_quiroga" id="216" weight="1" />
+      <edge source="eduardo_gruner" target="jose_pablo_feinmann" id="217" weight="8" />
+      <edge source="eduardo_gruner" target="jean_paul_sartre" id="218" weight="6" />
+      <edge source="eduardo_gruner" target="esteban_echeverria" id="219" weight="3" />
+      <edge source="eduardo_gruner" target="juan_bautista_alberdi" id="220" weight="11" />
+      <edge source="eduardo_gruner" target="sarmiento" id="221" weight="6" />
+      <edge source="eduardo_gruner" target="jose_marmol" id="222" weight="4" />
+      <edge source="eduardo_gruner" target="juan_manuel_rosas" id="223" weight="7" />
+      <edge source="eduardo_gruner" target="plutarco" id="224" weight="1" />
+      <edge source="eduardo_gruner" target="salvador_ruano" id="225" weight="1" />
+      <edge source="eduardo_gruner" target="hegel" id="226" weight="3" />
+      <edge source="eduardo_gruner" target="nicolas_condorcet" id="227" weight="4" />
+      <edge source="eduardo_gruner" target="kant" id="228" weight="1" />
+      <edge source="eduardo_gruner" target="bajtin" id="229" weight="2" />
+      <edge source="eduardo_gruner" target="jose_hernandez" id="230" weight="6" />
+      <edge source="eduardo_gruner" target="guillermo_hudson" id="231" weight="3" />
+      <edge source="eduardo_gruner" target="edward_gibbon" id="232" weight="1" />
+      <edge source="eduardo_gruner" target="charles_rollin" id="233" weight="1" />
+      <edge source="eduardo_gruner" target="william_whiston" id="234" weight="1" />
+      <edge source="eduardo_gruner" target="san_agustin" id="235" weight="1" />
+      <edge source="eduardo_gruner" target="charles_dickens" id="236" weight="1" />
+      <edge source="eduardo_gruner" target="charles_darwin" id="237" weight="1" />
+      <edge source="eduardo_gruner" target="robert_cunninghame_graham" id="238" weight="1" />
+      <edge source="eduardo_gruner" target="miguel_unamuno" id="239" weight="2" />
+      <edge source="eduardo_gruner" target="ricardo_rojas" id="240" weight="1" />
+      <edge source="eduardo_gruner" target="leopoldo_lugones" id="241" weight="1" />
+      <edge source="eduardo_gruner" target="ruben_dario" id="242" weight="1" />
+      <edge source="eduardo_gruner" target="rodolfo_wilcock" id="243" weight="1" />
+      <edge source="eduardo_gruner" target="macedonio_fernandez" id="244" weight="1" />
+      <edge source="eduardo_gruner" target="enrique_santos_discepolo" id="245" weight="1" />
+      <edge source="eduardo_gruner" target="defilippis_novoa" id="246" weight="1" />
+      <edge source="eduardo_gruner" target="levi_strauss" id="247" weight="2" />
+      <edge source="eduardo_gruner" target="friedrich_nietzsche" id="248" weight="1" />
+      <edge source="eduardo_gruner" target="paul_ricoeur" id="249" weight="1" />
+      <edge source="eduardo_gruner" target="giambattista_vico" id="250" weight="1" />
+      <edge source="eduardo_gruner" target="carlos_altamirano" id="251" weight="1" />
+      <edge source="eduardo_gruner" target="beatriz_sarlo" id="252" weight="1" />
+      <edge source="eduardo_gruner" target="fermin_chavez" id="253" weight="1" />
+      <edge source="eduardo_gruner" target="halperin_donghi" id="254" weight="1" />
+      <edge source="eduardo_gruner" target="michel_jarrety" id="255" weight="1" />
+      <edge source="eduardo_gruner" target="hans_robert_jauss" id="256" weight="1" />
+      <edge source="eduardo_gruner" target="octavio_paz" id="257" weight="1" />
+      <edge source="eduardo_gruner" target="arturo_roig" id="258" weight="1" />
+      <edge source="eduardo_gruner" target="jean_starobinski" id="259" weight="1" />
+      <edge source="hugo_savino" target="osvaldo_soriano" id="260" weight="11" />
+      <edge source="hugo_savino" target="degas" id="261" weight="1" />
+      <edge source="hugo_savino" target="italo_calvino" id="262" weight="2" />
+      <edge source="hugo_savino" target="ernest_hemingway" id="263" weight="1" />
+      <edge source="hugo_savino" target="jd_salinger" id="264" weight="1" />
+      <edge source="hugo_savino" target="charles_chaplin" id="265" weight="3" />
+      <edge source="hugo_savino" target="marilyn_monroe" id="266" weight="1" />
+      <edge source="hugo_savino" target="stan_laurel" id="267" weight="1" />
+      <edge source="hugo_savino" target="oliver_hardy" id="268" weight="1" />
+      <edge source="hugo_savino" target="marlon_brando" id="269" weight="1" />
+      <edge source="hugo_savino" target="rimbaud" id="270" weight="1" />
+      <edge source="hugo_savino" target="ts_eliot" id="271" weight="1" />
+      <edge source="hugo_savino" target="bertolt_brecht" id="272" weight="1" />
+      <edge source="hugo_savino" target="francois_mitterrand" id="273" weight="3" />
+      <edge source="hugo_savino" target="valery_giscard" id="274" weight="1" />
+      <edge source="hugo_savino" target="aquiles_fabregat" id="275" weight="1" />
+      <edge source="hugo_savino" target="luis_aguile" id="276" weight="1" />
+      <edge source="hugo_savino" target="joan_manuel_serrat" id="277" weight="1" />
+      <edge source="hugo_savino" target="manuel_puig" id="278" weight="2" />
+      <edge source="hugo_savino" target="julio_cortazar" id="279" weight="1" />
+      <edge source="norma_gentili" target="marta_lynch" id="280" weight="2" />
+      <edge source="norma_gentili" target="borges" id="281" weight="3" />
+      <edge source="norma_gentili" target="wanda_sacher_masoch" id="282" weight="1" />
+      <edge source="liliana_heer" target="osman_lins" id="283" weight="3" />
+      <edge source="liliana_heer" target="jesus" id="284" weight="1" />
+      <edge source="liliana_heer" target="melville" id="285" weight="1" />
+      <edge source="liliana_heer" target="mozart" id="286" weight="1" />
+      <edge source="liliana_heer" target="domenico_scarlatti" id="287" weight="1" />
+      <edge source="jorge_monteleone" target="luis_gusman" id="288" weight="21" />
+      <edge source="jorge_monteleone" target="rodolfo_wilcock" id="289" weight="11" />
+      <edge source="jorge_monteleone" target="osvaldo_lamborghini" id="290" weight="1" />
+      <edge source="jorge_monteleone" target="german_garcia" id="291" weight="1" />
+      <edge source="jorge_monteleone" target="ricardo_piglia" id="292" weight="1" />
+      <edge source="jorge_monteleone" target="alberto_laiseca" id="293" weight="1" />
+      <edge source="jorge_monteleone" target="tinianov" id="294" weight="1" />
+      <edge source="jorge_monteleone" target="borges" id="295" weight="7" />
+      <edge source="jorge_monteleone" target="kafka" id="296" weight="1" />
+      <edge source="jorge_monteleone" target="roberto_arlt" id="297" weight="8" />
+      <edge source="jorge_monteleone" target="oscar_masotta" id="298" weight="2" />
+      <edge source="jorge_monteleone" target="david_vinias" id="299" weight="1" />
+      <edge source="jorge_monteleone" target="samuel_beckett" id="300" weight="1" />
+      <edge source="jorge_monteleone" target="roland_barthes" id="301" weight="3" />
+      <edge source="jorge_monteleone" target="louis_ferdinand_celine" id="302" weight="1" />
+      <edge source="jorge_monteleone" target="chaucer" id="303" weight="1" />
+      <edge source="jorge_monteleone" target="jd_salinger" id="304" weight="1" />
+      <edge source="jorge_monteleone" target="nathaniel_hawthorne" id="305" weight="1" />
+      <edge source="jorge_monteleone" target="james_joyce" id="306" weight="3" />
+      <edge source="jorge_monteleone" target="joseph_conrad" id="307" weight="3" />
+      <edge source="jorge_monteleone" target="lev_tolstoi" id="308" weight="2" />
+      <edge source="jorge_monteleone" target="fiodor_dostoyevski" id="309" weight="3" />
+      <edge source="jorge_monteleone" target="gustave_flaubert" id="310" weight="5" />
+      <edge source="jorge_monteleone" target="macedonio_fernandez" id="311" weight="1" />
+      <edge source="jorge_monteleone" target="leopoldo_lugones" id="312" weight="1" />
+      <edge source="jorge_monteleone" target="stanislaus_joyce" id="313" weight="4" />
+      <edge source="jorge_monteleone" target="richard_ellman" id="314" weight="1" />
+      <edge source="jorge_monteleone" target="santiago_dabove" id="315" weight="1" />
+      <edge source="jorge_monteleone" target="juan_filloy" id="316" weight="1" />
+      <edge source="jorge_monteleone" target="dante_alighieri" id="317" weight="1" />
+      <edge source="jorge_monteleone" target="horacio_quiroga" id="318" weight="1" />
+      <edge source="jorge_monteleone" target="salvador_dali" id="319" weight="1" />
+      <edge source="jorge_monteleone" target="enrique_banchs" id="320" weight="1" />
+      <edge source="beatriz_castillo" target="philippe_aries" id="321" weight="8" />
+      <edge source="beatriz_castillo" target="edgar_morin" id="322" weight="1" />
+      <edge source="beatriz_castillo" target="hans_memling" id="323" weight="1" />
+      <edge source="beatriz_castillo" target="jan_van_eyck" id="324" weight="1" />
+      <edge source="beatriz_castillo" target="bosco" id="325" weight="1" />
+      <edge source="beatriz_castillo" target="jan_potocki" id="326" weight="1" />
+      <edge source="beatriz_castillo" target="lamartine" id="327" weight="1" />
+      <edge source="beatriz_castillo" target="jesus" id="328" weight="1" />
+      <edge source="beatriz_castillo" target="karen_quinlan" id="329" weight="1" />
+      <edge source="mercedes_roffe" target="euripides" id="330" weight="2" />
+      <edge source="mercedes_roffe" target="jean_paul_sartre" id="331" weight="2" />
+      <edge source="mercedes_roffe" target="gustave_flaubert" id="332" weight="21" />
+      <edge source="mercedes_roffe" target="amilcar_barca" id="333" weight="9" />
+      <edge source="mercedes_roffe" target="herodoto" id="334" weight="1" />
+      <edge source="mercedes_roffe" target="plinio" id="335" weight="1" />
+      <edge source="mercedes_roffe" target="estrabon" id="336" weight="1" />
+      <edge source="mercedes_roffe" target="suetonio" id="337" weight="1" />
+      <edge source="mercedes_roffe" target="mathos" id="338" weight="5" />
+      <edge source="mercedes_roffe" target="roland_barthes" id="339" weight="2" />
+      <edge source="mercedes_roffe" target="dante_gabriel_rossetti" id="340" weight="1" />
+      <edge source="mercedes_roffe" target="william_holman_hunt" id="341" weight="1" />
+      <edge source="mercedes_roffe" target="theophile_gautier" id="342" weight="4" />
+      <edge source="mercedes_roffe" target="john_ruskin" id="343" weight="1" />
+      <edge source="mercedes_roffe" target="baudelaire" id="344" weight="1" />
+      <edge source="mercedes_roffe" target="arnold_hauser" id="345" weight="1" />
+      <edge source="mercedes_roffe" target="oscar_wilde" id="346" weight="1" />
+      <edge source="mercedes_roffe" target="aubrey_beardsley" id="347" weight="1" />
+    </edges>
+  </graph>
+</gexf>

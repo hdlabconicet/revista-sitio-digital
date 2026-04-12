@@ -1,0 +1,3148 @@
+[
+  {
+    "community_id": 0,
+    "size": 79,
+    "members": [
+      {
+        "id": "florencio_varela",
+        "name": "Florencio Varela"
+      },
+      {
+        "id": "gustave_aimard",
+        "name": "Gustave Aimard"
+      },
+      {
+        "id": "julia_kristeva",
+        "name": "Julia Kristeva"
+      },
+      {
+        "id": "marcel_schwob",
+        "name": "Marcel Schwob"
+      },
+      {
+        "id": "dalmiro_saenz",
+        "name": "Dalmiro Antonio Sáenz"
+      },
+      {
+        "id": "lamartine",
+        "name": "Alphonse de Lamartine"
+      },
+      {
+        "id": "daniel_moyano",
+        "name": "Daniel Moyano"
+      },
+      {
+        "id": "juan_carlos_ongania",
+        "name": "Juan Carlos Onganía"
+      },
+      {
+        "id": "jose_marmol",
+        "name": "José Mármol"
+      },
+      {
+        "id": "lucio_mansilla",
+        "name": "Lucio V. Mansilla"
+      },
+      {
+        "id": "oscar_landi",
+        "name": "Oscar Landi"
+      },
+      {
+        "id": "stendhal",
+        "name": "Stendhal"
+      },
+      {
+        "id": "tata_ocampo",
+        "name": "Tata Ocampo"
+      },
+      {
+        "id": "robert_walser",
+        "name": "Robert Walser"
+      },
+      {
+        "id": "alberto_laiseca",
+        "name": "Alberto Laiseca"
+      },
+      {
+        "id": "haroldo_conti",
+        "name": "Haroldo Conti"
+      },
+      {
+        "id": "michel_leiris",
+        "name": "Michel Leiris"
+      },
+      {
+        "id": "manuel_oribe",
+        "name": "Manuel Oribe"
+      },
+      {
+        "id": "lucia_aseff",
+        "name": "Lucía María Aseff"
+      },
+      {
+        "id": "julian_aguero",
+        "name": "Julián Agüero"
+      },
+      {
+        "id": "rimbaud",
+        "name": "Arthur Rimbaud"
+      },
+      {
+        "id": "juan_manuel_rosas",
+        "name": "Juan Manuel de Rosas"
+      },
+      {
+        "id": "esteban_echeverria",
+        "name": "Esteban Echeverría"
+      },
+      {
+        "id": "mercedes_rosas",
+        "name": "Mercedes Rosas"
+      },
+      {
+        "id": "andre_gide",
+        "name": "André Gide"
+      },
+      {
+        "id": "pepa_lavalle",
+        "name": "Pepa Lavalle"
+      },
+      {
+        "id": "roberto_calasso",
+        "name": "Roberto Calasso"
+      },
+      {
+        "id": "eugene_sue",
+        "name": "Eugène Sue"
+      },
+      {
+        "id": "clementina_battle",
+        "name": "Clementina G. Battle"
+      },
+      {
+        "id": "julian_casal",
+        "name": "Julián Casal"
+      },
+      {
+        "id": "augusto_pinochet",
+        "name": "Augusto Pinochet"
+      },
+      {
+        "id": "manuel_ocampo",
+        "name": "Manuel S. Ocampo"
+      },
+      {
+        "id": "chesterton",
+        "name": "Gilbert Keith Chesterton"
+      },
+      {
+        "id": "fenimore_cooper",
+        "name": "James Fenimore Cooper"
+      },
+      {
+        "id": "jacques_duprey",
+        "name": "Jacques Duprey"
+      },
+      {
+        "id": "florentina_ituarte",
+        "name": "Florentina Ituarte"
+      },
+      {
+        "id": "gilles_deleuze",
+        "name": "Gilles Deleuze"
+      },
+      {
+        "id": "thomas_carlyle",
+        "name": "Thomas Carlyle"
+      },
+      {
+        "id": "robert_louis_stevenson",
+        "name": "Robert Louis Stevenson"
+      },
+      {
+        "id": "miguel_briante",
+        "name": "Miguel Briante"
+      },
+      {
+        "id": "jean_francois_lyotard",
+        "name": "Jean-François Lyotard"
+      },
+      {
+        "id": "henry_rider_haggard",
+        "name": "Henry Rider Haggard"
+      },
+      {
+        "id": "francois_guizot",
+        "name": "François Guizot"
+      },
+      {
+        "id": "jacques_rigaut",
+        "name": "Jacques Rigaut"
+      },
+      {
+        "id": "henri_wallon",
+        "name": "Henri Wallon"
+      },
+      {
+        "id": "melchor_pacheco",
+        "name": "Melchor Pacheco y Obes"
+      },
+      {
+        "id": "paul_nizan",
+        "name": "Paul Nizan"
+      },
+      {
+        "id": "lord_byron",
+        "name": "George Gordon Byron"
+      },
+      {
+        "id": "jacques_benigne_bossuet",
+        "name": "Jacques-Bénigne Bossuet"
+      },
+      {
+        "id": "paco_urondo",
+        "name": "Francisco Urondo"
+      },
+      {
+        "id": "mallarme",
+        "name": "Stéphane Mallarmé"
+      },
+      {
+        "id": "andre_breton",
+        "name": "André Breton"
+      },
+      {
+        "id": "sila",
+        "name": "Lucio Cornelio Sila"
+      },
+      {
+        "id": "jose_artigas",
+        "name": "José Gervasio Artigas"
+      },
+      {
+        "id": "eliseo_veron",
+        "name": "Eliseo Verón"
+      },
+      {
+        "id": "jose_felix_uriburu",
+        "name": "José Félix Uriburu"
+      },
+      {
+        "id": "morris_west",
+        "name": "Morris West"
+      },
+      {
+        "id": "george_sand",
+        "name": "George Sand"
+      },
+      {
+        "id": "pierre_loti",
+        "name": "Julien Viaud"
+      },
+      {
+        "id": "maurice_blanchot",
+        "name": "Maurice Blanchot"
+      },
+      {
+        "id": "victoria_ocampo",
+        "name": "Victoria Ocampo"
+      },
+      {
+        "id": "agustina_rosas",
+        "name": "Agustina Rosas"
+      },
+      {
+        "id": "rodolfo_walsh",
+        "name": "Rodolfo Walsh"
+      },
+      {
+        "id": "charles_saint_beuve",
+        "name": "Charles-Augustin Sainte-Beuve"
+      },
+      {
+        "id": "alejandro_katz",
+        "name": "Gabriel Alejandro Katz"
+      },
+      {
+        "id": "mika_waltari",
+        "name": "Mika Waltari"
+      },
+      {
+        "id": "noam_chomsky",
+        "name": "Avram Noam Chomsky"
+      },
+      {
+        "id": "jules_michelet",
+        "name": "Jules Michelet"
+      },
+      {
+        "id": "matilde_stewart",
+        "name": "Matilde Pacheco Stewart"
+      },
+      {
+        "id": "william_beckford",
+        "name": "William Beckford"
+      },
+      {
+        "id": "oswald_ducrot",
+        "name": "Oswald Ducrot"
+      },
+      {
+        "id": "roberto_arlt",
+        "name": "Roberto Arlt"
+      },
+      {
+        "id": "algirdas_greimas",
+        "name": "Algirdas Julien Greimas"
+      },
+      {
+        "id": "miguel_angel",
+        "name": "Miguel Ángel Buonarroti"
+      },
+      {
+        "id": "beatriz_sarlo",
+        "name": "Beatriz Sarlo"
+      },
+      {
+        "id": "alejandro_dumas",
+        "name": "Alexandre Dumas"
+      },
+      {
+        "id": "luis_gusman",
+        "name": "Luis Gusmán"
+      },
+      {
+        "id": "francois_recanati",
+        "name": "François Recanati"
+      },
+      {
+        "id": "charles_de_gaulle",
+        "name": "Charles André Joseph Marie de Gaulle"
+      }
+    ]
+  },
+  {
+    "community_id": 1,
+    "size": 40,
+    "members": [
+      {
+        "id": "alcibiades",
+        "name": "Alcibíades"
+      },
+      {
+        "id": "grotius",
+        "name": "Hugo Grotius"
+      },
+      {
+        "id": "voltaire",
+        "name": "Voltaire"
+      },
+      {
+        "id": "tucidides",
+        "name": "Tucídides"
+      },
+      {
+        "id": "jean_bodin",
+        "name": "Jean Bodin"
+      },
+      {
+        "id": "edmund_burke",
+        "name": "Edmund Burke"
+      },
+      {
+        "id": "anaxagoras",
+        "name": "Anaxágoras"
+      },
+      {
+        "id": "tomas_moro",
+        "name": "Tomás Moro"
+      },
+      {
+        "id": "eusebio_de_cesarea",
+        "name": "de Cesarea Eusebio"
+      },
+      {
+        "id": "georg_trakl",
+        "name": "Georg Trakl"
+      },
+      {
+        "id": "john_donne",
+        "name": "John Donne"
+      },
+      {
+        "id": "maimonides",
+        "name": "Maimónides"
+      },
+      {
+        "id": "laboulaye",
+        "name": "Édouard Laboulaye"
+      },
+      {
+        "id": "protagoras",
+        "name": "Protágoras"
+      },
+      {
+        "id": "james_shotwell",
+        "name": "James Shotwell"
+      },
+      {
+        "id": "ernest_renan",
+        "name": "Joseph Renan"
+      },
+      {
+        "id": "thomas_hobbes",
+        "name": "Thomas Hobbes"
+      },
+      {
+        "id": "platon",
+        "name": "Platón"
+      },
+      {
+        "id": "gotthold_lessing",
+        "name": "Gotthold Lessing"
+      },
+      {
+        "id": "maquiavelo",
+        "name": "Niccolò Machiavelli"
+      },
+      {
+        "id": "xenofon",
+        "name": "Jenofonte"
+      },
+      {
+        "id": "rousseau",
+        "name": "Jean-Jacques Rousseau"
+      },
+      {
+        "id": "edward_gibbon",
+        "name": "Edward Gibbon"
+      },
+      {
+        "id": "hilail_gildin",
+        "name": "Hilail Gildin"
+      },
+      {
+        "id": "socrates",
+        "name": "Sócrates"
+      },
+      {
+        "id": "christian_wolff",
+        "name": "Christian Wolff"
+      },
+      {
+        "id": "rene_descartes",
+        "name": "René Descartes"
+      },
+      {
+        "id": "william_lecky",
+        "name": "William Lecky"
+      },
+      {
+        "id": "george_sabine",
+        "name": "George Sabine"
+      },
+      {
+        "id": "averroes",
+        "name": "Averroes"
+      },
+      {
+        "id": "zaratustra",
+        "name": "Zaratustra"
+      },
+      {
+        "id": "edelstein",
+        "name": "Ludwig Edelstein"
+      },
+      {
+        "id": "john_locke",
+        "name": "John Locke"
+      },
+      {
+        "id": "ludwig_von_ficker",
+        "name": "Ludwig von Ficker"
+      },
+      {
+        "id": "leo_strauss",
+        "name": "Leo Strauss"
+      },
+      {
+        "id": "montesquieu",
+        "name": "Charles-Louis Montesquieu"
+      },
+      {
+        "id": "pierre_bayle",
+        "name": "Pierre Bayle"
+      },
+      {
+        "id": "martin_heidegger",
+        "name": "Martin Heidegger"
+      },
+      {
+        "id": "aristoteles",
+        "name": "Aristóteles"
+      },
+      {
+        "id": "avicena",
+        "name": "Avicena"
+      }
+    ]
+  },
+  {
+    "community_id": 2,
+    "size": 168,
+    "members": [
+      {
+        "id": "leon_bloy",
+        "name": "Léon Bloy"
+      },
+      {
+        "id": "nicaragua",
+        "name": "nicaragua"
+      },
+      {
+        "id": "edmond_goncourt",
+        "name": "Edmond Goncourt"
+      },
+      {
+        "id": "sainte_beuve",
+        "name": "Charles Sainte-Beuve"
+      },
+      {
+        "id": "ovidio_riccheri",
+        "name": "Ovidio P. Riccheri"
+      },
+      {
+        "id": "emile_zola",
+        "name": "Émile Zola"
+      },
+      {
+        "id": "moliere",
+        "name": "Jean-Baptiste Poquelin"
+      },
+      {
+        "id": "poncio_pilatos",
+        "name": "Poncio Pilato"
+      },
+      {
+        "id": "jean_genet",
+        "name": "Jean Genet"
+      },
+      {
+        "id": "leopoldo_galtieri",
+        "name": "Leopoldo Fortunato Galtieri"
+      },
+      {
+        "id": "champfleury",
+        "name": "Jules Champfleury"
+      },
+      {
+        "id": "joseph_bollery",
+        "name": "Joseph Bollery"
+      },
+      {
+        "id": "victor_manuel2",
+        "name": "II Víctor Manuel"
+      },
+      {
+        "id": "bonnieres",
+        "name": "Robert Bonnières"
+      },
+      {
+        "id": "la_fontaine",
+        "name": "Jean La Fontaine"
+      },
+      {
+        "id": "paulo_iv",
+        "name": "IV Paulo"
+      },
+      {
+        "id": "adam_smith",
+        "name": "Adam Smith"
+      },
+      {
+        "id": "tomas_de_torquemada",
+        "name": "Tomás de Torquemada"
+      },
+      {
+        "id": "charles_dickens",
+        "name": "Charles Dickens"
+      },
+      {
+        "id": "maupassant",
+        "name": "Guy Maupassant"
+      },
+      {
+        "id": "euclides",
+        "name": "Euclides"
+      },
+      {
+        "id": "isaac_pereire",
+        "name": "Isaac Pereire"
+      },
+      {
+        "id": "charles_journet",
+        "name": "Charles Journet"
+      },
+      {
+        "id": "agustin_justo",
+        "name": "Agustín Justo"
+      },
+      {
+        "id": "walter_scott",
+        "name": "Walter Scott"
+      },
+      {
+        "id": "marques_sade",
+        "name": "Donatien Alphonse François de Sade"
+      },
+      {
+        "id": "jorge_antonio_berges",
+        "name": "Jorge Antonio Bergés"
+      },
+      {
+        "id": "felipe_augusto",
+        "name": "II Felipe"
+      },
+      {
+        "id": "august_rohling",
+        "name": "August Rohling"
+      },
+      {
+        "id": "virgilio",
+        "name": "Publio Virgilio"
+      },
+      {
+        "id": "evaristo_carriego",
+        "name": "Evaristo Carriego"
+      },
+      {
+        "id": "otto_von_bismarck",
+        "name": "Otto Bismarck"
+      },
+      {
+        "id": "adolphe_cremieux",
+        "name": "Adolphe Crémieux"
+      },
+      {
+        "id": "stanislas_fumet",
+        "name": "Stanislas Fumet"
+      },
+      {
+        "id": "paul_verlaine",
+        "name": "Paul Verlaine"
+      },
+      {
+        "id": "huysmans",
+        "name": "Joris-Karl Huysmans"
+      },
+      {
+        "id": "basilio_lami_dozo",
+        "name": "Basilio Lami Dozo"
+      },
+      {
+        "id": "charles_darwin",
+        "name": "Charles Darwin"
+      },
+      {
+        "id": "edouard_drumont",
+        "name": "Édouard Drumont"
+      },
+      {
+        "id": "teocrito",
+        "name": "Teócrito"
+      },
+      {
+        "id": "alfonsina_storni",
+        "name": "Alfonsina Storni"
+      },
+      {
+        "id": "ptolomeo",
+        "name": "I Ptolomeo"
+      },
+      {
+        "id": "dante_caputo",
+        "name": "Dante Mario Antonio Caputo"
+      },
+      {
+        "id": "torquato_tasso",
+        "name": "Torquato Tasso"
+      },
+      {
+        "id": "federico_barbarroja",
+        "name": "I Federico"
+      },
+      {
+        "id": "leon_xiii",
+        "name": "XIII León"
+      },
+      {
+        "id": "san_pablo_persona",
+        "name": "de Tarso Pablo"
+      },
+      {
+        "id": "ismar_elbogen",
+        "name": "Ismar Elbogen"
+      },
+      {
+        "id": "scholl",
+        "name": "Aurélien Scholl"
+      },
+      {
+        "id": "miguel_etchecolatz",
+        "name": "Miguel Osvaldo Etchecolatz"
+      },
+      {
+        "id": "bernard_lazare",
+        "name": "Bernard Lazare"
+      },
+      {
+        "id": "jacob_brafman",
+        "name": "Jacob Brafman"
+      },
+      {
+        "id": "horangel",
+        "name": "Horacio Tirigall"
+      },
+      {
+        "id": "edmond_goncourt jules_goncourt",
+        "name": "edmond_goncourt jules_goncourt"
+      },
+      {
+        "id": "adolf_eichmann",
+        "name": "Otto Adolf Eichmann"
+      },
+      {
+        "id": "adolphe_thiers",
+        "name": "Adolphe Thiers"
+      },
+      {
+        "id": "varo",
+        "name": "Alfeno Varo"
+      },
+      {
+        "id": "hubert_colleye",
+        "name": "Hubert Colleye"
+      },
+      {
+        "id": "morris_rosenfeld",
+        "name": "Morris Rosenfeld"
+      },
+      {
+        "id": "franz_bopp",
+        "name": "Franz Bopp"
+      },
+      {
+        "id": "jules_goncourt",
+        "name": "Jules Goncourt"
+      },
+      {
+        "id": "theodor_herzl",
+        "name": "Theodor Herzl"
+      },
+      {
+        "id": "edmund_spenser",
+        "name": "Edmund Spenser"
+      },
+      {
+        "id": "carlos_moyano_llerena",
+        "name": "Carlos Moyano Llerena"
+      },
+      {
+        "id": "alfred_dreyfus",
+        "name": "Alfred Dreyfus"
+      },
+      {
+        "id": "lev_urusof",
+        "name": "Lev Urusov"
+      },
+      {
+        "id": "jose_uriburu",
+        "name": "José Uriburu"
+      },
+      {
+        "id": "alphonse_daudet",
+        "name": "Alphonse Daudet"
+      },
+      {
+        "id": "roberto_alemann",
+        "name": "Roberto Alemann"
+      },
+      {
+        "id": "paul_schreber",
+        "name": "Daniel Paul Schreber"
+      },
+      {
+        "id": "rf_byrnes",
+        "name": "Robert Francis Byrnes"
+      },
+      {
+        "id": "san_juan_persona",
+        "name": "San Juan"
+      },
+      {
+        "id": "antioco",
+        "name": "IV Antíoco"
+      },
+      {
+        "id": "uzanne",
+        "name": "Octave Uzanne"
+      },
+      {
+        "id": "hesiodo",
+        "name": "Hesíodo"
+      },
+      {
+        "id": "johann_winckelmann",
+        "name": "Johann Joachim Winckelmann"
+      },
+      {
+        "id": "john_dos_passos",
+        "name": "John Dos Passos"
+      },
+      {
+        "id": "james_rothschild",
+        "name": "James Rothschild"
+      },
+      {
+        "id": "mauricio_hirsch",
+        "name": "Mauricio Hirsch"
+      },
+      {
+        "id": "jules_isaac",
+        "name": "Jules Isaac"
+      },
+      {
+        "id": "san_jose",
+        "name": "San José"
+      },
+      {
+        "id": "alvaro_alsogaray",
+        "name": "Álvaro Alsogaray"
+      },
+      {
+        "id": "alejandroii",
+        "name": "II Alejandro"
+      },
+      {
+        "id": "joan_miro",
+        "name": "Joan Miró"
+      },
+      {
+        "id": "winston_churchill",
+        "name": "Winston Churchill"
+      },
+      {
+        "id": "silvina_bullrich",
+        "name": "Silvina Bullrich"
+      },
+      {
+        "id": "johann_lavater",
+        "name": "Johann Lavater"
+      },
+      {
+        "id": "jorge_anaya",
+        "name": "Jorge Isaac Anaya"
+      },
+      {
+        "id": "guillermo_fierro",
+        "name": "Guillermo Jorge Fierro"
+      },
+      {
+        "id": "horacio",
+        "name": "Quinto Horacio"
+      },
+      {
+        "id": "jeanne_molbech",
+        "name": "Jeanne Molbech"
+      },
+      {
+        "id": "jesus",
+        "name": "de Nazaret Jesús"
+      },
+      {
+        "id": "anatole_france",
+        "name": "Anatole France"
+      },
+      {
+        "id": "lou_andreas_salome",
+        "name": "Lou Andreas-Salomé"
+      },
+      {
+        "id": "marie_joseph_lory",
+        "name": "Marie-Joseph Lory"
+      },
+      {
+        "id": "coronel_henry",
+        "name": "Hubert-Joseph Henry"
+      },
+      {
+        "id": "roberto_raschella",
+        "name": "Roberto Raschella"
+      },
+      {
+        "id": "juan_octavio_gauna",
+        "name": "Juan Octavio Gauna"
+      },
+      {
+        "id": "fournel",
+        "name": "Victor Fournel"
+      },
+      {
+        "id": "hans_christian_andersen",
+        "name": "Hans Christian Andersen"
+      },
+      {
+        "id": "pascal",
+        "name": "Blaise Pascal"
+      },
+      {
+        "id": "juan_alemann",
+        "name": "Juan Alemann"
+      },
+      {
+        "id": "alberto_gerchunoff",
+        "name": "Alberto Gerchunoff"
+      },
+      {
+        "id": "geoffroy_saint_hilaire",
+        "name": "Isidore Geoffroy Saint-Hilaire"
+      },
+      {
+        "id": "juan_sourrouille",
+        "name": "Juan Vital Sourrouille"
+      },
+      {
+        "id": "lisandro_de_la_torre",
+        "name": "Lisandro de la Torre"
+      },
+      {
+        "id": "raul_scalabrini_ortiz",
+        "name": "Raúl Scalabrini Ortiz"
+      },
+      {
+        "id": "pablo_neruda",
+        "name": "Pablo Neruda"
+      },
+      {
+        "id": "friedrich_schiller",
+        "name": "Friedrich Schiller"
+      },
+      {
+        "id": "mohamed_seineldin",
+        "name": "Mohamed Alí Seineldín"
+      },
+      {
+        "id": "san_agustin",
+        "name": "de Hipona Agustín"
+      },
+      {
+        "id": "san_francisco_asis",
+        "name": "de Asís Francisco"
+      },
+      {
+        "id": "emile_pereire",
+        "name": "Émile Pereire"
+      },
+      {
+        "id": "jacques_maritain",
+        "name": "Jacques Maritain"
+      },
+      {
+        "id": "epicuro",
+        "name": "Epicuro"
+      },
+      {
+        "id": "balzac",
+        "name": "Honoré Balzac"
+      },
+      {
+        "id": "raul_gustavo_aguirre",
+        "name": "Raúl Gustavo Aguirre"
+      },
+      {
+        "id": "esquilo",
+        "name": "Esquilo"
+      },
+      {
+        "id": "raissa_umansof",
+        "name": "Raïssa Oumançoff"
+      },
+      {
+        "id": "ramon_camps",
+        "name": "Ramón Juan Alberto Camps"
+      },
+      {
+        "id": "claretie",
+        "name": "Jules Claretie"
+      },
+      {
+        "id": "ramon_alcalde",
+        "name": "Ramón Alcalde"
+      },
+      {
+        "id": "herodias",
+        "name": "Herodías"
+      },
+      {
+        "id": "juarez_celman",
+        "name": "Miguel Juárez Celman"
+      },
+      {
+        "id": "ludovico_halevy",
+        "name": "Ludovic Halévy"
+      },
+      {
+        "id": "eugene_bontoux",
+        "name": "Eugène Bontoux"
+      },
+      {
+        "id": "hugo_wast",
+        "name": "Hugo Wast"
+      },
+      {
+        "id": "midas",
+        "name": "Midas"
+      },
+      {
+        "id": "friedrich_nietzsche",
+        "name": "Friedrich Nietzsche"
+      },
+      {
+        "id": "san_jorge",
+        "name": "San Jorge"
+      },
+      {
+        "id": "george_gilder",
+        "name": "George Gilder"
+      },
+      {
+        "id": "george_eliot",
+        "name": "George Eliot"
+      },
+      {
+        "id": "san_lucas",
+        "name": "San Lucas"
+      },
+      {
+        "id": "rodolfo_fogwill",
+        "name": "Rodolfo Fogwill"
+      },
+      {
+        "id": "gustav_janouch",
+        "name": "Gustav Janouch"
+      },
+      {
+        "id": "hector_campora",
+        "name": "Héctor Cámpora"
+      },
+      {
+        "id": "albert_beguin",
+        "name": "Albert Béguin"
+      },
+      {
+        "id": "cecile_delhorbe",
+        "name": "Cécile Delhorbe"
+      },
+      {
+        "id": "carl_von_clausewitz",
+        "name": "Carl von Clausewitz"
+      },
+      {
+        "id": "ernest_hello",
+        "name": "Ernest Hello"
+      },
+      {
+        "id": "margaret_tatcher",
+        "name": "Margaret Thatcher"
+      },
+      {
+        "id": "edmond_rothschild",
+        "name": "Edmond Rothschild"
+      },
+      {
+        "id": "creso",
+        "name": "Creso"
+      },
+      {
+        "id": "robert_misrahi",
+        "name": "Robert Misrahi"
+      },
+      {
+        "id": "jose_bianco",
+        "name": "José Bianco"
+      },
+      {
+        "id": "ricardo_zelarayan",
+        "name": "Ricardo Zelarayán"
+      },
+      {
+        "id": "paul_bourget",
+        "name": "Paul Bourget"
+      },
+      {
+        "id": "mussolini",
+        "name": "Benito Mussolini"
+      },
+      {
+        "id": "karl_marx",
+        "name": "Karl Marx"
+      },
+      {
+        "id": "louis_blanc",
+        "name": "Louis Blanc"
+      },
+      {
+        "id": "moses_hadas",
+        "name": "Moses Hadas"
+      },
+      {
+        "id": "jose_martinez_de_hoz",
+        "name": "José Alfredo Martínez de Hoz"
+      },
+      {
+        "id": "san_pedro_persona",
+        "name": "San Pedro"
+      },
+      {
+        "id": "esterhazy",
+        "name": "Ferdinand Esterhazy"
+      },
+      {
+        "id": "adolf_stoecker",
+        "name": "Adolf Stoecker"
+      },
+      {
+        "id": "platelle",
+        "name": "Henri Platelle"
+      },
+      {
+        "id": "francois_zola",
+        "name": "François Zola"
+      },
+      {
+        "id": "carlos_correas",
+        "name": "Carlos Correas"
+      },
+      {
+        "id": "geza_onody",
+        "name": "Géza Onody"
+      },
+      {
+        "id": "julian_martel",
+        "name": "Julián Martel"
+      },
+      {
+        "id": "hippolyte_taine",
+        "name": "Hippolyte Taine"
+      },
+      {
+        "id": "georges_bernanos",
+        "name": "Georges Bernanos"
+      },
+      {
+        "id": "marcial",
+        "name": "Marco Marcial"
+      },
+      {
+        "id": "jorge_bacque",
+        "name": "Jorge Antonio Bacqué"
+      },
+      {
+        "id": "arthur_meyer",
+        "name": "Arthur Meyer"
+      },
+      {
+        "id": "norberto_cozzani",
+        "name": "Norberto Ricardo Cozzani"
+      },
+      {
+        "id": "jose_caridi",
+        "name": "José Dante Caridi"
+      },
+      {
+        "id": "hugo_von_hofmannsthal",
+        "name": "Hugo von Hofmannsthal"
+      }
+    ]
+  },
+  {
+    "community_id": 3,
+    "size": 42,
+    "members": [
+      {
+        "id": "antonioni",
+        "name": "Michelangelo Antonioni"
+      },
+      {
+        "id": "tarkovsky",
+        "name": "Andrei Tarkovsky"
+      },
+      {
+        "id": "alfred_hitchcock",
+        "name": "Alfred Hitchcock"
+      },
+      {
+        "id": "monory",
+        "name": "Jacques Monory"
+      },
+      {
+        "id": "bacon",
+        "name": "Francis Bacon"
+      },
+      {
+        "id": "orson_welles",
+        "name": "Orson Welles"
+      },
+      {
+        "id": "jean_luc_godard",
+        "name": "Jean-Luc Godard"
+      },
+      {
+        "id": "augusto_belluscio",
+        "name": "Augusto César Belluscio"
+      },
+      {
+        "id": "felipeiv",
+        "name": "IV Felipe"
+      },
+      {
+        "id": "ralph_goings",
+        "name": "Ralph Goings"
+      },
+      {
+        "id": "lacan",
+        "name": "Jacques Lacan"
+      },
+      {
+        "id": "john_cassavetes",
+        "name": "John Cassavetes"
+      },
+      {
+        "id": "antonello_da_messina",
+        "name": "da Messina Antonello"
+      },
+      {
+        "id": "durero",
+        "name": "Alberto Durero"
+      },
+      {
+        "id": "velazquez",
+        "name": "Diego Velázquez"
+      },
+      {
+        "id": "dino_buzzati",
+        "name": "Dino Buzzati"
+      },
+      {
+        "id": "straub",
+        "name": "Jean-Marie Straub"
+      },
+      {
+        "id": "carlos_fayt",
+        "name": "Carlos Santiago Fayt"
+      },
+      {
+        "id": "andrzej_wajda",
+        "name": "Andrzej Wajda"
+      },
+      {
+        "id": "francois_truffaut",
+        "name": "François Truffaut"
+      },
+      {
+        "id": "duras",
+        "name": "Marguerite Duras"
+      },
+      {
+        "id": "alain_resnais",
+        "name": "Alain Resnais"
+      },
+      {
+        "id": "valerio_adami",
+        "name": "Valerio Adami"
+      },
+      {
+        "id": "mario_levin",
+        "name": "Mario Levin"
+      },
+      {
+        "id": "robert_bresson",
+        "name": "Robert Bresson"
+      },
+      {
+        "id": "luis_bunuel",
+        "name": "Luis Buñuel"
+      },
+      {
+        "id": "enrique_petracchi",
+        "name": "Enrique Santiago Petracchi"
+      },
+      {
+        "id": "andre_bazin",
+        "name": "André Bazin"
+      },
+      {
+        "id": "fritz_lang",
+        "name": "Fritz Lang"
+      },
+      {
+        "id": "jose_severo_caballero",
+        "name": "José Severo Caballero"
+      },
+      {
+        "id": "mizoguchi",
+        "name": "Kenji Mizoguchi"
+      },
+      {
+        "id": "cesar_jaroslavsky",
+        "name": "César Jaroslavsky"
+      },
+      {
+        "id": "carlos_saura",
+        "name": "Carlos Saura"
+      },
+      {
+        "id": "cremonini",
+        "name": "Leonardo Cremonini"
+      },
+      {
+        "id": "carl_dreyer",
+        "name": "Carl Dreyer"
+      },
+      {
+        "id": "adolfo_aristarain",
+        "name": "Adolfo Aristarain"
+      },
+      {
+        "id": "jean_eustache",
+        "name": "Jean Eustache"
+      },
+      {
+        "id": "pascal_bonitzer",
+        "name": "Pascal Bonitzer"
+      },
+      {
+        "id": "alex_barbier",
+        "name": "Alex Barbier"
+      },
+      {
+        "id": "sergei_eisenstein",
+        "name": "Sergei Eisenstein"
+      },
+      {
+        "id": "erwin_panofsky",
+        "name": "Erwin Panofsky"
+      },
+      {
+        "id": "king_vidor",
+        "name": "King Vidor"
+      }
+    ]
+  },
+  {
+    "community_id": 4,
+    "size": 36,
+    "members": [
+      {
+        "id": "wanda_sacher_masoch",
+        "name": "Wanda von Sacher-Masoch"
+      },
+      {
+        "id": "marcel_proust",
+        "name": "Marcel Proust"
+      },
+      {
+        "id": "edmund_husserl",
+        "name": "Edmund Husserl"
+      },
+      {
+        "id": "ana_barrenechea",
+        "name": "Ana Barrenechea"
+      },
+      {
+        "id": "godofredo_viterbo",
+        "name": "de Viterbo Godofredo"
+      },
+      {
+        "id": "mahoma",
+        "name": "Mahoma"
+      },
+      {
+        "id": "klossowski",
+        "name": "Pierre Klossowski"
+      },
+      {
+        "id": "felisberto_hernandez",
+        "name": "Felisberto Hernández"
+      },
+      {
+        "id": "raul_zoppi",
+        "name": "Raul Zoppi"
+      },
+      {
+        "id": "henry_james",
+        "name": "Henry James"
+      },
+      {
+        "id": "noemi_ulla",
+        "name": "Noemí Ulla"
+      },
+      {
+        "id": "virgilio_piniera",
+        "name": "Virgilio Piñera"
+      },
+      {
+        "id": "borges",
+        "name": "Jorge Borges"
+      },
+      {
+        "id": "julio_cesar",
+        "name": "Julio César"
+      },
+      {
+        "id": "norma_gentili",
+        "name": "norma_gentili"
+      },
+      {
+        "id": "zenon",
+        "name": "de Elea Zenón"
+      },
+      {
+        "id": "walter_gieseking",
+        "name": "Walter Gieseking"
+      },
+      {
+        "id": "anderson_imbert",
+        "name": "Enrique Anderson Imbert"
+      },
+      {
+        "id": "jacquemart_de_hesdin",
+        "name": "Jacquemart Hesdin"
+      },
+      {
+        "id": "ciro_grande",
+        "name": "II Ciro"
+      },
+      {
+        "id": "alejo_carpentier",
+        "name": "Alejo Carpentier"
+      },
+      {
+        "id": "alicia_gutierrez_reto",
+        "name": "Alicia Gutiérrez Reto"
+      },
+      {
+        "id": "luis_thonis",
+        "name": "Luis Thonis"
+      },
+      {
+        "id": "roberto_echavarren",
+        "name": "Roberto Echavarren"
+      },
+      {
+        "id": "enrique_pezzoni",
+        "name": "Enrique Pezzoni"
+      },
+      {
+        "id": "franz_schubert",
+        "name": "Franz Schubert"
+      },
+      {
+        "id": "silvina_ocampo",
+        "name": "Silvina Ocampo"
+      },
+      {
+        "id": "paul_valery",
+        "name": "Ambroise Valéry"
+      },
+      {
+        "id": "juan_garcia_ponce",
+        "name": "Juan García Ponce"
+      },
+      {
+        "id": "josefina_ludmer",
+        "name": "Josefina Ludmer"
+      },
+      {
+        "id": "robert_musil",
+        "name": "Robert Musil"
+      },
+      {
+        "id": "macedonio_fernandez",
+        "name": "Macedonio Fernández"
+      },
+      {
+        "id": "gilbert_ryle",
+        "name": "Gilbert Ryle"
+      },
+      {
+        "id": "marta_lynch",
+        "name": "Marta Lynch"
+      },
+      {
+        "id": "adolfo_de_obieta",
+        "name": "Adolfo de Obieta"
+      },
+      {
+        "id": "garcia_marquez",
+        "name": "Gabriel García Márquez"
+      }
+    ]
+  },
+  {
+    "community_id": 5,
+    "size": 132,
+    "members": [
+      {
+        "id": "romero_martinez",
+        "name": "Miguel Romero Martínez"
+      },
+      {
+        "id": "suetonio",
+        "name": "Cayo Suetonio"
+      },
+      {
+        "id": "simonides",
+        "name": "de Ceos Simónides"
+      },
+      {
+        "id": "erich_auerbach",
+        "name": "Erich Auerbach"
+      },
+      {
+        "id": "herodoto",
+        "name": "Heródoto"
+      },
+      {
+        "id": "arcimboldo",
+        "name": "Giuseppe Arcimboldo"
+      },
+      {
+        "id": "charles_perrault",
+        "name": "Charles Perrault"
+      },
+      {
+        "id": "juan_bautista_alberdi",
+        "name": "Juan Bautista Alberdi"
+      },
+      {
+        "id": "euripides",
+        "name": "Eurípides"
+      },
+      {
+        "id": "miguel_saenz",
+        "name": "Miguel Sáenz"
+      },
+      {
+        "id": "lucien_goldmann",
+        "name": "Lucien Goldmann"
+      },
+      {
+        "id": "etienne_de_condillac",
+        "name": "Étienne Bonnot de Condillac"
+      },
+      {
+        "id": "soren_kierkegaard",
+        "name": "Søren Kierkegaard"
+      },
+      {
+        "id": "vladimir_nabokov",
+        "name": "Vladimir Nabokov"
+      },
+      {
+        "id": "cosme_tura",
+        "name": "Cosimo Tura"
+      },
+      {
+        "id": "paul_ricoeur",
+        "name": "Paul Ricoeur"
+      },
+      {
+        "id": "andre_malraux",
+        "name": "André Malraux"
+      },
+      {
+        "id": "martinez_estrada",
+        "name": "Ezequiel Martínez Estrada"
+      },
+      {
+        "id": "samuel_beckett",
+        "name": "Samuel Beckett"
+      },
+      {
+        "id": "northrop_frye",
+        "name": "Northrop Frye"
+      },
+      {
+        "id": "benedetto_croce",
+        "name": "Benedetto Croce"
+      },
+      {
+        "id": "mathos",
+        "name": "Mathos"
+      },
+      {
+        "id": "merleau_ponty",
+        "name": "Maurice Merleau-Ponty"
+      },
+      {
+        "id": "bajtin",
+        "name": "Mijaíl Bajtín"
+      },
+      {
+        "id": "john_ruskin",
+        "name": "John Ruskin"
+      },
+      {
+        "id": "montaigne",
+        "name": "Michel Montaigne"
+      },
+      {
+        "id": "hector_libertella",
+        "name": "Héctor Libertella"
+      },
+      {
+        "id": "antonio_gramsci",
+        "name": "Antonio Gramsci"
+      },
+      {
+        "id": "ricardo_rojas",
+        "name": "Ricardo Rojas"
+      },
+      {
+        "id": "edgar_wind",
+        "name": "Edgar Wind"
+      },
+      {
+        "id": "salvador_ruano",
+        "name": "Salvador Ruano"
+      },
+      {
+        "id": "spitzer",
+        "name": "Leo Spitzer"
+      },
+      {
+        "id": "perugino",
+        "name": "Pietro Vannucci"
+      },
+      {
+        "id": "michel_foucault",
+        "name": "Michel Foucault"
+      },
+      {
+        "id": "botticelli",
+        "name": "Sandro Botticelli"
+      },
+      {
+        "id": "nicolas_condorcet",
+        "name": "Nicolas Condorcet"
+      },
+      {
+        "id": "raymond_aron",
+        "name": "Raymond Aron"
+      },
+      {
+        "id": "johann_herder",
+        "name": "Johann Herder"
+      },
+      {
+        "id": "plutarco",
+        "name": "Plutarco"
+      },
+      {
+        "id": "ferdinand_de_saussure",
+        "name": "Ferdinand de Saussure"
+      },
+      {
+        "id": "george_steiner",
+        "name": "George Steiner"
+      },
+      {
+        "id": "vladimir_propp",
+        "name": "Vladimir Propp"
+      },
+      {
+        "id": "michel_jarrety",
+        "name": "Michel Jarrety"
+      },
+      {
+        "id": "hegel",
+        "name": "Georg Wilhelm Friedrich Hegel"
+      },
+      {
+        "id": "fermat",
+        "name": "Pierre Fermat"
+      },
+      {
+        "id": "ludwig_wittgenstein",
+        "name": "Ludwig Wittgenstein"
+      },
+      {
+        "id": "jose_hernandez",
+        "name": "José Hernández"
+      },
+      {
+        "id": "julio_cortazar",
+        "name": "Julio Cortázar"
+      },
+      {
+        "id": "mario_vargas_llosa",
+        "name": "Mario Vargas Llosa"
+      },
+      {
+        "id": "simmias",
+        "name": "de Tebas Simmias"
+      },
+      {
+        "id": "michael_riffaterre",
+        "name": "Michael Riffaterre"
+      },
+      {
+        "id": "pierre_bourdieu",
+        "name": "Pierre Bourdieu"
+      },
+      {
+        "id": "arturo_roig",
+        "name": "Arturo Andrés Roig"
+      },
+      {
+        "id": "wilhelm_dilthey",
+        "name": "Wilhelm Dilthey"
+      },
+      {
+        "id": "giovanni_morelli",
+        "name": "Giovanni Morelli"
+      },
+      {
+        "id": "robert_cunninghame_graham",
+        "name": "Robert Bontine Cunninghame Graham"
+      },
+      {
+        "id": "hans_robert_jauss",
+        "name": "Hans Robert Jauss"
+      },
+      {
+        "id": "petrarca",
+        "name": "Francesco Petrarca"
+      },
+      {
+        "id": "william_holman_hunt",
+        "name": "William Holman Hunt"
+      },
+      {
+        "id": "max_weber",
+        "name": "Max Weber"
+      },
+      {
+        "id": "jean_paul_sartre",
+        "name": "Jean-Paul Sartre"
+      },
+      {
+        "id": "halperin_donghi",
+        "name": "Tulio Halperín Donghi"
+      },
+      {
+        "id": "gustave_flaubert",
+        "name": "Gustave Flaubert"
+      },
+      {
+        "id": "elias_canetti",
+        "name": "Elias Canetti"
+      },
+      {
+        "id": "juan_jose_saer",
+        "name": "Juan José Saer"
+      },
+      {
+        "id": "da_vinci",
+        "name": "Leonardo Vinci"
+      },
+      {
+        "id": "eduardo_gruner",
+        "name": "Eduardo Grüner"
+      },
+      {
+        "id": "heinrich_von_kleist",
+        "name": "Heinrich von Kleist"
+      },
+      {
+        "id": "guillermo_hudson",
+        "name": "William Henry Hudson"
+      },
+      {
+        "id": "william_faulkner",
+        "name": "William Faulkner"
+      },
+      {
+        "id": "du_bellay",
+        "name": "Joachim Du Bellay"
+      },
+      {
+        "id": "jose_luis_romero",
+        "name": "José Luis Romero"
+      },
+      {
+        "id": "umberto_eco",
+        "name": "Umberto Eco"
+      },
+      {
+        "id": "melville",
+        "name": "Herman Melville"
+      },
+      {
+        "id": "jose_pablo_feinmann",
+        "name": "José Pablo Feinmann"
+      },
+      {
+        "id": "louis_althusser",
+        "name": "Louis Althusser"
+      },
+      {
+        "id": "kafka",
+        "name": "Franz Kafka"
+      },
+      {
+        "id": "ciceron",
+        "name": "Marco Cicerón"
+      },
+      {
+        "id": "estrabon",
+        "name": "Estrabón"
+      },
+      {
+        "id": "quintiliano",
+        "name": "Marco Quintiliano"
+      },
+      {
+        "id": "theodor_adorno",
+        "name": "Theodor Adorno"
+      },
+      {
+        "id": "nicolas_copernico",
+        "name": "Nicolás Copérnico"
+      },
+      {
+        "id": "carlos_altamirano",
+        "name": "Carlos Altamirano"
+      },
+      {
+        "id": "luciano_samosata",
+        "name": "de Samósata Luciano"
+      },
+      {
+        "id": "friedrich_schelling",
+        "name": "Friedrich Wilhelm Joseph Schelling"
+      },
+      {
+        "id": "harold_bloom",
+        "name": "Harold Bloom"
+      },
+      {
+        "id": "mario_teruggi",
+        "name": "Mario A. Teruggi"
+      },
+      {
+        "id": "viktor_shklovski",
+        "name": "Víktor Shklovski"
+      },
+      {
+        "id": "nicos_poulantzas",
+        "name": "Nicos Poulantzas"
+      },
+      {
+        "id": "miguel_unamuno",
+        "name": "Miguel de Unamuno"
+      },
+      {
+        "id": "ernst_curtius",
+        "name": "Ernst Curtius"
+      },
+      {
+        "id": "charles_rollin",
+        "name": "Charles Rollin"
+      },
+      {
+        "id": "aubrey_beardsley",
+        "name": "Aubrey Beardsley"
+      },
+      {
+        "id": "mercedes_roffe",
+        "name": "Mercedes Roffé"
+      },
+      {
+        "id": "theophile_gautier",
+        "name": "Théophile Gautier"
+      },
+      {
+        "id": "de_dieguez",
+        "name": "Manuel Diéguez"
+      },
+      {
+        "id": "armando_roche",
+        "name": "Armando Almada Roche"
+      },
+      {
+        "id": "lisa_block",
+        "name": "Lisa Block de Behar"
+      },
+      {
+        "id": "jean_starobinski",
+        "name": "Jean Starobinski"
+      },
+      {
+        "id": "giambattista_vico",
+        "name": "Giambattista Vico"
+      },
+      {
+        "id": "hermes_trismegisto",
+        "name": "Trismegisto Hermes"
+      },
+      {
+        "id": "pierre_ronsard",
+        "name": "Pierre Ronsard"
+      },
+      {
+        "id": "gerard_genette",
+        "name": "Gérard Genette"
+      },
+      {
+        "id": "nicolas_olivari",
+        "name": "Nicolás Olivari"
+      },
+      {
+        "id": "andres_vesalio",
+        "name": "Andrés Vesalio"
+      },
+      {
+        "id": "william_gass",
+        "name": "William Gass"
+      },
+      {
+        "id": "amilcar_barca",
+        "name": "Amílcar Barca"
+      },
+      {
+        "id": "della_mirandola",
+        "name": "Giovanni Pico della Mirandola"
+      },
+      {
+        "id": "rafael_lapesa",
+        "name": "Rafael Lapesa"
+      },
+      {
+        "id": "louis_ferdinand_celine",
+        "name": "Louis-Ferdinand Céline"
+      },
+      {
+        "id": "arnold_hauser",
+        "name": "Arnold Hauser"
+      },
+      {
+        "id": "rodolfo_kusch",
+        "name": "Rodolfo Kusch"
+      },
+      {
+        "id": "plinio",
+        "name": "el Viejo Plinio"
+      },
+      {
+        "id": "todorov",
+        "name": "Tzvetan Todorov"
+      },
+      {
+        "id": "william_whiston",
+        "name": "William Whiston"
+      },
+      {
+        "id": "gyorgy_lukacs",
+        "name": "György Lukács"
+      },
+      {
+        "id": "rabelais",
+        "name": "François Rabelais"
+      },
+      {
+        "id": "levi_strauss",
+        "name": "Claude Lévi-Strauss"
+      },
+      {
+        "id": "defilippis_novoa",
+        "name": "Francisco Defilippis Novoa"
+      },
+      {
+        "id": "gabriela_massuh",
+        "name": "Gabriela Massuh"
+      },
+      {
+        "id": "gabriel_de_mably",
+        "name": "Gabriel Bonnot de Mably"
+      },
+      {
+        "id": "dante_gabriel_rossetti",
+        "name": "Dante Gabriel Rossetti"
+      },
+      {
+        "id": "henry_de_montherlant",
+        "name": "Henry de Montherlant"
+      },
+      {
+        "id": "bocaccio",
+        "name": "Giovanni Boccaccio"
+      },
+      {
+        "id": "carlo_ginzburg",
+        "name": "Carlo Ginzburg"
+      },
+      {
+        "id": "maurits_escher",
+        "name": "Maurits Escher"
+      },
+      {
+        "id": "gilbert_dubois",
+        "name": "Claude-Gilbert Dubois"
+      },
+      {
+        "id": "fermin_chavez",
+        "name": "Fermín Chávez"
+      },
+      {
+        "id": "sarmiento",
+        "name": "Domingo Faustino Sarmiento"
+      },
+      {
+        "id": "gunter_grass",
+        "name": "Günter Grass"
+      },
+      {
+        "id": "charles_olson",
+        "name": "Charles Olson"
+      },
+      {
+        "id": "walter_benjamin",
+        "name": "Walter Benjamin"
+      }
+    ]
+  },
+  {
+    "community_id": 6,
+    "size": 87,
+    "members": [
+      {
+        "id": "oscar_igounet_padre",
+        "name": "Oscar Pablo Igounet"
+      },
+      {
+        "id": "san_martin",
+        "name": "José de San Martín"
+      },
+      {
+        "id": "arturo_frondizi",
+        "name": "Arturo Frondizi"
+      },
+      {
+        "id": "martin_lutero",
+        "name": "Martín Lutero"
+      },
+      {
+        "id": "oscar_igounet_hijo",
+        "name": "Oscar Igounet"
+      },
+      {
+        "id": "oswald_spengler",
+        "name": "Oswald Spengler"
+      },
+      {
+        "id": "valery_giscard",
+        "name": "Valéry Giscard d'Estaing"
+      },
+      {
+        "id": "leon_rozitchner",
+        "name": "León Rozitchner"
+      },
+      {
+        "id": "hugo_savino",
+        "name": "Hugo Savino"
+      },
+      {
+        "id": "juan_jose_sebreli",
+        "name": "Juan José Sebreli"
+      },
+      {
+        "id": "milciades_penia",
+        "name": "Milcíades Peña"
+      },
+      {
+        "id": "alfredo_astiz",
+        "name": "Alfredo Ignacio Astiz"
+      },
+      {
+        "id": "joan_manuel_serrat",
+        "name": "Joan Manuel Serrat"
+      },
+      {
+        "id": "degas",
+        "name": "Edgar Degas"
+      },
+      {
+        "id": "horacio_quiroga",
+        "name": "Horacio Quiroga"
+      },
+      {
+        "id": "ernest_hemingway",
+        "name": "Ernest Hemingway"
+      },
+      {
+        "id": "benjamin_menendez",
+        "name": "Mario Benjamín Menéndez"
+      },
+      {
+        "id": "ronald_reagan",
+        "name": "Ronald Reagan"
+      },
+      {
+        "id": "juan_jose_hernandez_arregui",
+        "name": "Juan José Hernández Arregui"
+      },
+      {
+        "id": "spinoza",
+        "name": "Baruch Spinoza"
+      },
+      {
+        "id": "leonardo_castellani",
+        "name": "Leonardo Castellani"
+      },
+      {
+        "id": "reynaldo_bignone",
+        "name": "Reynaldo Benito Antonio Bignone"
+      },
+      {
+        "id": "hector_murena",
+        "name": "Héctor Murena"
+      },
+      {
+        "id": "paul_groussac",
+        "name": "Paul Groussac"
+      },
+      {
+        "id": "eloisa",
+        "name": "Eloísa"
+      },
+      {
+        "id": "simone_beauvoir",
+        "name": "Simone de Beauvoir"
+      },
+      {
+        "id": "charles_chaplin",
+        "name": "Charles Chaplin"
+      },
+      {
+        "id": "ignacio_anzoategui",
+        "name": "Ignacio Anzoátegui"
+      },
+      {
+        "id": "osvaldo_soriano",
+        "name": "Osvaldo Soriano"
+      },
+      {
+        "id": "pedro_abelardo",
+        "name": "Pedro Abelardo"
+      },
+      {
+        "id": "raul_borras",
+        "name": "Raúl Andrés Borrás"
+      },
+      {
+        "id": "pierre_chaunu",
+        "name": "Pierre Chaunu"
+      },
+      {
+        "id": "napoleon",
+        "name": "Napoléon Bonaparte"
+      },
+      {
+        "id": "ricardo_piglia",
+        "name": "Ricardo Piglia"
+      },
+      {
+        "id": "cesar_fernandez_moreno",
+        "name": "César Fernández Moreno"
+      },
+      {
+        "id": "horacio_verbitsky",
+        "name": "Horacio Verbitsky"
+      },
+      {
+        "id": "ernesto_sabato",
+        "name": "Ernesto Sabato"
+      },
+      {
+        "id": "aquiles_fabregat",
+        "name": "Aquiles Fabregat"
+      },
+      {
+        "id": "jd_salinger",
+        "name": "Jerome David Salinger"
+      },
+      {
+        "id": "francois_mitterrand",
+        "name": "François Mitterrand"
+      },
+      {
+        "id": "leonidas",
+        "name": "Leónidas I"
+      },
+      {
+        "id": "juan_domingo_peron",
+        "name": "Juan Domingo Perón"
+      },
+      {
+        "id": "joseph_conrad",
+        "name": "Joseph Conrad"
+      },
+      {
+        "id": "carlos_puebla",
+        "name": "Carlos Puebla"
+      },
+      {
+        "id": "federico_sainz_de_robles",
+        "name": "Federico Carlos Sainz de Robles"
+      },
+      {
+        "id": "osvaldo_rossler",
+        "name": "Osvaldo Rossler"
+      },
+      {
+        "id": "jorge_manrique",
+        "name": "Jorge Manrique"
+      },
+      {
+        "id": "david_vinias",
+        "name": "David Viñas"
+      },
+      {
+        "id": "freud",
+        "name": "Sigmund Freud"
+      },
+      {
+        "id": "luis_franco",
+        "name": "Luis Franco"
+      },
+      {
+        "id": "abelardo_ramos",
+        "name": "Jorge Abelardo Ramos"
+      },
+      {
+        "id": "italo_calvino",
+        "name": "Italo Calvino"
+      },
+      {
+        "id": "witold_gombrowicz",
+        "name": "Witold Gombrowicz"
+      },
+      {
+        "id": "che_guevara",
+        "name": "Ernesto Guevara"
+      },
+      {
+        "id": "mario_benedetti",
+        "name": "Mario Benedetti"
+      },
+      {
+        "id": "rafael_alberto_arrieta",
+        "name": "Rafael Alberto Arrieta"
+      },
+      {
+        "id": "luis_gregorich",
+        "name": "Luis Gregorich"
+      },
+      {
+        "id": "jorge_jinkis",
+        "name": "Jorge Jinkis"
+      },
+      {
+        "id": "juan_pablo_ii",
+        "name": "Juan Pablo II Wojtyła"
+      },
+      {
+        "id": "alfredo_palacios",
+        "name": "Alfredo Palacios"
+      },
+      {
+        "id": "jose_isaacson",
+        "name": "José Isaacson"
+      },
+      {
+        "id": "hector_grisafi",
+        "name": "Héctor Grisafi"
+      },
+      {
+        "id": "nestor_perlongher",
+        "name": "Néstor Perlongher"
+      },
+      {
+        "id": "arturo_jauretche",
+        "name": "Arturo Jauretche"
+      },
+      {
+        "id": "albino_gomez",
+        "name": "Albino Gómez"
+      },
+      {
+        "id": "bertolt_brecht",
+        "name": "Bertolt Brecht"
+      },
+      {
+        "id": "costa_mendez",
+        "name": "Nicanor Costa Méndez"
+      },
+      {
+        "id": "marlon_brando",
+        "name": "Marlon Brando"
+      },
+      {
+        "id": "horacio_gonzalez",
+        "name": "Horacio Luis González"
+      },
+      {
+        "id": "cecilia_de_benedetti",
+        "name": "Cecilia Benedit de Debenedetti"
+      },
+      {
+        "id": "abelardo_castillo",
+        "name": "Abelardo Castillo"
+      },
+      {
+        "id": "raul_alfonsin",
+        "name": "Raúl Alfonsín"
+      },
+      {
+        "id": "jean_yves_calvez",
+        "name": "Jean-Yves Calvez"
+      },
+      {
+        "id": "osvaldo_bayer",
+        "name": "Osvaldo Jorge Bayer"
+      },
+      {
+        "id": "jorge_asis",
+        "name": "Jorge Asís"
+      },
+      {
+        "id": "manuel_galvez",
+        "name": "Manuel Gálvez"
+      },
+      {
+        "id": "luis_aguile",
+        "name": "Luis Aguilé"
+      },
+      {
+        "id": "oliver_hardy",
+        "name": "Oliver Hardy"
+      },
+      {
+        "id": "stan_laurel",
+        "name": "Stan Laurel"
+      },
+      {
+        "id": "julio_martinez_vivot",
+        "name": "Julio César Martínez Vivot"
+      },
+      {
+        "id": "jacques_derrida",
+        "name": "Jacques Derrida"
+      },
+      {
+        "id": "enrique_santos_discepolo",
+        "name": "Enrique Santos Discépolo"
+      },
+      {
+        "id": "nicomaco",
+        "name": "Nicómaco"
+      },
+      {
+        "id": "jose_rivanera",
+        "name": "José Nicolás Rivanera"
+      },
+      {
+        "id": "jaime_rest",
+        "name": "Jaime Rest"
+      },
+      {
+        "id": "bernardo_neustadt",
+        "name": "Bernardo Neustadt"
+      },
+      {
+        "id": "marilyn_monroe",
+        "name": "Marilyn Monroe"
+      }
+    ]
+  },
+  {
+    "community_id": 7,
+    "size": 53,
+    "members": [
+      {
+        "id": "santiago_dabove",
+        "name": "Santiago Dabove"
+      },
+      {
+        "id": "jose_valverde",
+        "name": "José Valverde"
+      },
+      {
+        "id": "ben_jonson",
+        "name": "Ben Jonson"
+      },
+      {
+        "id": "delia_pasini",
+        "name": "Delia Pasini"
+      },
+      {
+        "id": "edgardo_cozarinsky",
+        "name": "Edgardo Cozarinsky"
+      },
+      {
+        "id": "alejandra_pizarnik",
+        "name": "Alejandra Pizarnik"
+      },
+      {
+        "id": "percy_shelley",
+        "name": "Percy Bysshe Shelley"
+      },
+      {
+        "id": "giordano_bruno",
+        "name": "Giordano Bruno"
+      },
+      {
+        "id": "yeats",
+        "name": "William Butler Yeats"
+      },
+      {
+        "id": "erwin_schroedinger",
+        "name": "Erwin Schrödinger"
+      },
+      {
+        "id": "ts_eliot",
+        "name": "T. Eliot"
+      },
+      {
+        "id": "fred_hoyle",
+        "name": "Fred Hoyle"
+      },
+      {
+        "id": "sor_juana",
+        "name": "Sor Juana Inés de la Cruz"
+      },
+      {
+        "id": "safo",
+        "name": "Safo"
+      },
+      {
+        "id": "felix_della_paolera",
+        "name": "Félix Della Paolera"
+      },
+      {
+        "id": "emir_rodriguez_monegal",
+        "name": "Emir Rodríguez Monegal"
+      },
+      {
+        "id": "jose_donoso",
+        "name": "José Donoso"
+      },
+      {
+        "id": "bioy_casares",
+        "name": "Adolfo Bioy Casares"
+      },
+      {
+        "id": "laurence_sterne",
+        "name": "Laurence Sterne"
+      },
+      {
+        "id": "alberto_moravia",
+        "name": "Alberto Moravia"
+      },
+      {
+        "id": "sylvia_plath",
+        "name": "Sylvia Plath"
+      },
+      {
+        "id": "jean_martin_charcot",
+        "name": "Jean-Martin Charcot"
+      },
+      {
+        "id": "robert_montgomery",
+        "name": "Robert Montgomery"
+      },
+      {
+        "id": "ernst_junger",
+        "name": "Ernst Jünger"
+      },
+      {
+        "id": "juan_goytisolo",
+        "name": "Juan Goytisolo"
+      },
+      {
+        "id": "alberto_arbasino",
+        "name": "Alberto Arbasino"
+      },
+      {
+        "id": "rodolfo_wilcock",
+        "name": "Juan Rodolfo Wilcock"
+      },
+      {
+        "id": "marcel_duchamp",
+        "name": "Marcel Duchamp"
+      },
+      {
+        "id": "cabrera_infante",
+        "name": "Guillermo Cabrera Infante"
+      },
+      {
+        "id": "evelyn_waugh",
+        "name": "Evelyn Waugh"
+      },
+      {
+        "id": "malcolm_lowry",
+        "name": "Malcolm Lowry"
+      },
+      {
+        "id": "pasolini",
+        "name": "Pier Paolo Pasolini"
+      },
+      {
+        "id": "andre_pieyre",
+        "name": "André Pieyre de Mandiargues"
+      },
+      {
+        "id": "aleksandr_pushkin",
+        "name": "Aleksandr Pushkin"
+      },
+      {
+        "id": "john_keats",
+        "name": "John Keats"
+      },
+      {
+        "id": "luis_chitarroni",
+        "name": "Luis Chitarroni"
+      },
+      {
+        "id": "auden",
+        "name": "Wystan Hugh Auden"
+      },
+      {
+        "id": "arturo_carrera",
+        "name": "Arturo Carrera"
+      },
+      {
+        "id": "olga_orozco",
+        "name": "Olga Orozco"
+      },
+      {
+        "id": "alfred_korzybski",
+        "name": "Alfred Korzybski"
+      },
+      {
+        "id": "ivy_compton_burnett",
+        "name": "Ivy Compton-Burnett"
+      },
+      {
+        "id": "diego_angelino",
+        "name": "Diego Angelino"
+      },
+      {
+        "id": "juan_filiberto",
+        "name": "Juan de Dios Filiberto"
+      },
+      {
+        "id": "brahms",
+        "name": "Johannes Brahms"
+      },
+      {
+        "id": "vernon_watkins",
+        "name": "Vernon Watkins"
+      },
+      {
+        "id": "jose_marti",
+        "name": "José Martí"
+      },
+      {
+        "id": "ken_russell",
+        "name": "Ken Russell"
+      },
+      {
+        "id": "jack_kerouac",
+        "name": "Jack Kerouac"
+      },
+      {
+        "id": "dylan_thomas",
+        "name": "Dylan Thomas"
+      },
+      {
+        "id": "ruggero_guarini",
+        "name": "Ruggero Guarini"
+      },
+      {
+        "id": "henri_landru",
+        "name": "Henri Landru"
+      },
+      {
+        "id": "nikolai_gogol",
+        "name": "Nikolai Gogol"
+      },
+      {
+        "id": "claude_simon",
+        "name": "Claude Simon"
+      }
+    ]
+  },
+  {
+    "community_id": 8,
+    "size": 45,
+    "members": [
+      {
+        "id": "lev_tolstoi",
+        "name": "Lev Tolstói"
+      },
+      {
+        "id": "mario_praz",
+        "name": "Mario Praz"
+      },
+      {
+        "id": "cleanth_brooks",
+        "name": "Cleanth Brooks"
+      },
+      {
+        "id": "cornelio_agrippa",
+        "name": "Heinrich Agrippa"
+      },
+      {
+        "id": "fiodor_dostoyevski",
+        "name": "Fiódor Dostoyevski"
+      },
+      {
+        "id": "richard_ellman",
+        "name": "Richard Ellmann"
+      },
+      {
+        "id": "diana_bilmezis",
+        "name": "Diana Bilmezis"
+      },
+      {
+        "id": "nathaniel_hawthorne",
+        "name": "Nathaniel Hawthorne"
+      },
+      {
+        "id": "salvador_dali",
+        "name": "Salvador Dalí"
+      },
+      {
+        "id": "german_garcia",
+        "name": "Germán García"
+      },
+      {
+        "id": "mozart",
+        "name": "Wolfgang Amadeus Mozart"
+      },
+      {
+        "id": "miguel_d_ors",
+        "name": "Miguel d'Ors"
+      },
+      {
+        "id": "lezama_lima",
+        "name": "José Lezama Lima"
+      },
+      {
+        "id": "canal_feijoo",
+        "name": "Bernardo Canal Feijóo"
+      },
+      {
+        "id": "heinrich_wolfflin",
+        "name": "Heinrich Wölfflin"
+      },
+      {
+        "id": "liliana_heer",
+        "name": "Liliana Heer"
+      },
+      {
+        "id": "severo_sarduy",
+        "name": "Severo Sarduy"
+      },
+      {
+        "id": "osman_lins",
+        "name": "Osman Lins"
+      },
+      {
+        "id": "robert_penn_warren",
+        "name": "Robert Penn Warren"
+      },
+      {
+        "id": "oscar_masotta",
+        "name": "Óscar Masotta"
+      },
+      {
+        "id": "juan_jose_hernandez",
+        "name": "Juan José Hernández"
+      },
+      {
+        "id": "tinianov",
+        "name": "Yuri Tiniánov"
+      },
+      {
+        "id": "osvaldo_lamborghini",
+        "name": "Osvaldo Lamborghini"
+      },
+      {
+        "id": "domenico_scarlatti",
+        "name": "Domenico Scarlatti"
+      },
+      {
+        "id": "ruben_dario",
+        "name": "Rubén Darío"
+      },
+      {
+        "id": "jose_joaquin_olmedo",
+        "name": "José Olmedo"
+      },
+      {
+        "id": "henriquez_urenia",
+        "name": "Pedro Henríquez Ureña"
+      },
+      {
+        "id": "vicente_garcia_huidobro",
+        "name": "Vicente García-Huidobro"
+      },
+      {
+        "id": "enrique_banchs",
+        "name": "Enrique Banchs"
+      },
+      {
+        "id": "estrada_cabrera",
+        "name": "Manuel Estrada Cabrera"
+      },
+      {
+        "id": "sylvia_molloy",
+        "name": "Sylvia Molloy"
+      },
+      {
+        "id": "juan_filloy",
+        "name": "Juan Filloy"
+      },
+      {
+        "id": "jorge_monteleone",
+        "name": "Jorge Monteleone"
+      },
+      {
+        "id": "georges_bataille",
+        "name": "Georges Bataille"
+      },
+      {
+        "id": "leopoldo_lugones",
+        "name": "Leopoldo Lugones"
+      },
+      {
+        "id": "victor_hugo",
+        "name": "Victor Hugo"
+      },
+      {
+        "id": "pedro_salinas",
+        "name": "Pedro Salinas"
+      },
+      {
+        "id": "octavio_paz",
+        "name": "Octavio Paz"
+      },
+      {
+        "id": "juan_valera",
+        "name": "Juan Valera"
+      },
+      {
+        "id": "jose_maria_heredia",
+        "name": "José Heredia"
+      },
+      {
+        "id": "bettina_edelberg",
+        "name": "Bettina Edelberg"
+      },
+      {
+        "id": "gongora",
+        "name": "Luis de Góngora y Argote"
+      },
+      {
+        "id": "roland_barthes",
+        "name": "Roland Barthes"
+      },
+      {
+        "id": "stanislaus_joyce",
+        "name": "Stanislaus Joyce"
+      },
+      {
+        "id": "chaucer",
+        "name": "Geoffrey Chaucer"
+      }
+    ]
+  },
+  {
+    "community_id": 9,
+    "size": 12,
+    "members": [
+      {
+        "id": "renato_leduc",
+        "name": "Renato Leduc"
+      },
+      {
+        "id": "adolf_hitler",
+        "name": "Adolf Hitler"
+      },
+      {
+        "id": "leonora_carrington",
+        "name": "Leonora Carrington"
+      },
+      {
+        "id": "federico_garcia_lorca",
+        "name": "Federico García Lorca"
+      },
+      {
+        "id": "alfonso_xiii",
+        "name": "Alfonso XIII de Borbón"
+      },
+      {
+        "id": "pierre_mabille",
+        "name": "Pierre Mabille"
+      },
+      {
+        "id": "benjamin_peret",
+        "name": "Benjamin Péret"
+      },
+      {
+        "id": "catherine_yarrow",
+        "name": "Catherine Yarrow"
+      },
+      {
+        "id": "cesar_moro",
+        "name": "César Moro"
+      },
+      {
+        "id": "jonathan_swift",
+        "name": "Jonathan Swift"
+      },
+      {
+        "id": "francisco_franco",
+        "name": "Francisco Franco"
+      },
+      {
+        "id": "max_ernst",
+        "name": "Max Ernst"
+      }
+    ]
+  },
+  {
+    "community_id": 10,
+    "size": 5,
+    "members": [
+      {
+        "id": "angel_rama",
+        "name": "Ángel Rama"
+      },
+      {
+        "id": "manuel_puig",
+        "name": "Manuel Puig"
+      },
+      {
+        "id": "tyrone_power",
+        "name": "Tyrone Power"
+      },
+      {
+        "id": "rita_hayworth",
+        "name": "Rita Hayworth"
+      },
+      {
+        "id": "jorge_panesi",
+        "name": "Jorge Panesi"
+      }
+    ]
+  },
+  {
+    "community_id": 11,
+    "size": 10,
+    "members": [
+      {
+        "id": "bosco",
+        "name": "Hieronymus Bosch"
+      },
+      {
+        "id": "jorge_cruz",
+        "name": "Jorge Cruz"
+      },
+      {
+        "id": "eduardo_mallea",
+        "name": "Eduardo Mallea"
+      },
+      {
+        "id": "beatriz_castillo",
+        "name": "Beatriz Castillo"
+      },
+      {
+        "id": "philippe_aries",
+        "name": "Philippe Ariès"
+      },
+      {
+        "id": "edgar_morin",
+        "name": "Edgar Morin"
+      },
+      {
+        "id": "jan_potocki",
+        "name": "Jan Potocki"
+      },
+      {
+        "id": "jan_van_eyck",
+        "name": "Jan van Eyck"
+      },
+      {
+        "id": "hans_memling",
+        "name": "Hans Memling"
+      },
+      {
+        "id": "karen_quinlan",
+        "name": "Karen Ann Quinlan"
+      }
+    ]
+  },
+  {
+    "community_id": 12,
+    "size": 58,
+    "members": [
+      {
+        "id": "armand_robin",
+        "name": "Armand Robin"
+      },
+      {
+        "id": "kemp_smith",
+        "name": "Norman Kemp Smith"
+      },
+      {
+        "id": "ezra_pound",
+        "name": "Ezra Pound"
+      },
+      {
+        "id": "lewis_carroll",
+        "name": "Lewis Carroll"
+      },
+      {
+        "id": "santiago_rueda",
+        "name": "Santiago Rueda"
+      },
+      {
+        "id": "rilke",
+        "name": "Rainer Rilke"
+      },
+      {
+        "id": "baudelaire",
+        "name": "Charles Baudelaire"
+      },
+      {
+        "id": "hg_wells",
+        "name": "Herbert George Wells"
+      },
+      {
+        "id": "arthur_schopenhauer",
+        "name": "Arthur Schopenhauer"
+      },
+      {
+        "id": "parmenides",
+        "name": "de Elea Parménides"
+      },
+      {
+        "id": "tchuang_tzu",
+        "name": "Zhou Zhuang"
+      },
+      {
+        "id": "wilhelm_von_humboldt",
+        "name": "Wilhelm Humboldt"
+      },
+      {
+        "id": "oscar_wilde",
+        "name": "Oscar Wilde"
+      },
+      {
+        "id": "edward_said",
+        "name": "Edward Said"
+      },
+      {
+        "id": "aldous_huxley",
+        "name": "Aldous Huxley"
+      },
+      {
+        "id": "stefan_george",
+        "name": "Stefan George"
+      },
+      {
+        "id": "novalis",
+        "name": "Novalis"
+      },
+      {
+        "id": "schleiermacher",
+        "name": "Friedrich Schleiermacher"
+      },
+      {
+        "id": "shakespeare",
+        "name": "William Shakespeare"
+      },
+      {
+        "id": "de_quincey",
+        "name": "Thomas De Quincey"
+      },
+      {
+        "id": "gerard_nerval",
+        "name": "Gérard Nerval"
+      },
+      {
+        "id": "august_schlegel",
+        "name": "August Schlegel"
+      },
+      {
+        "id": "holderlin",
+        "name": "Johann Hölderlin"
+      },
+      {
+        "id": "carlos_astrada",
+        "name": "Carlos Astrada"
+      },
+      {
+        "id": "edgar_allan_poe",
+        "name": "Edgar Poe"
+      },
+      {
+        "id": "heraclito",
+        "name": "Heráclito"
+      },
+      {
+        "id": "goethe",
+        "name": "Johann Goethe"
+      },
+      {
+        "id": "bartolome_mitre",
+        "name": "Bartolomé Mitre"
+      },
+      {
+        "id": "juan_bautista_ritvo",
+        "name": "Juan Bautista Ritvo"
+      },
+      {
+        "id": "cervantes",
+        "name": "Miguel Cervantes"
+      },
+      {
+        "id": "franz_rosenzweig",
+        "name": "Franz Rosenzweig"
+      },
+      {
+        "id": "carl_jung",
+        "name": "Carl Gustav Jung"
+      },
+      {
+        "id": "gaston_bachelard",
+        "name": "Gaston Bachelard"
+      },
+      {
+        "id": "lautreamont",
+        "name": "Comte Lautréamont"
+      },
+      {
+        "id": "georg_lichtenberg",
+        "name": "Georg Christoph Lichtenberg"
+      },
+      {
+        "id": "homero",
+        "name": "Homero"
+      },
+      {
+        "id": "tomas_de_aquino",
+        "name": "Tomás de Aquino"
+      },
+      {
+        "id": "max_dickman",
+        "name": "Max Dickmann"
+      },
+      {
+        "id": "james_joyce",
+        "name": "James Joyce"
+      },
+      {
+        "id": "william_blake",
+        "name": "William Blake"
+      },
+      {
+        "id": "antoine_berman",
+        "name": "Antoine Berman"
+      },
+      {
+        "id": "leonard_forster",
+        "name": "Leonard Forster"
+      },
+      {
+        "id": "pieter_hooft",
+        "name": "Pieter Hooft"
+      },
+      {
+        "id": "valery_larbaud",
+        "name": "Valery Larbaud"
+      },
+      {
+        "id": "patricio_de_azcarate",
+        "name": "Patricio de Azcárate"
+      },
+      {
+        "id": "kant",
+        "name": "Immanuel Kant"
+      },
+      {
+        "id": "santiago_bullrich",
+        "name": "Santiago Bullrich"
+      },
+      {
+        "id": "john_milton",
+        "name": "John Milton"
+      },
+      {
+        "id": "haroldo_campos",
+        "name": "Haroldo de Campos"
+      },
+      {
+        "id": "dante_alighieri",
+        "name": "Dante Alighieri"
+      },
+      {
+        "id": "jose_salas_subirat",
+        "name": "José Salas Subirat"
+      },
+      {
+        "id": "leonid_andreiev",
+        "name": "Leonid Andréiev"
+      },
+      {
+        "id": "henri_bergson",
+        "name": "Henri Bergson"
+      },
+      {
+        "id": "paul_celan",
+        "name": "Paul Celan"
+      },
+      {
+        "id": "brian_boru",
+        "name": "Brian Boru"
+      },
+      {
+        "id": "henri_meschonnic",
+        "name": "Henri Meschonnic"
+      },
+      {
+        "id": "george_berkeley",
+        "name": "George Berkeley"
+      },
+      {
+        "id": "david_hume",
+        "name": "David Hume"
+      }
+    ]
+  }
+]

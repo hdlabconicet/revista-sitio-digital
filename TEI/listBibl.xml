@@ -1,0 +1,4155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listBibl xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <bibl xml:id="donne_biathanatos">
+        <author ref="#john_donne">Donne, John</author>
+        <title level="m">Biathanatos</title>
+        <date when="1647"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2900884</idno>
+    </bibl>
+    
+    <bibl xml:id="strauss_philosophie_gesetz">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m" xml:lang="de">Philosophie und Gesetz: Beiträge zum Verständnis Maimunis und seiner Vorläufer</title>
+        <date when="1935"/>
+    </bibl>
+    
+    <bibl xml:id="strauss_on_tyranny">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">On Tyranny: An Interpretation of Xenophon's Hiero</title>
+        <date when="1948"/>
+    </bibl>
+    
+    <bibl xml:id="strauss_persecution_writing">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">Persecution and the Art of Writing</title>
+        <date when="1952"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7170053</idno>
+    </bibl>
+    
+    <bibl xml:id="strauss_socrates_aristophanes">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">Socrates and Aristophanes</title>
+        <date when="1966"/>
+    </bibl>
+    
+    <bibl xml:id="strauss_liberalism_ancient">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">Liberalism Ancient and Modern</title>
+        <date when="1968"/>
+    </bibl>
+    
+    <bibl xml:id="strauss_plato_laws">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">The Argument and the Action of Plato's Laws</title>
+        <date when="1975"/>
+    </bibl>
+    
+    <bibl xml:id="strauss_essays">
+        <author ref="#leo_strauss">Strauss, Leo</author>
+        <title level="m">Political Philosophy: Six Essays by Leo Strauss</title>
+        <date when="1975"/>
+    </bibl>
+    
+    <bibl xml:id="eusebio_historia">
+        <author ref="#eusebio_de_cesarea">Eusebio de Cesarea</author>
+        <title level="m">Historia Eclesiástica</title>
+        <date when="0324"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1235854</idno>
+    </bibl>
+    
+    <bibl xml:id="montesquieu_espiritu_leyes">
+        <author ref="#montesquieu">Montesquieu</author>
+        <title level="m" xml:lang="fr">El espíritu de las leyes</title>
+        <date when="1748"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q514727</idno>
+    </bibl>
+    
+    <bibl xml:id="platon_banquete">
+        <author ref="#platon">Platón</author>
+        <title level="m">El Banquete</title>
+        <date when="-0385"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q486727</idno>
+    </bibl>
+    
+    <bibl xml:id="rabelais_gargantua_pantagruel">
+        <author ref="#rabelais">Rabelais, François</author>
+        <title level="m" xml:lang="fr">Gargantúa y Pantagruel</title>
+        <date from="1532" to="1564">1532-1564</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q822290</idno>
+    </bibl>
+    
+    <bibl xml:id="luciano_historias_verdaderas">
+        <author ref="#luciano_samosata">Luciano de Samósata</author>
+        <title level="m">Historia verdadera</title>
+        <date when="0160"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/A_True_Story</idno>
+    </bibl>
+    
+    <bibl xml:id="moro_utopia">
+        <author ref="#tomas_moro">Moro, Tomás</author>
+        <title level="m">Utopía</title>
+        <date when="1516"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q404158</idno>
+    </bibl>
+    
+    <bibl xml:id="odisea">
+        <author ref="#homero">Homero</author>
+        <title level="m">Odisea</title>
+        <date when="-0725"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q35160</idno>
+    </bibl>
+    
+    <bibl xml:id="cervantes_quijote">
+        <author ref="#cervantes">Cervantes, Miguel de</author>
+        <title level="m">El ingenioso hidalgo don Quijote de la Mancha</title>
+        <date from="1605" to="1615">1605-1615</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q480</idno>
+    </bibl>
+    
+    <bibl xml:id="quinto_libro_pantagruel">
+        <author ref="#rabelais">Rabelais, François</author>
+        <title level="m" xml:lang="fr">Quinto y último libro de Pantagruel</title>
+        <date when="1564"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q12900710</idno>
+    </bibl>
+    
+    <bibl xml:id="masotta_arlt">
+        <author ref="#oscar_masotta">Masotta, Oscar</author>
+        <title level="a">Roberto Arlt, yo mismo</title>
+        <date when="1965"/>
+    </bibl>
+    
+    <bibl xml:id="panofsky_perspectiva_simbolica">
+        <author ref="#erwin_panofsky">Panofsky, Erwin</author>
+        <title level="m">La perspectiva como forma simbólica</title>
+        <date when="1927"/>
+    </bibl>
+    
+    <bibl xml:id="foucault_palabras_cosas">
+        <author ref="#michel_foucault">Foucault, Michel</author>
+        <title level="m">Las palabras y las cosas</title>
+        <date when="1966"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1215306</idno>
+    </bibl>
+    
+    <bibl xml:id="bazin_cine">
+        <author ref="#andre_bazin">Bazin, André</author>
+        <title level="m" xml:lang="fr">¿Qué es el cine?</title>
+        <date from="1958" to="1962">1958-1962</date>
+    </bibl>
+    
+    <bibl xml:id="eisenstein_reflexiones_cineasta">
+        <author ref="#sergei_eisenstein">Eisenstein, Sergei</author>
+        <title level="m">Reflexiones de un cineasta</title>
+        <date when="1958"/>
+    </bibl>
+    
+    <bibl xml:id="oudart_suture">
+        <author ref="#jean_pierre_oudart">Oudart, Jean-Pierre</author>
+        <title level="a" xml:lang="fr">La Suture</title>
+        <date when="1969"/>
+    </bibl>
+    
+    <bibl xml:id="althusser_cremonini">
+        <author ref="#louis_althusser">Althusser, Louis</author>
+        <title level="a" xml:lang="fr">Cremonini, peintre de l'abstrait</title>
+        <date when="1966"/>
+    </bibl>
+    
+    <bibl xml:id="deleuze_presentacion_sacher_masoch">
+        <author ref="#gilles_deleuze">Deleuze, Gilles</author>
+        <title level="m">Presentación de Sacher-Masoch</title>
+        <date when="1967"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q21055175</idno>
+    </bibl>
+    
+    <bibl xml:id="deleuze_dialogues">
+        <author ref="#gilles_deleuze">Deleuze, Gilles</author>
+        <author ref="#claire_parnet">Parnet, Claire</author>
+        <title level="m" xml:lang="fr">Dialogues</title>
+        <date when="1977"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q20747601</idno>
+    </bibl>
+    
+    <bibl xml:id="newton_femmes_secretes">
+        <author ref="#helmut_newton">Newton, Helmut</author>
+        <title level="m" xml:lang="fr">Femmes secrètes</title>
+        <date when="1976"/>
+    </bibl>
+    
+    <bibl xml:id="truffaut_hitchcock">
+        <author ref="#francois_truffaut">Truffaut, François</author>
+        <title level="m" xml:lang="fr">El cine según Hitchcock</title>
+        <date when="1966"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1951421</idno>
+    </bibl>
+    
+    <bibl xml:id="barthes_sz">
+        <author ref="#roland_barthes">Barthes, Roland</author>
+        <title level="m" xml:lang="fr">S/Z</title>
+        <date when="1970"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2379903</idno>
+    </bibl>
+    
+    <bibl xml:id="todorov_intro_lit_fant">
+        <author ref="#todorov">Todorov, Tzvetan</author>
+        <title level="m" xml:lang="fr">Introduction à la littérature fantastique</title>
+        <date when="1970"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2425412</idno>
+    </bibl>
+    
+    <bibl xml:id="barrenechea_ensayo_lit_fant">
+        <author ref="#ana_barrenechea">Barrenechea, Ana María</author>
+        <title level="a">Ensayo de una tipología de la literatura fantástica</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="textos_hispanoamericanos">
+        <author ref="#ana_barrenechea">Barrenechea, Ana María</author>
+        <title level="m">Textos hispanoamericanos: de Sarmiento a Sarduy</title>
+        <date when="1978"/>
+    </bibl>
+    
+    <bibl xml:id="borges_aleph">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="m">El Aleph</title>
+        <date when="1949"/>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q743304</idno>
+    </bibl>
+    
+    <bibl xml:id="bellemin_formes_fantastiques">
+        <author ref="#bellemin_noel">Bellemin-Noël, Jean</author>
+        <title level="a" xml:lang="fr">Des formes fantastiques aux thèmes fantasmatiques</title>
+        <date when="1971"/>
+    </bibl>
+    
+    <bibl xml:id="gautier_notes_fant">
+        <author ref="#bellemin_noel">Bellemin-Noël, Jean</author>
+        <title level="a" xml:lang="fr">Notes sur le fantastique (Textes de Théophile Gautier)</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="bioy_invencion_morel">
+        <author ref="#bioy_casares">Bioy Casares, Adolfo</author>
+        <title level="m">La invención de Morel</title>
+        <date when="1940"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2563052</idno>
+    </bibl>
+    
+    <bibl xml:id="antologia_lit_fant">
+        <editor ref="#borges">Borges, Jorge Luis</editor>
+        <editor ref="#bioy_casares">Bioy Casares, Adolfo</editor>
+        <editor ref="#silvina_ocampo">Ocampo, Silvina</editor>
+        <title level="m">Antología de la literatura fantástica</title>
+        <date when="1940"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7719224</idno>
+    </bibl>
+    
+    <bibl xml:id="cortazar_axolotl">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="a">Axolotl</title>
+        <date when="1956"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q109657845</idno>
+    </bibl>
+    
+    <bibl xml:id="cortazar_otro_cielo">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="a">El otro cielo</title>
+        <date when="1966"/>
+    </bibl>
+    
+    <bibl xml:id="cortazar_lejana">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="a">Lejana</title>
+        <date when="1951"/>
+    </bibl>
+    
+    <bibl xml:id="carpentier_viaje_semilla">
+        <author ref="#alejo_carpentier">Carpentier, Alejo</author>
+        <title level="a">Viaje a la semilla</title>
+        <date when="1944"/>
+    </bibl>
+    
+    <bibl xml:id="duran_viaje_semilla">
+        <author ref="#manuel_duran">Durán, Manuel</author>
+        <title level="a">Viaje a la semilla: el cómo y el porqué de una pequeña obra maestra</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="asedios_carpentier">
+        <title level="m">Asedios a Carpentier: once ensayos críticos sobre el novelista cubano</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="recopilacion_textos_carpentier">
+        <title level="m">Recopilación de textos sobre Alejo Carpentier</title>
+        <date when="1977"/>
+    </bibl>
+    
+    <bibl xml:id="assardo_viaje_semilla">
+        <author>Assardo, Roberto M.</author>
+        <title level="a">Viaje a la semilla</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="explicacion_textos_literarios">
+        <title level="j">Explicación de textos literarios</title>
+        <date from="1972"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15749892</idno>
+    </bibl>
+    
+    <bibl xml:id="gonzalez_viaje_siglo">
+        <author>Gonzalez, Eduardo G.</author>
+        <title level="a">“Viaje a la semilla” y El Siglo de las Luces: conjugación de dos textos</title>
+        <date when="1975"/>
+    </bibl>
+    
+    <bibl xml:id="imbert_gato_cheshire">
+        <author ref="#anderson_imbert">Anderson Imbert, Enrique</author>
+        <title level="m">El gato de Cheshire</title>
+        <date when="1965"/>
+    </bibl>
+    
+    <bibl xml:id="imbert_vertigos">
+        <author ref="#anderson_imbert">Anderson Imbert, Enrique</author>
+        <title level="a">Vértigos</title>
+        <date when="1961"/>
+    </bibl>
+    
+    <bibl xml:id="imbert_paraiso">
+        <author ref="#anderson_imbert">Anderson Imbert, Enrique</author>
+        <title level="a">Paraíso</title>
+        <date when="1961"/>
+    </bibl>
+    
+    <bibl xml:id="borges_ficciones">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="m">Ficciones</title>
+        <date when="1944"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2483432</idno>
+    </bibl>
+    
+    <bibl xml:id="libro_cielo_infierno">
+        <editor ref="#borges">Borges, Jorge Luis</editor>
+        <editor ref="#bioy_casares">Bioy Casares, Adolfo</editor>
+        <title level="m">Libro del cielo y del infierno</title>
+        <date when="1960"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q112136101</idno>
+    </bibl>
+    
+    <bibl xml:id="piniera_vino_salvarme">
+        <author ref="#virgilio_piniera">Piñera, Virgilio</author>
+        <title level="m">El que vino a salvarme</title>
+        <date when="1970"/>
+    </bibl>
+    
+    <bibl xml:id="garcia_marquez_funerales_mama">
+        <author ref="#garcia_marquez">García Márquez, Gabriel</author>
+        <title level="m">Los funerales de la Mamá Grande</title>
+        <date when="1962"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1977971</idno>
+    </bibl>
+    
+    <bibl xml:id="rodriguez_monegal_novedad_anacronismo">
+        <author ref="#emir_rodriguez_monegal">Rodríguez Monegal, Emir</author>
+        <title level="a">Novedad y anacronismo de Cien años de soledad</title>
+        <date when="1971"/>
+    </bibl>
+    
+    <bibl xml:id="garcia_marquez_cien_anios">
+        <author ref="#garcia_marquez">García Márquez, Gabriel</author>
+        <title level="m">Cien años de soledad</title>
+        <date when="1967"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q178869</idno>
+    </bibl>
+    
+    <bibl xml:id="garcia_marquez_viejo_alas">
+        <author ref="#garcia_marquez">García Márquez, Gabriel</author>
+        <title level="a">Un señor muy viejo con unas alas enormes</title>
+        <date when="1955"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4340672</idno>
+    </bibl>
+    
+    <bibl xml:id="gombrowicz_ferdydurke">
+        <author ref="#witold_gombrowicz">Gombrowicz, Witold</author>
+        <title level="m">Ferdydurke</title>
+        <date when="1937"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3057258</idno>
+    </bibl>
+    
+    <bibl xml:id="gombrowicz_memorias_maduracion">
+        <author ref="#witold_gombrowicz">Gombrowicz, Witold</author>
+        <title level="m">Memorias del período de la maduración</title>
+        <date when="1933"/>
+    </bibl>
+    
+    <bibl xml:id="felisberto_mujer_parecida">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="a">La mujer parecida a mí</title>
+        <date when="1943"/>
+    </bibl>
+    
+    <bibl xml:id="plinio_historia_natural">
+        <author ref="#plinio">Plinio el Viejo</author>
+        <title level="m">Historia Natural</title>
+        <date when="0077"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q442</idno>
+    </bibl>
+    
+    <bibl xml:id="felisberto_tiempos_clemente">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">Los tiempos de Clemente Colling</title>
+        <date when="1942"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q124369328</idno>
+    </bibl>
+    
+    <bibl xml:id="ponce_errancia_sinfin">
+        <author ref="#juan_garcia_ponce">García Ponce, Juan</author>
+        <title level="m">La errancia sin fin: Musil, Borges, Klossowski</title>
+        <date when="1981"/>
+    </bibl>
+    
+    <bibl xml:id="echavarren_espacio_verdad">
+        <author ref="#roberto_echavarren">Echavarren, Roberto</author>
+        <title level="m">El espacio de la verdad: práctica del texto en Felisberto Hernández</title>
+        <date when="1981"/>
+    </bibl>
+    
+    <bibl xml:id="bloy_salvacion">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Le Salut par les Juifs</title>
+        <title level="m" type="translated" xml:lang="es">La salvación por los judíos</title>
+        <date when="1892"/>
+    </bibl>
+    
+    <bibl xml:id="drumont_france">
+        <author ref="#edouard_drumont">Drumont, Édouard</author>
+        <title level="m" xml:lang="fr">La France juive</title>
+        <date when="1886"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3209230</idno>
+    </bibl>
+    
+    <bibl xml:id="zola_argent">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">L'Argent</title>
+        <title level="m" type="translated" xml:lang="es">El dinero</title>
+        <date when="1891"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q607232</idno>
+    </bibl>
+    
+    <bibl xml:id="martel_bolsa">
+        <author ref="#julian_martel">Martel, Julián</author>
+        <title level="m">La Bolsa</title>
+        <date when="1891"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q25990708</idno>
+    </bibl>
+ 
+    <bibl xml:id="garay_crisis90">
+        <author>Garay, Rogelio</author>
+        <title level="a">La crisis del 90 noventa años después; de La Bolsa al Escándalo bancario</title>
+        <title level="j" ref="#diario_la_prensa">La Prensa</title>
+        <date when="1981-07-27"/>
+    </bibl>
+ 
+    <bibl xml:id="escandalo_bancario">
+        <author ref="#silvina_bullrich">Bullrich, Silvina</author>
+        <title level="m">Escándalo bancario</title>
+        <date when="1980"/>
+    </bibl>
+ 
+    <bibl xml:id="moyano_capitalismo">
+        <author ref="#carlos_moyano_llerena">Moyano Llerena, Carlos</author>
+        <title level="a">El capitalismo y las virtudes teologales</title>
+        <title level="j" ref="#diario_la_nacion">La Nación</title>
+        <date when="1981-05-24"/>
+    </bibl>
+ 
+    <bibl xml:id="gilder_riqueza_pobreza">
+        <author ref="#george_gilder">Gilder, George</author>
+        <title level="m">Riqueza y pobreza</title>
+        <date when="1981"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q30078182</idno>
+    </bibl>
+ 
+    <bibl xml:id="libro_kahal">
+        <author ref="#jacob_brafman">Brafman, Jacob</author>
+        <title level="m" xml:lang="ru">Kniga Kahala</title>
+        <title level="m" type="translated" xml:lang="es">Libro del Kahal</title>
+        <date when="1869">1869</date>
+    </bibl>
+ 
+    <bibl xml:id="talmudjude">
+        <author ref="#august_rohling">Rohling, August</author>
+        <title level="m" xml:lang="de">Der Talmudjude</title>
+        <title level="m" type="translated" xml:lang="es">El judío del Talmud</title>
+        <date when="1871">1871</date>
+    </bibl>
+ 
+    <bibl xml:id="protocolos_sion">
+        <title level="m">Protocolos de los Sabios de Sión</title>
+        <date when="1903">1903</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q26193</idno>
+    </bibl>
+ 
+    <bibl xml:id="wast_oro">
+        <author ref="#hugo_wast">Wast, Hugo</author>
+        <title level="m">Oro</title>
+        <date when="1935"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5822265</idno>
+    </bibl>
+ 
+    <bibl xml:id="wast_kahal">
+        <author ref="#hugo_wast">Wast, Hugo</author>
+        <title level="m">El Kahal</title>
+        <date when="1935"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5822265</idno>
+    </bibl>
+ 
+    <bibl xml:id="gerchunoff_gauchos_judios">
+        <author ref="#alberto_gerchunoff">Gerchunoff, Alberto</author>
+        <title level="m">Los gauchos judíos</title>
+        <date when="1910"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3232940</idno>
+    </bibl>
+ 
+    <bibl xml:id="herzl_estado_judio">
+        <author ref="#theodor_herzl">Herzl, Theodor</author>
+        <title level="m" xml:lang="de">Der Judenstaat</title>
+        <title level="m" type="translated" xml:lang="es">El estado judío</title>
+        <date when="1896"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1141090</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_la_debacle">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">La Débâcle</title>
+        <date when="1892"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2409203</idno>
+    </bibl>
+ 
+    <bibl xml:id="par_scandale">
+        <title level="j" xml:lang="fr">Par le Scandale</title>
+        <editor ref="#leon_bloy">Bloy, Léon</editor>
+        <date from="1899" to="1900">1899-1900</date>
+    </bibl>
+ 
+    <bibl xml:id="seconde_enfance_zola">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="a" xml:lang="fr">La seconde enfance de Zola</title>
+        <title level="j" ref="#par_scandale">Par le Scandale</title>
+        <date when="1899"/>
+    </bibl>
+ 
+    <bibl xml:id="bloy_accuse">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Je m'accuse...</title>
+        <date when="1900"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q111892369</idno>
+    </bibl>
+ 
+    <bibl xml:id="dernieres_cotonnes">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Les Dernières Colonnes de l'Église</title>
+        <date when="1903"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19210054</idno>
+    </bibl>
+ 
+    <bibl xml:id="daniel_deronda">
+        <author ref="#george_eliot">Eliot, George</author>
+        <title level="m">Daniel Deronda</title>
+        <date when="1876"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q552238</idno>
+    </bibl>
+ 
+    <bibl xml:id="pour_juifs">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="a" xml:lang="fr">Pour les juifs</title>
+        <title level="j" ref="#diario_figaro">Le Figaro</title>
+        <date when="1896-05-16"/>
+    </bibl>
+ 
+    <bibl xml:id="jesus_israel">
+        <author ref="#jules_isaac">Isaac, Jules</author>
+        <title level="m" xml:lang="fr">Jésus et Israël</title>
+        <date when="1948"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3191126</idno>
+    </bibl>
+ 
+    <bibl xml:id="scott_ivanhoe">
+        <author ref="#walter_scott">Scott, Walter</author>
+        <title level="m">Ivanhoe</title>
+        <date when="1820"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q840974</idno>
+    </bibl>
+ 
+    <bibl xml:id="ultimo_chouan">
+        <author ref="#balzac">Balzac, Honoré de</author>
+        <title level="m">El último Chouan</title>
+        <date when="1829"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2631465</idno>
+    </bibl>
+ 
+    <bibl xml:id="cuento_priora">
+        <author ref="#chaucer">Chaucer, Geoffrey</author>
+        <title level="a">Cuento de la priora</title>
+        <title level="m" xml:lang="en">The Canterbury Tales</title>
+        <date notBefore="1387" notAfter="1400">c. 1387-1400</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1625291</idno>
+    </bibl>
+ 
+    <bibl xml:id="wawerley">
+        <author ref="#walter_scott">Scott, Walter</author>
+        <title level="m">Waverley</title>
+        <date when="1814"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q678251</idno>
+    </bibl>
+ 
+    <bibl xml:id="comedia_humana">
+        <author ref="#balzac">Balzac, Honoré de</author>
+        <title level="m">La Comedia Humana</title>
+        <date from="1829" to="1848">1829-1848</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q50188</idno>
+    </bibl>
+ 
+    <bibl xml:id="casa_nucingen">
+        <author ref="#balzac">Balzac, Honoré de</author>
+        <title level="m">La casa Nucingen</title>
+        <date when="1838"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3210327</idno>
+    </bibl>
+ 
+    <bibl xml:id="grandeza_miseria_cortesanas">
+        <author ref="#balzac">Balzac, Honoré de</author>
+        <title level="m">Esplendores y miserias de las cortesanas</title>
+        <date from="1838" to="1847">1838-1847</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1529231</idno>
+    </bibl>
+ 
+    <bibl xml:id="mont_oriol">
+        <author ref="#maupassant">Maupassant, Guy de</author>
+        <title level="m" xml:lang="fr">Mont-Oriol</title>
+        <date when="1887"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3321615</idno>
+    </bibl>
+ 
+    <bibl xml:id="chien_caillou">
+        <author ref="#champfleury">Champfleury</author>
+        <title level="m" xml:lang="fr">Chien-Caillou</title>
+        <date when="1847"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q107287360</idno>
+    </bibl>
+ 
+    <bibl xml:id="manette_salomon">
+        <author ref="#edmond_goncourt">Goncourt, Edmond de</author>
+        <author ref="#jules_goncourt">Goncourt, Jules de</author>
+        <title level="m" xml:lang="fr">Manette Salomon</title>
+        <date when="1867"/>
+    </bibl>
+ 
+    <bibl xml:id="baudelaire_flores_mal">
+        <author ref="#baudelaire">Baudelaire, Charles</author>
+        <title level="m">Las flores del mal</title>
+        <date when="1857"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q216578</idno>
+    </bibl>
+ 
+    <bibl xml:id="el_nabab">
+        <author ref="#alphonse_daudet">Daudet, Alphonse</author>
+        <title level="m">El nabab</title>
+        <date when="1877"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q107529563</idno>
+    </bibl>
+ 
+    <bibl xml:id="marx_capital">
+        <author ref="#karl_marx">Marx, Karl</author>
+        <title level="m">El capital</title>
+        <date when="1867"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q58784</idno>
+    </bibl>
+ 
+    <bibl xml:id="marx_critica_economia_politica">
+        <author ref="#karl_marx">Marx, Karl</author>
+        <title level="m">Elementos fundamentales para la crítica de la economía política</title>
+        <date when="1939"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q527370</idno>
+    </bibl>
+ 
+    <bibl xml:id="marx_cuestion_judia">
+        <author ref="#karl_marx">Marx, Karl</author>
+        <title level="m">Sobre la cuestión judía</title>
+        <date when="1844"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q230307</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_lettre_jeunesse">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">Lettre à la jeunesse</title>
+        <date when="1897"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19214671</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_lettre_france">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">Lettre à la France</title>
+        <date when="1898"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19214668</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_accuse">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="a" xml:lang="fr">J'accuse...!</title>
+        <date when="1898-01-13"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q741304</idno>
+    </bibl>
+ 
+    <bibl xml:id="belle_helene">
+        <author ref="#ludovico_halevy">Halévy, Ludovic</author>
+        <title level="m" xml:lang="fr">La Belle Hélène</title>
+        <date when="1864"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1219408</idno>
+    </bibl>
+ 
+    <bibl xml:id="origen_especies">
+        <author ref="#charles_darwin">Darwin, Charles</author>
+        <title level="m">El origen de las especies</title>
+        <date when="1859"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q20124</idno>
+    </bibl>
+ 
+    <bibl xml:id="bopp_gramatica_comparada">
+        <author ref="#franz_bopp">Bopp, Franz</author>
+        <title level="m">Gramática comparada</title>
+        <date from="1833" to="1852">1833-1852</date>
+    </bibl>
+ 
+    <bibl xml:id="eddas">
+        <title level="m">Eddas (Edda poética y Edda prosaica)</title>
+        <date from="1220" to="1270">c. 1220-1270</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q108652</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_notas_manuscritas">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m">Notas Manuscritas (Dossiers préparatoires)</title>
+        <date when="1890">c. 1890</date>
+    </bibl>
+ 
+    <bibl xml:id="zola_curee">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">La Curée</title>
+        <date when="1871"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q962265</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_desesperado">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Le Désespéré</title>
+        <title level="m" type="translated" xml:lang="es">El desesperado</title>
+        <date when="1887"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q42184501</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_viejo_montania">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m">El viejo de la montaña</title>
+        <date when="1911"/>
+    </bibl>
+ 
+    <bibl xml:id="maritain_conferencia_judios">
+        <author ref="#jacques_maritain">Maritain, Jacques</author>
+        <title level="m">Los judíos entre las naciones</title>
+        <date when="1938"/>
+    </bibl>
+ 
+    <bibl xml:id="cantos_maldoror">
+        <author ref="#lautreamont">Lautréamont, Comte de (Isidore Ducasse)</author>
+        <title level="m">Los cantos de Maldoror</title>
+        <date when="1869"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1213025</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_los_raros">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Los raros</title>
+        <date when="1896"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5981146</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_mujer_pobre">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m">La mujer pobre</title>
+        <date when="1897"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q24952383</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_exegesis">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m">Exégesis de los lugares comunes</title>
+        <date when="1902"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19170272</idno>
+    </bibl>
+ 
+    <bibl xml:id="gaya_ciencia">
+        <author ref="#friedrich_nietzsche">Nietzsche, Friedrich</author>
+        <title level="m">La gaya ciencia</title>
+        <date when="1882"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1061693</idno>
+    </bibl>
+ 
+    <bibl xml:id="epistola_romanos">
+        <author ref="#san_pablo_persona">Pablo de Tarso</author>
+        <title level="m">Epístola a los Romanos</title>
+        <date notBefore="0055" notAfter="0058">c. 55-58 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q48203</idno>
+    </bibl>
+ 
+    <bibl xml:id="pascal_pensamientos">
+        <author ref="#pascal">Pascal, Blaise</author>
+        <title level="m">Pensamientos</title>
+        <date when="1670"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q17360856</idno>
+    </bibl>
+ 
+    <bibl xml:id="lamentaciones">
+        <author ref="#jeremias">Jeremías</author>
+        <title level="m">Lamentaciones</title>
+        <date when="-0586">c. 586 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q179058</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_sangre_pobre">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Le Sang du Pauvre</title>
+        <title level="m" type="translated" xml:lang="es">La sangre del pobre</title>
+        <date when="1909"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19199446</idno>
+    </bibl>
+ 
+    <bibl xml:id="beguin_bloy">
+        <author ref="#albert_beguin">Béguin, Albert</author>
+        <title level="m" xml:lang="fr">Léon Bloy l'impatient</title>
+        <date when="1944"/>
+    </bibl>
+ 
+    <bibl xml:id="bernanos_grand_peur">
+        <author ref="#georges_bernanos">Bernanos, Georges</author>
+        <title level="m" xml:lang="fr">La Grande Peur des bien-pensants</title>
+        <date when="1931"/>
+    </bibl>
+ 
+    <bibl xml:id="bollery_bloy">
+        <author ref="#joseph_bollery">Bollery, Joseph</author>
+        <title level="m" xml:lang="fr">Léon Bloy, essai de biographie</title>
+        <date from="1947" to="1954">1947-1954</date>
+    </bibl>
+ 
+    <bibl xml:id="bloy_complete">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">L'Oeuvre Complète de Léon Bloy</title>
+        <date from="1927" to="1929">1927-1929</date>
+    </bibl>
+ 
+    <bibl xml:id="brafman_libro">
+        <author ref="#jacob_brafman">Brafman, Jacob</author>
+        <title level="m" xml:lang="de">Das Buch vom Kahal. Auf Grund einer neuen Verdeutschung des russischen Originals</title>
+        <date when="1928"/>
+    </bibl>
+ 
+    <bibl xml:id="colleye_ame_bloy">
+        <author ref="#hubert_colleye">Colleye, Hubert</author>
+        <title level="m" xml:lang="fr">L'âme de Léon Bloy</title>
+        <date when="1930"/>
+    </bibl>
+ 
+    <bibl xml:id="delhorbe_affaire_dreyfus">
+        <author ref="#cecile_delhorbe">Delhorbe, Cécile</author>
+        <title level="m" xml:lang="fr">L'Affaire Dreyfus et les écrivains français</title>
+        <date when="1932"/>
+    </bibl>
+ 
+    <bibl xml:id="drumont_france_juive_opinion">
+        <author ref="#edouard_drumont">Drumont, Édouard</author>
+        <title level="m" xml:lang="fr">La France Juive devant l'opinion</title>
+        <date when="1886"/>
+    </bibl>
+ 
+    <bibl xml:id="drumont_fin_monde">
+        <author ref="#edouard_drumont">Drumont, Édouard</author>
+        <title level="m" xml:lang="fr">La Fin d'un monde</title>
+        <date when="1889"/>
+    </bibl>
+ 
+    <bibl xml:id="drumont_testament_antisemite">
+        <author ref="#edouard_drumont">Drumont, Édouard</author>
+        <title level="m" xml:lang="fr">Le Testament d'un antisémite</title>
+        <date when="1891"/>
+    </bibl>
+ 
+    <bibl xml:id="elbogen_century_jewish_life">
+        <author ref="#ismar_elbogen">Elbogen, Ismar</author>
+        <title level="m" xml:lang="en">A Century of Jewish Life</title>
+        <date when="1944"/>
+    </bibl>
+ 
+    <bibl xml:id="fumet_mission_bloy">
+        <author ref="#stanislas_fumet">Fumet, Stanislas</author>
+        <title level="m" xml:lang="fr">Mission de Léon Bloy</title>
+        <date when="1935"/>
+    </bibl>
+ 
+    <bibl xml:id="janouch_kafka">
+        <author ref="#gustav_janouch">Janouch, Gustav</author>
+        <title level="m" xml:lang="de">Gespräche mit Kafka</title>
+        <date when="1951"/>
+    </bibl>
+ 
+    <bibl xml:id="journet_destinees_israel">
+        <author ref="#charles_journet">Journet, Charles</author>
+        <title level="m" xml:lang="fr">Destinées d'Israël. À propos du salut par les Juifs</title>
+        <date when="1945"/>
+    </bibl>
+ 
+    <bibl xml:id="lazare_fumier_job">
+        <author ref="#bernard_lazare">Lazare, Bernard</author>
+        <title level="m" xml:lang="fr">Le Fumier de Job</title>
+        <date when="1910"/>
+    </bibl>
+ 
+    <bibl xml:id="lory_pensee_religieuse">
+        <author ref="#marie_joseph_lory">Lory, Marie-Joseph</author>
+        <title level="m" xml:lang="fr">La Pensée religieuse de Léon Bloy</title>
+        <date when="1951"/>
+    </bibl>
+ 
+    <bibl xml:id="maritain_grandes_amities">
+        <author ref="#raissa_umansof">Maritain, Raissa</author>
+        <title level="m" xml:lang="fr">Les Grandes Amitiés</title>
+        <date when="1941"/>
+    </bibl>
+ 
+    <bibl xml:id="maupassant_oeuvres_completes">
+        <author ref="#maupassant">Maupassant, Guy de</author>
+        <title level="s" xml:lang="fr">Oeuvres complètes de Guy de Maupassant</title>
+        <date from="1908" to="1910">1908-1910</date>
+    </bibl>
+ 
+    <bibl xml:id="waverley_novels">
+        <author ref="#walter_scott">Scott, Walter</author>
+        <title level="s" xml:lang="en">The Waverley Novels</title>
+        <date from="1814" to="1832">1814-1832</date>
+    </bibl>
+ 
+    <bibl xml:id="sartre_reflexiones">
+        <author ref="#jean_paul_sartre">Sartre, Jean-Paul</author>
+        <title level="m">Reflexiones sobre la cuestión judía</title>
+        <date when="1946"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3454755</idno>
+    </bibl>
+ 
+    <bibl xml:id="zola_une_campagne">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">Une campagne</title>
+        <date when="1882"/>
+    </bibl>
+ 
+    <bibl xml:id="zola_nouvelle_campagne">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="m" xml:lang="fr">Nouvelle campagne</title>
+        <date when="1897"/>
+    </bibl>
+ 
+    <bibl xml:id="zola_oeuvre_complete">
+        <author ref="#emile_zola">Zola, Émile</author>
+        <title level="s" xml:lang="fr">L'Oeuvre Complète de Emile Zola</title>
+        <date from="1927" to="1929">1927-1929</date>
+    </bibl>
+ 
+    <bibl xml:id="bloy_mon_journal">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Mon Journal</title>
+        <date when="1904"/>
+    </bibl>
+ 
+    <bibl xml:id="plauto_menecmos">
+        <author ref="#plauto">Plauto</author>
+        <title level="m" xml:lang="la">Menaechmi</title>
+        <title level="m" type="translated" xml:lang="es">Los dos Menecmos</title>
+        <date notBefore="-0254" notAfter="-0184">c. 200 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1240100</idno>
+    </bibl>
+ 
+    <bibl xml:id="bloy_colon">
+        <author ref="#leon_bloy">Bloy, Léon</author>
+        <title level="m" xml:lang="fr">Christophe Colomb devant les Taureaux</title>
+        <date when="1890"/>
+    </bibl>
+ 
+    <bibl xml:id="cabrera_infante_habana">
+        <author ref="#cabrera_infante">Cabrera Infante, Guillermo</author>
+        <title level="m">La Habana para un infante difunto</title>
+        <date when="1979"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q125544481</idno>
+    </bibl>
+ 
+    <bibl xml:id="conrad_corazon_tinieblas">
+        <author ref="#joseph_conrad">Conrad, Joseph</author>
+        <title level="m" xml:lang="en">Heart of Darkness</title>
+        <date when="1899"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q129778</idno>
+    </bibl>
+ 
+    <bibl xml:id="montgomery_dama_lago">
+        <author ref="#robert_montgomery">Montgomery, Robert</author>
+        <title level="m">La dama del lago</title>
+        <date when="1947"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1884921</idno>
+    </bibl>
+ 
+    <bibl xml:id="joyce_ulises">
+        <author ref="#james_joyce">Joyce, James</author>
+        <title level="m" xml:lang="en">Ulysses</title>
+        <title level="m" type="translated" xml:lang="es">Ulises</title>
+        <date when="1922"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6511</idno>
+    </bibl>
+ 
+    <bibl xml:id="borges_sur">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">El Sur</title>
+        <date when="1953"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q951413</idno>
+    </bibl>
+ 
+    <bibl xml:id="borges_pierre_menard">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">Pierre Menard, autor del Quijote</title>
+        <date when="1939"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2470062</idno>
+    </bibl>
+ 
+    <bibl xml:id="grass_rodaballo">
+        <author ref="#gunter_grass">Grass, Günter</author>
+        <title level="m">El rodaballo</title>
+        <date when="1977"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q842750</idno>
+    </bibl>
+ 
+    <bibl xml:id="echeverria_autobiograficas">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">Páginas autobiográficas</title>
+        <date when="1962"/>
+    </bibl>
+ 
+    <bibl xml:id="echeverria_afectos">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">Afectos íntimos</title>
+        <date when="1870"/>
+    </bibl>
+ 
+    <bibl xml:id="ocampo_la_furia">
+        <author ref="#silvina_ocampo">Ocampo, Silvina</author>
+        <title level="m">La furia</title>
+        <date when="1959"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5966785</idno>
+    </bibl>
+ 
+    <bibl xml:id="barthes_plaisir_texte">
+        <author ref="#roland_barthes">Barthes, Roland</author>
+        <title level="m" xml:lang="fr">Le Plaisir du texte</title>
+        <date when="1973"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1214641</idno>
+    </bibl>
+ 
+    <bibl xml:id="fait_divers">
+        <author ref="#silvina_ocampo">Ocampo, Silvina</author>
+        <title level="m" xml:lang="fr">Faits divers de la Terre et du Ciel</title>
+        <date when="1974"/>
+    </bibl>
+ 
+    <bibl xml:id="james_vuelta_tuerca">
+        <author ref="#henry_james">James, Henry</author>
+        <title level="m">Otra vuelta de tuerca</title>
+        <date when="1898"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q625923</idno>
+    </bibl>
+ 
+    <bibl xml:id="james_art_novel">
+        <author ref="#henry_james">James, Henry</author>
+        <title level="m" xml:lang="en">The Art of the Novel: Critical Prefaces</title>
+        <date when="1934"/>
+    </bibl>
+ 
+    <bibl xml:id="barrenechea_lit_fantastica">
+        <author ref="#ana_barrenechea">Barrenechea, Ana María</author>
+        <title level="a">La literatura fantástica: función de los códigos socioculturales en la constitución de un género</title>
+        <title level="j" ref="#revista_sitio">Sitio</title>
+        <biblScope unit="issue">1</biblScope>
+        <date when="1981"/>
+    </bibl>
+ 
+    <bibl xml:id="molloy_exageracion_lenguaje">
+        <author ref="#sylvia_molloy">Molloy, Sylvia</author>
+        <title level="a">Silvina Ocampo: la exageración como lenguaje</title>
+        <date when="1969"/>
+    </bibl>
+ 
+    <bibl xml:id="valery_oeuvres">
+        <author ref="#paul_valery">Valéry, Paul</author>
+        <title level="m" xml:lang="fr">Oeuvres</title>
+        <title level="s" ref="#pleiade">Bibliothèque de la Pléiade</title>
+        <date from="1957" to="1960">1957-1960</date>
+    </bibl>
+ 
+    <bibl xml:id="pleiade">
+        <title level="s" xml:lang="fr">Bibliothèque de la Pléiade</title>
+        <publisher>Gallimard</publisher>
+        <date from="1931"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q856656</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_poesia">
+        <title level="m">Poesía</title>
+        <author ref="#ruben_dario"/>
+        <editor>Edición de Ernesto Mejía Sánchez; prólogo de Ángel Rama</editor>
+        <date when="1977">1977</date>
+    </bibl>
+ 
+    <bibl xml:id="dario_azul">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Azul...</title>
+        <date when="1888"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5715218</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_epistolas">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Epístolas y poemas</title>
+        <date when="1885"/>
+    </bibl>
+ 
+    <bibl xml:id="dario_prosas_profanas">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Prosas profanas y otros poemas</title>
+        <date when="1896"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q30141638</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_poesias_completas">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Poesías completas</title>
+        <date when="1968"/>
+    </bibl>
+ 
+    <bibl xml:id="dario_cantos">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Cantos de vida y esperanza, los cisnes y otros poemas</title>
+        <date when="1905"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19418810</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_canto_errante">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">El canto errante</title>
+        <date when="1907"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19435583</idno>
+    </bibl>
+ 
+    <bibl xml:id="baudelaire_mauvais_moine">
+        <author ref="#baudelaire">Baudelaire, Charles</author>
+        <title level="a" xml:lang="fr">Le Mauvais Moine</title>
+        <title level="m" ref="#baudelaire_flores_mal">Les Fleurs du mal</title>
+        <date when="1857"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19196198</idno>
+    </bibl>
+ 
+    <bibl xml:id="dario_completa">
+        <author ref="#ruben_dario">Darío, Rubén</author>
+        <title level="m">Obras completas</title>
+        <date when="1955">1955</date>
+    </bibl>
+ 
+    <bibl xml:id="urenia_modernismo">
+        <author ref="#henriquez_urenia">Henríquez Ureña, Pedro</author>
+        <title level="m">Breve historia del modernismo</title>
+        <date when="1954"/>
+    </bibl>
+ 
+    <bibl xml:id="paz_cuadrivio">
+        <author ref="#octavio_paz">Paz, Octavio</author>
+        <title level="m">Cuadrivio</title>
+        <date when="1965"/>
+    </bibl>
+
+    <bibl xml:id="deleuze_machines_desirantes">
+        <author ref="#gilles_deleuze">Deleuze, Gilles</author>
+        <author ref="#felix_guattari">Guattari, Félix</author>
+        <title level="a" xml:lang="fr">Les machines désirantes</title>
+        <date when="1972"/>
+    </bibl>
+
+    <bibl xml:id="deleuze_capitalisme_schizo">
+        <author ref="#gilles_deleuze">Deleuze, Gilles</author>
+        <author ref="#felix_guattari">Guattari, Félix</author>
+        <title level="m" xml:lang="fr">Capitalisme et Schizophrénie : L'Anti-Œdipe</title>
+        <date when="1972"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1235943</idno>
+    </bibl>
+
+    <bibl xml:id="borges_inmortal">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">El inmortal</title>
+        <date when="1947"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3821383</idno>
+    </bibl>
+
+    <bibl xml:id="borges_obras_completas">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="m">Obras completas</title>
+        <date when="1974"/>
+    </bibl>
+
+    <bibl xml:id="steiner_apres_babel">
+        <author ref="#george_steiner">Steiner, George</author>
+        <title level="m" type="translated" xml:lang="fr">Après Babel. Une poétique du dire et de la traduction</title>
+        <date when="1975"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4690472</idno>
+    </bibl>
+
+    <bibl xml:id="forster_poesia">
+        <author ref="#leonard_forster">Forster, Leonard</author>
+        <title level="m">La poesía en lenguas extranjeras</title>
+        <date when="1970"/>
+    </bibl>
+
+    <bibl xml:id="said_oriente">
+        <author ref="#edward_said">Said, Edward</author>
+        <title level="m">Orientalismo</title>
+        <date when="1978"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1574967</idno>
+    </bibl>
+
+    <bibl xml:id="benjamin_tarea_traductor">
+        <author ref="#walter_benjamin">Benjamin, Walter</author>
+        <title level="a">La tarea del traductor</title>
+        <date when="1923"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q130329311</idno>
+    </bibl>
+
+    <bibl xml:id="improperios">
+        <title level="m">Improperios</title>
+        <date notBefore="0800" notAfter="0900">Siglo IX</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q283912</idno>
+    </bibl>
+
+    <bibl xml:id="evangelio_san_juan">
+        <author ref="#san_juan_persona">Juan el Evangelista</author>
+        <title level="m">Evangelio según San Juan</title>
+        <date notBefore="0090" notAfter="0100">c. 90-100 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q36766</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_genesis">
+        <author>Anónimo (Tradición Mosaica)</author>
+        <title level="m">Génesis</title>
+        <date notBefore="-0600" notAfter="-0400">c. Siglo VI-V a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q9184</idno>
+    </bibl>
+
+    <bibl xml:id="dos_macabeos">
+        <author>Anónimo (Resumen de la obra de Jasón de Cirene)</author>
+        <title level="m">2 Macabeos</title>
+        <date notBefore="-0150" notAfter="-0120">c. 124 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q209748</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_salmos">
+        <author>Anónimo (Tradición Davídica)</author>
+        <title level="m">Salmos</title>
+        <date notBefore="-1000" notAfter="-0400">c. Siglos X-V a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q41064</idno>
+    </bibl>
+
+    <bibl xml:id="dos_reyes">
+        <author>Anónimo (Tradición de Jeremías)</author>
+        <title level="m">2 Reyes</title>
+        <date notBefore="-0560" notAfter="-0538">c. 560-540 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q209746</idno>
+    </bibl>
+
+    <bibl xml:id="jueces">
+        <author>Anónimo (Tradición de Samuel)</author>
+        <title level="m">Jueces</title>
+        <date notBefore="-0600" notAfter="-0550">c. Siglo VI a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q81240</idno>
+    </bibl>
+
+    <bibl xml:id="apocalipsis">
+        <author>Juan de Patmos</author>
+        <title level="m">Apocalipsis</title>
+        <date notBefore="0090" notAfter="0096">c. 90-96 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q42040</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_jeremias">
+        <author>Anónimo (Tradición de Jeremías)</author>
+        <title level="m">Jeremías</title>
+        <date notBefore="-0626" notAfter="-0587">c. 626-587 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131590</idno>
+    </bibl>
+
+    <bibl xml:id="sabiduria">
+        <author>Anónimo (Pseudo-Salomón)</author>
+        <title level="m">Sabiduría</title>
+        <date notBefore="-0050" notAfter="-0030">c. Siglo I a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q202135</idno>
+    </bibl>
+
+    <bibl xml:id="proverbios">
+        <author>Anónimo (Tradición de Salomón)</author>
+        <title level="m">Proverbios</title>
+        <date notBefore="-0900" notAfter="-0300">c. Siglos X-IV a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4579</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_lucas">
+        <author ref="#san_lucas">Lucas el Evangelista</author>
+        <title level="m">Lucas</title>
+        <date notBefore="0080" notAfter="0090">c. 80-90 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q39939</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_job">
+        <author>Anónimo</author>
+        <title level="m">Job</title>
+        <date notBefore="-0600" notAfter="-0400">c. Siglo VI-IV a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4577</idno>
+    </bibl>
+
+    <bibl xml:id="dos_paralipomenos">
+        <author>Anónimo (El Cronista)</author>
+        <title level="m">2 Paralipómenos (2 Crónicas)</title>
+        <date notBefore="-0400" notAfter="-0250">c. 400-250 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q209720</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_deuteronomio">
+        <author>Anónimo (Tradición Mosaica / Deuteronomista)</author>
+        <title level="m">Deuteronomio</title>
+        <date notBefore="-0640" notAfter="-0609">c. Siglo VII a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q42614</idno>
+    </bibl>
+
+    <bibl xml:id="oficio_tinieblas">
+        <title level="m">Oficio de Tinieblas</title>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q602900</idno>
+    </bibl>
+
+    <bibl xml:id="st_brigida_revelaciones">
+        <author ref="#santa_brigida">Santa Brígida de Suecia</author>
+        <title level="m">Revelaciones</title>
+        <date notBefore="1344" notAfter="1373">c. 1344-1373</date>
+    </bibl>
+
+    <bibl xml:id="oficio_siete_dolores">
+        <title level="m">Oficio de los Siete Dolores</title>
+        <date when="1727"/>
+    </bibl>
+
+    <bibl xml:id="biblia_mateo">
+        <author ref="#mateo_apostol">Mateo el Apóstol (Atribuido)</author>
+        <title level="m">Mateo</title>
+        <date notBefore="0080" notAfter="0090">c. 80-90 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q392302</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_romanos">
+        <author ref="#san_pablo_persona">Pablo de Tarso</author>
+        <title level="m">Epístola a los Romanos</title>
+        <date notBefore="0055" notAfter="0058">c. 55-58 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q48203</idno>
+    </bibl>
+
+    <bibl xml:id="oficio_jueves">
+        <title level="m">Oficio Matutino del Jueves Santo</title>
+    </bibl>
+
+    <bibl xml:id="biblia_marcos">
+        <author ref="#marcos_evangelista">Marcos el Evangelista (Atribuido)</author>
+        <title level="m">Marcos</title>
+        <date notBefore="0066" notAfter="0070">c. 66-70 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q107388</idno>
+    </bibl>
+
+    <bibl xml:id="epistola_santiago">
+        <author ref="#santiago_el_justo">Santiago el Justo (Atribuido)</author>
+        <title level="m">Epístola de Santiago</title>
+        <date notBefore="0070" notAfter="0100">c. 70-100 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131097</idno>
+    </bibl>
+
+    <bibl xml:id="dos_corintios">
+        <author ref="#san_pablo_persona">Pablo de Tarso</author>
+        <title level="m">2 Corintios</title>
+        <date notBefore="0055" notAfter="0057">c. 55-57 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q123808</idno>
+    </bibl>
+
+    <bibl xml:id="paralipomenos">
+        <author>Anónimo (El Cronista)</author>
+        <title level="m">1 Paralipómenos (1 Crónicas)</title>
+        <date notBefore="-0400" notAfter="-0250">c. 400-250 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q161953</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_reyes">
+        <author>Anónimo (Tradición de Jeremías)</author>
+        <title level="m">3 Reyes (1 Reyes)</title>
+        <date notBefore="-0560" notAfter="-0538">c. 560-540 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131066</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_ezequiel">
+        <author>Anónimo (Tradición de Ezequiel)</author>
+        <title level="m">Ezequiel</title>
+        <date notBefore="-0593" notAfter="-0571">c. 593-571 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q178390</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_eclesiastico">
+        <author>Ben Sira (Jesús ben Sirac)</author>
+        <title level="m">Eclesiástico (Sirácida)</title>
+        <date notBefore="-0190" notAfter="-0175">c. 190-175 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q155980</idno>
+    </bibl>
+
+    <bibl xml:id="vulgata">
+        <author ref="#san_jeronimo">San Jerónimo (Traductor)</author>
+        <title level="m" xml:lang="la">Biblia Sacra Vulgata</title>
+        <title level="m" type="translated" xml:lang="es">Vulgata</title>
+        <date from="0382" to="0405">c. 382-405 d.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131175</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_exodo">
+        <author>Anónimo (Tradición Mosaica)</author>
+        <title level="m">Éxodo</title>
+        <date notBefore="-0600" notAfter="-0400">c. Siglo VI-V a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q9190</idno>
+    </bibl>
+
+    <bibl xml:id="biblia_zacarias">
+        <author>Anónimo (Tradición de Zacarías)</author>
+        <title level="m">Zacarías</title>
+        <date notBefore="-0520" notAfter="-0400">c. 520-400 a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q179769</idno>
+    </bibl>
+
+    <bibl xml:id="revista_literal">
+        <title level="j">Literal</title>
+        <editor ref="#german_garcia">García, Germán</editor>
+        <editor ref="#osvaldo_lamborghini">Lamborghini, Osvaldo</editor>
+        <editor ref="#luis_gusman">Gusmán, Luis</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1973" to="1977">1973-1977</date>
+        <extent>5 números</extent>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6107045</idno>
+    </bibl>
+
+    <bibl xml:id="revista_charlie_mensuel">
+        <title level="j" xml:lang="fr">Charlie Mensuel</title>
+        <editor ref="#georges_wolinski">Wolinski, Georges</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1969" to="1986">1969-1986</date>
+        <extent>181 números</extent>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2960874</idno>
+    </bibl>
+
+    <bibl xml:id="revista_cahiers_cinema">
+        <title level="j" xml:lang="fr">Cahiers du Cinéma</title>
+        <editor ref="#andre_bazin">Bazin, André</editor>
+        <editor ref="#jacques_doniol_valcroze">Doniol-Valcroze, Jacques</editor>
+        <editor ref="#joseph_marie_lo_duca">Lo Duca, Joseph-Marie</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1951">1951-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q909176</idno>
+    </bibl>
+
+    <bibl xml:id="revista_iberoamericana">
+        <title level="j">Revista Iberoamericana</title>
+        <editor ref="#alfredo_roggiano">Roggiano, Alfredo A.</editor>
+        <pubPlace ref="#pittsburgh">Pittsburgh, Estados Unidos</pubPlace>
+        <date from="1939">1939-presente</date>
+    </bibl>
+
+    <bibl xml:id="revista_tel_quel">
+        <title level="j" xml:lang="fr">Tel Quel</title>
+        <editor ref="#philippe_sollers">Sollers, Philippe</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1960" to="1982">1960-1982</date>
+        <extent>94 números</extent>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1331414</idno>
+    </bibl>
+
+    <bibl xml:id="revista_communications">
+        <title level="j" xml:lang="fr">Communications</title>
+        <editor ref="#roland_barthes">Barthes, Roland</editor>
+        <editor ref="#edgar_morin">Morin, Edgar</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1961">1961-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2989676</idno>
+    </bibl>
+
+    <bibl xml:id="revista_poetique">
+        <title level="j" xml:lang="fr">Poétique</title>
+        <editor ref="#gerard_genette">Genette, Gérard</editor>
+        <editor ref="#todorov">Todorov, Tzvetan</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1970">1970-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3401121</idno>
+    </bibl>
+
+    <bibl xml:id="revista_ornicar">
+        <title level="j" xml:lang="fr">Ornicar?</title>
+        <editor ref="#jacques_alain_miller">Miller, Jacques-Alain</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1975">1975-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q27716215</idno>
+    </bibl>
+
+    <bibl xml:id="revista_diwan">
+        <title level="j">Diwan</title>
+        <editor ref="#alberto_cardin">Cardín, Alberto</editor>
+        <pubPlace ref="#barcelona">Barcelona, España</pubPlace>
+        <date from="1978" to="1981">1978-1981</date>
+    </bibl>
+
+    <bibl xml:id="diario_figaro">
+        <title level="j">Le Figaro</title>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1826">1826-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q216047</idno>
+    </bibl>
+
+    <bibl xml:id="revista_gil_blas">
+        <title level="j">Gil Blas</title>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1879" to="1940">1879-1940</date>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/Gil_Blas_(periodical)</idno>
+    </bibl>
+
+    <bibl xml:id="nueva_gaceta_renana">
+        <title level="j">Nueva Gaceta Renana</title>
+        <editor ref="#karl_marx">Marx, Karl</editor>
+        <pubPlace ref="#colonia_alemania">Colonia, Prusia</pubPlace>
+        <date from="1848" to="1849">1848-1849</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q429850</idno>
+    </bibl>
+
+    <bibl xml:id="diario_le_temps">
+        <title level="j">Le Temps</title>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1861" to="1942">1861-1942</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q639137</idno>
+    </bibl>
+
+    <bibl xml:id="diario_la_prensa">
+        <title level="j">La Prensa</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1869">1869-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1632268</idno>
+    </bibl>
+
+    <bibl xml:id="diario_la_nacion">
+        <title level="j">La Nación</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1870">1870-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1507630</idno>
+    </bibl>
+
+    <bibl xml:id="diario_libre_parole">
+        <title level="j">La Libre Parole</title>
+        <editor ref="#edouard_drumont">Drumont, Édouard</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1892" to="1924">1892-1924</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3210026</idno>
+    </bibl>
+
+    <bibl xml:id="revista_sur">
+        <title level="j">Sur</title>
+        <editor ref="#victoria_ocampo">Ocampo, Victoria</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1931" to="1992">1931-1992</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2269998</idno>
+    </bibl>
+
+    <bibl xml:id="diario_gaulois">
+        <title level="j">Le Gaulois</title>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1868" to="1929">1868-1929</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2082831</idno>
+    </bibl>
+
+    <bibl xml:id="cahiers_quinzaine">
+        <title level="j" xml:lang="fr">Les Cahiers de la Quinzaine</title>
+        <editor ref="#charles_peguy">Péguy, Charles</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1900" to="1914">1900-1914</date>
+        <idno type="URI" subtype="wikipedia">https://fr.wikipedia.org/wiki/Cahiers_de_la_Quinzaine</idno>
+    </bibl>
+
+    <bibl xml:id="gonzalez_poesia_argentina">
+        <author ref="#jonio_gonzalez">González, Jonio</author>
+        <title level="a">Poesía argentina: algo huele mal</title>
+        <date when="1981-04"/>
+    </bibl>
+
+    <bibl xml:id="revista_danza_raton">
+        <title level="j">La Danza del Ratón</title>
+        <editor ref="#jonio_gonzalez">González, Jonio</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1981-04" to="2001-11">1981-2001</date>
+        <extent>20 números</extent>
+    </bibl>
+
+    <bibl xml:id="revista_litterature">
+        <title level="j" xml:lang="fr">Littérature</title>
+        <editor>Université de Paris VIII</editor> 
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1971">1971-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15760642</idno>
+    </bibl>
+
+    <bibl xml:id="nueva_narr_hisp">
+        <title level="j">Nueva Narrativa Hispanoamericana</title>
+        <editor>Adelphi University (Helmy F. Giacoman)</editor>
+        <pubPlace ref="#nueva_york">Garden City, Nueva York</pubPlace>
+        <date from="1971" to="1975">1971-1975</date>
+    </bibl>
+
+    <bibl xml:id="jewish_social_studies">
+        <title level="j">Jewish Social Studies</title>
+        <editor>Conference on Jewish Relations</editor>
+        <pubPlace ref="#nueva_york">Nueva York, EE. UU.</pubPlace>
+        <date from="1939">1939-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15755037</idno>
+    </bibl>
+
+    <bibl xml:id="carrington_abajo">
+        <title level="m" xml:lang="es">Abajo</title>
+        <author ref="#leonora_carrington"/>
+        <date when="1943">1943</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q118274543</idno>
+    </bibl>
+
+    <bibl xml:id="revista_las_moradas">
+        <title level="j">Las Moradas</title>
+        <editor ref="#cesar_moro"/>
+        <pubPlace ref="#lima">Lima, Perú</pubPlace>
+        <date from="1947" to="1949">1947-1949</date>
+    </bibl>
+
+    <bibl xml:id="age_dors">
+        <title level="s" xml:lang="fr">Collection "L'Âge d'or"</title>
+        <editor>Dirigida por Henri Parisot</editor>
+        <publisher ref="#ed_revue_fontaine"/>
+        <date from="1945">1945-presente</date>
+    </bibl>
+
+    <bibl xml:id="kant_critica">
+        <author ref="#kant">Kant, Immanuel</author>
+        <title level="m">Crítica de la razón pura</title>
+        <date when="1781"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q220002</idno>
+    </bibl>
+
+    <bibl xml:id="plauto_miles_gloriosus">
+        <author ref="#plauto">Plauto, Tito Maccio</author>
+        <title level="m">Miles Gloriosus</title>
+        <date notBefore="-0206" notAfter="-0205"/> 
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1230918</idno>
+    </bibl>
+
+    <bibl xml:id="revista_christian_science">
+        <title level="j">The Christian Science Monitor</title>
+        <date from="1908"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q284947</idno>
+    </bibl>
+
+    <bibl xml:id="araucana">
+        <author ref="#alonso_de_ercilla">Ercilla, Alonso de</author>
+        <title level="m">La Araucana</title>
+        <date when="1569"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2271021</idno>
+    </bibl>
+
+    <bibl xml:id="remarque_novedad_frente">
+        <author ref="#erich_maria_remarque">Remarque, Erich Maria</author>
+        <title level="m">Sin novedad en el frente</title>
+        <date when="1929"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q207332</idno>
+    </bibl>
+
+    <bibl xml:id="celine_viaje_noche">
+        <author ref="#louis_ferdinand_celine">Céline, Louis-Ferdinand</author>
+        <title level="m">Viaje al fin de la noche</title>
+        <date when="1932"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q774233</idno>
+    </bibl>
+
+    <bibl xml:id="faulkner_invictos">
+        <author ref="#william_faulkner">Faulkner, William</author>
+        <title level="m">Los invictos</title>
+        <date when="1938"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2717946</idno>
+    </bibl>
+
+    <bibl xml:id="tolstoi_guerra_paz">
+        <author ref="#lev_tolstoi">Tolstói, Lev</author>
+        <title level="m">Guerra y paz</title>
+        <date when="1869"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q161531</idno>
+    </bibl>
+
+    <bibl xml:id="heller_trampa22">
+        <author ref="#joseph_heller">Heller, Joseph</author>
+        <title level="m">Trampa 22</title>
+        <date when="1961"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q278208</idno>
+    </bibl>
+
+    <bibl xml:id="los_miserables">
+        <author ref="#victor_hugo">Hugo, Victor</author>
+        <title level="m">Los Miserables</title>
+        <date when="1862"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q180736</idno>
+    </bibl>
+
+    <bibl xml:id="borges_lopezyward">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">Juan López y John Ward</title>
+        <date when="1982"/>
+    </bibl>
+
+    <bibl xml:id="diario_clarin">
+        <title level="j">Clarín</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1945">1945-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q878108</idno>
+    </bibl>
+
+    <bibl xml:id="marechal_adan">
+        <author ref="#leopoldo_marechal">Marechal, Leopoldo</author>
+        <title level="m">Adán Buenosayres</title>
+        <date when="1948"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4686960</idno>
+    </bibl>
+
+    <bibl xml:id="bunyan_pilgrim">
+        <author ref="#john_bunyan">Bunyan, John</author>
+        <title level="m">The Pilgrim's Progress</title>
+        <date when="1678"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q268211</idno>
+    </bibl>
+
+    <bibl xml:id="piglia_respiracion">
+        <author ref="#ricardo_piglia">Piglia, Ricardo</author>
+        <title level="m">Respiración artificial</title>
+        <date when="1980"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5681593</idno>
+    </bibl>
+
+    <bibl xml:id="puig_boquitas_pintadas">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">Boquitas pintadas</title>
+        <date when="1969"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q580827</idno>
+    </bibl>
+
+    <bibl xml:id="molloy_breve_carcel">
+        <author ref="#sylvia_molloy">Molloy, Sylvia</author>
+        <title level="m">En breve cárcel</title>
+        <date when="1981"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q116265335</idno>
+    </bibl>
+    
+    <bibl xml:id="ocampo_archipielago">
+        <author ref="#victoria_ocampo">Ocampo, Victoria</author>
+        <title level="m">El archipiélago</title>
+        <date when="1979"/>
+    </bibl>
+    
+    <bibl xml:id="ocampo_imperio_insular">
+        <author ref="#victoria_ocampo">Ocampo, Victoria</author>
+        <title level="m">El imperio insular</title>
+        <date when="1980"/>
+    </bibl>
+    
+    <bibl xml:id="lawrence_siete_pilares">
+        <author ref="#te_lawrence">Lawrence, T.E.</author>
+        <title level="m">Los siete pilares de la sabiduría</title>
+        <date when="1926"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q24323</idno>
+    </bibl>
+    
+    <bibl xml:id="stendhal_del_amor">
+        <author ref="#stendhal">Stendhal</author>
+        <title level="m">Del amor</title>
+        <date when="1822"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2533282</idno>
+    </bibl>
+    
+    <bibl xml:id="celine_muerte_credito">
+        <author ref="#louis_ferdinand_celine">Céline, Louis-Ferdinand</author>
+        <title level="m">Muerte a crédito</title>
+        <date when="1936"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2779187</idno>
+    </bibl>
+    
+    <bibl xml:id="laiseca_aventuras">
+        <author ref="#alberto_laiseca">Laiseca, Alberto</author>
+        <title level="m">Aventuras de un novelista atonal</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="ulla_urdimbre">
+        <author ref="#noemi_ulla">Ulla, Noemí</author>
+        <title level="m">La urdimbre</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="carrera_partera_canta">
+        <author ref="#arturo_carrera">Carrera, Arturo</author>
+        <title level="m">La partera canta</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="mallea_mancha_marmol">
+        <author ref="#eduardo_mallea">Mallea, Eduardo</author>
+        <title level="m">La mancha en el mármol</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="pizarnik_textos_sombra">
+        <author ref="#alejandra_pizarnik">Pizarnik, Alejandra</author>
+        <title level="m">Textos de sombra y últimos poemas</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="valery_cementerio_marino">
+        <author ref="#paul_valery">Valéry, Paul</author>
+        <title level="m">El cementerio marino</title>
+        <date when="1920"/>
+    </bibl>
+    
+    <bibl xml:id="pizarnik_bucanera">
+        <author ref="#alejandra_pizarnik">Pizarnik, Alejandra</author>
+        <title level="m">La bucanera de Pernambuco o Hilda la polígrafa</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="pizarnik_extraccion">
+        <author ref="#alejandra_pizarnik">Pizarnik, Alejandra</author>
+        <title level="m">Extracción de la piedra de locura</title>
+        <date when="1968"/>
+    </bibl>
+    
+    <bibl xml:id="pizarnik_arbol_diana">
+        <author ref="#alejandra_pizarnik">Pizarnik, Alejandra</author>
+        <title level="m">Árbol de Diana</title>
+        <date when="1962"/>
+    </bibl>
+    
+    <bibl xml:id="pizarnik_tiempo">
+        <author ref="#alejandra_pizarnik">Pizarnik, Alejandra</author>
+        <title level="a">A tiempo y no</title>
+        <date when="1968"/>
+    </bibl>
+    
+    <bibl xml:id="carrera_momento_simetria">
+        <author ref="#arturo_carrera">Carrera, Arturo</author>
+        <title level="m">Momento de simetría</title>
+        <date when="1973"/>
+    </bibl>
+    
+    <bibl xml:id="mallea_bahia_silencio">
+        <author ref="#eduardo_mallea">Mallea, Eduardo</author>
+        <title level="m">La bahía de silencio</title>
+        <date when="1940"/>
+    </bibl>
+    
+    <bibl xml:id="lamborghini_ninio_proletario">
+        <author ref="#osvaldo_lamborghini">Lamborghini, Osvaldo</author>
+        <title level="a">El niño proletario</title>
+        <date when="1973"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q134840215</idno>
+    </bibl>
+    
+    <bibl xml:id="ocampo_rama">
+        <author ref="#victoria_ocampo">Ocampo, Victoria</author>
+        <title level="m">La rama de Salzburgo</title>
+        <date when="1981"/>
+    </bibl>
+    
+    <bibl xml:id="mabille_miroir">
+        <author ref="#pierre_mabille">Mabille, Pierre</author>
+        <title level="m">Le miroir du merveilleux</title>
+        <date when="1940"/>
+    </bibl>
+    
+    <bibl xml:id="marmol_amalia">
+        <author ref="#jose_marmol">Mármol, José</author>
+        <title level="m">Amalia</title>
+        <date when="1855"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3942329</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_sitio">
+        <title level="j">Sitio</title>
+        <editor ref="#jorge_jinkis">Jorge Jinkis</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1981" to="1987">1981-1987</date>
+        <extent>6 números</extent>
+    </bibl>
+    
+    <bibl xml:id="dumas_montevideo">
+        <author ref="#alejandro_dumas">Dumas, Alexandre</author>
+        <title level="m">Montevideo o la Nueva Troya</title>
+        <date when="1850"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7753774</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_proa">
+        <title level="j">Proa</title>
+        <editor ref="#borges">Borges, Jorge Luis</editor>
+        <editor ref="#ricardo_guiraldes">Güiraldes, Ricardo</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1924" to="1926">1924-1926</date>
+        <extent>15 números</extent>
+        <note>Segunda época</note>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5573471</idno>
+    </bibl>
+    
+    <bibl xml:id="subirat_ruta_miraje">
+        <author ref="#jose_salas_subirat">Salas Subirat, José</author>
+        <title level="m">La ruta de miraje</title>
+        <date when="1924"/>
+    </bibl>
+    
+    <bibl xml:id="subirat_pasos_sombra">
+        <author ref="#jose_salas_subirat">Salas Subirat, José</author>
+        <title level="m">Pasos en la sombra</title>
+        <date when="1925"/>
+    </bibl>
+    
+    <bibl xml:id="subirat_fosiles">
+        <author ref="#jose_salas_subirat">Salas Subirat, José</author>
+        <title level="m">Los fósiles del futurismo</title>
+        <date when="1928"/>
+    </bibl>
+    
+    <bibl xml:id="garcia_marquez_coronel">
+        <author ref="#garcia_marquez">García Márquez, Gabriel</author>
+        <title level="m">El coronel no tiene quien le escriba</title>
+        <date when="1961"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1132408</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_buenos_aires_literaria">
+        <title level="j">Buenos Aires Literaria</title>
+        <editor ref="#andres_ramon_vazquez">Vázquez, Andrés Ramón</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1952" to="1954">1952-1954</date>
+        <extent>18 números</extent>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q106115789</idno>
+    </bibl>
+    
+    <bibl xml:id="joyce_finnegans">
+        <author ref="#james_joyce">Joyce, James</author>
+        <title level="m">Finnegans Wake</title>
+        <date when="1939"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6507</idno>
+    </bibl>
+    
+    <bibl xml:id="joyce_musica_camara">
+        <author ref="#james_joyce">Joyce, James</author>
+        <title level="m">Música de cámara</title>
+        <date when="1907"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q429967</idno>
+    </bibl>
+    
+    <bibl xml:id="joyce_dublinenses">
+        <author ref="#james_joyce">Joyce, James</author>
+        <title level="m">Dublinenses</title>
+        <date when="1914"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q459592</idno>
+    </bibl>
+    
+    <bibl xml:id="joyce_retrato_artista">
+        <author ref="#james_joyce">Joyce, James</author>
+        <title level="m">Retrato del artista adolescente</title>
+        <date when="1916"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q465360</idno>
+    </bibl>
+    
+    <bibl xml:id="ellmann_joyce_letters">
+        <editor ref="#richard_ellman">Ellmann, Richard</editor>
+        <title level="m">Selected Joyce Letters</title>
+        <date when="1975"/>
+    </bibl>
+    
+    <bibl xml:id="borges_otras_inquisiciones">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="m">Otras inquisiciones</title>
+        <date when="1952"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3613346</idno>
+    </bibl>
+    
+    <bibl xml:id="monegal_notas_boom">
+        <author ref="#emir_rodriguez_monegal">Rodríguez Monegal, Emir</author>
+        <title level="a">Notas sobre (hacia) el boom</title>
+        <title level="j" ref="#revista_plural">Plural</title>
+        <biblScope unit="issue">4</biblScope>
+        <date when="1972-01">Enero 1972</date>
+    </bibl>
+    
+    <bibl xml:id="monegal_boom">
+        <author ref="#emir_rodriguez_monegal">Rodríguez Monegal, Emir</author>
+        <title level="m">El boom de la novela latinoamericana</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="revista_plural">
+        <title level="j">Plural</title>
+        <editor ref="#octavio_paz">Paz, Octavio</editor>
+        <pubPlace ref="#mexico">México</pubPlace>
+        <date from="1971" to="1976">1971-1976</date>
+    </bibl>
+    
+    <bibl xml:id="bioy_simulacro">
+        <author ref="#bioy_casares">Bioy Casares, Adolfo</author>
+        <title level="a">La imaginación es un simulacro de la eternidad</title>
+        <title level="j" ref="#revista_pajaro_fuego">Pájaro de Fuego</title>
+        <respStmt>
+            <resp>Entrevistador</resp>
+            <persName ref="#juan_antonio_trimarco">Juan Antonio Trimarco</persName>
+        </respStmt>
+        <date when="1980-07"/>
+    </bibl>
+    
+    <bibl xml:id="revista_pajaro_fuego">
+        <title level="j">Pájaro de Fuego</title>
+        <editor>Garramuño, Carlos</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1977" to="1982">1977-1982</date>
+        <extent>43 números</extent>
+        <note>Subtítulo: Toda la Cultura</note>
+    </bibl>
+    
+    <bibl xml:id="arbasino_superheliogabalo">
+        <author ref="#alberto_arbasino">Arbasino, Alberto</author>
+        <title level="m">Super-Eliogabalo</title>
+        <date when="1969"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3977561</idno>
+    </bibl>
+    
+    <bibl xml:id="nabokov_lolita">
+        <author ref="#vladimir_nabokov">Nabokov, Vladimir</author>
+        <title level="m">Lolita</title>
+        <date when="1955"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q127149</idno>
+    </bibl>
+    
+    <bibl xml:id="wilcock_caos">
+        <author ref="#rodolfo_wilcock">Wilcock, Rodolfo</author>
+        <title level="m">El caos</title>
+        <date when="1974"/>
+    </bibl>
+    
+    <bibl xml:id="thomas_24years">
+        <author ref="#dylan_thomas">Thomas, Dylan</author>
+        <title level="a">Twenty-four years</title>
+        <date when="1938"/>
+    </bibl>
+    
+    <bibl xml:id="revista_ficcion">
+        <title level="j">Ficción</title>
+        <editor ref="#juan_goyanarte">Goyanarte, Juan</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1956" to="1971">1956-1971</date>
+    </bibl>
+    
+    <bibl xml:id="simon_viento">
+        <author ref="#claude_simon">Simon, Claude</author>
+        <title level="m">El viento</title>
+        <date when="1957"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1198085</idno>
+    </bibl>
+    
+    <bibl xml:id="borges_arte_injuriar">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">El arte de injuriar</title>
+        <date when="1936"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3792233</idno>
+    </bibl>
+    
+    <bibl xml:id="borges_manual_zoologia">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <author ref="#margarita_guerrero">Guerrero, Margarita</author>
+        <title level="m">Manual de zoología fantástica</title>
+        <date when="1957"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2529048</idno>
+    </bibl>
+    
+    <bibl xml:id="wilcock_ingegnere">
+        <author ref="#rodolfo_wilcock">Wilcock, Rodolfo</author>
+        <title level="m">L'ingegnere</title>
+        <date when="1975"/>
+    </bibl>
+    
+    <bibl xml:id="cozarinsky_vudu">
+        <author ref="#edgardo_cozarinsky">Cozarinsky, Edgardo</author>
+        <title level="m">Vudú urbano</title>
+        <date when="1985"/>
+    </bibl>
+    
+    <bibl xml:id="revista_espiral">
+        <title level="j">Espiral/Revista</title>
+        <editor ref="#julian_rios">Ríos, Julián</editor>
+        <publisher>Editorial Fundamentos</publisher>
+        <pubPlace ref="#madrid">Madrid, España</pubPlace>
+        <date from="1977" to="1980">1977-1980</date>
+    </bibl>
+    
+    <bibl xml:id="milton_samson">
+        <author ref="#john_milton">Milton, John</author>
+        <title level="m">Samson Agonistes</title>
+        <date when="1671"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2184939</idno>
+    </bibl>
+    
+    <bibl xml:id="walser_ayudante">
+        <author ref="#robert_walser">Walser, Robert</author>
+        <title level="m">El ayudante</title>
+        <date when="1908"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1193785</idno>
+    </bibl>
+    
+    <bibl xml:id="walser_von_gunten">
+        <author ref="#robert_walser">Walser, Robert</author>
+        <title level="m">Jakob von Gunten</title>
+        <date when="1909"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1679462</idno>
+    </bibl>
+    
+    <bibl xml:id="rousseau_emilio">
+        <author ref="#rousseau">Rousseau, Jean-Jacques</author>
+        <title level="m">Emilio, o De la educación</title>
+        <date when="1762"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q913599</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_temps_modernes">
+        <title level="j">Les Temps Modernes</title>
+        <editor ref="#jean_paul_sartre">Sartre, Jean-Paul</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date from="1945" to="2019">1945-2019</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1234182</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_humor">
+        <title level="j">Humor Registrado</title>
+        <editor ref="#andres_cascioli">Cascioli, Andrés</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1978" to="1999">1978-1999</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5905184</idno>
+    </bibl>
+    
+    <bibl xml:id="sebreli_deseos_peronismo">
+        <author ref="#juan_jose_sebreli">Sebreli, Juan José</author>
+        <title level="m">Los deseos imaginarios del peronismo</title>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="revista_contorno">
+        <title level="j">Contorno</title>
+        <editor ref="#david_vinias">Viñas, David</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1953" to="1959">1953-1959</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2885085</idno>
+    </bibl>
+    
+    <bibl xml:id="cortazar_rayuela">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="m">Rayuela</title>
+        <date when="1963"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1755351</idno>
+    </bibl>
+    
+    <bibl xml:id="aristofanes_nubes">
+        <author ref="#aristofanes">Aristófanes</author>
+        <title level="m">Las nubes</title>
+        <date when="-0423"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q868447</idno>
+    </bibl>
+    
+    <bibl xml:id="moyano_navios">
+        <author ref="#daniel_moyano">Moyano, Daniel</author>
+        <title level="m">Libro de navíos y borrascas</title>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="moyano_vuelo_tigre">
+        <author ref="#daniel_moyano">Moyano, Daniel</author>
+        <title level="m">El vuelo del tigre</title>
+        <date when="1981"/>
+    </bibl>
+    
+    <bibl xml:id="aimard_mas_horca">
+        <author ref="#gustave_aimard">Aimard, Gustave</author>
+        <title level="m">La Mas-Horca</title>
+        <date when="1867"/>
+    </bibl>
+    
+    <bibl xml:id="aimard_rosas">
+        <author ref="#gustave_aimard">Aimard, Gustave</author>
+        <title level="m">Rosas</title>
+        <date when="1867"/>
+    </bibl>
+    
+    <bibl xml:id="revista_temps_modernes_420_421">
+        <title level="m">Argentine, entre populisme et militarisme</title>
+        <title level="j" ref="#revista_temps_modernes">Les Temps Modernes</title>
+        <biblScope unit="issue">420-421</biblScope>
+        <editor ref="#david_vinias">Viñas, David</editor>
+        <editor ref="#cesar_fernandez_moreno">Fernández Moreno, César</editor>
+        <pubPlace ref="#paris">París, Francia</pubPlace>
+        <date when="1981-08"/>
+    </bibl>
+    
+    <bibl xml:id="diario_portenio">
+        <title level="j">El Porteño</title>
+        <editor ref="#gabriel_levinas">Levinas, Gabriel</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1982" to="1993">1982-1993</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q16492391</idno>
+    </bibl>
+
+    <bibl xml:id="west_proteo">
+        <author ref="#morris_west">West, Morris</author>
+        <title level="m">Proteo</title>
+        <date when="1979"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/Proteus_(West_novel)</idno>
+    </bibl>
+    
+    <bibl xml:id="sue_misterios">
+        <author ref="#eugene_sue">Sue, Eugène</author>
+        <title level="m">Los misterios de París</title>
+        <date when="1842">1842</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q110190127</idno>
+    </bibl>
+    
+    <bibl xml:id="victor_hugo_seniora_paris">
+        <author ref="#victor_hugo">Hugo, Victor</author>
+        <title level="m">Nuestra Señora de París</title>
+        <date when="1831"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q191380</idno>
+    </bibl>
+    
+    <bibl xml:id="heidegger_holzwege">
+        <author ref="#martin_heidegger">Heidegger, Martin</author>
+        <title level="m">Holzwege</title>
+        <date when="1950"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3955406</idno>
+    </bibl>
+    
+    <bibl xml:id="flaubert_salambo">
+        <author ref="#gustave_flaubert">Flaubert, Gustave</author>
+        <title level="m">Salammbô</title>
+        <date when="1862"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q117182</idno>
+    </bibl>
+    
+    <bibl xml:id="flaubert_educacion">
+        <author ref="#gustave_flaubert">Flaubert, Gustave</author>
+        <title level="m">La educación sentimental</title>
+        <date when="1869"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1212285</idno>
+    </bibl>
+    
+    <bibl xml:id="euripides_troyanas">
+        <author ref="#euripides">Eurípides</author>
+        <title level="m">Las troyanas</title>
+        <date when="-0415"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1216943</idno>
+    </bibl>
+    
+    <bibl xml:id="flaubert_madame_bovary">
+        <author ref="#gustave_flaubert">Flaubert, Gustave</author>
+        <title level="m">Madame Bovary</title>
+        <date when="1857"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q193417</idno>
+    </bibl>
+    
+    <bibl xml:id="bronte_cumbres">
+        <author ref="#emily_bronte">Brontë, Emily</author>
+        <title level="m">Cumbres borrascosas</title>
+        <date when="1847"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q202975</idno>
+    </bibl>
+
+    <bibl xml:id="aries_muerte">
+        <author ref="#philippe_aries">Ariès, Philippe</author>
+        <title level="m">La muerte en Occidente</title>
+        <date when="1975"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3974153</idno>
+    </bibl>
+    
+    <bibl xml:id="angelino_recordando">
+        <author ref="#diego_angelino">Angelino, Diego</author>
+        <title level="m">Recordando en el viento</title>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="soriano_cuarteles">
+        <author ref="#osvaldo_soriano">Soriano, Osvaldo</author>
+        <title level="m">Cuarteles de invierno</title>
+        <date when="1980"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5793228</idno>
+    </bibl>
+    
+    <bibl xml:id="soriano_penas_olvido">
+        <author ref="#osvaldo_soriano">Soriano, Osvaldo</author>
+        <title level="m">No habrá más penas ni olvido</title>
+        <date when="1978"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q967410</idno>
+    </bibl>
+    
+    <bibl xml:id="gusman_corazon_junio">
+        <author ref="#luis_gusman">Gusmán, Luis</author>
+        <title level="m">En el corazón de junio</title>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="lins_avalovara">
+        <author ref="#osman_lins">Lins, Osman</author>
+        <title level="m">Avalovara</title>
+        <date when="1973"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q18238247</idno>
+    </bibl>
+    
+    <bibl xml:id="hernandez_martin_fierro">
+        <author ref="#jose_hernandez">Hernández, José</author>
+        <title level="m">El Gaucho Martín Fierro</title>
+        <date when="1872"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q832330</idno>
+    </bibl>
+    
+    <bibl xml:id="sarmiento_facundo">
+        <author ref="#sarmiento">Sarmiento, Domingo Faustino</author>
+        <title level="m">Facundo: Civilización y Barbarie</title>
+        <date when="1845"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q807736</idno>
+    </bibl>
+    
+    <bibl xml:id="alberdi_bases">
+        <author ref="#juan_bautista_alberdi">Alberdi, Juan Bautista</author>
+        <title level="m">Bases y puntos de partida para la organización política de la República Argentina</title>
+        <date when="1852"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2886752</idno>
+    </bibl>
+    
+    <bibl xml:id="borges_kafka_precursores">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">Kafka y sus precursores</title>
+        <date when="1951"/>
+    </bibl>
+    
+    <bibl xml:id="kafka_colonia">
+        <author ref="#kafka">Kafka, Franz</author>
+        <title level="m">En la colonia penitenciaria</title>
+        <date when="1919"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1660727</idno>
+    </bibl>
+    
+    <bibl xml:id="tolstoi_amo_criado">
+        <author ref="#lev_tolstoi">Tolstói, León</author>
+        <title level="m">El amo y el criado</title>
+        <date when="1895"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1302957</idno>
+    </bibl>
+    
+    <bibl xml:id="goncharov_oblomov">
+        <author ref="#ivan_goncharov">Goncharov, Iván</author>
+        <title level="m">Oblomov</title>
+        <date when="1859"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q842074</idno>
+    </bibl>
+    
+    <bibl xml:id="calasso_suenio">
+        <author ref="#roberto_calasso">Calasso, Roberto</author>
+        <title level="a">El sueño del calígrafo</title>
+        <date when="1991"/>
+    </bibl>
+    
+    <bibl xml:id="rozitchner_psychanalyse">
+        <author ref="#leon_rozitchner">Rozitchner, León</author>
+        <title level="a">Psychanalyse et politique: la leçon de l'exil</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="rozitchner_freud">
+        <author ref="#leon_rozitchner">Rozitchner, León</author>
+        <title level="m">Freud y la cuestión del poder</title>
+        <date when="1982"/>
+    </bibl>
+    
+    <bibl xml:id="raschella_malditos_gallos">
+        <author ref="#roberto_raschella">Raschella, Roberto</author>
+        <title level="m">Malditos gallos</title>
+        <date when="1979"/>
+    </bibl>
+    
+    <bibl xml:id="freud_psicologia_masas">
+        <author ref="#freud">Freud, Sigmund</author>
+        <title level="m">Psicología de las masas y análisis del yo</title>
+        <date when="1921"/>
+    </bibl>
+    
+    <bibl xml:id="barthes_investigaciones_retoricas">
+        <author ref="#roland_barthes">Barthes, Roland</author>
+        <title level="m">Investigaciones retóricas I: La antigua retórica</title>
+        <date when="1974">1974</date>
+    </bibl>
+    
+    <bibl xml:id="diario_gaceta_mercantil">
+        <title level="j">La Gaceta Mercantil</title>
+        <placeName ref="#buenos_aires_ciudad">Buenos Aires, Argentina</placeName>
+        <date from="1823" to="1852">1823-1852</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q33131222</idno>
+    </bibl>
+    
+    <bibl xml:id="diario_comercio_del_plata">
+        <title level="j">El Comercio del Plata</title>
+        <placeName ref="#montevideo">Montevideo, Uruguay</placeName>
+        <date from="1845" to="1851">1845-1851</date>
+    </bibl>
+    
+    <bibl xml:id="iliada">
+        <author ref="#homero">Homero</author>
+        <title level="m">La Ilíada</title>
+        <date when="-0750">s. VIII a.C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q8275</idno>
+    </bibl>
+    
+    <bibl xml:id="dumas_mosqueteros">
+        <author ref="#alejandro_dumas">Dumas, Alexandre</author>
+        <title level="m">Los tres mosqueteros</title>
+        <date when="1844">1844</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q140527</idno>
+    </bibl>
+    
+    <bibl xml:id="diario_mois">
+        <title level="j">Le Mois</title>
+        <author ref="#alejandro_dumas">Dumas, Alexandre</author>
+        <placeName ref="#paris">París, Francia</placeName>
+        <date from="1848" to="1850">1848-1850</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19196449</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_todo_historia">
+        <title level="j">Todo es Historia</title>
+        <placeName ref="#buenos_aires_ciudad">Buenos Aires, Argentina</placeName>
+        <date from="1967">1967-...</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6147913</idno>
+    </bibl>
+    
+    <bibl xml:id="byron_manfredo">
+        <author ref="#lord_byron">Byron, George Gordon (Lord)</author>
+        <title level="m">Manfredo</title>
+        <date when="1817">1817</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1889169</idno>
+    </bibl>
+    
+    <bibl xml:id="lamartine_meditaciones">
+        <author ref="#lamartine">Lamartine, Alphonse de</author>
+        <title level="m">Meditaciones poéticas</title>
+        <date when="1820">1820</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3332681</idno>
+    </bibl>
+    
+    <bibl xml:id="victor_hugo_contemplaciones">
+        <author ref="#victor_hugo">Hugo, Victor</author>
+        <title level="m">Las Contemplaciones</title>
+        <date when="1856">1856</date>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/Les_Contemplations</idno>
+    </bibl>
+    
+    <bibl xml:id="morier_diccionario">
+        <author ref="#henri_morier">Morier, Henri</author>
+        <title level="m">Dictionnaire de poétique et de rhétorique</title>
+        <date when="1961">1961</date>
+    </bibl>
+    
+    <bibl xml:id="foucault_historia_locura">
+        <author ref="#michel_foucault">Foucault, Michel</author>
+        <title level="m">Historia de la locura en la época clásica</title>
+        <date when="1961">1961</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2335578</idno>
+    </bibl>
+    
+    <bibl xml:id="kleist_principe">
+        <author ref="#heinrich_von_kleist">von Kleist, Heinrich</author>
+        <title level="m">El príncipe de Homburg</title>
+        <date when="1821">1821</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q366146</idno>
+    </bibl>
+    
+    <bibl xml:id="lapesa_historia_lengua">
+        <author ref="#rafael_lapesa">Lapesa, Rafael</author>
+        <title level="m">Historia de la lengua española</title>
+        <date when="1942">1942</date>
+    </bibl>
+    
+    <bibl xml:id="sartre_critica_razon">
+        <author ref="#jean_paul_sartre">Sartre, Jean-Paul</author>
+        <title level="m">Crítica de la razón dialéctica</title>
+        <date when="1960">1960</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q957666</idno>
+    </bibl>
+    
+    <bibl xml:id="echeverria_dogma_socialista">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">Dogma Socialista</title>
+        <date when="1846">1846</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q83500959</idno>
+    </bibl>
+    
+    <bibl xml:id="echeverria_angel_caido">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">El ángel caído</title>
+        <date when="1870">1870</date>
+    </bibl>
+    
+    <bibl xml:id="kant_idea_historia">
+        <author ref="#kant">Kant, Immanuel</author>
+        <title level="m">Idea de una historia universal en sentido cosmopolita</title>
+        <date when="1784">1784</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q458249</idno>
+    </bibl>
+    
+    <bibl xml:id="condorcet_bosquejo">
+        <author ref="#nicolas_condorcet">de Condorcet, Nicolas</author>
+        <title level="m">Bosquejo de un cuadro histórico del espíritu humano</title>
+        <date when="1795">1795</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7534728</idno>
+    </bibl>
+    
+    <bibl xml:id="alberdi_fragmento">
+        <author ref="#juan_bautista_alberdi">Alberdi, Juan Bautista</author>
+        <title level="m">Fragmento preliminar al estudio del derecho</title>
+        <date when="1837">1837</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q16385738</idno>
+    </bibl>
+    
+    <bibl xml:id="alberdi_crimen">
+        <author ref="#juan_bautista_alberdi">Alberdi, Juan Bautista</author>
+        <title level="m">El crimen de la guerra</title>
+        <date when="1870">1870</date>
+    </bibl>
+    
+    <bibl xml:id="alberdi_cartas">
+        <author ref="#juan_bautista_alberdi">Alberdi, Juan Bautista</author>
+        <title level="m">Cartas Quillotanas</title>
+        <date when="1853">1853</date>
+    </bibl>
+    
+    <bibl xml:id="echeverria_cautiva">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">La Cautiva</title>
+        <date when="1837">1837</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2478271</idno>
+    </bibl>
+    
+    <bibl xml:id="altamirano_sarlo_centenario">
+        <author ref="#carlos_altamirano">Altamirano, Carlos</author>
+        <author ref="#beatriz_sarlo">Sarlo, Beatriz</author>
+        <title level="a">La Argentina del centenario: campo intelectual, vida literaria y temas ideológicos</title>
+        <title level="j" ref="#revista_hispamerica">Hispamérica</title>
+        <biblScope unit="issue">25-26</biblScope>
+        <date when="1980">1980</date>
+    </bibl>
+    
+    <bibl xml:id="revista_hispamerica">
+        <title level="j">Hispamérica</title>
+        <editor>Saúl Sosnowski</editor>
+        <pubPlace ref="#estados_unidos">College Park, Maryland, Estados Unidos</pubPlace>
+        <date from="1972">1972-</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q15765510</idno>
+    </bibl>
+    
+    <bibl xml:id="bajtin_dialogic">
+        <author ref="#bajtin">Bajtin, Mijaíl</author>
+        <title level="m">The Dialogic Imagination: Four Essays</title>
+        <date when="1981">1981</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q109116574</idno>
+    </bibl>
+    
+    <bibl xml:id="benjamin_ensayos">
+        <author ref="#walter_benjamin">Benjamin, Walter</author>
+        <title level="m">Ensayos escogidos</title>
+        <date when="1967">1967</date>
+    </bibl>
+    
+    <bibl xml:id="chavez_historicismo">
+        <author ref="#fermin_chavez">Chávez, Fermín</author>
+        <title level="m">Historicismo e iluminismo en la cultura argentina</title>
+        <date when="1982">1982</date>
+    </bibl>
+    
+    <bibl xml:id="feinmann_filosofia">
+        <author ref="#jose_pablo_feinmann">Feinmann, José Pablo</author>
+        <title level="m">Filosofía y Nación</title>
+        <date when="1982">1982</date>
+    </bibl>
+    
+    <bibl xml:id="halperin_desierto">
+        <author ref="#halperin_donghi">Halperín Donghi, Tulio</author>
+        <title level="m">Una nación para el desierto argentino</title>
+        <date when="1982">1982</date>
+    </bibl>
+    
+    <bibl xml:id="hauss_literatura">
+        <author ref="#hans_robert_jauss">Jauss, Hans Robert</author>
+        <title level="m">La literatura como provocación</title>
+        <date when="1976">1976</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1865131</idno>
+    </bibl>
+    
+    <bibl xml:id="kusch_geocultura">
+        <author ref="#rodolfo_kusch">Kusch, Rodolfo</author>
+        <title level="m">Geocultura del hombre americano</title>
+        <date when="1976">1976</date>
+    </bibl>
+    
+    <bibl xml:id="levi_strauss_pensamiento_salvaje">
+        <author ref="#levi_strauss">Lévi-Strauss, Claude</author>
+        <title level="m">El pensamiento salvaje</title>
+        <date when="1962">1962</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3211465</idno>
+    </bibl>
+    
+    <bibl xml:id="estrada_muerte">
+        <author ref="#martinez_estrada">Martínez Estrada, Ezequiel</author>
+        <title level="m">Muerte y transfiguración del Martín Fierro</title>
+        <date when="1948">1948</date>
+    </bibl>
+    
+    <bibl xml:id="estrada_revision">
+        <author ref="#martinez_estrada">Martínez Estrada, Ezequiel</author>
+        <title level="m">Para una revisión de las letras argentinas</title>
+        <date when="1967">1967</date>
+    </bibl>
+    
+    <bibl xml:id="paz_inmediaciones">
+        <author ref="#octavio_paz">Paz, Octavio</author>
+        <title level="m">In/mediaciones</title>
+        <date when="1979">1979</date>
+    </bibl>
+    
+    <bibl xml:id="roig_teoria_pensamiento">
+        <author ref="#arturo_roig">Roig, Arturo Andrés</author>
+        <title level="m">Teoría y crítica del pensamiento latinoamericano</title>
+        <date when="1981">1981</date>
+    </bibl>
+    
+    <bibl xml:id="revista_criterio">
+        <title level="j">Criterio</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1928">1928-</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5791982</idno>
+    </bibl>
+    
+    <bibl xml:id="goff_historia">
+        <editor ref="#jacques_le_goff">Le Goff, Jacques</editor>
+        <editor ref="#pierre_nora">Nora, Pierre</editor>
+        <title level="m">Hacer la historia</title>
+        <date when="1974">1974</date>
+    </bibl>
+    
+    <bibl xml:id="starobinski_literatura_texto">
+        <author ref="#jean_starobinski">Starobinski, Jean</author>
+        <title level="a">La literatura, el texto y el intérprete</title>
+        <title level="m" ref="#goff_historia">Hacer la historia</title>
+        <date when="1974">1974</date>
+    </bibl>
+    
+    <bibl xml:id="steiner_castillo">
+        <author ref="#george_steiner">Steiner, George</author>
+        <title level="m">En el castillo de Barbazul: aproximación a un rediseño de la cultura</title>
+        <date when="1977">1977</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q18351199</idno>
+    </bibl>
+    
+    <bibl xml:id="steiner_extraterritorial">
+        <author ref="#george_steiner">Steiner, George</author>
+        <title level="m">Extraterritorial: ensayos sobre literatura y revolución del lenguaje</title>
+        <date when="1972">1972</date>
+    </bibl>
+    
+    <bibl xml:id="steiner_lenguaje">
+        <author ref="#george_steiner">Steiner, George</author>
+        <title level="m">Lenguaje y silencio: ensayos sobre la literatura, el lenguaje y lo inhumano</title>
+        <date when="1982">1982</date>
+    </bibl>
+    
+    <bibl xml:id="briante_relatos">
+        <author ref="#miguel_briante">Briante, Miguel</author>
+        <title level="m">Ley de Juego. Relatos</title>
+        <date when="1983">1983</date>
+    </bibl>
+    
+    <bibl xml:id="briante_hamacas">
+        <author ref="#miguel_briante">Briante, Miguel</author>
+        <title level="m">Las hamacas voladoras</title>
+        <date when="1964">1964</date>
+    </bibl>
+    
+    <bibl xml:id="briante_hombre_orilla">
+        <author ref="#miguel_briante">Briante, Miguel</author>
+        <title level="m">Hombre en la orilla</title>
+        <date when="1968">1968</date>
+    </bibl>
+    
+    <bibl xml:id="lynch_informe">
+        <author ref="#marta_lynch">Lynch, Marta</author>
+        <title level="m">Informe bajo llave</title>
+        <date when="1983">1983</date>
+    </bibl>
+    
+    <bibl xml:id="hawthorne_wakefield">
+        <author ref="#nathaniel_hawthorne">Hawthorne, Nathaniel</author>
+        <title level="a">Wakefield</title>
+        <date when="1835">1835</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19311240</idno>
+    </bibl>
+    
+    <bibl xml:id="masotta_sexo_arlt">
+        <author ref="#oscar_masotta">Masotta, Oscar</author>
+        <title level="m">Sexo y traición en Roberto Arlt</title>
+        <date when="1965">1965</date>
+    </bibl>
+    
+    <bibl xml:id="beckett_malone">
+        <author ref="#samuel_beckett">Beckett, Samuel</author>
+        <title level="m">Malone muere</title>
+        <date when="1951">1951</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q540991</idno>
+    </bibl>
+    
+    <bibl xml:id="beckett_fin_partida">
+        <author ref="#samuel_beckett">Beckett, Samuel</author>
+        <title level="m">Fin de partida</title>
+        <date when="1957">1957</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1235448</idno>
+    </bibl>
+    
+    <bibl xml:id="vinias_grotesco">
+        <author ref="#david_vinias">Viñas, David</author>
+        <title level="m">Grotesco, inmigración y fracaso: Armando Discépolo</title>
+        <date when="1973">1973</date>
+    </bibl>
+    
+    <bibl xml:id="lugones_lunario">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Lunario sentimental</title>
+        <date when="1909">1909</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5984860</idno>
+    </bibl>
+    
+    <bibl xml:id="gusman_brillos">
+        <author ref="#luis_gusman">Gusmán, Luis</author>
+        <title level="m">Brillos</title>
+        <date when="1975">1975</date>
+    </bibl>
+    
+    <bibl xml:id="arlt_ciencias_ocultas">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="a">Las ciencias ocultas en la ciudad de Buenos Aires</title>
+        <date when="1920">1920</date>
+    </bibl>
+    
+    <bibl xml:id="flaubert_corazon_simple">
+        <author ref="#gustave_flaubert">Flaubert, Gustave</author>
+        <title level="m">Un corazón simple</title>
+        <date when="1877">1877</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q110155358</idno>
+    </bibl>
+    
+    <bibl xml:id="dostoyevski_corazon">
+        <author ref="#fiodor_dostoyevski">Dostoievski, Fiódor</author>
+        <title level="m">Un corazón débil</title>
+        <date when="1848">1848</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3548515</idno>
+    </bibl>
+    
+    <bibl xml:id="joyce_hermano">
+        <author ref="#stanislaus_joyce">Joyce, Stanislaus</author>
+        <title level="m">Mi hermano James Joyce</title>
+        <date when="1958">1958</date>
+    </bibl>
+    
+    <bibl xml:id="dabove_muerte_traje">
+        <author ref="#santiago_dabove">Dabove, Santiago</author>
+        <title level="m">La muerte y su traje</title>
+        <date when="1961">1961</date>
+    </bibl>
+    
+    <bibl xml:id="quiroga_cuentos_selva">
+        <author ref="#horacio_quiroga">Quiroga, Horacio</author>
+        <title level="m">Cuentos de la selva</title>
+        <date when="1918">1918</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5793817</idno>
+    </bibl>
+    
+    <bibl xml:id="shakespeare_hamlet">
+        <author ref="#shakespeare">Shakespeare, William</author>
+        <title level="m">Hamlet</title>
+        <date when="1603">1603</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q41567</idno>
+    </bibl>
+    
+    <bibl xml:id="rimbaud_temporada_infierno">
+        <author ref="#rimbaud">Rimbaud, Arthur</author>
+        <title level="m">Una temporada en el infierno</title>
+        <date when="1873">1873</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q301342</idno>
+    </bibl>
+    
+    <bibl xml:id="eliot_tierra_baldia">
+        <author ref="#ts_eliot">Eliot, T. S.</author>
+        <title level="m">La tierra baldía</title>
+        <date when="1922">1922</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q581458</idno>
+    </bibl>
+    
+    <bibl xml:id="eliot_cuartetos">
+        <author ref="#ts_eliot">Eliot, T. S.</author>
+        <title level="m">Los cuatro cuartetos</title>
+        <date when="1943">1943</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2468448</idno>
+    </bibl>
+    
+    <bibl xml:id="puig_maldicion">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">Maldición eterna a quien lea estas páginas</title>
+        <date when="1980">1980</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5402620</idno>
+    </bibl>
+    
+    <bibl xml:id="puig_sangre">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">Sangre de amor correspondido</title>
+        <date when="1982">1982</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q110564625</idno>
+    </bibl>
+    
+    <bibl xml:id="aries_hombre">
+        <author ref="#philippe_aries">Ariès, Philippe</author>
+        <title level="m">L'Homme devant la mort</title>
+        <date when="1977">1977</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q16651160</idno>
+    </bibl>
+    
+    <bibl xml:id="morin_hombre_muerte">
+        <author ref="#edgar_morin">Morin, Edgar</author>
+        <title level="m">L'Homme et la mort dans l'histoire</title>
+        <date when="1951">1951</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q65158253</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_troyanas">
+        <author ref="#jean_paul_sartre">Sartre, Jean-Paul</author>
+        <title level="m">Les Troyennes</title>
+        <date when="1965">1965</date>
+    </bibl>
+    
+    <bibl xml:id="eneida">
+        <author ref="#virgilio">Virgilio</author>
+        <title level="m">Eneida</title>
+        <date when="-0019">19 a. C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q60220</idno>
+    </bibl>
+    
+    <bibl xml:id="gautier_emaux_camees">
+        <author ref="#theophile_gautier">Gautier, Théophile</author>
+        <title level="m">Émaux et Camées</title>
+        <date when="1852">1852</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3588164</idno>
+    </bibl>
+    
+    <bibl xml:id="wilde_salome">
+        <author ref="#oscar_wilde">Wilde, Oscar</author>
+        <title level="m">Salomé</title>
+        <date when="1893">1893</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1149498</idno>
+    </bibl>
+    
+    <bibl xml:id="heidegger_erfahrung">
+        <author ref="#martin_heidegger">Heidegger, Martin</author>
+        <title level="m">Aus der Erfahrung des Denkens</title>
+        <date when="1954">1954</date>
+    </bibl>
+    
+    <bibl xml:id="heidegger_metafisica">
+        <author ref="#martin_heidegger">Heidegger, Martin</author>
+        <title level="m">Introducción a la metafísica</title>
+        <date when="1953">1953</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q931696</idno>
+    </bibl>
+    
+    <bibl xml:id="ortega_historia_sitema">
+        <author ref="#ortega_gasset">Ortega y Gasset, José</author>
+        <title level="m">Historia como sistema</title>
+        <date when="1941">1941</date>
+    </bibl>
+    
+    <bibl xml:id="biblia">
+        <title level="m">Biblia</title>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1845</idno>
+    </bibl>
+    
+    <bibl xml:id="kafka_metamorfosis">
+        <author ref="#kafka">Kafka, Franz</author>
+        <title level="m">La metamorfosis</title>
+        <date when="1915">1915</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q184222</idno>
+    </bibl>
+    
+    <bibl xml:id="melville_moby_dick">
+        <author ref="#melville">Melville, Herman</author>
+        <title level="m">Moby-Dick</title>
+        <date when="1851">1851</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q174596</idno>
+    </bibl>
+    
+    <bibl xml:id="maupassant_horla">
+        <author ref="#maupassant">Maupassant, Guy de</author>
+        <title level="m">Le Horla</title>
+        <date when="1887">1887</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2701030</idno>
+    </bibl>
+    
+    <bibl xml:id="maupassant_bel_ami">
+        <author ref="#maupassant">Maupassant, Guy de</author>
+        <title level="m">Bel-Ami</title>
+        <date when="1885">1885</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q339761</idno>
+    </bibl>
+    
+    <bibl xml:id="olivari_mosca">
+        <author ref="#nicolas_olivari">Olivari, Nicolás</author>
+        <title level="a">La mosca verde</title>
+        <date when="1924">1924</date>
+    </bibl>
+    
+    <bibl xml:id="borges_sobre_vathek">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">Sobre el "Vathek" de William Beckford</title>
+        <date when="1943">1943</date>
+    </bibl>
+    
+    <bibl xml:id="beckford_vathek">
+        <author ref="#william_beckford">Beckford, William</author>
+        <title level="m">Vathek</title>
+        <date when="1786">1786</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q54548</idno>
+    </bibl>
+    
+    <bibl xml:id="gombrowicz_hechizados">
+        <author ref="#witold_gombrowicz">Gombrowicz, Witold</author>
+        <title level="m">Los hechizados</title>
+        <date when="1939">1939</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7233385</idno>
+    </bibl>
+    
+    <bibl xml:id="byron_childe">
+        <author ref="#lord_byron">Byron, Lord</author>
+        <title level="m">Childe Harold's Pilgrimage</title>
+        <date when="1812">1812</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1072741</idno>
+    </bibl>
+    
+    <bibl xml:id="mansilla_entre_nos">
+        <author ref="#lucio_mansilla">Mansilla, Lucio V.</author>
+        <title level="m">Entre nos: Causeries del jueves</title>
+        <date when="1889">1889</date>
+    </bibl>
+    
+    <bibl xml:id="estrada_viaje_nilo">
+        <author ref="#martinez_estrada">Martínez Estrada, Ezequiel</author>
+        <title level="m">El viaje al Nilo</title>
+        <date when="1933">1933</date>
+    </bibl>
+    
+    <bibl xml:id="deleuze_mille_plateaux">
+        <author ref="#gilles_deleuze">Deleuze, Gilles</author>
+        <author ref="#felix_guattari">Guattari, Félix</author>
+        <title level="m" xml:lang="fr">Mille Plateaux</title>
+        <date when="1980">1980</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2563786</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_san_genet">
+        <author ref="#jean_paul_sartre">Sartre, Jean-Paul</author>
+        <title level="m">Saint Genet, comédien et martyr</title>
+        <date when="1952">1952</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3463798</idno>
+    </bibl>
+    
+    <bibl xml:id="arlt_aguafuertes_portenias">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">Aguafuertes porteñas</title>
+        <date when="1933">1933</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5660282</idno>
+    </bibl>
+    
+    <bibl xml:id="arlt_siete_locos">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">Los siete locos</title>
+        <date when="1929">1929</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q134484366</idno>
+    </bibl>
+    
+    <bibl xml:id="arlt_africa">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">Crónicas de África</title>
+        <date when="1935">1935</date>
+    </bibl>
+    
+    <bibl xml:id="arlt_criador_gorilas">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">El criador de gorilas</title>
+        <date when="1941">1941</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5824516</idno>
+    </bibl>
+    
+    <bibl xml:id="arlt_desierto_ciudad">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">El desierto entra en la ciudad</title>
+        <date when="1952">1952</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q111734706</idno>
+    </bibl>
+    
+    <bibl xml:id="arlt_rahutia">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="a">Rahutia la bailarina</title>
+        <date when="1941">1941</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19485933</idno>
+    </bibl>
+    
+    <bibl xml:id="correas_reportajes">
+        <author ref="#carlos_correas">Correas, Carlos</author>
+        <title level="m">Los reportajes de Félix Chaneton</title>
+        <date when="1984">1984</date>
+    </bibl>
+    
+    <bibl xml:id="arlt_aguafuertes_espaniolas">
+        <author ref="#roberto_arlt">Arlt, Roberto</author>
+        <title level="m">Aguafuertes españolas</title>
+        <date when="1936">1936</date>
+    </bibl>
+    
+    <bibl xml:id="genet_journal">
+        <author ref="#jean_genet">Genet, Jean</author>
+        <title level="m" xml:lang="fr">Journal du voleur</title>
+        <date when="1949">1949</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1225809</idno>
+    </bibl>
+    
+    <bibl xml:id="stendhal_cartuja">
+        <author ref="#stendhal">Stendhal</author>
+        <title level="m" xml:lang="fr">La Chartreuse de Parme</title>
+        <date when="1839">1839</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1165714</idno>
+    </bibl>
+    
+    <bibl xml:id="maupassant_bola_sebo">
+        <author ref="#maupassant">Maupassant, Guy de</author>
+        <title level="a" xml:lang="fr">Boule de Suif</title>
+        <date when="1880">1880</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q63971</idno>
+    </bibl>
+    
+    <bibl xml:id="cortazar_grafitti">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="a">Graffiti</title>
+        <date when="1979">1979</date>
+    </bibl>
+    
+    <bibl xml:id="cortazar_62">
+        <author ref="#julio_cortazar">Cortázar, Julio</author>
+        <title level="m">62/Modelo para armar</title>
+        <date when="1968">1968</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4032039</idno>
+    </bibl>
+    
+    <bibl xml:id="euclides_elementos">
+        <author ref="#euclides">Euclides</author>
+        <title level="m">Elementos</title>
+        <date notAfter="-0300">c. 300 a. C.</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q172891</idno>
+    </bibl>
+    
+    <bibl xml:id="echeverria_matadero">
+        <author ref="#esteban_echeverria">Echeverría, Esteban</author>
+        <title level="m">El matadero</title>
+        <date notBefore="1838" notAfter="1840">c. 1838-1840</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q22909366</idno>
+    </bibl>
+    
+    <bibl xml:id="borges_nueva_refutacion_tiempo">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <title level="a">Nueva refutación del tiempo</title>
+        <date when="1947">1947</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4658536</idno>
+    </bibl>
+    
+    <bibl xml:id="astrada_mito_gaucho">
+        <author ref="#carlos_astrada">Astrada, Carlos</author>
+        <title level="m">El mito gaucho</title>
+        <date when="1948">1948</date>
+    </bibl>
+    
+    <bibl xml:id="astrada_esfinge_sombra">
+        <author ref="#carlos_astrada">Astrada, Carlos</author>
+        <title level="m">La esfinge de la sombra</title>
+        <date when="1924">1924</date>
+    </bibl>
+    
+    <bibl xml:id="astrada_juego_metafisico">
+        <author ref="#carlos_astrada">Astrada, Carlos</author>
+        <title level="m">El juego metafísico</title>
+        <date when="1942">1942</date>
+    </bibl>
+    
+    <bibl xml:id="astrada_revolucion">
+        <author ref="#carlos_astrada">Astrada, Carlos</author>
+        <title level="m">La revolución existencialista</title>
+        <date when="1952">1952</date>
+    </bibl>
+    
+    <bibl xml:id="bajtin_esthetique">
+        <author ref="#bajtin">Bajtin, Mijail</author>
+        <title level="m" xml:lang="fr">Esthétique et théorie du roman</title>
+        <date when="1978">1978</date>
+    </bibl>
+    
+    <bibl xml:id="barthes_fragmentos">
+        <author ref="#roland_barthes">Barthes, Roland</author>
+        <title level="m" xml:lang="fr">Fragments d'un discours amoureux</title>
+        <date when="1977">1977</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3080362</idno>
+    </bibl>
+    
+    <bibl xml:id="bataille_erotismo">
+        <author ref="#georges_bataille">Bataille, Georges</author>
+        <title level="m">El erotismo</title>
+        <date when="1964">1964</date>
+    </bibl>
+    
+    <bibl xml:id="borges_lugones">
+        <author ref="#borges">Borges, Jorge Luis</author>
+        <author ref="#bettina_edelberg">Edelberg, Bettina</author>
+        <title level="m">Leopoldo Lugones</title>
+        <date when="1955">1955</date>
+    </bibl>
+    
+    <bibl xml:id="brooks_poetry">
+        <author ref="#cleanth_brooks">Brooks, Cleanth</author>
+        <author ref="#robert_penn_warren">Penn Warren, Robert</author>
+        <title level="m">Understanding poetry</title>
+        <date when="1960">1960</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7883797</idno>
+    </bibl>
+    
+    <bibl xml:id="canal_feijoo_lugones">
+        <author ref="#canal_feijoo">Canal Feijóo, Bernardo</author>
+        <title level="m">Lugones, y el destino trágico</title>
+        <date when="1976">1976</date>
+    </bibl>
+    
+    <bibl xml:id="hernandez_jj_lugones">
+        <author ref="#juan_jose_hernandez">Hernández, Juan José</author>
+        <title level="a">El signo prohibido de Leopoldo Lugones</title>
+        <date when="1984-01-15">1984</date>
+    </bibl>
+    
+    <bibl xml:id="revista_tiempo_argentino">
+        <title level="j">Tiempo Argentino</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1982" to="1986">1982-1986</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6146482</idno>
+    </bibl>
+    
+    <bibl xml:id="lugones_montanias">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Las montañas del oro</title>
+        <date when="1897">1897</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q30339187</idno>
+    </bibl>
+    
+    <bibl xml:id="lugones_crepusculos">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Los crepúsculos del jardín</title>
+        <date when="1905">1905</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q111342415</idno>
+    </bibl>
+    
+    <bibl xml:id="lugones_limadurasi">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Las limaduras de Hephaestos I. Piedras liminares</title>
+        <date when="1910">1910</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q120720228</idno>
+    </bibl>
+    
+    <bibl xml:id="lugones_limadurasii">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Las limaduras de Hephaestos II. Prometeo (Un proscripto del sol)</title>
+        <date when="1910">1910</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q123350434</idno>
+    </bibl>
+    
+    <bibl xml:id="paz_hijos_limo">
+        <author ref="#octavio_paz">Paz, Octavio</author>
+        <title level="m">Los hijos del limo</title>
+        <date when="1974">1974</date>
+    </bibl>
+    
+    <bibl xml:id="praz_carne_muerte">
+        <author ref="#mario_praz">Praz, Mario</author>
+        <title level="m">La carne, la muerte y el diablo en la literatura romántica</title>
+        <date when="1930">1930</date>
+    </bibl>
+    
+    <bibl xml:id="sarduy_escrito_cuerpo">
+        <author ref="#severo_sarduy">Sarduy, Severo</author>
+        <title level="m">Escrito sobre un cuerpo</title>
+        <date when="1969">1969</date>
+    </bibl>
+   
+    <bibl xml:id="tinianov_problema_lengua">
+        <author ref="#tinianov">Tinianov, Iuri</author>
+        <title level="m">El problema de la lengua poética</title>
+        <date when="1975">1975</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q123512140</idno>
+    </bibl>
+   
+    <bibl xml:id="vinias_sarmiento_cortazar">
+        <author ref="#david_vinias">Viñas, David</author>
+        <title level="m">Literatura argentina y realidad política. De Sarmiento a Cortázar</title>
+        <date when="1971">1971</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131343896</idno>
+    </bibl>
+   
+    <bibl xml:id="puig_traicion">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">La traición de Rita Hayworth</title>
+        <date when="1968"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q4898214</idno>
+    </bibl>
+   
+    <bibl xml:id="isaacs_maria">
+        <author ref="#jorge_isaacs">Isaacs, Jorge</author>
+        <title level="m">María</title>
+        <date when="1867"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1474079</idno>
+    </bibl>
+    
+    <bibl xml:id="mann_montania_magica">
+        <author ref="#thomas_mann">Mann, Thomas</author>
+        <title level="m">La montaña mágica</title>
+        <date when="1924"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q212898</idno>
+    </bibl>
+   
+    <bibl xml:id="saer_entenado">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="m">El entenado</title>
+        <date when="1983"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q130538876</idno>
+    </bibl>
+   
+    <bibl xml:id="puig_beso">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">El beso de la mujer araña</title>
+        <date when="1976"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q646668</idno>
+    </bibl>
+   
+    <bibl xml:id="carroll_alicia">
+        <author ref="#lewis_carroll">Carroll, Lewis</author>
+        <title level="m">Alicia en el país de las maravillas</title>
+        <date when="1865"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q92640</idno>
+    </bibl>
+   
+    <bibl xml:id="carroll_alicia_espejo">
+        <author ref="#lewis_carroll">Carroll, Lewis</author>
+        <title level="m">Alicia a través del espejo</title>
+        <date when="1871"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q220331</idno>
+    </bibl>
+   
+    <bibl xml:id="gusman_frasquito">
+        <author ref="#luis_gusman">Gusmán, Luis</author>
+        <title level="m">El frasquito</title>
+        <date when="1973"/>
+    </bibl>
+   
+    <bibl xml:id="hernandez_tierras_memoria">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">Tierras de la memoria</title>
+        <date when="1964"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q124369956</idno>
+    </bibl>
+   
+    <bibl xml:id="hernandez_hortensias">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">Las hortensias</title>
+        <date when="1949"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q117049247</idno>
+    </bibl>
+   
+    <bibl xml:id="hernandez_casa_inundada">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">La casa inundada</title>
+        <date when="1960"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19449340</idno>
+    </bibl>
+   
+    <bibl xml:id="hernandez_menos_julia">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">Menos Julia</title>
+        <date when="1947"/>
+    </bibl>
+    
+    <bibl xml:id="hernandez_obras_completas">
+        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
+        <title level="m">Obras completas</title>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="saer_cicatrices">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="m">Cicatrices</title>
+        <date when="1969"/>
+    </bibl>
+    
+    <bibl xml:id="saer_parecido">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="a">El parecido</title>
+        <date when="1976"/>
+    </bibl>
+    
+    <bibl xml:id="saer_mayor_libro">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="m">La mayor</title>
+        <date when="1976"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q110821588</idno>
+    </bibl>
+    
+    <bibl xml:id="saer_mayor_cuento">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="a">La mayor</title>
+        <date when="1976"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131346904</idno>
+    </bibl>
+    
+    <bibl xml:id="saer_unidad_lugar">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="m">Unidad de lugar</title>
+        <date when="1967"/>
+    </bibl>
+    
+    <bibl xml:id="saer_paramnesia">
+        <author ref="#juan_jose_saer">Saer, Juan José</author>
+        <title level="a">Paramnesia</title>
+        <date when="1967"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q131346905</idno>
+    </bibl>
+    
+    <bibl xml:id="gramuglio_filosofia_relato">
+        <author ref="#maria_teresa_gramuglio">Gramuglio, María Teresa</author>
+        <title level="a">La filosofía en el relato</title>
+        <title level="j" ref="#revista_punto_de_vista">Punto de vista</title>
+        <date when="1984"/>
+    </bibl>
+    
+    <bibl xml:id="bajtin_poetique_dostoievski">
+        <author ref="#bajtin">Bajtín, Mijaíl</author>
+        <title level="m">Problemas de la poética de Dostoievski</title>
+        <date when="1963"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q65063457</idno>
+    </bibl>
+    
+    <bibl xml:id="lacan_escritos">
+        <author ref="#lacan">Lacan, Jacques</author>
+        <title level="m">Escritos</title>
+        <date when="1966"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3579009</idno>
+    </bibl>
+    
+    <bibl xml:id="puig_pubis">
+        <author ref="#manuel_puig">Puig, Manuel</author>
+        <title level="m">Pubis angelical</title>
+        <date when="1979"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q7257275</idno>
+    </bibl>
+    
+    <bibl xml:id="ludmer_tragedia_comica">
+        <author ref="#josefina_ludmer">Ludmer, Josefina</author>
+        <title level="a">La tragedia cómica. Anotaciones sobre Felisberto Hernández</title>
+        <note>Artículo inédito</note>
+    </bibl>
+    
+    <bibl xml:id="ludmer_boquitas">
+        <author ref="#josefina_ludmer">Ludmer, Josefina</author>
+        <title level="a">Boquitas pintadas, siete recorridos</title>
+        <title level="j" ref="#revista_actual">Actual (Revista de la Universidad de los Andes)</title>
+        <date when="1971">enero-diciembre 1971</date>
+    </bibl>
+    
+    <bibl xml:id="revista_actual">
+        <title level="j">Actual (Revista de la Universidad de los Andes)</title>
+        <editor ref="#stefano_varese">Varese, Stefano</editor>
+        <pubPlace ref="#merida_venezuela">Mérida, Venezuela</pubPlace>
+        <date from="1968" to="2012">1968-2012</date>
+        <extent>90 números</extent>
+    </bibl>
+    
+    <bibl xml:id="tinianov_teoria_literatura">
+        <author ref="#tinianov">Tinianov, Iuri</author>
+        <title level="m">Théorie de la littérature</title>
+        <date when="1965"/>
+    </bibl>
+    
+    <bibl xml:id="choderlos_amistades_peligrosas">
+        <author ref="#pierre_choderlos">Choderlos de Laclos, Pierre</author>
+        <title level="m">Las amistades peligrosas</title>
+        <date when="1782"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q862050</idno>
+    </bibl>
+    
+    <bibl xml:id="rama_dialogo_imposible">
+        <author ref="#angel_rama">Rama, Ángel</author>
+        <title level="a">El diálogo imposible</title>
+        <title level="j" ref="#revista_unomasuno">Sábado (suplemento de Unomásuno)</title>
+        <date when="1981-11-21">21 de noviembre de 1981</date>
+    </bibl>
+    
+    <bibl xml:id="revista_unomasuno">
+        <title level="j">Unomásuno</title>
+        <editor ref="#manuel_becerra_acosta">Becerra Acosta, Manuel</editor>
+        <pubPlace ref="#ciudad_mexico">México D.F., México</pubPlace>
+        <date from="1977" to="2002">1977-2002</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6157218</idno>
+    </bibl>
+    
+    <bibl xml:id="borinsky_ver_visto">
+        <author ref="#alicia_borinsky">Borinsky, Alicia</author>
+        <title level="m">Ver/Ser visto (Notas para la poética)</title>
+        <date when="1978"/>
+    </bibl>
+    
+    <bibl xml:id="vilarinio_tangos">
+        <author ref="#idea_vilarinio">Vilariño, Idea</author>
+        <title level="m">Las letras de tango</title>
+        <date when="1965"/>
+    </bibl>
+    
+    <bibl xml:id="safouan_estudios_edipo">
+        <author ref="#moustapha_safouan">Safouan, Moustapha</author>
+        <title level="m">Estudios sobre el Edipo</title>
+        <date when="1977"/>
+    </bibl>
+    
+    <bibl xml:id="rosolato_ensayos_simbolico">
+        <author ref="#guy_rosolato">Rosolato, Guy</author>
+        <title level="m">Ensayos sobre lo simbólico</title>
+        <date when="1974"/>
+    </bibl>
+    
+    <bibl xml:id="piglia_puig">
+        <author ref="#ricardo_piglia">Piglia, Ricardo</author>
+        <title level="a">Clase media: cuerpo y destino (Una lectura de LTRH de Manuel Puig)</title>
+        <title level="m" ref="#nueva_novela_latinoamericana2">Nueva novela latinoamericana 2</title>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="nueva_novela_latinoamericana2">
+        <title level="m">Nueva novela latinoamericana 2</title>
+        <editor>Curutchet, Juan Carlos</editor>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="baudrillard_objetos">
+        <author ref="#jean_baudrillard">Baudrillard, Jean</author>
+        <title level="m">El sistema de los objetos</title>
+        <date when="1968"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3227496</idno>
+    </bibl>
+    
+    <bibl xml:id="levene_historia">
+        <author ref="#ricardo_levene">Levene, Ricardo</author>
+        <title level="m">Historia argentina y americana</title>
+        <date when="1937"/>
+    </bibl>
+    
+    <bibl xml:id="link_meditaciones">
+        <author ref="#daniel_link">Link, Daniel A.</author>
+        <title level="a">Medi(t)aciones de lo real en El entenado de Juan José Saer</title>
+        <title level="j" ref="#revista_pie_de_pagina">Pie de página</title>
+        <date from="1984" to="1985">1984/1985</date>
+    </bibl>
+   
+    <bibl xml:id="sartre_idiota">
+        <author ref="#jean_paul_sartre">Sartre, Jean-Paul</author>
+        <title level="m">El idiota de la familia</title>
+        <date from="1971" to="1972">1971-1972</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3203975</idno>
+    </bibl>
+
+    <bibl xml:id="di_benedetto_zama">
+        <title>Zama</title>
+        <author ref="#antonio_di_benedetto">Antonio Di Benedetto</author>
+        <date when="1956"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q28163003</idno>
+    </bibl>
+    
+    <bibl xml:id="defoe_robinson">
+        <title>Robinson Crusoe</title>
+        <author ref="#daniel_defoe">Daniel Defoe</author>
+        <date when="1719"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q483034</idno>
+    </bibl>
+    
+    <bibl xml:id="bajarlia_sables">
+        <title>Sables, historias y crímenes</title>
+        <author ref="#juan_jacobo_bajarlia">Juan-Jacobo Bajarlía</author>
+        <date when="1983"/>
+    </bibl>
+    
+    <bibl xml:id="wilcock_sinagoga">
+        <title>La sinagoga de los iconoclastas</title>
+        <author ref="#rodolfo_wilcock">Juan Rodolfo Wilcock</author>
+        <date when="1972"/>
+    </bibl>
+    
+    <bibl xml:id="shakespeare_tempestad">
+        <title>La tempestad</title>
+        <author ref="#shakespeare">William Shakespeare</author>
+        <date when="1611"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q86440</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_nausea">
+        <title>La náusea</title>
+        <author ref="#jean_paul_sartre">Jean-Paul Sartre</author>
+        <date when="1938"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q658288</idno>
+    </bibl>
+    
+    <bibl xml:id="payro_mar_dulce">
+        <title>El mar dulce</title>
+        <author ref="#roberto_payro">Roberto Payró</author>
+        <date when="1927"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q124801883</idno>
+    </bibl>
+    
+    <bibl xml:id="eco_apostillas">
+        <title>Apostillas a El nombre de la rosa</title>
+        <author ref="#umberto_eco">Umberto Eco</author>
+        <date when="1983"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q97506140</idno>
+    </bibl>
+    
+    <bibl xml:id="conrad_shadow_line">
+        <title>La línea de sombra</title>
+        <author ref="#joseph_conrad">Joseph Conrad</author>
+        <date when="1917"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1120858</idno>
+    </bibl>
+    
+    <bibl xml:id="proust_busqueda">
+        <title>En busca del tiempo perdido</title>
+        <author ref="#marcel_proust">Marcel Proust</author>
+        <date when="1913"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q464928</idno>
+    </bibl>
+    
+    <bibl xml:id="diaz_del_castillo_conquista">
+        <title>Historia verdadera de la conquista de la Nueva España</title>
+        <author ref="#bernal_diaz_del_castillo">Bernal Díaz del Castillo</author>
+        <date when="1632"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q378485</idno>
+    </bibl>
+    
+    <bibl xml:id="saer_interprete">
+        <title level="a">El intérprete</title>
+        <author ref="#juan_jose_saer">Juan José Saer</author>
+        <date when="1976"/>
+    </bibl>
+    
+    <bibl xml:id="saer_zona">
+        <title level="m">En la zona</title>
+        <author ref="#juan_jose_saer">Juan José Saer</author>
+        <date when="1960"/>
+    </bibl>
+    
+    <bibl xml:id="bianco_ratas">
+        <title level="m">Las ratas</title>
+        <author ref="#jose_bianco">José Bianco</author>
+        <date when="1943"/>
+    </bibl>
+    
+    <bibl xml:id="borges_historia_universal_infamia">
+        <title level="m">Historia universal de la infamia</title>
+        <author ref="#borges">Jorge Luis Borges</author>
+        <date when="1935"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1196790</idno>
+    </bibl>
+    
+    <bibl xml:id="queneau_enciclopedia">
+        <title level="m">Enciclopedia de las ciencias inexactas</title>
+        <author ref="#raymond_queneau">Raymond Queneau</author>
+        <date when="1938"/>
+    </bibl>
+    
+    <bibl xml:id="wittgenstein_investigaciones">
+        <title level="m">Investigaciones filosóficas</title>
+        <author ref="#ludwig_wittgenstein">Ludwig Wittgenstein</author>
+        <date when="1953"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q772496</idno>
+    </bibl>
+    
+    <bibl xml:id="poe_cuervo">
+        <title level="m">El cuervo</title>
+        <author ref="#edgar_allan_poe">Edgar Allan Poe</author>
+        <date when="1845"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q22726</idno>
+    </bibl>
+    
+    <bibl xml:id="rimbaud_barco_ebrio">
+        <title level="m">El barco ebrio</title>
+        <author ref="#rimbaud">Arthur Rimbaud</author>
+        <date when="1871"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q332307</idno>
+    </bibl>
+    
+    <bibl xml:id="flaubert_bouvard">
+        <title level="m">Bouvard y Pécuchet</title>
+        <author ref="#gustave_flaubert">Gustave Flaubert</author>
+        <date when="1881"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q728104</idno>
+    </bibl>
+    
+    <bibl xml:id="dabove_ser_polvo">
+        <title level="m">Ser polvo</title>
+        <author ref="#santiago_dabove">Santiago Dabove</author>
+        <date when="1945"/>
+    </bibl>
+    
+    <bibl xml:id="revista_pie_de_pagina">
+        <title level="j">Pie de página</title>
+        <editor>Sergio Chejfec et al.</editor>
+        <date from="1982" to="1987"/>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+    </bibl>
+    
+    <bibl xml:id="revista_punto_de_vista">
+        <title level="j">Punto de Vista</title>
+        <editor ref="#beatriz_sarlo">Beatriz Sarlo</editor>
+        <date from="1978" to="2008"/>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q30907005</idno>
+    </bibl>
+    
+    <bibl xml:id="schwob_vies">
+        <title level="m">Vidas imaginarias</title>
+        <author ref="#marcel_schwob">Marcel Schwob</author>
+        <date when="1896"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q19239322</idno>
+    </bibl>
+    
+    <bibl xml:id="fowles_collector">
+        <title level="m">El coleccionista</title>
+        <author ref="#john_fowles">John Fowles</author>
+        <date when="1963"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1196602</idno>
+    </bibl>
+    
+    <bibl xml:id="stoppard_rosenkranz">
+        <title level="m">Rosencrantz y Guildenstern han muerto</title>
+        <author ref="#tom_stoppard">Tom Stoppard</author>
+        <date when="1966"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2517513</idno>
+    </bibl>
+    
+    <bibl xml:id="stoppard_travesties">
+        <title level="m">Travesties</title>
+        <author ref="#tom_stoppard">Tom Stoppard</author>
+        <date when="1974"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q16169805</idno>
+    </bibl>
+    
+    <bibl xml:id="stoppard_doggs">
+        <title level="m">Dogg's Hamlet</title>
+        <author ref="#tom_stoppard">Tom Stoppard</author>
+        <date when="1979"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/Dogg%27s_Hamlet,_Cahoot%27s_Macbeth</idno>
+    </bibl>
+    
+    <bibl xml:id="stoppard_cahoots">
+        <title level="m">Cahoot's Macbeth</title>
+        <author ref="#tom_stoppard">Tom Stoppard</author>
+        <date when="1979"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/Dogg%27s_Hamlet,_Cahoot%27s_Macbeth</idno>
+    </bibl>
+    
+    <bibl xml:id="mutt_jeff">
+        <title level="m">Mutt and Jeff</title>
+        <author ref="#bud_fisher">Bud Fisher</author>
+        <date from="1907-11-15" to="2008"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1955932</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_que_es_literatura">
+        <title level="m">¿Qué es la literatura?</title>
+        <author ref="#jean_paul_sartre">Jean-Paul Sartre</author>
+        <date when="1948"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3412539</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_ser_nada">
+        <title level="m">El ser y la nada</title>
+        <author ref="#jean_paul_sartre">Jean-Paul Sartre</author>
+        <date when="1943"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q119709</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_imaginario">
+        <title level="m">Lo imaginario</title>
+        <author ref="#jean_paul_sartre">Jean-Paul Sartre</author>
+        <date when="1940"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/The_Imaginary_(Sartre)</idno>
+    </bibl>
+    
+    <bibl xml:id="sartre_palabras">
+        <title level="m">Las palabras</title>
+        <author ref="#jean_paul_sartre">Jean-Paul Sartre</author>
+        <date when="1963"/>
+        <idno type="URI" subtype="wikipedia">https://en.wikipedia.org/wiki/The_Words_(book)</idno>
+    </bibl>
+    
+    <bibl xml:id="junger_diarios">
+        <title level="m">Strahlungen</title>
+        <author ref="#ernst_junger">Ernst Jünger</author>
+        <date when="1949"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1338713</idno>
+    </bibl>
+    
+    <bibl xml:id="lowry_raro_consuelo">
+        <title level="a">El raro consuelo que da la profesión</title>
+        <author ref="#malcolm_lowry">Malcolm Lowry</author>
+        <date when="1961"/>
+    </bibl>
+    
+    <bibl xml:id="lowry_escuchanos">
+        <title level="m">Escúchanos, oh Señor, desde el cielo tu morada</title>
+        <author ref="#malcolm_lowry">Malcolm Lowry</author>
+        <date when="1961"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q61767355</idno>
+    </bibl>
+    
+    <bibl xml:id="hernandez_dos_historias">
+        <title level="a">Las dos historias</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1943"/>
+    </bibl>
+    
+    <bibl xml:id="sicard_hernandez">
+        <title level="m">Felisberto Hernández ante la crítica actual</title>
+        <editor ref="#alain_sicard">Alain Sicard</editor>
+        <date when="1977"/>
+    </bibl>
+    
+    <bibl xml:id="panesi_hernandez">
+        <title level="a">Felisberto Hernández, un artista del hambre</title>
+        <author ref="#jorge_panesi">Jorge Panesi</author>
+        <note>Artículo inédito</note>
+    </bibl>
+    
+    <bibl xml:id="hernandez_tal_vez">
+        <title level="a">Tal vez un movimiento</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1943"/>
+    </bibl>
+    
+    <bibl xml:id="hernandez_pre_original">
+        <title level="a">Pre-original de TAL VEZ UN MOVIMIENTO. Novela metafísica</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1943"/>
+    </bibl>
+    
+    <bibl xml:id="hernandez_caballo">
+        <title level="a">El caballo perdido</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1943"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q115201571</idno>
+    </bibl>
+    
+    <bibl xml:id="hernandez_ursula">
+        <title level="a">Úrsula</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1960"/>
+    </bibl>
+    
+    <bibl xml:id="hernandez_acomodador">
+        <title level="a">El acomodador</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1947"/>
+    </bibl>
+    
+    <bibl xml:id="hernandez_sinverguenza">
+        <title level="a">Diario del sinvergüenza</title>
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <date when="1947"/>
+    </bibl>
+    
+    <bibl xml:id="molloy_tierras_memoria">
+        <title level="a">Tierras de la memoria: la entreapertura del texto</title>
+        <author ref="#sylvia_molloy">Sylvia Molloy</author>
+        <note>Artículo inédito</note>
+    </bibl>
+    
+    <bibl xml:id="barrenechea_macedonio">
+        <title level="a">Macedonio Fernández y su humorismo de la nada</title>
+        <author ref="#ana_barrenechea">Ana María Barrenechea</author>
+        <date when="1974"/>
+    </bibl>
+    
+    <bibl xml:id="fernandez_vigilia">
+        <title level="m">No toda es vigilia la de los ojos abiertos</title>
+        <author ref="#macedonio_fernandez">Macedonio Fernández</author>
+        <date when="1928"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q111928660</idno>
+    </bibl>
+    
+    <bibl xml:id="fernandez_bases_metafisica">
+        <title level="a">Bases en Metafísica</title>
+        <author ref="#macedonio_fernandez">Macedonio Fernández</author>
+        <date when="1908"/>
+        <note>Inédito</note>
+    </bibl>
+    
+    <bibl xml:id="revista_anales_bsas">
+        <title level="j">Los Anales de Buenos Aires</title>
+        <editor ref="#borges">Jorge Luis Borges</editor>
+        <date from="1946" to="1948"/>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+    </bibl>
+    
+    <bibl xml:id="revista_escritura">
+        <title level="j">Escritura</title>
+        <editor ref="#angel_rama">Ángel Rama</editor>
+        <date from="1947" to="1954"/>
+        <pubPlace ref="#montevideo">Montevideo, Uruguay</pubPlace>
+    </bibl>
+    
+    <bibl xml:id="sosnowski_reportaje_puig">
+        <author ref="#saul_sosnowski">Sosnowski, Saúl</author>
+        <title level="a">Entrevista a Manuel Puig</title>
+        <title level="j" ref="#revista_hispamerica">Hispamérica</title>
+        <biblScope unit="issue">3</biblScope>
+        <date when="1973">1973</date>
+        <biblScope unit="page">69-80</biblScope>
+    </bibl>
+    
+    <bibl xml:id="jakobson_ensayos">
+        <author ref="#roman_jakobson">Jakobson, Roman</author>
+        <title level="m">Ensayos de lingüística general</title>
+        <date when="1975"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q116186427</idno>
+    </bibl>
+    
+    <bibl xml:id="punch_judy">
+        <title level="m">Punch and Judy</title>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2250832</idno>
+    </bibl>
+    
+    <bibl xml:id="soto_parral">
+        <title level="m">La del Soto del Parral</title>
+        <date when="1927"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5966464</idno>
+    </bibl>
+    
+    <bibl xml:id="bella_helena">
+        <title level="m">La Bella Helena (La Belle Hélène)</title>
+        <date when="1864"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1219408</idno>
+    </bibl>
+    
+    <bibl xml:id="princesa_czardas">
+        <title level="m">La Princesa de las Czardas (Die Csárdásfürstin)</title>
+        <date when="1915"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q547258</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_la_ley">
+        <title level="j">La Ley</title>
+        <date when="1935"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6107038</idno>
+    </bibl>
+    
+    <bibl xml:id="kierkegaard_angustia">
+        <author ref="#soren_kierkegaard">Søren Kierkegaard</author>
+        <title level="m">El concepto de la angustia</title>
+        <date when="1844"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1192442</idno>
+    </bibl>
+    
+    <bibl xml:id="fierro_obediencia">
+        <author ref="#guillermo_fierro">Guillermo Fierro</author>
+        <title level="m">La obediencia debida en el ámbito penal y militar</title>
+        <date when="1984"/>
+    </bibl>
+    
+    <bibl xml:id="codigo_justicia_militar">
+        <author>Estado Argentino</author>
+        <title level="m">Código de Justicia Militar</title>
+        <date when="1951"/>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q60852993</idno>
+    </bibl>
+    
+    <bibl xml:id="clausewitz_guerra">
+        <author ref="#carl_von_clausewitz">Carl von Clausewitz</author>
+        <title level="m">Vom Kriege</title>
+        <date when="1832"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q1981770</idno>
+    </bibl>
+    
+    <bibl xml:id="codigo_honor">
+        <author ref="#jose_rivanera">José Rivanera</author>
+        <title level="m">Código de honor comentado</title>
+        <date when="1954"/>
+    </bibl>
+    
+    <bibl xml:id="balzac_envers">
+        <author ref="#balzac">Honoré de Balzac</author>
+        <title level="m">L'Envers de l'histoire contemporaine</title>
+        <date when="1848"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q3203175</idno>
+    </bibl>
+    
+    <bibl xml:id="codigo_penal">
+        <author>Estado Argentino</author>
+        <title level="m">Código Penal de la Nación Argentina</title>
+        <date when="1921"/>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q5796704</idno>
+    </bibl>
+    
+    <bibl xml:id="bayer_nace_barrigon">
+        <author ref="#osvaldo_bayer">Osvaldo Bayer</author>
+        <title level="a">“El que nace barrigón es al ñudo que lo fajen”</title>
+        <title level="j" ref="#revista_fin_siglo">Fin de siglo</title>
+        <date when="1987-08"/>
+    </bibl>
+    
+    <bibl xml:id="revista_fin_siglo">
+        <title level="j">Fin de siglo</title>
+        <editor>Zito Lema, Vicente</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1987-07" to="1988-09">1987-1988</date>
+        <extent>15 números</extent>
+    </bibl>
+    
+    <bibl xml:id="reforma_militar">
+        <author>Instituto de Estudios Geopolíticos (IDEG)</author>
+        <title level="a">“La reforma militar”</title>
+        <title level="j" ref="#revista_cruz_sur">Cruz del Sur</title>
+        <date when="1984"/>
+    </bibl>
+    
+    <bibl xml:id="revista_cruz_sur">
+        <title level="j" xml:lang="es">Cruz del Sur</title>
+        <editor ref="#benjamin_rattenbach">Rattenbach, Augusto Benjamín</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1981" to="1985">1981-1985</date>
+    </bibl>
+    
+    <bibl xml:id="sistema_interamericano_defensa">
+        <author ref="#horacio_ballester">Horacio Ballester</author>
+        <author ref="#jose_luis_garcia">José Luis García</author>
+        <author ref="#carlos_gazcon">Carlos M. Gazcón</author>
+        <author ref="#benjamin_rattenbach">Augusto Benjamín Rattenbach</author>
+        <title level="a">“El sistema interamericano de defensa como paradigma de la seguridad nacional”</title>
+        <title level="j" ref="#revista_cruz_sur">Cruz del Sur</title>
+        <date when="1984"/>
+    </bibl>
+    
+    <bibl xml:id="gonzalez_si_yo_fuera">
+        <author ref="#horacio_gonzalez">Horacio González</author>
+        <title level="a">“¡Ah! Si yo fuera del MAS”</title>
+        <title level="j" ref="#revista_unidos">Unidos</title>
+        <date when="1987-08"/>
+    </bibl>
+    
+    <bibl xml:id="revista_unidos">
+        <title level="j">Unidos</title>
+        <editor>Álvarez, Carlos</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1983" to="1991">1983-1991</date>
+        <extent>23 números</extent>
+    </bibl>
+    
+    <bibl xml:id="landi_crisis_abril">
+        <author ref="#oscar_landi">Oscar Landi</author>
+        <title level="a">“La crisis de abril”</title>
+        <title level="j" ref="#revista_unidos">Unidos</title>
+        <date when="1987-08"/>
+    </bibl>
+    
+    <bibl xml:id="saenz_sembrar_semilla">
+        <author ref="#dalmiro_saenz">Dalmiro Sáenz</author>
+        <title level="a">“Sembrar la semilla de la subversión”</title>
+        <title level="j" ref="#revista_fin_siglo">Fin de siglo</title>
+        <date when="1987-07"/>
+    </bibl>
+    
+    <bibl xml:id="paz_otra_cara">
+        <author ref="#c_paz">Carlos Paz</author>
+        <title level="a">“La otra cara de la obediencia debida”</title>
+        <title level="j" ref="#revista_crear">Crear</title>
+        <date from="1987-08" to="1987-09"/>
+    </bibl>
+    
+    <bibl xml:id="revista_crear">
+        <title level="j">Crear en el pensamiento y la cultura</title>
+        <editor>Varela, Eduardo Alberto</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1980" to="1989">1980-1989</date>
+    </bibl>
+    
+    <bibl xml:id="vinias_literatura_traicion">
+        <author ref="#david_vinias">David Viñas</author>
+        <title level="a">“La literatura como una traición”</title>
+        <title level="j" ref="#diario_la_razon">La Razón</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date when="1987-06-21"/>
+    </bibl>
+    
+    <bibl xml:id="diario_la_razon">
+        <title level="j">La Razón</title>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1905" to="2017">1905-2017</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q6464780</idno>
+    </bibl>
+    
+    <bibl xml:id="vinias_alfonsin">
+        <author ref="#david_vinias">David Viñas</author>
+        <title level="a">“Alfonsín, recapitulación, insidias y pronósticos”</title>
+        <date when="1987"/>
+    </bibl>
+    
+    <bibl xml:id="vezetti_democracia_posbile">
+        <author ref="#hugo_vezzetti">Hugo Vezzetti</author>
+        <title level="a">“La democracia posible”</title>
+        <title level="j" ref="#revista_punto_de_vista">Punto de vista</title>
+        <date from="1987-07" to="1987-10"/>
+    </bibl>
+    
+    <bibl xml:id="sarlo_militares_historia">
+        <author ref="#beatriz_sarlo">Beatriz Sarlo</author>
+        <title level="a">“Los militares y la historia. Contra los perros del olvido”</title>
+        <title level="j" ref="#revista_punto_de_vista">Punto de vista</title>
+        <date from="1987-07" to="1987-10"/>
+    </bibl>
+    
+    <bibl xml:id="veron_discurso_politico">
+        <author ref="#eliseo_veron">Eliseo Verón</author>
+        <author ref="#oscar_landi">Oscar Landi</author>
+        <title level="m">El discurso político, lenguaje y acontecimientos</title>
+        <date when="1987"/>
+    </bibl>
+    
+    <bibl xml:id="lyotard_marx_freud">
+        <author ref="#jean_francois_lyotard">Jean-François Lyotard</author>
+        <title level="m">A partir de Marx y Freud</title>
+        <date when="1973"/>
+    </bibl>
+    
+    <bibl xml:id="revista_cuadernos_comuna">
+        <title level="j">Cuadernos de la comuna</title>
+        <pubPlace ref="#santa_fe">Puerto General San Martín, Santa Fe, Argentina</pubPlace>
+        <date from="1987">1987</date>
+    </bibl>
+    
+    <bibl xml:id="gonzalez_discurso_presidencial">
+        <author ref="#horacio_gonzalez">Horacio González</author>
+        <title level="a">“El discurso presidencial y la crisis argentina”</title>
+        <title level="j" ref="#revista_cuadernos_comuna">Cuadernos de la comuna</title>
+        <date when="1987-06"/>
+    </bibl>
+    
+    <bibl xml:id="aseff_predominancia">
+        <author ref="#lucia_aseff">Lucía Aseff</author>
+        <title level="a">“Predominancia del discurso. Una crítica”</title>
+        <title level="j" ref="#revista_cuadernos_comuna">Cuadernos de la comuna</title>
+        <date when="1987-07"/>
+    </bibl>
+    
+    <bibl xml:id="landi_discurso_posible">
+        <author ref="#oscar_landi">Oscar Landi</author>
+        <title level="m">El discurso sobre lo posible. (La democracia y el realismo político)</title>
+        <date when="1987"/>
+    </bibl>
+    
+    <bibl xml:id="revista_ciudad_futura">
+        <title level="j">La ciudad futura</title>
+        <editor>Aricó, José</editor>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina</pubPlace>
+        <date from="1986" to="1998">1986-1998</date>
+    </bibl>
+    
+    <bibl xml:id="katz_hecho_historia">
+        <author ref="#alejandro_katz">Alejandro Katz</author>
+        <title level="a">“Un hecho de nuestra historia”</title>
+        <title level="j" ref="#revista_ciudad_futura">La ciudad futura</title>
+        <date when="1987-07"/>
+    </bibl>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</listBibl>
+
+

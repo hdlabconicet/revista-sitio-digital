@@ -1,0 +1,452 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 95vh;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 38.333333333333336, "title": "Ram\u00f3n Alcalde\u003cbr\u003eType: author\u003cbr\u003eConnections: 17"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_pie_de_pagina", "label": "Pie de p\u00e1gina", "shape": "dot", "size": 16.666666666666664, "title": "Pie de p\u00e1gina\u003cbr\u003eType: work\u003cbr\u003eConnections: 4"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 40.0, "title": "Eduardo Gr\u00fcner\u003cbr\u003eType: author\u003cbr\u003eConnections: 18"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 48.333333333333336, "title": "Luis Gusm\u00e1n\u003cbr\u003eType: author\u003cbr\u003eConnections: 23"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 13.333333333333332, "title": "Jorge Jinkis\u003cbr\u003eType: author\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sitio", "label": "Sitio", "shape": "dot", "size": 18.333333333333336, "title": "Sitio\u003cbr\u003eType: work\u003cbr\u003eConnections: 5"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kafka_metamorfosis", "label": "La metamorfosis", "shape": "dot", "size": 11.666666666666666, "title": "La metamorfosis\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "melville_moby_dick", "label": "Moby-Dick", "shape": "dot", "size": 16.666666666666664, "title": "Moby-Dick\u003cbr\u003eType: work\u003cbr\u003eConnections: 4"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marmol_amalia", "label": "Amalia", "shape": "dot", "size": 11.666666666666666, "title": "Amalia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maupassant_horla", "label": "Le Horla", "shape": "dot", "size": 11.666666666666666, "title": "Le Horla\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maupassant_bel_ami", "label": "Bel-Ami", "shape": "dot", "size": 11.666666666666666, "title": "Bel-Ami\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "olivari_mosca", "label": "La mosca verde", "shape": "dot", "size": 11.666666666666666, "title": "La mosca verde\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_pierre_menard", "label": "Pierre Menard, autor del Quijote", "shape": "dot", "size": 11.666666666666666, "title": "Pierre Menard, autor del Quijote\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barthes_plaisir_texte", "label": "Le Plaisir du texte", "shape": "dot", "size": 13.333333333333332, "title": "Le Plaisir du texte\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_sobre_vathek", "label": "Sobre el \"Vathek\" de William Beckford", "shape": "dot", "size": 11.666666666666666, "title": "Sobre el \"Vathek\" de William Beckford\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "beckford_vathek", "label": "Vathek", "shape": "dot", "size": 11.666666666666666, "title": "Vathek\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gombrowicz_hechizados", "label": "Los hechizados", "shape": "dot", "size": 11.666666666666666, "title": "Los hechizados\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "byron_childe", "label": "Childe Harold\u0027s Pilgrimage", "shape": "dot", "size": 11.666666666666666, "title": "Childe Harold\u0027s Pilgrimage\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mansilla_entre_nos", "label": "Entre nos: Causeries del jueves", "shape": "dot", "size": 11.666666666666666, "title": "Entre nos: Causeries del jueves\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "vinias_escritor_gentleman", "label": "vinias_escritor_gentleman", "shape": "dot", "size": 11.666666666666666, "title": "vinias_escritor_gentleman\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "estrada_viaje_nilo", "label": "El viaje al Nilo", "shape": "dot", "size": 11.666666666666666, "title": "El viaje al Nilo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "deleuze_mille_plateaux", "label": "Mille Plateaux", "shape": "dot", "size": 11.666666666666666, "title": "Mille Plateaux\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_contorno", "label": "Contorno", "shape": "dot", "size": 13.333333333333332, "title": "Contorno\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_san_genet", "label": "Saint Genet, com\u00e9dien et martyr", "shape": "dot", "size": 11.666666666666666, "title": "Saint Genet, com\u00e9dien et martyr\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sarmiento_facundo", "label": "Facundo: Civilizaci\u00f3n y Barbarie", "shape": "dot", "size": 13.333333333333332, "title": "Facundo: Civilizaci\u00f3n y Barbarie\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_africa", "label": "Cr\u00f3nicas de \u00c1frica", "shape": "dot", "size": 11.666666666666666, "title": "Cr\u00f3nicas de \u00c1frica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_criador_gorilas", "label": "El criador de gorilas", "shape": "dot", "size": 11.666666666666666, "title": "El criador de gorilas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_rahutia", "label": "Rahutia la bailarina", "shape": "dot", "size": 11.666666666666666, "title": "Rahutia la bailarina\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_desierto_ciudad", "label": "El desierto entra en la ciudad", "shape": "dot", "size": 11.666666666666666, "title": "El desierto entra en la ciudad\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_aguafuertes_espaniolas", "label": "Aguafuertes espa\u00f1olas", "shape": "dot", "size": 11.666666666666666, "title": "Aguafuertes espa\u00f1olas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_aguafuertes_portenias", "label": "Aguafuertes porte\u00f1as", "shape": "dot", "size": 11.666666666666666, "title": "Aguafuertes porte\u00f1as\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_siete_locos", "label": "Los siete locos", "shape": "dot", "size": 13.333333333333332, "title": "Los siete locos\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "correas_reportajes", "label": "Los reportajes de F\u00e9lix Chaneton", "shape": "dot", "size": 11.666666666666666, "title": "Los reportajes de F\u00e9lix Chaneton\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "genet_journal", "label": "Journal du voleur", "shape": "dot", "size": 11.666666666666666, "title": "Journal du voleur\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sur", "label": "Sur", "shape": "dot", "size": 11.666666666666666, "title": "Sur\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "stendhal_cartuja", "label": "La Chartreuse de Parme", "shape": "dot", "size": 11.666666666666666, "title": "La Chartreuse de Parme\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "conrad_corazon_tinieblas", "label": "Heart of Darkness", "shape": "dot", "size": 11.666666666666666, "title": "Heart of Darkness\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maupassant_bola_sebo", "label": "Boule de Suif", "shape": "dot", "size": 11.666666666666666, "title": "Boule de Suif\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "euclides_elementos", "label": "Elementos", "shape": "dot", "size": 11.666666666666666, "title": "Elementos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_matadero", "label": "El matadero", "shape": "dot", "size": 11.666666666666666, "title": "El matadero\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "punch_judy", "label": "Punch and Judy", "shape": "dot", "size": 11.666666666666666, "title": "Punch and Judy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "soto_parral", "label": "La del Soto del Parral", "shape": "dot", "size": 11.666666666666666, "title": "La del Soto del Parral\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bella_helena", "label": "La Bella Helena (La Belle H\u00e9l\u00e8ne)", "shape": "dot", "size": 11.666666666666666, "title": "La Bella Helena (La Belle H\u00e9l\u00e8ne)\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "princesa_czardas", "label": "La Princesa de las Czardas (Die Cs\u00e1rd...", "shape": "dot", "size": 11.666666666666666, "title": "La Princesa de las Czardas (Die Cs\u00e1rd...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "juan_bautista_ritvo", "label": "Juan Bautista Ritvo", "shape": "square", "size": 20.0, "title": "Juan Bautista Ritvo\u003cbr\u003eType: author\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gombrowicz_ferdydurke", "label": "Ferdydurke", "shape": "dot", "size": 11.666666666666666, "title": "Ferdydurke\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "astrada_mito_gaucho", "label": "El mito gaucho", "shape": "dot", "size": 11.666666666666666, "title": "El mito gaucho\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "astrada_esfinge_sombra", "label": "La esfinge de la sombra", "shape": "dot", "size": 11.666666666666666, "title": "La esfinge de la sombra\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "astrada_juego_metafisico", "label": "El juego metaf\u00edsico", "shape": "dot", "size": 11.666666666666666, "title": "El juego metaf\u00edsico\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "astrada_revolucion", "label": "La revoluci\u00f3n existencialista", "shape": "dot", "size": 11.666666666666666, "title": "La revoluci\u00f3n existencialista\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_nueva_refutacion_tiempo", "label": "Nueva refutaci\u00f3n del tiempo", "shape": "dot", "size": 11.666666666666666, "title": "Nueva refutaci\u00f3n del tiempo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "santiago_bullrich", "label": "Santiago Bullrich", "shape": "square", "size": 26.666666666666668, "title": "Santiago Bullrich\u003cbr\u003eType: author\u003cbr\u003eConnections: 10"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_finnegans", "label": "Finnegans Wake", "shape": "dot", "size": 11.666666666666666, "title": "Finnegans Wake\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mutt_jeff", "label": "Mutt and Jeff", "shape": "dot", "size": 11.666666666666666, "title": "Mutt and Jeff\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "poe_cuervo", "label": "El cuervo", "shape": "dot", "size": 11.666666666666666, "title": "El cuervo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rimbaud_barco_ebrio", "label": "El barco ebrio", "shape": "dot", "size": 11.666666666666666, "title": "El barco ebrio\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carroll_alicia", "label": "Alicia en el pa\u00eds de las maravillas", "shape": "dot", "size": 11.666666666666666, "title": "Alicia en el pa\u00eds de las maravillas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carroll_alicia_espejo", "label": "Alicia a trav\u00e9s del espejo", "shape": "dot", "size": 11.666666666666666, "title": "Alicia a trav\u00e9s del espejo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "shakespeare_tempestad", "label": "La tempestad", "shape": "dot", "size": 11.666666666666666, "title": "La tempestad\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cervantes_quijote", "label": "El ingenioso hidalgo don Quijote de l...", "shape": "dot", "size": 11.666666666666666, "title": "El ingenioso hidalgo don Quijote de l...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "shakespeare_hamlet", "label": "Hamlet", "shape": "dot", "size": 11.666666666666666, "title": "Hamlet\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_idiota", "label": "El idiota de la familia", "shape": "dot", "size": 11.666666666666666, "title": "El idiota de la familia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_tel_quel", "label": "Tel Quel", "shape": "dot", "size": 11.666666666666666, "title": "Tel Quel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_poetique", "label": "Po\u00e9tique", "shape": "dot", "size": 11.666666666666666, "title": "Po\u00e9tique\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_que_es_literatura", "label": "\u00bfQu\u00e9 es la literatura?", "shape": "dot", "size": 11.666666666666666, "title": "\u00bfQu\u00e9 es la literatura?\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_ser_nada", "label": "El ser y la nada", "shape": "dot", "size": 11.666666666666666, "title": "El ser y la nada\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_imaginario", "label": "Lo imaginario", "shape": "dot", "size": 11.666666666666666, "title": "Lo imaginario\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "flaubert_bouvard", "label": "Bouvard y P\u00e9cuchet", "shape": "dot", "size": 11.666666666666666, "title": "Bouvard y P\u00e9cuchet\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_nausea", "label": "La n\u00e1usea", "shape": "dot", "size": 11.666666666666666, "title": "La n\u00e1usea\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_palabras", "label": "Las palabras", "shape": "dot", "size": 11.666666666666666, "title": "Las palabras\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 13.333333333333332, "title": "Luis Chitarroni\u003cbr\u003eType: author\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dabove_ser_polvo", "label": "Ser polvo", "shape": "dot", "size": 11.666666666666666, "title": "Ser polvo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "junger_diarios", "label": "Strahlungen", "shape": "dot", "size": 11.666666666666666, "title": "Strahlungen\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "enrique_pezzoni", "label": "Enrique Pezzoni", "shape": "square", "size": 25.0, "title": "Enrique Pezzoni\u003cbr\u003eType: author\u003cbr\u003eConnections: 9"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_tal_vez", "label": "Tal vez un movimiento", "shape": "dot", "size": 11.666666666666666, "title": "Tal vez un movimiento\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_casa_inundada", "label": "La casa inundada", "shape": "dot", "size": 11.666666666666666, "title": "La casa inundada\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_ursula", "label": "\u00darsula", "shape": "dot", "size": 11.666666666666666, "title": "\u00darsula\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_acomodador", "label": "El acomodador", "shape": "dot", "size": 11.666666666666666, "title": "El acomodador\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_menos_julia", "label": "Menos Julia", "shape": "dot", "size": 11.666666666666666, "title": "Menos Julia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_hortensias", "label": "Las hortensias", "shape": "dot", "size": 11.666666666666666, "title": "Las hortensias\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_tierras_memoria", "label": "Tierras de la memoria", "shape": "dot", "size": 11.666666666666666, "title": "Tierras de la memoria\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_obras_completas", "label": "Obras completas", "shape": "dot", "size": 11.666666666666666, "title": "Obras completas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barthes_sz", "label": "S/Z", "shape": "dot", "size": 11.666666666666666, "title": "S/Z\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "raul_zoppi", "label": "Raul Zoppi", "shape": "square", "size": 15.0, "title": "Raul Zoppi\u003cbr\u003eType: author\u003cbr\u003eConnections: 3"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barrenechea_macedonio", "label": "Macedonio Fern\u00e1ndez y su humorismo de...", "shape": "dot", "size": 11.666666666666666, "title": "Macedonio Fern\u00e1ndez y su humorismo de...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "fernandez_vigilia", "label": "No toda es vigilia la de los ojos abi...", "shape": "dot", "size": 11.666666666666666, "title": "No toda es vigilia la de los ojos abi...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "fernandez_bases_metafisica", "label": "Bases en Metaf\u00edsica", "shape": "dot", "size": 11.666666666666666, "title": "Bases en Metaf\u00edsica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_monteleone", "label": "Jorge Monteleone", "shape": "square", "size": 50.0, "title": "Jorge Monteleone\u003cbr\u003eType: author\u003cbr\u003eConnections: 24"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barthes_fragmentos", "label": "Fragments d\u0027un discours amoureux", "shape": "dot", "size": 11.666666666666666, "title": "Fragments d\u0027un discours amoureux\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_limadurasii", "label": "Las limaduras de Hephaestos II. Prome...", "shape": "dot", "size": 11.666666666666666, "title": "Las limaduras de Hephaestos II. Prome...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "praz_carne_muerte", "label": "La carne, la muerte y el diablo en la...", "shape": "dot", "size": 11.666666666666666, "title": "La carne, la muerte y el diablo en la...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_kafka_precursores", "label": "Kafka y sus precursores", "shape": "dot", "size": 11.666666666666666, "title": "Kafka y sus precursores\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bataille_erotismo", "label": "El erotismo", "shape": "dot", "size": 11.666666666666666, "title": "El erotismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bajtin_esthetique", "label": "Esth\u00e9tique et th\u00e9orie du roman", "shape": "dot", "size": 11.666666666666666, "title": "Esth\u00e9tique et th\u00e9orie du roman\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_lugones", "label": "Leopoldo Lugones", "shape": "dot", "size": 11.666666666666666, "title": "Leopoldo Lugones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_otras_inquisiciones", "label": "Otras inquisiciones", "shape": "dot", "size": 11.666666666666666, "title": "Otras inquisiciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "brooks_poetry", "label": "Understanding poetry", "shape": "dot", "size": 11.666666666666666, "title": "Understanding poetry\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "canal_feijoo_lugones", "label": "Lugones, y el destino tr\u00e1gico", "shape": "dot", "size": 11.666666666666666, "title": "Lugones, y el destino tr\u00e1gico\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_completa2", "label": "dario_completa2", "shape": "dot", "size": 11.666666666666666, "title": "dario_completa2\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_jj_lugones", "label": "El signo prohibido de Leopoldo Lugones", "shape": "dot", "size": 11.666666666666666, "title": "El signo prohibido de Leopoldo Lugones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_tiempo_argentino", "label": "Tiempo Argentino", "shape": "dot", "size": 11.666666666666666, "title": "Tiempo Argentino\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_montanias", "label": "Las monta\u00f1as del oro", "shape": "dot", "size": 11.666666666666666, "title": "Las monta\u00f1as del oro\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_crepusculos", "label": "Los crep\u00fasculos del jard\u00edn", "shape": "dot", "size": 11.666666666666666, "title": "Los crep\u00fasculos del jard\u00edn\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_limadurasi", "label": "Las limaduras de Hephaestos I. Piedra...", "shape": "dot", "size": 11.666666666666666, "title": "Las limaduras de Hephaestos I. Piedra...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_completas", "label": "lugones_completas", "shape": "dot", "size": 11.666666666666666, "title": "lugones_completas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "molloy_dario", "label": "molloy_dario", "shape": "dot", "size": 11.666666666666666, "title": "molloy_dario\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paz_hijos_limo", "label": "Los hijos del limo", "shape": "dot", "size": 11.666666666666666, "title": "Los hijos del limo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sarduy_escrito_cuerpo", "label": "Escrito sobre un cuerpo", "shape": "dot", "size": 11.666666666666666, "title": "Escrito sobre un cuerpo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "tinianov_problema_lengua", "label": "El problema de la lengua po\u00e9tica", "shape": "dot", "size": 11.666666666666666, "title": "El problema de la lengua po\u00e9tica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "vinias_sarmiento_cortazar", "label": "Literatura argentina y realidad pol\u00edt...", "shape": "dot", "size": 11.666666666666666, "title": "Literatura argentina y realidad pol\u00edt...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_panesi", "label": "Jorge Panesi", "shape": "square", "size": 21.666666666666668, "title": "Jorge Panesi\u003cbr\u003eType: author\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_traicion", "label": "La traici\u00f3n de Rita Hayworth", "shape": "dot", "size": 11.666666666666666, "title": "La traici\u00f3n de Rita Hayworth\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_maldicion", "label": "Maldici\u00f3n eterna a quien lea estas p\u00e1...", "shape": "dot", "size": 11.666666666666666, "title": "Maldici\u00f3n eterna a quien lea estas p\u00e1...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_beso", "label": "El beso de la mujer ara\u00f1a", "shape": "dot", "size": 11.666666666666666, "title": "El beso de la mujer ara\u00f1a\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_sangre", "label": "Sangre de amor correspondido", "shape": "dot", "size": 11.666666666666666, "title": "Sangre de amor correspondido\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "choderlos_amistades_peligrosas", "label": "Las amistades peligrosas", "shape": "dot", "size": 11.666666666666666, "title": "Las amistades peligrosas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_pubis", "label": "Pubis angelical", "shape": "dot", "size": 11.666666666666666, "title": "Pubis angelical\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_boquitas_pintadas", "label": "Boquitas pintadas", "shape": "dot", "size": 11.666666666666666, "title": "Boquitas pintadas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}]);
+                  edges = new vis.DataSet([{"from": "ramon_alcalde", "to": "revista_pie_de_pagina", "value": 1}, {"from": "ramon_alcalde", "to": "revista_sitio", "value": 1}, {"from": "ramon_alcalde", "to": "correas_reportajes", "value": 3}, {"from": "ramon_alcalde", "to": "genet_journal", "value": 1}, {"from": "ramon_alcalde", "to": "revista_sur", "value": 1}, {"from": "ramon_alcalde", "to": "melville_moby_dick", "value": 1}, {"from": "ramon_alcalde", "to": "stendhal_cartuja", "value": 1}, {"from": "ramon_alcalde", "to": "conrad_corazon_tinieblas", "value": 1}, {"from": "ramon_alcalde", "to": "maupassant_bola_sebo", "value": 1}, {"from": "ramon_alcalde", "to": "euclides_elementos", "value": 1}, {"from": "ramon_alcalde", "to": "sarmiento_facundo", "value": 1}, {"from": "ramon_alcalde", "to": "echeverria_matadero", "value": 1}, {"from": "ramon_alcalde", "to": "arlt_siete_locos", "value": 1}, {"from": "ramon_alcalde", "to": "punch_judy", "value": 1}, {"from": "ramon_alcalde", "to": "soto_parral", "value": 1}, {"from": "ramon_alcalde", "to": "bella_helena", "value": 1}, {"from": "ramon_alcalde", "to": "princesa_czardas", "value": 1}, {"from": "revista_pie_de_pagina", "to": "eduardo_gruner", "value": 1}, {"from": "revista_pie_de_pagina", "to": "luis_gusman", "value": 1}, {"from": "revista_pie_de_pagina", "to": "jorge_jinkis", "value": 1}, {"from": "eduardo_gruner", "to": "revista_sitio", "value": 2}, {"from": "eduardo_gruner", "to": "kafka_metamorfosis", "value": 1}, {"from": "eduardo_gruner", "to": "melville_moby_dick", "value": 1}, {"from": "eduardo_gruner", "to": "marmol_amalia", "value": 1}, {"from": "eduardo_gruner", "to": "maupassant_horla", "value": 2}, {"from": "eduardo_gruner", "to": "maupassant_bel_ami", "value": 1}, {"from": "eduardo_gruner", "to": "olivari_mosca", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_idiota", "value": 9}, {"from": "eduardo_gruner", "to": "revista_tel_quel", "value": 1}, {"from": "eduardo_gruner", "to": "revista_poetique", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_que_es_literatura", "value": 1}, {"from": "eduardo_gruner", "to": "revista_contorno", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_ser_nada", "value": 2}, {"from": "eduardo_gruner", "to": "sartre_imaginario", "value": 1}, {"from": "eduardo_gruner", "to": "flaubert_bouvard", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_nausea", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_palabras", "value": 1}, {"from": "luis_gusman", "to": "revista_sitio", "value": 1}, {"from": "luis_gusman", "to": "borges_pierre_menard", "value": 2}, {"from": "luis_gusman", "to": "barthes_plaisir_texte", "value": 1}, {"from": "luis_gusman", "to": "borges_sobre_vathek", "value": 1}, {"from": "luis_gusman", "to": "beckford_vathek", "value": 2}, {"from": "luis_gusman", "to": "melville_moby_dick", "value": 1}, {"from": "luis_gusman", "to": "gombrowicz_hechizados", "value": 1}, {"from": "luis_gusman", "to": "byron_childe", "value": 1}, {"from": "luis_gusman", "to": "mansilla_entre_nos", "value": 2}, {"from": "luis_gusman", "to": "vinias_escritor_gentleman", "value": 1}, {"from": "luis_gusman", "to": "estrada_viaje_nilo", "value": 1}, {"from": "luis_gusman", "to": "deleuze_mille_plateaux", "value": 1}, {"from": "luis_gusman", "to": "revista_contorno", "value": 1}, {"from": "luis_gusman", "to": "sartre_san_genet", "value": 1}, {"from": "luis_gusman", "to": "sarmiento_facundo", "value": 1}, {"from": "luis_gusman", "to": "arlt_africa", "value": 2}, {"from": "luis_gusman", "to": "arlt_criador_gorilas", "value": 1}, {"from": "luis_gusman", "to": "arlt_rahutia", "value": 1}, {"from": "luis_gusman", "to": "arlt_desierto_ciudad", "value": 2}, {"from": "luis_gusman", "to": "arlt_aguafuertes_espaniolas", "value": 1}, {"from": "luis_gusman", "to": "arlt_aguafuertes_portenias", "value": 1}, {"from": "luis_gusman", "to": "arlt_siete_locos", "value": 1}, {"from": "jorge_jinkis", "to": "revista_sitio", "value": 1}, {"from": "revista_sitio", "to": "jorge_monteleone", "value": 1}, {"from": "melville_moby_dick", "to": "santiago_bullrich", "value": 1}, {"from": "barthes_plaisir_texte", "to": "jorge_monteleone", "value": 1}, {"from": "juan_bautista_ritvo", "to": "gombrowicz_ferdydurke", "value": 1}, {"from": "juan_bautista_ritvo", "to": "astrada_mito_gaucho", "value": 1}, {"from": "juan_bautista_ritvo", "to": "astrada_esfinge_sombra", "value": 1}, {"from": "juan_bautista_ritvo", "to": "astrada_juego_metafisico", "value": 1}, {"from": "juan_bautista_ritvo", "to": "astrada_revolucion", "value": 1}, {"from": "juan_bautista_ritvo", "to": "borges_nueva_refutacion_tiempo", "value": 1}, {"from": "santiago_bullrich", "to": "joyce_finnegans", "value": 4}, {"from": "santiago_bullrich", "to": "mutt_jeff", "value": 1}, {"from": "santiago_bullrich", "to": "poe_cuervo", "value": 1}, {"from": "santiago_bullrich", "to": "rimbaud_barco_ebrio", "value": 1}, {"from": "santiago_bullrich", "to": "carroll_alicia", "value": 2}, {"from": "santiago_bullrich", "to": "carroll_alicia_espejo", "value": 1}, {"from": "santiago_bullrich", "to": "shakespeare_tempestad", "value": 1}, {"from": "santiago_bullrich", "to": "cervantes_quijote", "value": 1}, {"from": "santiago_bullrich", "to": "shakespeare_hamlet", "value": 1}, {"from": "luis_chitarroni", "to": "dabove_ser_polvo", "value": 4}, {"from": "luis_chitarroni", "to": "junger_diarios", "value": 1}, {"from": "enrique_pezzoni", "to": "hernandez_tal_vez", "value": 1}, {"from": "enrique_pezzoni", "to": "hernandez_casa_inundada", "value": 1}, {"from": "enrique_pezzoni", "to": "hernandez_ursula", "value": 1}, {"from": "enrique_pezzoni", "to": "hernandez_acomodador", "value": 6}, {"from": "enrique_pezzoni", "to": "hernandez_menos_julia", "value": 16}, {"from": "enrique_pezzoni", "to": "hernandez_hortensias", "value": 13}, {"from": "enrique_pezzoni", "to": "hernandez_tierras_memoria", "value": 1}, {"from": "enrique_pezzoni", "to": "hernandez_obras_completas", "value": 4}, {"from": "enrique_pezzoni", "to": "barthes_sz", "value": 1}, {"from": "raul_zoppi", "to": "barrenechea_macedonio", "value": 1}, {"from": "raul_zoppi", "to": "fernandez_vigilia", "value": 1}, {"from": "raul_zoppi", "to": "fernandez_bases_metafisica", "value": 1}, {"from": "jorge_monteleone", "to": "barthes_fragmentos", "value": 2}, {"from": "jorge_monteleone", "to": "lugones_limadurasii", "value": 2}, {"from": "jorge_monteleone", "to": "praz_carne_muerte", "value": 2}, {"from": "jorge_monteleone", "to": "borges_kafka_precursores", "value": 1}, {"from": "jorge_monteleone", "to": "bataille_erotismo", "value": 2}, {"from": "jorge_monteleone", "to": "bajtin_esthetique", "value": 1}, {"from": "jorge_monteleone", "to": "borges_lugones", "value": 1}, {"from": "jorge_monteleone", "to": "borges_otras_inquisiciones", "value": 1}, {"from": "jorge_monteleone", "to": "brooks_poetry", "value": 1}, {"from": "jorge_monteleone", "to": "canal_feijoo_lugones", "value": 1}, {"from": "jorge_monteleone", "to": "dario_completa2", "value": 1}, {"from": "jorge_monteleone", "to": "hernandez_jj_lugones", "value": 1}, {"from": "jorge_monteleone", "to": "revista_tiempo_argentino", "value": 1}, {"from": "jorge_monteleone", "to": "lugones_montanias", "value": 1}, {"from": "jorge_monteleone", "to": "lugones_crepusculos", "value": 1}, {"from": "jorge_monteleone", "to": "lugones_limadurasi", "value": 1}, {"from": "jorge_monteleone", "to": "lugones_completas", "value": 1}, {"from": "jorge_monteleone", "to": "molloy_dario", "value": 1}, {"from": "jorge_monteleone", "to": "paz_hijos_limo", "value": 1}, {"from": "jorge_monteleone", "to": "sarduy_escrito_cuerpo", "value": 1}, {"from": "jorge_monteleone", "to": "tinianov_problema_lengua", "value": 1}, {"from": "jorge_monteleone", "to": "vinias_sarmiento_cortazar", "value": 1}, {"from": "jorge_panesi", "to": "puig_traicion", "value": 27}, {"from": "jorge_panesi", "to": "puig_maldicion", "value": 13}, {"from": "jorge_panesi", "to": "puig_beso", "value": 6}, {"from": "jorge_panesi", "to": "puig_sangre", "value": 1}, {"from": "jorge_panesi", "to": "choderlos_amistades_peligrosas", "value": 1}, {"from": "jorge_panesi", "to": "puig_pubis", "value": 2}, {"from": "jorge_panesi", "to": "puig_boquitas_pintadas", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -2000,
+            "springConstant": 0.001,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

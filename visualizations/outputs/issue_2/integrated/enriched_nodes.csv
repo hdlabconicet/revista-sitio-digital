@@ -1,0 +1,101 @@
+id,name,type,country,region,period,birth_year,in_degree,out_degree
+ramon_alcalde,Ramón Alcalde,author,Argentina,Latin America,Contemporary,1951.0,0,24
+kant,Immanuel Kant,cited,Germany,Western Europe,Early Modern,1724.0,6,0
+hector_grisafi,Héctor Grisafi,author,Argentina,Latin America,Unknown,,0,24
+eduardo_gruner,Eduardo Grüner,author,Argentina,Latin America,Contemporary,1946.0,0,24
+luis_gusman,Luis Gusmán,author,Argentina,Latin America,World Wars Era,1944.0,0,39
+jorge_jinkis,Jorge Jinkis,author,Argentina,Latin America,World Wars Era,1943.0,1,27
+hugo_savino,Hugo Savino,author,Argentina,Latin America,Contemporary,1945.0,0,24
+ronald_reagan,Ronald Reagan,cited,United States,North America,Long 19th Century,1911.0,6,0
+paul_groussac,Paul Groussac,cited,Toulouse,Other/Unknown,Long 19th Century,1848.0,6,0
+alfredo_palacios,Alfredo Palacios,cited,Buenos Aires,Other/Unknown,Long 19th Century,1878.0,6,0
+juan_domingo_peron,Juan Domingo Perón,cited,Argentina,Latin America,Long 19th Century,1895.0,6,0
+costa_mendez,Nicanor Costa Méndez,cited,Buenos Aires,Other/Unknown,World Wars Era,1922.0,6,0
+benjamin_menendez,Mario Benjamín Menéndez,cited,Argentina,Latin America,World Wars Era,1930.0,6,0
+juan_pablo_ii,Juan Pablo II Wojtyła,cited,Poland,Eastern Europe,World Wars Era,1920.0,6,0
+bernardo_neustadt,Bernardo Neustadt,cited,"Iași, Rumania",Other/Unknown,World Wars Era,1925.0,6,0
+leonidas,Leónidas I,cited,Esparta,Other/Unknown,Antiquity (Archaic),-540.0,6,0
+osvaldo_rossler,Osvaldo Rossler,cited,,Other/Unknown,Unknown,,6,0
+borges,Jorge Borges,cited,Argentina,Latin America,Long 19th Century,1899.0,7,0
+martinez_estrada,Ezequiel Martínez Estrada,cited,Argentina,Latin America,Long 19th Century,1895.0,6,0
+friedrich_nietzsche,Friedrich Nietzsche,cited,Germany,Western Europe,Revolutionary Era,1844.0,7,0
+julio_cortazar,Julio Cortázar,cited,Belgium,Western Europe,World Wars Era,1914.0,6,0
+san_martin,José de San Martín,cited,Argentina,Latin America,Early Modern,1778.0,6,0
+napoleon,Napoléon Bonaparte,cited,France,Western Europe,Early Modern,1769.0,6,0
+enrique_santos_discepolo,Enrique Santos Discépolo,cited,Argentina,Latin America,Long 19th Century,1901.0,6,0
+joseph_conrad,Joseph Conrad,cited,Imperio Ruso,Other/Unknown,Long 19th Century,1857.0,6,0
+aristoteles,Aristóteles,cited,Greece,Southern Europe / Classical,Classical Antiquity,-384.0,6,0
+nicomaco,Nicómaco,cited,Greece,Southern Europe / Classical,Classical Antiquity,-384.0,6,0
+rafael_alberto_arrieta,Rafael Alberto Arrieta,cited,Argentina,Latin America,Long 19th Century,1889.0,6,0
+pedro_abelardo,Pedro Abelardo,cited,France,Western Europe,Medieval,1079.0,6,0
+eloisa,Eloísa,cited,France,Western Europe,Medieval,1101.0,6,0
+ricardo_piglia,Ricardo Piglia,cited,Argentina,Latin America,World Wars Era,1940.0,2,0
+leopoldo_lugones,Leopoldo Lugones,cited,Argentina,Latin America,Long 19th Century,1874.0,1,0
+roberto_arlt,Roberto Arlt,cited,Argentina,Latin America,Long 19th Century,1900.0,2,0
+jose_salas_subirat,José Salas Subirat,author,Argentina,Latin America,Long 19th Century,1890.0,0,25
+james_joyce,James Joyce,cited,Ireland,Western Europe,Long 19th Century,1882.0,1,0
+santiago_rueda,Santiago Rueda,cited,Argentina,Latin America,Long 19th Century,1905.0,1,0
+max_dickman,Max Dickmann,cited,Argentina,Latin America,Long 19th Century,1902.0,1,0
+garcia_marquez,Gabriel García Márquez,cited,Colombia,Latin America,World Wars Era,1927.0,1,0
+carl_jung,Carl Gustav Jung,cited,Switzerland,Western Europe,Long 19th Century,1875.0,1,0
+jesus,de Nazaret Jesús,cited,Imperio Romano,Other/Unknown,Hellenistic/Roman,-4.0,1,0
+dante_alighieri,Dante Alighieri,cited,Italy,Western Europe,Medieval,1265.0,1,0
+william_blake,William Blake,cited,United Kingdom,Western Europe,Early Modern,1757.0,1,0
+edgar_allan_poe,Edgar Poe,cited,United States,North America,Revolutionary Era,1809.0,1,0
+baudelaire,Charles Baudelaire,cited,France,Western Europe,Revolutionary Era,1821.0,1,0
+rimbaud,Arthur Rimbaud,cited,France,Western Europe,Long 19th Century,1854.0,1,0
+mallarme,Stéphane Mallarmé,cited,France,Western Europe,Revolutionary Era,1842.0,1,0
+marcel_proust,Marcel Proust,cited,France,Western Europe,Long 19th Century,1871.0,2,0
+paul_valery,Ambroise Valéry,cited,France,Western Europe,Long 19th Century,1871.0,1,0
+rilke,Rainer Rilke,cited,Imperio Austrohúngaro,Other/Unknown,Long 19th Century,1875.0,1,0
+kafka,Franz Kafka,cited,Czech Republic,Eastern Europe,Long 19th Century,1883.0,1,0
+oscar_wilde,Oscar Wilde,cited,Ireland,Western Europe,Long 19th Century,1854.0,1,0
+lautreamont,Comte Lautréamont,cited,Uruguay,Latin America,Revolutionary Era,1846.0,2,0
+heraclito,Heráclito,cited,Greece,Southern Europe / Classical,Antiquity (Archaic),-535.0,1,0
+parmenides,de Elea Parménides,cited,Greece,Southern Europe / Classical,Antiquity (Archaic),-515.0,1,0
+freud,Sigmund Freud,cited,Imperio Austríaco,Other/Unknown,Long 19th Century,1856.0,1,0
+leonid_andreiev,Leonid Andréiev,cited,Russia,Eastern Europe,Long 19th Century,1871.0,1,0
+homero,Homero,cited,Greece,Southern Europe / Classical,Antiquity (Archaic),-750.0,1,0
+victoria_ocampo,Victoria Ocampo,cited,Argentina,Latin America,Long 19th Century,1890.0,1,0
+tata_ocampo,Tata Ocampo,cited,,Other/Unknown,Unknown,,1,0
+manuel_ocampo,Manuel S. Ocampo,cited,,Other/Unknown,Unknown,,1,0
+jose_hernandez,José Hernández,cited,Argentina,Latin America,Revolutionary Era,1834.0,1,0
+florentina_ituarte,Florentina Ituarte,cited,,Other/Unknown,Unknown,,1,0
+stendhal,Stendhal,cited,France,Western Europe,Early Modern,1783.0,1,0
+maurice_blanchot,Maurice Blanchot,cited,France,Western Europe,Long 19th Century,1907.0,1,0
+sarmiento,Domingo Faustino Sarmiento,cited,Argentina,Latin America,Revolutionary Era,1811.0,1,0
+alberto_laiseca,Alberto Laiseca,cited,Argentina,Latin America,World Wars Era,1941.0,1,0
+manuel_puig,Manuel Puig,cited,Argentina,Latin America,World Wars Era,1932.0,1,0
+osvaldo_lamborghini,Osvaldo Lamborghini,cited,Argentina,Latin America,World Wars Era,1940.0,1,0
+mika_waltari,Mika Waltari,cited,"Helsinki, Finlandia",Other/Unknown,Long 19th Century,1908.0,1,0
+henry_rider_haggard,Henry Rider Haggard,cited,United Kingdom,Western Europe,Long 19th Century,1856.0,1,0
+louis_ferdinand_celine,Louis-Ferdinand Céline,cited,France,Western Europe,Long 19th Century,1894.0,1,0
+alicia_gutierrez_reto,Alicia Gutiérrez Reto,author,,Other/Unknown,Unknown,,0,2
+noemi_ulla,Noemí Ulla,cited,Argentina,Latin America,World Wars Era,1941.0,1,0
+franz_schubert,Franz Schubert,cited,Austria,Western Europe,Revolutionary Era,1797.0,1,0
+delia_pasini,Delia Pasini,author,,Other/Unknown,Unknown,,1,1
+arturo_carrera,Arturo Carrera,cited,Argentina,Latin America,Contemporary,1948.0,2,0
+beatriz_castillo,Beatriz Castillo,author,Argentina,Latin America,World Wars Era,1928.0,0,4
+eduardo_mallea,Eduardo Mallea,cited,Argentina,Latin America,Long 19th Century,1903.0,1,0
+jorge_cruz,Jorge Cruz,cited,,Other/Unknown,Unknown,,1,0
+liliana_heer,Liliana Heer,author,Argentina,Latin America,World Wars Era,1943.0,0,2
+sylvia_molloy,Sylvia Molloy,cited,Argentina,Latin America,World Wars Era,1938.0,1,0
+luis_chitarroni,Luis Chitarroni,author,Argentina,Latin America,Contemporary,1958.0,0,15
+alejandra_pizarnik,Alejandra Pizarnik,cited,Argentina,Latin America,World Wars Era,1936.0,1,0
+andre_pieyre,André Pieyre de Mandiargues,cited,France,Western Europe,Long 19th Century,1909.0,1,0
+john_donne,John Donne,cited,United Kingdom,Western Europe,Renaissance,1572.0,1,0
+octavio_paz,Octavio Paz,cited,Mexico,Latin America,World Wars Era,1914.0,1,0
+giordano_bruno,Giordano Bruno,cited,Italy,Western Europe,Renaissance,1548.0,1,0
+fred_hoyle,Fred Hoyle,cited,United Kingdom,Western Europe,World Wars Era,1915.0,1,0
+roland_barthes,Roland Barthes,cited,France,Western Europe,World Wars Era,1915.0,1,0
+yeats,William Butler Yeats,cited,Ireland,Western Europe,Long 19th Century,1865.0,1,0
+safo,Safo,cited,Greece,Southern Europe / Classical,Antiquity (Archaic),-630.0,1,0
+sylvia_plath,Sylvia Plath,cited,United States,North America,World Wars Era,1932.0,1,0
+silvina_ocampo,Silvina Ocampo,cited,Argentina,Latin America,Long 19th Century,1903.0,1,0
+olga_orozco,Olga Orozco,cited,Argentina,Latin America,World Wars Era,1920.0,1,0
+haroldo_campos,Haroldo de Campos,author,Brazil,Latin America,World Wars Era,1929.0,0,1
+goethe,Johann Goethe,cited,Germany,Western Europe,Early Modern,1749.0,1,0
+leonora_carrington,Leonora Carrington,author,United Kingdom,Western Europe,World Wars Era,1917.0,0,3
+pascal,Blaise Pascal,cited,France,Western Europe,Early Modern,1623.0,1,0
+alfonso_xiii,Alfonso XIII de Borbón,cited,Spain,Western Europe,Long 19th Century,1886.0,1,0
+francisco_franco,Francisco Franco,cited,Spain,Western Europe,Long 19th Century,1892.0,1,0

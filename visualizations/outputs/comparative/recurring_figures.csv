@@ -1,0 +1,161 @@
+person_id,name,country,num_issues,issues,total_citations
+borges,Jorge Borges,Argentina,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",125
+gustave_flaubert,Gustave Flaubert,France,3,"['issue_1', 'issue_3', 'issue_4-5']",69
+jesus,de Nazaret Jesús,Imperio Romano,4,"['issue_1', 'issue_2', 'issue_3', 'issue_6']",68
+jean_paul_sartre,Jean-Paul Sartre,France,4,"['issue_1', 'issue_3', 'issue_4-5', 'issue_6']",63
+rabelais,François Rabelais,France,2,"['issue_1', 'issue_4-5']",58
+osvaldo_rossler,Osvaldo Rossler,,2,"['issue_2', 'issue_3']",56
+ruben_dario,Rubén Darío,Nicaragua,3,"['issue_1', 'issue_3', 'issue_4-5']",55
+emile_zola,Émile Zola,France,3,"['issue_1', 'issue_3', 'issue_4-5']",49
+macedonio_fernandez,Macedonio Fernández,Argentina,3,"['issue_1', 'issue_3', 'issue_4-5']",46
+david_vinias,David Viñas,Argentina,3,"['issue_3', 'issue_4-5', 'issue_6']",43
+leopoldo_lugones,Leopoldo Lugones,Argentina,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",37
+joseph_conrad,Joseph Conrad,Imperio Ruso,3,"['issue_1', 'issue_2', 'issue_3']",36
+roberto_arlt,Roberto Arlt,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",35
+james_joyce,James Joyce,Ireland,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",34
+silvina_ocampo,Silvina Ocampo,Argentina,2,"['issue_1', 'issue_2']",32
+felisberto_hernandez,Felisberto Hernández,Uruguay,2,"['issue_1', 'issue_4-5']",31
+luis_gusman,Luis Gusmán,Argentina,3,"['issue_1', 'issue_3', 'issue_4-5']",27
+friedrich_nietzsche,Friedrich Nietzsche,Germany,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",24
+kafka,Franz Kafka,Czech Republic,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",23
+jose_marmol,José Mármol,Argentina,2,"['issue_3', 'issue_4-5']",22
+roland_barthes,Roland Barthes,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",21
+martinez_estrada,Ezequiel Martínez Estrada,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",20
+sarmiento,Domingo Faustino Sarmiento,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",20
+balzac,Honoré Balzac,France,3,"['issue_1', 'issue_4-5', 'issue_6']",18
+juan_manuel_rosas,Juan Manuel de Rosas,Argentina,2,"['issue_3', 'issue_4-5']",18
+manuel_puig,Manuel Puig,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",17
+aristoteles,Aristóteles,Greece,3,"['issue_1', 'issue_2', 'issue_3']",15
+juan_domingo_peron,Juan Domingo Perón,Argentina,4,"['issue_2', 'issue_3', 'issue_4-5', 'issue_6']",15
+enrique_santos_discepolo,Enrique Santos Discépolo,Argentina,2,"['issue_2', 'issue_3']",15
+juan_bautista_alberdi,Juan Bautista Alberdi,Argentina,2,"['issue_3', 'issue_4-5']",15
+santiago_dabove,Santiago Dabove,Argentina,2,"['issue_3', 'issue_4-5']",15
+spinoza,Baruch Spinoza,Netherlands,2,"['issue_1', 'issue_4-5']",14
+ricardo_piglia,Ricardo Piglia,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",14
+juan_jose_sebreli,Juan José Sebreli,Argentina,2,"['issue_3', 'issue_4-5']",14
+samuel_beckett,Samuel Beckett,Ireland,3,"['issue_1', 'issue_3', 'issue_4-5']",13
+platon,Platón,Greece,4,"['issue_1', 'issue_3', 'issue_4-5', 'issue_6']",13
+bajtin,Mijaíl Bajtín,"Oriol, Imperio Ruso",3,"['issue_1', 'issue_3', 'issue_4-5']",13
+freud,Sigmund Freud,Imperio Austríaco,5,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5', 'issue_6']",13
+esteban_echeverria,Esteban Echeverría,Virreinato del Río de la Plata,3,"['issue_1', 'issue_3', 'issue_4-5']",13
+alfredo_palacios,Alfredo Palacios,Buenos Aires,3,"['issue_2', 'issue_3', 'issue_4-5']",13
+raul_alfonsin,Raúl Alfonsín,Argentina,3,"['issue_3', 'issue_4-5', 'issue_6']",13
+paul_valery,Ambroise Valéry,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",12
+louis_ferdinand_celine,Louis-Ferdinand Céline,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",12
+mallarme,Stéphane Mallarmé,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",12
+kant,Immanuel Kant,Germany,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",12
+baudelaire,Charles Baudelaire,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",12
+julio_cortazar,Julio Cortázar,Belgium,3,"['issue_1', 'issue_2', 'issue_3']",12
+ronald_reagan,Ronald Reagan,United States,3,"['issue_1', 'issue_2', 'issue_6']",12
+maupassant,Guy Maupassant,France,2,"['issue_1', 'issue_4-5']",12
+karl_marx,Karl Marx,Germany,3,"['issue_1', 'issue_4-5', 'issue_6']",12
+melville,Herman Melville,United States,3,"['issue_1', 'issue_3', 'issue_4-5']",11
+michel_foucault,Michel Foucault,France,3,"['issue_1', 'issue_4-5', 'issue_6']",10
+fiodor_dostoyevski,Fiódor Dostoyevski,"Moscú, Imperio Ruso",3,"['issue_1', 'issue_3', 'issue_4-5']",10
+jose_hernandez,José Hernández,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",10
+maurice_blanchot,Maurice Blanchot,France,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",9
+georges_bataille,Georges Bataille,France,2,"['issue_1', 'issue_4-5']",9
+oscar_masotta,Óscar Masotta,Argentina,3,"['issue_1', 'issue_3', 'issue_4-5']",9
+shakespeare,William Shakespeare,United Kingdom,3,"['issue_1', 'issue_3', 'issue_4-5']",9
+lezama_lima,José Lezama Lima,Cuba,3,"['issue_1', 'issue_3', 'issue_4-5']",9
+walter_benjamin,Walter Benjamin,Germany,3,"['issue_1', 'issue_3', 'issue_4-5']",9
+carl_jung,Carl Gustav Jung,Switzerland,3,"['issue_2', 'issue_3', 'issue_4-5']",9
+philippe_aries,Philippe Ariès,France,2,"['issue_3', 'issue_4-5']",9
+ana_barrenechea,Ana Barrenechea,Argentina,2,"['issue_1', 'issue_4-5']",8
+johann_herder,Johann Herder,Germany,2,"['issue_1', 'issue_3']",8
+hegel,Georg Wilhelm Friedrich Hegel,Germany,2,"['issue_3', 'issue_4-5']",8
+pascal,Blaise Pascal,France,3,"['issue_1', 'issue_2', 'issue_3']",7
+edgar_allan_poe,Edgar Poe,United States,3,"['issue_1', 'issue_2', 'issue_4-5']",7
+victor_hugo,Victor Hugo,France,3,"['issue_1', 'issue_3', 'issue_4-5']",7
+dante_alighieri,Dante Alighieri,Italy,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",7
+san_agustin,de Hipona Agustín,Imperio Romano,4,"['issue_1', 'issue_3', 'issue_4-5', 'issue_6']",7
+costa_mendez,Nicanor Costa Méndez,Buenos Aires,2,"['issue_2', 'issue_3']",7
+benjamin_menendez,Mario Benjamín Menéndez,Argentina,2,"['issue_2', 'issue_3']",7
+napoleon,Napoléon Bonaparte,France,2,"['issue_2', 'issue_3']",7
+witold_gombrowicz,Witold Gombrowicz,Poland,2,"['issue_3', 'issue_4-5']",7
+hector_campora,Héctor Cámpora,Argentina,2,"['issue_3', 'issue_4-5']",7
+canal_feijoo,Bernardo Canal Feijóo,Argentina,2,"['issue_3', 'issue_4-5']",7
+jose_luis_romero,José Luis Romero,Argentina,2,"['issue_3', 'issue_4-5']",7
+levi_strauss,Claude Lévi-Strauss,Belgium,2,"['issue_3', 'issue_4-5']",7
+schleiermacher,Friedrich Schleiermacher,Germany,2,"['issue_1', 'issue_4-5']",6
+soren_kierkegaard,Søren Kierkegaard,Denmark,4,"['issue_1', 'issue_3', 'issue_4-5', 'issue_6']",6
+martin_heidegger,Martin Heidegger,Germany,3,"['issue_1', 'issue_3', 'issue_4-5']",6
+bioy_casares,Adolfo Bioy Casares,Argentina,2,"['issue_1', 'issue_3']",6
+octavio_paz,Octavio Paz,Mexico,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",6
+goethe,Johann Goethe,Germany,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",6
+holderlin,Johann Hölderlin,Germany,3,"['issue_1', 'issue_3', 'issue_4-5']",6
+raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,Argentina,2,"['issue_3', 'issue_4-5']",6
+jorge_jinkis,Jorge Jinkis,Argentina,3,"['issue_1', 'issue_2', 'issue_3']",5
+socrates,Sócrates,Greece,2,"['issue_1', 'issue_3']",5
+homero,Homero,Greece,4,"['issue_1', 'issue_2', 'issue_3', 'issue_4-5']",5
+nicolas_condorcet,Nicolas Condorcet,France,2,"['issue_1', 'issue_3']",5
+lacan,Jacques Lacan,France,2,"['issue_1', 'issue_4-5']",5
+ts_eliot,T. Eliot,United States,2,"['issue_1', 'issue_3']",5
+ernesto_sabato,Ernesto Sabato,Argentina,3,"['issue_1', 'issue_3', 'issue_4-5']",5
+marcel_proust,Marcel Proust,France,3,"['issue_1', 'issue_2', 'issue_3']",5
+severo_sarduy,Severo Sarduy,Cuba,2,"['issue_1', 'issue_4-5']",5
+george_steiner,George Steiner,France,3,"['issue_1', 'issue_3', 'issue_4-5']",5
+oscar_wilde,Oscar Wilde,Ireland,3,"['issue_2', 'issue_3', 'issue_4-5']",5
+alberto_laiseca,Alberto Laiseca,Argentina,2,"['issue_2', 'issue_3']",5
+arturo_frondizi,Arturo Frondizi,Argentina,2,"['issue_3', 'issue_4-5']",5
+hector_murena,Héctor Murena,Argentina,2,"['issue_3', 'issue_4-5']",5
+francois_mitterrand,François Mitterrand,France,2,"['issue_3', 'issue_6']",5
+julia_kristeva,Julia Kristeva,"Sliven, Bulgaria",2,"['issue_4-5', 'issue_6']",5
+william_faulkner,William Faulkner,United States,3,"['issue_1', 'issue_3', 'issue_4-5']",4
+garcia_marquez,Gabriel García Márquez,Colombia,2,"['issue_1', 'issue_2']",4
+vladimir_nabokov,Vladimir Nabokov,"San Petesburgo, Imperio Ruso",2,"['issue_1', 'issue_3']",4
+henry_james,Henry James,United States,2,"['issue_1', 'issue_3']",4
+sylvia_molloy,Sylvia Molloy,Argentina,3,"['issue_1', 'issue_2', 'issue_4-5']",4
+cervantes,Miguel Cervantes,Spain,3,"['issue_1', 'issue_3', 'issue_4-5']",4
+francisco_franco,Francisco Franco,Spain,3,"['issue_1', 'issue_2', 'issue_3']",4
+rimbaud,Arthur Rimbaud,France,3,"['issue_2', 'issue_3', 'issue_4-5']",4
+guillermo_hudson,William Henry Hudson,Argentina,2,"['issue_3', 'issue_4-5']",4
+tinianov,Yuri Tiniánov,"Rezekne, Letonia",2,"['issue_3', 'issue_4-5']",4
+thomas_carlyle,Thomas Carlyle,Escocia,2,"['issue_1', 'issue_4-5']",3
+edward_gibbon,Edward Gibbon,United Kingdom,2,"['issue_1', 'issue_3']",3
+bosco,Hieronymus Bosch,Netherlands,2,"['issue_1', 'issue_3']",3
+da_vinci,Leonardo Vinci,Italy,2,"['issue_1', 'issue_4-5']",3
+arcimboldo,Giuseppe Arcimboldo,Italy,3,"['issue_1', 'issue_3', 'issue_4-5']",3
+spitzer,Leo Spitzer,Austria,2,"['issue_1', 'issue_4-5']",3
+todorov,Tzvetan Todorov,Bulgaria,2,"['issue_1', 'issue_4-5']",3
+henri_bergson,Henri Bergson,France,2,"['issue_1', 'issue_4-5']",3
+zaratustra,Zaratustra,Imperio Medo,3,"['issue_1', 'issue_3', 'issue_4-5']",3
+jonathan_swift,Jonathan Swift,Ireland,2,"['issue_1', 'issue_3']",3
+charles_dickens,Charles Dickens,United Kingdom,3,"['issue_1', 'issue_3', 'issue_4-5']",3
+hugo_savino,Hugo Savino,Argentina,2,"['issue_1', 'issue_3']",3
+rilke,Rainer Rilke,Imperio Austrohúngaro,3,"['issue_1', 'issue_2', 'issue_3']",3
+osvaldo_lamborghini,Osvaldo Lamborghini,Argentina,3,"['issue_2', 'issue_3', 'issue_4-5']",3
+franz_schubert,Franz Schubert,Austria,2,"['issue_2', 'issue_4-5']",3
+gongora,Luis de Góngora y Argote,Spain,2,"['issue_3', 'issue_4-5']",3
+leopoldo_galtieri,Leopoldo Fortunato Galtieri,Argentina,2,"['issue_3', 'issue_6']",3
+basilio_lami_dozo,Basilio Lami Dozo,Argentina,2,"['issue_3', 'issue_6']",3
+lord_byron,George Gordon Byron,United Kingdom,2,"['issue_3', 'issue_4-5']",3
+italo_calvino,Italo Calvino,Cuba,2,"['issue_3', 'issue_4-5']",3
+antonio_gramsci,Antonio Gramsci,Italy,2,"['issue_4-5', 'issue_6']",3
+horacio,Quinto Horacio,Italy,2,"['issue_1', 'issue_3']",2
+andre_gide,André Gide,France,2,"['issue_1', 'issue_4-5']",2
+john_donne,John Donne,United Kingdom,2,"['issue_1', 'issue_2']",2
+parmenides,de Elea Parménides,Greece,2,"['issue_1', 'issue_2']",2
+ernst_curtius,Ernst Curtius,Germany,2,"['issue_1', 'issue_4-5']",2
+harold_bloom,Harold Bloom,United States,2,"['issue_1', 'issue_4-5']",2
+miguel_d_ors,Miguel d'Ors,Spain,2,"['issue_1', 'issue_4-5']",2
+michel_leiris,Michel Leiris,France,2,"['issue_1', 'issue_4-5']",2
+jean_luc_godard,Jean-Luc Godard,France,2,"['issue_1', 'issue_4-5']",2
+plinio,el Viejo Plinio,Italy,2,"['issue_1', 'issue_3']",2
+robert_musil,Robert Musil,Austria,2,"['issue_1', 'issue_3']",2
+chaucer,Geoffrey Chaucer,United Kingdom,2,"['issue_1', 'issue_3']",2
+george_sand,George Sand,France,2,"['issue_1', 'issue_3']",2
+hippolyte_taine,Hippolyte Taine,France,2,"['issue_1', 'issue_3']",2
+charles_darwin,Charles Darwin,United Kingdom,2,"['issue_1', 'issue_3']",2
+jean_martin_charcot,Jean-Martin Charcot,France,2,"['issue_1', 'issue_4-5']",2
+jules_michelet,Jules Michelet,France,2,"['issue_1', 'issue_3']",2
+stendhal,Stendhal,France,2,"['issue_1', 'issue_2']",2
+john_milton,John Milton,United Kingdom,2,"['issue_1', 'issue_3']",2
+jorge_anaya,Jorge Isaac Anaya,Argentina,2,"['issue_3', 'issue_6']",2
+chesterton,Gilbert Keith Chesterton,United Kingdom,2,"['issue_3', 'issue_4-5']",2
+de_quincey,Thomas De Quincey,United Kingdom,2,"['issue_3', 'issue_4-5']",2
+beatriz_sarlo,Beatriz Sarlo,Argentina,2,"['issue_3', 'issue_6']",2
+jean_starobinski,Jean Starobinski,Switzerland,2,"['issue_3', 'issue_4-5']",2
+algirdas_greimas,Algirdas Julien Greimas,Russia,2,"['issue_4-5', 'issue_6']",2
+juan_carlos_ongania,Juan Carlos Onganía,Argentina,2,"['issue_4-5', 'issue_6']",2
+carl_von_clausewitz,Carl von Clausewitz,Germany,2,"['issue_4-5', 'issue_6']",2

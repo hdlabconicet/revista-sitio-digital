@@ -1,0 +1,73 @@
+{
+  "temporal": {
+    "min_year": -750,
+    "max_year": 1958,
+    "median_year": 1893,
+    "mean_year": 1670.9,
+    "std_year": 646.7,
+    "count_with_dates": 102,
+    "count_without_dates": 8
+  },
+  "geographic": {
+    "countries": {
+      "Argentina": 40,
+      "France": 15,
+      "United Kingdom": 6,
+      "Greece": 6,
+      "Germany": 3,
+      "United States": 3,
+      "Ireland": 3,
+      "Uruguay": 2,
+      "Italy": 2,
+      "Brazil": 2,
+      "Buenos Aires": 2,
+      "Spain": 2,
+      "Czech Republic": 1,
+      "Imperio Austríaco": 1,
+      "Colombia": 1,
+      "Belgium": 1,
+      "Imperio Romano": 1,
+      "Imperio Austrohúngaro": 1,
+      "Mexico": 1,
+      "Peru": 1,
+      "Imperio Ruso": 1,
+      "Toulouse": 1,
+      "Poland": 1,
+      "Iași, Rumania": 1,
+      "Esparta": 1,
+      "Helsinki, Finlandia": 1,
+      "Austria": 1,
+      "Switzerland": 1,
+      "Russia": 1
+    },
+    "regions": {
+      "Latin America": 47,
+      "Western Europe": 34,
+      "Other/Unknown": 17,
+      "Southern Europe / Classical": 6,
+      "Eastern Europe": 3,
+      "North America": 3
+    },
+    "num_countries": 29,
+    "num_regions": 6
+  },
+  "periods": {
+    "Long 19th Century": 38,
+    "World Wars Era": 29,
+    "Revolutionary Era": 8,
+    "Unknown": 8,
+    "Early Modern": 7,
+    "Contemporary": 6,
+    "Antiquity (Archaic)": 5,
+    "Medieval": 3,
+    "Renaissance": 3,
+    "Classical Antiquity": 2,
+    "Hellenistic/Roman": 1
+  },
+  "lifespan": {
+    "mean": 66.1,
+    "median": 67,
+    "min": 24,
+    "max": 96
+  }
+}

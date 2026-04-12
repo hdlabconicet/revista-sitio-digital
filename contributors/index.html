@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista SITIO — Afinidades editoriales</title>
+    <link rel="stylesheet" href="../shared/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="sitio-nav">
+        <a href="../sigma-viz/">Red</a>
+        <a href="../map/">Comunidades</a>
+        <a href="../timeline/">Figuras</a>
+        <a href="../contributors/" class="active">Afinidades</a>
+        <a href="../flows/">Flujos</a>
+        <a href="../shadows/">Resistencias</a>
+    </nav>
+
+    <header id="top-bar">
+        <div id="title-section">
+            <h1>Afinidades editoriales</h1>
+            <span class="subtitle">Superposición de citas entre colaboradores/as de SITIO — ¿quiénes leen a las mismas figuras?</span>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="matrix-section">
+            <canvas id="matrix-canvas"></canvas>
+        </div>
+        <div id="detail-section" class="hidden">
+            <div id="pair-detail" class="hidden">
+                <h3 id="pair-title"></h3>
+                <p id="pair-stats"></p>
+                <div id="pair-shared"></div>
+            </div>
+            <div id="single-detail" class="hidden">
+                <h3 id="single-name"></h3>
+                <div id="single-meta"></div>
+                <div id="single-top-cited"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

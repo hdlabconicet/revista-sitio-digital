@@ -1,0 +1,51 @@
+country,count,median_birth_year
+France,104,1846.5
+Argentina,37,1927.0
+Germany,31,1792.0
+Italy,25,1457.5
+United States,20,1902.0
+Spain,18,1891.5
+United Kingdom,17,1809.0
+Greece,14,-465.0
+Imperio Romano,10,6.0
+Ireland,7,1838.0
+Netherlands,6,1582.0
+Poland,6,1891.5
+Cuba,6,1911.0
+Switzerland,6,1894.5
+Imperio Ruso,5,1883.0
+Austria,5,1889.0
+Escocia,3,1771.0
+Denmark,3,1859.0
+Uruguay,3,1921.0
+Mexico,3,1914.0
+Belgium,2,1898.5
+Hungary,2,1854.0
+Imperio Medo,2,-614.0
+"Moscú, Imperio Ruso",2,1819.5
+Imperio alemán,2,1889.0
+Imperio Austríaco,2,1857.5
+Guatemala,1,1857.0
+Frigia,1,
+Colombia,1,1927.0
+Bulgaria,1,1939.0
+Canadá,1,1874.0
+Chile,1,1924.0
+Czech Republic,1,1883.0
+Arabia,1,570.0
+Nicaragua,1,1867.0
+Israel,1,263.0
+Japan,1,1898.0
+Lidia,1,-596.0
+Imperio Austrohúngaro,1,1875.0
+Imperio Samánida,1,980.0
+Peru,1,1903.0
+"Oriol, Imperio Ruso",1,1895.0
+"San Petesburgo, Imperio Ruso",1,1899.0
+Russia,1,1825.0
+República Dominicana,1,1884.0
+Reino de Rumania,1,1920.0
+Protectorado español de Marruecos,1,1932.0
+Unión Soviética,1,1932.0
+Virreinato de Nueva Granada,1,1780.0
+Virreinato del Río de la Plata,1,1805.0

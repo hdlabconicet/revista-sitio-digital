@@ -1,0 +1,1121 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/css/tom-select.min.css" integrity="sha512-43fHB3GLgZfz8QXl1RPQ8O66oIgv3po9cJ5erMt1c4QISq9dYb195T3vr5ImnJPXuVroKcGBPXBFKETW8jrPNQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/tom-select/2.0.0-rc.4/js/tom-select.complete.js" integrity="sha512-jeF9CfnvzDiw9G9xiksVjxR2lib44Gnovvkv+3CgCG6NXCD4gqlA5nDAVW5WjpA+i+/zKsUWV5xNEbW1X/HH0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 95vh;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="ramon_alcalde">ramon_alcalde</option>
+                                
+                                    <option value="abelardo_castillo">abelardo_castillo</option>
+                                
+                                    <option value="eduardo_gruner">eduardo_gruner</option>
+                                
+                                    <option value="luis_gusman">luis_gusman</option>
+                                
+                                    <option value="jorge_jinkis">jorge_jinkis</option>
+                                
+                                    <option value="oswald_spengler">oswald_spengler</option>
+                                
+                                    <option value="federico_sainz_de_robles">federico_sainz_de_robles</option>
+                                
+                                    <option value="esteban_echeverria">esteban_echeverria</option>
+                                
+                                    <option value="sarmiento">sarmiento</option>
+                                
+                                    <option value="juan_bautista_alberdi">juan_bautista_alberdi</option>
+                                
+                                    <option value="leopoldo_lugones">leopoldo_lugones</option>
+                                
+                                    <option value="manuel_galvez">manuel_galvez</option>
+                                
+                                    <option value="martinez_estrada">martinez_estrada</option>
+                                
+                                    <option value="canal_feijoo">canal_feijoo</option>
+                                
+                                    <option value="hector_murena">hector_murena</option>
+                                
+                                    <option value="carlos_astrada">carlos_astrada</option>
+                                
+                                    <option value="jose_luis_romero">jose_luis_romero</option>
+                                
+                                    <option value="luis_franco">luis_franco</option>
+                                
+                                    <option value="raul_scalabrini_ortiz">raul_scalabrini_ortiz</option>
+                                
+                                    <option value="arturo_jauretche">arturo_jauretche</option>
+                                
+                                    <option value="david_vinias">david_vinias</option>
+                                
+                                    <option value="oscar_masotta">oscar_masotta</option>
+                                
+                                    <option value="juan_jose_sebreli">juan_jose_sebreli</option>
+                                
+                                    <option value="leonardo_castellani">leonardo_castellani</option>
+                                
+                                    <option value="ignacio_anzoategui">ignacio_anzoategui</option>
+                                
+                                    <option value="juan_jose_hernandez_arregui">juan_jose_hernandez_arregui</option>
+                                
+                                    <option value="abelardo_ramos">abelardo_ramos</option>
+                                
+                                    <option value="milciades_penia">milciades_penia</option>
+                                
+                                    <option value="borges">borges</option>
+                                
+                                    <option value="roberto_arlt">roberto_arlt</option>
+                                
+                                    <option value="jaime_rest">jaime_rest</option>
+                                
+                                    <option value="pierre_chaunu">pierre_chaunu</option>
+                                
+                                    <option value="san_agustin">san_agustin</option>
+                                
+                                    <option value="jean_paul_sartre">jean_paul_sartre</option>
+                                
+                                    <option value="jean_yves_calvez">jean_yves_calvez</option>
+                                
+                                    <option value="levi_strauss">levi_strauss</option>
+                                
+                                    <option value="angel_rama">angel_rama</option>
+                                
+                                    <option value="alfredo_palacios">alfredo_palacios</option>
+                                
+                                    <option value="arturo_frondizi">arturo_frondizi</option>
+                                
+                                    <option value="hector_campora">hector_campora</option>
+                                
+                                    <option value="juan_domingo_peron">juan_domingo_peron</option>
+                                
+                                    <option value="raul_alfonsin">raul_alfonsin</option>
+                                
+                                    <option value="louis_althusser">louis_althusser</option>
+                                
+                                    <option value="roland_barthes">roland_barthes</option>
+                                
+                                    <option value="jacques_derrida">jacques_derrida</option>
+                                
+                                    <option value="julia_kristeva">julia_kristeva</option>
+                                
+                                    <option value="spinoza">spinoza</option>
+                                
+                                    <option value="friedrich_nietzsche">friedrich_nietzsche</option>
+                                
+                                    <option value="fiodor_dostoyevski">fiodor_dostoyevski</option>
+                                
+                                    <option value="osvaldo_lamborghini">osvaldo_lamborghini</option>
+                                
+                                    <option value="diana_bilmezis">diana_bilmezis</option>
+                                
+                                    <option value="michel_foucault">michel_foucault</option>
+                                
+                                    <option value="jean_starobinski">jean_starobinski</option>
+                                
+                                    <option value="charles_olson">charles_olson</option>
+                                
+                                    <option value="walter_benjamin">walter_benjamin</option>
+                                
+                                    <option value="melville">melville</option>
+                                
+                                    <option value="kafka">kafka</option>
+                                
+                                    <option value="antonio_gramsci">antonio_gramsci</option>
+                                
+                                    <option value="zaratustra">zaratustra</option>
+                                
+                                    <option value="dante_alighieri">dante_alighieri</option>
+                                
+                                    <option value="umberto_eco">umberto_eco</option>
+                                
+                                    <option value="maurice_blanchot">maurice_blanchot</option>
+                                
+                                    <option value="homero">homero</option>
+                                
+                                    <option value="shakespeare">shakespeare</option>
+                                
+                                    <option value="gustave_flaubert">gustave_flaubert</option>
+                                
+                                    <option value="italo_calvino">italo_calvino</option>
+                                
+                                    <option value="ernst_curtius">ernst_curtius</option>
+                                
+                                    <option value="northrop_frye">northrop_frye</option>
+                                
+                                    <option value="george_steiner">george_steiner</option>
+                                
+                                    <option value="vladimir_propp">vladimir_propp</option>
+                                
+                                    <option value="todorov">todorov</option>
+                                
+                                    <option value="algirdas_greimas">algirdas_greimas</option>
+                                
+                                    <option value="paul_valery">paul_valery</option>
+                                
+                                    <option value="samuel_beckett">samuel_beckett</option>
+                                
+                                    <option value="andre_malraux">andre_malraux</option>
+                                
+                                    <option value="viktor_shklovski">viktor_shklovski</option>
+                                
+                                    <option value="henry_de_montherlant">henry_de_montherlant</option>
+                                
+                                    <option value="edgar_allan_poe">edgar_allan_poe</option>
+                                
+                                    <option value="harold_bloom">harold_bloom</option>
+                                
+                                    <option value="jose_marmol">jose_marmol</option>
+                                
+                                    <option value="bajtin">bajtin</option>
+                                
+                                    <option value="rabelais">rabelais</option>
+                                
+                                    <option value="henri_bergson">henri_bergson</option>
+                                
+                                    <option value="freud">freud</option>
+                                
+                                    <option value="mallarme">mallarme</option>
+                                
+                                    <option value="michael_riffaterre">michael_riffaterre</option>
+                                
+                                    <option value="ludwig_wittgenstein">ludwig_wittgenstein</option>
+                                
+                                    <option value="jean_luc_godard">jean_luc_godard</option>
+                                
+                                    <option value="lisa_block">lisa_block</option>
+                                
+                                    <option value="giovanni_morelli">giovanni_morelli</option>
+                                
+                                    <option value="carlo_ginzburg">carlo_ginzburg</option>
+                                
+                                    <option value="perugino">perugino</option>
+                                
+                                    <option value="da_vinci">da_vinci</option>
+                                
+                                    <option value="botticelli">botticelli</option>
+                                
+                                    <option value="cosme_tura">cosme_tura</option>
+                                
+                                    <option value="spitzer">spitzer</option>
+                                
+                                    <option value="schleiermacher">schleiermacher</option>
+                                
+                                    <option value="wilhelm_dilthey">wilhelm_dilthey</option>
+                                
+                                    <option value="gerard_genette">gerard_genette</option>
+                                
+                                    <option value="maupassant">maupassant</option>
+                                
+                                    <option value="nicolas_olivari">nicolas_olivari</option>
+                                
+                                    <option value="benedetto_croce">benedetto_croce</option>
+                                
+                                    <option value="edgar_wind">edgar_wind</option>
+                                
+                                    <option value="macedonio_fernandez">macedonio_fernandez</option>
+                                
+                                    <option value="witold_gombrowicz">witold_gombrowicz</option>
+                                
+                                    <option value="lezama_lima">lezama_lima</option>
+                                
+                                    <option value="thomas_carlyle">thomas_carlyle</option>
+                                
+                                    <option value="miguel_angel">miguel_angel</option>
+                                
+                                    <option value="oscar_wilde">oscar_wilde</option>
+                                
+                                    <option value="william_beckford">william_beckford</option>
+                                
+                                    <option value="robert_louis_stevenson">robert_louis_stevenson</option>
+                                
+                                    <option value="chesterton">chesterton</option>
+                                
+                                    <option value="lord_byron">lord_byron</option>
+                                
+                                    <option value="lucio_mansilla">lucio_mansilla</option>
+                                
+                                    <option value="jacques_benigne_bossuet">jacques_benigne_bossuet</option>
+                                
+                                    <option value="andre_gide">andre_gide</option>
+                                
+                                    <option value="andre_breton">andre_breton</option>
+                                
+                                    <option value="jacques_rigaut">jacques_rigaut</option>
+                                
+                                    <option value="baudelaire">baudelaire</option>
+                                
+                                    <option value="julian_casal">julian_casal</option>
+                                
+                                    <option value="pierre_loti">pierre_loti</option>
+                                
+                                    <option value="paul_nizan">paul_nizan</option>
+                                
+                                    <option value="jose_hernandez">jose_hernandez</option>
+                                
+                                    <option value="rimbaud">rimbaud</option>
+                                
+                                    <option value="michel_leiris">michel_leiris</option>
+                                
+                                    <option value="gilles_deleuze">gilles_deleuze</option>
+                                
+                                    <option value="fenimore_cooper">fenimore_cooper</option>
+                                
+                                    <option value="marcel_schwob">marcel_schwob</option>
+                                
+                                    <option value="carlos_correas">carlos_correas</option>
+                                
+                                    <option value="jean_genet">jean_genet</option>
+                                
+                                    <option value="juan_carlos_ongania">juan_carlos_ongania</option>
+                                
+                                    <option value="juan_manuel_rosas">juan_manuel_rosas</option>
+                                
+                                    <option value="hans_christian_andersen">hans_christian_andersen</option>
+                                
+                                    <option value="hugo_von_hofmannsthal">hugo_von_hofmannsthal</option>
+                                
+                                    <option value="teocrito">teocrito</option>
+                                
+                                    <option value="torquato_tasso">torquato_tasso</option>
+                                
+                                    <option value="edmund_spenser">edmund_spenser</option>
+                                
+                                    <option value="lou_andreas_salome">lou_andreas_salome</option>
+                                
+                                    <option value="varo">varo</option>
+                                
+                                    <option value="virgilio">virgilio</option>
+                                
+                                    <option value="marques_sade">marques_sade</option>
+                                
+                                    <option value="ricardo_zelarayan">ricardo_zelarayan</option>
+                                
+                                    <option value="rodolfo_fogwill">rodolfo_fogwill</option>
+                                
+                                    <option value="euclides">euclides</option>
+                                
+                                    <option value="ernesto_sabato">ernesto_sabato</option>
+                                
+                                    <option value="charles_dickens">charles_dickens</option>
+                                
+                                    <option value="victor_hugo">victor_hugo</option>
+                                
+                                    <option value="emile_zola">emile_zola</option>
+                                
+                                    <option value="guillermo_hudson">guillermo_hudson</option>
+                                
+                                    <option value="johann_winckelmann">johann_winckelmann</option>
+                                
+                                    <option value="balzac">balzac</option>
+                                
+                                    <option value="paul_schreber">paul_schreber</option>
+                                
+                                    <option value="evaristo_carriego">evaristo_carriego</option>
+                                
+                                    <option value="juan_bautista_ritvo">juan_bautista_ritvo</option>
+                                
+                                    <option value="kant">kant</option>
+                                
+                                    <option value="karl_marx">karl_marx</option>
+                                
+                                    <option value="hegel">hegel</option>
+                                
+                                    <option value="goethe">goethe</option>
+                                
+                                    <option value="cervantes">cervantes</option>
+                                
+                                    <option value="george_berkeley">george_berkeley</option>
+                                
+                                    <option value="hg_wells">hg_wells</option>
+                                
+                                    <option value="de_quincey">de_quincey</option>
+                                
+                                    <option value="arthur_schopenhauer">arthur_schopenhauer</option>
+                                
+                                    <option value="platon">platon</option>
+                                
+                                    <option value="patricio_de_azcarate">patricio_de_azcarate</option>
+                                
+                                    <option value="martin_heidegger">martin_heidegger</option>
+                                
+                                    <option value="bartolome_mitre">bartolome_mitre</option>
+                                
+                                    <option value="tomas_de_aquino">tomas_de_aquino</option>
+                                
+                                    <option value="carl_jung">carl_jung</option>
+                                
+                                    <option value="lacan">lacan</option>
+                                
+                                    <option value="david_hume">david_hume</option>
+                                
+                                    <option value="aldous_huxley">aldous_huxley</option>
+                                
+                                    <option value="kemp_smith">kemp_smith</option>
+                                
+                                    <option value="georg_lichtenberg">georg_lichtenberg</option>
+                                
+                                    <option value="tchuang_tzu">tchuang_tzu</option>
+                                
+                                    <option value="holderlin">holderlin</option>
+                                
+                                    <option value="santiago_bullrich">santiago_bullrich</option>
+                                
+                                    <option value="james_joyce">james_joyce</option>
+                                
+                                    <option value="lewis_carroll">lewis_carroll</option>
+                                
+                                    <option value="brian_boru">brian_boru</option>
+                                
+                                    <option value="lucien_goldmann">lucien_goldmann</option>
+                                
+                                    <option value="pierre_bourdieu">pierre_bourdieu</option>
+                                
+                                    <option value="gyorgy_lukacs">gyorgy_lukacs</option>
+                                
+                                    <option value="theodor_adorno">theodor_adorno</option>
+                                
+                                    <option value="raymond_aron">raymond_aron</option>
+                                
+                                    <option value="max_weber">max_weber</option>
+                                
+                                    <option value="nicos_poulantzas">nicos_poulantzas</option>
+                                
+                                    <option value="friedrich_schelling">friedrich_schelling</option>
+                                
+                                    <option value="soren_kierkegaard">soren_kierkegaard</option>
+                                
+                                    <option value="carl_von_clausewitz">carl_von_clausewitz</option>
+                                
+                                    <option value="severo_sarduy">severo_sarduy</option>
+                                
+                                    <option value="mario_vargas_llosa">mario_vargas_llosa</option>
+                                
+                                    <option value="louis_ferdinand_celine">louis_ferdinand_celine</option>
+                                
+                                    <option value="william_faulkner">william_faulkner</option>
+                                
+                                    <option value="luis_chitarroni">luis_chitarroni</option>
+                                
+                                    <option value="santiago_dabove">santiago_dabove</option>
+                                
+                                    <option value="aleksandr_pushkin">aleksandr_pushkin</option>
+                                
+                                    <option value="juan_filiberto">juan_filiberto</option>
+                                
+                                    <option value="ernst_junger">ernst_junger</option>
+                                
+                                    <option value="philippe_aries">philippe_aries</option>
+                                
+                                    <option value="malcolm_lowry">malcolm_lowry</option>
+                                
+                                    <option value="john_keats">john_keats</option>
+                                
+                                    <option value="percy_shelley">percy_shelley</option>
+                                
+                                    <option value="nikolai_gogol">nikolai_gogol</option>
+                                
+                                    <option value="jean_martin_charcot">jean_martin_charcot</option>
+                                
+                                    <option value="enrique_pezzoni">enrique_pezzoni</option>
+                                
+                                    <option value="felisberto_hernandez">felisberto_hernandez</option>
+                                
+                                    <option value="arcimboldo">arcimboldo</option>
+                                
+                                    <option value="josefina_ludmer">josefina_ludmer</option>
+                                
+                                    <option value="franz_schubert">franz_schubert</option>
+                                
+                                    <option value="walter_gieseking">walter_gieseking</option>
+                                
+                                    <option value="raul_zoppi">raul_zoppi</option>
+                                
+                                    <option value="ana_barrenechea">ana_barrenechea</option>
+                                
+                                    <option value="adolfo_de_obieta">adolfo_de_obieta</option>
+                                
+                                    <option value="jorge_monteleone">jorge_monteleone</option>
+                                
+                                    <option value="gongora">gongora</option>
+                                
+                                    <option value="cleanth_brooks">cleanth_brooks</option>
+                                
+                                    <option value="robert_penn_warren">robert_penn_warren</option>
+                                
+                                    <option value="tinianov">tinianov</option>
+                                
+                                    <option value="ruben_dario">ruben_dario</option>
+                                
+                                    <option value="vicente_garcia_huidobro">vicente_garcia_huidobro</option>
+                                
+                                    <option value="sylvia_molloy">sylvia_molloy</option>
+                                
+                                    <option value="mario_praz">mario_praz</option>
+                                
+                                    <option value="heinrich_wolfflin">heinrich_wolfflin</option>
+                                
+                                    <option value="miguel_d_ors">miguel_d_ors</option>
+                                
+                                    <option value="octavio_paz">octavio_paz</option>
+                                
+                                    <option value="georges_bataille">georges_bataille</option>
+                                
+                                    <option value="bettina_edelberg">bettina_edelberg</option>
+                                
+                                    <option value="juan_jose_hernandez">juan_jose_hernandez</option>
+                                
+                                    <option value="jorge_panesi">jorge_panesi</option>
+                                
+                                    <option value="manuel_puig">manuel_puig</option>
+                                
+                                    <option value="ricardo_piglia">ricardo_piglia</option>
+                                
+                                    <option value="rita_hayworth">rita_hayworth</option>
+                                
+                                    <option value="tyrone_power">tyrone_power</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 34.406779661016955, "title": "\n        \u003cb\u003eRam\u00f3n Alcalde\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1951\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "abelardo_castillo", "label": "Abelardo Castillo", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eAbelardo Castillo\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1935\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 50.0, "title": "\n        \u003cb\u003eEduardo Gr\u00fcner\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1946\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 37.11864406779661, "title": "\n        \u003cb\u003eLuis Gusm\u00e1n\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1944\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 25.25423728813559, "title": "\n        \u003cb\u003eJorge Jinkis\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1943\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "oswald_spengler", "label": "Oswald Spengler", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eOswald Spengler\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1880\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "federico_sainz_de_robles", "label": "Federico Carlos Sainz de Robles", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eFederico Carlos Sainz de Robles\u003c/b\u003e\u003cbr\u003e\n        Country: Spain\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1898\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "esteban_echeverria", "label": "Esteban Echeverr\u00eda", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eEsteban Echeverr\u00eda\u003c/b\u003e\u003cbr\u003e\n        Country: Virreinato del R\u00edo de la Plata\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1805\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "sarmiento", "label": "Domingo Faustino Sarmiento", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003eDomingo Faustino Sarmiento\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1811\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_bautista_alberdi", "label": "Juan Bautista Alberdi", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJuan Bautista Alberdi\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1810\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "leopoldo_lugones", "label": "Leopoldo Lugones", "shape": "dot", "size": 12.033898305084746, "title": "\n        \u003cb\u003eLeopoldo Lugones\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1874\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "manuel_galvez", "label": "Manuel G\u00e1lvez", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eManuel G\u00e1lvez\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1882\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "martinez_estrada", "label": "Ezequiel Mart\u00ednez Estrada", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eEzequiel Mart\u00ednez Estrada\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "canal_feijoo", "label": "Bernardo Canal Feij\u00f3o", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003eBernardo Canal Feij\u00f3o\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1897\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "hector_murena", "label": "H\u00e9ctor Murena", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eH\u00e9ctor Murena\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1923\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "carlos_astrada", "label": "Carlos Astrada", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003eCarlos Astrada\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1894\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jose_luis_romero", "label": "Jos\u00e9 Luis Romero", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJos\u00e9 Luis Romero\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1909\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "luis_franco", "label": "Luis Franco", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eLuis Franco\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1898\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "raul_scalabrini_ortiz", "label": "Ra\u00fal Scalabrini Ortiz", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eRa\u00fal Scalabrini Ortiz\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1898\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "arturo_jauretche", "label": "Arturo Jauretche", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eArturo Jauretche\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1901\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "david_vinias", "label": "David Vi\u00f1as", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003eDavid Vi\u00f1as\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1927\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "oscar_masotta", "label": "\u00d3scar Masotta", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003e\u00d3scar Masotta\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_jose_sebreli", "label": "Juan Jos\u00e9 Sebreli", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJuan Jos\u00e9 Sebreli\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "leonardo_castellani", "label": "Leonardo Castellani", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eLeonardo Castellani\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1899\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ignacio_anzoategui", "label": "Ignacio Anzo\u00e1tegui", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eIgnacio Anzo\u00e1tegui\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1905\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_jose_hernandez_arregui", "label": "Juan Jos\u00e9 Hern\u00e1ndez Arregui", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJuan Jos\u00e9 Hern\u00e1ndez Arregui\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1913\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "abelardo_ramos", "label": "Jorge Abelardo Ramos", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJorge Abelardo Ramos\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1921\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "milciades_penia", "label": "Milc\u00edades Pe\u00f1a", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eMilc\u00edades Pe\u00f1a\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1933\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "borges", "label": "Jorge Borges", "shape": "dot", "size": 12.372881355932204, "title": "\n        \u003cb\u003eJorge Borges\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1899\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "roberto_arlt", "label": "Roberto Arlt", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eRoberto Arlt\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1900\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jaime_rest", "label": "Jaime Rest", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJaime Rest\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1927\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pierre_chaunu", "label": "Pierre Chaunu", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003ePierre Chaunu\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1923\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "san_agustin", "label": "de Hipona Agust\u00edn", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003ede Hipona Agust\u00edn\u003c/b\u003e\u003cbr\u003e\n        Country: Imperio Romano\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Hellenistic/Roman\u003cbr\u003e\n        Birth: 354\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_paul_sartre", "label": "Jean-Paul Sartre", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJean-Paul Sartre\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1905\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_yves_calvez", "label": "Jean-Yves Calvez", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJean-Yves Calvez\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1927\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "levi_strauss", "label": "Claude L\u00e9vi-Strauss", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eClaude L\u00e9vi-Strauss\u003c/b\u003e\u003cbr\u003e\n        Country: Belgium\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1908\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "angel_rama", "label": "\u00c1ngel Rama", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003e\u00c1ngel Rama\u003c/b\u003e\u003cbr\u003e\n        Country: Uruguay\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1926\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "alfredo_palacios", "label": "Alfredo Palacios", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eAlfredo Palacios\u003c/b\u003e\u003cbr\u003e\n        Country: Buenos Aires\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1878\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "arturo_frondizi", "label": "Arturo Frondizi", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eArturo Frondizi\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1908\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "hector_campora", "label": "H\u00e9ctor C\u00e1mpora", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eH\u00e9ctor C\u00e1mpora\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1909\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_domingo_peron", "label": "Juan Domingo Per\u00f3n", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJuan Domingo Per\u00f3n\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "raul_alfonsin", "label": "Ra\u00fal Alfons\u00edn", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eRa\u00fal Alfons\u00edn\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1927\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "louis_althusser", "label": "Louis Althusser", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eLouis Althusser\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1918\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "roland_barthes", "label": "Roland Barthes", "shape": "dot", "size": 12.033898305084746, "title": "\n        \u003cb\u003eRoland Barthes\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1915\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "jacques_derrida", "label": "Jacques Derrida", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJacques Derrida\u003c/b\u003e\u003cbr\u003e\n        Country: El Biar, Argelia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "julia_kristeva", "label": "Julia Kristeva", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eJulia Kristeva\u003c/b\u003e\u003cbr\u003e\n        Country: Sliven, Bulgaria\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1941\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "spinoza", "label": "Baruch Spinoza", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eBaruch Spinoza\u003c/b\u003e\u003cbr\u003e\n        Country: Netherlands\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1632\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "friedrich_nietzsche", "label": "Friedrich Nietzsche", "shape": "dot", "size": 11.694915254237287, "title": "\n        \u003cb\u003eFriedrich Nietzsche\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1844\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "fiodor_dostoyevski", "label": "Fi\u00f3dor Dostoyevski", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eFi\u00f3dor Dostoyevski\u003c/b\u003e\u003cbr\u003e\n        Country: Mosc\u00fa, Imperio Ruso\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1821\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "osvaldo_lamborghini", "label": "Osvaldo Lamborghini", "shape": "square", "size": 10.677966101694915, "title": "\n        \u003cb\u003eOsvaldo Lamborghini\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1940\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "diana_bilmezis", "label": "Diana Bilmezis", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eDiana Bilmezis\u003c/b\u003e\u003cbr\u003e\n        Country: None\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Unknown\u003cbr\u003e\n        Birth: None\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "michel_foucault", "label": "Michel Foucault", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eMichel Foucault\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1926\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_starobinski", "label": "Jean Starobinski", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJean Starobinski\u003c/b\u003e\u003cbr\u003e\n        Country: Switzerland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1920\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "charles_olson", "label": "Charles Olson", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCharles Olson\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1910\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "walter_benjamin", "label": "Walter Benjamin", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWalter Benjamin\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1892\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "melville", "label": "Herman Melville", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eHerman Melville\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1819\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "kafka", "label": "Franz Kafka", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eFranz Kafka\u003c/b\u003e\u003cbr\u003e\n        Country: Czech Republic\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1883\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "antonio_gramsci", "label": "Antonio Gramsci", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAntonio Gramsci\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1891\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "zaratustra", "label": "Zaratustra", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eZaratustra\u003c/b\u003e\u003cbr\u003e\n        Country: Imperio Medo\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Antiquity (Archaic)\u003cbr\u003e\n        Birth: -628\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dante_alighieri", "label": "Dante Alighieri", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eDante Alighieri\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Medieval\u003cbr\u003e\n        Birth: 1265\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "umberto_eco", "label": "Umberto Eco", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eUmberto Eco\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1932\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maurice_blanchot", "label": "Maurice Blanchot", "shape": "dot", "size": 12.033898305084746, "title": "\n        \u003cb\u003eMaurice Blanchot\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1907\n        "}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "homero", "label": "Homero", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHomero\u003c/b\u003e\u003cbr\u003e\n        Country: Greece\u003cbr\u003e\n        Region: Southern Europe / Classical\u003cbr\u003e\n        Period: Antiquity (Archaic)\u003cbr\u003e\n        Birth: -750\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "shakespeare", "label": "William Shakespeare", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eWilliam Shakespeare\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1564\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gustave_flaubert", "label": "Gustave Flaubert", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eGustave Flaubert\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1821\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "italo_calvino", "label": "Italo Calvino", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eItalo Calvino\u003c/b\u003e\u003cbr\u003e\n        Country: Cuba\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1923\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ernst_curtius", "label": "Ernst Curtius", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eErnst Curtius\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1814\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "northrop_frye", "label": "Northrop Frye", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eNorthrop Frye\u003c/b\u003e\u003cbr\u003e\n        Country: Sherbrooke, Canad\u00e1\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1912\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "george_steiner", "label": "George Steiner", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGeorge Steiner\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1929\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "vladimir_propp", "label": "Vladimir Propp", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eVladimir Propp\u003c/b\u003e\u003cbr\u003e\n        Country: San Petersburgo, Imperio Ruso\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "todorov", "label": "Tzvetan Todorov", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTzvetan Todorov\u003c/b\u003e\u003cbr\u003e\n        Country: Bulgaria\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1939\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "algirdas_greimas", "label": "Algirdas Julien Greimas", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAlgirdas Julien Greimas\u003c/b\u003e\u003cbr\u003e\n        Country: Russia\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1917\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paul_valery", "label": "Ambroise Val\u00e9ry", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eAmbroise Val\u00e9ry\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1871\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "samuel_beckett", "label": "Samuel Beckett", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eSamuel Beckett\u003c/b\u003e\u003cbr\u003e\n        Country: Ireland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1906\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "andre_malraux", "label": "Andr\u00e9 Malraux", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAndr\u00e9 Malraux\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1901\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "viktor_shklovski", "label": "V\u00edktor Shklovski", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eV\u00edktor Shklovski\u003c/b\u003e\u003cbr\u003e\n        Country: San Petersburgo, Imperio Ruso\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1893\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "henry_de_montherlant", "label": "Henry de Montherlant", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHenry de Montherlant\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "edgar_allan_poe", "label": "Edgar Poe", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eEdgar Poe\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1809\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "harold_bloom", "label": "Harold Bloom", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHarold Bloom\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jose_marmol", "label": "Jos\u00e9 M\u00e1rmol", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJos\u00e9 M\u00e1rmol\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1817\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "bajtin", "label": "Mija\u00edl Bajt\u00edn", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eMija\u00edl Bajt\u00edn\u003c/b\u003e\u003cbr\u003e\n        Country: Oriol, Imperio Ruso\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rabelais", "label": "Fran\u00e7ois Rabelais", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eFran\u00e7ois Rabelais\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1494\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "henri_bergson", "label": "Henri Bergson", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eHenri Bergson\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1859\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "freud", "label": "Sigmund Freud", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eSigmund Freud\u003c/b\u003e\u003cbr\u003e\n        Country: Imperio Austr\u00edaco\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1856\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mallarme", "label": "St\u00e9phane Mallarm\u00e9", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eSt\u00e9phane Mallarm\u00e9\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1842\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "michael_riffaterre", "label": "Michael Riffaterre", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMichael Riffaterre\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1924\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ludwig_wittgenstein", "label": "Ludwig Wittgenstein", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLudwig Wittgenstein\u003c/b\u003e\u003cbr\u003e\n        Country: Austria\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1889\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_luc_godard", "label": "Jean-Luc Godard", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJean-Luc Godard\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "lisa_block", "label": "Lisa Block de Behar", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLisa Block de Behar\u003c/b\u003e\u003cbr\u003e\n        Country: Uruguay\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1937\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "giovanni_morelli", "label": "Giovanni Morelli", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eGiovanni Morelli\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1816\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carlo_ginzburg", "label": "Carlo Ginzburg", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCarlo Ginzburg\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1939\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "perugino", "label": "Pietro Vannucci", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePietro Vannucci\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1448\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "da_vinci", "label": "Leonardo Vinci", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLeonardo Vinci\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1452\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "botticelli", "label": "Sandro Botticelli", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eSandro Botticelli\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1445\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cosme_tura", "label": "Cosimo Tura", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCosimo Tura\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1430\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "spitzer", "label": "Leo Spitzer", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLeo Spitzer\u003c/b\u003e\u003cbr\u003e\n        Country: Austria\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1887\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "schleiermacher", "label": "Friedrich Schleiermacher", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eFriedrich Schleiermacher\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1768\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wilhelm_dilthey", "label": "Wilhelm Dilthey", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWilhelm Dilthey\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1833\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gerard_genette", "label": "G\u00e9rard Genette", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eG\u00e9rard Genette\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maupassant", "label": "Guy Maupassant", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGuy Maupassant\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1850\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "nicolas_olivari", "label": "Nicol\u00e1s Olivari", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eNicol\u00e1s Olivari\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1900\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "benedetto_croce", "label": "Benedetto Croce", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eBenedetto Croce\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1866\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "edgar_wind", "label": "Edgar Wind", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eEdgar Wind\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1900\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "macedonio_fernandez", "label": "Macedonio Fern\u00e1ndez", "shape": "dot", "size": 11.35593220338983, "title": "\n        \u003cb\u003eMacedonio Fern\u00e1ndez\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1874\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "witold_gombrowicz", "label": "Witold Gombrowicz", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eWitold Gombrowicz\u003c/b\u003e\u003cbr\u003e\n        Country: Poland\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1904\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "lezama_lima", "label": "Jos\u00e9 Lezama Lima", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eJos\u00e9 Lezama Lima\u003c/b\u003e\u003cbr\u003e\n        Country: Cuba\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1910\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "thomas_carlyle", "label": "Thomas Carlyle", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eThomas Carlyle\u003c/b\u003e\u003cbr\u003e\n        Country: Escocia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1795\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "miguel_angel", "label": "Miguel \u00c1ngel Buonarroti", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMiguel \u00c1ngel Buonarroti\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1475\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "oscar_wilde", "label": "Oscar Wilde", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eOscar Wilde\u003c/b\u003e\u003cbr\u003e\n        Country: Ireland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1854\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "william_beckford", "label": "William Beckford", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWilliam Beckford\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1760\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "robert_louis_stevenson", "label": "Robert Louis Stevenson", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRobert Louis Stevenson\u003c/b\u003e\u003cbr\u003e\n        Country: Edimburgo, Escocia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1850\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "chesterton", "label": "Gilbert Keith Chesterton", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGilbert Keith Chesterton\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1874\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lord_byron", "label": "George Gordon Byron", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGeorge Gordon Byron\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1788\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "lucio_mansilla", "label": "Lucio V. Mansilla", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLucio V. Mansilla\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1831\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jacques_benigne_bossuet", "label": "Jacques-B\u00e9nigne Bossuet", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJacques-B\u00e9nigne Bossuet\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1627\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "andre_gide", "label": "Andr\u00e9 Gide", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAndr\u00e9 Gide\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1869\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "andre_breton", "label": "Andr\u00e9 Breton", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAndr\u00e9 Breton\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1896\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jacques_rigaut", "label": "Jacques Rigaut", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJacques Rigaut\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1898\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "baudelaire", "label": "Charles Baudelaire", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eCharles Baudelaire\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1821\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "julian_casal", "label": "Juli\u00e1n Casal", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJuli\u00e1n Casal\u003c/b\u003e\u003cbr\u003e\n        Country: None\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Unknown\u003cbr\u003e\n        Birth: None\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pierre_loti", "label": "Julien Viaud", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJulien Viaud\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1850\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paul_nizan", "label": "Paul Nizan", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePaul Nizan\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1905\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jose_hernandez", "label": "Jos\u00e9 Hern\u00e1ndez", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eJos\u00e9 Hern\u00e1ndez\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1834\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rimbaud", "label": "Arthur Rimbaud", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eArthur Rimbaud\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1854\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "michel_leiris", "label": "Michel Leiris", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMichel Leiris\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1901\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gilles_deleuze", "label": "Gilles Deleuze", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGilles Deleuze\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1925\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "fenimore_cooper", "label": "James Fenimore Cooper", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJames Fenimore Cooper\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1789\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marcel_schwob", "label": "Marcel Schwob", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMarcel Schwob\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1867\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "carlos_correas", "label": "Carlos Correas", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCarlos Correas\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1931\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_genet", "label": "Jean Genet", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eJean Genet\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1910\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_carlos_ongania", "label": "Juan Carlos Ongan\u00eda", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJuan Carlos Ongan\u00eda\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1914\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_manuel_rosas", "label": "Juan Manuel de Rosas", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJuan Manuel de Rosas\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1793\n        "}, {"color": "#00bcd4", "font": {"color": "#eee"}, "id": "hans_christian_andersen", "label": "Hans Christian Andersen", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHans Christian Andersen\u003c/b\u003e\u003cbr\u003e\n        Country: Denmark\u003cbr\u003e\n        Region: Scandinavia\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1805\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "hugo_von_hofmannsthal", "label": "Hugo von Hofmannsthal", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHugo von Hofmannsthal\u003c/b\u003e\u003cbr\u003e\n        Country: Viena, Imperio Austroh\u00fangaro\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1874\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "teocrito", "label": "Te\u00f3crito", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTe\u00f3crito\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Classical Antiquity\u003cbr\u003e\n        Birth: -310\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "torquato_tasso", "label": "Torquato Tasso", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTorquato Tasso\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1544\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "edmund_spenser", "label": "Edmund Spenser", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eEdmund Spenser\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1552\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "lou_andreas_salome", "label": "Lou Andreas-Salom\u00e9", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLou Andreas-Salom\u00e9\u003c/b\u003e\u003cbr\u003e\n        Country: Russia\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1861\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "varo", "label": "Alfeno Varo", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAlfeno Varo\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Hellenistic/Roman\u003cbr\u003e\n        Birth: -100\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "virgilio", "label": "Publio Virgilio", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePublio Virgilio\u003c/b\u003e\u003cbr\u003e\n        Country: Andes, Rep\u00fablica Romana\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Hellenistic/Roman\u003cbr\u003e\n        Birth: -70\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marques_sade", "label": "Donatien Alphonse Fran\u00e7ois de Sade", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eDonatien Alphonse Fran\u00e7ois de Sade\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1740\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ricardo_zelarayan", "label": "Ricardo Zelaray\u00e1n", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRicardo Zelaray\u00e1n\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1940\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "rodolfo_fogwill", "label": "Rodolfo Fogwill", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRodolfo Fogwill\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1941\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "euclides", "label": "Euclides", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eEuclides\u003c/b\u003e\u003cbr\u003e\n        Country: Desconocido\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Classical Antiquity\u003cbr\u003e\n        Birth: -325\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ernesto_sabato", "label": "Ernesto Sabato", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eErnesto Sabato\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1911\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "charles_dickens", "label": "Charles Dickens", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCharles Dickens\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1812\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "victor_hugo", "label": "Victor Hugo", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eVictor Hugo\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1802\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "emile_zola", "label": "\u00c9mile Zola", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003e\u00c9mile Zola\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1840\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "guillermo_hudson", "label": "William Henry Hudson", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWilliam Henry Hudson\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1841\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "johann_winckelmann", "label": "Johann Joachim Winckelmann", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJohann Joachim Winckelmann\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1717\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "balzac", "label": "Honor\u00e9 Balzac", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHonor\u00e9 Balzac\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1799\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paul_schreber", "label": "Daniel Paul Schreber", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eDaniel Paul Schreber\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1842\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "evaristo_carriego", "label": "Evaristo Carriego", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eEvaristo Carriego\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1883\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_bautista_ritvo", "label": "Juan Bautista Ritvo", "shape": "square", "size": 21.1864406779661, "title": "\n        \u003cb\u003eJuan Bautista Ritvo\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1940\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kant", "label": "Immanuel Kant", "shape": "dot", "size": 11.016949152542374, "title": "\n        \u003cb\u003eImmanuel Kant\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1724\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "karl_marx", "label": "Karl Marx", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eKarl Marx\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1818\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hegel", "label": "Georg Wilhelm Friedrich Hegel", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eGeorg Wilhelm Friedrich Hegel\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1770\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "goethe", "label": "Johann Goethe", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJohann Goethe\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1749\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cervantes", "label": "Miguel Cervantes", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMiguel Cervantes\u003c/b\u003e\u003cbr\u003e\n        Country: Spain\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1547\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "george_berkeley", "label": "George Berkeley", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGeorge Berkeley\u003c/b\u003e\u003cbr\u003e\n        Country: Ireland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1685\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hg_wells", "label": "Herbert George Wells", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHerbert George Wells\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1866\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "de_quincey", "label": "Thomas De Quincey", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eThomas De Quincey\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1785\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "arthur_schopenhauer", "label": "Arthur Schopenhauer", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eArthur Schopenhauer\u003c/b\u003e\u003cbr\u003e\n        Country: Poland\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1788\n        "}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "platon", "label": "Plat\u00f3n", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePlat\u00f3n\u003c/b\u003e\u003cbr\u003e\n        Country: Greece\u003cbr\u003e\n        Region: Southern Europe / Classical\u003cbr\u003e\n        Period: Classical Antiquity\u003cbr\u003e\n        Birth: -428\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "patricio_de_azcarate", "label": "Patricio de Azc\u00e1rate", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePatricio de Azc\u00e1rate\u003c/b\u003e\u003cbr\u003e\n        Country: Spain\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1800\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "martin_heidegger", "label": "Martin Heidegger", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eMartin Heidegger\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1889\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "bartolome_mitre", "label": "Bartolom\u00e9 Mitre", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eBartolom\u00e9 Mitre\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1821\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "tomas_de_aquino", "label": "Tom\u00e1s de Aquino", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTom\u00e1s de Aquino\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Medieval\u003cbr\u003e\n        Birth: 1225\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carl_jung", "label": "Carl Gustav Jung", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCarl Gustav Jung\u003c/b\u003e\u003cbr\u003e\n        Country: Switzerland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1875\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lacan", "label": "Jacques Lacan", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eJacques Lacan\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1901\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "david_hume", "label": "David Hume", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eDavid Hume\u003c/b\u003e\u003cbr\u003e\n        Country: Edimburgo, Escocia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1711\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "aldous_huxley", "label": "Aldous Huxley", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAldous Huxley\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1894\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "kemp_smith", "label": "Norman Kemp Smith", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eNorman Kemp Smith\u003c/b\u003e\u003cbr\u003e\n        Country: Dundee, Escocia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1872\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "georg_lichtenberg", "label": "Georg Christoph Lichtenberg", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGeorg Christoph Lichtenberg\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1742\n        "}, {"color": "#ff9800", "font": {"color": "#eee"}, "id": "tchuang_tzu", "label": "Zhou Zhuang", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eZhou Zhuang\u003c/b\u003e\u003cbr\u003e\n        Country: China\u003cbr\u003e\n        Region: Asia\u003cbr\u003e\n        Period: Classical Antiquity\u003cbr\u003e\n        Birth: -369\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "holderlin", "label": "Johann H\u00f6lderlin", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJohann H\u00f6lderlin\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1770\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "santiago_bullrich", "label": "Santiago Bullrich", "shape": "square", "size": 12.033898305084746, "title": "\n        \u003cb\u003eSantiago Bullrich\u003c/b\u003e\u003cbr\u003e\n        Country: None\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Unknown\u003cbr\u003e\n        Birth: None\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "james_joyce", "label": "James Joyce", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJames Joyce\u003c/b\u003e\u003cbr\u003e\n        Country: Ireland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1882\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lewis_carroll", "label": "Lewis Carroll", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLewis Carroll\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1832\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "brian_boru", "label": "Brian Boru", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eBrian Boru\u003c/b\u003e\u003cbr\u003e\n        Country: Ireland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Medieval\u003cbr\u003e\n        Birth: 941\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "lucien_goldmann", "label": "Lucien Goldmann", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLucien Goldmann\u003c/b\u003e\u003cbr\u003e\n        Country: Bucarest, Rumania\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1913\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pierre_bourdieu", "label": "Pierre Bourdieu", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePierre Bourdieu\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1930\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "gyorgy_lukacs", "label": "Gy\u00f6rgy Luk\u00e1cs", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGy\u00f6rgy Luk\u00e1cs\u003c/b\u003e\u003cbr\u003e\n        Country: Hungary\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1885\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "theodor_adorno", "label": "Theodor Adorno", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTheodor Adorno\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1903\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "raymond_aron", "label": "Raymond Aron", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRaymond Aron\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1905\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "max_weber", "label": "Max Weber", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMax Weber\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1864\n        "}, {"color": "#f39c12", "font": {"color": "#eee"}, "id": "nicos_poulantzas", "label": "Nicos Poulantzas", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eNicos Poulantzas\u003c/b\u003e\u003cbr\u003e\n        Country: Greece\u003cbr\u003e\n        Region: Southern Europe / Classical\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1936\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "friedrich_schelling", "label": "Friedrich Wilhelm Joseph Schelling", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eFriedrich Wilhelm Joseph Schelling\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1775\n        "}, {"color": "#00bcd4", "font": {"color": "#eee"}, "id": "soren_kierkegaard", "label": "S\u00f8ren Kierkegaard", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eS\u00f8ren Kierkegaard\u003c/b\u003e\u003cbr\u003e\n        Country: Denmark\u003cbr\u003e\n        Region: Scandinavia\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1813\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carl_von_clausewitz", "label": "Carl von Clausewitz", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCarl von Clausewitz\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Early Modern\u003cbr\u003e\n        Birth: 1780\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "severo_sarduy", "label": "Severo Sarduy", "shape": "dot", "size": 10.677966101694915, "title": "\n        \u003cb\u003eSevero Sarduy\u003c/b\u003e\u003cbr\u003e\n        Country: Cuba\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1937\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "mario_vargas_llosa", "label": "Mario Vargas Llosa", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMario Vargas Llosa\u003c/b\u003e\u003cbr\u003e\n        Country: Peru\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1936\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "louis_ferdinand_celine", "label": "Louis-Ferdinand C\u00e9line", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLouis-Ferdinand C\u00e9line\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1894\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "william_faulkner", "label": "William Faulkner", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWilliam Faulkner\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1897\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 14.406779661016948, "title": "\n        \u003cb\u003eLuis Chitarroni\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1958\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "santiago_dabove", "label": "Santiago Dabove", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eSantiago Dabove\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1889\n        "}, {"color": "#9b59b6", "font": {"color": "#eee"}, "id": "aleksandr_pushkin", "label": "Aleksandr Pushkin", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAleksandr Pushkin\u003c/b\u003e\u003cbr\u003e\n        Country: Russia\u003cbr\u003e\n        Region: Eastern Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1799\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_filiberto", "label": "Juan de Dios Filiberto", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJuan de Dios Filiberto\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1885\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ernst_junger", "label": "Ernst J\u00fcnger", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eErnst J\u00fcnger\u003c/b\u003e\u003cbr\u003e\n        Country: Germany\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "philippe_aries", "label": "Philippe Ari\u00e8s", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePhilippe Ari\u00e8s\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1914\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "malcolm_lowry", "label": "Malcolm Lowry", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMalcolm Lowry\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1909\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "john_keats", "label": "John Keats", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJohn Keats\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1795\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "percy_shelley", "label": "Percy Bysshe Shelley", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003ePercy Bysshe Shelley\u003c/b\u003e\u003cbr\u003e\n        Country: United Kingdom\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1792\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "nikolai_gogol", "label": "Nikolai Gogol", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eNikolai Gogol\u003c/b\u003e\u003cbr\u003e\n        Country: Sorochyntsi, Ucrania\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1809\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jean_martin_charcot", "label": "Jean-Martin Charcot", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJean-Martin Charcot\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1825\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "enrique_pezzoni", "label": "Enrique Pezzoni", "shape": "square", "size": 12.372881355932204, "title": "\n        \u003cb\u003eEnrique Pezzoni\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1926\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "felisberto_hernandez", "label": "Felisberto Hern\u00e1ndez", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eFelisberto Hern\u00e1ndez\u003c/b\u003e\u003cbr\u003e\n        Country: Uruguay\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1902\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arcimboldo", "label": "Giuseppe Arcimboldo", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGiuseppe Arcimboldo\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1526\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "josefina_ludmer", "label": "Josefina Ludmer", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJosefina Ludmer\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1939\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "franz_schubert", "label": "Franz Schubert", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eFranz Schubert\u003c/b\u003e\u003cbr\u003e\n        Country: Austria\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Revolutionary Era\u003cbr\u003e\n        Birth: 1797\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "walter_gieseking", "label": "Walter Gieseking", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eWalter Gieseking\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1895\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "raul_zoppi", "label": "Raul Zoppi", "shape": "square", "size": 11.016949152542374, "title": "\n        \u003cb\u003eRaul Zoppi\u003c/b\u003e\u003cbr\u003e\n        Country: None\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Unknown\u003cbr\u003e\n        Birth: None\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ana_barrenechea", "label": "Ana Barrenechea", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAna Barrenechea\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1913\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "adolfo_de_obieta", "label": "Adolfo de Obieta", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eAdolfo de Obieta\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1912\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jorge_monteleone", "label": "Jorge Monteleone", "shape": "square", "size": 17.796610169491526, "title": "\n        \u003cb\u003eJorge Monteleone\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1957\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gongora", "label": "Luis de G\u00f3ngora y Argote", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eLuis de G\u00f3ngora y Argote\u003c/b\u003e\u003cbr\u003e\n        Country: Spain\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Renaissance\u003cbr\u003e\n        Birth: 1561\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "cleanth_brooks", "label": "Cleanth Brooks", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eCleanth Brooks\u003c/b\u003e\u003cbr\u003e\n        Country: Murray, Kentucky, EE. UU.\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1906\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "robert_penn_warren", "label": "Robert Penn Warren", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRobert Penn Warren\u003c/b\u003e\u003cbr\u003e\n        Country: Guthrie, Kentucky, EE. UU.\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1905\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "tinianov", "label": "Yuri Tini\u00e1nov", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eYuri Tini\u00e1nov\u003c/b\u003e\u003cbr\u003e\n        Country: Rezekne, Letonia\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1894\n        "}, {"color": "#95a5a6", "font": {"color": "#eee"}, "id": "ruben_dario", "label": "Rub\u00e9n Dar\u00edo", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRub\u00e9n Dar\u00edo\u003c/b\u003e\u003cbr\u003e\n        Country: Nicaragua\u003cbr\u003e\n        Region: Other/Unknown\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1867\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "vicente_garcia_huidobro", "label": "Vicente Garc\u00eda-Huidobro", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eVicente Garc\u00eda-Huidobro\u003c/b\u003e\u003cbr\u003e\n        Country: Chile\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1893\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "sylvia_molloy", "label": "Sylvia Molloy", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eSylvia Molloy\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1938\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mario_praz", "label": "Mario Praz", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMario Praz\u003c/b\u003e\u003cbr\u003e\n        Country: Italy\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1896\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "heinrich_wolfflin", "label": "Heinrich W\u00f6lfflin", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eHeinrich W\u00f6lfflin\u003c/b\u003e\u003cbr\u003e\n        Country: Switzerland\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1864\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "miguel_d_ors", "label": "Miguel d\u0027Ors", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eMiguel d\u0027Ors\u003c/b\u003e\u003cbr\u003e\n        Country: Spain\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1946\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "octavio_paz", "label": "Octavio Paz", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eOctavio Paz\u003c/b\u003e\u003cbr\u003e\n        Country: Mexico\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1914\n        "}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "georges_bataille", "label": "Georges Bataille", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eGeorges Bataille\u003c/b\u003e\u003cbr\u003e\n        Country: France\u003cbr\u003e\n        Region: Western Europe\u003cbr\u003e\n        Period: Long 19th Century\u003cbr\u003e\n        Birth: 1897\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "bettina_edelberg", "label": "Bettina Edelberg", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eBettina Edelberg\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1921\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "juan_jose_hernandez", "label": "Juan Jos\u00e9 Hern\u00e1ndez", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eJuan Jos\u00e9 Hern\u00e1ndez\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1931\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "jorge_panesi", "label": "Jorge Panesi", "shape": "square", "size": 12.033898305084746, "title": "\n        \u003cb\u003eJorge Panesi\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: Contemporary\u003cbr\u003e\n        Birth: 1945\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "manuel_puig", "label": "Manuel Puig", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eManuel Puig\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1932\n        "}, {"color": "#2ecc71", "font": {"color": "#eee"}, "id": "ricardo_piglia", "label": "Ricardo Piglia", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRicardo Piglia\u003c/b\u003e\u003cbr\u003e\n        Country: Argentina\u003cbr\u003e\n        Region: Latin America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1940\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "rita_hayworth", "label": "Rita Hayworth", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eRita Hayworth\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1918\n        "}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "tyrone_power", "label": "Tyrone Power", "shape": "dot", "size": 10.338983050847457, "title": "\n        \u003cb\u003eTyrone Power\u003c/b\u003e\u003cbr\u003e\n        Country: United States\u003cbr\u003e\n        Region: North America\u003cbr\u003e\n        Period: World Wars Era\u003cbr\u003e\n        Birth: 1914\n        "}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "ramon_alcalde", "to": "abelardo_castillo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "oswald_spengler", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "federico_sainz_de_robles", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "esteban_echeverria", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "sarmiento", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_bautista_alberdi", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "leopoldo_lugones", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "manuel_galvez", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "canal_feijoo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "hector_murena", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "carlos_astrada", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "jose_luis_romero", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "luis_franco", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "raul_scalabrini_ortiz", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "arturo_jauretche", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "david_vinias", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "oscar_masotta", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_jose_sebreli", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "leonardo_castellani", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "ignacio_anzoategui", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_jose_hernandez_arregui", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "abelardo_ramos", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "milciades_penia", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "borges", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "roberto_arlt", "value": 5}, {"arrows": "to", "from": "ramon_alcalde", "to": "jaime_rest", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "pierre_chaunu", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "san_agustin", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "jean_paul_sartre", "value": 2}, {"arrows": "to", "from": "ramon_alcalde", "to": "jean_yves_calvez", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "levi_strauss", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "angel_rama", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "arturo_frondizi", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "hector_campora", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "raul_alfonsin", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "louis_althusser", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "jacques_derrida", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "julia_kristeva", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "spinoza", "value": 3}, {"arrows": "to", "from": "ramon_alcalde", "to": "friedrich_nietzsche", "value": 4}, {"arrows": "to", "from": "ramon_alcalde", "to": "fiodor_dostoyevski", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "carlos_correas", "value": 25}, {"arrows": "to", "from": "ramon_alcalde", "to": "jean_genet", "value": 5}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_carlos_ongania", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "juan_manuel_rosas", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "hans_christian_andersen", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "hugo_von_hofmannsthal", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "teocrito", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "torquato_tasso", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "edmund_spenser", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "lou_andreas_salome", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "varo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "virgilio", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "marques_sade", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "osvaldo_lamborghini", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "luis_gusman", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "ricardo_zelarayan", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "rodolfo_fogwill", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "euclides", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "ernesto_sabato", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "charles_dickens", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "victor_hugo", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "emile_zola", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "guillermo_hudson", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "johann_winckelmann", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "balzac", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "paul_schreber", "value": 1}, {"arrows": "to", "from": "ramon_alcalde", "to": "evaristo_carriego", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "abelardo_castillo", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "oswald_spengler", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "federico_sainz_de_robles", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "esteban_echeverria", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "sarmiento", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "juan_bautista_alberdi", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "leopoldo_lugones", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "manuel_galvez", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "canal_feijoo", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "hector_murena", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "carlos_astrada", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jose_luis_romero", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "luis_franco", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "raul_scalabrini_ortiz", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "arturo_jauretche", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "david_vinias", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "oscar_masotta", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "juan_jose_sebreli", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "leonardo_castellani", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "ignacio_anzoategui", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "juan_jose_hernandez_arregui", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "abelardo_ramos", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "milciades_penia", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "borges", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "roberto_arlt", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "jaime_rest", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "pierre_chaunu", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "san_agustin", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jean_paul_sartre", "value": 45}, {"arrows": "to", "from": "eduardo_gruner", "to": "jean_yves_calvez", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "levi_strauss", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "angel_rama", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "arturo_frondizi", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "hector_campora", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "raul_alfonsin", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "louis_althusser", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "roland_barthes", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "jacques_derrida", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "julia_kristeva", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "spinoza", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "friedrich_nietzsche", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "fiodor_dostoyevski", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "michel_foucault", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "to": "jean_starobinski", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "charles_olson", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "to": "walter_benjamin", "value": 4}, {"arrows": "to", "from": "eduardo_gruner", "to": "melville", "value": 7}, {"arrows": "to", "from": "eduardo_gruner", "to": "kafka", "value": 7}, {"arrows": "to", "from": "eduardo_gruner", "to": "antonio_gramsci", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "zaratustra", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "dante_alighieri", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "umberto_eco", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "maurice_blanchot", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "homero", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "shakespeare", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "gustave_flaubert", "value": 38}, {"arrows": "to", "from": "eduardo_gruner", "to": "italo_calvino", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "ernst_curtius", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "northrop_frye", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "george_steiner", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "vladimir_propp", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "todorov", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "algirdas_greimas", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "samuel_beckett", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "andre_malraux", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "viktor_shklovski", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "henry_de_montherlant", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "edgar_allan_poe", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "harold_bloom", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jose_marmol", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "bajtin", "value": 6}, {"arrows": "to", "from": "eduardo_gruner", "to": "rabelais", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "henri_bergson", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "freud", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "mallarme", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "michael_riffaterre", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "ludwig_wittgenstein", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jean_luc_godard", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "lisa_block", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "luis_gusman", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "giovanni_morelli", "value": 8}, {"arrows": "to", "from": "eduardo_gruner", "to": "carlo_ginzburg", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "perugino", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "da_vinci", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "botticelli", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "cosme_tura", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "spitzer", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "schleiermacher", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "wilhelm_dilthey", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "gerard_genette", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "maupassant", "value": 5}, {"arrows": "to", "from": "eduardo_gruner", "to": "nicolas_olivari", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "benedetto_croce", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "edgar_wind", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "lucien_goldmann", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "pierre_bourdieu", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "gyorgy_lukacs", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "theodor_adorno", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "karl_marx", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "raymond_aron", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "max_weber", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "nicos_poulantzas", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "friedrich_schelling", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "hegel", "value": 3}, {"arrows": "to", "from": "eduardo_gruner", "to": "soren_kierkegaard", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "carl_von_clausewitz", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "severo_sarduy", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "mario_vargas_llosa", "value": 10}, {"arrows": "to", "from": "eduardo_gruner", "to": "lacan", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "kant", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "louis_ferdinand_celine", "value": 2}, {"arrows": "to", "from": "eduardo_gruner", "to": "william_faulkner", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "baudelaire", "value": 1}, {"arrows": "to", "from": "eduardo_gruner", "to": "jean_genet", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "abelardo_castillo", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "oswald_spengler", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "federico_sainz_de_robles", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "esteban_echeverria", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "sarmiento", "value": 4}, {"arrows": "to", "from": "luis_gusman", "to": "juan_bautista_alberdi", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "leopoldo_lugones", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "manuel_galvez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "martinez_estrada", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "canal_feijoo", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "hector_murena", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "carlos_astrada", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "jose_luis_romero", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "luis_franco", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "raul_scalabrini_ortiz", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "arturo_jauretche", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "david_vinias", "value": 3}, {"arrows": "to", "from": "luis_gusman", "to": "oscar_masotta", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "juan_jose_sebreli", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "leonardo_castellani", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "ignacio_anzoategui", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "juan_jose_hernandez_arregui", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "abelardo_ramos", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "milciades_penia", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "borges", "value": 14}, {"arrows": "to", "from": "luis_gusman", "to": "roberto_arlt", "value": 12}, {"arrows": "to", "from": "luis_gusman", "to": "jaime_rest", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "pierre_chaunu", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "san_agustin", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "jean_paul_sartre", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "jean_yves_calvez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "levi_strauss", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "angel_rama", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "arturo_frondizi", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "hector_campora", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "raul_alfonsin", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "louis_althusser", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "jacques_derrida", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "julia_kristeva", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "spinoza", "value": 3}, {"arrows": "to", "from": "luis_gusman", "to": "friedrich_nietzsche", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "fiodor_dostoyevski", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "macedonio_fernandez", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "gustave_flaubert", "value": 3}, {"arrows": "to", "from": "luis_gusman", "to": "giovanni_morelli", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "freud", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "witold_gombrowicz", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "maurice_blanchot", "value": 3}, {"arrows": "to", "from": "luis_gusman", "to": "lezama_lima", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "mallarme", "value": 7}, {"arrows": "to", "from": "luis_gusman", "to": "thomas_carlyle", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "edgar_allan_poe", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "miguel_angel", "value": 4}, {"arrows": "to", "from": "luis_gusman", "to": "oscar_wilde", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "william_beckford", "value": 4}, {"arrows": "to", "from": "luis_gusman", "to": "dante_alighieri", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "robert_louis_stevenson", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "chesterton", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "lord_byron", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "lucio_mansilla", "value": 4}, {"arrows": "to", "from": "luis_gusman", "to": "jacques_benigne_bossuet", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "kafka", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "andre_gide", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "andre_breton", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "jacques_rigaut", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "baudelaire", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "julian_casal", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "pierre_loti", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "paul_nizan", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "jose_hernandez", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "rimbaud", "value": 2}, {"arrows": "to", "from": "luis_gusman", "to": "michel_leiris", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "gilles_deleuze", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "fenimore_cooper", "value": 1}, {"arrows": "to", "from": "luis_gusman", "to": "marcel_schwob", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "abelardo_castillo", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "oswald_spengler", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "federico_sainz_de_robles", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "esteban_echeverria", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "sarmiento", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "to": "juan_bautista_alberdi", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "leopoldo_lugones", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "manuel_galvez", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "martinez_estrada", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "canal_feijoo", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "hector_murena", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "carlos_astrada", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "jose_luis_romero", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "luis_franco", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "raul_scalabrini_ortiz", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "arturo_jauretche", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "david_vinias", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "oscar_masotta", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "juan_jose_sebreli", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "leonardo_castellani", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "ignacio_anzoategui", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "juan_jose_hernandez_arregui", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "abelardo_ramos", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "milciades_penia", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "borges", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "to": "roberto_arlt", "value": 3}, {"arrows": "to", "from": "jorge_jinkis", "to": "jaime_rest", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "pierre_chaunu", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "san_agustin", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "jean_paul_sartre", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "to": "jean_yves_calvez", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "levi_strauss", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "angel_rama", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "alfredo_palacios", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "arturo_frondizi", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "hector_campora", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "juan_domingo_peron", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "raul_alfonsin", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "louis_althusser", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "jacques_derrida", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "julia_kristeva", "value": 1}, {"arrows": "to", "from": "jorge_jinkis", "to": "spinoza", "value": 3}, {"arrows": "to", "from": "jorge_jinkis", "to": "friedrich_nietzsche", "value": 2}, {"arrows": "to", "from": "jorge_jinkis", "to": "fiodor_dostoyevski", "value": 1}, {"arrows": "to", "from": "osvaldo_lamborghini", "to": "diana_bilmezis", "value": 1}, {"arrows": "to", "from": "maurice_blanchot", "to": "martin_heidegger", "value": 2}, {"arrows": "to", "from": "maurice_blanchot", "to": "holderlin", "value": 2}, {"arrows": "to", "from": "maurice_blanchot", "to": "paul_valery", "value": 1}, {"arrows": "to", "from": "maurice_blanchot", "to": "kant", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "witold_gombrowicz", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "carlos_astrada", "value": 4}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "jose_hernandez", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "leopoldo_lugones", "value": 2}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "kant", "value": 2}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "karl_marx", "value": 2}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "hegel", "value": 2}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "dante_alighieri", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "goethe", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "cervantes", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "borges", "value": 5}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "george_berkeley", "value": 4}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "hg_wells", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "de_quincey", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "arthur_schopenhauer", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "shakespeare", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "platon", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "patricio_de_azcarate", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "macedonio_fernandez", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "baudelaire", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "friedrich_nietzsche", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "martin_heidegger", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "bartolome_mitre", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "sarmiento", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "tomas_de_aquino", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "carl_jung", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "lacan", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "david_hume", "value": 5}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "aldous_huxley", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "kemp_smith", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "henri_bergson", "value": 1}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "georg_lichtenberg", "value": 2}, {"arrows": "to", "from": "juan_bautista_ritvo", "to": "tchuang_tzu", "value": 1}, {"arrows": "to", "from": "santiago_bullrich", "to": "james_joyce", "value": 5}, {"arrows": "to", "from": "santiago_bullrich", "to": "shakespeare", "value": 2}, {"arrows": "to", "from": "santiago_bullrich", "to": "samuel_beckett", "value": 2}, {"arrows": "to", "from": "santiago_bullrich", "to": "melville", "value": 2}, {"arrows": "to", "from": "santiago_bullrich", "to": "lewis_carroll", "value": 6}, {"arrows": "to", "from": "santiago_bullrich", "to": "brian_boru", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "santiago_dabove", "value": 14}, {"arrows": "to", "from": "luis_chitarroni", "to": "aleksandr_pushkin", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "edgar_allan_poe", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "macedonio_fernandez", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "borges", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "juan_filiberto", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "ernst_junger", "value": 5}, {"arrows": "to", "from": "luis_chitarroni", "to": "philippe_aries", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "malcolm_lowry", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "john_keats", "value": 2}, {"arrows": "to", "from": "luis_chitarroni", "to": "percy_shelley", "value": 1}, {"arrows": "to", "from": "luis_chitarroni", "to": "nikolai_gogol", "value": 2}, {"arrows": "to", "from": "luis_chitarroni", "to": "jean_martin_charcot", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "felisberto_hernandez", "value": 10}, {"arrows": "to", "from": "enrique_pezzoni", "to": "arcimboldo", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "josefina_ludmer", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "michel_foucault", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "franz_schubert", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "walter_gieseking", "value": 1}, {"arrows": "to", "from": "enrique_pezzoni", "to": "roland_barthes", "value": 1}, {"arrows": "to", "from": "raul_zoppi", "to": "macedonio_fernandez", "value": 36}, {"arrows": "to", "from": "raul_zoppi", "to": "ana_barrenechea", "value": 7}, {"arrows": "to", "from": "raul_zoppi", "to": "adolfo_de_obieta", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "leopoldo_lugones", "value": 27}, {"arrows": "to", "from": "jorge_monteleone", "to": "gongora", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "roland_barthes", "value": 6}, {"arrows": "to", "from": "jorge_monteleone", "to": "lezama_lima", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "severo_sarduy", "value": 3}, {"arrows": "to", "from": "jorge_monteleone", "to": "cleanth_brooks", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "robert_penn_warren", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "bajtin", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "tinianov", "value": 3}, {"arrows": "to", "from": "jorge_monteleone", "to": "ruben_dario", "value": 10}, {"arrows": "to", "from": "jorge_monteleone", "to": "vicente_garcia_huidobro", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "sylvia_molloy", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "david_vinias", "value": 3}, {"arrows": "to", "from": "jorge_monteleone", "to": "canal_feijoo", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "paul_valery", "value": 2}, {"arrows": "to", "from": "jorge_monteleone", "to": "mario_praz", "value": 3}, {"arrows": "to", "from": "jorge_monteleone", "to": "heinrich_wolfflin", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "miguel_d_ors", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "octavio_paz", "value": 3}, {"arrows": "to", "from": "jorge_monteleone", "to": "borges", "value": 5}, {"arrows": "to", "from": "jorge_monteleone", "to": "georges_bataille", "value": 6}, {"arrows": "to", "from": "jorge_monteleone", "to": "bettina_edelberg", "value": 1}, {"arrows": "to", "from": "jorge_monteleone", "to": "juan_jose_hernandez", "value": 1}, {"arrows": "to", "from": "jorge_panesi", "to": "manuel_puig", "value": 12}, {"arrows": "to", "from": "jorge_panesi", "to": "ricardo_piglia", "value": 1}, {"arrows": "to", "from": "jorge_panesi", "to": "rita_hayworth", "value": 1}, {"arrows": "to", "from": "jorge_panesi", "to": "tyrone_power", "value": 1}, {"arrows": "to", "from": "jorge_panesi", "to": "angel_rama", "value": 1}, {"arrows": "to", "from": "jorge_panesi", "to": "bajtin", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.2,
+            "gravitationalConstant": -3000,
+            "springConstant": 0.03,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

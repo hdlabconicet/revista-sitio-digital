@@ -1,0 +1,357 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 35.33333333333333, "title": "Ram\u00f3n Alcalde\u003cbr\u003eType: author\u003cbr\u003eConnections: 19"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kant_critica", "label": "Cr\u00edtica de la raz\u00f3n pura", "shape": "dot", "size": 18.0, "title": "Cr\u00edtica de la raz\u00f3n pura\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "hector_grisafi", "label": "H\u00e9ctor Grisafi", "shape": "square", "size": 35.33333333333333, "title": "H\u00e9ctor Grisafi\u003cbr\u003eType: author\u003cbr\u003eConnections: 19"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 35.33333333333333, "title": "Eduardo Gr\u00fcner\u003cbr\u003eType: author\u003cbr\u003eConnections: 19"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 50.0, "title": "Luis Gusm\u00e1n\u003cbr\u003eType: author\u003cbr\u003eConnections: 30"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 36.666666666666664, "title": "Jorge Jinkis\u003cbr\u003eType: author\u003cbr\u003eConnections: 20"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "hugo_savino", "label": "Hugo Savino", "shape": "square", "size": 35.33333333333333, "title": "Hugo Savino\u003cbr\u003eType: author\u003cbr\u003eConnections: 19"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "plauto_miles_gloriosus", "label": "Miles Gloriosus", "shape": "dot", "size": 18.0, "title": "Miles Gloriosus\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "evangelio_san_juan", "label": "Evangelio seg\u00fan San Juan", "shape": "dot", "size": 18.0, "title": "Evangelio seg\u00fan San Juan\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_christian_science", "label": "The Christian Science Monitor", "shape": "dot", "size": 18.0, "title": "The Christian Science Monitor\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sitio", "label": "Sitio", "shape": "dot", "size": 18.0, "title": "Sitio\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "araucana", "label": "La Araucana", "shape": "dot", "size": 18.0, "title": "La Araucana\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "remarque_novedad_frente", "label": "Sin novedad en el frente", "shape": "dot", "size": 18.0, "title": "Sin novedad en el frente\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "celine_viaje_noche", "label": "Viaje al fin de la noche", "shape": "dot", "size": 18.0, "title": "Viaje al fin de la noche\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "faulkner_invictos", "label": "Los invictos", "shape": "dot", "size": 18.0, "title": "Los invictos\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "tolstoi_guerra_paz", "label": "Guerra y paz", "shape": "dot", "size": 18.0, "title": "Guerra y paz\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "heller_trampa22", "label": "Trampa 22", "shape": "dot", "size": 18.0, "title": "Trampa 22\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "los_miserables", "label": "Los Miserables", "shape": "dot", "size": 18.0, "title": "Los Miserables\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rossler_cambalache", "label": "rossler_cambalache", "shape": "dot", "size": 18.0, "title": "rossler_cambalache\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_la_nacion", "label": "La Naci\u00f3n", "shape": "dot", "size": 19.333333333333336, "title": "La Naci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_lopezyward", "label": "Juan L\u00f3pez y John Ward", "shape": "dot", "size": 18.0, "title": "Juan L\u00f3pez y John Ward\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_clarin", "label": "Clar\u00edn", "shape": "dot", "size": 19.333333333333336, "title": "Clar\u00edn\u003cbr\u003eType: work\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marechal_adan", "label": "Ad\u00e1n Buenosayres", "shape": "dot", "size": 18.0, "title": "Ad\u00e1n Buenosayres\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cervantes_quijote", "label": "El ingenioso hidalgo don Quijote de l...", "shape": "dot", "size": 18.0, "title": "El ingenioso hidalgo don Quijote de l...\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bunyan_pilgrim", "label": "The Pilgrim\u0027s Progress", "shape": "dot", "size": 18.0, "title": "The Pilgrim\u0027s Progress\u003cbr\u003eType: work\u003cbr\u003eConnections: 6"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "murilo_rubiao", "label": "Murilo Rubi\u00e3o", "shape": "square", "size": 11.333333333333334, "title": "Murilo Rubi\u00e3o\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "biblia_job", "label": "Job", "shape": "dot", "size": 11.333333333333334, "title": "Job\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "piglia_respiracion", "label": "Respiraci\u00f3n artificial", "shape": "dot", "size": 12.666666666666666, "title": "Respiraci\u00f3n artificial\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jose_salas_subirat", "label": "Jos\u00e9 Salas Subirat", "shape": "square", "size": 28.666666666666668, "title": "Jos\u00e9 Salas Subirat\u003cbr\u003eType: author\u003cbr\u003eConnections: 14"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_ulises", "label": "Ulysses", "shape": "dot", "size": 11.333333333333334, "title": "Ulysses\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "subirat_ruta_miraje", "label": "La ruta de miraje", "shape": "dot", "size": 11.333333333333334, "title": "La ruta de miraje\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "subirat_pasos_sombra", "label": "Pasos en la sombra", "shape": "dot", "size": 11.333333333333334, "title": "Pasos en la sombra\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "subirat_fosiles", "label": "Los f\u00f3siles del futurismo", "shape": "dot", "size": 11.333333333333334, "title": "Los f\u00f3siles del futurismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "garcia_marquez_coronel", "label": "El coronel no tiene quien le escriba", "shape": "dot", "size": 11.333333333333334, "title": "El coronel no tiene quien le escriba\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "garcia_marquez_cien_anios", "label": "Cien a\u00f1os de soledad", "shape": "dot", "size": 11.333333333333334, "title": "Cien a\u00f1os de soledad\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_buenos_aires_literaria", "label": "Buenos Aires Literaria", "shape": "dot", "size": 11.333333333333334, "title": "Buenos Aires Literaria\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_finnegans", "label": "Finnegans Wake", "shape": "dot", "size": 11.333333333333334, "title": "Finnegans Wake\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_musica_camara", "label": "M\u00fasica de c\u00e1mara", "shape": "dot", "size": 11.333333333333334, "title": "M\u00fasica de c\u00e1mara\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_dublinenses", "label": "Dublinenses", "shape": "dot", "size": 11.333333333333334, "title": "Dublinenses\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_retrato_artista", "label": "Retrato del artista adolescente", "shape": "dot", "size": 11.333333333333334, "title": "Retrato del artista adolescente\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "comedia_humana", "label": "La Comedia Humana", "shape": "dot", "size": 11.333333333333334, "title": "La Comedia Humana\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "odisea", "label": "Odisea", "shape": "dot", "size": 11.333333333333334, "title": "Odisea\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ocampo_archipielago", "label": "El archipi\u00e9lago", "shape": "dot", "size": 11.333333333333334, "title": "El archipi\u00e9lago\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ocampo_imperio_insular", "label": "El imperio insular", "shape": "dot", "size": 11.333333333333334, "title": "El imperio insular\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lawrence_siete_pilares", "label": "Los siete pilares de la sabidur\u00eda", "shape": "dot", "size": 11.333333333333334, "title": "Los siete pilares de la sabidur\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ocampo_rama", "label": "La rama de Salzburgo", "shape": "dot", "size": 11.333333333333334, "title": "La rama de Salzburgo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "stendhal_del_amor", "label": "Del amor", "shape": "dot", "size": 11.333333333333334, "title": "Del amor\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "laiseca_aventuras", "label": "Aventuras de un novelista atonal", "shape": "dot", "size": 11.333333333333334, "title": "Aventuras de un novelista atonal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_selecciones", "label": "revista_selecciones", "shape": "dot", "size": 11.333333333333334, "title": "revista_selecciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_boquitas_pintadas", "label": "Boquitas pintadas", "shape": "dot", "size": 11.333333333333334, "title": "Boquitas pintadas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lamborghini_ninio_proletario", "label": "El ni\u00f1o proletario", "shape": "dot", "size": 11.333333333333334, "title": "El ni\u00f1o proletario\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "celine_muerte_credito", "label": "Muerte a cr\u00e9dito", "shape": "dot", "size": 11.333333333333334, "title": "Muerte a cr\u00e9dito\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "alicia_gutierrez_reto", "label": "Alicia Guti\u00e9rrez Reto", "shape": "square", "size": 11.333333333333334, "title": "Alicia Guti\u00e9rrez Reto\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ulla_urdimbre", "label": "La urdimbre", "shape": "dot", "size": 11.333333333333334, "title": "La urdimbre\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "delia_pasini", "label": "Delia Pasini", "shape": "square", "size": 11.333333333333334, "title": "Delia Pasini\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carrera_partera_canta", "label": "La partera canta", "shape": "dot", "size": 11.333333333333334, "title": "La partera canta\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "beatriz_castillo", "label": "Beatriz Castillo", "shape": "square", "size": 14.0, "title": "Beatriz Castillo\u003cbr\u003eType: author\u003cbr\u003eConnections: 3"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mallea_mancha_marmol", "label": "La mancha en el m\u00e1rmol", "shape": "dot", "size": 11.333333333333334, "title": "La mancha en el m\u00e1rmol\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mallea_bahia_silencio", "label": "La bah\u00eda de silencio", "shape": "dot", "size": 11.333333333333334, "title": "La bah\u00eda de silencio\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "liliana_heer", "label": "Liliana Heer", "shape": "square", "size": 11.333333333333334, "title": "Liliana Heer\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "molloy_breve_carcel", "label": "En breve c\u00e1rcel", "shape": "dot", "size": 11.333333333333334, "title": "En breve c\u00e1rcel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 19.333333333333336, "title": "Luis Chitarroni\u003cbr\u003eType: author\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pizarnik_textos_sombra", "label": "Textos de sombra y \u00faltimos poemas", "shape": "dot", "size": 11.333333333333334, "title": "Textos de sombra y \u00faltimos poemas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pizarnik_bucanera", "label": "La bucanera de Pernambuco o Hilda la ...", "shape": "dot", "size": 11.333333333333334, "title": "La bucanera de Pernambuco o Hilda la ...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pizarnik_extraccion", "label": "Extracci\u00f3n de la piedra de locura", "shape": "dot", "size": 11.333333333333334, "title": "Extracci\u00f3n de la piedra de locura\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pizarnik_arbol_diana", "label": "\u00c1rbol de Diana", "shape": "dot", "size": 11.333333333333334, "title": "\u00c1rbol de Diana\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pizarnik_tiempo", "label": "A tiempo y no", "shape": "dot", "size": 11.333333333333334, "title": "A tiempo y no\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carrera_momento_simetria", "label": "Momento de simetr\u00eda", "shape": "dot", "size": 11.333333333333334, "title": "Momento de simetr\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "valery_cementerio_marino", "label": "El cementerio marino", "shape": "dot", "size": 11.333333333333334, "title": "El cementerio marino\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}]);
+                  edges = new vis.DataSet([{"from": "ramon_alcalde", "to": "kant_critica", "value": 1}, {"from": "ramon_alcalde", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "ramon_alcalde", "to": "evangelio_san_juan", "value": 1}, {"from": "ramon_alcalde", "to": "revista_christian_science", "value": 1}, {"from": "ramon_alcalde", "to": "revista_sitio", "value": 3}, {"from": "ramon_alcalde", "to": "araucana", "value": 1}, {"from": "ramon_alcalde", "to": "remarque_novedad_frente", "value": 1}, {"from": "ramon_alcalde", "to": "celine_viaje_noche", "value": 1}, {"from": "ramon_alcalde", "to": "faulkner_invictos", "value": 1}, {"from": "ramon_alcalde", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "ramon_alcalde", "to": "heller_trampa22", "value": 1}, {"from": "ramon_alcalde", "to": "los_miserables", "value": 1}, {"from": "ramon_alcalde", "to": "rossler_cambalache", "value": 2}, {"from": "ramon_alcalde", "to": "diario_la_nacion", "value": 1}, {"from": "ramon_alcalde", "to": "borges_lopezyward", "value": 2}, {"from": "ramon_alcalde", "to": "diario_clarin", "value": 2}, {"from": "ramon_alcalde", "to": "marechal_adan", "value": 1}, {"from": "ramon_alcalde", "to": "cervantes_quijote", "value": 3}, {"from": "ramon_alcalde", "to": "bunyan_pilgrim", "value": 1}, {"from": "kant_critica", "to": "hector_grisafi", "value": 1}, {"from": "kant_critica", "to": "eduardo_gruner", "value": 1}, {"from": "kant_critica", "to": "luis_gusman", "value": 1}, {"from": "kant_critica", "to": "jorge_jinkis", "value": 1}, {"from": "kant_critica", "to": "hugo_savino", "value": 1}, {"from": "hector_grisafi", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "hector_grisafi", "to": "evangelio_san_juan", "value": 1}, {"from": "hector_grisafi", "to": "revista_christian_science", "value": 1}, {"from": "hector_grisafi", "to": "revista_sitio", "value": 3}, {"from": "hector_grisafi", "to": "araucana", "value": 1}, {"from": "hector_grisafi", "to": "remarque_novedad_frente", "value": 1}, {"from": "hector_grisafi", "to": "celine_viaje_noche", "value": 1}, {"from": "hector_grisafi", "to": "faulkner_invictos", "value": 1}, {"from": "hector_grisafi", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "hector_grisafi", "to": "heller_trampa22", "value": 1}, {"from": "hector_grisafi", "to": "los_miserables", "value": 1}, {"from": "hector_grisafi", "to": "rossler_cambalache", "value": 2}, {"from": "hector_grisafi", "to": "diario_la_nacion", "value": 1}, {"from": "hector_grisafi", "to": "borges_lopezyward", "value": 2}, {"from": "hector_grisafi", "to": "diario_clarin", "value": 2}, {"from": "hector_grisafi", "to": "marechal_adan", "value": 1}, {"from": "hector_grisafi", "to": "cervantes_quijote", "value": 3}, {"from": "hector_grisafi", "to": "bunyan_pilgrim", "value": 1}, {"from": "eduardo_gruner", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "eduardo_gruner", "to": "evangelio_san_juan", "value": 1}, {"from": "eduardo_gruner", "to": "revista_christian_science", "value": 1}, {"from": "eduardo_gruner", "to": "revista_sitio", "value": 3}, {"from": "eduardo_gruner", "to": "araucana", "value": 1}, {"from": "eduardo_gruner", "to": "remarque_novedad_frente", "value": 1}, {"from": "eduardo_gruner", "to": "celine_viaje_noche", "value": 1}, {"from": "eduardo_gruner", "to": "faulkner_invictos", "value": 1}, {"from": "eduardo_gruner", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "eduardo_gruner", "to": "heller_trampa22", "value": 1}, {"from": "eduardo_gruner", "to": "los_miserables", "value": 1}, {"from": "eduardo_gruner", "to": "rossler_cambalache", "value": 2}, {"from": "eduardo_gruner", "to": "diario_la_nacion", "value": 1}, {"from": "eduardo_gruner", "to": "borges_lopezyward", "value": 2}, {"from": "eduardo_gruner", "to": "diario_clarin", "value": 2}, {"from": "eduardo_gruner", "to": "marechal_adan", "value": 1}, {"from": "eduardo_gruner", "to": "cervantes_quijote", "value": 3}, {"from": "eduardo_gruner", "to": "bunyan_pilgrim", "value": 1}, {"from": "luis_gusman", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "luis_gusman", "to": "evangelio_san_juan", "value": 1}, {"from": "luis_gusman", "to": "revista_christian_science", "value": 1}, {"from": "luis_gusman", "to": "revista_sitio", "value": 3}, {"from": "luis_gusman", "to": "araucana", "value": 1}, {"from": "luis_gusman", "to": "remarque_novedad_frente", "value": 1}, {"from": "luis_gusman", "to": "celine_viaje_noche", "value": 1}, {"from": "luis_gusman", "to": "faulkner_invictos", "value": 1}, {"from": "luis_gusman", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "luis_gusman", "to": "heller_trampa22", "value": 1}, {"from": "luis_gusman", "to": "los_miserables", "value": 1}, {"from": "luis_gusman", "to": "rossler_cambalache", "value": 2}, {"from": "luis_gusman", "to": "diario_la_nacion", "value": 1}, {"from": "luis_gusman", "to": "borges_lopezyward", "value": 2}, {"from": "luis_gusman", "to": "diario_clarin", "value": 2}, {"from": "luis_gusman", "to": "marechal_adan", "value": 1}, {"from": "luis_gusman", "to": "cervantes_quijote", "value": 3}, {"from": "luis_gusman", "to": "bunyan_pilgrim", "value": 1}, {"from": "luis_gusman", "to": "ocampo_archipielago", "value": 3}, {"from": "luis_gusman", "to": "ocampo_imperio_insular", "value": 1}, {"from": "luis_gusman", "to": "lawrence_siete_pilares", "value": 1}, {"from": "luis_gusman", "to": "ocampo_rama", "value": 1}, {"from": "luis_gusman", "to": "stendhal_del_amor", "value": 1}, {"from": "luis_gusman", "to": "laiseca_aventuras", "value": 2}, {"from": "luis_gusman", "to": "revista_selecciones", "value": 1}, {"from": "luis_gusman", "to": "puig_boquitas_pintadas", "value": 1}, {"from": "luis_gusman", "to": "lamborghini_ninio_proletario", "value": 1}, {"from": "luis_gusman", "to": "piglia_respiracion", "value": 1}, {"from": "luis_gusman", "to": "celine_muerte_credito", "value": 1}, {"from": "jorge_jinkis", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "jorge_jinkis", "to": "evangelio_san_juan", "value": 1}, {"from": "jorge_jinkis", "to": "revista_christian_science", "value": 1}, {"from": "jorge_jinkis", "to": "revista_sitio", "value": 3}, {"from": "jorge_jinkis", "to": "araucana", "value": 1}, {"from": "jorge_jinkis", "to": "remarque_novedad_frente", "value": 1}, {"from": "jorge_jinkis", "to": "celine_viaje_noche", "value": 1}, {"from": "jorge_jinkis", "to": "faulkner_invictos", "value": 1}, {"from": "jorge_jinkis", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "jorge_jinkis", "to": "heller_trampa22", "value": 1}, {"from": "jorge_jinkis", "to": "los_miserables", "value": 1}, {"from": "jorge_jinkis", "to": "rossler_cambalache", "value": 2}, {"from": "jorge_jinkis", "to": "diario_la_nacion", "value": 1}, {"from": "jorge_jinkis", "to": "borges_lopezyward", "value": 2}, {"from": "jorge_jinkis", "to": "diario_clarin", "value": 2}, {"from": "jorge_jinkis", "to": "marechal_adan", "value": 1}, {"from": "jorge_jinkis", "to": "cervantes_quijote", "value": 3}, {"from": "jorge_jinkis", "to": "bunyan_pilgrim", "value": 1}, {"from": "jorge_jinkis", "to": "piglia_respiracion", "value": 1}, {"from": "hugo_savino", "to": "plauto_miles_gloriosus", "value": 1}, {"from": "hugo_savino", "to": "evangelio_san_juan", "value": 1}, {"from": "hugo_savino", "to": "revista_christian_science", "value": 1}, {"from": "hugo_savino", "to": "revista_sitio", "value": 3}, {"from": "hugo_savino", "to": "araucana", "value": 1}, {"from": "hugo_savino", "to": "remarque_novedad_frente", "value": 1}, {"from": "hugo_savino", "to": "celine_viaje_noche", "value": 1}, {"from": "hugo_savino", "to": "faulkner_invictos", "value": 1}, {"from": "hugo_savino", "to": "tolstoi_guerra_paz", "value": 1}, {"from": "hugo_savino", "to": "heller_trampa22", "value": 1}, {"from": "hugo_savino", "to": "los_miserables", "value": 1}, {"from": "hugo_savino", "to": "rossler_cambalache", "value": 2}, {"from": "hugo_savino", "to": "diario_la_nacion", "value": 1}, {"from": "hugo_savino", "to": "borges_lopezyward", "value": 2}, {"from": "hugo_savino", "to": "diario_clarin", "value": 2}, {"from": "hugo_savino", "to": "marechal_adan", "value": 1}, {"from": "hugo_savino", "to": "cervantes_quijote", "value": 3}, {"from": "hugo_savino", "to": "bunyan_pilgrim", "value": 1}, {"from": "diario_la_nacion", "to": "beatriz_castillo", "value": 1}, {"from": "diario_clarin", "to": "jose_salas_subirat", "value": 1}, {"from": "murilo_rubiao", "to": "biblia_job", "value": 1}, {"from": "jose_salas_subirat", "to": "joyce_ulises", "value": 15}, {"from": "jose_salas_subirat", "to": "subirat_ruta_miraje", "value": 1}, {"from": "jose_salas_subirat", "to": "subirat_pasos_sombra", "value": 1}, {"from": "jose_salas_subirat", "to": "subirat_fosiles", "value": 1}, {"from": "jose_salas_subirat", "to": "garcia_marquez_coronel", "value": 1}, {"from": "jose_salas_subirat", "to": "garcia_marquez_cien_anios", "value": 1}, {"from": "jose_salas_subirat", "to": "revista_buenos_aires_literaria", "value": 1}, {"from": "jose_salas_subirat", "to": "joyce_finnegans", "value": 3}, {"from": "jose_salas_subirat", "to": "joyce_musica_camara", "value": 1}, {"from": "jose_salas_subirat", "to": "joyce_dublinenses", "value": 3}, {"from": "jose_salas_subirat", "to": "joyce_retrato_artista", "value": 1}, {"from": "jose_salas_subirat", "to": "comedia_humana", "value": 1}, {"from": "jose_salas_subirat", "to": "odisea", "value": 4}, {"from": "alicia_gutierrez_reto", "to": "ulla_urdimbre", "value": 6}, {"from": "delia_pasini", "to": "carrera_partera_canta", "value": 1}, {"from": "beatriz_castillo", "to": "mallea_mancha_marmol", "value": 2}, {"from": "beatriz_castillo", "to": "mallea_bahia_silencio", "value": 1}, {"from": "liliana_heer", "to": "molloy_breve_carcel", "value": 2}, {"from": "luis_chitarroni", "to": "pizarnik_textos_sombra", "value": 1}, {"from": "luis_chitarroni", "to": "pizarnik_bucanera", "value": 2}, {"from": "luis_chitarroni", "to": "pizarnik_extraccion", "value": 1}, {"from": "luis_chitarroni", "to": "pizarnik_arbol_diana", "value": 1}, {"from": "luis_chitarroni", "to": "pizarnik_tiempo", "value": 1}, {"from": "luis_chitarroni", "to": "carrera_momento_simetria", "value": 1}, {"from": "luis_chitarroni", "to": "valery_cementerio_marino", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -2000,
+            "springConstant": 0.001,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

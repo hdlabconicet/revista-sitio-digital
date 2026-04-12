@@ -1,0 +1,452 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 95vh;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 21.70731707317073, "title": "Luis Chitarroni\u003cbr\u003eType: author\u003cbr\u003eConnections: 12"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sitio", "label": "Sitio", "shape": "dot", "size": 13.902439024390244, "title": "Sitio\u003cbr\u003eType: work\u003cbr\u003eConnections: 4"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sur", "label": "Sur", "shape": "dot", "size": 10.975609756097562, "title": "Sur\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arbasino_superheliogabalo", "label": "Super-Eliogabalo", "shape": "dot", "size": 10.975609756097562, "title": "Super-Eliogabalo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_ficcion", "label": "Ficci\u00f3n", "shape": "dot", "size": 10.975609756097562, "title": "Ficci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "thomas_24years", "label": "Twenty-four years", "shape": "dot", "size": 10.975609756097562, "title": "Twenty-four years\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wilcock_caos", "label": "El caos", "shape": "dot", "size": 11.951219512195122, "title": "El caos\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "nabokov_lolita", "label": "Lolita", "shape": "dot", "size": 10.975609756097562, "title": "Lolita\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "antologia_lit_fant", "label": "Antolog\u00eda de la literatura fant\u00e1stica", "shape": "dot", "size": 10.975609756097562, "title": "Antolog\u00eda de la literatura fant\u00e1stica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wilcock_ingegnere", "label": "L\u0027ingegnere", "shape": "dot", "size": 10.975609756097562, "title": "L\u0027ingegnere\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "milton_samson", "label": "Samson Agonistes", "shape": "dot", "size": 10.975609756097562, "title": "Samson Agonistes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_finnegans", "label": "Finnegans Wake", "shape": "dot", "size": 11.951219512195122, "title": "Finnegans Wake\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 39.26829268292683, "title": "Luis Gusm\u00e1n\u003cbr\u003eType: author\u003cbr\u003eConnections: 30"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "walser_ayudante", "label": "El ayudante", "shape": "dot", "size": 10.975609756097562, "title": "El ayudante\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "walser_von_gunten", "label": "Jakob von Gunten", "shape": "dot", "size": 10.975609756097562, "title": "Jakob von Gunten\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_kafka_precursores", "label": "Kafka y sus precursores", "shape": "dot", "size": 10.975609756097562, "title": "Kafka y sus precursores\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rousseau_emilio", "label": "Emilio, o De la educaci\u00f3n", "shape": "dot", "size": 10.975609756097562, "title": "Emilio, o De la educaci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "tolstoi_amo_criado", "label": "El amo y el criado", "shape": "dot", "size": 10.975609756097562, "title": "El amo y el criado\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "goncharov_oblomov", "label": "Oblomov", "shape": "dot", "size": 10.975609756097562, "title": "Oblomov\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "calasso_suenio", "label": "El sue\u00f1o del cal\u00edgrafo", "shape": "dot", "size": 10.975609756097562, "title": "El sue\u00f1o del cal\u00edgrafo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_jinkis", "label": "Jorge Jinkis", "shape": "square", "size": 19.75609756097561, "title": "Jorge Jinkis\u003cbr\u003eType: author\u003cbr\u003eConnections: 10"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_clarin", "label": "Clar\u00edn", "shape": "dot", "size": 10.975609756097562, "title": "Clar\u00edn\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_humor", "label": "Humor Registrado", "shape": "dot", "size": 11.951219512195122, "title": "Humor Registrado\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_temps_modernes", "label": "Les Temps Modernes", "shape": "dot", "size": 10.975609756097562, "title": "Les Temps Modernes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_temps_modernes_420_421", "label": "Argentine, entre populisme et militar...", "shape": "dot", "size": 10.975609756097562, "title": "Argentine, entre populisme et militar...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sebreli_deseos_peronismo", "label": "Los deseos imaginarios del peronismo", "shape": "dot", "size": 10.975609756097562, "title": "Los deseos imaginarios del peronismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_contorno", "label": "Contorno", "shape": "dot", "size": 11.951219512195122, "title": "Contorno\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_portenio", "label": "El Porte\u00f1o", "shape": "dot", "size": 10.975609756097562, "title": "El Porte\u00f1o\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marmol_amalia", "label": "Amalia", "shape": "dot", "size": 11.951219512195122, "title": "Amalia\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cortazar_rayuela", "label": "Rayuela", "shape": "dot", "size": 11.951219512195122, "title": "Rayuela\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "nestor_perlongher", "label": "N\u00e9stor Perlongher", "shape": "square", "size": 12.926829268292682, "title": "N\u00e9stor Perlongher\u003cbr\u003eType: author\u003cbr\u003eConnections: 3"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rossler_cambalache", "label": "rossler_cambalache", "shape": "dot", "size": 10.975609756097562, "title": "rossler_cambalache\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_lopezyward", "label": "Juan L\u00f3pez y John Ward", "shape": "dot", "size": 10.975609756097562, "title": "Juan L\u00f3pez y John Ward\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 15.853658536585366, "title": "Ram\u00f3n Alcalde\u003cbr\u003eType: author\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "raschella_malditos_gallos", "label": "Malditos gallos", "shape": "dot", "size": 10.975609756097562, "title": "Malditos gallos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "perlongher_daisy", "label": "perlongher_daisy", "shape": "dot", "size": 10.975609756097562, "title": "perlongher_daisy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "aristofanes_nubes", "label": "Las nubes", "shape": "dot", "size": 10.975609756097562, "title": "Las nubes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sitio_entredicho_2", "label": "sitio_entredicho_2", "shape": "dot", "size": 10.975609756097562, "title": "sitio_entredicho_2\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "freud_psicologia_masas", "label": "Psicolog\u00eda de las masas y an\u00e1lisis de...", "shape": "dot", "size": 10.975609756097562, "title": "Psicolog\u00eda de las masas y an\u00e1lisis de...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "moyano_navios", "label": "Libro de nav\u00edos y borrascas", "shape": "dot", "size": 10.975609756097562, "title": "Libro de nav\u00edos y borrascas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "moyano_vuelo_tigre", "label": "El vuelo del tigre", "shape": "dot", "size": 10.975609756097562, "title": "El vuelo del tigre\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dumas_montevideo", "label": "Montevideo o la Nueva Troya", "shape": "dot", "size": 10.975609756097562, "title": "Montevideo o la Nueva Troya\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "aimard_mas_horca", "label": "La Mas-Horca", "shape": "dot", "size": 10.975609756097562, "title": "La Mas-Horca\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "aimard_rosas", "label": "Rosas", "shape": "dot", "size": 10.975609756097562, "title": "Rosas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "west_proteo", "label": "Proteo", "shape": "dot", "size": 10.975609756097562, "title": "Proteo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_gaceta_mercantil", "label": "La Gaceta Mercantil", "shape": "dot", "size": 10.975609756097562, "title": "La Gaceta Mercantil\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_comercio_del_plata", "label": "El Comercio del Plata", "shape": "dot", "size": 10.975609756097562, "title": "El Comercio del Plata\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "iliada", "label": "La Il\u00edada", "shape": "dot", "size": 10.975609756097562, "title": "La Il\u00edada\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "vinias_mirada", "label": "vinias_mirada", "shape": "dot", "size": 10.975609756097562, "title": "vinias_mirada\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dumas_mosqueteros", "label": "Los tres mosqueteros", "shape": "dot", "size": 10.975609756097562, "title": "Los tres mosqueteros\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dumas_intriga", "label": "dumas_intriga", "shape": "dot", "size": 10.975609756097562, "title": "dumas_intriga\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_mois", "label": "Le Mois", "shape": "dot", "size": 10.975609756097562, "title": "Le Mois\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sue_misterios", "label": "Los misterios de Par\u00eds", "shape": "dot", "size": 10.975609756097562, "title": "Los misterios de Par\u00eds\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "byron_manfredo", "label": "Manfredo", "shape": "dot", "size": 10.975609756097562, "title": "Manfredo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "victor_hugo_seniora_paris", "label": "Nuestra Se\u00f1ora de Par\u00eds", "shape": "dot", "size": 10.975609756097562, "title": "Nuestra Se\u00f1ora de Par\u00eds\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lamartine_meditaciones", "label": "Meditaciones po\u00e9ticas", "shape": "dot", "size": 10.975609756097562, "title": "Meditaciones po\u00e9ticas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "victor_hugo_contemplaciones", "label": "Las Contemplaciones", "shape": "dot", "size": 10.975609756097562, "title": "Las Contemplaciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "los_miserables", "label": "Los Miserables", "shape": "dot", "size": 10.975609756097562, "title": "Los Miserables\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 50.0, "title": "Eduardo Gr\u00fcner\u003cbr\u003eType: author\u003cbr\u003eConnections: 41"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kleist_principe", "label": "El pr\u00edncipe de Homburg", "shape": "dot", "size": 10.975609756097562, "title": "El pr\u00edncipe de Homburg\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "historia_lit_arg", "label": "historia_lit_arg", "shape": "dot", "size": 10.975609756097562, "title": "historia_lit_arg\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lapesa_historia_lengua", "label": "Historia de la lengua espa\u00f1ola", "shape": "dot", "size": 10.975609756097562, "title": "Historia de la lengua espa\u00f1ola\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_critica_razon", "label": "Cr\u00edtica de la raz\u00f3n dial\u00e9ctica", "shape": "dot", "size": 10.975609756097562, "title": "Cr\u00edtica de la raz\u00f3n dial\u00e9ctica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sarmiento_facundo", "label": "Facundo: Civilizaci\u00f3n y Barbarie", "shape": "dot", "size": 10.975609756097562, "title": "Facundo: Civilizaci\u00f3n y Barbarie\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hernandez_martin_fierro", "label": "El Gaucho Mart\u00edn Fierro", "shape": "dot", "size": 10.975609756097562, "title": "El Gaucho Mart\u00edn Fierro\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alberdi_bases", "label": "Bases y puntos de partida para la org...", "shape": "dot", "size": 10.975609756097562, "title": "Bases y puntos de partida para la org...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_dogma_socialista", "label": "Dogma Socialista", "shape": "dot", "size": 10.975609756097562, "title": "Dogma Socialista\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_angel_caido", "label": "El \u00e1ngel ca\u00eddo", "shape": "dot", "size": 10.975609756097562, "title": "El \u00e1ngel ca\u00eddo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alberdi_gigante", "label": "alberdi_gigante", "shape": "dot", "size": 10.975609756097562, "title": "alberdi_gigante\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kant_idea_historia", "label": "Idea de una historia universal en sen...", "shape": "dot", "size": 10.975609756097562, "title": "Idea de una historia universal en sen...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "condorcet_bosquejo", "label": "Bosquejo de un cuadro hist\u00f3rico del e...", "shape": "dot", "size": 10.975609756097562, "title": "Bosquejo de un cuadro hist\u00f3rico del e...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alberdi_fragmento", "label": "Fragmento preliminar al estudio del d...", "shape": "dot", "size": 10.975609756097562, "title": "Fragmento preliminar al estudio del d...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alberdi_crimen", "label": "El crimen de la guerra", "shape": "dot", "size": 10.975609756097562, "title": "El crimen de la guerra\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "alberdi_cartas", "label": "Cartas Quillotanas", "shape": "dot", "size": 10.975609756097562, "title": "Cartas Quillotanas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_cautiva", "label": "La Cautiva", "shape": "dot", "size": 10.975609756097562, "title": "La Cautiva\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "biblia", "label": "Biblia", "shape": "dot", "size": 10.975609756097562, "title": "Biblia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "altamirano_sarlo_centenario", "label": "La Argentina del centenario: campo in...", "shape": "dot", "size": 10.975609756097562, "title": "La Argentina del centenario: campo in...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_hispamerica", "label": "Hispam\u00e9rica", "shape": "dot", "size": 10.975609756097562, "title": "Hispam\u00e9rica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bajtin_dialogic", "label": "The Dialogic Imagination: Four Essays", "shape": "dot", "size": 10.975609756097562, "title": "The Dialogic Imagination: Four Essays\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "benjamin_ensayos", "label": "Ensayos escogidos", "shape": "dot", "size": 10.975609756097562, "title": "Ensayos escogidos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "chavez_historicismo", "label": "Historicismo e iluminismo en la cultu...", "shape": "dot", "size": 10.975609756097562, "title": "Historicismo e iluminismo en la cultu...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "feinmann_filosofia", "label": "Filosof\u00eda y Naci\u00f3n", "shape": "dot", "size": 10.975609756097562, "title": "Filosof\u00eda y Naci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "halperin_desierto", "label": "Una naci\u00f3n para el desierto argentino", "shape": "dot", "size": 10.975609756097562, "title": "Una naci\u00f3n para el desierto argentino\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_poetique", "label": "Po\u00e9tique", "shape": "dot", "size": 10.975609756097562, "title": "Po\u00e9tique\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hauss_literatura", "label": "La literatura como provocaci\u00f3n", "shape": "dot", "size": 10.975609756097562, "title": "La literatura como provocaci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "kusch_geocultura", "label": "Geocultura del hombre americano", "shape": "dot", "size": 10.975609756097562, "title": "Geocultura del hombre americano\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "levi_strauss_pensamiento_salvaje", "label": "El pensamiento salvaje", "shape": "dot", "size": 10.975609756097562, "title": "El pensamiento salvaje\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "estrada_muerte", "label": "Muerte y transfiguraci\u00f3n del Mart\u00edn F...", "shape": "dot", "size": 10.975609756097562, "title": "Muerte y transfiguraci\u00f3n del Mart\u00edn F...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "estrada_revision", "label": "Para una revisi\u00f3n de las letras argen...", "shape": "dot", "size": 10.975609756097562, "title": "Para una revisi\u00f3n de las letras argen...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "paz_inmediaciones", "label": "In/mediaciones", "shape": "dot", "size": 10.975609756097562, "title": "In/mediaciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "roig_teoria_pensamiento", "label": "Teor\u00eda y cr\u00edtica del pensamiento lati...", "shape": "dot", "size": 10.975609756097562, "title": "Teor\u00eda y cr\u00edtica del pensamiento lati...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_criterio", "label": "Criterio", "shape": "dot", "size": 10.975609756097562, "title": "Criterio\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "starobinski_literatura_texto", "label": "La literatura, el texto y el int\u00e9rprete", "shape": "dot", "size": 10.975609756097562, "title": "La literatura, el texto y el int\u00e9rprete\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "goff_historia", "label": "Hacer la historia", "shape": "dot", "size": 10.975609756097562, "title": "Hacer la historia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "steiner_castillo", "label": "En el castillo de Barbazul: aproximac...", "shape": "dot", "size": 10.975609756097562, "title": "En el castillo de Barbazul: aproximac...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "steiner_extraterritorial", "label": "Extraterritorial: ensayos sobre liter...", "shape": "dot", "size": 10.975609756097562, "title": "Extraterritorial: ensayos sobre liter...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "steiner_lenguaje", "label": "Lenguaje y silencio: ensayos sobre la...", "shape": "dot", "size": 10.975609756097562, "title": "Lenguaje y silencio: ensayos sobre la...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "unamuno_idioma_argentinos", "label": "unamuno_idioma_argentinos", "shape": "dot", "size": 10.975609756097562, "title": "unamuno_idioma_argentinos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rubione_criollismo", "label": "rubione_criollismo", "shape": "dot", "size": 10.975609756097562, "title": "rubione_criollismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "vinias_lit_arg", "label": "vinias_lit_arg", "shape": "dot", "size": 10.975609756097562, "title": "vinias_lit_arg\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "briante_relatos", "label": "Ley de Juego. Relatos", "shape": "dot", "size": 10.975609756097562, "title": "Ley de Juego. Relatos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "briante_hamacas", "label": "Las hamacas voladoras", "shape": "dot", "size": 10.975609756097562, "title": "Las hamacas voladoras\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "briante_hombre_orilla", "label": "Hombre en la orilla", "shape": "dot", "size": 10.975609756097562, "title": "Hombre en la orilla\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "norma_gentili", "label": "norma_gentili", "shape": "square", "size": 10.975609756097562, "title": "norma_gentili\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lynch_informe", "label": "Informe bajo llave", "shape": "dot", "size": 10.975609756097562, "title": "Informe bajo llave\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "liliana_heer", "label": "Liliana Heer", "shape": "square", "size": 10.975609756097562, "title": "Liliana Heer\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lins_avalovara", "label": "Avalovara", "shape": "dot", "size": 10.975609756097562, "title": "Avalovara\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "jorge_monteleone", "label": "Jorge Monteleone", "shape": "square", "size": 27.5609756097561, "title": "Jorge Monteleone\u003cbr\u003eType: author\u003cbr\u003eConnections: 18"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gusman_corazon_junio", "label": "En el coraz\u00f3n de junio", "shape": "dot", "size": 10.975609756097562, "title": "En el coraz\u00f3n de junio\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "hawthorne_wakefield", "label": "Wakefield", "shape": "dot", "size": 10.975609756097562, "title": "Wakefield\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "beckett_malone", "label": "Malone muere", "shape": "dot", "size": 10.975609756097562, "title": "Malone muere\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "beckett_fin_partida", "label": "Fin de partida", "shape": "dot", "size": 10.975609756097562, "title": "Fin de partida\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lugones_lunario", "label": "Lunario sentimental", "shape": "dot", "size": 10.975609756097562, "title": "Lunario sentimental\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gusman_brillos", "label": "Brillos", "shape": "dot", "size": 10.975609756097562, "title": "Brillos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "arlt_ciencias_ocultas", "label": "Las ciencias ocultas en la ciudad de ...", "shape": "dot", "size": 10.975609756097562, "title": "Las ciencias ocultas en la ciudad de ...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "flaubert_corazon_simple", "label": "Un coraz\u00f3n simple", "shape": "dot", "size": 10.975609756097562, "title": "Un coraz\u00f3n simple\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "conrad_corazon_tinieblas", "label": "Heart of Darkness", "shape": "dot", "size": 10.975609756097562, "title": "Heart of Darkness\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dostoyevski_corazon", "label": "Un coraz\u00f3n d\u00e9bil", "shape": "dot", "size": 10.975609756097562, "title": "Un coraz\u00f3n d\u00e9bil\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_ulises", "label": "Ulysses", "shape": "dot", "size": 10.975609756097562, "title": "Ulysses\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dabove_muerte_traje", "label": "La muerte y su traje", "shape": "dot", "size": 10.975609756097562, "title": "La muerte y su traje\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "quiroga_cuentos_selva", "label": "Cuentos de la selva", "shape": "dot", "size": 10.975609756097562, "title": "Cuentos de la selva\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "shakespeare_hamlet", "label": "Hamlet", "shape": "dot", "size": 10.975609756097562, "title": "Hamlet\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "hugo_savino", "label": "Hugo Savino", "shape": "square", "size": 17.804878048780488, "title": "Hugo Savino\u003cbr\u003eType: author\u003cbr\u003eConnections: 8"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "soriano_cuarteles", "label": "Cuarteles de invierno", "shape": "dot", "size": 10.975609756097562, "title": "Cuarteles de invierno\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rimbaud_temporada_infierno", "label": "Una temporada en el infierno", "shape": "dot", "size": 10.975609756097562, "title": "Una temporada en el infierno\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eliot_tierra_baldia", "label": "La tierra bald\u00eda", "shape": "dot", "size": 10.975609756097562, "title": "La tierra bald\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eliot_cuartetos", "label": "Los cuatro cuartetos", "shape": "dot", "size": 10.975609756097562, "title": "Los cuatro cuartetos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "soriano_penas_olvido", "label": "No habr\u00e1 m\u00e1s penas ni olvido", "shape": "dot", "size": 10.975609756097562, "title": "No habr\u00e1 m\u00e1s penas ni olvido\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_maldicion", "label": "Maldici\u00f3n eterna a quien lea estas p\u00e1...", "shape": "dot", "size": 10.975609756097562, "title": "Maldici\u00f3n eterna a quien lea estas p\u00e1...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "puig_sangre", "label": "Sangre de amor correspondido", "shape": "dot", "size": 10.975609756097562, "title": "Sangre de amor correspondido\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "angelino_recordando", "label": "Recordando en el viento", "shape": "dot", "size": 10.975609756097562, "title": "Recordando en el viento\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "beatriz_castillo", "label": "Beatriz Castillo", "shape": "square", "size": 11.951219512195122, "title": "Beatriz Castillo\u003cbr\u003eType: author\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "aries_muerte", "label": "La muerte en Occidente", "shape": "dot", "size": 10.975609756097562, "title": "La muerte en Occidente\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bronte_cumbres", "label": "Cumbres borrascosas", "shape": "dot", "size": 10.975609756097562, "title": "Cumbres borrascosas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "mercedes_roffe", "label": "Mercedes Roff\u00e9", "shape": "square", "size": 19.75609756097561, "title": "Mercedes Roff\u00e9\u003cbr\u003eType: author\u003cbr\u003eConnections: 10"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "euripides_troyanas", "label": "Las troyanas", "shape": "dot", "size": 10.975609756097562, "title": "Las troyanas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_troyanas", "label": "Les Troyennes", "shape": "dot", "size": 10.975609756097562, "title": "Les Troyennes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "flaubert_educacion", "label": "La educaci\u00f3n sentimental", "shape": "dot", "size": 10.975609756097562, "title": "La educaci\u00f3n sentimental\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eneida", "label": "Eneida", "shape": "dot", "size": 10.975609756097562, "title": "Eneida\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "flaubert_salambo", "label": "Salammb\u00f4", "shape": "dot", "size": 10.975609756097562, "title": "Salammb\u00f4\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "odisea", "label": "Odisea", "shape": "dot", "size": 10.975609756097562, "title": "Odisea\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gautier_emaux_camees", "label": "\u00c9maux et Cam\u00e9es", "shape": "dot", "size": 10.975609756097562, "title": "\u00c9maux et Cam\u00e9es\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "flaubert_madame_bovary", "label": "Madame Bovary", "shape": "dot", "size": 10.975609756097562, "title": "Madame Bovary\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "baudelaire_flores_mal", "label": "Las flores del mal", "shape": "dot", "size": 10.975609756097562, "title": "Las flores del mal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wilde_salome", "label": "Salom\u00e9", "shape": "dot", "size": 10.975609756097562, "title": "Salom\u00e9\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}]);
+                  edges = new vis.DataSet([{"from": "luis_chitarroni", "to": "revista_sitio", "value": 1}, {"from": "luis_chitarroni", "to": "revista_sur", "value": 3}, {"from": "luis_chitarroni", "to": "arbasino_superheliogabalo", "value": 1}, {"from": "luis_chitarroni", "to": "revista_ficcion", "value": 2}, {"from": "luis_chitarroni", "to": "thomas_24years", "value": 1}, {"from": "luis_chitarroni", "to": "wilcock_caos", "value": 9}, {"from": "luis_chitarroni", "to": "nabokov_lolita", "value": 1}, {"from": "luis_chitarroni", "to": "antologia_lit_fant", "value": 5}, {"from": "luis_chitarroni", "to": "wilcock_ingegnere", "value": 1}, {"from": "luis_chitarroni", "to": "milton_samson", "value": 1}, {"from": "luis_chitarroni", "to": "joyce_finnegans", "value": 1}, {"from": "luis_chitarroni", "to": "angelino_recordando", "value": 6}, {"from": "revista_sitio", "to": "nestor_perlongher", "value": 1}, {"from": "revista_sitio", "to": "jorge_jinkis", "value": 1}, {"from": "revista_sitio", "to": "ramon_alcalde", "value": 11}, {"from": "wilcock_caos", "to": "jorge_monteleone", "value": 3}, {"from": "joyce_finnegans", "to": "jorge_monteleone", "value": 2}, {"from": "luis_gusman", "to": "walser_ayudante", "value": 5}, {"from": "luis_gusman", "to": "walser_von_gunten", "value": 5}, {"from": "luis_gusman", "to": "borges_kafka_precursores", "value": 1}, {"from": "luis_gusman", "to": "rousseau_emilio", "value": 1}, {"from": "luis_gusman", "to": "tolstoi_amo_criado", "value": 1}, {"from": "luis_gusman", "to": "goncharov_oblomov", "value": 1}, {"from": "luis_gusman", "to": "calasso_suenio", "value": 1}, {"from": "luis_gusman", "to": "marmol_amalia", "value": 18}, {"from": "luis_gusman", "to": "moyano_navios", "value": 3}, {"from": "luis_gusman", "to": "moyano_vuelo_tigre", "value": 3}, {"from": "luis_gusman", "to": "dumas_montevideo", "value": 5}, {"from": "luis_gusman", "to": "aimard_mas_horca", "value": 2}, {"from": "luis_gusman", "to": "aimard_rosas", "value": 4}, {"from": "luis_gusman", "to": "west_proteo", "value": 3}, {"from": "luis_gusman", "to": "diario_gaceta_mercantil", "value": 1}, {"from": "luis_gusman", "to": "diario_comercio_del_plata", "value": 1}, {"from": "luis_gusman", "to": "iliada", "value": 1}, {"from": "luis_gusman", "to": "vinias_mirada", "value": 1}, {"from": "luis_gusman", "to": "dumas_mosqueteros", "value": 1}, {"from": "luis_gusman", "to": "dumas_intriga", "value": 1}, {"from": "luis_gusman", "to": "diario_mois", "value": 1}, {"from": "luis_gusman", "to": "sue_misterios", "value": 1}, {"from": "luis_gusman", "to": "byron_manfredo", "value": 1}, {"from": "luis_gusman", "to": "victor_hugo_seniora_paris", "value": 1}, {"from": "luis_gusman", "to": "lamartine_meditaciones", "value": 1}, {"from": "luis_gusman", "to": "victor_hugo_contemplaciones", "value": 1}, {"from": "luis_gusman", "to": "los_miserables", "value": 1}, {"from": "luis_gusman", "to": "briante_relatos", "value": 1}, {"from": "luis_gusman", "to": "briante_hamacas", "value": 1}, {"from": "luis_gusman", "to": "briante_hombre_orilla", "value": 1}, {"from": "jorge_jinkis", "to": "diario_clarin", "value": 4}, {"from": "jorge_jinkis", "to": "revista_humor", "value": 2}, {"from": "jorge_jinkis", "to": "revista_temps_modernes", "value": 7}, {"from": "jorge_jinkis", "to": "revista_temps_modernes_420_421", "value": 5}, {"from": "jorge_jinkis", "to": "sebreli_deseos_peronismo", "value": 1}, {"from": "jorge_jinkis", "to": "revista_contorno", "value": 2}, {"from": "jorge_jinkis", "to": "diario_portenio", "value": 4}, {"from": "jorge_jinkis", "to": "marmol_amalia", "value": 1}, {"from": "jorge_jinkis", "to": "cortazar_rayuela", "value": 1}, {"from": "revista_humor", "to": "hugo_savino", "value": 1}, {"from": "revista_contorno", "to": "jorge_monteleone", "value": 1}, {"from": "cortazar_rayuela", "to": "jorge_monteleone", "value": 2}, {"from": "nestor_perlongher", "to": "rossler_cambalache", "value": 1}, {"from": "nestor_perlongher", "to": "borges_lopezyward", "value": 1}, {"from": "ramon_alcalde", "to": "raschella_malditos_gallos", "value": 1}, {"from": "ramon_alcalde", "to": "perlongher_daisy", "value": 1}, {"from": "ramon_alcalde", "to": "aristofanes_nubes", "value": 1}, {"from": "ramon_alcalde", "to": "sitio_entredicho_2", "value": 2}, {"from": "ramon_alcalde", "to": "freud_psicologia_masas", "value": 1}, {"from": "eduardo_gruner", "to": "kleist_principe", "value": 1}, {"from": "eduardo_gruner", "to": "historia_lit_arg", "value": 1}, {"from": "eduardo_gruner", "to": "lapesa_historia_lengua", "value": 1}, {"from": "eduardo_gruner", "to": "sartre_critica_razon", "value": 2}, {"from": "eduardo_gruner", "to": "sarmiento_facundo", "value": 2}, {"from": "eduardo_gruner", "to": "hernandez_martin_fierro", "value": 3}, {"from": "eduardo_gruner", "to": "alberdi_bases", "value": 2}, {"from": "eduardo_gruner", "to": "echeverria_dogma_socialista", "value": 1}, {"from": "eduardo_gruner", "to": "echeverria_angel_caido", "value": 1}, {"from": "eduardo_gruner", "to": "alberdi_gigante", "value": 1}, {"from": "eduardo_gruner", "to": "kant_idea_historia", "value": 1}, {"from": "eduardo_gruner", "to": "condorcet_bosquejo", "value": 1}, {"from": "eduardo_gruner", "to": "alberdi_fragmento", "value": 1}, {"from": "eduardo_gruner", "to": "alberdi_crimen", "value": 1}, {"from": "eduardo_gruner", "to": "alberdi_cartas", "value": 1}, {"from": "eduardo_gruner", "to": "echeverria_cautiva", "value": 1}, {"from": "eduardo_gruner", "to": "biblia", "value": 1}, {"from": "eduardo_gruner", "to": "altamirano_sarlo_centenario", "value": 1}, {"from": "eduardo_gruner", "to": "revista_hispamerica", "value": 1}, {"from": "eduardo_gruner", "to": "bajtin_dialogic", "value": 1}, {"from": "eduardo_gruner", "to": "benjamin_ensayos", "value": 1}, {"from": "eduardo_gruner", "to": "chavez_historicismo", "value": 1}, {"from": "eduardo_gruner", "to": "feinmann_filosofia", "value": 1}, {"from": "eduardo_gruner", "to": "halperin_desierto", "value": 1}, {"from": "eduardo_gruner", "to": "revista_poetique", "value": 2}, {"from": "eduardo_gruner", "to": "hauss_literatura", "value": 1}, {"from": "eduardo_gruner", "to": "kusch_geocultura", "value": 1}, {"from": "eduardo_gruner", "to": "levi_strauss_pensamiento_salvaje", "value": 1}, {"from": "eduardo_gruner", "to": "estrada_muerte", "value": 1}, {"from": "eduardo_gruner", "to": "estrada_revision", "value": 1}, {"from": "eduardo_gruner", "to": "paz_inmediaciones", "value": 1}, {"from": "eduardo_gruner", "to": "roig_teoria_pensamiento", "value": 1}, {"from": "eduardo_gruner", "to": "revista_criterio", "value": 1}, {"from": "eduardo_gruner", "to": "starobinski_literatura_texto", "value": 1}, {"from": "eduardo_gruner", "to": "goff_historia", "value": 1}, {"from": "eduardo_gruner", "to": "steiner_castillo", "value": 1}, {"from": "eduardo_gruner", "to": "steiner_extraterritorial", "value": 1}, {"from": "eduardo_gruner", "to": "steiner_lenguaje", "value": 1}, {"from": "eduardo_gruner", "to": "unamuno_idioma_argentinos", "value": 1}, {"from": "eduardo_gruner", "to": "rubione_criollismo", "value": 1}, {"from": "eduardo_gruner", "to": "vinias_lit_arg", "value": 1}, {"from": "norma_gentili", "to": "lynch_informe", "value": 2}, {"from": "liliana_heer", "to": "lins_avalovara", "value": 3}, {"from": "jorge_monteleone", "to": "gusman_corazon_junio", "value": 11}, {"from": "jorge_monteleone", "to": "hawthorne_wakefield", "value": 2}, {"from": "jorge_monteleone", "to": "beckett_malone", "value": 1}, {"from": "jorge_monteleone", "to": "beckett_fin_partida", "value": 1}, {"from": "jorge_monteleone", "to": "lugones_lunario", "value": 1}, {"from": "jorge_monteleone", "to": "gusman_brillos", "value": 1}, {"from": "jorge_monteleone", "to": "arlt_ciencias_ocultas", "value": 1}, {"from": "jorge_monteleone", "to": "flaubert_corazon_simple", "value": 3}, {"from": "jorge_monteleone", "to": "conrad_corazon_tinieblas", "value": 2}, {"from": "jorge_monteleone", "to": "dostoyevski_corazon", "value": 2}, {"from": "jorge_monteleone", "to": "joyce_ulises", "value": 2}, {"from": "jorge_monteleone", "to": "dabove_muerte_traje", "value": 1}, {"from": "jorge_monteleone", "to": "quiroga_cuentos_selva", "value": 1}, {"from": "jorge_monteleone", "to": "shakespeare_hamlet", "value": 1}, {"from": "hugo_savino", "to": "soriano_cuarteles", "value": 3}, {"from": "hugo_savino", "to": "rimbaud_temporada_infierno", "value": 1}, {"from": "hugo_savino", "to": "eliot_tierra_baldia", "value": 1}, {"from": "hugo_savino", "to": "eliot_cuartetos", "value": 1}, {"from": "hugo_savino", "to": "soriano_penas_olvido", "value": 1}, {"from": "hugo_savino", "to": "puig_maldicion", "value": 1}, {"from": "hugo_savino", "to": "puig_sangre", "value": 1}, {"from": "beatriz_castillo", "to": "aries_muerte", "value": 3}, {"from": "beatriz_castillo", "to": "bronte_cumbres", "value": 1}, {"from": "mercedes_roffe", "to": "euripides_troyanas", "value": 2}, {"from": "mercedes_roffe", "to": "sartre_troyanas", "value": 2}, {"from": "mercedes_roffe", "to": "flaubert_educacion", "value": 1}, {"from": "mercedes_roffe", "to": "eneida", "value": 1}, {"from": "mercedes_roffe", "to": "flaubert_salambo", "value": 7}, {"from": "mercedes_roffe", "to": "odisea", "value": 1}, {"from": "mercedes_roffe", "to": "gautier_emaux_camees", "value": 1}, {"from": "mercedes_roffe", "to": "flaubert_madame_bovary", "value": 1}, {"from": "mercedes_roffe", "to": "baudelaire_flores_mal", "value": 1}, {"from": "mercedes_roffe", "to": "wilde_salome", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -2000,
+            "springConstant": 0.001,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

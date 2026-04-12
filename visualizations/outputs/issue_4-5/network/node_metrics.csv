@@ -1,0 +1,235 @@
+id,name,node_type,birth_year,birth_place,in_degree,out_degree,betweenness,pagerank,eigenvector
+diana_bilmezis,Diana Bilmezis,cited,,,1,0,0.0,0.007574,0.001049
+macedonio_fernandez,Macedonio Fernández,cited,1874.0,Argentina,4,0,0.0,0.007144,0.002103
+manuel_puig,Manuel Puig,cited,1932.0,"General Villegas, Argentina",1,0,0.0,0.006528,3e-06
+felisberto_hernandez,Felisberto Hernández,cited,1902.0,Uruguay,1,0,0.0,0.006248,3e-06
+santiago_dabove,Santiago Dabove,cited,1889.0,"Morón, Argentina",1,0,0.0,0.005598,3e-06
+leopoldo_lugones,Leopoldo Lugones,cited,1874.0,Argentina,6,0,0.0,0.005399,0.002109
+martin_heidegger,Martin Heidegger,cited,1889.0,Imperio alemán (actual Alemania),2,0,0.0,0.005335,0.499913
+borges,Jorge Borges,cited,1899.0,Argentina,7,0,0.0,0.00532,0.002112
+holderlin,Johann Hölderlin,cited,1770.0,Ducado de Wurtemberg (actual Alemania),1,0,0.0,0.005269,0.49991
+lewis_carroll,Lewis Carroll,cited,1832.0,"Daresbury, Cheshire, Reino Unido",1,0,0.0,0.005236,3e-06
+james_joyce,James Joyce,cited,1882.0,Irlanda,1,0,0.0,0.005044,3e-06
+jean_paul_sartre,Jean-Paul Sartre,cited,1905.0,Francia,4,0,0.0,0.004885,0.002103
+carlos_correas,Carlos Correas,cited,1931.0,"Buenos Aires, Argentina",1,0,0.0,0.004821,3e-06
+kant,Immanuel Kant,cited,1724.0,Prusia (actual Rusia),3,0,0.0,0.00482,0.499916
+roberto_arlt,Roberto Arlt,cited,1900.0,"Buenos Aires, Argentina",4,0,0.0,0.004769,0.002103
+paul_valery,Ambroise Valéry,cited,1871.0,Francia,3,0,0.0,0.004765,0.499916
+roland_barthes,Roland Barthes,cited,1915.0,Francia,6,0,0.0,0.004676,0.002109
+gustave_flaubert,Gustave Flaubert,cited,1821.0,Francia,2,0,0.0,0.004633,0.002098
+ana_barrenechea,Ana Barrenechea,cited,1913.0,Argentina,1,0,0.0,0.004632,3e-06
+ernst_junger,Ernst Jünger,cited,1895.0,"Heidelberg, Alemania",1,0,0.0,0.004622,3e-06
+melville,Herman Melville,cited,1819.0,Estados Unidos,2,0,0.0,0.004553,6e-06
+shakespeare,William Shakespeare,cited,1564.0,Inglaterra,3,0,0.0,0.004545,9e-06
+samuel_beckett,Samuel Beckett,cited,1906.0,Irlanda,2,0,0.0,0.004491,6e-06
+carlos_astrada,Carlos Astrada,cited,1894.0,"Córdoba, Argentina",5,0,0.0,0.00448,0.002106
+spinoza,Baruch Spinoza,cited,1632.0,República de los Países Bajos,4,0,0.0,0.00448,0.002103
+friedrich_nietzsche,Friedrich Nietzsche,cited,1844.0,Prusia (actual Alemania),5,0,0.0,0.004473,0.002106
+ruben_dario,Rubén Darío,cited,1867.0,Nicaragua,1,0,0.0,0.00447,3e-06
+sarmiento,Domingo Faustino Sarmiento,cited,1811.0,"San Juan, Argentina",5,0,0.0,0.004464,0.002106
+bajtin,Mijaíl Bajtín,cited,1895.0,"Oriol, Imperio Ruso",3,0,0.0,0.004437,9e-06
+david_vinias,David Viñas,cited,1927.0,"Buenos Aires, Argentina",5,0,0.0,0.004436,0.002106
+angel_rama,Ángel Rama,cited,1926.0,"Montevideo, Uruguay",5,0,0.0,0.004417,0.002106
+david_hume,David Hume,cited,1711.0,"Edimburgo, Escocia",1,0,0.0,0.004414,3e-06
+michel_foucault,Michel Foucault,cited,1926.0,Francia,2,0,0.0,0.00436,6e-06
+george_berkeley,George Berkeley,cited,1685.0,"Kilkenny, Irlanda",1,0,0.0,0.004347,3e-06
+georges_bataille,Georges Bataille,cited,1897.0,Francia,1,0,0.0,0.004314,3e-06
+franz_schubert,Franz Schubert,cited,1797.0,"Viena, Austria",1,0,0.0,0.004297,3e-06
+john_keats,John Keats,cited,1795.0,"Londres, Inglaterra",1,0,0.0,0.004297,3e-06
+josefina_ludmer,Josefina Ludmer,cited,1939.0,"San Francisco, Córdoba, Argentina",1,0,0.0,0.004297,3e-06
+nikolai_gogol,Nikolai Gogol,cited,1809.0,"Sorochyntsi, Ucrania",1,0,0.0,0.004297,3e-06
+arcimboldo,Giuseppe Arcimboldo,cited,1526.0,Ducado de Milán (actual Italia),1,0,0.0,0.004297,3e-06
+walter_gieseking,Walter Gieseking,cited,1895.0,"Lyon, Francia",1,0,0.0,0.004297,3e-06
+canal_feijoo,Bernardo Canal Feijóo,cited,1897.0,"Santiago del Estero, Argentina",5,0,0.0,0.004291,0.002106
+rita_hayworth,Rita Hayworth,cited,1918.0,"Brooklyn, Estados Unidos",1,0,0.0,0.004284,3e-06
+ricardo_piglia,Ricardo Piglia,cited,1940.0,"Adrogué, Argentina",1,0,0.0,0.004284,3e-06
+tyrone_power,Tyrone Power,cited,1914.0,"Cincinnati, Estados Unidos",1,0,0.0,0.004284,3e-06
+hector_campora,Héctor Cámpora,cited,1909.0,"Mercedes, Argentina",4,0,0.0,0.004273,0.002103
+brian_boru,Brian Boru,cited,941.0,"Killaloe, Irlanda",1,0,0.0,0.004273,3e-06
+mallarme,Stéphane Mallarmé,cited,1842.0,Francia,2,0,0.0,0.004272,0.002098
+hegel,Georg Wilhelm Friedrich Hegel,cited,1770.0,"Stuttgart, Alemania",2,0,0.0,0.004251,6e-06
+oscar_masotta,Óscar Masotta,cited,1930.0,Argentina,4,0,0.0,0.004251,0.002103
+raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,cited,1898.0,"Corrientes, Argentina",4,0,0.0,0.004243,0.002103
+jean_genet,Jean Genet,cited,1910.0,"París, Francia",2,0,0.0,0.004241,6e-06
+karl_marx,Karl Marx,cited,1818.0,Prusia (actual Alemania),2,0,0.0,0.004239,6e-06
+martinez_estrada,Ezequiel Martínez Estrada,cited,1895.0,"San José de la Esquina, Argentina",4,0,0.0,0.004239,0.002103
+edgar_allan_poe,Edgar Poe,cited,1809.0,Estados Unidos,3,0,0.0,0.004227,0.0021
+fiodor_dostoyevski,Fiódor Dostoyevski,cited,1821.0,"Moscú, Imperio Ruso",4,0,0.0,0.004226,0.002103
+louis_althusser,Louis Althusser,cited,1918.0,Argelia Francesa,4,0,0.0,0.004226,0.002103
+levi_strauss,Claude Lévi-Strauss,cited,1908.0,"Bruselas, Bélgica",4,0,0.0,0.004226,0.002103
+georg_lichtenberg,Georg Christoph Lichtenberg,cited,1742.0,"Ober-Ramstadt, Alemania",1,0,0.0,0.004214,3e-06
+jacques_derrida,Jacques Derrida,cited,1930.0,"El Biar, Argelia",4,0,0.0,0.004213,0.002103
+hector_murena,Héctor Murena,cited,1923.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+julia_kristeva,Julia Kristeva,cited,1941.0,"Sliven, Bulgaria",4,0,0.0,0.004213,0.002103
+juan_jose_hernandez_arregui,Juan José Hernández Arregui,cited,1913.0,"Pergamino, Argentina",4,0,0.0,0.004213,0.002103
+federico_sainz_de_robles,Federico Carlos Sainz de Robles,cited,1898.0,"Madrid, España",4,0,0.0,0.004213,0.002103
+oswald_spengler,Oswald Spengler,cited,1880.0,"Blankenburg, Alemania",4,0,0.0,0.004213,0.002103
+juan_bautista_alberdi,Juan Bautista Alberdi,cited,1810.0,"San Miguel de Tucumán, Argentina",4,0,0.0,0.004213,0.002103
+abelardo_castillo,Abelardo Castillo,cited,1935.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+ignacio_anzoategui,Ignacio Anzoátegui,cited,1905.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+leonardo_castellani,Leonardo Castellani,cited,1899.0,"Reconquista, Argentina",4,0,0.0,0.004213,0.002103
+juan_jose_sebreli,Juan José Sebreli,cited,1930.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+esteban_echeverria,Esteban Echeverría,cited,1805.0,Virreinato del Río de la Plata,4,0,0.0,0.004213,0.002103
+jose_luis_romero,José Luis Romero,cited,1909.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+luis_franco,Luis Franco,cited,1898.0,"Belén, Argentina",4,0,0.0,0.004213,0.002103
+manuel_galvez,Manuel Gálvez,cited,1882.0,"Santa Fe, Argentina",4,0,0.0,0.004213,0.002103
+milciades_penia,Milcíades Peña,cited,1933.0,"La Plata, Argentina",4,0,0.0,0.004213,0.002103
+abelardo_ramos,Jorge Abelardo Ramos,cited,1921.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+pierre_chaunu,Pierre Chaunu,cited,1923.0,"Belleville-sur-Meuse, Francia",4,0,0.0,0.004213,0.002103
+arturo_jauretche,Arturo Jauretche,cited,1901.0,"Lincoln, Argentina",4,0,0.0,0.004213,0.002103
+raul_alfonsin,Raúl Alfonsín,cited,1927.0,"Chascomús, Argentina",4,0,0.0,0.004213,0.002103
+juan_domingo_peron,Juan Domingo Perón,cited,1895.0,"Lobos, Argentina",4,0,0.0,0.004213,0.002103
+arturo_frondizi,Arturo Frondizi,cited,1908.0,"Paso de los Libres, Argentina",4,0,0.0,0.004213,0.002103
+alfredo_palacios,Alfredo Palacios,cited,1878.0,Buenos Aires,4,0,0.0,0.004213,0.002103
+jean_yves_calvez,Jean-Yves Calvez,cited,1927.0,"Saint-Brieuc, Francia",4,0,0.0,0.004213,0.002103
+jaime_rest,Jaime Rest,cited,1927.0,"Buenos Aires, Argentina",4,0,0.0,0.004213,0.002103
+san_agustin,de Hipona Agustín,cited,354.0,Imperio Romano (actual Argelia),4,0,0.0,0.004213,0.002103
+severo_sarduy,Severo Sarduy,cited,1937.0,Cuba,2,0,0.0,0.00421,6e-06
+lezama_lima,José Lezama Lima,cited,1910.0,Cuba,2,0,0.0,0.004209,0.002098
+giovanni_morelli,Giovanni Morelli,cited,1816.0,"Verona, Italia",2,0,0.0,0.004206,0.002098
+mario_vargas_llosa,Mario Vargas Llosa,cited,1936.0,"Arequipa, Perú",1,0,0.0,0.004205,3e-06
+witold_gombrowicz,Witold Gombrowicz,cited,1904.0,Polonia (Imperio Ruso),2,0,0.0,0.004198,0.002098
+mario_praz,Mario Praz,cited,1896.0,"Roma, Italia",1,0,0.0,0.004197,3e-06
+tinianov,Yuri Tiniánov,cited,1894.0,"Rezekne, Letonia",1,0,0.0,0.004197,3e-06
+octavio_paz,Octavio Paz,cited,1914.0,México,1,0,0.0,0.004197,3e-06
+maurice_blanchot,Maurice Blanchot,author,1907.0,Francia,2,4,0.000185,0.004194,0.002098
+kafka,Franz Kafka,cited,1883.0,"Praga, Imperio Austrohúngaro",2,0,0.0,0.004193,0.002098
+percy_shelley,Percy Bysshe Shelley,cited,1792.0,"Horsham, Reino Unido",1,0,0.0,0.004189,3e-06
+philippe_aries,Philippe Ariès,cited,1914.0,"Blois, Francia",1,0,0.0,0.004189,3e-06
+aleksandr_pushkin,Aleksandr Pushkin,cited,1799.0,"Moscú, Rusia",1,0,0.0,0.004189,3e-06
+jean_martin_charcot,Jean-Martin Charcot,cited,1825.0,Francia,1,0,0.0,0.004189,3e-06
+juan_filiberto,Juan de Dios Filiberto,cited,1885.0,"Buenos Aires, Argentina",1,0,0.0,0.004189,3e-06
+malcolm_lowry,Malcolm Lowry,cited,1909.0,"New Brighton, Reino Unido",1,0,0.0,0.004189,3e-06
+dante_alighieri,Dante Alighieri,cited,1265.0,República de Florencia (actual Italia),3,0,0.0,0.004185,0.0021
+baudelaire,Charles Baudelaire,cited,1821.0,Francia,3,0,0.0,0.004185,0.0021
+william_beckford,William Beckford,cited,1760.0,"Londres, Reino Unido",1,0,0.0,0.004182,0.002095
+lucio_mansilla,Lucio V. Mansilla,cited,1831.0,"Buenos Aires, Argentina",1,0,0.0,0.004182,0.002095
+miguel_angel,Miguel Ángel Buonarroti,cited,1475.0,"Caprese, Italia",1,0,0.0,0.004182,0.002095
+jose_hernandez,José Hernández,cited,1834.0,"Chacras de Perdriel, Argentina",2,0,0.0,0.004172,0.002098
+lacan,Jacques Lacan,cited,1901.0,Francia,2,0,0.0,0.004159,6e-06
+adolfo_de_obieta,Adolfo de Obieta,cited,1912.0,"Buenos Aires, Argentina",1,0,0.0,0.004159,3e-06
+henri_bergson,Henri Bergson,cited,1859.0,Francia,2,0,0.0,0.004159,6e-06
+sylvia_molloy,Sylvia Molloy,cited,1938.0,Argentina,1,0,0.0,0.004158,3e-06
+cleanth_brooks,Cleanth Brooks,cited,1906.0,"Murray, Kentucky, EE. UU.",1,0,0.0,0.004158,3e-06
+robert_penn_warren,Robert Penn Warren,cited,1905.0,"Guthrie, Kentucky, EE. UU.",1,0,0.0,0.004158,3e-06
+platon,Platón,cited,-428.0,Grecia Antigua,1,0,0.0,0.004147,3e-06
+aldous_huxley,Aldous Huxley,cited,1894.0,"Godalming, Reino Unido",1,0,0.0,0.004147,3e-06
+tchuang_tzu,Zhou Zhuang,cited,-369.0,"Meng, China",1,0,0.0,0.004147,3e-06
+kemp_smith,Norman Kemp Smith,cited,1872.0,"Dundee, Escocia",1,0,0.0,0.004147,3e-06
+hg_wells,Herbert George Wells,cited,1866.0,"Bromley, Reino Unido",1,0,0.0,0.004147,3e-06
+de_quincey,Thomas De Quincey,cited,1785.0,"Mánchester, Reino Unido",1,0,0.0,0.004147,3e-06
+bartolome_mitre,Bartolomé Mitre,cited,1821.0,"Buenos Aires, Argentina",1,0,0.0,0.004147,3e-06
+goethe,Johann Goethe,cited,1749.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.004147,3e-06
+cervantes,Miguel Cervantes,cited,1547.0,España,1,0,0.0,0.004147,3e-06
+patricio_de_azcarate,Patricio de Azcárate,cited,1800.0,"León, España",1,0,0.0,0.004147,3e-06
+carl_jung,Carl Gustav Jung,cited,1875.0,"Kesswil, Suiza",1,0,0.0,0.004147,3e-06
+tomas_de_aquino,Tomás de Aquino,cited,1225.0,"Roccasecca, Italia",1,0,0.0,0.004147,3e-06
+arthur_schopenhauer,Arthur Schopenhauer,cited,1788.0,"Danzig, Polonia",1,0,0.0,0.004147,3e-06
+maupassant,Guy Maupassant,cited,1850.0,Francia,1,0,0.0,0.004143,3e-06
+freud,Sigmund Freud,cited,1856.0,Imperio Austríaco (actual República Checa),2,0,0.0,0.004143,0.002098
+charles_olson,Charles Olson,cited,1910.0,"Worcester, Estados Unidos",1,0,0.0,0.004143,3e-06
+thomas_carlyle,Thomas Carlyle,cited,1795.0,Escocia,1,0,0.0,0.004131,0.002095
+rimbaud,Arthur Rimbaud,cited,1854.0,"Charleville, Francia",1,0,0.0,0.004131,0.002095
+walter_benjamin,Walter Benjamin,cited,1892.0,Imperio alemán (actual Alemania),1,0,0.0,0.00413,3e-06
+luis_gusman,Luis Gusmán,author,1944.0,Argentina,2,78,0.001128,0.004122,6e-06
+miguel_d_ors,Miguel d'Ors,cited,1946.0,España,1,0,0.0,0.004119,3e-06
+vicente_garcia_huidobro,Vicente García-Huidobro,cited,1893.0,"Santiago, Chile",1,0,0.0,0.004119,3e-06
+gongora,Luis de Góngora y Argote,cited,1561.0,"Córdoba, España",1,0,0.0,0.004119,3e-06
+juan_jose_hernandez,Juan José Hernández,cited,1931.0,"San Miguel de Tucumán, Argentina",1,0,0.0,0.004119,3e-06
+bettina_edelberg,Bettina Edelberg,cited,1921.0,"Buenos Aires, Argentina",1,0,0.0,0.004119,3e-06
+heinrich_wolfflin,Heinrich Wölfflin,cited,1864.0,"Winterthur, Suiza",1,0,0.0,0.004119,3e-06
+varo,Alfeno Varo,cited,-100.0,"Cremona, Italia",1,0,0.0,0.00411,3e-06
+lou_andreas_salome,Lou Andreas-Salomé,cited,1861.0,"San Petersburgo, Rusia",1,0,0.0,0.00411,3e-06
+virgilio,Publio Virgilio,cited,-70.0,"Andes, República Romana",1,0,0.0,0.00411,3e-06
+rodolfo_fogwill,Rodolfo Fogwill,cited,1941.0,"Buenos Aires, Argentina",1,0,0.0,0.00411,3e-06
+osvaldo_lamborghini,Osvaldo Lamborghini,author,1940.0,Argentina,1,1,1.8e-05,0.00411,3e-06
+marques_sade,Donatien Alphonse François de Sade,cited,1740.0,"París, Francia",1,0,0.0,0.00411,3e-06
+juan_manuel_rosas,Juan Manuel de Rosas,cited,1793.0,"Buenos Aires, Argentina",1,0,0.0,0.00411,3e-06
+teocrito,Teócrito,cited,-310.0,"Siracusa, Magna Grecia",1,0,0.0,0.00411,3e-06
+torquato_tasso,Torquato Tasso,cited,1544.0,"Sorrento, Italia",1,0,0.0,0.00411,3e-06
+edmund_spenser,Edmund Spenser,cited,1552.0,"Londres, Reino Unido",1,0,0.0,0.00411,3e-06
+juan_carlos_ongania,Juan Carlos Onganía,cited,1914.0,"Marcos Paz, Argentina",1,0,0.0,0.00411,3e-06
+hugo_von_hofmannsthal,Hugo von Hofmannsthal,cited,1874.0,"Viena, Imperio Austrohúngaro",1,0,0.0,0.00411,3e-06
+hans_christian_andersen,Hans Christian Andersen,cited,1805.0,"Odense, Dinamarca",1,0,0.0,0.00411,3e-06
+evaristo_carriego,Evaristo Carriego,cited,1883.0,"Paraná, Entre Ríos, Argentina",1,0,0.0,0.00411,3e-06
+charles_dickens,Charles Dickens,cited,1812.0,Inglaterra,1,0,0.0,0.00411,3e-06
+victor_hugo,Victor Hugo,cited,1802.0,Francia,1,0,0.0,0.00411,3e-06
+emile_zola,Émile Zola,cited,1840.0,Francia,1,0,0.0,0.00411,3e-06
+guillermo_hudson,William Henry Hudson,cited,1841.0,"Quilmes, Argentina",1,0,0.0,0.00411,3e-06
+johann_winckelmann,Johann Joachim Winckelmann,cited,1717.0,"Stendal, Alemania",1,0,0.0,0.00411,3e-06
+balzac,Honoré Balzac,cited,1799.0,Francia,1,0,0.0,0.00411,3e-06
+euclides,Euclides,cited,-325.0,Desconocido,1,0,0.0,0.00411,3e-06
+ernesto_sabato,Ernesto Sabato,cited,1911.0,Argentina,1,0,0.0,0.00411,3e-06
+ricardo_zelarayan,Ricardo Zelarayán,cited,1940.0,Argentina,1,0,0.0,0.00411,3e-06
+paul_schreber,Daniel Paul Schreber,cited,1842.0,"Leipzig, Alemania",1,0,0.0,0.00411,3e-06
+robert_louis_stevenson,Robert Louis Stevenson,cited,1850.0,"Edimburgo, Escocia",1,0,0.0,0.004106,0.002095
+julian_casal,Julián Casal,cited,,,1,0,0.0,0.004106,0.002095
+pierre_loti,Julien Viaud,cited,1850.0,"Rochefort, Francia",1,0,0.0,0.004106,0.002095
+andre_gide,André Gide,cited,1869.0,Francia,1,0,0.0,0.004106,0.002095
+paul_nizan,Paul Nizan,cited,1905.0,"Tours, Francia",1,0,0.0,0.004106,0.002095
+michel_leiris,Michel Leiris,cited,1901.0,Francia,1,0,0.0,0.004106,0.002095
+gilles_deleuze,Gilles Deleuze,cited,1925.0,"París, Francia",1,0,0.0,0.004106,0.002095
+fenimore_cooper,James Fenimore Cooper,cited,1789.0,"Burlington, Estados Unidos",1,0,0.0,0.004106,0.002095
+chesterton,Gilbert Keith Chesterton,cited,1874.0,"Kensington, Reino Unido",1,0,0.0,0.004106,0.002095
+oscar_wilde,Oscar Wilde,cited,1854.0,"Dublín, Irlanda",1,0,0.0,0.004106,0.002095
+jacques_rigaut,Jacques Rigaut,cited,1898.0,"París, Francia",1,0,0.0,0.004106,0.002095
+marcel_schwob,Marcel Schwob,cited,1867.0,"Chaville, Francia",1,0,0.0,0.004106,0.002095
+andre_breton,André Breton,cited,1896.0,"Tinchebray, Francia",1,0,0.0,0.004106,0.002095
+jacques_benigne_bossuet,Jacques-Bénigne Bossuet,cited,1627.0,"Dijon, Francia",1,0,0.0,0.004106,0.002095
+lord_byron,George Gordon Byron,cited,1788.0,"Londres, Inglaterra",1,0,0.0,0.004106,0.002095
+antonio_gramsci,Antonio Gramsci,cited,1891.0,"Ales, Italia",1,0,0.0,0.004105,3e-06
+umberto_eco,Umberto Eco,cited,1932.0,"Alessandria, Italia",1,0,0.0,0.004105,3e-06
+george_steiner,George Steiner,cited,1929.0,Francia,1,0,0.0,0.004105,3e-06
+rabelais,François Rabelais,cited,1494.0,Francia,1,0,0.0,0.004105,3e-06
+carlo_ginzburg,Carlo Ginzburg,cited,1939.0,"Turín, Italia",1,0,0.0,0.004105,3e-06
+louis_ferdinand_celine,Louis-Ferdinand Céline,cited,1894.0,Francia,1,0,0.0,0.004105,3e-06
+friedrich_schelling,Friedrich Wilhelm Joseph Schelling,cited,1775.0,"Leonberg, Alemania",1,0,0.0,0.004105,3e-06
+soren_kierkegaard,Søren Kierkegaard,cited,1813.0,Dinamarca,1,0,0.0,0.004105,3e-06
+andre_malraux,André Malraux,cited,1901.0,"París, Francia",1,0,0.0,0.004093,3e-06
+viktor_shklovski,Víktor Shklovski,cited,1893.0,"San Petersburgo, Imperio Ruso",1,0,0.0,0.004093,3e-06
+jose_marmol,José Mármol,cited,1817.0,"Buenos Aires, Argentina",1,0,0.0,0.004093,3e-06
+harold_bloom,Harold Bloom,cited,1930.0,Estados Unidos,1,0,0.0,0.004093,3e-06
+vladimir_propp,Vladimir Propp,cited,1895.0,"San Petersburgo, Imperio Ruso",1,0,0.0,0.004093,3e-06
+northrop_frye,Northrop Frye,cited,1912.0,"Sherbrooke, Canadá",1,0,0.0,0.004093,3e-06
+algirdas_greimas,Algirdas Julien Greimas,cited,1917.0,"Tula, Rusia",1,0,0.0,0.004093,3e-06
+jean_starobinski,Jean Starobinski,cited,1920.0,"Ginebra, Suiza",1,0,0.0,0.004093,3e-06
+italo_calvino,Italo Calvino,cited,1923.0,"Santiago de las Vegas, Cuba",1,0,0.0,0.004093,3e-06
+homero,Homero,cited,-750.0,Grecia Antigua,1,0,0.0,0.004093,3e-06
+zaratustra,Zaratustra,cited,-628.0,Imperio Medo (actual Irán),1,0,0.0,0.004093,3e-06
+ernst_curtius,Ernst Curtius,cited,1814.0,Confederación Germánica (actual Alemania),1,0,0.0,0.004093,3e-06
+todorov,Tzvetan Todorov,cited,1939.0,Bulgaria,1,0,0.0,0.004093,3e-06
+ludwig_wittgenstein,Ludwig Wittgenstein,cited,1889.0,"Viena, Austria",1,0,0.0,0.004093,3e-06
+jean_luc_godard,Jean-Luc Godard,cited,1930.0,Francia,1,0,0.0,0.004093,3e-06
+lisa_block,Lisa Block de Behar,cited,1937.0,"Montevideo, Uruguay",1,0,0.0,0.004093,3e-06
+pierre_bourdieu,Pierre Bourdieu,cited,1930.0,"Denguin, Francia",1,0,0.0,0.004093,3e-06
+lucien_goldmann,Lucien Goldmann,cited,1913.0,"Bucarest, Rumania",1,0,0.0,0.004093,3e-06
+carl_von_clausewitz,Carl von Clausewitz,cited,1780.0,"Burg bei Magdeburg, Alemania",1,0,0.0,0.004093,3e-06
+edgar_wind,Edgar Wind,cited,1900.0,"Berlín, Alemania",1,0,0.0,0.004093,3e-06
+cosme_tura,Cosimo Tura,cited,1430.0,"Ferrara, Italia",1,0,0.0,0.004093,3e-06
+gerard_genette,Gérard Genette,cited,1930.0,Francia,1,0,0.0,0.004093,3e-06
+nicolas_olivari,Nicolás Olivari,cited,1900.0,"Buenos Aires, Argentina",1,0,0.0,0.004093,3e-06
+benedetto_croce,Benedetto Croce,cited,1866.0,"Pescasseroli, Italia",1,0,0.0,0.004093,3e-06
+botticelli,Sandro Botticelli,cited,1445.0,"Florencia, Italia",1,0,0.0,0.004093,3e-06
+da_vinci,Leonardo Vinci,cited,1452.0,República de Florencia (actual Italia),1,0,0.0,0.004093,3e-06
+perugino,Pietro Vannucci,cited,1448.0,"Città della Pieve, Italia",1,0,0.0,0.004093,3e-06
+henry_de_montherlant,Henry de Montherlant,cited,1895.0,"París, Francia",1,0,0.0,0.004093,3e-06
+michael_riffaterre,Michael Riffaterre,cited,1924.0,"Bourganeuf, Francia",1,0,0.0,0.004093,3e-06
+spitzer,Leo Spitzer,cited,1887.0,Imperio Austrohúngaro (actual Austria),1,0,0.0,0.004093,3e-06
+schleiermacher,Friedrich Schleiermacher,cited,1768.0,Prusia (actual Polonia),1,0,0.0,0.004093,3e-06
+wilhelm_dilthey,Wilhelm Dilthey,cited,1833.0,"Biebrich, Alemania",1,0,0.0,0.004093,3e-06
+nicos_poulantzas,Nicos Poulantzas,cited,1936.0,"Atenas, Grecia",1,0,0.0,0.004093,3e-06
+theodor_adorno,Theodor Adorno,cited,1903.0,"Frankfurt am Main, Alemania",1,0,0.0,0.004093,3e-06
+max_weber,Max Weber,cited,1864.0,"Erfurt, Alemania",1,0,0.0,0.004093,3e-06
+gyorgy_lukacs,György Lukács,cited,1885.0,"Budapest, Hungría",1,0,0.0,0.004093,3e-06
+raymond_aron,Raymond Aron,cited,1905.0,"París, Francia",1,0,0.0,0.004093,3e-06
+william_faulkner,William Faulkner,cited,1897.0,Estados Unidos,1,0,0.0,0.004093,3e-06
+jorge_jinkis,Jorge Jinkis,author,1943.0,Argentina,0,45,0.0,0.00408,0.0
+eduardo_gruner,Eduardo Grüner,author,1946.0,Argentina,0,118,0.0,0.00408,0.0
+ramon_alcalde,Ramón Alcalde,author,1951.0,Argentina,0,72,0.0,0.00408,0.0
+juan_bautista_ritvo,Juan Bautista Ritvo,author,1940.0,"Santa Fe, Argentina",0,33,0.0,0.00408,0.0
+luis_chitarroni,Luis Chitarroni,author,1958.0,Argentina,0,13,0.0,0.00408,0.0
+santiago_bullrich,Santiago Bullrich,author,,,0,6,0.0,0.00408,0.0
+jorge_monteleone,Jorge Monteleone,author,1957.0,"Buenos Aires, Argentina",0,23,0.0,0.00408,0.0
+raul_zoppi,Raul Zoppi,author,,,0,3,0.0,0.00408,0.0
+enrique_pezzoni,Enrique Pezzoni,author,1926.0,Argentina,0,7,0.0,0.00408,0.0
+jorge_panesi,Jorge Panesi,author,1945.0,"La Plata, Buenos Aires, Argentina",0,6,0.0,0.00408,0.0

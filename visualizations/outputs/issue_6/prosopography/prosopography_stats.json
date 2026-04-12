@@ -1,0 +1,53 @@
+{
+  "temporal": {
+    "min_year": -428,
+    "max_year": 1960,
+    "median_year": 1927,
+    "mean_year": 1827.1,
+    "std_year": 421.5,
+    "count_with_dates": 64,
+    "count_without_dates": 3
+  },
+  "geographic": {
+    "countries": {
+      "Argentina": 44,
+      "France": 8,
+      "Germany": 3,
+      "United States": 2,
+      "Imperio Romano": 2,
+      "Denmark": 1,
+      "Greece": 1,
+      "Imperio Austríaco": 1,
+      "Italy": 1,
+      "Russia": 1,
+      "Sliven, Bulgaria": 1
+    },
+    "regions": {
+      "Latin America": 44,
+      "Western Europe": 12,
+      "Other/Unknown": 6,
+      "North America": 2,
+      "Southern Europe / Classical": 1,
+      "Scandinavia": 1,
+      "Eastern Europe": 1
+    },
+    "num_countries": 11,
+    "num_regions": 7
+  },
+  "periods": {
+    "World Wars Era": 43,
+    "Long 19th Century": 9,
+    "Contemporary": 5,
+    "Revolutionary Era": 3,
+    "Unknown": 3,
+    "Hellenistic/Roman": 2,
+    "Classical Antiquity": 1,
+    "Early Modern": 1
+  },
+  "lifespan": {
+    "mean": 75.8,
+    "median": 79,
+    "min": 34,
+    "max": 98
+  }
+}

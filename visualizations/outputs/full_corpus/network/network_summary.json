@@ -1,0 +1,320 @@
+{
+  "generated": "2026-04-12T17:37:36.645742",
+  "network_stats": {
+    "nodes": 767,
+    "edges": 1347,
+    "density": 0.002292680103893982,
+    "num_authors": 36,
+    "num_cited_only": 731,
+    "num_communities": 13,
+    "reciprocity": 0.005939123979213066,
+    "avg_in_degree": 1.75619295958279,
+    "avg_out_degree": 1.75619295958279
+  },
+  "top_cited": [
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "centrality": 0.020887728459530026
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "centrality": 0.01174934725848564
+    },
+    {
+      "id": "aristoteles",
+      "name": "Aristóteles",
+      "centrality": 0.01174934725848564
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "centrality": 0.01174934725848564
+    },
+    {
+      "id": "roland_barthes",
+      "name": "Roland Barthes",
+      "centrality": 0.01174934725848564
+    },
+    {
+      "id": "joseph_conrad",
+      "name": "Joseph Conrad",
+      "centrality": 0.01174934725848564
+    },
+    {
+      "id": "paul_valery",
+      "name": "Ambroise Valéry",
+      "centrality": 0.010443864229765013
+    },
+    {
+      "id": "platon",
+      "name": "Platón",
+      "centrality": 0.010443864229765013
+    },
+    {
+      "id": "baudelaire",
+      "name": "Charles Baudelaire",
+      "centrality": 0.010443864229765013
+    },
+    {
+      "id": "james_joyce",
+      "name": "James Joyce",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "jesus",
+      "name": "de Nazaret Jesús",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "julio_cortazar",
+      "name": "Julio Cortázar",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "freud",
+      "name": "Sigmund Freud",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "macedonio_fernandez",
+      "name": "Macedonio Fernández",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "napoleon",
+      "name": "Napoléon Bonaparte",
+      "centrality": 0.009138381201044387
+    },
+    {
+      "id": "samuel_beckett",
+      "name": "Samuel Beckett",
+      "centrality": 0.00783289817232376
+    },
+    {
+      "id": "leopoldo_lugones",
+      "name": "Leopoldo Lugones",
+      "centrality": 0.00783289817232376
+    },
+    {
+      "id": "kafka",
+      "name": "Franz Kafka",
+      "centrality": 0.00783289817232376
+    }
+  ],
+  "top_pagerank": [
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "pagerank": 0.002918265751967225
+    },
+    {
+      "id": "georg_trakl",
+      "name": "Georg Trakl",
+      "pagerank": 0.0024029172607002063
+    },
+    {
+      "id": "goethe",
+      "name": "Johann Goethe",
+      "pagerank": 0.0023894129303688874
+    },
+    {
+      "id": "arturo_carrera",
+      "name": "Arturo Carrera",
+      "pagerank": 0.002334201640413241
+    },
+    {
+      "id": "diana_bilmezis",
+      "name": "Diana Bilmezis",
+      "pagerank": 0.0023238436443288124
+    },
+    {
+      "id": "jesus",
+      "name": "de Nazaret Jesús",
+      "pagerank": 0.0023016681272763576
+    },
+    {
+      "id": "macedonio_fernandez",
+      "name": "Macedonio Fernández",
+      "pagerank": 0.0022284798037969
+    },
+    {
+      "id": "ruben_dario",
+      "name": "Rubén Darío",
+      "pagerank": 0.0021292397164024827
+    },
+    {
+      "id": "manuel_puig",
+      "name": "Manuel Puig",
+      "pagerank": 0.0020418628353109946
+    },
+    {
+      "id": "franz_schubert",
+      "name": "Franz Schubert",
+      "pagerank": 0.001978695223416613
+    },
+    {
+      "id": "james_joyce",
+      "name": "James Joyce",
+      "pagerank": 0.001963171506971694
+    },
+    {
+      "id": "gustave_flaubert",
+      "name": "Gustave Flaubert",
+      "pagerank": 0.00191931200755102
+    },
+    {
+      "id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "pagerank": 0.0018626529820245216
+    },
+    {
+      "id": "silvina_ocampo",
+      "name": "Silvina Ocampo",
+      "pagerank": 0.0018363460966427357
+    },
+    {
+      "id": "felisberto_hernandez",
+      "name": "Felisberto Hernández",
+      "pagerank": 0.001781219941191463
+    },
+    {
+      "id": "catherine_yarrow",
+      "name": "Catherine Yarrow",
+      "pagerank": 0.0017698298290183092
+    },
+    {
+      "id": "luis_gusman",
+      "name": "Luis Gusmán",
+      "pagerank": 0.0017083669971673502
+    },
+    {
+      "id": "holderlin",
+      "name": "Johann Hölderlin",
+      "pagerank": 0.001686893442177499
+    },
+    {
+      "id": "melville",
+      "name": "Herman Melville",
+      "pagerank": 0.0016614177371551658
+    },
+    {
+      "id": "martin_heidegger",
+      "name": "Martin Heidegger",
+      "pagerank": 0.0016414026387047858
+    }
+  ],
+  "top_betweenness": [
+    {
+      "id": "jorge_jinkis",
+      "name": "Jorge Jinkis",
+      "betweenness": 0.002940465423186971
+    },
+    {
+      "id": "nestor_perlongher",
+      "name": "Néstor Perlongher",
+      "betweenness": 0.002547967257689266
+    },
+    {
+      "id": "luis_gusman",
+      "name": "Luis Gusmán",
+      "betweenness": 0.0018775917677776072
+    },
+    {
+      "id": "ramon_alcalde",
+      "name": "Ramón Alcalde",
+      "betweenness": 0.0012943906892609093
+    },
+    {
+      "id": "eduardo_gruner",
+      "name": "Eduardo Grüner",
+      "betweenness": 0.0012932530134188859
+    },
+    {
+      "id": "witold_gombrowicz",
+      "name": "Witold Gombrowicz",
+      "betweenness": 0.0006059545953571448
+    },
+    {
+      "id": "leo_strauss",
+      "name": "Leo Strauss",
+      "betweenness": 0.0002832812846635608
+    },
+    {
+      "id": "hugo_savino",
+      "name": "Hugo Savino",
+      "betweenness": 0.00024147169746924012
+    },
+    {
+      "id": "leon_bloy",
+      "name": "Léon Bloy",
+      "betweenness": 0.00014420041297633066
+    },
+    {
+      "id": "martin_heidegger",
+      "name": "Martin Heidegger",
+      "betweenness": 7.59398624549907e-05
+    },
+    {
+      "id": "sylvia_molloy",
+      "name": "Sylvia Molloy",
+      "betweenness": 6.484752299527295e-05
+    },
+    {
+      "id": "maurice_blanchot",
+      "name": "Maurice Blanchot",
+      "betweenness": 4.0671911352298393e-05
+    },
+    {
+      "id": "pascal_bonitzer",
+      "name": "Pascal Bonitzer",
+      "betweenness": 3.413027526066998e-05
+    },
+    {
+      "id": "ana_barrenechea",
+      "name": "Ana Barrenechea",
+      "betweenness": 3.413027526066998e-05
+    },
+    {
+      "id": "osvaldo_lamborghini",
+      "name": "Osvaldo Lamborghini",
+      "betweenness": 1.877165139336849e-05
+    },
+    {
+      "id": "hector_grisafi",
+      "name": "Héctor Grisafi",
+      "betweenness": 6.5416360916284094e-06
+    },
+    {
+      "id": "emile_zola",
+      "name": "Émile Zola",
+      "betweenness": 5.119541289100496e-06
+    },
+    {
+      "id": "samuel_beckett",
+      "name": "Samuel Beckett",
+      "betweenness": 0.0
+    },
+    {
+      "id": "ernest_renan",
+      "name": "Joseph Renan",
+      "betweenness": 0.0
+    },
+    {
+      "id": "martin_lutero",
+      "name": "Martín Lutero",
+      "betweenness": 0.0
+    }
+  ]
+}

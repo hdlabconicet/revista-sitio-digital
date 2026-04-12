@@ -1,0 +1,49 @@
+country,count,median_birth_year
+Argentina,93,1926.0
+France,40,1824.5
+United Kingdom,23,1827.0
+Germany,16,1805.0
+United States,14,1898.0
+Italy,11,1685.0
+Spain,9,1892.0
+Greece,9,-470.0
+Uruguay,7,1854.0
+Austria,5,1880.0
+Ireland,5,1882.0
+Switzerland,5,1878.0
+Belgium,3,1908.0
+Cuba,3,1917.0
+Chile,2,1909.5
+Buenos Aires,2,1900.0
+Imperio Romano,2,175.0
+Mexico,2,1781.0
+Czech Republic,1,1883.0
+Denmark,1,1813.0
+"Amasya, Reino del Ponto",1,-64.0
+"Antananarivo, Madagascar",1,1913.0
+Brazil,1,1924.0
+"Cartago, Túnez",1,-275.0
+"Halicarnaso, Turquía",1,-484.0
+Imperio Ruso,1,1857.0
+"Maesteg, Gales",1,1906.0
+Imperio Medo,1,-628.0
+Imperio Austríaco,1,1856.0
+Imperio Austrohúngaro,1,1875.0
+"Highland Park, EE.UU.",1,1918.0
+"Hipona, Imperio Romano",1,70.0
+Nicaragua,1,1867.0
+Netherlands,1,1450.0
+"Moscú, Imperio Ruso",1,1821.0
+"Melbourne, Australia",1,1916.0
+Libia,1,
+"Oriol, Imperio Ruso",1,1895.0
+Poland,1,1904.0
+"Pikov, Ucrania",1,1761.0
+"San Petesburgo, Imperio Ruso",1,1899.0
+Russia,1,1828.0
+"Ruse, Bulgaria",1,1905.0
+Roma,1,-138.0
+"Rezekne, Letonia",1,1894.0
+"Swansea, Gales",1,1914.0
+"Timișoara, Rumania",1,1892.0
+Virreinato del Río de la Plata,1,1805.0

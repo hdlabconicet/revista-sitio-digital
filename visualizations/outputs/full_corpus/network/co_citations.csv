@@ -1,0 +1,31 @@
+person_a,person_b,id_a,id_b,co_citation_count
+Jorge Borges,Friedrich Nietzsche,borges,friedrich_nietzsche,4
+Samuel Beckett,Ambroise Valéry,samuel_beckett,paul_valery,3
+Jorge Borges,Alfredo Palacios,borges,alfredo_palacios,3
+Jorge Borges,Ezequiel Martínez Estrada,borges,martinez_estrada,3
+Jorge Borges,Juan Domingo Perón,borges,juan_domingo_peron,3
+Friedrich Nietzsche,Alfredo Palacios,friedrich_nietzsche,alfredo_palacios,3
+Friedrich Nietzsche,Ezequiel Martínez Estrada,friedrich_nietzsche,martinez_estrada,3
+Friedrich Nietzsche,Juan Domingo Perón,friedrich_nietzsche,juan_domingo_peron,3
+Alfredo Palacios,Ezequiel Martínez Estrada,alfredo_palacios,martinez_estrada,3
+Alfredo Palacios,Juan Domingo Perón,alfredo_palacios,juan_domingo_peron,3
+Ezequiel Martínez Estrada,Juan Domingo Perón,martinez_estrada,juan_domingo_peron,3
+Léon Bloy,Samuel Beckett,leon_bloy,samuel_beckett,2
+Léon Bloy,Ambroise Valéry,leon_bloy,paul_valery,2
+Léon Bloy,Joseph Renan,leon_bloy,ernest_renan,2
+Léon Bloy,Leopoldo Lugones,leon_bloy,leopoldo_lugones,2
+Samuel Beckett,Joseph Renan,samuel_beckett,ernest_renan,2
+Samuel Beckett,Leopoldo Lugones,samuel_beckett,leopoldo_lugones,2
+Samuel Beckett,Ezra Pound,samuel_beckett,ezra_pound,2
+Samuel Beckett,Louis-Ferdinand Céline,samuel_beckett,louis_ferdinand_celine,2
+Samuel Beckett,William Faulkner,samuel_beckett,william_faulkner,2
+Samuel Beckett,Maurice Blanchot,samuel_beckett,maurice_blanchot,2
+Samuel Beckett,Quinto Horacio,samuel_beckett,horacio,2
+Samuel Beckett,James Joyce,samuel_beckett,james_joyce,2
+Samuel Beckett,Jorge Borges,samuel_beckett,borges,2
+Samuel Beckett,Friedrich Nietzsche,samuel_beckett,friedrich_nietzsche,2
+Samuel Beckett,Franz Kafka,samuel_beckett,kafka,2
+Ambroise Valéry,Joseph Renan,paul_valery,ernest_renan,2
+Ambroise Valéry,Leopoldo Lugones,paul_valery,leopoldo_lugones,2
+Ambroise Valéry,Ezra Pound,paul_valery,ezra_pound,2
+Ambroise Valéry,Louis-Ferdinand Céline,paul_valery,louis_ferdinand_celine,2

@@ -1,0 +1,320 @@
+{
+  "generated": "2026-04-12T17:37:29.633330",
+  "network_stats": {
+    "nodes": 100,
+    "edges": 215,
+    "density": 0.021717171717171718,
+    "num_authors": 14,
+    "num_cited_only": 86,
+    "num_communities": 9,
+    "reciprocity": 0.0,
+    "avg_in_degree": 2.15,
+    "avg_out_degree": 2.15
+  },
+  "top_cited": [
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "centrality": 0.07070707070707072
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "centrality": 0.07070707070707072
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "paul_groussac",
+      "name": "Paul Groussac",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "alfredo_palacios",
+      "name": "Alfredo Palacios",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "juan_domingo_peron",
+      "name": "Juan Domingo Perón",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "costa_mendez",
+      "name": "Nicanor Costa Méndez",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "benjamin_menendez",
+      "name": "Mario Benjamín Menéndez",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "juan_pablo_ii",
+      "name": "Juan Pablo II Wojtyła",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "bernardo_neustadt",
+      "name": "Bernardo Neustadt",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "leonidas",
+      "name": "Leónidas I",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "martinez_estrada",
+      "name": "Ezequiel Martínez Estrada",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "julio_cortazar",
+      "name": "Julio Cortázar",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "san_martin",
+      "name": "José de San Martín",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "napoleon",
+      "name": "Napoléon Bonaparte",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "enrique_santos_discepolo",
+      "name": "Enrique Santos Discépolo",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "joseph_conrad",
+      "name": "Joseph Conrad",
+      "centrality": 0.06060606060606061
+    },
+    {
+      "id": "aristoteles",
+      "name": "Aristóteles",
+      "centrality": 0.06060606060606061
+    }
+  ],
+  "top_pagerank": [
+    {
+      "id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "pagerank": 0.017680911424958777
+    },
+    {
+      "id": "arturo_carrera",
+      "name": "Arturo Carrera",
+      "pagerank": 0.01750935278419784
+    },
+    {
+      "id": "goethe",
+      "name": "Johann Goethe",
+      "pagerank": 0.01652577124124568
+    },
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "pagerank": 0.014646708372791485
+    },
+    {
+      "id": "franz_schubert",
+      "name": "Franz Schubert",
+      "pagerank": 0.013994765479399504
+    },
+    {
+      "id": "eduardo_mallea",
+      "name": "Eduardo Mallea",
+      "pagerank": 0.013994765479399504
+    },
+    {
+      "id": "joseph_conrad",
+      "name": "Joseph Conrad",
+      "pagerank": 0.013792841438624722
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "pagerank": 0.01370128009505993
+    },
+    {
+      "id": "sylvia_molloy",
+      "name": "Sylvia Molloy",
+      "pagerank": 0.012729262598476418
+    },
+    {
+      "id": "noemi_ulla",
+      "name": "Noemí Ulla",
+      "pagerank": 0.01146375971755333
+    },
+    {
+      "id": "pascal",
+      "name": "Blaise Pascal",
+      "pagerank": 0.01146375971755333
+    },
+    {
+      "id": "alfonso_xiii",
+      "name": "Alfonso XIII de Borbón",
+      "pagerank": 0.01146375971755333
+    },
+    {
+      "id": "francisco_franco",
+      "name": "Francisco Franco",
+      "pagerank": 0.01146375971755333
+    },
+    {
+      "id": "alejandra_pizarnik",
+      "name": "Alejandra Pizarnik",
+      "pagerank": 0.011348714001105776
+    },
+    {
+      "id": "james_joyce",
+      "name": "James Joyce",
+      "pagerank": 0.011210659141368711
+    },
+    {
+      "id": "bernardo_neustadt",
+      "name": "Bernardo Neustadt",
+      "pagerank": 0.010876788948874182
+    },
+    {
+      "id": "enrique_santos_discepolo",
+      "name": "Enrique Santos Discépolo",
+      "pagerank": 0.010876788948874182
+    },
+    {
+      "id": "roberto_arlt",
+      "name": "Roberto Arlt",
+      "pagerank": 0.01005722517837161
+    },
+    {
+      "id": "carl_jung",
+      "name": "Carl Gustav Jung",
+      "pagerank": 0.009995776375682547
+    },
+    {
+      "id": "marcel_proust",
+      "name": "Marcel Proust",
+      "pagerank": 0.009928282888699983
+    }
+  ],
+  "top_betweenness": [
+    {
+      "id": "jorge_jinkis",
+      "name": "Jorge Jinkis",
+      "betweenness": 0.0026798598227169654
+    },
+    {
+      "id": "ramon_alcalde",
+      "name": "Ramón Alcalde",
+      "betweenness": 0.0
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "betweenness": 0.0
+    },
+    {
+      "id": "hector_grisafi",
+      "name": "Héctor Grisafi",
+      "betweenness": 0.0
+    },
+    {
+      "id": "eduardo_gruner",
+      "name": "Eduardo Grüner",
+      "betweenness": 0.0
+    },
+    {
+      "id": "luis_gusman",
+      "name": "Luis Gusmán",
+      "betweenness": 0.0
+    },
+    {
+      "id": "hugo_savino",
+      "name": "Hugo Savino",
+      "betweenness": 0.0
+    },
+    {
+      "id": "ronald_reagan",
+      "name": "Ronald Reagan",
+      "betweenness": 0.0
+    },
+    {
+      "id": "paul_groussac",
+      "name": "Paul Groussac",
+      "betweenness": 0.0
+    },
+    {
+      "id": "alfredo_palacios",
+      "name": "Alfredo Palacios",
+      "betweenness": 0.0
+    },
+    {
+      "id": "juan_domingo_peron",
+      "name": "Juan Domingo Perón",
+      "betweenness": 0.0
+    },
+    {
+      "id": "costa_mendez",
+      "name": "Nicanor Costa Méndez",
+      "betweenness": 0.0
+    },
+    {
+      "id": "benjamin_menendez",
+      "name": "Mario Benjamín Menéndez",
+      "betweenness": 0.0
+    },
+    {
+      "id": "juan_pablo_ii",
+      "name": "Juan Pablo II Wojtyła",
+      "betweenness": 0.0
+    },
+    {
+      "id": "bernardo_neustadt",
+      "name": "Bernardo Neustadt",
+      "betweenness": 0.0
+    },
+    {
+      "id": "leonidas",
+      "name": "Leónidas I",
+      "betweenness": 0.0
+    },
+    {
+      "id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "betweenness": 0.0
+    },
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "betweenness": 0.0
+    },
+    {
+      "id": "martinez_estrada",
+      "name": "Ezequiel Martínez Estrada",
+      "betweenness": 0.0
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "betweenness": 0.0
+    }
+  ]
+}

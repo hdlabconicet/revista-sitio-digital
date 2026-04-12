@@ -1,0 +1,300 @@
+{
+  "contributors": [
+    {
+      "key": "ramon_alcalde",
+      "name": "Ramón Alcalde",
+      "total": 693,
+      "flows": {
+        "Western Europe": 362,
+        "Latin America": 210,
+        "North America": 12,
+        "Other/Unknown": 84,
+        "Eastern Europe": 15,
+        "Scandinavia": 3,
+        "Southern Europe / Classical": 7
+      }
+    },
+    {
+      "key": "eduardo_gruner",
+      "name": "Eduardo Grüner",
+      "total": 661,
+      "flows": {
+        "Western Europe": 348,
+        "Eastern Europe": 19,
+        "North America": 24,
+        "Latin America": 189,
+        "Southern Europe / Classical": 11,
+        "Scandinavia": 5,
+        "Other/Unknown": 65
+      }
+    },
+    {
+      "key": "luis_gusman",
+      "name": "Luis Gusmán",
+      "total": 419,
+      "flows": {
+        "Western Europe": 137,
+        "Other/Unknown": 59,
+        "North America": 5,
+        "Latin America": 203,
+        "Eastern Europe": 10,
+        "Southern Europe / Classical": 5
+      }
+    },
+    {
+      "key": "jorge_jinkis",
+      "name": "Jorge Jinkis",
+      "total": 274,
+      "flows": {
+        "Western Europe": 41,
+        "Latin America": 190,
+        "North America": 2,
+        "Other/Unknown": 35,
+        "Eastern Europe": 2,
+        "Southern Europe / Classical": 4
+      }
+    },
+    {
+      "key": "jorge_monteleone",
+      "name": "Jorge Monteleone",
+      "total": 182,
+      "flows": {
+        "Latin America": 110,
+        "Other/Unknown": 27,
+        "Eastern Europe": 3,
+        "Western Europe": 40,
+        "North America": 2
+      }
+    },
+    {
+      "key": "luis_chitarroni",
+      "name": "Luis Chitarroni",
+      "total": 154,
+      "flows": {
+        "Latin America": 87,
+        "Western Europe": 43,
+        "North America": 10,
+        "Other/Unknown": 11,
+        "Eastern Europe": 2,
+        "Southern Europe / Classical": 1
+      }
+    },
+    {
+      "key": "hugo_savino",
+      "name": "Hugo Savino",
+      "total": 78,
+      "flows": {
+        "Western Europe": 19,
+        "North America": 7,
+        "Other/Unknown": 20,
+        "Latin America": 29,
+        "Eastern Europe": 1,
+        "Southern Europe / Classical": 2
+      }
+    },
+    {
+      "key": "leon_bloy",
+      "name": "Léon Bloy",
+      "total": 76,
+      "flows": {
+        "Other/Unknown": 62,
+        "Western Europe": 13,
+        "Southern Europe / Classical": 1
+      }
+    },
+    {
+      "key": "leo_strauss",
+      "name": "Leo Strauss",
+      "total": 65,
+      "flows": {
+        "Latin America": 2,
+        "Western Europe": 38,
+        "Southern Europe / Classical": 19,
+        "North America": 2,
+        "Other/Unknown": 3,
+        "Middle East": 1
+      }
+    },
+    {
+      "key": "luis_thonis",
+      "name": "Luis Thonis",
+      "total": 65,
+      "flows": {
+        "Western Europe": 15,
+        "Latin America": 40,
+        "Southern Europe / Classical": 3,
+        "Other/Unknown": 5,
+        "Eastern Europe": 2
+      }
+    },
+    {
+      "key": "sylvia_molloy",
+      "name": "Sylvia Molloy",
+      "total": 60,
+      "flows": {
+        "Other/Unknown": 44,
+        "Western Europe": 11,
+        "Latin America": 5
+      }
+    },
+    {
+      "key": "enrique_pezzoni",
+      "name": "Enrique Pezzoni",
+      "total": 57,
+      "flows": {
+        "Latin America": 46,
+        "Western Europe": 8,
+        "North America": 2,
+        "Other/Unknown": 1
+      }
+    },
+    {
+      "key": "mercedes_roffe",
+      "name": "Mercedes Roffé",
+      "total": 56,
+      "flows": {
+        "Southern Europe / Classical": 2,
+        "Western Europe": 36,
+        "Other/Unknown": 18
+      }
+    },
+    {
+      "key": "juan_bautista_ritvo",
+      "name": "Juan Bautista Ritvo",
+      "total": 52,
+      "flows": {
+        "Eastern Europe": 2,
+        "Latin America": 15,
+        "Western Europe": 27,
+        "Southern Europe / Classical": 1,
+        "Other/Unknown": 6,
+        "Asia": 1
+      }
+    },
+    {
+      "key": "jose_salas_subirat",
+      "name": "José Salas Subirat",
+      "total": 50,
+      "flows": {
+        "Western Europe": 33,
+        "Latin America": 6,
+        "Other/Unknown": 3,
+        "North America": 2,
+        "Eastern Europe": 2,
+        "Southern Europe / Classical": 4
+      }
+    },
+    {
+      "key": "antoine_berman",
+      "name": "Antoine Berman",
+      "total": 46,
+      "flows": {
+        "Western Europe": 40,
+        "Other/Unknown": 4,
+        "North America": 2
+      }
+    },
+    {
+      "key": "martin_heidegger",
+      "name": "Martin Heidegger",
+      "total": 46,
+      "flows": {
+        "Western Europe": 41,
+        "Southern Europe / Classical": 3,
+        "Other/Unknown": 2
+      }
+    },
+    {
+      "key": "raul_zoppi",
+      "name": "Raul Zoppi",
+      "total": 44,
+      "flows": {
+        "Latin America": 44
+      }
+    },
+    {
+      "key": "hector_grisafi",
+      "name": "Héctor Grisafi",
+      "total": 42,
+      "flows": {
+        "Western Europe": 6,
+        "North America": 1,
+        "Other/Unknown": 20,
+        "Latin America": 12,
+        "Eastern Europe": 1,
+        "Southern Europe / Classical": 2
+      }
+    },
+    {
+      "key": "leonora_carrington",
+      "name": "Leonora Carrington",
+      "total": 41,
+      "flows": {
+        "Latin America": 3,
+        "Western Europe": 38
+      }
+    },
+    {
+      "key": "pascal_bonitzer",
+      "name": "Pascal Bonitzer",
+      "total": 37,
+      "flows": {
+        "Western Europe": 33,
+        "North America": 2,
+        "Other/Unknown": 2
+      }
+    },
+    {
+      "key": "mario_levin",
+      "name": "Mario Levin",
+      "total": 33,
+      "flows": {
+        "Western Europe": 10,
+        "Other/Unknown": 3,
+        "Eastern Europe": 1,
+        "North America": 4,
+        "Asia": 1,
+        "Latin America": 12,
+        "Scandinavia": 1,
+        "Southern Europe / Classical": 1
+      }
+    },
+    {
+      "key": "beatriz_castillo",
+      "name": "Beatriz Castillo",
+      "total": 25,
+      "flows": {
+        "Latin America": 7,
+        "Western Europe": 14,
+        "Other/Unknown": 3,
+        "North America": 1
+      }
+    }
+  ],
+  "region_totals": {
+    "Western Europe": 1353,
+    "Latin America": 1210,
+    "Other/Unknown": 477,
+    "North America": 78,
+    "Southern Europe / Classical": 66,
+    "Eastern Europe": 60,
+    "Scandinavia": 9,
+    "Asia": 2,
+    "Middle East": 1
+  },
+  "region_colors": {
+    "Western Europe": "#3498db",
+    "Latin America": "#2ecc71",
+    "North America": "#e74c3c",
+    "Eastern Europe": "#9b59b6",
+    "Southern Europe / Classical": "#f39c12",
+    "Scandinavia": "#00bcd4",
+    "Asia": "#ff9800",
+    "Middle East": "#795548",
+    "Other/Unknown": "#95a5a6"
+  },
+  "metadata": {
+    "total_contributors": 23,
+    "generated": "2026-04-12T17:38:11.072605"
+  }
+}

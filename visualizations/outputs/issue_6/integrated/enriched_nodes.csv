@@ -1,0 +1,69 @@
+id,name,type,country,region,period,birth_year,in_degree,out_degree
+ramon_alcalde,Ramón Alcalde,author,Argentina,Latin America,Contemporary,1951.0,0,30
+platon,Platón,cited,Greece,Southern Europe / Classical,Classical Antiquity,-428.0,5,0
+eduardo_gruner,Eduardo Grüner,author,Argentina,Latin America,Contemporary,1946.0,0,11
+luis_gusman,Luis Gusmán,author,Argentina,Latin America,World Wars Era,1944.0,0,34
+jorge_jinkis,Jorge Jinkis,author,Argentina,Latin America,World Wars Era,1943.0,0,23
+mario_levin,Mario Levin,author,Argentina,Latin America,World Wars Era,1944.0,0,11
+ronald_reagan,Ronald Reagan,cited,United States,North America,Long 19th Century,1911.0,5,0
+cesar_jaroslavsky,César Jaroslavsky,cited,Argentina,Latin America,World Wars Era,1928.0,5,0
+juan_octavio_gauna,Juan Octavio Gauna,cited,Argentina,Latin America,World Wars Era,1937.0,5,0
+jose_severo_caballero,José Severo Caballero,cited,Argentina,Latin America,World Wars Era,1926.0,5,0
+augusto_belluscio,Augusto César Belluscio,cited,Argentina,Latin America,World Wars Era,1930.0,5,0
+carlos_fayt,Carlos Santiago Fayt,cited,Argentina,Latin America,World Wars Era,1918.0,5,0
+enrique_petracchi,Enrique Santiago Petracchi,cited,Argentina,Latin America,World Wars Era,1935.0,5,0
+norberto_cozzani,Norberto Ricardo Cozzani,cited,Argentina,Latin America,World Wars Era,1942.0,5,0
+jorge_antonio_berges,Jorge Antonio Bergés,cited,Argentina,Latin America,World Wars Era,1942.0,5,0
+jorge_bacque,Jorge Antonio Bacqué,cited,Argentina,Latin America,World Wars Era,1922.0,5,0
+soren_kierkegaard,Søren Kierkegaard,cited,Denmark,Scandinavia,Revolutionary Era,1813.0,1,0
+jesus,de Nazaret Jesús,cited,Imperio Romano,Other/Unknown,Hellenistic/Roman,-4.0,1,0
+ramon_camps,Ramón Juan Alberto Camps,cited,Argentina,Latin America,World Wars Era,1927.0,1,0
+ovidio_riccheri,Ovidio P. Riccheri,cited,Argentina,Latin America,Long 19th Century,1906.0,1,0
+miguel_etchecolatz,Miguel Osvaldo Etchecolatz,cited,Argentina,Latin America,World Wars Era,1929.0,1,0
+freud,Sigmund Freud,cited,Imperio Austríaco,Other/Unknown,Long 19th Century,1856.0,1,0
+leopoldo_galtieri,Leopoldo Fortunato Galtieri,cited,Argentina,Latin America,World Wars Era,1926.0,1,0
+nicaragua,nicaragua,cited,Unknown,Other/Unknown,Unknown,,1,0
+jorge_anaya,Jorge Isaac Anaya,cited,Argentina,Latin America,World Wars Era,1926.0,1,0
+basilio_lami_dozo,Basilio Lami Dozo,cited,Argentina,Latin America,World Wars Era,1929.0,1,0
+dante_caputo,Dante Mario Antonio Caputo,cited,Argentina,Latin America,World Wars Era,1943.0,1,0
+juan_sourrouille,Juan Vital Sourrouille,cited,Argentina,Latin America,World Wars Era,1940.0,1,0
+mohamed_seineldin,Mohamed Alí Seineldín,cited,Argentina,Latin America,World Wars Era,1933.0,1,0
+tomas_de_torquemada,Tomás de Torquemada,cited,,Other/Unknown,Unknown,,1,0
+guillermo_fierro,Guillermo Jorge Fierro,cited,Argentina,Latin America,World Wars Era,1930.0,1,0
+san_agustin,de Hipona Agustín,cited,Imperio Romano,Other/Unknown,Hellenistic/Roman,354.0,1,0
+adolf_eichmann,Otto Adolf Eichmann,cited,Germany,Western Europe,Long 19th Century,1906.0,1,0
+jose_caridi,José Dante Caridi,cited,Argentina,Latin America,World Wars Era,1930.0,1,0
+carl_von_clausewitz,Carl von Clausewitz,cited,Germany,Western Europe,Early Modern,1780.0,1,0
+oscar_igounet_hijo,Oscar Igounet,cited,,Other/Unknown,Unknown,,1,0
+oscar_igounet_padre,Oscar Pablo Igounet,cited,Argentina,Latin America,World Wars Era,1918.0,1,0
+jose_rivanera,José Nicolás Rivanera,cited,Argentina,Latin America,World Wars Era,1928.0,1,0
+balzac,Honoré Balzac,cited,France,Western Europe,Revolutionary Era,1799.0,1,0
+alfredo_astiz,Alfredo Ignacio Astiz,cited,Argentina,Latin America,Contemporary,1951.0,1,0
+reynaldo_bignone,Reynaldo Benito Antonio Bignone,cited,Argentina,Latin America,World Wars Era,1928.0,1,0
+julio_martinez_vivot,Julio César Martínez Vivot,cited,Argentina,Latin America,World Wars Era,1923.0,1,0
+raul_alfonsin,Raúl Alfonsín,cited,Argentina,Latin America,World Wars Era,1927.0,2,0
+raul_borras,Raúl Andrés Borrás,cited,Argentina,Latin America,World Wars Era,1933.0,1,0
+osvaldo_bayer,Osvaldo Jorge Bayer,cited,Argentina,Latin America,World Wars Era,1927.0,1,0
+horacio_gonzalez,Horacio Luis González,cited,Argentina,Latin America,World Wars Era,1944.0,2,0
+jean_paul_sartre,Jean-Paul Sartre,cited,France,Western Europe,Long 19th Century,1905.0,1,0
+dalmiro_saenz,Dalmiro Antonio Sáenz,cited,Argentina,Latin America,World Wars Era,1926.0,1,0
+david_vinias,David Viñas,cited,Argentina,Latin America,World Wars Era,1927.0,1,0
+jose_felix_uriburu,José Félix Uriburu,cited,Argentina,Latin America,Long 19th Century,1868.0,1,0
+juan_carlos_ongania,Juan Carlos Onganía,cited,Argentina,Latin America,World Wars Era,1914.0,1,0
+beatriz_sarlo,Beatriz Sarlo,cited,Argentina,Latin America,World Wars Era,1942.0,1,0
+eliseo_veron,Eliseo Verón,cited,Argentina,Latin America,World Wars Era,1935.0,1,0
+oswald_ducrot,Oswald Ducrot,cited,France,Western Europe,World Wars Era,1930.0,1,0
+francois_recanati,François Recanati,cited,France,Western Europe,Contemporary,1952.0,1,0
+karl_marx,Karl Marx,cited,Germany,Western Europe,Revolutionary Era,1818.0,1,0
+jean_francois_lyotard,Jean-François Lyotard,cited,France,Western Europe,World Wars Era,1924.0,1,0
+antonio_gramsci,Antonio Gramsci,cited,Italy,Western Europe,Long 19th Century,1891.0,1,0
+lucia_aseff,Lucía María Aseff,cited,Argentina,Latin America,Unknown,,1,0
+julia_kristeva,Julia Kristeva,cited,"Sliven, Bulgaria",Other/Unknown,World Wars Era,1941.0,1,0
+noam_chomsky,Avram Noam Chomsky,cited,United States,North America,World Wars Era,1928.0,1,0
+charles_de_gaulle,Charles André Joseph Marie de Gaulle,cited,France,Western Europe,Long 19th Century,1890.0,1,0
+francois_mitterrand,François Mitterrand,cited,France,Western Europe,World Wars Era,1916.0,1,0
+juan_domingo_peron,Juan Domingo Perón,cited,Argentina,Latin America,Long 19th Century,1895.0,1,0
+oscar_landi,Oscar Landi,cited,Argentina,Latin America,World Wars Era,1939.0,1,0
+algirdas_greimas,Algirdas Julien Greimas,cited,Russia,Eastern Europe,World Wars Era,1917.0,1,0
+alejandro_katz,Gabriel Alejandro Katz,cited,Argentina,Latin America,Contemporary,1960.0,1,0
+michel_foucault,Michel Foucault,cited,France,Western Europe,World Wars Era,1926.0,1,0

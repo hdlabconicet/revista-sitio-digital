@@ -1,0 +1,552 @@
+{
+  "generated": "2026-04-12T17:37:38.995619",
+  "issue_summaries": {
+    "issue_1": {
+      "year": 1981,
+      "num_person_refs": 1054,
+      "num_title_refs": 351,
+      "num_unique_persons": 358,
+      "num_divs": 34,
+      "num_authors": 23,
+      "top_10_cited": [
+        {
+          "id": "edouard_drumont",
+          "name": "Édouard Drumont",
+          "count": 70
+        },
+        {
+          "id": "leon_bloy",
+          "name": "Léon Bloy",
+          "count": 64
+        },
+        {
+          "id": "jesus",
+          "name": "de Nazaret Jesús",
+          "count": 63
+        },
+        {
+          "id": "rabelais",
+          "name": "François Rabelais",
+          "count": 56
+        },
+        {
+          "id": "emile_zola",
+          "name": "Émile Zola",
+          "count": 47
+        },
+        {
+          "id": "ruben_dario",
+          "name": "Rubén Darío",
+          "count": 44
+        },
+        {
+          "id": "silvina_ocampo",
+          "name": "Silvina Ocampo",
+          "count": 31
+        },
+        {
+          "id": "borges",
+          "name": "Jorge Borges",
+          "count": 27
+        },
+        {
+          "id": "felisberto_hernandez",
+          "name": "Felisberto Hernández",
+          "count": 21
+        },
+        {
+          "id": "catherine_yarrow",
+          "name": "Catherine Yarrow",
+          "count": 20
+        }
+      ],
+      "region_pct": {
+        "Western Europe": 61.5,
+        "Latin America": 12.6,
+        "Other/Unknown": 12.4,
+        "North America": 5.6,
+        "Southern Europe / Classical": 3.9,
+        "Eastern Europe": 2.5,
+        "Scandinavia": 0.8,
+        "Middle East": 0.3,
+        "Asia": 0.3
+      },
+      "country_top5": {
+        "France": 103,
+        "Germany": 31,
+        "Argentina": 30,
+        "Italy": 25,
+        "United States": 20
+      },
+      "median_birth_year": 1853,
+      "genre_composition": {
+        "essay": 3,
+        "text": 18,
+        "prose": 5,
+        "poem": 4,
+        "letter": 4
+      }
+    },
+    "issue_2": {
+      "year": 1982,
+      "num_person_refs": 384,
+      "num_title_refs": 228,
+      "num_unique_persons": 96,
+      "num_divs": 32,
+      "num_authors": 23,
+      "top_10_cited": [
+        {
+          "id": "osvaldo_rossler",
+          "name": "Osvaldo Rossler",
+          "count": 54
+        },
+        {
+          "id": "borges",
+          "name": "Jorge Borges",
+          "count": 36
+        },
+        {
+          "id": "joseph_conrad",
+          "name": "Joseph Conrad",
+          "count": 30
+        },
+        {
+          "id": "james_joyce",
+          "name": "James Joyce",
+          "count": 15
+        },
+        {
+          "id": "bernardo_neustadt",
+          "name": "Bernardo Neustadt",
+          "count": 12
+        },
+        {
+          "id": "enrique_santos_discepolo",
+          "name": "Enrique Santos Discépolo",
+          "count": 12
+        },
+        {
+          "id": "tata_ocampo",
+          "name": "Tata Ocampo",
+          "count": 8
+        },
+        {
+          "id": "friedrich_nietzsche",
+          "name": "Friedrich Nietzsche",
+          "count": 7
+        },
+        {
+          "id": "carl_jung",
+          "name": "Carl Gustav Jung",
+          "count": 7
+        },
+        {
+          "id": "alejandra_pizarnik",
+          "name": "Alejandra Pizarnik",
+          "count": 7
+        }
+      ],
+      "region_pct": {
+        "Western Europe": 35.4,
+        "Latin America": 35.4,
+        "Other/Unknown": 16.7,
+        "Southern Europe / Classical": 6.2,
+        "North America": 3.1,
+        "Eastern Europe": 3.1
+      },
+      "country_top5": {
+        "Argentina": 30,
+        "France": 15,
+        "United Kingdom": 6,
+        "Greece": 6,
+        "United States": 3
+      },
+      "median_birth_year": 1883,
+      "genre_composition": {
+        "editorial": 1,
+        "prose": 8,
+        "poem": 6,
+        "text": 7,
+        "fragmentodenovela": 1,
+        "traduccion": 3,
+        "joycevistoporeltrad": 1,
+        "letter": 4,
+        "escenas": 1
+      }
+    },
+    "issue_3": {
+      "year": 1983,
+      "num_person_refs": 885,
+      "num_title_refs": 271,
+      "num_unique_persons": 280,
+      "num_divs": 32,
+      "num_authors": 25,
+      "top_10_cited": [
+        {
+          "id": "nestor_perlongher",
+          "name": "Néstor Perlongher",
+          "count": 51
+        },
+        {
+          "id": "rodolfo_wilcock",
+          "name": "Juan Rodolfo Wilcock",
+          "count": 40
+        },
+        {
+          "id": "georg_trakl",
+          "name": "Georg Trakl",
+          "count": 38
+        },
+        {
+          "id": "borges",
+          "name": "Jorge Borges",
+          "count": 30
+        },
+        {
+          "id": "david_vinias",
+          "name": "David Viñas",
+          "count": 28
+        },
+        {
+          "id": "gustave_flaubert",
+          "name": "Gustave Flaubert",
+          "count": 26
+        },
+        {
+          "id": "luis_gusman",
+          "name": "Luis Gusmán",
+          "count": 24
+        },
+        {
+          "id": "jose_marmol",
+          "name": "José Mármol",
+          "count": 21
+        },
+        {
+          "id": "alejandro_dumas",
+          "name": "Alexandre Dumas",
+          "count": 18
+        },
+        {
+          "id": "juan_manuel_rosas",
+          "name": "Juan Manuel de Rosas",
+          "count": 17
+        }
+      ],
+      "region_pct": {
+        "Western Europe": 41.8,
+        "Latin America": 36.4,
+        "Other/Unknown": 12.1,
+        "North America": 5.0,
+        "Southern Europe / Classical": 3.2,
+        "Eastern Europe": 1.1,
+        "Scandinavia": 0.4
+      },
+      "country_top5": {
+        "Argentina": 87,
+        "France": 40,
+        "United Kingdom": 23,
+        "Germany": 16,
+        "United States": 14
+      },
+      "median_birth_year": 1889,
+      "genre_composition": {
+        "prose": 6,
+        "text": 18,
+        "poem": 8
+      }
+    },
+    "issue_4-5": {
+      "year": 1985,
+      "num_person_refs": 859,
+      "num_title_refs": 229,
+      "num_unique_persons": 225,
+      "num_divs": 27,
+      "num_authors": 24,
+      "top_10_cited": [
+        {
+          "id": "jean_paul_sartre",
+          "name": "Jean-Paul Sartre",
+          "count": 51
+        },
+        {
+          "id": "gustave_flaubert",
+          "name": "Gustave Flaubert",
+          "count": 41
+        },
+        {
+          "id": "macedonio_fernandez",
+          "name": "Macedonio Fernández",
+          "count": 40
+        },
+        {
+          "id": "leopoldo_lugones",
+          "name": "Leopoldo Lugones",
+          "count": 33
+        },
+        {
+          "id": "borges",
+          "name": "Jorge Borges",
+          "count": 32
+        },
+        {
+          "id": "carlos_correas",
+          "name": "Carlos Correas",
+          "count": 25
+        },
+        {
+          "id": "roberto_arlt",
+          "name": "Roberto Arlt",
+          "count": 23
+        },
+        {
+          "id": "santiago_dabove",
+          "name": "Santiago Dabove",
+          "count": 14
+        },
+        {
+          "id": "david_vinias",
+          "name": "David Viñas",
+          "count": 12
+        },
+        {
+          "id": "roland_barthes",
+          "name": "Roland Barthes",
+          "count": 12
+        }
+      ],
+      "region_pct": {
+        "Western Europe": 49.8,
+        "Latin America": 28.0,
+        "Other/Unknown": 12.4,
+        "North America": 4.0,
+        "Eastern Europe": 3.1,
+        "Southern Europe / Classical": 1.3,
+        "Scandinavia": 0.9,
+        "Asia": 0.4
+      },
+      "country_top5": {
+        "Argentina": 54,
+        "France": 43,
+        "Germany": 21,
+        "Italy": 16,
+        "United Kingdom": 13
+      },
+      "median_birth_year": 1889,
+      "genre_composition": {
+        "editorial": 1,
+        "fragmentodenovela": 2,
+        "prose": 4,
+        "suelto": 1,
+        "text": 12,
+        "poem": 6,
+        "traduccion": 1
+      }
+    },
+    "issue_6": {
+      "year": 1987,
+      "num_person_refs": 177,
+      "num_title_refs": 64,
+      "num_unique_persons": 63,
+      "num_divs": 4,
+      "num_authors": 5,
+      "top_10_cited": [
+        {
+          "id": "juan_octavio_gauna",
+          "name": "Juan Octavio Gauna",
+          "count": 23
+        },
+        {
+          "id": "jorge_bacque",
+          "name": "Jorge Antonio Bacqué",
+          "count": 11
+        },
+        {
+          "id": "horacio_gonzalez",
+          "name": "Horacio Luis González",
+          "count": 10
+        },
+        {
+          "id": "norberto_cozzani",
+          "name": "Norberto Ricardo Cozzani",
+          "count": 8
+        },
+        {
+          "id": "jorge_antonio_berges",
+          "name": "Jorge Antonio Bergés",
+          "count": 8
+        },
+        {
+          "id": "raul_alfonsin",
+          "name": "Raúl Alfonsín",
+          "count": 8
+        },
+        {
+          "id": "eliseo_veron",
+          "name": "Eliseo Verón",
+          "count": 7
+        },
+        {
+          "id": "platon",
+          "name": "Platón",
+          "count": 5
+        },
+        {
+          "id": "ronald_reagan",
+          "name": "Ronald Reagan",
+          "count": 5
+        },
+        {
+          "id": "cesar_jaroslavsky",
+          "name": "César Jaroslavsky",
+          "count": 5
+        }
+      ],
+      "region_pct": {
+        "Latin America": 62.9,
+        "Western Europe": 19.4,
+        "Other/Unknown": 9.7,
+        "North America": 3.2,
+        "Southern Europe / Classical": 1.6,
+        "Scandinavia": 1.6,
+        "Eastern Europe": 1.6
+      },
+      "country_top5": {
+        "Argentina": 39,
+        "France": 8,
+        "Germany": 3,
+        "Imperio Romano": 2,
+        "United States": 2
+      },
+      "median_birth_year": 1927,
+      "genre_composition": {
+        "editorial": 1,
+        "text": 3
+      }
+    }
+  },
+  "recurring_figures_count": 160,
+  "recurring_top10": [
+    {
+      "person_id": "borges",
+      "name": "Jorge Borges",
+      "country": "Argentina",
+      "num_issues": 4,
+      "issues": [
+        "issue_1",
+        "issue_2",
+        "issue_3",
+        "issue_4-5"
+      ],
+      "total_citations": 125
+    },
+    {
+      "person_id": "gustave_flaubert",
+      "name": "Gustave Flaubert",
+      "country": "France",
+      "num_issues": 3,
+      "issues": [
+        "issue_1",
+        "issue_3",
+        "issue_4-5"
+      ],
+      "total_citations": 69
+    },
+    {
+      "person_id": "jesus",
+      "name": "de Nazaret Jesús",
+      "country": "Imperio Romano",
+      "num_issues": 4,
+      "issues": [
+        "issue_1",
+        "issue_2",
+        "issue_3",
+        "issue_6"
+      ],
+      "total_citations": 68
+    },
+    {
+      "person_id": "jean_paul_sartre",
+      "name": "Jean-Paul Sartre",
+      "country": "France",
+      "num_issues": 4,
+      "issues": [
+        "issue_1",
+        "issue_3",
+        "issue_4-5",
+        "issue_6"
+      ],
+      "total_citations": 63
+    },
+    {
+      "person_id": "rabelais",
+      "name": "François Rabelais",
+      "country": "France",
+      "num_issues": 2,
+      "issues": [
+        "issue_1",
+        "issue_4-5"
+      ],
+      "total_citations": 58
+    },
+    {
+      "person_id": "osvaldo_rossler",
+      "name": "Osvaldo Rossler",
+      "country": null,
+      "num_issues": 2,
+      "issues": [
+        "issue_2",
+        "issue_3"
+      ],
+      "total_citations": 56
+    },
+    {
+      "person_id": "ruben_dario",
+      "name": "Rubén Darío",
+      "country": "Nicaragua",
+      "num_issues": 3,
+      "issues": [
+        "issue_1",
+        "issue_3",
+        "issue_4-5"
+      ],
+      "total_citations": 55
+    },
+    {
+      "person_id": "emile_zola",
+      "name": "Émile Zola",
+      "country": "France",
+      "num_issues": 3,
+      "issues": [
+        "issue_1",
+        "issue_3",
+        "issue_4-5"
+      ],
+      "total_citations": 49
+    },
+    {
+      "person_id": "macedonio_fernandez",
+      "name": "Macedonio Fernández",
+      "country": "Argentina",
+      "num_issues": 3,
+      "issues": [
+        "issue_1",
+        "issue_3",
+        "issue_4-5"
+      ],
+      "total_citations": 46
+    },
+    {
+      "person_id": "david_vinias",
+      "name": "David Viñas",
+      "country": "Argentina",
+      "num_issues": 3,
+      "issues": [
+        "issue_3",
+        "issue_4-5",
+        "issue_6"
+      ],
+      "total_citations": 43
+    }
+  ]
+}

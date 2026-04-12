@@ -1,0 +1,452 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script>function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+        allNodes[connectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // the main node gets its own color and its label back.
+    // allNodes[selectedNode].color = undefined;
+    allNodes[selectedNode].color = nodeColors[selectedNode];
+    if (allNodes[selectedNode].hiddenLabel !== undefined) {
+      allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+      allNodes[selectedNode].hiddenLabel = undefined;
+    }
+  } else if (highlightActive === true) {
+    // console.log("highlightActive was true");
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      // allNodes[nodeId].color = "purple";
+      allNodes[nodeId].color = nodeColors[nodeId];
+      // delete allNodes[nodeId].color;
+      if (allNodes[nodeId].hiddenLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+        allNodes[nodeId].hiddenLabel = undefined;
+      }
+    }
+    highlightActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    // console.log("Nothing was selected");
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        // console.log(allNodes[nodeId]);
+        // allNodes[nodeId].color = {};
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function filterHighlight(params) {
+  allNodes = nodes.get({ returnType: "Object" });
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    filterActive = true;
+    let selectedNodes = params.nodes;
+
+    // hiding all nodes and saving the label
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = true;
+      if (allNodes[nodeId].savedLabel === undefined) {
+        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+
+    for (let i=0; i < selectedNodes.length; i++) {
+      allNodes[selectedNodes[i]].hidden = false;
+      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
+        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
+        allNodes[selectedNodes[i]].savedLabel = undefined;
+      }
+    }
+
+  } else if (filterActive === true) {
+    // reset all nodes
+    for (let nodeId in allNodes) {
+      allNodes[nodeId].hidden = false;
+      if (allNodes[nodeId].savedLabel !== undefined) {
+        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
+        allNodes[nodeId].savedLabel = undefined;
+      }
+    }
+    filterActive = false;
+  }
+
+  // transform the object into an array
+  var updateArray = [];
+  if (params.nodes.length > 0) {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  } else {
+    for (let nodeId in allNodes) {
+      if (allNodes.hasOwnProperty(nodeId)) {
+        updateArray.push(allNodes[nodeId]);
+      }
+    }
+    nodes.update(updateArray);
+  }
+}
+
+function selectNode(nodes) {
+  network.selectNodes(nodes);
+  neighbourhoodHighlight({ nodes: nodes });
+  return nodes;
+}
+
+function selectNodes(nodes) {
+  network.selectNodes(nodes);
+  filterHighlight({nodes: nodes});
+  return nodes;
+}
+
+function highlightFilter(filter) {
+  let selectedNodes = []
+  let selectedProp = filter['property']
+  if (filter['item'] === 'node') {
+    let allNodes = nodes.get({ returnType: "Object" });
+    for (let nodeId in allNodes) {
+      if (allNodes[nodeId][selectedProp] && filter['value'].includes((allNodes[nodeId][selectedProp]).toString())) {
+        selectedNodes.push(nodeId)
+      }
+    }
+  }
+  else if (filter['item'] === 'edge'){
+    let allEdges = edges.get({returnType: 'object'});
+    // check if the selected property exists for selected edge and select the nodes connected to the edge
+    for (let edge in allEdges) {
+      if (allEdges[edge][selectedProp] && filter['value'].includes((allEdges[edge][selectedProp]).toString())) {
+        selectedNodes.push(allEdges[edge]['from'])
+        selectedNodes.push(allEdges[edge]['to'])
+      }
+    }
+  }
+  selectNodes(selectedNodes)
+}</script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+            
+            
+            
+            
+            
+
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 95vh;
+                 background-color: #1a1a2e;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 95vh;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#e74c3c", "font": {"color": "#eee"}, "id": "leo_strauss", "label": "Leo Strauss", "shape": "square", "size": 14.536082474226804, "title": "Leo Strauss\u003cbr\u003eType: author\u003cbr\u003eConnections: 11"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "donne_biathanatos", "label": "Biathanatos", "shape": "dot", "size": 10.412371134020619, "title": "Biathanatos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_philosophie_gesetz", "label": "Philosophie und Gesetz: Beitr\u00e4ge zum ...", "shape": "dot", "size": 10.412371134020619, "title": "Philosophie und Gesetz: Beitr\u00e4ge zum ...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_on_tyranny", "label": "On Tyranny: An Interpretation of Xeno...", "shape": "dot", "size": 10.412371134020619, "title": "On Tyranny: An Interpretation of Xeno...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_persecution_writing", "label": "Persecution and the Art of Writing", "shape": "dot", "size": 10.412371134020619, "title": "Persecution and the Art of Writing\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_socrates_aristophanes", "label": "Socrates and Aristophanes", "shape": "dot", "size": 10.412371134020619, "title": "Socrates and Aristophanes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_liberalism_ancient", "label": "Liberalism Ancient and Modern", "shape": "dot", "size": 10.412371134020619, "title": "Liberalism Ancient and Modern\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_plato_laws", "label": "The Argument and the Action of Plato\u0027...", "shape": "dot", "size": 10.412371134020619, "title": "The Argument and the Action of Plato\u0027...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "strauss_essays", "label": "Political Philosophy: Six Essays by L...", "shape": "dot", "size": 10.412371134020619, "title": "Political Philosophy: Six Essays by L...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eusebio_historia", "label": "Historia Eclesi\u00e1stica", "shape": "dot", "size": 10.412371134020619, "title": "Historia Eclesi\u00e1stica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "montesquieu_espiritu_leyes", "label": "El esp\u00edritu de las leyes", "shape": "dot", "size": 10.412371134020619, "title": "El esp\u00edritu de las leyes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "platon_banquete", "label": "El Banquete", "shape": "dot", "size": 10.412371134020619, "title": "El Banquete\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "eduardo_gruner", "label": "Eduardo Gr\u00fcner", "shape": "square", "size": 13.298969072164947, "title": "Eduardo Gr\u00fcner\u003cbr\u003eType: author\u003cbr\u003eConnections: 8"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "rabelais_gargantua_pantagruel", "label": "Gargant\u00faa y Pantagruel", "shape": "dot", "size": 10.412371134020619, "title": "Gargant\u00faa y Pantagruel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cronicas_gargantua", "label": "cronicas_gargantua", "shape": "dot", "size": 10.412371134020619, "title": "cronicas_gargantua\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "luciano_historias_verdaderas", "label": "Historia verdadera", "shape": "dot", "size": 10.412371134020619, "title": "Historia verdadera\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "moro_utopia", "label": "Utop\u00eda", "shape": "dot", "size": 10.412371134020619, "title": "Utop\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "odisea", "label": "Odisea", "shape": "dot", "size": 10.412371134020619, "title": "Odisea\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cervantes_quijote", "label": "El ingenioso hidalgo don Quijote de l...", "shape": "dot", "size": 10.824742268041238, "title": "El ingenioso hidalgo don Quijote de l...\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "quinto_libro_pantagruel", "label": "Quinto y \u00faltimo libro de Pantagruel", "shape": "dot", "size": 10.412371134020619, "title": "Quinto y \u00faltimo libro de Pantagruel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "mario_levin", "label": "Mario Levin", "shape": "square", "size": 10.412371134020619, "title": "Mario Levin\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "masotta_arlt", "label": "Roberto Arlt, yo mismo", "shape": "dot", "size": 10.412371134020619, "title": "Roberto Arlt, yo mismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "pascal_bonitzer", "label": "Pascal Bonitzer", "shape": "square", "size": 12.88659793814433, "title": "Pascal Bonitzer\u003cbr\u003eType: author\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "panofsky_perspectiva_simbolica", "label": "La perspectiva como forma simb\u00f3lica", "shape": "dot", "size": 10.412371134020619, "title": "La perspectiva como forma simb\u00f3lica\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "foucault_palabras_cosas", "label": "Las palabras y las cosas", "shape": "dot", "size": 10.412371134020619, "title": "Las palabras y las cosas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eisenstein_notas", "label": "eisenstein_notas", "shape": "dot", "size": 10.412371134020619, "title": "eisenstein_notas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eisenstein_montaje38", "label": "eisenstein_montaje38", "shape": "dot", "size": 10.412371134020619, "title": "eisenstein_montaje38\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eisenstein_reflexiones_cineasta", "label": "Reflexiones de un cineasta", "shape": "dot", "size": 10.412371134020619, "title": "Reflexiones de un cineasta\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_charlie_mensuel", "label": "Charlie Mensuel", "shape": "dot", "size": 10.412371134020619, "title": "Charlie Mensuel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "truffaut_hitchcock", "label": "El cine seg\u00fan Hitchcock", "shape": "dot", "size": 10.412371134020619, "title": "El cine seg\u00fan Hitchcock\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ana_barrenechea", "label": "Ana Barrenechea", "shape": "square", "size": 14.536082474226804, "title": "Ana Barrenechea\u003cbr\u003eType: author\u003cbr\u003eConnections: 11"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barthes_sz", "label": "S/Z", "shape": "dot", "size": 10.824742268041238, "title": "S/Z\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bioy_invencion_morel", "label": "La invenci\u00f3n de Morel", "shape": "dot", "size": 10.412371134020619, "title": "La invenci\u00f3n de Morel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cortazar_axolotl", "label": "Axolotl", "shape": "dot", "size": 10.412371134020619, "title": "Axolotl\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cortazar_otro_cielo", "label": "El otro cielo", "shape": "dot", "size": 10.412371134020619, "title": "El otro cielo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cortazar_lejana", "label": "Lejana", "shape": "dot", "size": 10.412371134020619, "title": "Lejana\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carpentier_viaje_semilla", "label": "Viaje a la semilla", "shape": "dot", "size": 10.412371134020619, "title": "Viaje a la semilla\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "imbert_gato_cheshire", "label": "El gato de Cheshire", "shape": "dot", "size": 10.412371134020619, "title": "El gato de Cheshire\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "imbert_vertigos", "label": "V\u00e9rtigos", "shape": "dot", "size": 10.412371134020619, "title": "V\u00e9rtigos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "imbert_paraiso", "label": "Para\u00edso", "shape": "dot", "size": 10.412371134020619, "title": "Para\u00edso\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "garcia_marquez_cien_anios", "label": "Cien a\u00f1os de soledad", "shape": "dot", "size": 10.412371134020619, "title": "Cien a\u00f1os de soledad\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "garcia_marquez_viejo_alas", "label": "Un se\u00f1or muy viejo con unas alas enormes", "shape": "dot", "size": 10.412371134020619, "title": "Un se\u00f1or muy viejo con unas alas enormes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "witold_gombrowicz", "label": "Witold Gombrowicz", "shape": "square", "size": 10.824742268041238, "title": "Witold Gombrowicz\u003cbr\u003eType: author\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gombrowicz_ferdydurke", "label": "Ferdydurke", "shape": "dot", "size": 10.412371134020619, "title": "Ferdydurke\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gombrowicz_memorias_maduracion", "label": "Memorias del per\u00edodo de la maduraci\u00f3n", "shape": "dot", "size": 10.412371134020619, "title": "Memorias del per\u00edodo de la maduraci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_thonis", "label": "Luis Thonis", "shape": "square", "size": 12.061855670103093, "title": "Luis Thonis\u003cbr\u003eType: author\u003cbr\u003eConnections: 5"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "felisberto_mujer_parecida", "label": "La mujer parecida a m\u00ed", "shape": "dot", "size": 10.412371134020619, "title": "La mujer parecida a m\u00ed\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "plinio_historia_natural", "label": "Historia Natural", "shape": "dot", "size": 10.412371134020619, "title": "Historia Natural\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "felisberto_tiempos_clemente", "label": "Los tiempos de Clemente Colling", "shape": "dot", "size": 10.412371134020619, "title": "Los tiempos de Clemente Colling\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ponce_errancia_sinfin", "label": "La errancia sin fin: Musil, Borges, K...", "shape": "dot", "size": 10.412371134020619, "title": "La errancia sin fin: Musil, Borges, K...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echavarren_espacio_verdad", "label": "El espacio de la verdad: pr\u00e1ctica del...", "shape": "dot", "size": 10.412371134020619, "title": "El espacio de la verdad: pr\u00e1ctica del...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "ramon_alcalde", "label": "Ram\u00f3n Alcalde", "shape": "square", "size": 50.0, "title": "Ram\u00f3n Alcalde\u003cbr\u003eType: author\u003cbr\u003eConnections: 97"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sitio", "label": "Sitio", "shape": "dot", "size": 10.824742268041238, "title": "Sitio\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_salvacion", "label": "Le Salut par les Juifs", "shape": "dot", "size": 10.824742268041238, "title": "Le Salut par les Juifs\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_tel_quel", "label": "Tel Quel", "shape": "dot", "size": 10.412371134020619, "title": "Tel Quel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_communications", "label": "Communications", "shape": "dot", "size": 10.412371134020619, "title": "Communications\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_poetique", "label": "Po\u00e9tique", "shape": "dot", "size": 10.412371134020619, "title": "Po\u00e9tique\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_ornicar", "label": "Ornicar?", "shape": "dot", "size": 10.412371134020619, "title": "Ornicar?\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_diwan", "label": "Diwan", "shape": "dot", "size": 10.412371134020619, "title": "Diwan\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "drumont_france", "label": "La France juive", "shape": "dot", "size": 10.824742268041238, "title": "La France juive\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_argent", "label": "L\u0027Argent", "shape": "dot", "size": 10.824742268041238, "title": "L\u0027Argent\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "martel_bolsa", "label": "La Bolsa", "shape": "dot", "size": 10.412371134020619, "title": "La Bolsa\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_la_prensa", "label": "La Prensa", "shape": "dot", "size": 10.412371134020619, "title": "La Prensa\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "garay_crisis90", "label": "La crisis del 90 noventa a\u00f1os despu\u00e9s...", "shape": "dot", "size": 10.412371134020619, "title": "La crisis del 90 noventa a\u00f1os despu\u00e9s...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "escandalo_bancario", "label": "Esc\u00e1ndalo bancario", "shape": "dot", "size": 10.412371134020619, "title": "Esc\u00e1ndalo bancario\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_la_nacion", "label": "La Naci\u00f3n", "shape": "dot", "size": 10.412371134020619, "title": "La Naci\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "moyano_capitalismo", "label": "El capitalismo y las virtudes teologales", "shape": "dot", "size": 10.412371134020619, "title": "El capitalismo y las virtudes teologales\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gilder_riqueza_pobreza", "label": "Riqueza y pobreza", "shape": "dot", "size": 10.412371134020619, "title": "Riqueza y pobreza\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "libro_kahal", "label": "Kniga Kahala", "shape": "dot", "size": 10.412371134020619, "title": "Kniga Kahala\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "talmudjude", "label": "Der Talmudjude", "shape": "dot", "size": 10.412371134020619, "title": "Der Talmudjude\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "protocolos_sion", "label": "Protocolos de los Sabios de Si\u00f3n", "shape": "dot", "size": 10.412371134020619, "title": "Protocolos de los Sabios de Si\u00f3n\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wast_oro", "label": "Oro", "shape": "dot", "size": 10.412371134020619, "title": "Oro\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wast_kahal", "label": "El Kahal", "shape": "dot", "size": 10.412371134020619, "title": "El Kahal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gerchunoff_gauchos_judios", "label": "Los gauchos jud\u00edos", "shape": "dot", "size": 10.412371134020619, "title": "Los gauchos jud\u00edos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "herzl_estado_judio", "label": "Der Judenstaat", "shape": "dot", "size": 10.412371134020619, "title": "Der Judenstaat\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_la_debacle", "label": "La D\u00e9b\u00e2cle", "shape": "dot", "size": 10.412371134020619, "title": "La D\u00e9b\u00e2cle\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "par_scandale", "label": "Par le Scandale", "shape": "dot", "size": 10.412371134020619, "title": "Par le Scandale\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "seconde_enfance_zola", "label": "La seconde enfance de Zola", "shape": "dot", "size": 10.412371134020619, "title": "La seconde enfance de Zola\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_accuse", "label": "Je m\u0027accuse...", "shape": "dot", "size": 10.412371134020619, "title": "Je m\u0027accuse...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dernieres_cotonnes", "label": "Les Derni\u00e8res Colonnes de l\u0027\u00c9glise", "shape": "dot", "size": 10.412371134020619, "title": "Les Derni\u00e8res Colonnes de l\u0027\u00c9glise\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "daniel_deronda", "label": "Daniel Deronda", "shape": "dot", "size": 10.412371134020619, "title": "Daniel Deronda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pour_juifs", "label": "Pour les juifs", "shape": "dot", "size": 10.412371134020619, "title": "Pour les juifs\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_figaro", "label": "Le Figaro", "shape": "dot", "size": 10.412371134020619, "title": "Le Figaro\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_libre_parole", "label": "La Libre Parole", "shape": "dot", "size": 10.412371134020619, "title": "La Libre Parole\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_accuse", "label": "J\u0027accuse...!", "shape": "dot", "size": 10.412371134020619, "title": "J\u0027accuse...!\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jesus_israel", "label": "J\u00e9sus et Isra\u00ebl", "shape": "dot", "size": 10.412371134020619, "title": "J\u00e9sus et Isra\u00ebl\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "scott_ivanhoe", "label": "Ivanhoe", "shape": "dot", "size": 10.412371134020619, "title": "Ivanhoe\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "comedia_humana", "label": "La Comedia Humana", "shape": "dot", "size": 10.412371134020619, "title": "La Comedia Humana\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ultimo_chouan", "label": "El \u00faltimo Chouan", "shape": "dot", "size": 10.412371134020619, "title": "El \u00faltimo Chouan\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cuento_priora", "label": "Cuento de la priora", "shape": "dot", "size": 10.412371134020619, "title": "Cuento de la priora\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "wawerley", "label": "Waverley", "shape": "dot", "size": 10.412371134020619, "title": "Waverley\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "casa_nucingen", "label": "La casa Nucingen", "shape": "dot", "size": 10.412371134020619, "title": "La casa Nucingen\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "grandeza_miseria_cortesanas", "label": "Esplendores y miserias de las cortesanas", "shape": "dot", "size": 10.412371134020619, "title": "Esplendores y miserias de las cortesanas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "mont_oriol", "label": "Mont-Oriol", "shape": "dot", "size": 10.412371134020619, "title": "Mont-Oriol\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "chien_caillou", "label": "Chien-Caillou", "shape": "dot", "size": 10.412371134020619, "title": "Chien-Caillou\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "manette_salomon", "label": "Manette Salomon", "shape": "dot", "size": 10.412371134020619, "title": "Manette Salomon\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "baudelaire_flores_mal", "label": "Las flores del mal", "shape": "dot", "size": 10.412371134020619, "title": "Las flores del mal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "el_nabab", "label": "El nabab", "shape": "dot", "size": 10.412371134020619, "title": "El nabab\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_gil_blas", "label": "Gil Blas", "shape": "dot", "size": 10.412371134020619, "title": "Gil Blas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "belle_helene", "label": "La Belle H\u00e9l\u00e8ne", "shape": "dot", "size": 10.412371134020619, "title": "La Belle H\u00e9l\u00e8ne\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "origen_especies", "label": "El origen de las especies", "shape": "dot", "size": 10.412371134020619, "title": "El origen de las especies\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bopp_gramatica_comparada", "label": "Gram\u00e1tica comparada", "shape": "dot", "size": 10.412371134020619, "title": "Gram\u00e1tica comparada\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "eddas", "label": "Eddas (Edda po\u00e9tica y Edda prosaica)", "shape": "dot", "size": 10.412371134020619, "title": "Eddas (Edda po\u00e9tica y Edda prosaica)\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marx_capital", "label": "El capital", "shape": "dot", "size": 10.412371134020619, "title": "El capital\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marx_critica_economia_politica", "label": "Elementos fundamentales para la cr\u00edti...", "shape": "dot", "size": 10.412371134020619, "title": "Elementos fundamentales para la cr\u00edti...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_le_temps", "label": "Le Temps", "shape": "dot", "size": 10.412371134020619, "title": "Le Temps\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "marx_cuestion_judia", "label": "Sobre la cuesti\u00f3n jud\u00eda", "shape": "dot", "size": 10.412371134020619, "title": "Sobre la cuesti\u00f3n jud\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_lettre_jeunesse", "label": "Lettre \u00e0 la jeunesse", "shape": "dot", "size": 10.412371134020619, "title": "Lettre \u00e0 la jeunesse\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_lettre_france", "label": "Lettre \u00e0 la France", "shape": "dot", "size": 10.412371134020619, "title": "Lettre \u00e0 la France\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_notas_manuscritas", "label": "Notas Manuscritas (Dossiers pr\u00e9parato...", "shape": "dot", "size": 10.412371134020619, "title": "Notas Manuscritas (Dossiers pr\u00e9parato...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_curee", "label": "La Cur\u00e9e", "shape": "dot", "size": 10.412371134020619, "title": "La Cur\u00e9e\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "nueva_gaceta_renana", "label": "Nueva Gaceta Renana", "shape": "dot", "size": 10.412371134020619, "title": "Nueva Gaceta Renana\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_desesperado", "label": "Le D\u00e9sesp\u00e9r\u00e9", "shape": "dot", "size": 10.412371134020619, "title": "Le D\u00e9sesp\u00e9r\u00e9\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_viejo_montania", "label": "El viejo de la monta\u00f1a", "shape": "dot", "size": 10.412371134020619, "title": "El viejo de la monta\u00f1a\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maritain_conferencia_judios", "label": "Los jud\u00edos entre las naciones", "shape": "dot", "size": 10.412371134020619, "title": "Los jud\u00edos entre las naciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_sur", "label": "Sur", "shape": "dot", "size": 10.824742268041238, "title": "Sur\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cantos_maldoror", "label": "Los cantos de Maldoror", "shape": "dot", "size": 10.412371134020619, "title": "Los cantos de Maldoror\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_los_raros", "label": "Los raros", "shape": "dot", "size": 10.412371134020619, "title": "Los raros\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_mujer_pobre", "label": "La mujer pobre", "shape": "dot", "size": 10.412371134020619, "title": "La mujer pobre\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_exegesis", "label": "Ex\u00e9gesis de los lugares comunes", "shape": "dot", "size": 10.412371134020619, "title": "Ex\u00e9gesis de los lugares comunes\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "diario_gaulois", "label": "Le Gaulois", "shape": "dot", "size": 10.412371134020619, "title": "Le Gaulois\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "gaya_ciencia", "label": "La gaya ciencia", "shape": "dot", "size": 10.412371134020619, "title": "La gaya ciencia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "epistola_romanos", "label": "Ep\u00edstola a los Romanos", "shape": "dot", "size": 10.824742268041238, "title": "Ep\u00edstola a los Romanos\u003cbr\u003eType: work\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "pascal_pensamientos", "label": "Pensamientos", "shape": "dot", "size": 10.412371134020619, "title": "Pensamientos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lamentaciones", "label": "Lamentaciones", "shape": "dot", "size": 10.412371134020619, "title": "Lamentaciones\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "improperios", "label": "Improperios", "shape": "dot", "size": 10.412371134020619, "title": "Improperios\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_sangre_pobre", "label": "Le Sang du Pauvre", "shape": "dot", "size": 10.412371134020619, "title": "Le Sang du Pauvre\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "beguin_bloy", "label": "L\u00e9on Bloy l\u0027impatient", "shape": "dot", "size": 10.412371134020619, "title": "L\u00e9on Bloy l\u0027impatient\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bernanos_grand_peur", "label": "La Grande Peur des bien-pensants", "shape": "dot", "size": 10.412371134020619, "title": "La Grande Peur des bien-pensants\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bollery_bloy", "label": "L\u00e9on Bloy, essai de biographie", "shape": "dot", "size": 10.412371134020619, "title": "L\u00e9on Bloy, essai de biographie\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_complete", "label": "L\u0027Oeuvre Compl\u00e8te de L\u00e9on Bloy", "shape": "dot", "size": 10.412371134020619, "title": "L\u0027Oeuvre Compl\u00e8te de L\u00e9on Bloy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "brafman_libro", "label": "Das Buch vom Kahal. Auf Grund einer n...", "shape": "dot", "size": 10.412371134020619, "title": "Das Buch vom Kahal. Auf Grund einer n...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "jewish_social_studies", "label": "Jewish Social Studies", "shape": "dot", "size": 10.412371134020619, "title": "Jewish Social Studies\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "colleye_ame_bloy", "label": "L\u0027\u00e2me de L\u00e9on Bloy", "shape": "dot", "size": 10.412371134020619, "title": "L\u0027\u00e2me de L\u00e9on Bloy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "delhorbe_affaire_dreyfus", "label": "L\u0027Affaire Dreyfus et les \u00e9crivains fr...", "shape": "dot", "size": 10.412371134020619, "title": "L\u0027Affaire Dreyfus et les \u00e9crivains fr...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "drumont_france_juive_opinion", "label": "La France Juive devant l\u0027opinion", "shape": "dot", "size": 10.412371134020619, "title": "La France Juive devant l\u0027opinion\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "drumont_fin_monde", "label": "La Fin d\u0027un monde", "shape": "dot", "size": 10.412371134020619, "title": "La Fin d\u0027un monde\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "drumont_testament_antisemite", "label": "Le Testament d\u0027un antis\u00e9mite", "shape": "dot", "size": 10.412371134020619, "title": "Le Testament d\u0027un antis\u00e9mite\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "elbogen_century_jewish_life", "label": "A Century of Jewish Life", "shape": "dot", "size": 10.412371134020619, "title": "A Century of Jewish Life\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "fumet_mission_bloy", "label": "Mission de L\u00e9on Bloy", "shape": "dot", "size": 10.412371134020619, "title": "Mission de L\u00e9on Bloy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "janouch_kafka", "label": "Gespr\u00e4che mit Kafka", "shape": "dot", "size": 10.412371134020619, "title": "Gespr\u00e4che mit Kafka\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "journet_destinees_israel", "label": "Destin\u00e9es d\u0027Isra\u00ebl. \u00c0 propos du salut...", "shape": "dot", "size": 10.412371134020619, "title": "Destin\u00e9es d\u0027Isra\u00ebl. \u00c0 propos du salut...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lazare_fumier_job", "label": "Le Fumier de Job", "shape": "dot", "size": 10.412371134020619, "title": "Le Fumier de Job\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "lory_pensee_religieuse", "label": "La Pens\u00e9e religieuse de L\u00e9on Bloy", "shape": "dot", "size": 10.412371134020619, "title": "La Pens\u00e9e religieuse de L\u00e9on Bloy\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "maritain_grandes_amities", "label": "Les Grandes Amiti\u00e9s", "shape": "dot", "size": 10.412371134020619, "title": "Les Grandes Amiti\u00e9s\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sartre_reflexiones", "label": "Reflexiones sobre la cuesti\u00f3n jud\u00eda", "shape": "dot", "size": 10.412371134020619, "title": "Reflexiones sobre la cuesti\u00f3n jud\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_oeuvre_complete", "label": "L\u0027Oeuvre Compl\u00e8te de Emile Zola", "shape": "dot", "size": 10.412371134020619, "title": "L\u0027Oeuvre Compl\u00e8te de Emile Zola\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_une_campagne", "label": "Une campagne", "shape": "dot", "size": 10.412371134020619, "title": "Une campagne\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "zola_nouvelle_campagne", "label": "Nouvelle campagne", "shape": "dot", "size": 10.412371134020619, "title": "Nouvelle campagne\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "leon_bloy", "label": "L\u00e9on Bloy", "shape": "square", "size": 14.123711340206185, "title": "L\u00e9on Bloy\u003cbr\u003eType: author\u003cbr\u003eConnections: 10"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "bloy_mon_journal", "label": "Mon Journal", "shape": "dot", "size": 10.412371134020619, "title": "Mon Journal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "evangelio_san_juan", "label": "Evangelio seg\u00fan San Juan", "shape": "dot", "size": 10.412371134020619, "title": "Evangelio seg\u00fan San Juan\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "apocalipsis", "label": "Apocalipsis", "shape": "dot", "size": 10.412371134020619, "title": "Apocalipsis\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "sabiduria", "label": "Sabidur\u00eda", "shape": "dot", "size": 10.412371134020619, "title": "Sabidur\u00eda\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "biblia_genesis", "label": "G\u00e9nesis", "shape": "dot", "size": 10.412371134020619, "title": "G\u00e9nesis\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "biblia_deuteronomio", "label": "Deuteronomio", "shape": "dot", "size": 10.412371134020619, "title": "Deuteronomio\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "biblia_ezequiel", "label": "Ezequiel", "shape": "dot", "size": 10.412371134020619, "title": "Ezequiel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "emile_zola", "label": "\u00c9mile Zola", "shape": "square", "size": 10.412371134020619, "title": "\u00c9mile Zola\u003cbr\u003eType: author\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_chitarroni", "label": "Luis Chitarroni", "shape": "square", "size": 12.474226804123711, "title": "Luis Chitarroni\u003cbr\u003eType: author\u003cbr\u003eConnections: 6"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "cabrera_infante_habana", "label": "La Habana para un infante difunto", "shape": "dot", "size": 10.412371134020619, "title": "La Habana para un infante difunto\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "conrad_corazon_tinieblas", "label": "Heart of Darkness", "shape": "dot", "size": 10.412371134020619, "title": "Heart of Darkness\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "montgomery_dama_lago", "label": "La dama del lago", "shape": "dot", "size": 10.412371134020619, "title": "La dama del lago\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "joyce_ulises", "label": "Ulysses", "shape": "dot", "size": 10.412371134020619, "title": "Ulysses\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_sur", "label": "El Sur", "shape": "dot", "size": 10.412371134020619, "title": "El Sur\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_pierre_menard", "label": "Pierre Menard, autor del Quijote", "shape": "dot", "size": 10.412371134020619, "title": "Pierre Menard, autor del Quijote\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "grass_rodaballo", "label": "El rodaballo", "shape": "dot", "size": 10.412371134020619, "title": "El rodaballo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "luis_gusman", "label": "Luis Gusm\u00e1n", "shape": "square", "size": 10.824742268041238, "title": "Luis Gusm\u00e1n\u003cbr\u003eType: author\u003cbr\u003eConnections: 2"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_autobiograficas", "label": "P\u00e1ginas autobiogr\u00e1ficas", "shape": "dot", "size": 10.412371134020619, "title": "P\u00e1ginas autobiogr\u00e1ficas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "echeverria_afectos", "label": "Afectos \u00edntimos", "shape": "dot", "size": 10.412371134020619, "title": "Afectos \u00edntimos\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "enrique_pezzoni", "label": "Enrique Pezzoni", "shape": "square", "size": 14.536082474226804, "title": "Enrique Pezzoni\u003cbr\u003eType: author\u003cbr\u003eConnections: 11"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "ocampo_la_furia", "label": "La furia", "shape": "dot", "size": 10.412371134020619, "title": "La furia\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barthes_plaisir_texte", "label": "Le Plaisir du texte", "shape": "dot", "size": 10.412371134020619, "title": "Le Plaisir du texte\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "fait_divers", "label": "Faits divers de la Terre et du Ciel", "shape": "dot", "size": 10.412371134020619, "title": "Faits divers de la Terre et du Ciel\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "james_vuelta_tuerca", "label": "Otra vuelta de tuerca", "shape": "dot", "size": 10.412371134020619, "title": "Otra vuelta de tuerca\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "james_art_novel", "label": "The Art of the Novel: Critical Prefaces", "shape": "dot", "size": 10.412371134020619, "title": "The Art of the Novel: Critical Prefaces\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "barrenechea_lit_fantastica", "label": "La literatura fant\u00e1stica: funci\u00f3n de ...", "shape": "dot", "size": 10.412371134020619, "title": "La literatura fant\u00e1stica: funci\u00f3n de ...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "todorov_intro_lit_fant", "label": "Introduction \u00e0 la litt\u00e9rature fantast...", "shape": "dot", "size": 10.412371134020619, "title": "Introduction \u00e0 la litt\u00e9rature fantast...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "molloy_exageracion_lenguaje", "label": "Silvina Ocampo: la exageraci\u00f3n como l...", "shape": "dot", "size": 10.412371134020619, "title": "Silvina Ocampo: la exageraci\u00f3n como l...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "sylvia_molloy", "label": "Sylvia Molloy", "shape": "square", "size": 12.88659793814433, "title": "Sylvia Molloy\u003cbr\u003eType: author\u003cbr\u003eConnections: 7"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_azul", "label": "Azul...", "shape": "dot", "size": 10.412371134020619, "title": "Azul...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_epistolas", "label": "Ep\u00edstolas y poemas", "shape": "dot", "size": 10.412371134020619, "title": "Ep\u00edstolas y poemas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_prosas_profanas", "label": "Prosas profanas y otros poemas", "shape": "dot", "size": 10.412371134020619, "title": "Prosas profanas y otros poemas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_cantos", "label": "Cantos de vida y esperanza, los cisne...", "shape": "dot", "size": 10.412371134020619, "title": "Cantos de vida y esperanza, los cisne...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "baudelaire_mauvais_moine", "label": "Le Mauvais Moine", "shape": "dot", "size": 10.412371134020619, "title": "Le Mauvais Moine\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "borges_inmortal", "label": "El inmortal", "shape": "dot", "size": 10.412371134020619, "title": "El inmortal\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "dario_canto_errante", "label": "El canto errante", "shape": "dot", "size": 10.412371134020619, "title": "El canto errante\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "antoine_berman", "label": "Antoine Berman", "shape": "square", "size": 12.061855670103093, "title": "Antoine Berman\u003cbr\u003eType: author\u003cbr\u003eConnections: 5"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "steiner_apres_babel", "label": "Apr\u00e8s Babel. Une po\u00e9tique du dire et ...", "shape": "dot", "size": 10.412371134020619, "title": "Apr\u00e8s Babel. Une po\u00e9tique du dire et ...\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "forster_poesia", "label": "La poes\u00eda en lenguas extranjeras", "shape": "dot", "size": 10.412371134020619, "title": "La poes\u00eda en lenguas extranjeras\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "said_oriente", "label": "Orientalismo", "shape": "dot", "size": 10.412371134020619, "title": "Orientalismo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "benjamin_tarea_traductor", "label": "La tarea del traductor", "shape": "dot", "size": 10.412371134020619, "title": "La tarea del traductor\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#e74c3c", "font": {"color": "#eee"}, "id": "leonora_carrington", "label": "Leonora Carrington", "shape": "square", "size": 11.237113402061855, "title": "Leonora Carrington\u003cbr\u003eType: author\u003cbr\u003eConnections: 3"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "carrington_abajo", "label": "Abajo", "shape": "dot", "size": 10.412371134020619, "title": "Abajo\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "revista_las_moradas", "label": "Las Moradas", "shape": "dot", "size": 10.412371134020619, "title": "Las Moradas\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}, {"color": "#3498db", "font": {"color": "#eee"}, "id": "age_dors", "label": "Collection \"L\u0027\u00c2ge d\u0027or\"", "shape": "dot", "size": 10.412371134020619, "title": "Collection \"L\u0027\u00c2ge d\u0027or\"\u003cbr\u003eType: work\u003cbr\u003eConnections: 1"}]);
+                  edges = new vis.DataSet([{"from": "leo_strauss", "to": "donne_biathanatos", "value": 1}, {"from": "leo_strauss", "to": "strauss_philosophie_gesetz", "value": 1}, {"from": "leo_strauss", "to": "strauss_on_tyranny", "value": 1}, {"from": "leo_strauss", "to": "strauss_persecution_writing", "value": 1}, {"from": "leo_strauss", "to": "strauss_socrates_aristophanes", "value": 1}, {"from": "leo_strauss", "to": "strauss_liberalism_ancient", "value": 1}, {"from": "leo_strauss", "to": "strauss_plato_laws", "value": 1}, {"from": "leo_strauss", "to": "strauss_essays", "value": 1}, {"from": "leo_strauss", "to": "eusebio_historia", "value": 1}, {"from": "leo_strauss", "to": "montesquieu_espiritu_leyes", "value": 2}, {"from": "leo_strauss", "to": "platon_banquete", "value": 1}, {"from": "eduardo_gruner", "to": "rabelais_gargantua_pantagruel", "value": 3}, {"from": "eduardo_gruner", "to": "cronicas_gargantua", "value": 3}, {"from": "eduardo_gruner", "to": "luciano_historias_verdaderas", "value": 1}, {"from": "eduardo_gruner", "to": "moro_utopia", "value": 1}, {"from": "eduardo_gruner", "to": "odisea", "value": 1}, {"from": "eduardo_gruner", "to": "cervantes_quijote", "value": 1}, {"from": "eduardo_gruner", "to": "quinto_libro_pantagruel", "value": 1}, {"from": "eduardo_gruner", "to": "grass_rodaballo", "value": 1}, {"from": "cervantes_quijote", "to": "antoine_berman", "value": 2}, {"from": "mario_levin", "to": "masotta_arlt", "value": 1}, {"from": "pascal_bonitzer", "to": "panofsky_perspectiva_simbolica", "value": 1}, {"from": "pascal_bonitzer", "to": "foucault_palabras_cosas", "value": 1}, {"from": "pascal_bonitzer", "to": "eisenstein_notas", "value": 1}, {"from": "pascal_bonitzer", "to": "eisenstein_montaje38", "value": 1}, {"from": "pascal_bonitzer", "to": "eisenstein_reflexiones_cineasta", "value": 1}, {"from": "pascal_bonitzer", "to": "revista_charlie_mensuel", "value": 1}, {"from": "pascal_bonitzer", "to": "truffaut_hitchcock", "value": 1}, {"from": "ana_barrenechea", "to": "barthes_sz", "value": 1}, {"from": "ana_barrenechea", "to": "bioy_invencion_morel", "value": 1}, {"from": "ana_barrenechea", "to": "cortazar_axolotl", "value": 1}, {"from": "ana_barrenechea", "to": "cortazar_otro_cielo", "value": 1}, {"from": "ana_barrenechea", "to": "cortazar_lejana", "value": 1}, {"from": "ana_barrenechea", "to": "carpentier_viaje_semilla", "value": 1}, {"from": "ana_barrenechea", "to": "imbert_gato_cheshire", "value": 1}, {"from": "ana_barrenechea", "to": "imbert_vertigos", "value": 1}, {"from": "ana_barrenechea", "to": "imbert_paraiso", "value": 1}, {"from": "ana_barrenechea", "to": "garcia_marquez_cien_anios", "value": 1}, {"from": "ana_barrenechea", "to": "garcia_marquez_viejo_alas", "value": 1}, {"from": "barthes_sz", "to": "enrique_pezzoni", "value": 1}, {"from": "witold_gombrowicz", "to": "gombrowicz_ferdydurke", "value": 32}, {"from": "witold_gombrowicz", "to": "gombrowicz_memorias_maduracion", "value": 1}, {"from": "luis_thonis", "to": "felisberto_mujer_parecida", "value": 1}, {"from": "luis_thonis", "to": "plinio_historia_natural", "value": 1}, {"from": "luis_thonis", "to": "felisberto_tiempos_clemente", "value": 1}, {"from": "luis_thonis", "to": "ponce_errancia_sinfin", "value": 1}, {"from": "luis_thonis", "to": "echavarren_espacio_verdad", "value": 1}, {"from": "ramon_alcalde", "to": "revista_sitio", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_salvacion", "value": 20}, {"from": "ramon_alcalde", "to": "revista_tel_quel", "value": 1}, {"from": "ramon_alcalde", "to": "revista_communications", "value": 1}, {"from": "ramon_alcalde", "to": "revista_poetique", "value": 1}, {"from": "ramon_alcalde", "to": "revista_ornicar", "value": 1}, {"from": "ramon_alcalde", "to": "revista_diwan", "value": 1}, {"from": "ramon_alcalde", "to": "drumont_france", "value": 12}, {"from": "ramon_alcalde", "to": "zola_argent", "value": 13}, {"from": "ramon_alcalde", "to": "martel_bolsa", "value": 5}, {"from": "ramon_alcalde", "to": "diario_la_prensa", "value": 1}, {"from": "ramon_alcalde", "to": "garay_crisis90", "value": 1}, {"from": "ramon_alcalde", "to": "escandalo_bancario", "value": 1}, {"from": "ramon_alcalde", "to": "diario_la_nacion", "value": 2}, {"from": "ramon_alcalde", "to": "moyano_capitalismo", "value": 1}, {"from": "ramon_alcalde", "to": "gilder_riqueza_pobreza", "value": 1}, {"from": "ramon_alcalde", "to": "libro_kahal", "value": 2}, {"from": "ramon_alcalde", "to": "talmudjude", "value": 1}, {"from": "ramon_alcalde", "to": "protocolos_sion", "value": 3}, {"from": "ramon_alcalde", "to": "wast_oro", "value": 2}, {"from": "ramon_alcalde", "to": "wast_kahal", "value": 2}, {"from": "ramon_alcalde", "to": "gerchunoff_gauchos_judios", "value": 2}, {"from": "ramon_alcalde", "to": "herzl_estado_judio", "value": 2}, {"from": "ramon_alcalde", "to": "zola_la_debacle", "value": 2}, {"from": "ramon_alcalde", "to": "par_scandale", "value": 1}, {"from": "ramon_alcalde", "to": "seconde_enfance_zola", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_accuse", "value": 1}, {"from": "ramon_alcalde", "to": "dernieres_cotonnes", "value": 1}, {"from": "ramon_alcalde", "to": "daniel_deronda", "value": 1}, {"from": "ramon_alcalde", "to": "pour_juifs", "value": 1}, {"from": "ramon_alcalde", "to": "diario_figaro", "value": 2}, {"from": "ramon_alcalde", "to": "diario_libre_parole", "value": 5}, {"from": "ramon_alcalde", "to": "zola_accuse", "value": 2}, {"from": "ramon_alcalde", "to": "jesus_israel", "value": 2}, {"from": "ramon_alcalde", "to": "scott_ivanhoe", "value": 5}, {"from": "ramon_alcalde", "to": "comedia_humana", "value": 4}, {"from": "ramon_alcalde", "to": "ultimo_chouan", "value": 1}, {"from": "ramon_alcalde", "to": "cuento_priora", "value": 1}, {"from": "ramon_alcalde", "to": "wawerley", "value": 1}, {"from": "ramon_alcalde", "to": "casa_nucingen", "value": 1}, {"from": "ramon_alcalde", "to": "grandeza_miseria_cortesanas", "value": 3}, {"from": "ramon_alcalde", "to": "mont_oriol", "value": 4}, {"from": "ramon_alcalde", "to": "chien_caillou", "value": 1}, {"from": "ramon_alcalde", "to": "manette_salomon", "value": 1}, {"from": "ramon_alcalde", "to": "baudelaire_flores_mal", "value": 1}, {"from": "ramon_alcalde", "to": "el_nabab", "value": 2}, {"from": "ramon_alcalde", "to": "revista_gil_blas", "value": 2}, {"from": "ramon_alcalde", "to": "belle_helene", "value": 1}, {"from": "ramon_alcalde", "to": "origen_especies", "value": 1}, {"from": "ramon_alcalde", "to": "bopp_gramatica_comparada", "value": 1}, {"from": "ramon_alcalde", "to": "eddas", "value": 1}, {"from": "ramon_alcalde", "to": "marx_capital", "value": 2}, {"from": "ramon_alcalde", "to": "marx_critica_economia_politica", "value": 1}, {"from": "ramon_alcalde", "to": "diario_le_temps", "value": 1}, {"from": "ramon_alcalde", "to": "marx_cuestion_judia", "value": 1}, {"from": "ramon_alcalde", "to": "zola_lettre_jeunesse", "value": 1}, {"from": "ramon_alcalde", "to": "zola_lettre_france", "value": 1}, {"from": "ramon_alcalde", "to": "zola_notas_manuscritas", "value": 3}, {"from": "ramon_alcalde", "to": "zola_curee", "value": 2}, {"from": "ramon_alcalde", "to": "nueva_gaceta_renana", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_desesperado", "value": 7}, {"from": "ramon_alcalde", "to": "bloy_viejo_montania", "value": 2}, {"from": "ramon_alcalde", "to": "maritain_conferencia_judios", "value": 2}, {"from": "ramon_alcalde", "to": "revista_sur", "value": 1}, {"from": "ramon_alcalde", "to": "cantos_maldoror", "value": 1}, {"from": "ramon_alcalde", "to": "dario_los_raros", "value": 2}, {"from": "ramon_alcalde", "to": "bloy_mujer_pobre", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_exegesis", "value": 1}, {"from": "ramon_alcalde", "to": "diario_gaulois", "value": 1}, {"from": "ramon_alcalde", "to": "gaya_ciencia", "value": 1}, {"from": "ramon_alcalde", "to": "epistola_romanos", "value": 1}, {"from": "ramon_alcalde", "to": "pascal_pensamientos", "value": 1}, {"from": "ramon_alcalde", "to": "lamentaciones", "value": 1}, {"from": "ramon_alcalde", "to": "improperios", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_sangre_pobre", "value": 1}, {"from": "ramon_alcalde", "to": "beguin_bloy", "value": 1}, {"from": "ramon_alcalde", "to": "bernanos_grand_peur", "value": 1}, {"from": "ramon_alcalde", "to": "bollery_bloy", "value": 1}, {"from": "ramon_alcalde", "to": "bloy_complete", "value": 1}, {"from": "ramon_alcalde", "to": "brafman_libro", "value": 1}, {"from": "ramon_alcalde", "to": "jewish_social_studies", "value": 1}, {"from": "ramon_alcalde", "to": "colleye_ame_bloy", "value": 1}, {"from": "ramon_alcalde", "to": "delhorbe_affaire_dreyfus", "value": 1}, {"from": "ramon_alcalde", "to": "drumont_france_juive_opinion", "value": 1}, {"from": "ramon_alcalde", "to": "drumont_fin_monde", "value": 1}, {"from": "ramon_alcalde", "to": "drumont_testament_antisemite", "value": 1}, {"from": "ramon_alcalde", "to": "elbogen_century_jewish_life", "value": 1}, {"from": "ramon_alcalde", "to": "fumet_mission_bloy", "value": 1}, {"from": "ramon_alcalde", "to": "janouch_kafka", "value": 1}, {"from": "ramon_alcalde", "to": "journet_destinees_israel", "value": 1}, {"from": "ramon_alcalde", "to": "lazare_fumier_job", "value": 1}, {"from": "ramon_alcalde", "to": "lory_pensee_religieuse", "value": 1}, {"from": "ramon_alcalde", "to": "maritain_grandes_amities", "value": 1}, {"from": "ramon_alcalde", "to": "sartre_reflexiones", "value": 1}, {"from": "ramon_alcalde", "to": "zola_oeuvre_complete", "value": 1}, {"from": "ramon_alcalde", "to": "zola_une_campagne", "value": 1}, {"from": "ramon_alcalde", "to": "zola_nouvelle_campagne", "value": 1}, {"from": "revista_sitio", "to": "enrique_pezzoni", "value": 1}, {"from": "bloy_salvacion", "to": "leon_bloy", "value": 3}, {"from": "drumont_france", "to": "leon_bloy", "value": 1}, {"from": "zola_argent", "to": "emile_zola", "value": 2}, {"from": "revista_sur", "to": "enrique_pezzoni", "value": 1}, {"from": "epistola_romanos", "to": "leon_bloy", "value": 3}, {"from": "leon_bloy", "to": "bloy_mon_journal", "value": 1}, {"from": "leon_bloy", "to": "evangelio_san_juan", "value": 1}, {"from": "leon_bloy", "to": "apocalipsis", "value": 1}, {"from": "leon_bloy", "to": "sabiduria", "value": 1}, {"from": "leon_bloy", "to": "biblia_genesis", "value": 1}, {"from": "leon_bloy", "to": "biblia_deuteronomio", "value": 1}, {"from": "leon_bloy", "to": "biblia_ezequiel", "value": 1}, {"from": "luis_chitarroni", "to": "cabrera_infante_habana", "value": 14}, {"from": "luis_chitarroni", "to": "conrad_corazon_tinieblas", "value": 1}, {"from": "luis_chitarroni", "to": "montgomery_dama_lago", "value": 1}, {"from": "luis_chitarroni", "to": "joyce_ulises", "value": 1}, {"from": "luis_chitarroni", "to": "borges_sur", "value": 1}, {"from": "luis_chitarroni", "to": "borges_pierre_menard", "value": 1}, {"from": "luis_gusman", "to": "echeverria_autobiograficas", "value": 1}, {"from": "luis_gusman", "to": "echeverria_afectos", "value": 2}, {"from": "enrique_pezzoni", "to": "ocampo_la_furia", "value": 3}, {"from": "enrique_pezzoni", "to": "barthes_plaisir_texte", "value": 1}, {"from": "enrique_pezzoni", "to": "fait_divers", "value": 1}, {"from": "enrique_pezzoni", "to": "james_vuelta_tuerca", "value": 1}, {"from": "enrique_pezzoni", "to": "james_art_novel", "value": 1}, {"from": "enrique_pezzoni", "to": "barrenechea_lit_fantastica", "value": 1}, {"from": "enrique_pezzoni", "to": "todorov_intro_lit_fant", "value": 1}, {"from": "enrique_pezzoni", "to": "molloy_exageracion_lenguaje", "value": 1}, {"from": "sylvia_molloy", "to": "dario_azul", "value": 2}, {"from": "sylvia_molloy", "to": "dario_epistolas", "value": 2}, {"from": "sylvia_molloy", "to": "dario_prosas_profanas", "value": 14}, {"from": "sylvia_molloy", "to": "dario_cantos", "value": 2}, {"from": "sylvia_molloy", "to": "baudelaire_mauvais_moine", "value": 1}, {"from": "sylvia_molloy", "to": "borges_inmortal", "value": 1}, {"from": "sylvia_molloy", "to": "dario_canto_errante", "value": 2}, {"from": "antoine_berman", "to": "steiner_apres_babel", "value": 1}, {"from": "antoine_berman", "to": "forster_poesia", "value": 1}, {"from": "antoine_berman", "to": "said_oriente", "value": 1}, {"from": "antoine_berman", "to": "benjamin_tarea_traductor", "value": 1}, {"from": "leonora_carrington", "to": "carrington_abajo", "value": 1}, {"from": "leonora_carrington", "to": "revista_las_moradas", "value": 1}, {"from": "leonora_carrington", "to": "age_dors", "value": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -2000,
+            "springConstant": 0.001,
+            "springLength": 200
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

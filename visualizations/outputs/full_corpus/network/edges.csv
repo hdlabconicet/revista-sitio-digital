@@ -1,0 +1,1348 @@
+source_id,source_name,target_id,target_name,weight
+jorge_jinkis,Jorge Jinkis,samuel_beckett,Samuel Beckett,1
+jorge_jinkis,Jorge Jinkis,leo_strauss,Leo Strauss,1
+jorge_jinkis,Jorge Jinkis,ernest_renan,Joseph Renan,1
+jorge_jinkis,Jorge Jinkis,leon_bloy,Léon Bloy,1
+jorge_jinkis,Jorge Jinkis,martin_lutero,Martín Lutero,1
+jorge_jinkis,Jorge Jinkis,leopoldo_lugones,Leopoldo Lugones,3
+jorge_jinkis,Jorge Jinkis,paul_valery,Ambroise Valéry,1
+jorge_jinkis,Jorge Jinkis,kant,Immanuel Kant,1
+jorge_jinkis,Jorge Jinkis,ronald_reagan,Ronald Reagan,2
+jorge_jinkis,Jorge Jinkis,paul_groussac,Paul Groussac,1
+jorge_jinkis,Jorge Jinkis,alfredo_palacios,Alfredo Palacios,5
+jorge_jinkis,Jorge Jinkis,juan_domingo_peron,Juan Domingo Perón,5
+jorge_jinkis,Jorge Jinkis,costa_mendez,Nicanor Costa Méndez,1
+jorge_jinkis,Jorge Jinkis,benjamin_menendez,Mario Benjamín Menéndez,1
+jorge_jinkis,Jorge Jinkis,juan_pablo_ii,Juan Pablo II Wojtyła,1
+jorge_jinkis,Jorge Jinkis,bernardo_neustadt,Bernardo Neustadt,2
+jorge_jinkis,Jorge Jinkis,leonidas,Leónidas I,1
+jorge_jinkis,Jorge Jinkis,osvaldo_rossler,Osvaldo Rossler,9
+jorge_jinkis,Jorge Jinkis,borges,Jorge Borges,12
+jorge_jinkis,Jorge Jinkis,martinez_estrada,Ezequiel Martínez Estrada,2
+jorge_jinkis,Jorge Jinkis,friedrich_nietzsche,Friedrich Nietzsche,3
+jorge_jinkis,Jorge Jinkis,julio_cortazar,Julio Cortázar,2
+jorge_jinkis,Jorge Jinkis,san_martin,José de San Martín,1
+jorge_jinkis,Jorge Jinkis,napoleon,Napoléon Bonaparte,1
+jorge_jinkis,Jorge Jinkis,enrique_santos_discepolo,Enrique Santos Discépolo,4
+jorge_jinkis,Jorge Jinkis,joseph_conrad,Joseph Conrad,5
+jorge_jinkis,Jorge Jinkis,aristoteles,Aristóteles,1
+jorge_jinkis,Jorge Jinkis,nicomaco,Nicómaco,1
+jorge_jinkis,Jorge Jinkis,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+jorge_jinkis,Jorge Jinkis,pedro_abelardo,Pedro Abelardo,1
+jorge_jinkis,Jorge Jinkis,eloisa,Eloísa,1
+jorge_jinkis,Jorge Jinkis,ricardo_piglia,Ricardo Piglia,6
+jorge_jinkis,Jorge Jinkis,roberto_arlt,Roberto Arlt,6
+jorge_jinkis,Jorge Jinkis,freud,Sigmund Freud,5
+jorge_jinkis,Jorge Jinkis,witold_gombrowicz,Witold Gombrowicz,1
+jorge_jinkis,Jorge Jinkis,holderlin,Johann Hölderlin,1
+jorge_jinkis,Jorge Jinkis,martin_heidegger,Martin Heidegger,1
+jorge_jinkis,Jorge Jinkis,maurice_blanchot,Maurice Blanchot,1
+jorge_jinkis,Jorge Jinkis,socrates,Sócrates,1
+jorge_jinkis,Jorge Jinkis,arturo_frondizi,Arturo Frondizi,2
+jorge_jinkis,Jorge Jinkis,hector_campora,Héctor Cámpora,2
+jorge_jinkis,Jorge Jinkis,raul_alfonsin,Raúl Alfonsín,6
+jorge_jinkis,Jorge Jinkis,albino_gomez,Albino Gómez,1
+jorge_jinkis,Jorge Jinkis,mario_benedetti,Mario Benedetti,6
+jorge_jinkis,Jorge Jinkis,leon_rozitchner,León Rozitchner,13
+jorge_jinkis,Jorge Jinkis,luis_gregorich,Luis Gregorich,7
+jorge_jinkis,Jorge Jinkis,carl_jung,Carl Gustav Jung,1
+jorge_jinkis,Jorge Jinkis,simone_beauvoir,Simone de Beauvoir,1
+jorge_jinkis,Jorge Jinkis,juan_jose_sebreli,Juan José Sebreli,11
+jorge_jinkis,Jorge Jinkis,horacio_verbitsky,Horacio Verbitsky,1
+jorge_jinkis,Jorge Jinkis,david_vinias,David Viñas,20
+jorge_jinkis,Jorge Jinkis,hector_murena,Héctor Murena,2
+jorge_jinkis,Jorge Jinkis,jose_isaacson,José Isaacson,1
+jorge_jinkis,Jorge Jinkis,jorge_manrique,Jorge Manrique,1
+jorge_jinkis,Jorge Jinkis,cervantes,Miguel Cervantes,1
+jorge_jinkis,Jorge Jinkis,jean_paul_sartre,Jean-Paul Sartre,5
+jorge_jinkis,Jorge Jinkis,cesar_fernandez_moreno,César Fernández Moreno,2
+jorge_jinkis,Jorge Jinkis,che_guevara,Ernesto Guevara,3
+jorge_jinkis,Jorge Jinkis,ernesto_sabato,Ernesto Sabato,3
+jorge_jinkis,Jorge Jinkis,carlos_puebla,Carlos Puebla,1
+jorge_jinkis,Jorge Jinkis,jorge_asis,Jorge Asís,1
+jorge_jinkis,Jorge Jinkis,nestor_perlongher,Néstor Perlongher,23
+jorge_jinkis,Jorge Jinkis,alfonsina_storni,Alfonsina Storni,1
+jorge_jinkis,Jorge Jinkis,goethe,Johann Goethe,1
+jorge_jinkis,Jorge Jinkis,gongora,Luis de Góngora y Argote,1
+jorge_jinkis,Jorge Jinkis,abelardo_castillo,Abelardo Castillo,1
+jorge_jinkis,Jorge Jinkis,oswald_spengler,Oswald Spengler,1
+jorge_jinkis,Jorge Jinkis,federico_sainz_de_robles,Federico Carlos Sainz de Robles,1
+jorge_jinkis,Jorge Jinkis,esteban_echeverria,Esteban Echeverría,1
+jorge_jinkis,Jorge Jinkis,sarmiento,Domingo Faustino Sarmiento,2
+jorge_jinkis,Jorge Jinkis,juan_bautista_alberdi,Juan Bautista Alberdi,1
+jorge_jinkis,Jorge Jinkis,manuel_galvez,Manuel Gálvez,1
+jorge_jinkis,Jorge Jinkis,canal_feijoo,Bernardo Canal Feijóo,1
+jorge_jinkis,Jorge Jinkis,carlos_astrada,Carlos Astrada,1
+jorge_jinkis,Jorge Jinkis,jose_luis_romero,José Luis Romero,1
+jorge_jinkis,Jorge Jinkis,luis_franco,Luis Franco,1
+jorge_jinkis,Jorge Jinkis,raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,1
+jorge_jinkis,Jorge Jinkis,arturo_jauretche,Arturo Jauretche,1
+jorge_jinkis,Jorge Jinkis,oscar_masotta,Óscar Masotta,1
+jorge_jinkis,Jorge Jinkis,leonardo_castellani,Leonardo Castellani,1
+jorge_jinkis,Jorge Jinkis,ignacio_anzoategui,Ignacio Anzoátegui,1
+jorge_jinkis,Jorge Jinkis,juan_jose_hernandez_arregui,Juan José Hernández Arregui,1
+jorge_jinkis,Jorge Jinkis,abelardo_ramos,Jorge Abelardo Ramos,1
+jorge_jinkis,Jorge Jinkis,milciades_penia,Milcíades Peña,1
+jorge_jinkis,Jorge Jinkis,jaime_rest,Jaime Rest,1
+jorge_jinkis,Jorge Jinkis,pierre_chaunu,Pierre Chaunu,1
+jorge_jinkis,Jorge Jinkis,san_agustin,de Hipona Agustín,1
+jorge_jinkis,Jorge Jinkis,jean_yves_calvez,Jean-Yves Calvez,1
+jorge_jinkis,Jorge Jinkis,levi_strauss,Claude Lévi-Strauss,1
+jorge_jinkis,Jorge Jinkis,angel_rama,Ángel Rama,1
+jorge_jinkis,Jorge Jinkis,louis_althusser,Louis Althusser,1
+jorge_jinkis,Jorge Jinkis,roland_barthes,Roland Barthes,1
+jorge_jinkis,Jorge Jinkis,jacques_derrida,Jacques Derrida,1
+jorge_jinkis,Jorge Jinkis,julia_kristeva,Julia Kristeva,1
+jorge_jinkis,Jorge Jinkis,spinoza,Baruch Spinoza,3
+jorge_jinkis,Jorge Jinkis,fiodor_dostoyevski,Fiódor Dostoyevski,1
+jorge_jinkis,Jorge Jinkis,platon,Platón,1
+jorge_jinkis,Jorge Jinkis,cesar_jaroslavsky,César Jaroslavsky,1
+jorge_jinkis,Jorge Jinkis,juan_octavio_gauna,Juan Octavio Gauna,2
+jorge_jinkis,Jorge Jinkis,jose_severo_caballero,José Severo Caballero,1
+jorge_jinkis,Jorge Jinkis,augusto_belluscio,Augusto César Belluscio,1
+jorge_jinkis,Jorge Jinkis,carlos_fayt,Carlos Santiago Fayt,1
+jorge_jinkis,Jorge Jinkis,enrique_petracchi,Enrique Santiago Petracchi,1
+jorge_jinkis,Jorge Jinkis,norberto_cozzani,Norberto Ricardo Cozzani,1
+jorge_jinkis,Jorge Jinkis,jorge_antonio_berges,Jorge Antonio Bergés,1
+jorge_jinkis,Jorge Jinkis,jorge_bacque,Jorge Antonio Bacqué,1
+jorge_jinkis,Jorge Jinkis,oscar_igounet_hijo,Oscar Igounet,1
+jorge_jinkis,Jorge Jinkis,oscar_igounet_padre,Oscar Pablo Igounet,1
+jorge_jinkis,Jorge Jinkis,jose_rivanera,José Nicolás Rivanera,2
+jorge_jinkis,Jorge Jinkis,balzac,Honoré Balzac,1
+jorge_jinkis,Jorge Jinkis,alfredo_astiz,Alfredo Ignacio Astiz,1
+jorge_jinkis,Jorge Jinkis,reynaldo_bignone,Reynaldo Benito Antonio Bignone,1
+jorge_jinkis,Jorge Jinkis,julio_martinez_vivot,Julio César Martínez Vivot,1
+jorge_jinkis,Jorge Jinkis,raul_borras,Raúl Andrés Borrás,1
+jorge_jinkis,Jorge Jinkis,osvaldo_bayer,Osvaldo Jorge Bayer,1
+jorge_jinkis,Jorge Jinkis,horacio_gonzalez,Horacio Luis González,7
+leo_strauss,Leo Strauss,jorge_jinkis,Jorge Jinkis,1
+leo_strauss,Leo Strauss,borges,Jorge Borges,1
+leo_strauss,Leo Strauss,john_donne,John Donne,1
+leo_strauss,Leo Strauss,spinoza,Baruch Spinoza,2
+leo_strauss,Leo Strauss,maquiavelo,Niccolò Machiavelli,1
+leo_strauss,Leo Strauss,tucidides,Tucídides,1
+leo_strauss,Leo Strauss,aristoteles,Aristóteles,4
+leo_strauss,Leo Strauss,platon,Platón,4
+leo_strauss,Leo Strauss,thomas_hobbes,Thomas Hobbes,5
+leo_strauss,Leo Strauss,socrates,Sócrates,4
+leo_strauss,Leo Strauss,hilail_gildin,Hilail Gildin,1
+leo_strauss,Leo Strauss,william_lecky,William Lecky,1
+leo_strauss,Leo Strauss,parmenides,de Elea Parménides,1
+leo_strauss,Leo Strauss,homero,Homero,1
+leo_strauss,Leo Strauss,jean_bodin,Jean Bodin,1
+leo_strauss,Leo Strauss,edmund_burke,Edmund Burke,1
+leo_strauss,Leo Strauss,nicolas_condorcet,Nicolas Condorcet,1
+leo_strauss,Leo Strauss,thomas_carlyle,Thomas Carlyle,1
+leo_strauss,Leo Strauss,averroes,Averroes,3
+leo_strauss,Leo Strauss,ernest_renan,Joseph Renan,1
+leo_strauss,Leo Strauss,edelstein,Ludwig Edelstein,1
+leo_strauss,Leo Strauss,gotthold_lessing,Gotthold Lessing,3
+leo_strauss,Leo Strauss,schleiermacher,Friedrich Schleiermacher,1
+leo_strauss,Leo Strauss,edward_gibbon,Edward Gibbon,2
+leo_strauss,Leo Strauss,eusebio_de_cesarea,de Cesarea Eusebio,1
+leo_strauss,Leo Strauss,james_shotwell,James Shotwell,1
+leo_strauss,Leo Strauss,montesquieu,Charles-Louis Montesquieu,3
+leo_strauss,Leo Strauss,laboulaye,Édouard Laboulaye,1
+leo_strauss,Leo Strauss,george_sabine,George Sabine,1
+leo_strauss,Leo Strauss,anaxagoras,Anaxágoras,1
+leo_strauss,Leo Strauss,protagoras,Protágoras,1
+leo_strauss,Leo Strauss,xenofon,Jenofonte,1
+leo_strauss,Leo Strauss,avicena,Avicena,1
+leo_strauss,Leo Strauss,maimonides,Maimónides,1
+leo_strauss,Leo Strauss,grotius,Hugo Grotius,1
+leo_strauss,Leo Strauss,rene_descartes,René Descartes,1
+leo_strauss,Leo Strauss,john_locke,John Locke,1
+leo_strauss,Leo Strauss,pierre_bayle,Pierre Bayle,1
+leo_strauss,Leo Strauss,christian_wolff,Christian Wolff,1
+leo_strauss,Leo Strauss,voltaire,Voltaire,1
+leo_strauss,Leo Strauss,rousseau,Jean-Jacques Rousseau,1
+leo_strauss,Leo Strauss,kant,Immanuel Kant,1
+leo_strauss,Leo Strauss,tomas_moro,Tomás Moro,1
+leo_strauss,Leo Strauss,alcibiades,Alcibíades,1
+leon_bloy,Léon Bloy,raissa_umansof,Raïssa Oumançoff,1
+leon_bloy,Léon Bloy,jesus,de Nazaret Jesús,54
+leon_bloy,Léon Bloy,edouard_drumont,Édouard Drumont,4
+leon_bloy,Léon Bloy,san_juan_persona,San Juan,2
+leon_bloy,Léon Bloy,san_agustin,de Hipona Agustín,1
+leon_bloy,Léon Bloy,san_pedro_persona,San Pedro,1
+leon_bloy,Léon Bloy,midas,Midas,1
+leon_bloy,Léon Bloy,shakespeare,William Shakespeare,1
+leon_bloy,Léon Bloy,balzac,Honoré Balzac,1
+leon_bloy,Léon Bloy,san_francisco_asis,de Asís Francisco,1
+leon_bloy,Léon Bloy,ptolomeo,I Ptolomeo,1
+leon_bloy,Léon Bloy,antioco,IV Antíoco,1
+leon_bloy,Léon Bloy,felipe_augusto,II Felipe,1
+leon_bloy,Léon Bloy,federico_barbarroja,I Federico,1
+leon_bloy,Léon Bloy,pascal,Blaise Pascal,1
+leon_bloy,Léon Bloy,san_lucas,San Lucas,1
+leon_bloy,Léon Bloy,la_fontaine,Jean La Fontaine,1
+leon_bloy,Léon Bloy,san_pablo_persona,de Tarso Pablo,1
+leon_bloy,Léon Bloy,ernest_hello,Ernest Hello,1
+eduardo_gruner,Eduardo Grüner,maurice_blanchot,Maurice Blanchot,4
+eduardo_gruner,Eduardo Grüner,kafka,Franz Kafka,11
+eduardo_gruner,Eduardo Grüner,james_joyce,James Joyce,6
+eduardo_gruner,Eduardo Grüner,louis_ferdinand_celine,Louis-Ferdinand Céline,8
+eduardo_gruner,Eduardo Grüner,samuel_beckett,Samuel Beckett,6
+eduardo_gruner,Eduardo Grüner,william_faulkner,William Faulkner,3
+eduardo_gruner,Eduardo Grüner,borges,Jorge Borges,22
+eduardo_gruner,Eduardo Grüner,simonides,de Ceos Simónides,2
+eduardo_gruner,Eduardo Grüner,horacio,Quinto Horacio,1
+eduardo_gruner,Eduardo Grüner,friedrich_nietzsche,Friedrich Nietzsche,5
+eduardo_gruner,Eduardo Grüner,paul_valery,Ambroise Valéry,2
+eduardo_gruner,Eduardo Grüner,ezra_pound,Ezra Pound,1
+eduardo_gruner,Eduardo Grüner,rabelais,François Rabelais,58
+eduardo_gruner,Eduardo Grüner,soren_kierkegaard,Søren Kierkegaard,5
+eduardo_gruner,Eduardo Grüner,bocaccio,Giovanni Boccaccio,1
+eduardo_gruner,Eduardo Grüner,petrarca,Francesco Petrarca,2
+eduardo_gruner,Eduardo Grüner,bosco,Hieronymus Bosch,1
+eduardo_gruner,Eduardo Grüner,platon,Platón,2
+eduardo_gruner,Eduardo Grüner,ciceron,Marco Cicerón,1
+eduardo_gruner,Eduardo Grüner,quintiliano,Marco Quintiliano,1
+eduardo_gruner,Eduardo Grüner,gilbert_dubois,Claude-Gilbert Dubois,2
+eduardo_gruner,Eduardo Grüner,jesus,de Nazaret Jesús,1
+eduardo_gruner,Eduardo Grüner,bajtin,Mijaíl Bajtín,10
+eduardo_gruner,Eduardo Grüner,hermes_trismegisto,Trismegisto Hermes,1
+eduardo_gruner,Eduardo Grüner,pierre_ronsard,Pierre Ronsard,1
+eduardo_gruner,Eduardo Grüner,du_bellay,Joachim Du Bellay,1
+eduardo_gruner,Eduardo Grüner,montaigne,Michel Montaigne,1
+eduardo_gruner,Eduardo Grüner,da_vinci,Leonardo Vinci,2
+eduardo_gruner,Eduardo Grüner,arcimboldo,Giuseppe Arcimboldo,2
+eduardo_gruner,Eduardo Grüner,lacan,Jacques Lacan,2
+eduardo_gruner,Eduardo Grüner,maurits_escher,Maurits Escher,1
+eduardo_gruner,Eduardo Grüner,della_mirandola,Giovanni Pico della Mirandola,1
+eduardo_gruner,Eduardo Grüner,erich_auerbach,Erich Auerbach,1
+eduardo_gruner,Eduardo Grüner,luciano_samosata,de Samósata Luciano,1
+eduardo_gruner,Eduardo Grüner,tomas_moro,Tomás Moro,1
+eduardo_gruner,Eduardo Grüner,nicolas_copernico,Nicolás Copérnico,1
+eduardo_gruner,Eduardo Grüner,andres_vesalio,Andrés Vesalio,1
+eduardo_gruner,Eduardo Grüner,aristoteles,Aristóteles,2
+eduardo_gruner,Eduardo Grüner,ernst_curtius,Ernst Curtius,2
+eduardo_gruner,Eduardo Grüner,baudelaire,Charles Baudelaire,2
+eduardo_gruner,Eduardo Grüner,martin_heidegger,Martin Heidegger,1
+eduardo_gruner,Eduardo Grüner,pascal,Blaise Pascal,1
+eduardo_gruner,Eduardo Grüner,fermat,Pierre Fermat,1
+eduardo_gruner,Eduardo Grüner,michel_foucault,Michel Foucault,6
+eduardo_gruner,Eduardo Grüner,spitzer,Leo Spitzer,3
+eduardo_gruner,Eduardo Grüner,ts_eliot,T. Eliot,1
+eduardo_gruner,Eduardo Grüner,harold_bloom,Harold Bloom,2
+eduardo_gruner,Eduardo Grüner,edgar_allan_poe,Edgar Poe,2
+eduardo_gruner,Eduardo Grüner,de_dieguez,Manuel Diéguez,1
+eduardo_gruner,Eduardo Grüner,todorov,Tzvetan Todorov,2
+eduardo_gruner,Eduardo Grüner,georges_bataille,Georges Bataille,1
+eduardo_gruner,Eduardo Grüner,merleau_ponty,Maurice Merleau-Ponty,1
+eduardo_gruner,Eduardo Grüner,romero_martinez,Miguel Romero Martínez,1
+eduardo_gruner,Eduardo Grüner,simmias,de Tebas Simmias,1
+eduardo_gruner,Eduardo Grüner,miguel_d_ors,Miguel d'Ors,1
+eduardo_gruner,Eduardo Grüner,michel_leiris,Michel Leiris,1
+eduardo_gruner,Eduardo Grüner,gunter_grass,Günter Grass,1
+eduardo_gruner,Eduardo Grüner,miguel_saenz,Miguel Sáenz,1
+eduardo_gruner,Eduardo Grüner,luis_bunuel,Luis Buñuel,1
+eduardo_gruner,Eduardo Grüner,karl_marx,Karl Marx,3
+eduardo_gruner,Eduardo Grüner,kant,Immanuel Kant,3
+eduardo_gruner,Eduardo Grüner,ronald_reagan,Ronald Reagan,2
+eduardo_gruner,Eduardo Grüner,paul_groussac,Paul Groussac,1
+eduardo_gruner,Eduardo Grüner,alfredo_palacios,Alfredo Palacios,2
+eduardo_gruner,Eduardo Grüner,juan_domingo_peron,Juan Domingo Perón,2
+eduardo_gruner,Eduardo Grüner,costa_mendez,Nicanor Costa Méndez,1
+eduardo_gruner,Eduardo Grüner,benjamin_menendez,Mario Benjamín Menéndez,1
+eduardo_gruner,Eduardo Grüner,juan_pablo_ii,Juan Pablo II Wojtyła,1
+eduardo_gruner,Eduardo Grüner,bernardo_neustadt,Bernardo Neustadt,2
+eduardo_gruner,Eduardo Grüner,leonidas,Leónidas I,1
+eduardo_gruner,Eduardo Grüner,osvaldo_rossler,Osvaldo Rossler,9
+eduardo_gruner,Eduardo Grüner,martinez_estrada,Ezequiel Martínez Estrada,11
+eduardo_gruner,Eduardo Grüner,julio_cortazar,Julio Cortázar,4
+eduardo_gruner,Eduardo Grüner,san_martin,José de San Martín,1
+eduardo_gruner,Eduardo Grüner,napoleon,Napoléon Bonaparte,1
+eduardo_gruner,Eduardo Grüner,enrique_santos_discepolo,Enrique Santos Discépolo,3
+eduardo_gruner,Eduardo Grüner,joseph_conrad,Joseph Conrad,6
+eduardo_gruner,Eduardo Grüner,nicomaco,Nicómaco,1
+eduardo_gruner,Eduardo Grüner,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+eduardo_gruner,Eduardo Grüner,pedro_abelardo,Pedro Abelardo,1
+eduardo_gruner,Eduardo Grüner,eloisa,Eloísa,1
+eduardo_gruner,Eduardo Grüner,walter_benjamin,Walter Benjamin,6
+eduardo_gruner,Eduardo Grüner,gabriel_de_mably,Gabriel Bonnot de Mably,2
+eduardo_gruner,Eduardo Grüner,george_steiner,George Steiner,4
+eduardo_gruner,Eduardo Grüner,heinrich_von_kleist,Heinrich von Kleist,2
+eduardo_gruner,Eduardo Grüner,rilke,Rainer Rilke,1
+eduardo_gruner,Eduardo Grüner,vladimir_nabokov,Vladimir Nabokov,3
+eduardo_gruner,Eduardo Grüner,elias_canetti,Elias Canetti,1
+eduardo_gruner,Eduardo Grüner,witold_gombrowicz,Witold Gombrowicz,3
+eduardo_gruner,Eduardo Grüner,lezama_lima,José Lezama Lima,3
+eduardo_gruner,Eduardo Grüner,johann_herder,Johann Herder,7
+eduardo_gruner,Eduardo Grüner,hippolyte_taine,Hippolyte Taine,1
+eduardo_gruner,Eduardo Grüner,armando_roche,Armando Almada Roche,1
+eduardo_gruner,Eduardo Grüner,gabriela_massuh,Gabriela Massuh,2
+eduardo_gruner,Eduardo Grüner,chesterton,Gilbert Keith Chesterton,1
+eduardo_gruner,Eduardo Grüner,de_quincey,Thomas De Quincey,1
+eduardo_gruner,Eduardo Grüner,ricardo_piglia,Ricardo Piglia,5
+eduardo_gruner,Eduardo Grüner,jorge_asis,Jorge Asís,1
+eduardo_gruner,Eduardo Grüner,osvaldo_soriano,Osvaldo Soriano,2
+eduardo_gruner,Eduardo Grüner,juan_jose_saer,Juan José Saer,1
+eduardo_gruner,Eduardo Grüner,manuel_puig,Manuel Puig,2
+eduardo_gruner,Eduardo Grüner,hector_libertella,Héctor Libertella,1
+eduardo_gruner,Eduardo Grüner,luis_gusman,Luis Gusmán,3
+eduardo_gruner,Eduardo Grüner,william_gass,William Gass,1
+eduardo_gruner,Eduardo Grüner,rafael_lapesa,Rafael Lapesa,1
+eduardo_gruner,Eduardo Grüner,ferdinand_de_saussure,Ferdinand de Saussure,1
+eduardo_gruner,Eduardo Grüner,gongora,Luis de Góngora y Argote,1
+eduardo_gruner,Eduardo Grüner,mario_teruggi,Mario A. Teruggi,1
+eduardo_gruner,Eduardo Grüner,rodolfo_kusch,Rodolfo Kusch,2
+eduardo_gruner,Eduardo Grüner,canal_feijoo,Bernardo Canal Feijóo,2
+eduardo_gruner,Eduardo Grüner,charles_perrault,Charles Perrault,1
+eduardo_gruner,Eduardo Grüner,david_vinias,David Viñas,9
+eduardo_gruner,Eduardo Grüner,miguel_briante,Miguel Briante,1
+eduardo_gruner,Eduardo Grüner,jose_luis_romero,José Luis Romero,4
+eduardo_gruner,Eduardo Grüner,etienne_de_condillac,Étienne Bonnot de Condillac,1
+eduardo_gruner,Eduardo Grüner,horacio_quiroga,Horacio Quiroga,1
+eduardo_gruner,Eduardo Grüner,jose_pablo_feinmann,José Pablo Feinmann,8
+eduardo_gruner,Eduardo Grüner,jean_paul_sartre,Jean-Paul Sartre,51
+eduardo_gruner,Eduardo Grüner,esteban_echeverria,Esteban Echeverría,4
+eduardo_gruner,Eduardo Grüner,juan_bautista_alberdi,Juan Bautista Alberdi,12
+eduardo_gruner,Eduardo Grüner,sarmiento,Domingo Faustino Sarmiento,8
+eduardo_gruner,Eduardo Grüner,jose_marmol,José Mármol,5
+eduardo_gruner,Eduardo Grüner,juan_manuel_rosas,Juan Manuel de Rosas,7
+eduardo_gruner,Eduardo Grüner,plutarco,Plutarco,1
+eduardo_gruner,Eduardo Grüner,salvador_ruano,Salvador Ruano,1
+eduardo_gruner,Eduardo Grüner,hegel,Georg Wilhelm Friedrich Hegel,6
+eduardo_gruner,Eduardo Grüner,nicolas_condorcet,Nicolas Condorcet,4
+eduardo_gruner,Eduardo Grüner,jose_hernandez,José Hernández,6
+eduardo_gruner,Eduardo Grüner,guillermo_hudson,William Henry Hudson,3
+eduardo_gruner,Eduardo Grüner,edward_gibbon,Edward Gibbon,1
+eduardo_gruner,Eduardo Grüner,charles_rollin,Charles Rollin,1
+eduardo_gruner,Eduardo Grüner,william_whiston,William Whiston,1
+eduardo_gruner,Eduardo Grüner,san_agustin,de Hipona Agustín,2
+eduardo_gruner,Eduardo Grüner,charles_dickens,Charles Dickens,1
+eduardo_gruner,Eduardo Grüner,charles_darwin,Charles Darwin,1
+eduardo_gruner,Eduardo Grüner,robert_cunninghame_graham,Robert Bontine Cunninghame Graham,1
+eduardo_gruner,Eduardo Grüner,miguel_unamuno,Miguel de Unamuno,2
+eduardo_gruner,Eduardo Grüner,ricardo_rojas,Ricardo Rojas,1
+eduardo_gruner,Eduardo Grüner,leopoldo_lugones,Leopoldo Lugones,2
+eduardo_gruner,Eduardo Grüner,ruben_dario,Rubén Darío,1
+eduardo_gruner,Eduardo Grüner,rodolfo_wilcock,Juan Rodolfo Wilcock,1
+eduardo_gruner,Eduardo Grüner,macedonio_fernandez,Macedonio Fernández,1
+eduardo_gruner,Eduardo Grüner,defilippis_novoa,Francisco Defilippis Novoa,1
+eduardo_gruner,Eduardo Grüner,levi_strauss,Claude Lévi-Strauss,4
+eduardo_gruner,Eduardo Grüner,paul_ricoeur,Paul Ricoeur,1
+eduardo_gruner,Eduardo Grüner,giambattista_vico,Giambattista Vico,1
+eduardo_gruner,Eduardo Grüner,carlos_altamirano,Carlos Altamirano,1
+eduardo_gruner,Eduardo Grüner,beatriz_sarlo,Beatriz Sarlo,1
+eduardo_gruner,Eduardo Grüner,fermin_chavez,Fermín Chávez,1
+eduardo_gruner,Eduardo Grüner,halperin_donghi,Tulio Halperín Donghi,1
+eduardo_gruner,Eduardo Grüner,michel_jarrety,Michel Jarrety,1
+eduardo_gruner,Eduardo Grüner,hans_robert_jauss,Hans Robert Jauss,1
+eduardo_gruner,Eduardo Grüner,octavio_paz,Octavio Paz,1
+eduardo_gruner,Eduardo Grüner,arturo_roig,Arturo Andrés Roig,1
+eduardo_gruner,Eduardo Grüner,jean_starobinski,Jean Starobinski,2
+eduardo_gruner,Eduardo Grüner,abelardo_castillo,Abelardo Castillo,1
+eduardo_gruner,Eduardo Grüner,oswald_spengler,Oswald Spengler,1
+eduardo_gruner,Eduardo Grüner,federico_sainz_de_robles,Federico Carlos Sainz de Robles,1
+eduardo_gruner,Eduardo Grüner,manuel_galvez,Manuel Gálvez,1
+eduardo_gruner,Eduardo Grüner,hector_murena,Héctor Murena,1
+eduardo_gruner,Eduardo Grüner,carlos_astrada,Carlos Astrada,1
+eduardo_gruner,Eduardo Grüner,luis_franco,Luis Franco,1
+eduardo_gruner,Eduardo Grüner,raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,1
+eduardo_gruner,Eduardo Grüner,arturo_jauretche,Arturo Jauretche,1
+eduardo_gruner,Eduardo Grüner,oscar_masotta,Óscar Masotta,2
+eduardo_gruner,Eduardo Grüner,juan_jose_sebreli,Juan José Sebreli,1
+eduardo_gruner,Eduardo Grüner,leonardo_castellani,Leonardo Castellani,1
+eduardo_gruner,Eduardo Grüner,ignacio_anzoategui,Ignacio Anzoátegui,1
+eduardo_gruner,Eduardo Grüner,juan_jose_hernandez_arregui,Juan José Hernández Arregui,1
+eduardo_gruner,Eduardo Grüner,abelardo_ramos,Jorge Abelardo Ramos,1
+eduardo_gruner,Eduardo Grüner,milciades_penia,Milcíades Peña,1
+eduardo_gruner,Eduardo Grüner,roberto_arlt,Roberto Arlt,3
+eduardo_gruner,Eduardo Grüner,jaime_rest,Jaime Rest,1
+eduardo_gruner,Eduardo Grüner,pierre_chaunu,Pierre Chaunu,1
+eduardo_gruner,Eduardo Grüner,jean_yves_calvez,Jean-Yves Calvez,1
+eduardo_gruner,Eduardo Grüner,angel_rama,Ángel Rama,1
+eduardo_gruner,Eduardo Grüner,arturo_frondizi,Arturo Frondizi,1
+eduardo_gruner,Eduardo Grüner,hector_campora,Héctor Cámpora,1
+eduardo_gruner,Eduardo Grüner,raul_alfonsin,Raúl Alfonsín,1
+eduardo_gruner,Eduardo Grüner,louis_althusser,Louis Althusser,2
+eduardo_gruner,Eduardo Grüner,roland_barthes,Roland Barthes,2
+eduardo_gruner,Eduardo Grüner,jacques_derrida,Jacques Derrida,1
+eduardo_gruner,Eduardo Grüner,julia_kristeva,Julia Kristeva,1
+eduardo_gruner,Eduardo Grüner,spinoza,Baruch Spinoza,3
+eduardo_gruner,Eduardo Grüner,fiodor_dostoyevski,Fiódor Dostoyevski,2
+eduardo_gruner,Eduardo Grüner,charles_olson,Charles Olson,5
+eduardo_gruner,Eduardo Grüner,melville,Herman Melville,7
+eduardo_gruner,Eduardo Grüner,antonio_gramsci,Antonio Gramsci,2
+eduardo_gruner,Eduardo Grüner,zaratustra,Zaratustra,1
+eduardo_gruner,Eduardo Grüner,dante_alighieri,Dante Alighieri,1
+eduardo_gruner,Eduardo Grüner,umberto_eco,Umberto Eco,2
+eduardo_gruner,Eduardo Grüner,homero,Homero,1
+eduardo_gruner,Eduardo Grüner,shakespeare,William Shakespeare,1
+eduardo_gruner,Eduardo Grüner,gustave_flaubert,Gustave Flaubert,38
+eduardo_gruner,Eduardo Grüner,italo_calvino,Italo Calvino,1
+eduardo_gruner,Eduardo Grüner,northrop_frye,Northrop Frye,1
+eduardo_gruner,Eduardo Grüner,vladimir_propp,Vladimir Propp,1
+eduardo_gruner,Eduardo Grüner,algirdas_greimas,Algirdas Julien Greimas,1
+eduardo_gruner,Eduardo Grüner,andre_malraux,André Malraux,1
+eduardo_gruner,Eduardo Grüner,viktor_shklovski,Víktor Shklovski,1
+eduardo_gruner,Eduardo Grüner,henry_de_montherlant,Henry de Montherlant,1
+eduardo_gruner,Eduardo Grüner,henri_bergson,Henri Bergson,1
+eduardo_gruner,Eduardo Grüner,freud,Sigmund Freud,3
+eduardo_gruner,Eduardo Grüner,mallarme,Stéphane Mallarmé,1
+eduardo_gruner,Eduardo Grüner,michael_riffaterre,Michael Riffaterre,1
+eduardo_gruner,Eduardo Grüner,ludwig_wittgenstein,Ludwig Wittgenstein,1
+eduardo_gruner,Eduardo Grüner,jean_luc_godard,Jean-Luc Godard,1
+eduardo_gruner,Eduardo Grüner,lisa_block,Lisa Block de Behar,1
+eduardo_gruner,Eduardo Grüner,giovanni_morelli,Giovanni Morelli,8
+eduardo_gruner,Eduardo Grüner,carlo_ginzburg,Carlo Ginzburg,2
+eduardo_gruner,Eduardo Grüner,perugino,Pietro Vannucci,1
+eduardo_gruner,Eduardo Grüner,botticelli,Sandro Botticelli,1
+eduardo_gruner,Eduardo Grüner,cosme_tura,Cosimo Tura,1
+eduardo_gruner,Eduardo Grüner,schleiermacher,Friedrich Schleiermacher,1
+eduardo_gruner,Eduardo Grüner,wilhelm_dilthey,Wilhelm Dilthey,1
+eduardo_gruner,Eduardo Grüner,gerard_genette,Gérard Genette,1
+eduardo_gruner,Eduardo Grüner,maupassant,Guy Maupassant,5
+eduardo_gruner,Eduardo Grüner,nicolas_olivari,Nicolás Olivari,1
+eduardo_gruner,Eduardo Grüner,benedetto_croce,Benedetto Croce,1
+eduardo_gruner,Eduardo Grüner,edgar_wind,Edgar Wind,1
+eduardo_gruner,Eduardo Grüner,lucien_goldmann,Lucien Goldmann,1
+eduardo_gruner,Eduardo Grüner,pierre_bourdieu,Pierre Bourdieu,1
+eduardo_gruner,Eduardo Grüner,gyorgy_lukacs,György Lukács,1
+eduardo_gruner,Eduardo Grüner,theodor_adorno,Theodor Adorno,1
+eduardo_gruner,Eduardo Grüner,raymond_aron,Raymond Aron,1
+eduardo_gruner,Eduardo Grüner,max_weber,Max Weber,1
+eduardo_gruner,Eduardo Grüner,nicos_poulantzas,Nicos Poulantzas,1
+eduardo_gruner,Eduardo Grüner,friedrich_schelling,Friedrich Wilhelm Joseph Schelling,2
+eduardo_gruner,Eduardo Grüner,carl_von_clausewitz,Carl von Clausewitz,1
+eduardo_gruner,Eduardo Grüner,severo_sarduy,Severo Sarduy,1
+eduardo_gruner,Eduardo Grüner,mario_vargas_llosa,Mario Vargas Llosa,10
+eduardo_gruner,Eduardo Grüner,jean_genet,Jean Genet,1
+eduardo_gruner,Eduardo Grüner,cesar_jaroslavsky,César Jaroslavsky,1
+eduardo_gruner,Eduardo Grüner,juan_octavio_gauna,Juan Octavio Gauna,2
+eduardo_gruner,Eduardo Grüner,jose_severo_caballero,José Severo Caballero,1
+eduardo_gruner,Eduardo Grüner,augusto_belluscio,Augusto César Belluscio,1
+eduardo_gruner,Eduardo Grüner,carlos_fayt,Carlos Santiago Fayt,1
+eduardo_gruner,Eduardo Grüner,enrique_petracchi,Enrique Santiago Petracchi,1
+eduardo_gruner,Eduardo Grüner,norberto_cozzani,Norberto Ricardo Cozzani,1
+eduardo_gruner,Eduardo Grüner,jorge_antonio_berges,Jorge Antonio Bergés,1
+eduardo_gruner,Eduardo Grüner,jorge_bacque,Jorge Antonio Bacqué,1
+maurice_blanchot,Maurice Blanchot,martin_heidegger,Martin Heidegger,2
+maurice_blanchot,Maurice Blanchot,holderlin,Johann Hölderlin,2
+maurice_blanchot,Maurice Blanchot,paul_valery,Ambroise Valéry,1
+maurice_blanchot,Maurice Blanchot,kant,Immanuel Kant,1
+luis_gusman,Luis Gusmán,mallarme,Stéphane Mallarmé,8
+luis_gusman,Luis Gusmán,andre_gide,André Gide,2
+luis_gusman,Luis Gusmán,esteban_echeverria,Esteban Echeverría,7
+luis_gusman,Luis Gusmán,kant,Immanuel Kant,1
+luis_gusman,Luis Gusmán,ronald_reagan,Ronald Reagan,2
+luis_gusman,Luis Gusmán,paul_groussac,Paul Groussac,1
+luis_gusman,Luis Gusmán,alfredo_palacios,Alfredo Palacios,2
+luis_gusman,Luis Gusmán,juan_domingo_peron,Juan Domingo Perón,4
+luis_gusman,Luis Gusmán,costa_mendez,Nicanor Costa Méndez,1
+luis_gusman,Luis Gusmán,benjamin_menendez,Mario Benjamín Menéndez,1
+luis_gusman,Luis Gusmán,juan_pablo_ii,Juan Pablo II Wojtyła,1
+luis_gusman,Luis Gusmán,bernardo_neustadt,Bernardo Neustadt,2
+luis_gusman,Luis Gusmán,leonidas,Leónidas I,1
+luis_gusman,Luis Gusmán,osvaldo_rossler,Osvaldo Rossler,9
+luis_gusman,Luis Gusmán,borges,Jorge Borges,24
+luis_gusman,Luis Gusmán,martinez_estrada,Ezequiel Martínez Estrada,3
+luis_gusman,Luis Gusmán,friedrich_nietzsche,Friedrich Nietzsche,3
+luis_gusman,Luis Gusmán,julio_cortazar,Julio Cortázar,1
+luis_gusman,Luis Gusmán,san_martin,José de San Martín,1
+luis_gusman,Luis Gusmán,napoleon,Napoléon Bonaparte,1
+luis_gusman,Luis Gusmán,enrique_santos_discepolo,Enrique Santos Discépolo,2
+luis_gusman,Luis Gusmán,joseph_conrad,Joseph Conrad,5
+luis_gusman,Luis Gusmán,aristoteles,Aristóteles,2
+luis_gusman,Luis Gusmán,nicomaco,Nicómaco,1
+luis_gusman,Luis Gusmán,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+luis_gusman,Luis Gusmán,pedro_abelardo,Pedro Abelardo,1
+luis_gusman,Luis Gusmán,eloisa,Eloísa,1
+luis_gusman,Luis Gusmán,victoria_ocampo,Victoria Ocampo,2
+luis_gusman,Luis Gusmán,tata_ocampo,Tata Ocampo,8
+luis_gusman,Luis Gusmán,manuel_ocampo,Manuel S. Ocampo,1
+luis_gusman,Luis Gusmán,jose_hernandez,José Hernández,2
+luis_gusman,Luis Gusmán,florentina_ituarte,Florentina Ituarte,1
+luis_gusman,Luis Gusmán,stendhal,Stendhal,1
+luis_gusman,Luis Gusmán,maurice_blanchot,Maurice Blanchot,4
+luis_gusman,Luis Gusmán,sarmiento,Domingo Faustino Sarmiento,6
+luis_gusman,Luis Gusmán,alberto_laiseca,Alberto Laiseca,4
+luis_gusman,Luis Gusmán,manuel_puig,Manuel Puig,1
+luis_gusman,Luis Gusmán,osvaldo_lamborghini,Osvaldo Lamborghini,1
+luis_gusman,Luis Gusmán,ricardo_piglia,Ricardo Piglia,1
+luis_gusman,Luis Gusmán,mika_waltari,Mika Waltari,1
+luis_gusman,Luis Gusmán,henry_rider_haggard,Henry Rider Haggard,1
+luis_gusman,Luis Gusmán,louis_ferdinand_celine,Louis-Ferdinand Céline,2
+luis_gusman,Luis Gusmán,robert_walser,Robert Walser,12
+luis_gusman,Luis Gusmán,kafka,Franz Kafka,5
+luis_gusman,Luis Gusmán,robert_musil,Robert Musil,1
+luis_gusman,Luis Gusmán,charles_saint_beuve,Charles-Augustin Sainte-Beuve,1
+luis_gusman,Luis Gusmán,goethe,Johann Goethe,1
+luis_gusman,Luis Gusmán,henri_wallon,Henri Wallon,1
+luis_gusman,Luis Gusmán,lev_tolstoi,Lev Tolstói,1
+luis_gusman,Luis Gusmán,fiodor_dostoyevski,Fiódor Dostoyevski,2
+luis_gusman,Luis Gusmán,roberto_calasso,Roberto Calasso,1
+luis_gusman,Luis Gusmán,jose_marmol,José Mármol,17
+luis_gusman,Luis Gusmán,juan_manuel_rosas,Juan Manuel de Rosas,9
+luis_gusman,Luis Gusmán,daniel_moyano,Daniel Moyano,12
+luis_gusman,Luis Gusmán,alejandro_dumas,Alexandre Dumas,18
+luis_gusman,Luis Gusmán,gustave_aimard,Gustave Aimard,13
+luis_gusman,Luis Gusmán,morris_west,Morris West,5
+luis_gusman,Luis Gusmán,david_vinias,David Viñas,8
+luis_gusman,Luis Gusmán,lamartine,Alphonse de Lamartine,3
+luis_gusman,Luis Gusmán,mercedes_rosas,Mercedes Rosas,2
+luis_gusman,Luis Gusmán,victor_hugo,Victor Hugo,2
+luis_gusman,Luis Gusmán,lord_byron,George Gordon Byron,3
+luis_gusman,Luis Gusmán,florencio_varela,Florencio Varela,1
+luis_gusman,Luis Gusmán,julian_aguero,Julián Agüero,1
+luis_gusman,Luis Gusmán,agustina_rosas,Agustina Rosas,1
+luis_gusman,Luis Gusmán,pepa_lavalle,Pepa Lavalle,1
+luis_gusman,Luis Gusmán,matilde_stewart,Matilde Pacheco Stewart,1
+luis_gusman,Luis Gusmán,clementina_battle,Clementina G. Battle,1
+luis_gusman,Luis Gusmán,jacques_duprey,Jacques Duprey,1
+luis_gusman,Luis Gusmán,sila,Lucio Cornelio Sila,1
+luis_gusman,Luis Gusmán,homero,Homero,1
+luis_gusman,Luis Gusmán,melchor_pacheco,Melchor Pacheco y Obes,1
+luis_gusman,Luis Gusmán,jules_michelet,Jules Michelet,1
+luis_gusman,Luis Gusmán,george_sand,George Sand,1
+luis_gusman,Luis Gusmán,jose_artigas,José Gervasio Artigas,1
+luis_gusman,Luis Gusmán,francois_guizot,François Guizot,1
+luis_gusman,Luis Gusmán,manuel_oribe,Manuel Oribe,1
+luis_gusman,Luis Gusmán,eugene_sue,Eugène Sue,1
+luis_gusman,Luis Gusmán,haroldo_conti,Haroldo Conti,1
+luis_gusman,Luis Gusmán,rodolfo_walsh,Rodolfo Walsh,2
+luis_gusman,Luis Gusmán,paco_urondo,Francisco Urondo,2
+luis_gusman,Luis Gusmán,augusto_pinochet,Augusto Pinochet,2
+luis_gusman,Luis Gusmán,bosco,Hieronymus Bosch,1
+luis_gusman,Luis Gusmán,miguel_briante,Miguel Briante,6
+luis_gusman,Luis Gusmán,abelardo_castillo,Abelardo Castillo,1
+luis_gusman,Luis Gusmán,oswald_spengler,Oswald Spengler,1
+luis_gusman,Luis Gusmán,federico_sainz_de_robles,Federico Carlos Sainz de Robles,1
+luis_gusman,Luis Gusmán,juan_bautista_alberdi,Juan Bautista Alberdi,1
+luis_gusman,Luis Gusmán,leopoldo_lugones,Leopoldo Lugones,1
+luis_gusman,Luis Gusmán,manuel_galvez,Manuel Gálvez,1
+luis_gusman,Luis Gusmán,canal_feijoo,Bernardo Canal Feijóo,1
+luis_gusman,Luis Gusmán,hector_murena,Héctor Murena,1
+luis_gusman,Luis Gusmán,carlos_astrada,Carlos Astrada,1
+luis_gusman,Luis Gusmán,jose_luis_romero,José Luis Romero,1
+luis_gusman,Luis Gusmán,luis_franco,Luis Franco,1
+luis_gusman,Luis Gusmán,raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,1
+luis_gusman,Luis Gusmán,arturo_jauretche,Arturo Jauretche,1
+luis_gusman,Luis Gusmán,oscar_masotta,Óscar Masotta,2
+luis_gusman,Luis Gusmán,juan_jose_sebreli,Juan José Sebreli,1
+luis_gusman,Luis Gusmán,leonardo_castellani,Leonardo Castellani,1
+luis_gusman,Luis Gusmán,ignacio_anzoategui,Ignacio Anzoátegui,1
+luis_gusman,Luis Gusmán,juan_jose_hernandez_arregui,Juan José Hernández Arregui,1
+luis_gusman,Luis Gusmán,abelardo_ramos,Jorge Abelardo Ramos,1
+luis_gusman,Luis Gusmán,milciades_penia,Milcíades Peña,1
+luis_gusman,Luis Gusmán,roberto_arlt,Roberto Arlt,12
+luis_gusman,Luis Gusmán,jaime_rest,Jaime Rest,1
+luis_gusman,Luis Gusmán,pierre_chaunu,Pierre Chaunu,1
+luis_gusman,Luis Gusmán,san_agustin,de Hipona Agustín,1
+luis_gusman,Luis Gusmán,jean_paul_sartre,Jean-Paul Sartre,2
+luis_gusman,Luis Gusmán,jean_yves_calvez,Jean-Yves Calvez,1
+luis_gusman,Luis Gusmán,levi_strauss,Claude Lévi-Strauss,1
+luis_gusman,Luis Gusmán,angel_rama,Ángel Rama,1
+luis_gusman,Luis Gusmán,arturo_frondizi,Arturo Frondizi,1
+luis_gusman,Luis Gusmán,hector_campora,Héctor Cámpora,1
+luis_gusman,Luis Gusmán,raul_alfonsin,Raúl Alfonsín,5
+luis_gusman,Luis Gusmán,louis_althusser,Louis Althusser,1
+luis_gusman,Luis Gusmán,roland_barthes,Roland Barthes,1
+luis_gusman,Luis Gusmán,jacques_derrida,Jacques Derrida,1
+luis_gusman,Luis Gusmán,julia_kristeva,Julia Kristeva,2
+luis_gusman,Luis Gusmán,spinoza,Baruch Spinoza,3
+luis_gusman,Luis Gusmán,macedonio_fernandez,Macedonio Fernández,2
+luis_gusman,Luis Gusmán,gustave_flaubert,Gustave Flaubert,3
+luis_gusman,Luis Gusmán,giovanni_morelli,Giovanni Morelli,1
+luis_gusman,Luis Gusmán,freud,Sigmund Freud,1
+luis_gusman,Luis Gusmán,witold_gombrowicz,Witold Gombrowicz,2
+luis_gusman,Luis Gusmán,lezama_lima,José Lezama Lima,2
+luis_gusman,Luis Gusmán,thomas_carlyle,Thomas Carlyle,2
+luis_gusman,Luis Gusmán,edgar_allan_poe,Edgar Poe,1
+luis_gusman,Luis Gusmán,miguel_angel,Miguel Ángel Buonarroti,4
+luis_gusman,Luis Gusmán,oscar_wilde,Oscar Wilde,1
+luis_gusman,Luis Gusmán,william_beckford,William Beckford,4
+luis_gusman,Luis Gusmán,dante_alighieri,Dante Alighieri,1
+luis_gusman,Luis Gusmán,robert_louis_stevenson,Robert Louis Stevenson,1
+luis_gusman,Luis Gusmán,chesterton,Gilbert Keith Chesterton,1
+luis_gusman,Luis Gusmán,lucio_mansilla,Lucio V. Mansilla,4
+luis_gusman,Luis Gusmán,jacques_benigne_bossuet,Jacques-Bénigne Bossuet,1
+luis_gusman,Luis Gusmán,andre_breton,André Breton,1
+luis_gusman,Luis Gusmán,jacques_rigaut,Jacques Rigaut,1
+luis_gusman,Luis Gusmán,baudelaire,Charles Baudelaire,1
+luis_gusman,Luis Gusmán,julian_casal,Julián Casal,1
+luis_gusman,Luis Gusmán,pierre_loti,Julien Viaud,1
+luis_gusman,Luis Gusmán,paul_nizan,Paul Nizan,1
+luis_gusman,Luis Gusmán,rimbaud,Arthur Rimbaud,2
+luis_gusman,Luis Gusmán,michel_leiris,Michel Leiris,1
+luis_gusman,Luis Gusmán,gilles_deleuze,Gilles Deleuze,1
+luis_gusman,Luis Gusmán,fenimore_cooper,James Fenimore Cooper,1
+luis_gusman,Luis Gusmán,marcel_schwob,Marcel Schwob,1
+luis_gusman,Luis Gusmán,platon,Platón,1
+luis_gusman,Luis Gusmán,cesar_jaroslavsky,César Jaroslavsky,1
+luis_gusman,Luis Gusmán,juan_octavio_gauna,Juan Octavio Gauna,2
+luis_gusman,Luis Gusmán,jose_severo_caballero,José Severo Caballero,1
+luis_gusman,Luis Gusmán,augusto_belluscio,Augusto César Belluscio,1
+luis_gusman,Luis Gusmán,carlos_fayt,Carlos Santiago Fayt,1
+luis_gusman,Luis Gusmán,enrique_petracchi,Enrique Santiago Petracchi,1
+luis_gusman,Luis Gusmán,norberto_cozzani,Norberto Ricardo Cozzani,1
+luis_gusman,Luis Gusmán,jorge_antonio_berges,Jorge Antonio Bergés,1
+luis_gusman,Luis Gusmán,jorge_bacque,Jorge Antonio Bacqué,1
+luis_gusman,Luis Gusmán,dalmiro_saenz,Dalmiro Antonio Sáenz,1
+luis_gusman,Luis Gusmán,jose_felix_uriburu,José Félix Uriburu,1
+luis_gusman,Luis Gusmán,juan_carlos_ongania,Juan Carlos Onganía,1
+luis_gusman,Luis Gusmán,beatriz_sarlo,Beatriz Sarlo,1
+luis_gusman,Luis Gusmán,eliseo_veron,Eliseo Verón,7
+luis_gusman,Luis Gusmán,oswald_ducrot,Oswald Ducrot,4
+luis_gusman,Luis Gusmán,francois_recanati,François Recanati,1
+luis_gusman,Luis Gusmán,karl_marx,Karl Marx,1
+luis_gusman,Luis Gusmán,jean_francois_lyotard,Jean-François Lyotard,1
+luis_gusman,Luis Gusmán,horacio_gonzalez,Horacio Luis González,3
+luis_gusman,Luis Gusmán,antonio_gramsci,Antonio Gramsci,1
+luis_gusman,Luis Gusmán,lucia_aseff,Lucía María Aseff,1
+luis_gusman,Luis Gusmán,noam_chomsky,Avram Noam Chomsky,1
+luis_gusman,Luis Gusmán,charles_de_gaulle,Charles André Joseph Marie de Gaulle,1
+luis_gusman,Luis Gusmán,francois_mitterrand,François Mitterrand,2
+luis_gusman,Luis Gusmán,oscar_landi,Oscar Landi,5
+luis_gusman,Luis Gusmán,algirdas_greimas,Algirdas Julien Greimas,1
+luis_gusman,Luis Gusmán,alejandro_katz,Gabriel Alejandro Katz,4
+luis_gusman,Luis Gusmán,michel_foucault,Michel Foucault,1
+martin_heidegger,Martin Heidegger,georg_trakl,Georg Trakl,38
+martin_heidegger,Martin Heidegger,platon,Platón,2
+martin_heidegger,Martin Heidegger,friedrich_nietzsche,Friedrich Nietzsche,2
+martin_heidegger,Martin Heidegger,zaratustra,Zaratustra,1
+martin_heidegger,Martin Heidegger,aristoteles,Aristóteles,1
+martin_heidegger,Martin Heidegger,jesus,de Nazaret Jesús,1
+martin_heidegger,Martin Heidegger,ludwig_von_ficker,Ludwig von Ficker,1
+mario_levin,Mario Levin,luis_bunuel,Luis Buñuel,2
+mario_levin,Mario Levin,carlos_saura,Carlos Saura,1
+mario_levin,Mario Levin,tarkovsky,Andrei Tarkovsky,1
+mario_levin,Mario Levin,andrzej_wajda,Andrzej Wajda,1
+mario_levin,Mario Levin,john_cassavetes,John Cassavetes,1
+mario_levin,Mario Levin,alfred_hitchcock,Alfred Hitchcock,1
+mario_levin,Mario Levin,king_vidor,King Vidor,1
+mario_levin,Mario Levin,alain_resnais,Alain Resnais,1
+mario_levin,Mario Levin,mizoguchi,Kenji Mizoguchi,1
+mario_levin,Mario Levin,orson_welles,Orson Welles,1
+mario_levin,Mario Levin,fritz_lang,Fritz Lang,1
+mario_levin,Mario Levin,andre_bazin,André Bazin,1
+mario_levin,Mario Levin,sergei_eisenstein,Sergei Eisenstein,2
+mario_levin,Mario Levin,oscar_masotta,Óscar Masotta,1
+mario_levin,Mario Levin,carl_dreyer,Carl Dreyer,1
+mario_levin,Mario Levin,lacan,Jacques Lacan,2
+mario_levin,Mario Levin,pascal_bonitzer,Pascal Bonitzer,1
+mario_levin,Mario Levin,adolfo_aristarain,Adolfo Aristarain,1
+mario_levin,Mario Levin,platon,Platón,1
+mario_levin,Mario Levin,ronald_reagan,Ronald Reagan,1
+mario_levin,Mario Levin,cesar_jaroslavsky,César Jaroslavsky,1
+mario_levin,Mario Levin,juan_octavio_gauna,Juan Octavio Gauna,2
+mario_levin,Mario Levin,jose_severo_caballero,José Severo Caballero,1
+mario_levin,Mario Levin,augusto_belluscio,Augusto César Belluscio,1
+mario_levin,Mario Levin,carlos_fayt,Carlos Santiago Fayt,1
+mario_levin,Mario Levin,enrique_petracchi,Enrique Santiago Petracchi,1
+mario_levin,Mario Levin,norberto_cozzani,Norberto Ricardo Cozzani,1
+mario_levin,Mario Levin,jorge_antonio_berges,Jorge Antonio Bergés,1
+mario_levin,Mario Levin,jorge_bacque,Jorge Antonio Bacqué,1
+pascal_bonitzer,Pascal Bonitzer,erwin_panofsky,Erwin Panofsky,2
+pascal_bonitzer,Pascal Bonitzer,antonello_da_messina,da Messina Antonello,1
+pascal_bonitzer,Pascal Bonitzer,durero,Alberto Durero,2
+pascal_bonitzer,Pascal Bonitzer,velazquez,Diego Velázquez,2
+pascal_bonitzer,Pascal Bonitzer,felipeiv,IV Felipe,1
+pascal_bonitzer,Pascal Bonitzer,michel_foucault,Michel Foucault,1
+pascal_bonitzer,Pascal Bonitzer,cremonini,Leonardo Cremonini,5
+pascal_bonitzer,Pascal Bonitzer,bacon,Francis Bacon,2
+pascal_bonitzer,Pascal Bonitzer,valerio_adami,Valerio Adami,1
+pascal_bonitzer,Pascal Bonitzer,ralph_goings,Ralph Goings,2
+pascal_bonitzer,Pascal Bonitzer,monory,Jacques Monory,2
+pascal_bonitzer,Pascal Bonitzer,dino_buzzati,Dino Buzzati,4
+pascal_bonitzer,Pascal Bonitzer,robert_bresson,Robert Bresson,1
+pascal_bonitzer,Pascal Bonitzer,sergei_eisenstein,Sergei Eisenstein,2
+pascal_bonitzer,Pascal Bonitzer,straub,Jean-Marie Straub,1
+pascal_bonitzer,Pascal Bonitzer,duras,Marguerite Duras,1
+pascal_bonitzer,Pascal Bonitzer,antonioni,Michelangelo Antonioni,1
+pascal_bonitzer,Pascal Bonitzer,alex_barbier,Alex Barbier,1
+pascal_bonitzer,Pascal Bonitzer,jean_luc_godard,Jean-Luc Godard,1
+pascal_bonitzer,Pascal Bonitzer,jean_eustache,Jean Eustache,2
+pascal_bonitzer,Pascal Bonitzer,alfred_hitchcock,Alfred Hitchcock,1
+pascal_bonitzer,Pascal Bonitzer,francois_truffaut,François Truffaut,1
+ana_barrenechea,Ana Barrenechea,roland_barthes,Roland Barthes,1
+ana_barrenechea,Ana Barrenechea,bioy_casares,Adolfo Bioy Casares,1
+ana_barrenechea,Ana Barrenechea,borges,Jorge Borges,3
+ana_barrenechea,Ana Barrenechea,alejo_carpentier,Alejo Carpentier,3
+ana_barrenechea,Ana Barrenechea,julio_cortazar,Julio Cortázar,1
+ana_barrenechea,Ana Barrenechea,anderson_imbert,Enrique Anderson Imbert,2
+ana_barrenechea,Ana Barrenechea,mahoma,Mahoma,1
+ana_barrenechea,Ana Barrenechea,jacquemart_de_hesdin,Jacquemart Hesdin,1
+ana_barrenechea,Ana Barrenechea,godofredo_viterbo,de Viterbo Godofredo,1
+ana_barrenechea,Ana Barrenechea,virgilio_piniera,Virgilio Piñera,1
+ana_barrenechea,Ana Barrenechea,garcia_marquez,Gabriel García Márquez,3
+witold_gombrowicz,Witold Gombrowicz,luis_gusman,Luis Gusmán,1
+witold_gombrowicz,Witold Gombrowicz,ernesto_sabato,Ernesto Sabato,1
+witold_gombrowicz,Witold Gombrowicz,freud,Sigmund Freud,1
+witold_gombrowicz,Witold Gombrowicz,cecilia_de_benedetti,Cecilia Benedit de Debenedetti,1
+witold_gombrowicz,Witold Gombrowicz,virgilio_piniera,Virgilio Piñera,1
+luis_thonis,Luis Thonis,paul_valery,Ambroise Valéry,2
+luis_thonis,Luis Thonis,felisberto_hernandez,Felisberto Hernández,21
+luis_thonis,Luis Thonis,plinio,el Viejo Plinio,1
+luis_thonis,Luis Thonis,zenon,de Elea Zenón,2
+luis_thonis,Luis Thonis,marcel_proust,Marcel Proust,2
+luis_thonis,Luis Thonis,edmund_husserl,Edmund Husserl,1
+luis_thonis,Luis Thonis,henri_bergson,Henri Bergson,1
+luis_thonis,Luis Thonis,macedonio_fernandez,Macedonio Fernández,4
+luis_thonis,Luis Thonis,freud,Sigmund Freud,1
+luis_thonis,Luis Thonis,zaratustra,Zaratustra,1
+luis_thonis,Luis Thonis,borges,Jorge Borges,13
+luis_thonis,Luis Thonis,samuel_beckett,Samuel Beckett,1
+luis_thonis,Luis Thonis,james_joyce,James Joyce,2
+luis_thonis,Luis Thonis,gilbert_ryle,Gilbert Ryle,1
+luis_thonis,Luis Thonis,kafka,Franz Kafka,2
+luis_thonis,Luis Thonis,julio_cesar,Julio César,1
+luis_thonis,Luis Thonis,ciro_grande,II Ciro,2
+luis_thonis,Luis Thonis,jonathan_swift,Jonathan Swift,1
+luis_thonis,Luis Thonis,georges_bataille,Georges Bataille,1
+luis_thonis,Luis Thonis,aristoteles,Aristóteles,1
+luis_thonis,Luis Thonis,juan_garcia_ponce,Juan García Ponce,1
+luis_thonis,Luis Thonis,robert_musil,Robert Musil,1
+luis_thonis,Luis Thonis,klossowski,Pierre Klossowski,1
+luis_thonis,Luis Thonis,roberto_echavarren,Roberto Echavarren,1
+ramon_alcalde,Ramón Alcalde,edouard_drumont,Édouard Drumont,66
+ramon_alcalde,Ramón Alcalde,leon_bloy,Léon Bloy,63
+ramon_alcalde,Ramón Alcalde,emile_zola,Émile Zola,49
+ramon_alcalde,Ramón Alcalde,julian_martel,Julián Martel,10
+ramon_alcalde,Ramón Alcalde,silvina_bullrich,Silvina Bullrich,1
+ramon_alcalde,Ramón Alcalde,carlos_moyano_llerena,Carlos Moyano Llerena,2
+ramon_alcalde,Ramón Alcalde,george_gilder,George Gilder,3
+ramon_alcalde,Ramón Alcalde,ronald_reagan,Ronald Reagan,3
+ramon_alcalde,Ramón Alcalde,adam_smith,Adam Smith,2
+ramon_alcalde,Ramón Alcalde,juan_alemann,Juan Alemann,1
+ramon_alcalde,Ramón Alcalde,hugo_wast,Hugo Wast,6
+ramon_alcalde,Ramón Alcalde,jacob_brafman,Jacob Brafman,3
+ramon_alcalde,Ramón Alcalde,august_rohling,August Rohling,1
+ramon_alcalde,Ramón Alcalde,horangel,Horacio Tirigall,1
+ramon_alcalde,Ramón Alcalde,jose_uriburu,José Uriburu,1
+ramon_alcalde,Ramón Alcalde,agustin_justo,Agustín Justo,1
+ramon_alcalde,Ramón Alcalde,mussolini,Benito Mussolini,1
+ramon_alcalde,Ramón Alcalde,adolf_hitler,Adolf Hitler,1
+ramon_alcalde,Ramón Alcalde,victor_manuel2,II Víctor Manuel,1
+ramon_alcalde,Ramón Alcalde,otto_von_bismarck,Otto Bismarck,1
+ramon_alcalde,Ramón Alcalde,alberto_gerchunoff,Alberto Gerchunoff,3
+ramon_alcalde,Ramón Alcalde,mauricio_hirsch,Mauricio Hirsch,2
+ramon_alcalde,Ramón Alcalde,adolphe_cremieux,Adolphe Crémieux,1
+ramon_alcalde,Ramón Alcalde,edmond_rothschild,Edmond Rothschild,1
+ramon_alcalde,Ramón Alcalde,theodor_herzl,Theodor Herzl,4
+ramon_alcalde,Ramón Alcalde,georges_bernanos,Georges Bernanos,2
+ramon_alcalde,Ramón Alcalde,san_jorge,San Jorge,1
+ramon_alcalde,Ramón Alcalde,joseph_bollery,Joseph Bollery,4
+ramon_alcalde,Ramón Alcalde,alfred_dreyfus,Alfred Dreyfus,5
+ramon_alcalde,Ramón Alcalde,huysmans,Joris-Karl Huysmans,2
+ramon_alcalde,Ramón Alcalde,paul_bourget,Paul Bourget,1
+ramon_alcalde,Ramón Alcalde,alphonse_daudet,Alphonse Daudet,3
+ramon_alcalde,Ramón Alcalde,claretie,Jules Claretie,1
+ramon_alcalde,Ramón Alcalde,platelle,Henri Platelle,1
+ramon_alcalde,Ramón Alcalde,scholl,Aurélien Scholl,1
+ramon_alcalde,Ramón Alcalde,maupassant,Guy Maupassant,7
+ramon_alcalde,Ramón Alcalde,uzanne,Octave Uzanne,1
+ramon_alcalde,Ramón Alcalde,bonnieres,Robert Bonnières,1
+ramon_alcalde,Ramón Alcalde,fournel,Victor Fournel,1
+ramon_alcalde,Ramón Alcalde,george_eliot,George Eliot,1
+ramon_alcalde,Ramón Alcalde,coronel_henry,Hubert-Joseph Henry,1
+ramon_alcalde,Ramón Alcalde,esterhazy,Ferdinand Esterhazy,1
+ramon_alcalde,Ramón Alcalde,paulo_iv,IV Paulo,1
+ramon_alcalde,Ramón Alcalde,alejandroii,II Alejandro,1
+ramon_alcalde,Ramón Alcalde,adolf_stoecker,Adolf Stoecker,1
+ramon_alcalde,Ramón Alcalde,geza_onody,Géza Onody,1
+ramon_alcalde,Ramón Alcalde,jules_isaac,Jules Isaac,2
+ramon_alcalde,Ramón Alcalde,jesus,de Nazaret Jesús,9
+ramon_alcalde,Ramón Alcalde,bernard_lazare,Bernard Lazare,2
+ramon_alcalde,Ramón Alcalde,shakespeare,William Shakespeare,3
+ramon_alcalde,Ramón Alcalde,walter_scott,Walter Scott,18
+ramon_alcalde,Ramón Alcalde,balzac,Honoré Balzac,15
+ramon_alcalde,Ramón Alcalde,sainte_beuve,Charles Sainte-Beuve,1
+ramon_alcalde,Ramón Alcalde,chaucer,Geoffrey Chaucer,1
+ramon_alcalde,Ramón Alcalde,creso,Creso,1
+ramon_alcalde,Ramón Alcalde,gustave_flaubert,Gustave Flaubert,1
+ramon_alcalde,Ramón Alcalde,champfleury,Jules Champfleury,1
+ramon_alcalde,Ramón Alcalde,edmond_goncourt,Edmond Goncourt,1
+ramon_alcalde,Ramón Alcalde,jules_goncourt,Jules Goncourt,1
+ramon_alcalde,Ramón Alcalde,baudelaire,Charles Baudelaire,2
+ramon_alcalde,Ramón Alcalde,charles_dickens,Charles Dickens,2
+ramon_alcalde,Ramón Alcalde,george_sand,George Sand,1
+ramon_alcalde,Ramón Alcalde,isaac_pereire,Isaac Pereire,1
+ramon_alcalde,Ramón Alcalde,emile_pereire,Émile Pereire,1
+ramon_alcalde,Ramón Alcalde,victor_hugo,Victor Hugo,3
+ramon_alcalde,Ramón Alcalde,leon_xiii,XIII León,1
+ramon_alcalde,Ramón Alcalde,eugene_bontoux,Eugène Bontoux,4
+ramon_alcalde,Ramón Alcalde,joan_miro,Joan Miró,1
+ramon_alcalde,Ramón Alcalde,juarez_celman,Miguel Juárez Celman,1
+ramon_alcalde,Ramón Alcalde,ludovico_halevy,Ludovic Halévy,1
+ramon_alcalde,Ramón Alcalde,geoffroy_saint_hilaire,Isidore Geoffroy Saint-Hilaire,1
+ramon_alcalde,Ramón Alcalde,hippolyte_taine,Hippolyte Taine,1
+ramon_alcalde,Ramón Alcalde,charles_darwin,Charles Darwin,1
+ramon_alcalde,Ramón Alcalde,jean_martin_charcot,Jean-Martin Charcot,1
+ramon_alcalde,Ramón Alcalde,marcial,Marco Marcial,1
+ramon_alcalde,Ramón Alcalde,edmond_goncourt jules_goncourt,edmond_goncourt jules_goncourt,1
+ramon_alcalde,Ramón Alcalde,herodias,Herodías,1
+ramon_alcalde,Ramón Alcalde,johann_lavater,Johann Lavater,1
+ramon_alcalde,Ramón Alcalde,louis_blanc,Louis Blanc,1
+ramon_alcalde,Ramón Alcalde,adolphe_thiers,Adolphe Thiers,1
+ramon_alcalde,Ramón Alcalde,franz_bopp,Franz Bopp,2
+ramon_alcalde,Ramón Alcalde,poncio_pilatos,Poncio Pilato,1
+ramon_alcalde,Ramón Alcalde,jules_michelet,Jules Michelet,1
+ramon_alcalde,Ramón Alcalde,pascal,Blaise Pascal,4
+ramon_alcalde,Ramón Alcalde,karl_marx,Karl Marx,6
+ramon_alcalde,Ramón Alcalde,anatole_france,Anatole France,1
+ramon_alcalde,Ramón Alcalde,robert_misrahi,Robert Misrahi,1
+ramon_alcalde,Ramón Alcalde,james_rothschild,James Rothschild,1
+ramon_alcalde,Ramón Alcalde,francois_zola,François Zola,2
+ramon_alcalde,Ramón Alcalde,lev_urusof,Lev Urusov,1
+ramon_alcalde,Ramón Alcalde,kafka,Franz Kafka,3
+ramon_alcalde,Ramón Alcalde,gustav_janouch,Gustav Janouch,2
+ramon_alcalde,Ramón Alcalde,raissa_umansof,Raïssa Oumançoff,3
+ramon_alcalde,Ramón Alcalde,jacques_maritain,Jacques Maritain,4
+ramon_alcalde,Ramón Alcalde,ruben_dario,Rubén Darío,3
+ramon_alcalde,Ramón Alcalde,dante_alighieri,Dante Alighieri,2
+ramon_alcalde,Ramón Alcalde,ernest_hello,Ernest Hello,2
+ramon_alcalde,Ramón Alcalde,arthur_meyer,Arthur Meyer,1
+ramon_alcalde,Ramón Alcalde,paul_verlaine,Paul Verlaine,1
+ramon_alcalde,Ramón Alcalde,san_pablo_persona,de Tarso Pablo,3
+ramon_alcalde,Ramón Alcalde,san_jose,San José,1
+ramon_alcalde,Ramón Alcalde,fiodor_dostoyevski,Fiódor Dostoyevski,2
+ramon_alcalde,Ramón Alcalde,friedrich_nietzsche,Friedrich Nietzsche,7
+ramon_alcalde,Ramón Alcalde,jeanne_molbech,Jeanne Molbech,1
+ramon_alcalde,Ramón Alcalde,morris_rosenfeld,Morris Rosenfeld,2
+ramon_alcalde,Ramón Alcalde,albert_beguin,Albert Béguin,1
+ramon_alcalde,Ramón Alcalde,rf_byrnes,Robert Francis Byrnes,1
+ramon_alcalde,Ramón Alcalde,hubert_colleye,Hubert Colleye,1
+ramon_alcalde,Ramón Alcalde,cecile_delhorbe,Cécile Delhorbe,1
+ramon_alcalde,Ramón Alcalde,ismar_elbogen,Ismar Elbogen,1
+ramon_alcalde,Ramón Alcalde,moses_hadas,Moses Hadas,1
+ramon_alcalde,Ramón Alcalde,stanislas_fumet,Stanislas Fumet,1
+ramon_alcalde,Ramón Alcalde,charles_journet,Charles Journet,1
+ramon_alcalde,Ramón Alcalde,marie_joseph_lory,Marie-Joseph Lory,1
+ramon_alcalde,Ramón Alcalde,jean_paul_sartre,Jean-Paul Sartre,3
+ramon_alcalde,Ramón Alcalde,jose_bianco,José Bianco,1
+ramon_alcalde,Ramón Alcalde,kant,Immanuel Kant,1
+ramon_alcalde,Ramón Alcalde,paul_groussac,Paul Groussac,1
+ramon_alcalde,Ramón Alcalde,alfredo_palacios,Alfredo Palacios,2
+ramon_alcalde,Ramón Alcalde,juan_domingo_peron,Juan Domingo Perón,2
+ramon_alcalde,Ramón Alcalde,costa_mendez,Nicanor Costa Méndez,2
+ramon_alcalde,Ramón Alcalde,benjamin_menendez,Mario Benjamín Menéndez,2
+ramon_alcalde,Ramón Alcalde,juan_pablo_ii,Juan Pablo II Wojtyła,1
+ramon_alcalde,Ramón Alcalde,bernardo_neustadt,Bernardo Neustadt,2
+ramon_alcalde,Ramón Alcalde,leonidas,Leónidas I,1
+ramon_alcalde,Ramón Alcalde,osvaldo_rossler,Osvaldo Rossler,10
+ramon_alcalde,Ramón Alcalde,borges,Jorge Borges,11
+ramon_alcalde,Ramón Alcalde,martinez_estrada,Ezequiel Martínez Estrada,2
+ramon_alcalde,Ramón Alcalde,julio_cortazar,Julio Cortázar,1
+ramon_alcalde,Ramón Alcalde,san_martin,José de San Martín,1
+ramon_alcalde,Ramón Alcalde,napoleon,Napoléon Bonaparte,1
+ramon_alcalde,Ramón Alcalde,enrique_santos_discepolo,Enrique Santos Discépolo,2
+ramon_alcalde,Ramón Alcalde,joseph_conrad,Joseph Conrad,5
+ramon_alcalde,Ramón Alcalde,aristoteles,Aristóteles,2
+ramon_alcalde,Ramón Alcalde,nicomaco,Nicómaco,1
+ramon_alcalde,Ramón Alcalde,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+ramon_alcalde,Ramón Alcalde,pedro_abelardo,Pedro Abelardo,1
+ramon_alcalde,Ramón Alcalde,eloisa,Eloísa,1
+ramon_alcalde,Ramón Alcalde,nestor_perlongher,Néstor Perlongher,28
+ramon_alcalde,Ramón Alcalde,alfonsina_storni,Alfonsina Storni,3
+ramon_alcalde,Ramón Alcalde,leopoldo_galtieri,Leopoldo Fortunato Galtieri,3
+ramon_alcalde,Ramón Alcalde,jorge_anaya,Jorge Isaac Anaya,2
+ramon_alcalde,Ramón Alcalde,basilio_lami_dozo,Basilio Lami Dozo,3
+ramon_alcalde,Ramón Alcalde,martin_heidegger,Martin Heidegger,1
+ramon_alcalde,Ramón Alcalde,hesiodo,Hesíodo,1
+ramon_alcalde,Ramón Alcalde,esquilo,Esquilo,1
+ramon_alcalde,Ramón Alcalde,horacio,Quinto Horacio,1
+ramon_alcalde,Ramón Alcalde,moliere,Jean-Baptiste Poquelin,1
+ramon_alcalde,Ramón Alcalde,friedrich_schiller,Friedrich Schiller,1
+ramon_alcalde,Ramón Alcalde,sarmiento,Domingo Faustino Sarmiento,3
+ramon_alcalde,Ramón Alcalde,jose_hernandez,José Hernández,1
+ramon_alcalde,Ramón Alcalde,hugo_savino,Hugo Savino,1
+ramon_alcalde,Ramón Alcalde,raul_gustavo_aguirre,Raúl Gustavo Aguirre,2
+ramon_alcalde,Ramón Alcalde,roberto_raschella,Roberto Raschella,1
+ramon_alcalde,Ramón Alcalde,miguel_unamuno,Miguel de Unamuno,1
+ramon_alcalde,Ramón Alcalde,william_faulkner,William Faulkner,1
+ramon_alcalde,Ramón Alcalde,john_dos_passos,John Dos Passos,1
+ramon_alcalde,Ramón Alcalde,louis_ferdinand_celine,Louis-Ferdinand Céline,1
+ramon_alcalde,Ramón Alcalde,pablo_neruda,Pablo Neruda,1
+ramon_alcalde,Ramón Alcalde,epicuro,Epicuro,1
+ramon_alcalde,Ramón Alcalde,winston_churchill,Winston Churchill,1
+ramon_alcalde,Ramón Alcalde,margaret_tatcher,Margaret Thatcher,1
+ramon_alcalde,Ramón Alcalde,alvaro_alsogaray,Álvaro Alsogaray,1
+ramon_alcalde,Ramón Alcalde,lisandro_de_la_torre,Lisandro de la Torre,1
+ramon_alcalde,Ramón Alcalde,raul_scalabrini_ortiz,Raúl Scalabrini Ortiz,3
+ramon_alcalde,Ramón Alcalde,francisco_franco,Francisco Franco,1
+ramon_alcalde,Ramón Alcalde,juan_manuel_rosas,Juan Manuel de Rosas,2
+ramon_alcalde,Ramón Alcalde,jose_martinez_de_hoz,José Alfredo Martínez de Hoz,1
+ramon_alcalde,Ramón Alcalde,roberto_alemann,Roberto Alemann,1
+ramon_alcalde,Ramón Alcalde,abelardo_castillo,Abelardo Castillo,1
+ramon_alcalde,Ramón Alcalde,oswald_spengler,Oswald Spengler,1
+ramon_alcalde,Ramón Alcalde,federico_sainz_de_robles,Federico Carlos Sainz de Robles,1
+ramon_alcalde,Ramón Alcalde,esteban_echeverria,Esteban Echeverría,1
+ramon_alcalde,Ramón Alcalde,juan_bautista_alberdi,Juan Bautista Alberdi,1
+ramon_alcalde,Ramón Alcalde,leopoldo_lugones,Leopoldo Lugones,1
+ramon_alcalde,Ramón Alcalde,manuel_galvez,Manuel Gálvez,1
+ramon_alcalde,Ramón Alcalde,canal_feijoo,Bernardo Canal Feijóo,1
+ramon_alcalde,Ramón Alcalde,hector_murena,Héctor Murena,1
+ramon_alcalde,Ramón Alcalde,carlos_astrada,Carlos Astrada,1
+ramon_alcalde,Ramón Alcalde,jose_luis_romero,José Luis Romero,1
+ramon_alcalde,Ramón Alcalde,luis_franco,Luis Franco,1
+ramon_alcalde,Ramón Alcalde,arturo_jauretche,Arturo Jauretche,1
+ramon_alcalde,Ramón Alcalde,david_vinias,David Viñas,2
+ramon_alcalde,Ramón Alcalde,oscar_masotta,Óscar Masotta,1
+ramon_alcalde,Ramón Alcalde,juan_jose_sebreli,Juan José Sebreli,1
+ramon_alcalde,Ramón Alcalde,leonardo_castellani,Leonardo Castellani,1
+ramon_alcalde,Ramón Alcalde,ignacio_anzoategui,Ignacio Anzoátegui,1
+ramon_alcalde,Ramón Alcalde,juan_jose_hernandez_arregui,Juan José Hernández Arregui,1
+ramon_alcalde,Ramón Alcalde,abelardo_ramos,Jorge Abelardo Ramos,1
+ramon_alcalde,Ramón Alcalde,milciades_penia,Milcíades Peña,1
+ramon_alcalde,Ramón Alcalde,roberto_arlt,Roberto Arlt,5
+ramon_alcalde,Ramón Alcalde,jaime_rest,Jaime Rest,1
+ramon_alcalde,Ramón Alcalde,pierre_chaunu,Pierre Chaunu,1
+ramon_alcalde,Ramón Alcalde,san_agustin,de Hipona Agustín,2
+ramon_alcalde,Ramón Alcalde,jean_yves_calvez,Jean-Yves Calvez,1
+ramon_alcalde,Ramón Alcalde,levi_strauss,Claude Lévi-Strauss,1
+ramon_alcalde,Ramón Alcalde,angel_rama,Ángel Rama,1
+ramon_alcalde,Ramón Alcalde,arturo_frondizi,Arturo Frondizi,1
+ramon_alcalde,Ramón Alcalde,hector_campora,Héctor Cámpora,3
+ramon_alcalde,Ramón Alcalde,raul_alfonsin,Raúl Alfonsín,1
+ramon_alcalde,Ramón Alcalde,louis_althusser,Louis Althusser,1
+ramon_alcalde,Ramón Alcalde,roland_barthes,Roland Barthes,1
+ramon_alcalde,Ramón Alcalde,jacques_derrida,Jacques Derrida,1
+ramon_alcalde,Ramón Alcalde,julia_kristeva,Julia Kristeva,1
+ramon_alcalde,Ramón Alcalde,spinoza,Baruch Spinoza,3
+ramon_alcalde,Ramón Alcalde,carlos_correas,Carlos Correas,25
+ramon_alcalde,Ramón Alcalde,jean_genet,Jean Genet,5
+ramon_alcalde,Ramón Alcalde,juan_carlos_ongania,Juan Carlos Onganía,1
+ramon_alcalde,Ramón Alcalde,hans_christian_andersen,Hans Christian Andersen,1
+ramon_alcalde,Ramón Alcalde,hugo_von_hofmannsthal,Hugo von Hofmannsthal,1
+ramon_alcalde,Ramón Alcalde,teocrito,Teócrito,1
+ramon_alcalde,Ramón Alcalde,torquato_tasso,Torquato Tasso,1
+ramon_alcalde,Ramón Alcalde,edmund_spenser,Edmund Spenser,1
+ramon_alcalde,Ramón Alcalde,lou_andreas_salome,Lou Andreas-Salomé,1
+ramon_alcalde,Ramón Alcalde,varo,Alfeno Varo,1
+ramon_alcalde,Ramón Alcalde,virgilio,Publio Virgilio,1
+ramon_alcalde,Ramón Alcalde,marques_sade,Donatien Alphonse François de Sade,1
+ramon_alcalde,Ramón Alcalde,osvaldo_lamborghini,Osvaldo Lamborghini,1
+ramon_alcalde,Ramón Alcalde,luis_gusman,Luis Gusmán,1
+ramon_alcalde,Ramón Alcalde,ricardo_zelarayan,Ricardo Zelarayán,1
+ramon_alcalde,Ramón Alcalde,rodolfo_fogwill,Rodolfo Fogwill,1
+ramon_alcalde,Ramón Alcalde,euclides,Euclides,1
+ramon_alcalde,Ramón Alcalde,ernesto_sabato,Ernesto Sabato,1
+ramon_alcalde,Ramón Alcalde,guillermo_hudson,William Henry Hudson,1
+ramon_alcalde,Ramón Alcalde,johann_winckelmann,Johann Joachim Winckelmann,1
+ramon_alcalde,Ramón Alcalde,paul_schreber,Daniel Paul Schreber,1
+ramon_alcalde,Ramón Alcalde,evaristo_carriego,Evaristo Carriego,1
+ramon_alcalde,Ramón Alcalde,platon,Platón,1
+ramon_alcalde,Ramón Alcalde,cesar_jaroslavsky,César Jaroslavsky,1
+ramon_alcalde,Ramón Alcalde,juan_octavio_gauna,Juan Octavio Gauna,15
+ramon_alcalde,Ramón Alcalde,jose_severo_caballero,José Severo Caballero,1
+ramon_alcalde,Ramón Alcalde,augusto_belluscio,Augusto César Belluscio,1
+ramon_alcalde,Ramón Alcalde,carlos_fayt,Carlos Santiago Fayt,1
+ramon_alcalde,Ramón Alcalde,enrique_petracchi,Enrique Santiago Petracchi,1
+ramon_alcalde,Ramón Alcalde,norberto_cozzani,Norberto Ricardo Cozzani,4
+ramon_alcalde,Ramón Alcalde,jorge_antonio_berges,Jorge Antonio Bergés,4
+ramon_alcalde,Ramón Alcalde,jorge_bacque,Jorge Antonio Bacqué,7
+ramon_alcalde,Ramón Alcalde,soren_kierkegaard,Søren Kierkegaard,1
+ramon_alcalde,Ramón Alcalde,ramon_camps,Ramón Juan Alberto Camps,1
+ramon_alcalde,Ramón Alcalde,ovidio_riccheri,Ovidio P. Riccheri,1
+ramon_alcalde,Ramón Alcalde,miguel_etchecolatz,Miguel Osvaldo Etchecolatz,2
+ramon_alcalde,Ramón Alcalde,freud,Sigmund Freud,1
+ramon_alcalde,Ramón Alcalde,nicaragua,nicaragua,1
+ramon_alcalde,Ramón Alcalde,dante_caputo,Dante Mario Antonio Caputo,1
+ramon_alcalde,Ramón Alcalde,juan_sourrouille,Juan Vital Sourrouille,1
+ramon_alcalde,Ramón Alcalde,mohamed_seineldin,Mohamed Alí Seineldín,1
+ramon_alcalde,Ramón Alcalde,tomas_de_torquemada,Tomás de Torquemada,1
+ramon_alcalde,Ramón Alcalde,guillermo_fierro,Guillermo Jorge Fierro,3
+ramon_alcalde,Ramón Alcalde,adolf_eichmann,Otto Adolf Eichmann,1
+ramon_alcalde,Ramón Alcalde,jose_caridi,José Dante Caridi,1
+ramon_alcalde,Ramón Alcalde,carl_von_clausewitz,Carl von Clausewitz,1
+emile_zola,Émile Zola,hugo_savino,Hugo Savino,1
+emile_zola,Émile Zola,balzac,Honoré Balzac,1
+emile_zola,Émile Zola,stendhal,Stendhal,1
+emile_zola,Émile Zola,gustave_flaubert,Gustave Flaubert,1
+emile_zola,Émile Zola,melville,Herman Melville,1
+emile_zola,Émile Zola,edgar_allan_poe,Edgar Poe,1
+emile_zola,Émile Zola,georges_bataille,Georges Bataille,1
+hugo_savino,Hugo Savino,kant,Immanuel Kant,1
+hugo_savino,Hugo Savino,ronald_reagan,Ronald Reagan,1
+hugo_savino,Hugo Savino,paul_groussac,Paul Groussac,1
+hugo_savino,Hugo Savino,alfredo_palacios,Alfredo Palacios,1
+hugo_savino,Hugo Savino,juan_domingo_peron,Juan Domingo Perón,1
+hugo_savino,Hugo Savino,costa_mendez,Nicanor Costa Méndez,1
+hugo_savino,Hugo Savino,benjamin_menendez,Mario Benjamín Menéndez,1
+hugo_savino,Hugo Savino,juan_pablo_ii,Juan Pablo II Wojtyła,1
+hugo_savino,Hugo Savino,bernardo_neustadt,Bernardo Neustadt,2
+hugo_savino,Hugo Savino,leonidas,Leónidas I,1
+hugo_savino,Hugo Savino,osvaldo_rossler,Osvaldo Rossler,9
+hugo_savino,Hugo Savino,borges,Jorge Borges,5
+hugo_savino,Hugo Savino,martinez_estrada,Ezequiel Martínez Estrada,1
+hugo_savino,Hugo Savino,friedrich_nietzsche,Friedrich Nietzsche,1
+hugo_savino,Hugo Savino,julio_cortazar,Julio Cortázar,2
+hugo_savino,Hugo Savino,san_martin,José de San Martín,1
+hugo_savino,Hugo Savino,napoleon,Napoléon Bonaparte,1
+hugo_savino,Hugo Savino,enrique_santos_discepolo,Enrique Santos Discépolo,2
+hugo_savino,Hugo Savino,joseph_conrad,Joseph Conrad,5
+hugo_savino,Hugo Savino,aristoteles,Aristóteles,1
+hugo_savino,Hugo Savino,nicomaco,Nicómaco,1
+hugo_savino,Hugo Savino,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+hugo_savino,Hugo Savino,pedro_abelardo,Pedro Abelardo,1
+hugo_savino,Hugo Savino,eloisa,Eloísa,1
+hugo_savino,Hugo Savino,osvaldo_soriano,Osvaldo Soriano,11
+hugo_savino,Hugo Savino,degas,Edgar Degas,1
+hugo_savino,Hugo Savino,italo_calvino,Italo Calvino,2
+hugo_savino,Hugo Savino,ernest_hemingway,Ernest Hemingway,1
+hugo_savino,Hugo Savino,jd_salinger,Jerome David Salinger,1
+hugo_savino,Hugo Savino,charles_chaplin,Charles Chaplin,3
+hugo_savino,Hugo Savino,marilyn_monroe,Marilyn Monroe,1
+hugo_savino,Hugo Savino,stan_laurel,Stan Laurel,1
+hugo_savino,Hugo Savino,oliver_hardy,Oliver Hardy,1
+hugo_savino,Hugo Savino,marlon_brando,Marlon Brando,1
+hugo_savino,Hugo Savino,rimbaud,Arthur Rimbaud,1
+hugo_savino,Hugo Savino,ts_eliot,T. Eliot,1
+hugo_savino,Hugo Savino,bertolt_brecht,Bertolt Brecht,1
+hugo_savino,Hugo Savino,francois_mitterrand,François Mitterrand,3
+hugo_savino,Hugo Savino,valery_giscard,Valéry Giscard d'Estaing,1
+hugo_savino,Hugo Savino,aquiles_fabregat,Aquiles Fabregat,1
+hugo_savino,Hugo Savino,luis_aguile,Luis Aguilé,1
+hugo_savino,Hugo Savino,joan_manuel_serrat,Joan Manuel Serrat,1
+hugo_savino,Hugo Savino,manuel_puig,Manuel Puig,2
+luis_chitarroni,Luis Chitarroni,cabrera_infante,Guillermo Cabrera Infante,7
+luis_chitarroni,Luis Chitarroni,ken_russell,Ken Russell,1
+luis_chitarroni,Luis Chitarroni,juan_goytisolo,Juan Goytisolo,1
+luis_chitarroni,Luis Chitarroni,severo_sarduy,Severo Sarduy,1
+luis_chitarroni,Luis Chitarroni,orson_welles,Orson Welles,1
+luis_chitarroni,Luis Chitarroni,joseph_conrad,Joseph Conrad,1
+luis_chitarroni,Luis Chitarroni,robert_montgomery,Robert Montgomery,1
+luis_chitarroni,Luis Chitarroni,jose_donoso,José Donoso,1
+luis_chitarroni,Luis Chitarroni,marcel_duchamp,Marcel Duchamp,1
+luis_chitarroni,Luis Chitarroni,laurence_sterne,Laurence Sterne,1
+luis_chitarroni,Luis Chitarroni,james_joyce,James Joyce,2
+luis_chitarroni,Luis Chitarroni,shakespeare,William Shakespeare,1
+luis_chitarroni,Luis Chitarroni,jose_valverde,José Valverde,1
+luis_chitarroni,Luis Chitarroni,vladimir_nabokov,Vladimir Nabokov,1
+luis_chitarroni,Luis Chitarroni,emir_rodriguez_monegal,Emir Rodríguez Monegal,1
+luis_chitarroni,Luis Chitarroni,borges,Jorge Borges,5
+luis_chitarroni,Luis Chitarroni,alfred_korzybski,Alfred Korzybski,1
+luis_chitarroni,Luis Chitarroni,jose_marti,José Martí,1
+luis_chitarroni,Luis Chitarroni,virgilio_piniera,Virgilio Piñera,1
+luis_chitarroni,Luis Chitarroni,alejandra_pizarnik,Alejandra Pizarnik,7
+luis_chitarroni,Luis Chitarroni,andre_pieyre,André Pieyre de Mandiargues,1
+luis_chitarroni,Luis Chitarroni,lautreamont,Comte Lautréamont,1
+luis_chitarroni,Luis Chitarroni,john_donne,John Donne,1
+luis_chitarroni,Luis Chitarroni,octavio_paz,Octavio Paz,1
+luis_chitarroni,Luis Chitarroni,giordano_bruno,Giordano Bruno,1
+luis_chitarroni,Luis Chitarroni,fred_hoyle,Fred Hoyle,1
+luis_chitarroni,Luis Chitarroni,arturo_carrera,Arturo Carrera,2
+luis_chitarroni,Luis Chitarroni,roland_barthes,Roland Barthes,1
+luis_chitarroni,Luis Chitarroni,yeats,William Butler Yeats,1
+luis_chitarroni,Luis Chitarroni,safo,Safo,1
+luis_chitarroni,Luis Chitarroni,sylvia_plath,Sylvia Plath,1
+luis_chitarroni,Luis Chitarroni,silvina_ocampo,Silvina Ocampo,1
+luis_chitarroni,Luis Chitarroni,olga_orozco,Olga Orozco,1
+luis_chitarroni,Luis Chitarroni,delia_pasini,Delia Pasini,1
+luis_chitarroni,Luis Chitarroni,rodolfo_wilcock,Juan Rodolfo Wilcock,28
+luis_chitarroni,Luis Chitarroni,ben_jonson,Ben Jonson,1
+luis_chitarroni,Luis Chitarroni,ts_eliot,T. Eliot,3
+luis_chitarroni,Luis Chitarroni,auden,Wystan Hugh Auden,1
+luis_chitarroni,Luis Chitarroni,evelyn_waugh,Evelyn Waugh,1
+luis_chitarroni,Luis Chitarroni,jack_kerouac,Jack Kerouac,1
+luis_chitarroni,Luis Chitarroni,brahms,Johannes Brahms,1
+luis_chitarroni,Luis Chitarroni,bioy_casares,Adolfo Bioy Casares,5
+luis_chitarroni,Luis Chitarroni,alberto_arbasino,Alberto Arbasino,1
+luis_chitarroni,Luis Chitarroni,alberto_moravia,Alberto Moravia,1
+luis_chitarroni,Luis Chitarroni,henry_james,Henry James,2
+luis_chitarroni,Luis Chitarroni,marcel_proust,Marcel Proust,1
+luis_chitarroni,Luis Chitarroni,ruggero_guarini,Ruggero Guarini,1
+luis_chitarroni,Luis Chitarroni,pasolini,Pier Paolo Pasolini,1
+luis_chitarroni,Luis Chitarroni,dylan_thomas,Dylan Thomas,4
+luis_chitarroni,Luis Chitarroni,vernon_watkins,Vernon Watkins,1
+luis_chitarroni,Luis Chitarroni,felix_della_paolera,Félix Della Paolera,1
+luis_chitarroni,Luis Chitarroni,ivy_compton_burnett,Ivy Compton-Burnett,1
+luis_chitarroni,Luis Chitarroni,paul_valery,Ambroise Valéry,2
+luis_chitarroni,Luis Chitarroni,claude_simon,Claude Simon,1
+luis_chitarroni,Luis Chitarroni,jonathan_swift,Jonathan Swift,1
+luis_chitarroni,Luis Chitarroni,erwin_schroedinger,Erwin Schrödinger,1
+luis_chitarroni,Luis Chitarroni,henri_landru,Henri Landru,1
+luis_chitarroni,Luis Chitarroni,mallarme,Stéphane Mallarmé,1
+luis_chitarroni,Luis Chitarroni,sor_juana,Sor Juana Inés de la Cruz,1
+luis_chitarroni,Luis Chitarroni,napoleon,Napoléon Bonaparte,1
+luis_chitarroni,Luis Chitarroni,edgardo_cozarinsky,Edgardo Cozarinsky,1
+luis_chitarroni,Luis Chitarroni,john_milton,John Milton,1
+luis_chitarroni,Luis Chitarroni,diego_angelino,Diego Angelino,5
+luis_chitarroni,Luis Chitarroni,santiago_dabove,Santiago Dabove,14
+luis_chitarroni,Luis Chitarroni,aleksandr_pushkin,Aleksandr Pushkin,1
+luis_chitarroni,Luis Chitarroni,edgar_allan_poe,Edgar Poe,1
+luis_chitarroni,Luis Chitarroni,macedonio_fernandez,Macedonio Fernández,1
+luis_chitarroni,Luis Chitarroni,juan_filiberto,Juan de Dios Filiberto,1
+luis_chitarroni,Luis Chitarroni,ernst_junger,Ernst Jünger,5
+luis_chitarroni,Luis Chitarroni,philippe_aries,Philippe Ariès,1
+luis_chitarroni,Luis Chitarroni,malcolm_lowry,Malcolm Lowry,1
+luis_chitarroni,Luis Chitarroni,john_keats,John Keats,2
+luis_chitarroni,Luis Chitarroni,percy_shelley,Percy Bysshe Shelley,1
+luis_chitarroni,Luis Chitarroni,nikolai_gogol,Nikolai Gogol,2
+luis_chitarroni,Luis Chitarroni,jean_martin_charcot,Jean-Martin Charcot,1
+enrique_pezzoni,Enrique Pezzoni,silvina_ocampo,Silvina Ocampo,31
+enrique_pezzoni,Enrique Pezzoni,roland_barthes,Roland Barthes,3
+enrique_pezzoni,Enrique Pezzoni,borges,Jorge Borges,2
+enrique_pezzoni,Enrique Pezzoni,henry_james,Henry James,2
+enrique_pezzoni,Enrique Pezzoni,ana_barrenechea,Ana Barrenechea,1
+enrique_pezzoni,Enrique Pezzoni,todorov,Tzvetan Todorov,1
+enrique_pezzoni,Enrique Pezzoni,sylvia_molloy,Sylvia Molloy,1
+enrique_pezzoni,Enrique Pezzoni,michel_foucault,Michel Foucault,2
+enrique_pezzoni,Enrique Pezzoni,felisberto_hernandez,Felisberto Hernández,10
+enrique_pezzoni,Enrique Pezzoni,arcimboldo,Giuseppe Arcimboldo,1
+enrique_pezzoni,Enrique Pezzoni,josefina_ludmer,Josefina Ludmer,1
+enrique_pezzoni,Enrique Pezzoni,franz_schubert,Franz Schubert,1
+enrique_pezzoni,Enrique Pezzoni,walter_gieseking,Walter Gieseking,1
+sylvia_molloy,Sylvia Molloy,ruben_dario,Rubén Darío,41
+sylvia_molloy,Sylvia Molloy,paul_valery,Ambroise Valéry,1
+sylvia_molloy,Sylvia Molloy,jose_joaquin_olmedo,José Olmedo,1
+sylvia_molloy,Sylvia Molloy,jose_maria_heredia,José Heredia,1
+sylvia_molloy,Sylvia Molloy,victor_hugo,Victor Hugo,2
+sylvia_molloy,Sylvia Molloy,baudelaire,Charles Baudelaire,2
+sylvia_molloy,Sylvia Molloy,estrada_cabrera,Manuel Estrada Cabrera,1
+sylvia_molloy,Sylvia Molloy,da_vinci,Leonardo Vinci,1
+sylvia_molloy,Sylvia Molloy,henriquez_urenia,Pedro Henríquez Ureña,1
+sylvia_molloy,Sylvia Molloy,pedro_salinas,Pedro Salinas,3
+sylvia_molloy,Sylvia Molloy,octavio_paz,Octavio Paz,1
+sylvia_molloy,Sylvia Molloy,lezama_lima,José Lezama Lima,2
+sylvia_molloy,Sylvia Molloy,juan_valera,Juan Valera,1
+sylvia_molloy,Sylvia Molloy,borges,Jorge Borges,1
+sylvia_molloy,Sylvia Molloy,cornelio_agrippa,Heinrich Agrippa,1
+antoine_berman,Antoine Berman,george_steiner,George Steiner,1
+antoine_berman,Antoine Berman,leonard_forster,Leonard Forster,3
+antoine_berman,Antoine Berman,pieter_hooft,Pieter Hooft,1
+antoine_berman,Antoine Berman,cervantes,Miguel Cervantes,2
+antoine_berman,Antoine Berman,john_milton,John Milton,1
+antoine_berman,Antoine Berman,joseph_conrad,Joseph Conrad,1
+antoine_berman,Antoine Berman,samuel_beckett,Samuel Beckett,2
+antoine_berman,Antoine Berman,franz_rosenzweig,Franz Rosenzweig,1
+antoine_berman,Antoine Berman,schleiermacher,Friedrich Schleiermacher,4
+antoine_berman,Antoine Berman,johann_herder,Johann Herder,1
+antoine_berman,Antoine Berman,edward_said,Edward Said,1
+antoine_berman,Antoine Berman,henri_meschonnic,Henri Meschonnic,1
+antoine_berman,Antoine Berman,paul_celan,Paul Celan,1
+antoine_berman,Antoine Berman,gaston_bachelard,Gaston Bachelard,1
+antoine_berman,Antoine Berman,novalis,Novalis,2
+antoine_berman,Antoine Berman,goethe,Johann Goethe,2
+antoine_berman,Antoine Berman,holderlin,Johann Hölderlin,3
+antoine_berman,Antoine Berman,valery_larbaud,Valery Larbaud,1
+antoine_berman,Antoine Berman,walter_benjamin,Walter Benjamin,3
+antoine_berman,Antoine Berman,august_schlegel,August Schlegel,2
+antoine_berman,Antoine Berman,armand_robin,Armand Robin,3
+antoine_berman,Antoine Berman,wilhelm_von_humboldt,Wilhelm Humboldt,2
+antoine_berman,Antoine Berman,gerard_nerval,Gérard Nerval,1
+antoine_berman,Antoine Berman,baudelaire,Charles Baudelaire,1
+antoine_berman,Antoine Berman,mallarme,Stéphane Mallarmé,1
+antoine_berman,Antoine Berman,stefan_george,Stefan George,1
+antoine_berman,Antoine Berman,rilke,Rainer Rilke,1
+antoine_berman,Antoine Berman,ezra_pound,Ezra Pound,1
+antoine_berman,Antoine Berman,james_joyce,James Joyce,1
+leonora_carrington,Leonora Carrington,jorge_jinkis,Jorge Jinkis,1
+leonora_carrington,Leonora Carrington,max_ernst,Max Ernst,7
+leonora_carrington,Leonora Carrington,jonathan_swift,Jonathan Swift,1
+leonora_carrington,Leonora Carrington,renato_leduc,Renato Leduc,1
+leonora_carrington,Leonora Carrington,benjamin_peret,Benjamin Péret,1
+leonora_carrington,Leonora Carrington,pierre_mabille,Pierre Mabille,2
+leonora_carrington,Leonora Carrington,cesar_moro,César Moro,1
+leonora_carrington,Leonora Carrington,catherine_yarrow,Catherine Yarrow,20
+leonora_carrington,Leonora Carrington,adolf_hitler,Adolf Hitler,1
+leonora_carrington,Leonora Carrington,francisco_franco,Francisco Franco,3
+leonora_carrington,Leonora Carrington,federico_garcia_lorca,Federico García Lorca,1
+leonora_carrington,Leonora Carrington,pascal,Blaise Pascal,1
+leonora_carrington,Leonora Carrington,alfonso_xiii,Alfonso XIII de Borbón,1
+hector_grisafi,Héctor Grisafi,kant,Immanuel Kant,1
+hector_grisafi,Héctor Grisafi,ronald_reagan,Ronald Reagan,1
+hector_grisafi,Héctor Grisafi,paul_groussac,Paul Groussac,1
+hector_grisafi,Héctor Grisafi,alfredo_palacios,Alfredo Palacios,1
+hector_grisafi,Héctor Grisafi,juan_domingo_peron,Juan Domingo Perón,1
+hector_grisafi,Héctor Grisafi,costa_mendez,Nicanor Costa Méndez,1
+hector_grisafi,Héctor Grisafi,benjamin_menendez,Mario Benjamín Menéndez,1
+hector_grisafi,Héctor Grisafi,juan_pablo_ii,Juan Pablo II Wojtyła,1
+hector_grisafi,Héctor Grisafi,bernardo_neustadt,Bernardo Neustadt,2
+hector_grisafi,Héctor Grisafi,leonidas,Leónidas I,1
+hector_grisafi,Héctor Grisafi,osvaldo_rossler,Osvaldo Rossler,9
+hector_grisafi,Héctor Grisafi,borges,Jorge Borges,5
+hector_grisafi,Héctor Grisafi,martinez_estrada,Ezequiel Martínez Estrada,1
+hector_grisafi,Héctor Grisafi,friedrich_nietzsche,Friedrich Nietzsche,1
+hector_grisafi,Héctor Grisafi,julio_cortazar,Julio Cortázar,1
+hector_grisafi,Héctor Grisafi,san_martin,José de San Martín,1
+hector_grisafi,Héctor Grisafi,napoleon,Napoléon Bonaparte,1
+hector_grisafi,Héctor Grisafi,enrique_santos_discepolo,Enrique Santos Discépolo,2
+hector_grisafi,Héctor Grisafi,joseph_conrad,Joseph Conrad,5
+hector_grisafi,Héctor Grisafi,aristoteles,Aristóteles,1
+hector_grisafi,Héctor Grisafi,nicomaco,Nicómaco,1
+hector_grisafi,Héctor Grisafi,rafael_alberto_arrieta,Rafael Alberto Arrieta,1
+hector_grisafi,Héctor Grisafi,pedro_abelardo,Pedro Abelardo,1
+hector_grisafi,Héctor Grisafi,eloisa,Eloísa,1
+jose_salas_subirat,José Salas Subirat,james_joyce,James Joyce,15
+jose_salas_subirat,José Salas Subirat,jorge_jinkis,Jorge Jinkis,1
+jose_salas_subirat,José Salas Subirat,borges,Jorge Borges,1
+jose_salas_subirat,José Salas Subirat,santiago_rueda,Santiago Rueda,1
+jose_salas_subirat,José Salas Subirat,max_dickman,Max Dickmann,1
+jose_salas_subirat,José Salas Subirat,garcia_marquez,Gabriel García Márquez,1
+jose_salas_subirat,José Salas Subirat,carl_jung,Carl Gustav Jung,7
+jose_salas_subirat,José Salas Subirat,jesus,de Nazaret Jesús,1
+jose_salas_subirat,José Salas Subirat,dante_alighieri,Dante Alighieri,1
+jose_salas_subirat,José Salas Subirat,william_blake,William Blake,1
+jose_salas_subirat,José Salas Subirat,edgar_allan_poe,Edgar Poe,2
+jose_salas_subirat,José Salas Subirat,baudelaire,Charles Baudelaire,2
+jose_salas_subirat,José Salas Subirat,rimbaud,Arthur Rimbaud,1
+jose_salas_subirat,José Salas Subirat,mallarme,Stéphane Mallarmé,1
+jose_salas_subirat,José Salas Subirat,marcel_proust,Marcel Proust,1
+jose_salas_subirat,José Salas Subirat,paul_valery,Ambroise Valéry,1
+jose_salas_subirat,José Salas Subirat,rilke,Rainer Rilke,1
+jose_salas_subirat,José Salas Subirat,kafka,Franz Kafka,1
+jose_salas_subirat,José Salas Subirat,oscar_wilde,Oscar Wilde,3
+jose_salas_subirat,José Salas Subirat,lautreamont,Comte Lautréamont,1
+jose_salas_subirat,José Salas Subirat,heraclito,Heráclito,1
+jose_salas_subirat,José Salas Subirat,parmenides,de Elea Parménides,1
+jose_salas_subirat,José Salas Subirat,freud,Sigmund Freud,1
+jose_salas_subirat,José Salas Subirat,leonid_andreiev,Leonid Andréiev,1
+jose_salas_subirat,José Salas Subirat,homero,Homero,2
+osvaldo_lamborghini,Osvaldo Lamborghini,diana_bilmezis,Diana Bilmezis,1
+alicia_gutierrez_reto,Alicia Gutiérrez Reto,noemi_ulla,Noemí Ulla,1
+alicia_gutierrez_reto,Alicia Gutiérrez Reto,franz_schubert,Franz Schubert,2
+delia_pasini,Delia Pasini,arturo_carrera,Arturo Carrera,1
+beatriz_castillo,Beatriz Castillo,eduardo_mallea,Eduardo Mallea,6
+beatriz_castillo,Beatriz Castillo,roberto_arlt,Roberto Arlt,1
+beatriz_castillo,Beatriz Castillo,marcel_proust,Marcel Proust,1
+beatriz_castillo,Beatriz Castillo,jorge_cruz,Jorge Cruz,1
+beatriz_castillo,Beatriz Castillo,philippe_aries,Philippe Ariès,8
+beatriz_castillo,Beatriz Castillo,edgar_morin,Edgar Morin,1
+beatriz_castillo,Beatriz Castillo,hans_memling,Hans Memling,1
+beatriz_castillo,Beatriz Castillo,jan_van_eyck,Jan van Eyck,1
+beatriz_castillo,Beatriz Castillo,bosco,Hieronymus Bosch,1
+beatriz_castillo,Beatriz Castillo,jan_potocki,Jan Potocki,1
+beatriz_castillo,Beatriz Castillo,lamartine,Alphonse de Lamartine,1
+beatriz_castillo,Beatriz Castillo,jesus,de Nazaret Jesús,1
+beatriz_castillo,Beatriz Castillo,karen_quinlan,Karen Ann Quinlan,1
+liliana_heer,Liliana Heer,sylvia_molloy,Sylvia Molloy,1
+liliana_heer,Liliana Heer,friedrich_nietzsche,Friedrich Nietzsche,1
+liliana_heer,Liliana Heer,osman_lins,Osman Lins,3
+liliana_heer,Liliana Heer,jesus,de Nazaret Jesús,1
+liliana_heer,Liliana Heer,melville,Herman Melville,1
+liliana_heer,Liliana Heer,mozart,Wolfgang Amadeus Mozart,1
+liliana_heer,Liliana Heer,domenico_scarlatti,Domenico Scarlatti,1
+haroldo_campos,Haroldo de Campos,goethe,Johann Goethe,1
+nestor_perlongher,Néstor Perlongher,ramon_alcalde,Ramón Alcalde,1
+nestor_perlongher,Néstor Perlongher,hector_grisafi,Héctor Grisafi,1
+nestor_perlongher,Néstor Perlongher,eduardo_gruner,Eduardo Grüner,1
+nestor_perlongher,Néstor Perlongher,luis_gusman,Luis Gusmán,1
+nestor_perlongher,Néstor Perlongher,jorge_jinkis,Jorge Jinkis,2
+nestor_perlongher,Néstor Perlongher,hugo_savino,Hugo Savino,1
+nestor_perlongher,Néstor Perlongher,horacio_quiroga,Horacio Quiroga,1
+nestor_perlongher,Néstor Perlongher,osvaldo_rossler,Osvaldo Rossler,1
+nestor_perlongher,Néstor Perlongher,alfonsina_storni,Alfonsina Storni,2
+norma_gentili,norma_gentili,marta_lynch,Marta Lynch,2
+norma_gentili,norma_gentili,borges,Jorge Borges,3
+norma_gentili,norma_gentili,wanda_sacher_masoch,Wanda von Sacher-Masoch,1
+jorge_monteleone,Jorge Monteleone,luis_gusman,Luis Gusmán,21
+jorge_monteleone,Jorge Monteleone,rodolfo_wilcock,Juan Rodolfo Wilcock,11
+jorge_monteleone,Jorge Monteleone,osvaldo_lamborghini,Osvaldo Lamborghini,1
+jorge_monteleone,Jorge Monteleone,german_garcia,Germán García,1
+jorge_monteleone,Jorge Monteleone,ricardo_piglia,Ricardo Piglia,1
+jorge_monteleone,Jorge Monteleone,alberto_laiseca,Alberto Laiseca,1
+jorge_monteleone,Jorge Monteleone,tinianov,Yuri Tiniánov,4
+jorge_monteleone,Jorge Monteleone,borges,Jorge Borges,12
+jorge_monteleone,Jorge Monteleone,kafka,Franz Kafka,1
+jorge_monteleone,Jorge Monteleone,roberto_arlt,Roberto Arlt,8
+jorge_monteleone,Jorge Monteleone,oscar_masotta,Óscar Masotta,2
+jorge_monteleone,Jorge Monteleone,david_vinias,David Viñas,4
+jorge_monteleone,Jorge Monteleone,samuel_beckett,Samuel Beckett,1
+jorge_monteleone,Jorge Monteleone,roland_barthes,Roland Barthes,9
+jorge_monteleone,Jorge Monteleone,louis_ferdinand_celine,Louis-Ferdinand Céline,1
+jorge_monteleone,Jorge Monteleone,chaucer,Geoffrey Chaucer,1
+jorge_monteleone,Jorge Monteleone,jd_salinger,Jerome David Salinger,1
+jorge_monteleone,Jorge Monteleone,nathaniel_hawthorne,Nathaniel Hawthorne,1
+jorge_monteleone,Jorge Monteleone,james_joyce,James Joyce,3
+jorge_monteleone,Jorge Monteleone,joseph_conrad,Joseph Conrad,3
+jorge_monteleone,Jorge Monteleone,lev_tolstoi,Lev Tolstói,2
+jorge_monteleone,Jorge Monteleone,fiodor_dostoyevski,Fiódor Dostoyevski,3
+jorge_monteleone,Jorge Monteleone,gustave_flaubert,Gustave Flaubert,5
+jorge_monteleone,Jorge Monteleone,macedonio_fernandez,Macedonio Fernández,1
+jorge_monteleone,Jorge Monteleone,leopoldo_lugones,Leopoldo Lugones,28
+jorge_monteleone,Jorge Monteleone,stanislaus_joyce,Stanislaus Joyce,4
+jorge_monteleone,Jorge Monteleone,richard_ellman,Richard Ellmann,1
+jorge_monteleone,Jorge Monteleone,santiago_dabove,Santiago Dabove,1
+jorge_monteleone,Jorge Monteleone,juan_filloy,Juan Filloy,1
+jorge_monteleone,Jorge Monteleone,dante_alighieri,Dante Alighieri,1
+jorge_monteleone,Jorge Monteleone,horacio_quiroga,Horacio Quiroga,1
+jorge_monteleone,Jorge Monteleone,salvador_dali,Salvador Dalí,1
+jorge_monteleone,Jorge Monteleone,enrique_banchs,Enrique Banchs,1
+jorge_monteleone,Jorge Monteleone,gongora,Luis de Góngora y Argote,1
+jorge_monteleone,Jorge Monteleone,lezama_lima,José Lezama Lima,2
+jorge_monteleone,Jorge Monteleone,severo_sarduy,Severo Sarduy,3
+jorge_monteleone,Jorge Monteleone,cleanth_brooks,Cleanth Brooks,2
+jorge_monteleone,Jorge Monteleone,robert_penn_warren,Robert Penn Warren,2
+jorge_monteleone,Jorge Monteleone,bajtin,Mijaíl Bajtín,2
+jorge_monteleone,Jorge Monteleone,ruben_dario,Rubén Darío,10
+jorge_monteleone,Jorge Monteleone,vicente_garcia_huidobro,Vicente García-Huidobro,1
+jorge_monteleone,Jorge Monteleone,sylvia_molloy,Sylvia Molloy,2
+jorge_monteleone,Jorge Monteleone,canal_feijoo,Bernardo Canal Feijóo,2
+jorge_monteleone,Jorge Monteleone,paul_valery,Ambroise Valéry,2
+jorge_monteleone,Jorge Monteleone,mario_praz,Mario Praz,3
+jorge_monteleone,Jorge Monteleone,heinrich_wolfflin,Heinrich Wölfflin,1
+jorge_monteleone,Jorge Monteleone,miguel_d_ors,Miguel d'Ors,1
+jorge_monteleone,Jorge Monteleone,octavio_paz,Octavio Paz,3
+jorge_monteleone,Jorge Monteleone,georges_bataille,Georges Bataille,6
+jorge_monteleone,Jorge Monteleone,bettina_edelberg,Bettina Edelberg,1
+jorge_monteleone,Jorge Monteleone,juan_jose_hernandez,Juan José Hernández,1
+mercedes_roffe,Mercedes Roffé,euripides,Eurípides,2
+mercedes_roffe,Mercedes Roffé,jean_paul_sartre,Jean-Paul Sartre,2
+mercedes_roffe,Mercedes Roffé,gustave_flaubert,Gustave Flaubert,21
+mercedes_roffe,Mercedes Roffé,amilcar_barca,Amílcar Barca,9
+mercedes_roffe,Mercedes Roffé,herodoto,Heródoto,1
+mercedes_roffe,Mercedes Roffé,plinio,el Viejo Plinio,1
+mercedes_roffe,Mercedes Roffé,estrabon,Estrabón,1
+mercedes_roffe,Mercedes Roffé,suetonio,Cayo Suetonio,1
+mercedes_roffe,Mercedes Roffé,mathos,Mathos,5
+mercedes_roffe,Mercedes Roffé,roland_barthes,Roland Barthes,2
+mercedes_roffe,Mercedes Roffé,dante_gabriel_rossetti,Dante Gabriel Rossetti,1
+mercedes_roffe,Mercedes Roffé,william_holman_hunt,William Holman Hunt,1
+mercedes_roffe,Mercedes Roffé,theophile_gautier,Théophile Gautier,4
+mercedes_roffe,Mercedes Roffé,john_ruskin,John Ruskin,1
+mercedes_roffe,Mercedes Roffé,baudelaire,Charles Baudelaire,1
+mercedes_roffe,Mercedes Roffé,arnold_hauser,Arnold Hauser,1
+mercedes_roffe,Mercedes Roffé,oscar_wilde,Oscar Wilde,1
+mercedes_roffe,Mercedes Roffé,aubrey_beardsley,Aubrey Beardsley,1
+juan_bautista_ritvo,Juan Bautista Ritvo,witold_gombrowicz,Witold Gombrowicz,1
+juan_bautista_ritvo,Juan Bautista Ritvo,carlos_astrada,Carlos Astrada,4
+juan_bautista_ritvo,Juan Bautista Ritvo,jose_hernandez,José Hernández,1
+juan_bautista_ritvo,Juan Bautista Ritvo,leopoldo_lugones,Leopoldo Lugones,2
+juan_bautista_ritvo,Juan Bautista Ritvo,kant,Immanuel Kant,2
+juan_bautista_ritvo,Juan Bautista Ritvo,karl_marx,Karl Marx,2
+juan_bautista_ritvo,Juan Bautista Ritvo,hegel,Georg Wilhelm Friedrich Hegel,2
+juan_bautista_ritvo,Juan Bautista Ritvo,dante_alighieri,Dante Alighieri,1
+juan_bautista_ritvo,Juan Bautista Ritvo,goethe,Johann Goethe,1
+juan_bautista_ritvo,Juan Bautista Ritvo,cervantes,Miguel Cervantes,1
+juan_bautista_ritvo,Juan Bautista Ritvo,borges,Jorge Borges,5
+juan_bautista_ritvo,Juan Bautista Ritvo,george_berkeley,George Berkeley,4
+juan_bautista_ritvo,Juan Bautista Ritvo,hg_wells,Herbert George Wells,1
+juan_bautista_ritvo,Juan Bautista Ritvo,de_quincey,Thomas De Quincey,1
+juan_bautista_ritvo,Juan Bautista Ritvo,arthur_schopenhauer,Arthur Schopenhauer,1
+juan_bautista_ritvo,Juan Bautista Ritvo,shakespeare,William Shakespeare,1
+juan_bautista_ritvo,Juan Bautista Ritvo,platon,Platón,1
+juan_bautista_ritvo,Juan Bautista Ritvo,patricio_de_azcarate,Patricio de Azcárate,1
+juan_bautista_ritvo,Juan Bautista Ritvo,macedonio_fernandez,Macedonio Fernández,1
+juan_bautista_ritvo,Juan Bautista Ritvo,baudelaire,Charles Baudelaire,1
+juan_bautista_ritvo,Juan Bautista Ritvo,friedrich_nietzsche,Friedrich Nietzsche,1
+juan_bautista_ritvo,Juan Bautista Ritvo,martin_heidegger,Martin Heidegger,1
+juan_bautista_ritvo,Juan Bautista Ritvo,bartolome_mitre,Bartolomé Mitre,1
+juan_bautista_ritvo,Juan Bautista Ritvo,sarmiento,Domingo Faustino Sarmiento,1
+juan_bautista_ritvo,Juan Bautista Ritvo,tomas_de_aquino,Tomás de Aquino,1
+juan_bautista_ritvo,Juan Bautista Ritvo,carl_jung,Carl Gustav Jung,1
+juan_bautista_ritvo,Juan Bautista Ritvo,lacan,Jacques Lacan,1
+juan_bautista_ritvo,Juan Bautista Ritvo,david_hume,David Hume,5
+juan_bautista_ritvo,Juan Bautista Ritvo,aldous_huxley,Aldous Huxley,1
+juan_bautista_ritvo,Juan Bautista Ritvo,kemp_smith,Norman Kemp Smith,1
+juan_bautista_ritvo,Juan Bautista Ritvo,henri_bergson,Henri Bergson,1
+juan_bautista_ritvo,Juan Bautista Ritvo,georg_lichtenberg,Georg Christoph Lichtenberg,2
+juan_bautista_ritvo,Juan Bautista Ritvo,tchuang_tzu,Zhou Zhuang,1
+santiago_bullrich,Santiago Bullrich,james_joyce,James Joyce,5
+santiago_bullrich,Santiago Bullrich,shakespeare,William Shakespeare,2
+santiago_bullrich,Santiago Bullrich,samuel_beckett,Samuel Beckett,2
+santiago_bullrich,Santiago Bullrich,melville,Herman Melville,2
+santiago_bullrich,Santiago Bullrich,lewis_carroll,Lewis Carroll,6
+santiago_bullrich,Santiago Bullrich,brian_boru,Brian Boru,1
+raul_zoppi,Raul Zoppi,macedonio_fernandez,Macedonio Fernández,36
+raul_zoppi,Raul Zoppi,ana_barrenechea,Ana Barrenechea,7
+raul_zoppi,Raul Zoppi,adolfo_de_obieta,Adolfo de Obieta,1
+jorge_panesi,Jorge Panesi,manuel_puig,Manuel Puig,12
+jorge_panesi,Jorge Panesi,ricardo_piglia,Ricardo Piglia,1
+jorge_panesi,Jorge Panesi,rita_hayworth,Rita Hayworth,1
+jorge_panesi,Jorge Panesi,tyrone_power,Tyrone Power,1
+jorge_panesi,Jorge Panesi,angel_rama,Ángel Rama,1
+jorge_panesi,Jorge Panesi,bajtin,Mijaíl Bajtín,1

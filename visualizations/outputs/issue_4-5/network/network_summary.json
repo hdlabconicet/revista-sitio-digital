@@ -1,0 +1,320 @@
+{
+  "generated": "2026-04-12T17:37:33.275729",
+  "network_stats": {
+    "nodes": 234,
+    "edges": 409,
+    "density": 0.007501559003704927,
+    "num_authors": 13,
+    "num_cited_only": 221,
+    "num_communities": 10,
+    "reciprocity": 0.0,
+    "avg_in_degree": 1.7478632478632479,
+    "avg_out_degree": 1.7478632478632479
+  },
+  "top_cited": [
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "centrality": 0.030042918454935622
+    },
+    {
+      "id": "leopoldo_lugones",
+      "name": "Leopoldo Lugones",
+      "centrality": 0.02575107296137339
+    },
+    {
+      "id": "roland_barthes",
+      "name": "Roland Barthes",
+      "centrality": 0.02575107296137339
+    },
+    {
+      "id": "sarmiento",
+      "name": "Domingo Faustino Sarmiento",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "canal_feijoo",
+      "name": "Bernardo Canal Feijóo",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "carlos_astrada",
+      "name": "Carlos Astrada",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "david_vinias",
+      "name": "David Viñas",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "angel_rama",
+      "name": "Ángel Rama",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "friedrich_nietzsche",
+      "name": "Friedrich Nietzsche",
+      "centrality": 0.02145922746781116
+    },
+    {
+      "id": "abelardo_castillo",
+      "name": "Abelardo Castillo",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "oswald_spengler",
+      "name": "Oswald Spengler",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "federico_sainz_de_robles",
+      "name": "Federico Carlos Sainz de Robles",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "esteban_echeverria",
+      "name": "Esteban Echeverría",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "juan_bautista_alberdi",
+      "name": "Juan Bautista Alberdi",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "manuel_galvez",
+      "name": "Manuel Gálvez",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "martinez_estrada",
+      "name": "Ezequiel Martínez Estrada",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "hector_murena",
+      "name": "Héctor Murena",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "jose_luis_romero",
+      "name": "José Luis Romero",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "luis_franco",
+      "name": "Luis Franco",
+      "centrality": 0.017167381974248927
+    },
+    {
+      "id": "raul_scalabrini_ortiz",
+      "name": "Raúl Scalabrini Ortiz",
+      "centrality": 0.017167381974248927
+    }
+  ],
+  "top_pagerank": [
+    {
+      "id": "diana_bilmezis",
+      "name": "Diana Bilmezis",
+      "pagerank": 0.0075737275727662205
+    },
+    {
+      "id": "macedonio_fernandez",
+      "name": "Macedonio Fernández",
+      "pagerank": 0.0071442035988034955
+    },
+    {
+      "id": "manuel_puig",
+      "name": "Manuel Puig",
+      "pagerank": 0.006528452825236813
+    },
+    {
+      "id": "felisberto_hernandez",
+      "name": "Felisberto Hernández",
+      "pagerank": 0.0062479167643233295
+    },
+    {
+      "id": "santiago_dabove",
+      "name": "Santiago Dabove",
+      "pagerank": 0.005597583168569348
+    },
+    {
+      "id": "leopoldo_lugones",
+      "name": "Leopoldo Lugones",
+      "pagerank": 0.005398951867476289
+    },
+    {
+      "id": "martin_heidegger",
+      "name": "Martin Heidegger",
+      "pagerank": 0.005335313742168849
+    },
+    {
+      "id": "borges",
+      "name": "Jorge Borges",
+      "pagerank": 0.0053198445693181644
+    },
+    {
+      "id": "holderlin",
+      "name": "Johann Hölderlin",
+      "pagerank": 0.0052686128605530565
+    },
+    {
+      "id": "lewis_carroll",
+      "name": "Lewis Carroll",
+      "pagerank": 0.0052362867264838025
+    },
+    {
+      "id": "james_joyce",
+      "name": "James Joyce",
+      "pagerank": 0.005043595290704845
+    },
+    {
+      "id": "jean_paul_sartre",
+      "name": "Jean-Paul Sartre",
+      "pagerank": 0.0048849348103531245
+    },
+    {
+      "id": "carlos_correas",
+      "name": "Carlos Correas",
+      "pagerank": 0.004821259018652202
+    },
+    {
+      "id": "kant",
+      "name": "Immanuel Kant",
+      "pagerank": 0.004820298714554015
+    },
+    {
+      "id": "roberto_arlt",
+      "name": "Roberto Arlt",
+      "pagerank": 0.004769191886800677
+    },
+    {
+      "id": "paul_valery",
+      "name": "Ambroise Valéry",
+      "pagerank": 0.0047648395545588605
+    },
+    {
+      "id": "roland_barthes",
+      "name": "Roland Barthes",
+      "pagerank": 0.004676452100654362
+    },
+    {
+      "id": "gustave_flaubert",
+      "name": "Gustave Flaubert",
+      "pagerank": 0.004632688305901424
+    },
+    {
+      "id": "ana_barrenechea",
+      "name": "Ana Barrenechea",
+      "pagerank": 0.004631936314267982
+    },
+    {
+      "id": "ernst_junger",
+      "name": "Ernst Jünger",
+      "pagerank": 0.004622082774938376
+    }
+  ],
+  "top_betweenness": [
+    {
+      "id": "luis_gusman",
+      "name": "Luis Gusmán",
+      "betweenness": 0.0011284593754624832
+    },
+    {
+      "id": "maurice_blanchot",
+      "name": "Maurice Blanchot",
+      "betweenness": 0.00018499334023975135
+    },
+    {
+      "id": "osvaldo_lamborghini",
+      "name": "Osvaldo Lamborghini",
+      "betweenness": 1.8499334023975136e-05
+    },
+    {
+      "id": "ramon_alcalde",
+      "name": "Ramón Alcalde",
+      "betweenness": 0.0
+    },
+    {
+      "id": "abelardo_castillo",
+      "name": "Abelardo Castillo",
+      "betweenness": 0.0
+    },
+    {
+      "id": "eduardo_gruner",
+      "name": "Eduardo Grüner",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jorge_jinkis",
+      "name": "Jorge Jinkis",
+      "betweenness": 0.0
+    },
+    {
+      "id": "oswald_spengler",
+      "name": "Oswald Spengler",
+      "betweenness": 0.0
+    },
+    {
+      "id": "federico_sainz_de_robles",
+      "name": "Federico Carlos Sainz de Robles",
+      "betweenness": 0.0
+    },
+    {
+      "id": "esteban_echeverria",
+      "name": "Esteban Echeverría",
+      "betweenness": 0.0
+    },
+    {
+      "id": "sarmiento",
+      "name": "Domingo Faustino Sarmiento",
+      "betweenness": 0.0
+    },
+    {
+      "id": "juan_bautista_alberdi",
+      "name": "Juan Bautista Alberdi",
+      "betweenness": 0.0
+    },
+    {
+      "id": "leopoldo_lugones",
+      "name": "Leopoldo Lugones",
+      "betweenness": 0.0
+    },
+    {
+      "id": "manuel_galvez",
+      "name": "Manuel Gálvez",
+      "betweenness": 0.0
+    },
+    {
+      "id": "martinez_estrada",
+      "name": "Ezequiel Martínez Estrada",
+      "betweenness": 0.0
+    },
+    {
+      "id": "canal_feijoo",
+      "name": "Bernardo Canal Feijóo",
+      "betweenness": 0.0
+    },
+    {
+      "id": "hector_murena",
+      "name": "Héctor Murena",
+      "betweenness": 0.0
+    },
+    {
+      "id": "carlos_astrada",
+      "name": "Carlos Astrada",
+      "betweenness": 0.0
+    },
+    {
+      "id": "jose_luis_romero",
+      "name": "José Luis Romero",
+      "betweenness": 0.0
+    },
+    {
+      "id": "luis_franco",
+      "name": "Luis Franco",
+      "betweenness": 0.0
+    }
+  ]
+}

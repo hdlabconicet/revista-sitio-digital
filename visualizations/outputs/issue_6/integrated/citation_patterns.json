@@ -1,0 +1,181 @@
+{
+  "overall": {
+    "citations_by_country": {
+      "Argentina": 141,
+      "France": 12,
+      "United States": 6,
+      "Greece": 5,
+      "Germany": 3,
+      "Imperio Romano": 2,
+      "Denmark": 1,
+      "Imperio Austríaco": 1,
+      "Italy": 1,
+      "Sliven, Bulgaria": 1,
+      "Russia": 1
+    },
+    "citations_by_region": {
+      "Southern Europe / Classical": 5,
+      "North America": 6,
+      "Latin America": 141,
+      "Scandinavia": 1,
+      "Other/Unknown": 6,
+      "Western Europe": 16,
+      "Eastern Europe": 1
+    },
+    "citations_by_period": {
+      "Classical Antiquity": 5,
+      "Long 19th Century": 14,
+      "World Wars Era": 142,
+      "Revolutionary Era": 3,
+      "Hellenistic/Roman": 2,
+      "Unknown": 3,
+      "Early Modern": 1,
+      "Contemporary": 6
+    }
+  },
+  "author_profiles": {
+    "ramon_alcalde": {
+      "name": "Ramón Alcalde",
+      "total_citations": 59,
+      "unique_citations": 30,
+      "countries_cited": {
+        "Argentina": 49,
+        "Imperio Romano": 2,
+        "Germany": 2,
+        "Greece": 1,
+        "United States": 1,
+        "Denmark": 1,
+        "Imperio Austríaco": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 1,
+        "North America": 1,
+        "Latin America": 49,
+        "Scandinavia": 1,
+        "Other/Unknown": 4,
+        "Western Europe": 2
+      },
+      "periods_cited": {
+        "Classical Antiquity": 1,
+        "Long 19th Century": 4,
+        "World Wars Era": 48,
+        "Revolutionary Era": 1,
+        "Hellenistic/Roman": 2,
+        "Unknown": 1,
+        "Early Modern": 1
+      }
+    },
+    "eduardo_gruner": {
+      "name": "Eduardo Grüner",
+      "total_citations": 12,
+      "unique_citations": 11,
+      "countries_cited": {
+        "Argentina": 10,
+        "Greece": 1,
+        "United States": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 1,
+        "North America": 1,
+        "Latin America": 10
+      },
+      "periods_cited": {
+        "Classical Antiquity": 1,
+        "Long 19th Century": 1,
+        "World Wars Era": 10
+      }
+    },
+    "luis_gusman": {
+      "name": "Luis Gusmán",
+      "total_citations": 60,
+      "unique_citations": 34,
+      "countries_cited": {
+        "Argentina": 43,
+        "France": 10,
+        "United States": 2,
+        "Greece": 1,
+        "Germany": 1,
+        "Italy": 1,
+        "Sliven, Bulgaria": 1,
+        "Russia": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 1,
+        "North America": 2,
+        "Latin America": 43,
+        "Western Europe": 12,
+        "Other/Unknown": 1,
+        "Eastern Europe": 1
+      },
+      "periods_cited": {
+        "Classical Antiquity": 1,
+        "Long 19th Century": 6,
+        "World Wars Era": 46,
+        "Contemporary": 5,
+        "Revolutionary Era": 1,
+        "Unknown": 1
+      }
+    },
+    "jorge_jinkis": {
+      "name": "Jorge Jinkis",
+      "total_citations": 34,
+      "unique_citations": 23,
+      "countries_cited": {
+        "Argentina": 29,
+        "France": 2,
+        "Greece": 1,
+        "United States": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 1,
+        "North America": 1,
+        "Latin America": 29,
+        "Other/Unknown": 1,
+        "Western Europe": 2
+      },
+      "periods_cited": {
+        "Classical Antiquity": 1,
+        "Long 19th Century": 2,
+        "World Wars Era": 28,
+        "Unknown": 1,
+        "Revolutionary Era": 1,
+        "Contemporary": 1
+      }
+    },
+    "mario_levin": {
+      "name": "Mario Levin",
+      "total_citations": 12,
+      "unique_citations": 11,
+      "countries_cited": {
+        "Argentina": 10,
+        "Greece": 1,
+        "United States": 1
+      },
+      "regions_cited": {
+        "Southern Europe / Classical": 1,
+        "North America": 1,
+        "Latin America": 10
+      },
+      "periods_cited": {
+        "Classical Antiquity": 1,
+        "Long 19th Century": 1,
+        "World Wars Era": 10
+      }
+    }
+  },
+  "cross_border": {
+    "Argentina": {
+      "Greece": 5,
+      "United States": 6,
+      "Argentina": 141,
+      "Denmark": 1,
+      "Imperio Romano": 2,
+      "Imperio Austríaco": 1,
+      "Germany": 3,
+      "France": 12,
+      "Italy": 1,
+      "Sliven, Bulgaria": 1,
+      "Russia": 1
+    }
+  }
+}

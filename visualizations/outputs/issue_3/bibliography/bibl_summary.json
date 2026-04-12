@@ -1,0 +1,81 @@
+{
+  "issue_id": "issue_3",
+  "generated": "2026-04-12T17:37:33.045082",
+  "total_title_refs": 271,
+  "unique_works_cited": 133,
+  "top_10_works": [
+    {
+      "bibl_id": "marmol_amalia",
+      "title": "Amalia",
+      "author": "Mármol, José",
+      "count": 19
+    },
+    {
+      "bibl_id": "revista_sitio",
+      "title": "Sitio",
+      "author": null,
+      "count": 14
+    },
+    {
+      "bibl_id": "wilcock_caos",
+      "title": "El caos",
+      "author": "Wilcock, Rodolfo",
+      "count": 12
+    },
+    {
+      "bibl_id": "gusman_corazon_junio",
+      "title": "En el corazón de junio",
+      "author": "Gusmán, Luis",
+      "count": 11
+    },
+    {
+      "bibl_id": "revista_temps_modernes",
+      "title": "Les Temps Modernes",
+      "author": null,
+      "count": 7
+    },
+    {
+      "bibl_id": "flaubert_salambo",
+      "title": "Salammbô",
+      "author": "Flaubert, Gustave",
+      "count": 7
+    },
+    {
+      "bibl_id": "angelino_recordando",
+      "title": "Recordando en el viento",
+      "author": "Angelino, Diego",
+      "count": 6
+    },
+    {
+      "bibl_id": "antologia_lit_fant",
+      "title": "Antología de la literatura fantástica",
+      "author": null,
+      "count": 5
+    },
+    {
+      "bibl_id": "walser_ayudante",
+      "title": "El ayudante",
+      "author": "Walser, Robert",
+      "count": 5
+    },
+    {
+      "bibl_id": "walser_von_gunten",
+      "title": "Jakob von Gunten",
+      "author": "Walser, Robert",
+      "count": 5
+    }
+  ],
+  "genre_distribution": {
+    "j": 47,
+    "m": 204,
+    "a": 9,
+    "unknown": 11
+  },
+  "language_distribution": {
+    "es": 265,
+    "fr": 2,
+    "en": 4
+  },
+  "network_nodes": 145,
+  "network_edges": 142
+}

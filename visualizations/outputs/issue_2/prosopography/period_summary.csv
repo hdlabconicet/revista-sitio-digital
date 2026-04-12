@@ -1,0 +1,12 @@
+period,count,earliest_birth,latest_birth
+Antiquity (Archaic),5,-750.0,-515.0
+Classical Antiquity,2,-384.0,-384.0
+Contemporary,6,1945.0,1958.0
+Early Modern,7,1623.0,1783.0
+Hellenistic/Roman,1,-4.0,-4.0
+Long 19th Century,38,1848.0,1913.0
+Medieval,3,1079.0,1265.0
+Renaissance,3,1533.0,1572.0
+Revolutionary Era,8,1797.0,1846.0
+Unknown,8,,
+World Wars Era,29,1914.0,1944.0

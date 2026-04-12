@@ -1,0 +1,369 @@
+{
+  "ramon_alcalde": {
+    "name": "Ramón Alcalde",
+    "num_texts": 2,
+    "unique_citations": 24,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Immanuel Kant",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "hector_grisafi": {
+    "name": "Héctor Grisafi",
+    "num_texts": 2,
+    "unique_citations": 24,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Immanuel Kant",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "eduardo_gruner": {
+    "name": "Eduardo Grüner",
+    "num_texts": 2,
+    "unique_citations": 24,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Immanuel Kant",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "luis_gusman": {
+    "name": "Luis Gusmán",
+    "num_texts": 3,
+    "unique_citations": 39,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Manuel Puig",
+      "Louis-Ferdinand Céline",
+      "Stendhal",
+      "José Hernández",
+      "Tata Ocampo",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Alberto Laiseca",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Osvaldo Lamborghini",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Maurice Blanchot",
+      "Victoria Ocampo",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Manuel S. Ocampo",
+      "Ricardo Piglia",
+      "Mika Waltari",
+      "Immanuel Kant",
+      "Florentina Ituarte",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Domingo Faustino Sarmiento",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Henry Rider Haggard",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "jorge_jinkis": {
+    "name": "Jorge Jinkis",
+    "num_texts": 2,
+    "unique_citations": 27,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Leopoldo Lugones",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Ricardo Piglia",
+      "Roberto Arlt",
+      "Immanuel Kant",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "hugo_savino": {
+    "name": "Hugo Savino",
+    "num_texts": 2,
+    "unique_citations": 24,
+    "cited_persons": [
+      "Osvaldo Rossler",
+      "José de San Martín",
+      "Julio Cortázar",
+      "Rafael Alberto Arrieta",
+      "Mario Benjamín Menéndez",
+      "Ronald Reagan",
+      "Juan Pablo II Wojtyła",
+      "Alfredo Palacios",
+      "Jorge Borges",
+      "Ezequiel Martínez Estrada",
+      "Paul Groussac",
+      "Eloísa",
+      "Nicanor Costa Méndez",
+      "Pedro Abelardo",
+      "Napoléon Bonaparte",
+      "Immanuel Kant",
+      "Leónidas I",
+      "Juan Domingo Perón",
+      "Aristóteles",
+      "Enrique Santos Discépolo",
+      "Nicómaco",
+      "Joseph Conrad",
+      "Bernardo Neustadt",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "murilo_rubiao": {
+    "name": "Murilo Rubião",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "diana_bellessi": {
+    "name": "Diana Bellessi",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "james_joyce": {
+    "name": "James Joyce",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "borges": {
+    "name": "Jorge Borges",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "enrique_pezzoni": {
+    "name": "Enrique Pezzoni",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "jose_salas_subirat": {
+    "name": "José Salas Subirat",
+    "num_texts": 1,
+    "unique_citations": 25,
+    "cited_persons": [
+      "de Nazaret Jesús",
+      "Marcel Proust",
+      "Santiago Rueda",
+      "Rainer Rilke",
+      "Sigmund Freud",
+      "Charles Baudelaire",
+      "de Elea Parménides",
+      "Oscar Wilde",
+      "Gabriel García Márquez",
+      "Jorge Jinkis",
+      "Stéphane Mallarmé",
+      "Arthur Rimbaud",
+      "Jorge Borges",
+      "Edgar Poe",
+      "Heráclito",
+      "Carl Gustav Jung",
+      "Comte Lautréamont",
+      "Homero",
+      "Max Dickmann",
+      "James Joyce",
+      "William Blake",
+      "Ambroise Valéry",
+      "Dante Alighieri",
+      "Leonid Andréiev",
+      "Franz Kafka"
+    ]
+  },
+  "ramon_bell": {
+    "name": "ramon_bell",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "roberto_echavarren": {
+    "name": "Roberto Echavarren",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "delia_passini": {
+    "name": "delia_passini",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "alicia_gutierrez_reto": {
+    "name": "Alicia Gutiérrez Reto",
+    "num_texts": 1,
+    "unique_citations": 2,
+    "cited_persons": [
+      "Franz Schubert",
+      "Noemí Ulla"
+    ]
+  },
+  "delia_pasini": {
+    "name": "Delia Pasini",
+    "num_texts": 1,
+    "unique_citations": 1,
+    "cited_persons": [
+      "Arturo Carrera"
+    ]
+  },
+  "beatriz_castillo": {
+    "name": "Beatriz Castillo",
+    "num_texts": 1,
+    "unique_citations": 4,
+    "cited_persons": [
+      "Roberto Arlt",
+      "Marcel Proust",
+      "Jorge Cruz",
+      "Eduardo Mallea"
+    ]
+  },
+  "liliana_heer": {
+    "name": "Liliana Heer",
+    "num_texts": 2,
+    "unique_citations": 2,
+    "cited_persons": [
+      "Sylvia Molloy",
+      "Friedrich Nietzsche"
+    ]
+  },
+  "luis_chitarroni": {
+    "name": "Luis Chitarroni",
+    "num_texts": 1,
+    "unique_citations": 15,
+    "cited_persons": [
+      "Delia Pasini",
+      "Safo",
+      "André Pieyre de Mandiargues",
+      "Alejandra Pizarnik",
+      "Giordano Bruno",
+      "William Butler Yeats",
+      "Comte Lautréamont",
+      "John Donne",
+      "Roland Barthes",
+      "Sylvia Plath",
+      "Olga Orozco",
+      "Fred Hoyle",
+      "Arturo Carrera",
+      "Silvina Ocampo",
+      "Octavio Paz"
+    ]
+  },
+  "ricardo_zelarayan": {
+    "name": "Ricardo Zelarayán",
+    "num_texts": 1,
+    "unique_citations": 0,
+    "cited_persons": []
+  },
+  "haroldo_campos": {
+    "name": "Haroldo de Campos",
+    "num_texts": 1,
+    "unique_citations": 1,
+    "cited_persons": [
+      "Johann Goethe"
+    ]
+  },
+  "leonora_carrington": {
+    "name": "Leonora Carrington",
+    "num_texts": 1,
+    "unique_citations": 3,
+    "cited_persons": [
+      "Blaise Pascal",
+      "Francisco Franco",
+      "Alfonso XIII de Borbón"
+    ]
+  }
+}

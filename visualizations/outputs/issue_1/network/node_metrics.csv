@@ -1,0 +1,362 @@
+id,name,node_type,birth_year,birth_place,in_degree,out_degree,betweenness,pagerank,eigenvector
+jesus,de Nazaret Jesús,cited,-4.0,Imperio Romano (Judea),3,0,0.0,0.004744,0.117853
+esteban_echeverria,Esteban Echeverría,cited,1805.0,Virreinato del Río de la Plata,1,0,0.0,0.004642,3e-06
+silvina_ocampo,Silvina Ocampo,cited,1903.0,Argentina,1,0,0.0,0.004367,0.0
+ruben_dario,Rubén Darío,cited,1867.0,Nicaragua,2,0,0.0,0.004252,3e-06
+borges,Jorge Borges,cited,1899.0,Argentina,7,0,0.0,0.003941,0.117856
+catherine_yarrow,Catherine Yarrow,cited,1904.0,Inglaterra,1,0,0.0,0.003848,0.0
+rabelais,François Rabelais,cited,1494.0,Francia,1,0,0.0,0.003596,0.0
+felisberto_hernandez,Felisberto Hernández,cited,1902.0,Uruguay,1,0,0.0,0.003389,0.0
+leon_bloy,Léon Bloy,author,1846.0,Francia,2,19,0.000526,0.00335,0.117851
+virgilio_piniera,Virgilio Piñera,cited,1912.0,Cuba,3,0,0.0,0.003326,3e-06
+cabrera_infante,Guillermo Cabrera Infante,cited,1929.0,Cuba,1,0,0.0,0.003267,0.0
+edouard_drumont,Édouard Drumont,cited,1844.0,Francia,2,0,0.0,0.003183,0.117853
+samuel_beckett,Samuel Beckett,cited,1906.0,Irlanda,4,0,0.0,0.00316,0.117851
+freud,Sigmund Freud,cited,1856.0,Imperio Austríaco (actual República Checa),2,0,0.0,0.003146,0.0
+balzac,Honoré Balzac,cited,1799.0,Francia,3,0,0.0,0.003131,0.117855
+paul_valery,Ambroise Valéry,cited,1871.0,Francia,4,0,0.0,0.003118,0.117853
+cecilia_de_benedetti,Cecilia Benedit de Debenedetti,cited,1895.0,Argentina,1,0,0.0,0.003111,0.0
+ernesto_sabato,Ernesto Sabato,cited,1911.0,Argentina,1,0,0.0,0.003111,0.0
+luis_gusman,Luis Gusmán,author,1944.0,Argentina,1,3,2.3e-05,0.003111,0.0
+max_ernst,Max Ernst,cited,1891.0,Imperio alemán (actual Alemania),1,0,0.0,0.003075,0.0
+georges_bataille,Georges Bataille,cited,1897.0,Francia,3,0,0.0,0.003065,3e-06
+garcia_marquez,Gabriel García Márquez,cited,1927.0,Colombia,1,0,0.0,0.003043,3e-06
+alejo_carpentier,Alejo Carpentier,cited,1904.0,Suiza,1,0,0.0,0.003043,3e-06
+mallarme,Stéphane Mallarmé,cited,1842.0,Francia,2,0,0.0,0.003038,3e-06
+ernest_renan,Joseph Renan,cited,1823.0,Francia,2,0,0.0,0.003033,0.235701
+edgar_allan_poe,Edgar Poe,cited,1809.0,Estados Unidos,2,0,0.0,0.003031,3e-06
+gustave_flaubert,Gustave Flaubert,cited,1821.0,Francia,2,0,0.0,0.00302,3e-06
+hugo_savino,Hugo Savino,cited,1945.0,Argentina,1,0,0.0,0.003014,3e-06
+stendhal,Stendhal,cited,1783.0,Francia,1,0,0.0,0.003014,3e-06
+melville,Herman Melville,cited,1819.0,Estados Unidos,1,0,0.0,0.003014,3e-06
+sergei_eisenstein,Sergei Eisenstein,cited,1898.0,Imperio Ruso (actual Letonia),2,0,0.0,0.003001,3e-06
+martin_lutero,Martín Lutero,cited,1483.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.002994,0.11785
+leo_strauss,Leo Strauss,author,1899.0,Alemania,1,44,0.00065,0.002994,0.11785
+leopoldo_lugones,Leopoldo Lugones,cited,1874.0,Argentina,1,0,0.0,0.002994,0.11785
+andre_gide,André Gide,cited,1869.0,Francia,1,0,0.0,0.002989,3e-06
+cremonini,Leonardo Cremonini,cited,1925.0,Italia,1,0,0.0,0.002977,3e-06
+james_joyce,James Joyce,cited,1882.0,Irlanda,4,0,0.0,0.002948,1e-06
+emile_zola,Émile Zola,author,1840.0,Francia,1,7,3.9e-05,0.002925,0.0
+anderson_imbert,Enrique Anderson Imbert,cited,1910.0,Argentina,1,0,0.0,0.002915,3e-06
+dino_buzzati,Dino Buzzati,cited,1906.0,Italia,1,0,0.0,0.002913,3e-06
+roland_barthes,Roland Barthes,cited,1915.0,Francia,2,0,0.0,0.002897,3e-06
+schleiermacher,Friedrich Schleiermacher,cited,1768.0,Prusia (actual Polonia),2,0,0.0,0.002894,0.11785
+luis_bunuel,Luis Buñuel,cited,1900.0,España,2,0,0.0,0.002891,0.0
+lacan,Jacques Lacan,cited,1901.0,Francia,2,0,0.0,0.002891,0.0
+aristoteles,Aristóteles,cited,-384.0,Grecia Antigua,3,0,0.0,0.002867,0.117851
+thomas_hobbes,Thomas Hobbes,cited,1588.0,Inglaterra,1,0,0.0,0.002855,0.11785
+orson_welles,Orson Welles,cited,1915.0,Estados Unidos,2,0,0.0,0.002853,0.0
+platon,Platón,cited,-428.0,Grecia Antigua,2,0,0.0,0.002832,0.11785
+alfred_hitchcock,Alfred Hitchcock,cited,1899.0,Inglaterra,2,0,0.0,0.00283,3e-06
+socrates,Sócrates,cited,-470.0,Grecia Antigua,1,0,0.0,0.002815,0.11785
+baudelaire,Charles Baudelaire,cited,1821.0,Francia,4,0,0.0,0.002813,3e-06
+armand_robin,Armand Robin,cited,1912.0,Francia,1,0,0.0,0.002806,0.0
+leonard_forster,Leonard Forster,cited,1913.0,Inglaterra,1,0,0.0,0.002806,0.0
+walter_benjamin,Walter Benjamin,cited,1892.0,Imperio alemán (actual Alemania),1,0,0.0,0.002806,0.0
+holderlin,Johann Hölderlin,cited,1770.0,Ducado de Wurtemberg (actual Alemania),1,0,0.0,0.002806,0.0
+macedonio_fernandez,Macedonio Fernández,cited,1874.0,Argentina,1,0,0.0,0.002798,0.0
+kafka,Franz Kafka,cited,1883.0,"Praga, Imperio Austrohúngaro",3,0,0.0,0.002796,1e-06
+shakespeare,William Shakespeare,cited,1564.0,Inglaterra,3,0,0.0,0.002795,0.117853
+joseph_conrad,Joseph Conrad,cited,1857.0,Imperio Ruso (actual Ucrania),2,0,0.0,0.002795,0.0
+michel_foucault,Michel Foucault,cited,1926.0,Francia,3,0,0.0,0.002794,3e-06
+jacquemart_de_hesdin,Jacquemart Hesdin,cited,1355.0,Francia (Artois),1,0,0.0,0.002787,3e-06
+bioy_casares,Adolfo Bioy Casares,cited,1914.0,Argentina,1,0,0.0,0.002787,3e-06
+mahoma,Mahoma,cited,570.0,Arabia (actual Arabia Saudita),1,0,0.0,0.002787,3e-06
+godofredo_viterbo,de Viterbo Godofredo,cited,1120.0,Estados Pontificios (actual Italia),1,0,0.0,0.002787,3e-06
+julio_cortazar,Julio Cortázar,cited,1914.0,Bélgica,1,0,0.0,0.002787,3e-06
+erwin_panofsky,Erwin Panofsky,cited,1892.0,Imperio alemán (actual Alemania),1,0,0.0,0.002786,3e-06
+velazquez,Diego Velázquez,cited,1599.0,España,1,0,0.0,0.002786,3e-06
+jean_eustache,Jean Eustache,cited,1938.0,Francia,1,0,0.0,0.002786,3e-06
+monory,Jacques Monory,cited,1924.0,Francia,1,0,0.0,0.002786,3e-06
+durero,Alberto Durero,cited,1471.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.002786,3e-06
+bacon,Francis Bacon,cited,1909.0,Irlanda,1,0,0.0,0.002786,3e-06
+ralph_goings,Ralph Goings,cited,1928.0,Estados Unidos,1,0,0.0,0.002786,3e-06
+pierre_mabille,Pierre Mabille,cited,1904.0,"Reims, Francia",1,0,0.0,0.002778,0.0
+francisco_franco,Francisco Franco,cited,1892.0,España,1,0,0.0,0.002778,0.0
+gotthold_lessing,Gotthold Lessing,cited,1729.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.002776,0.11785
+averroes,Averroes,cited,1126.0,Al-Ándalus (actual España),1,0,0.0,0.002776,0.11785
+montesquieu,Charles-Louis Montesquieu,cited,1689.0,Francia,1,0,0.0,0.002776,0.11785
+pedro_salinas,Pedro Salinas,cited,1891.0,España,1,0,0.0,0.002774,3e-06
+henry_james,Henry James,cited,1843.0,Estados Unidos,1,0,0.0,0.002769,0.0
+adolfo_aristarain,Adolfo Aristarain,cited,1943.0,Argentina,1,0,0.0,0.002766,0.0
+andre_bazin,André Bazin,cited,1918.0,Francia,1,0,0.0,0.002766,0.0
+tarkovsky,Andrei Tarkovsky,cited,1932.0,Unión Soviética,1,0,0.0,0.002766,0.0
+andrzej_wajda,Andrzej Wajda,cited,1926.0,Polonia,1,0,0.0,0.002766,0.0
+john_cassavetes,John Cassavetes,cited,1929.0,Estados Unidos,1,0,0.0,0.002766,0.0
+carlos_saura,Carlos Saura,cited,1932.0,España,1,0,0.0,0.002766,0.0
+fritz_lang,Fritz Lang,cited,1890.0,Imperio Austrohúngaro (actual Austria),1,0,0.0,0.002766,0.0
+alain_resnais,Alain Resnais,cited,1922.0,Francia,1,0,0.0,0.002766,0.0
+mizoguchi,Kenji Mizoguchi,cited,1898.0,Japón,1,0,0.0,0.002766,0.0
+king_vidor,King Vidor,cited,1894.0,Estados Unidos,1,0,0.0,0.002766,0.0
+carl_dreyer,Carl Dreyer,cited,1889.0,Dinamarca,1,0,0.0,0.002766,0.0
+pascal_bonitzer,Pascal Bonitzer,author,1946.0,Francia,1,22,0.000155,0.002766,0.0
+oscar_masotta,Óscar Masotta,cited,1930.0,Argentina,1,0,0.0,0.002766,0.0
+walter_scott,Walter Scott,cited,1771.0,Escocia,1,0,0.0,0.002761,0.0
+novalis,Novalis,cited,1772.0,Electorado de Sajonia (actual Alemania),1,0,0.0,0.002757,0.0
+goethe,Johann Goethe,cited,1749.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.002757,0.0
+august_schlegel,August Schlegel,cited,1767.0,Electorado de Hannover (actual Alemania),1,0,0.0,0.002757,0.0
+wilhelm_von_humboldt,Wilhelm Humboldt,cited,1767.0,Prusia (actual Alemania),1,0,0.0,0.002757,0.0
+jorge_jinkis,Jorge Jinkis,author,1943.0,Argentina,2,7,0.000712,0.002757,0.11785
+cervantes,Miguel Cervantes,cited,1547.0,España,1,0,0.0,0.002757,0.0
+jonathan_swift,Jonathan Swift,cited,1667.0,Irlanda,2,0,0.0,0.002753,0.0
+jose_donoso,José Donoso,cited,1924.0,Chile,1,0,0.0,0.002746,0.0
+vladimir_nabokov,Vladimir Nabokov,cited,1899.0,"San Petesburgo, Imperio Ruso",1,0,0.0,0.002746,0.0
+juan_goytisolo,Juan Goytisolo,cited,1931.0,España,1,0,0.0,0.002746,0.0
+jose_marti,José Martí,cited,1853.0,Capitanía General de Cuba (actual Cuba),1,0,0.0,0.002746,0.0
+laurence_sterne,Laurence Sterne,cited,1713.0,Irlanda,1,0,0.0,0.002746,0.0
+ken_russell,Ken Russell,cited,1927.0,Inglaterra,1,0,0.0,0.002746,0.0
+alfred_korzybski,Alfred Korzybski,cited,1879.0,Polonia (Imperio Ruso),1,0,0.0,0.002746,0.0
+jose_valverde,José Valverde,cited,1926.0,España,1,0,0.0,0.002746,0.0
+marcel_duchamp,Marcel Duchamp,cited,1887.0,Francia,1,0,0.0,0.002746,0.0
+robert_montgomery,Robert Montgomery,cited,1904.0,Estados Unidos,1,0,0.0,0.002746,0.0
+emir_rodriguez_monegal,Emir Rodríguez Monegal,cited,1921.0,Uruguay,1,0,0.0,0.002746,0.0
+severo_sarduy,Severo Sarduy,cited,1937.0,Cuba,1,0,0.0,0.002746,0.0
+louis_ferdinand_celine,Louis-Ferdinand Céline,cited,1894.0,Francia,1,0,0.0,0.002743,0.0
+victor_hugo,Victor Hugo,cited,1802.0,Francia,2,0,0.0,0.002741,3e-06
+spinoza,Baruch Spinoza,cited,1632.0,República de los Países Bajos,1,0,0.0,0.002737,0.11785
+edward_gibbon,Edward Gibbon,cited,1737.0,Inglaterra,1,0,0.0,0.002737,0.11785
+lezama_lima,José Lezama Lima,cited,1910.0,Cuba,1,0,0.0,0.002736,3e-06
+san_juan_persona,San Juan,cited,6.0,Imperio Romano (Galilea),1,0,0.0,0.002734,0.117853
+todorov,Tzvetan Todorov,cited,1939.0,Bulgaria,2,0,0.0,0.002731,0.0
+pascal,Blaise Pascal,cited,1623.0,Francia,3,0,0.0,0.00273,0.117853
+ciro_grande,II Ciro,cited,-600.0,Imperio Medo (actual Irán),1,0,0.0,0.002728,0.0
+zenon,de Elea Zenón,cited,-490.0,Grecia Antigua (Magna Grecia),1,0,0.0,0.002728,0.0
+marcel_proust,Marcel Proust,cited,1871.0,Francia,1,0,0.0,0.002728,0.0
+ezra_pound,Ezra Pound,cited,1885.0,Estados Unidos,2,0,0.0,0.002725,0.0
+adolf_hitler,Adolf Hitler,cited,1889.0,Imperio Austrohúngaro (Actual Austria),2,0,0.0,0.002724,0.0
+antonello_da_messina,da Messina Antonello,cited,1430.0,Reino de Sicilia (actual Italia),1,0,0.0,0.002722,3e-06
+valerio_adami,Valerio Adami,cited,1935.0,Italia,1,0,0.0,0.002722,3e-06
+antonioni,Michelangelo Antonioni,cited,1912.0,Italia,1,0,0.0,0.002722,3e-06
+felipeiv,IV Felipe,cited,1605.0,España,1,0,0.0,0.002722,3e-06
+francois_truffaut,François Truffaut,cited,1932.0,Francia,1,0,0.0,0.002722,3e-06
+jean_luc_godard,Jean-Luc Godard,cited,1930.0,Francia,1,0,0.0,0.002722,3e-06
+robert_bresson,Robert Bresson,cited,1901.0,Francia,1,0,0.0,0.002722,3e-06
+straub,Jean-Marie Straub,cited,1933.0,Francia,1,0,0.0,0.002722,3e-06
+alex_barbier,Alex Barbier,cited,1950.0,Francia,1,0,0.0,0.002722,3e-06
+duras,Marguerite Duras,cited,1914.0,Indochina Francesa (actual Vietnam),1,0,0.0,0.002722,3e-06
+federico_garcia_lorca,Federico García Lorca,cited,1898.0,España,1,0,0.0,0.002718,0.0
+renato_leduc,Renato Leduc,cited,1897.0,México,1,0,0.0,0.002718,0.0
+cesar_moro,César Moro,cited,1903.0,Perú,1,0,0.0,0.002718,0.0
+benjamin_peret,Benjamin Péret,cited,1899.0,Francia,1,0,0.0,0.002718,0.0
+julian_martel,Julián Martel,cited,1867.0,Argentina,1,0,0.0,0.002715,0.0
+tomas_moro,Tomás Moro,cited,1478.0,Inglaterra,2,0,0.0,0.002715,0.11785
+da_vinci,Leonardo Vinci,cited,1452.0,República de Florencia (actual Italia),2,0,0.0,0.002714,3e-06
+sylvia_molloy,Sylvia Molloy,author,1938.0,Argentina,1,15,0.000108,0.002714,0.0
+ana_barrenechea,Ana Barrenechea,author,1913.0,Argentina,1,11,7e-05,0.002714,0.0
+raissa_umansof,Raïssa Oumançoff,cited,1883.0,Imperio Ruso,2,0,0.0,0.002713,0.117853
+san_pablo_persona,de Tarso Pablo,cited,5.0,Imperio Romano (actual Turquía),2,0,0.0,0.002713,0.117853
+karl_marx,Karl Marx,cited,1818.0,Prusia (actual Alemania),2,0,0.0,0.00271,0.0
+valery_larbaud,Valery Larbaud,cited,1881.0,Francia,1,0,0.0,0.002708,0.0
+gaston_bachelard,Gaston Bachelard,cited,1884.0,Francia,1,0,0.0,0.002708,0.0
+henri_meschonnic,Henri Meschonnic,cited,1932.0,Francia,1,0,0.0,0.002708,0.0
+edward_said,Edward Said,cited,1935.0,"Jerusalén, Mandato Británico de Palestina",1,0,0.0,0.002708,0.0
+johann_herder,Johann Herder,cited,1744.0,Prusia (actual Polonia),1,0,0.0,0.002708,0.0
+paul_celan,Paul Celan,cited,1920.0,Reino de Rumania (actual Ucrania),1,0,0.0,0.002708,0.0
+george_steiner,George Steiner,cited,1929.0,Francia,1,0,0.0,0.002708,0.0
+rilke,Rainer Rilke,cited,1875.0,Imperio Austrohúngaro (actual República Checa),1,0,0.0,0.002708,0.0
+stefan_george,Stefan George,cited,1868.0,Gran Ducado de Hesse (actual Alemania),1,0,0.0,0.002708,0.0
+ernest_hello,Ernest Hello,cited,1828.0,Francia,2,0,0.0,0.002708,0.117853
+gerard_nerval,Gérard Nerval,cited,1808.0,Francia,1,0,0.0,0.002708,0.0
+pieter_hooft,Pieter Hooft,cited,1581.0,República de los Países Bajos,1,0,0.0,0.002708,0.0
+john_milton,John Milton,cited,1608.0,Inglaterra,1,0,0.0,0.002708,0.0
+franz_rosenzweig,Franz Rosenzweig,cited,1886.0,Imperio alemán,1,0,0.0,0.002708,0.0
+pierre_bayle,Pierre Bayle,cited,1647.0,Francia,1,0,0.0,0.002698,0.11785
+grotius,Hugo Grotius,cited,1583.0,República de los Países Bajos,1,0,0.0,0.002698,0.11785
+maquiavelo,Niccolò Machiavelli,cited,1469.0,República de Florencia (actual Italia),1,0,0.0,0.002698,0.11785
+voltaire,Voltaire,cited,1694.0,Francia,1,0,0.0,0.002698,0.11785
+christian_wolff,Christian Wolff,cited,1679.0,Alemania (actual Polonia),1,0,0.0,0.002698,0.11785
+john_donne,John Donne,cited,1572.0,Inglaterra,1,0,0.0,0.002698,0.11785
+james_shotwell,James Shotwell,cited,1874.0,Canadá,1,0,0.0,0.002698,0.11785
+tucidides,Tucídides,cited,-460.0,Grecia Antigua,1,0,0.0,0.002698,0.11785
+maimonides,Maimónides,cited,1138.0,Al-Ándalus (actual España),1,0,0.0,0.002698,0.11785
+kant,Immanuel Kant,cited,1724.0,Prusia (actual Rusia),1,0,0.0,0.002698,0.11785
+parmenides,de Elea Parménides,cited,-515.0,Grecia Antigua (Magna Grecia),1,0,0.0,0.002698,0.11785
+william_lecky,William Lecky,cited,1838.0,Irlanda,1,0,0.0,0.002698,0.11785
+protagoras,Protágoras,cited,-490.0,Grecia Antigua,1,0,0.0,0.002698,0.11785
+anaxagoras,Anaxágoras,cited,-500.0,Grecia Antigua,1,0,0.0,0.002698,0.11785
+laboulaye,Édouard Laboulaye,cited,1811.0,Francia,1,0,0.0,0.002698,0.11785
+hilail_gildin,Hilail Gildin,cited,1929.0,Estados Unidos,1,0,0.0,0.002698,0.11785
+john_locke,John Locke,cited,1632.0,Inglaterra,1,0,0.0,0.002698,0.11785
+rene_descartes,René Descartes,cited,1596.0,Francia,1,0,0.0,0.002698,0.11785
+xenofon,Jenofonte,cited,-431.0,Grecia Antigua,1,0,0.0,0.002698,0.11785
+avicena,Avicena,cited,980.0,Imperio Samánida (actual Uzbekistán),1,0,0.0,0.002698,0.11785
+eusebio_de_cesarea,de Cesarea Eusebio,cited,263.0,Imperio Romano (actual Israel),1,0,0.0,0.002698,0.11785
+edelstein,Ludwig Edelstein,cited,1902.0,Berlín (Alemania),1,0,0.0,0.002698,0.11785
+george_sabine,George Sabine,cited,1880.0,Estados Unidos,1,0,0.0,0.002698,0.11785
+edmund_burke,Edmund Burke,cited,1729.0,Irlanda,1,0,0.0,0.002698,0.11785
+nicolas_condorcet,Nicolas Condorcet,cited,1743.0,Francia,1,0,0.0,0.002698,0.11785
+thomas_carlyle,Thomas Carlyle,cited,1795.0,Escocia,1,0,0.0,0.002698,0.11785
+maupassant,Guy Maupassant,cited,1850.0,Francia,1,0,0.0,0.002698,0.0
+rousseau,Jean-Jacques Rousseau,cited,1712.0,República de Ginebra (actual Suiza),1,0,0.0,0.002698,0.11785
+alcibiades,Alcibíades,cited,-450.0,Grecia Antigua (Atenas),1,0,0.0,0.002698,0.11785
+homero,Homero,cited,-750.0,Grecia Antigua,1,0,0.0,0.002698,0.11785
+jean_bodin,Jean Bodin,cited,1530.0,Francia,1,0,0.0,0.002698,0.11785
+jose_joaquin_olmedo,José Olmedo,cited,1780.0,Virreinato de Nueva Granada (actual Ecuador),1,0,0.0,0.002697,3e-06
+octavio_paz,Octavio Paz,cited,1914.0,México,1,0,0.0,0.002697,3e-06
+jose_maria_heredia,José Heredia,cited,1803.0,Capitanía General de Cuba (actual Cuba),1,0,0.0,0.002697,3e-06
+juan_valera,Juan Valera,cited,1824.0,España,1,0,0.0,0.002697,3e-06
+cornelio_agrippa,Heinrich Agrippa,cited,1486.0,Sacro Imperio Romano Germánico (actual Alemania),1,0,0.0,0.002697,3e-06
+henriquez_urenia,Pedro Henríquez Ureña,cited,1884.0,República Dominicana,1,0,0.0,0.002697,3e-06
+estrada_cabrera,Manuel Estrada Cabrera,cited,1857.0,Guatemala,1,0,0.0,0.002697,3e-06
+san_lucas,San Lucas,cited,,Imperio Romano (actual Turquía),1,0,0.0,0.002696,0.117853
+la_fontaine,Jean La Fontaine,cited,1621.0,Francia,1,0,0.0,0.002696,0.117853
+ptolomeo,I Ptolomeo,cited,-367.0,Reino de Macedonia (actual Grecia),1,0,0.0,0.002696,0.117853
+antioco,IV Antíoco,cited,-215.0,Imperio Seléucida (actual Italia),1,0,0.0,0.002696,0.117853
+san_francisco_asis,de Asís Francisco,cited,1181.0,Ducado de Spoleto (actual Italia),1,0,0.0,0.002696,0.117853
+san_agustin,de Hipona Agustín,cited,354.0,Imperio Romano (actual Argelia),1,0,0.0,0.002696,0.117853
+midas,Midas,cited,,Frigia (actual Turquía),1,0,0.0,0.002696,0.117853
+san_pedro_persona,San Pedro,cited,-1.0,Imperio Romano (Galilea),1,0,0.0,0.002696,0.117853
+felipe_augusto,II Felipe,cited,1165.0,Francia,1,0,0.0,0.002696,0.117853
+federico_barbarroja,I Federico,cited,1122.0,Ducado de Suabia (actual Alemania),1,0,0.0,0.002696,0.117853
+juan_garcia_ponce,Juan García Ponce,cited,1932.0,México,1,0,0.0,0.002694,0.0
+gilbert_ryle,Gilbert Ryle,cited,1900.0,Inglaterra,1,0,0.0,0.002694,0.0
+edmund_husserl,Edmund Husserl,cited,1859.0,Imperio Austríaco (Actual República Checa),1,0,0.0,0.002694,0.0
+klossowski,Pierre Klossowski,cited,1905.0,Francia,1,0,0.0,0.002694,0.0
+roberto_echavarren,Roberto Echavarren,cited,1944.0,Uruguay,1,0,0.0,0.002694,0.0
+robert_musil,Robert Musil,cited,1880.0,Imperio Austrohúngaro (Actual Austria),1,0,0.0,0.002694,0.0
+zaratustra,Zaratustra,cited,-628.0,Imperio Medo (actual Irán),1,0,0.0,0.002694,0.0
+julio_cesar,Julio César,cited,-100.0,República Romana (actual Italia),1,0,0.0,0.002694,0.0
+plinio,el Viejo Plinio,cited,23.0,Imperio Romano (actual Italia),1,0,0.0,0.002694,0.0
+henri_bergson,Henri Bergson,cited,1859.0,Francia,1,0,0.0,0.002694,0.0
+hugo_wast,Hugo Wast,cited,1883.0,Argentina,1,0,0.0,0.002693,0.0
+petrarca,Francesco Petrarca,cited,1304.0,República de Florencia (actual Italia),1,0,0.0,0.002692,0.0
+bajtin,Mijaíl Bajtín,cited,1895.0,"Oriol, Imperio Ruso",1,0,0.0,0.002692,0.0
+gilbert_dubois,Claude-Gilbert Dubois,cited,1933.0,Francia,1,0,0.0,0.002692,0.0
+simonides,de Ceos Simónides,cited,-556.0,Grecia,1,0,0.0,0.002692,0.0
+spitzer,Leo Spitzer,cited,1887.0,Imperio Austrohúngaro (actual Austria),1,0,0.0,0.002692,0.0
+alfred_dreyfus,Alfred Dreyfus,cited,1859.0,Francia,1,0,0.0,0.002687,0.0
+friedrich_nietzsche,Friedrich Nietzsche,cited,1844.0,Prusia (actual Alemania),2,0,0.0,0.002681,0.0
+jacques_maritain,Jacques Maritain,cited,1882.0,Francia,1,0,0.0,0.002681,0.0
+eugene_bontoux,Eugène Bontoux,cited,1820.0,Francia,1,0,0.0,0.002681,0.0
+joseph_bollery,Joseph Bollery,cited,1880.0,Francia,1,0,0.0,0.002681,0.0
+theodor_herzl,Theodor Herzl,cited,1860.0,Imperio Austríaco (actual Hungría),1,0,0.0,0.002681,0.0
+michel_leiris,Michel Leiris,cited,1901.0,Francia,1,0,0.0,0.002676,0.0
+miguel_d_ors,Miguel d'Ors,cited,1946.0,España,1,0,0.0,0.002676,0.0
+hermes_trismegisto,Trismegisto Hermes,cited,,,1,0,0.0,0.002676,0.0
+pierre_ronsard,Pierre Ronsard,cited,1524.0,Francia,1,0,0.0,0.002676,0.0
+arcimboldo,Giuseppe Arcimboldo,cited,1526.0,Ducado de Milán (actual Italia),1,0,0.0,0.002676,0.0
+maurits_escher,Maurits Escher,cited,1898.0,Países Bajos,1,0,0.0,0.002676,0.0
+della_mirandola,Giovanni Pico della Mirandola,cited,1463.0,Ducado de Mirandola (actual Italia),1,0,0.0,0.002676,0.0
+erich_auerbach,Erich Auerbach,cited,1892.0,Imperio alemán,1,0,0.0,0.002676,0.0
+luciano_samosata,de Samósata Luciano,cited,125.0,Imperio Romano (actual Turquía),1,0,0.0,0.002676,0.0
+nicolas_copernico,Nicolás Copérnico,cited,1473.0,Reino de Polonia (actual Polonia),1,0,0.0,0.002676,0.0
+andres_vesalio,Andrés Vesalio,cited,1514.0,Países Bajos de los Habsburgo (actual Bélgica),1,0,0.0,0.002676,0.0
+ernst_curtius,Ernst Curtius,cited,1814.0,Confederación Germánica (actual Alemania),1,0,0.0,0.002676,0.0
+martin_heidegger,Martin Heidegger,cited,1889.0,Imperio alemán (actual Alemania),1,0,0.0,0.002676,0.0
+harold_bloom,Harold Bloom,cited,1930.0,Estados Unidos,1,0,0.0,0.002676,0.0
+ts_eliot,T. Eliot,cited,1888.0,Estados Unidos,1,0,0.0,0.002676,0.0
+fermat,Pierre Fermat,cited,1607.0,Francia,1,0,0.0,0.002676,0.0
+simmias,de Tebas Simmias,cited,-430.0,Grecia Antigua,1,0,0.0,0.002676,0.0
+romero_martinez,Miguel Romero Martínez,cited,1945.0,España,1,0,0.0,0.002676,0.0
+merleau_ponty,Maurice Merleau-Ponty,cited,1908.0,Francia,1,0,0.0,0.002676,0.0
+de_dieguez,Manuel Diéguez,cited,1922.0,Francia (actual Marruecos),1,0,0.0,0.002676,0.0
+horacio,Quinto Horacio,cited,-65.0,República Romana (actual Italia),1,0,0.0,0.002676,0.0
+alphonse_daudet,Alphonse Daudet,cited,1840.0,Francia,1,0,0.0,0.002676,0.0
+miguel_saenz,Miguel Sáenz,cited,1932.0,Protectorado español de Marruecos,1,0,0.0,0.002676,0.0
+alberto_gerchunoff,Alberto Gerchunoff,cited,1883.0,Imperio Ruso (actual Ucrania),1,0,0.0,0.002676,0.0
+george_gilder,George Gilder,cited,1939.0,Estados Unidos,1,0,0.0,0.002676,0.0
+gunter_grass,Günter Grass,cited,1927.0,Ciudad Libre de Danzig (actual Polonia),1,0,0.0,0.002676,0.0
+bocaccio,Giovanni Boccaccio,cited,1313.0,República de Florencia (actual Italia),1,0,0.0,0.002676,0.0
+soren_kierkegaard,Søren Kierkegaard,cited,1813.0,Dinamarca,1,0,0.0,0.002676,0.0
+du_bellay,Joachim Du Bellay,cited,1522.0,Francia,1,0,0.0,0.002676,0.0
+bosco,Hieronymus Bosch,cited,1450.0,Países Bajos Borgoñones,1,0,0.0,0.002676,0.0
+quintiliano,Marco Quintiliano,cited,35.0,Imperio Romano (actual España),1,0,0.0,0.002676,0.0
+montaigne,Michel Montaigne,cited,1533.0,Francia,1,0,0.0,0.002676,0.0
+ciceron,Marco Cicerón,cited,-106.0,República Romana (actual Italia),1,0,0.0,0.002676,0.0
+jacob_brafman,Jacob Brafman,cited,1825.0,Imperio Ruso (actual Bielorrusia),1,0,0.0,0.002676,0.0
+william_faulkner,William Faulkner,cited,1897.0,Estados Unidos,1,0,0.0,0.002676,0.0
+maurice_blanchot,Maurice Blanchot,cited,1907.0,Francia,1,0,0.0,0.002676,0.0
+franz_bopp,Franz Bopp,cited,1791.0,Electorado de Maguncia (actual Alemania),1,0,0.0,0.00267,0.0
+gustav_janouch,Gustav Janouch,cited,1903.0,Imperio Austrohúngaro (actual Austria),1,0,0.0,0.00267,0.0
+francois_zola,François Zola,cited,1796.0,República de Venecia (actual Italia),1,0,0.0,0.00267,0.0
+morris_rosenfeld,Morris Rosenfeld,cited,1862.0,Polonia (Imperio Ruso),1,0,0.0,0.00267,0.0
+huysmans,Joris-Karl Huysmans,cited,1848.0,Francia,1,0,0.0,0.00267,0.0
+bernard_lazare,Bernard Lazare,cited,1865.0,Francia,1,0,0.0,0.00267,0.0
+carlos_moyano_llerena,Carlos Moyano Llerena,cited,1914.0,Argentina,1,0,0.0,0.00267,0.0
+adam_smith,Adam Smith,cited,1723.0,Escocia,1,0,0.0,0.00267,0.0
+georges_bernanos,Georges Bernanos,cited,1888.0,Francia,1,0,0.0,0.00267,0.0
+mauricio_hirsch,Mauricio Hirsch,cited,1831.0,Múnich (Alemania),1,0,0.0,0.00267,0.0
+jules_isaac,Jules Isaac,cited,1877.0,Francia,1,0,0.0,0.00267,0.0
+james_rothschild,James Rothschild,cited,1792.0,Fráncfort (Alemania),1,0,0.0,0.002664,0.0
+adolphe_thiers,Adolphe Thiers,cited,1797.0,Francia,1,0,0.0,0.002664,0.0
+poncio_pilatos,Poncio Pilato,cited,,Imperio Romano (actual Italia),1,0,0.0,0.002664,0.0
+hubert_colleye,Hubert Colleye,cited,1883.0,Bélgica,1,0,0.0,0.002664,0.0
+cecile_delhorbe,Cécile Delhorbe,cited,1898.0,Suiza,1,0,0.0,0.002664,0.0
+san_jose,San José,cited,-50.0,Imperio Romano (Judea),1,0,0.0,0.002664,0.0
+paul_verlaine,Paul Verlaine,cited,1844.0,Francia,1,0,0.0,0.002664,0.0
+fiodor_dostoyevski,Fiódor Dostoyevski,cited,1821.0,"Moscú, Imperio Ruso",1,0,0.0,0.002664,0.0
+jeanne_molbech,Jeanne Molbech,cited,1859.0,Dinamarca,1,0,0.0,0.002664,0.0
+albert_beguin,Albert Béguin,cited,1901.0,Suiza,1,0,0.0,0.002664,0.0
+rf_byrnes,Robert Francis Byrnes,cited,1917.0,Estados Unidos,1,0,0.0,0.002664,0.0
+stanislas_fumet,Stanislas Fumet,cited,1896.0,Francia,1,0,0.0,0.002664,0.0
+robert_misrahi,Robert Misrahi,cited,1926.0,Francia,1,0,0.0,0.002664,0.0
+jules_michelet,Jules Michelet,cited,1798.0,Francia,1,0,0.0,0.002664,0.0
+anatole_france,Anatole France,cited,1844.0,Francia,1,0,0.0,0.002664,0.0
+lev_urusof,Lev Urusov,cited,1877.0,Imperio Ruso,1,0,0.0,0.002664,0.0
+dante_alighieri,Dante Alighieri,cited,1265.0,República de Florencia (actual Italia),1,0,0.0,0.002664,0.0
+arthur_meyer,Arthur Meyer,cited,1844.0,Francia,1,0,0.0,0.002664,0.0
+louis_blanc,Louis Blanc,cited,1811.0,España,1,0,0.0,0.002664,0.0
+ronald_reagan,Ronald Reagan,cited,1911.0,Estados Unidos,1,0,0.0,0.002664,0.0
+platelle,Henri Platelle,cited,1921.0,Francia,1,0,0.0,0.002664,0.0
+emile_pereire,Émile Pereire,cited,1800.0,Francia,1,0,0.0,0.002664,0.0
+isaac_pereire,Isaac Pereire,cited,1806.0,Francia,1,0,0.0,0.002664,0.0
+moses_hadas,Moses Hadas,cited,1900.0,Estados Unidos,1,0,0.0,0.002664,0.0
+ismar_elbogen,Ismar Elbogen,cited,1874.0,Prusia (actual Polonia),1,0,0.0,0.002664,0.0
+charles_journet,Charles Journet,cited,1891.0,Suiza,1,0,0.0,0.002664,0.0
+leon_xiii,XIII León,cited,1810.0,Estados Pontificios (actual Italia),1,0,0.0,0.002664,0.0
+marcial,Marco Marcial,cited,40.0,Imperio Romano (Hispania),1,0,0.0,0.002664,0.0
+edmond_goncourt jules_goncourt,edmond_goncourt jules_goncourt,cited,,,1,0,0.0,0.002664,0.0
+herodias,Herodías,cited,-15.0,"Jerusalén, Reino de Judea (Imperio Romano)",1,0,0.0,0.002664,0.0
+johann_lavater,Johann Lavater,cited,1741.0,Suiza,1,0,0.0,0.002664,0.0
+geoffroy_saint_hilaire,Isidore Geoffroy Saint-Hilaire,cited,1805.0,Francia,1,0,0.0,0.002664,0.0
+joan_miro,Joan Miró,cited,1893.0,España,1,0,0.0,0.002664,0.0
+juarez_celman,Miguel Juárez Celman,cited,1844.0,Argentina,1,0,0.0,0.002664,0.0
+ludovico_halevy,Ludovic Halévy,cited,1834.0,Francia,1,0,0.0,0.002664,0.0
+adolf_stoecker,Adolf Stoecker,cited,1835.0,Prusia (actual Alemania),1,0,0.0,0.002664,0.0
+jose_bianco,José Bianco,cited,1908.0,Argentina,1,0,0.0,0.002664,0.0
+jean_paul_sartre,Jean-Paul Sartre,cited,1905.0,Francia,1,0,0.0,0.002664,0.0
+geza_onody,Géza Onody,cited,1848.0,Reino de Hungría (Imperio Austríaco),1,0,0.0,0.002664,0.0
+chaucer,Geoffrey Chaucer,cited,1343.0,Inglaterra,1,0,0.0,0.002664,0.0
+creso,Creso,cited,-596.0,Lidia (actual Turquía),1,0,0.0,0.002664,0.0
+champfleury,Jules Champfleury,cited,1821.0,Francia,1,0,0.0,0.002664,0.0
+sainte_beuve,Charles Sainte-Beuve,cited,1804.0,Francia,1,0,0.0,0.002664,0.0
+edmond_goncourt,Edmond Goncourt,cited,1822.0,Francia,1,0,0.0,0.002664,0.0
+jules_goncourt,Jules Goncourt,cited,1830.0,Francia,1,0,0.0,0.002664,0.0
+george_sand,George Sand,cited,1804.0,Francia,1,0,0.0,0.002664,0.0
+charles_dickens,Charles Dickens,cited,1812.0,Inglaterra,1,0,0.0,0.002664,0.0
+marie_joseph_lory,Marie-Joseph Lory,cited,1920.0,Francia,1,0,0.0,0.002664,0.0
+hippolyte_taine,Hippolyte Taine,cited,1828.0,"Vouziers, Francia",1,0,0.0,0.002664,0.0
+charles_darwin,Charles Darwin,cited,1809.0,Inglaterra,1,0,0.0,0.002664,0.0
+jean_martin_charcot,Jean-Martin Charcot,cited,1825.0,Francia,1,0,0.0,0.002664,0.0
+juan_alemann,Juan Alemann,cited,1927.0,Argentina,1,0,0.0,0.002664,0.0
+victor_manuel2,II Víctor Manuel,cited,1820.0,Reino de Cerdeña (actual Italia),1,0,0.0,0.002664,0.0
+paul_bourget,Paul Bourget,cited,1852.0,Francia,1,0,0.0,0.002664,0.0
+claretie,Jules Claretie,cited,1840.0,Francia,1,0,0.0,0.002664,0.0
+scholl,Aurélien Scholl,cited,1833.0,Francia,1,0,0.0,0.002664,0.0
+uzanne,Octave Uzanne,cited,1851.0,Francia,1,0,0.0,0.002664,0.0
+bonnieres,Robert Bonnières,cited,1850.0,Francia,1,0,0.0,0.002664,0.0
+fournel,Victor Fournel,cited,1829.0,Francia,1,0,0.0,0.002664,0.0
+alejandroii,II Alejandro,cited,1818.0,"Moscú, Imperio Ruso",1,0,0.0,0.002664,0.0
+august_rohling,August Rohling,cited,1839.0,Prusia (actual Alemania),1,0,0.0,0.002664,0.0
+horangel,Horacio Tirigall,cited,1927.0,Argentina,1,0,0.0,0.002664,0.0
+jose_uriburu,José Uriburu,cited,1868.0,Argentina,1,0,0.0,0.002664,0.0
+george_eliot,George Eliot,cited,1819.0,Inglaterra,1,0,0.0,0.002664,0.0
+coronel_henry,Hubert-Joseph Henry,cited,1846.0,Francia,1,0,0.0,0.002664,0.0
+esterhazy,Ferdinand Esterhazy,cited,1847.0,Francia,1,0,0.0,0.002664,0.0
+paulo_iv,IV Paulo,cited,1476.0,Reino de Nápoles (actual Italia),1,0,0.0,0.002664,0.0
+silvina_bullrich,Silvina Bullrich,cited,1915.0,Argentina,1,0,0.0,0.002664,0.0
+san_jorge,San Jorge,cited,275.0,Imperio Romano (actual Turquía),1,0,0.0,0.002664,0.0
+agustin_justo,Agustín Justo,cited,1876.0,Argentina,1,0,0.0,0.002664,0.0
+mussolini,Benito Mussolini,cited,1883.0,Italia,1,0,0.0,0.002664,0.0
+edmond_rothschild,Edmond Rothschild,cited,1845.0,"Boulogne-Billancourt, París (Francia)",1,0,0.0,0.002664,0.0
+otto_von_bismarck,Otto Bismarck,cited,1815.0,Prusia (actual Alemania),1,0,0.0,0.002664,0.0
+adolphe_cremieux,Adolphe Crémieux,cited,1796.0,Francia,1,0,0.0,0.002664,0.0
+eduardo_gruner,Eduardo Grüner,author,1946.0,Argentina,0,60,0.0,0.002659,0.0
+leonora_carrington,Leonora Carrington,author,1917.0,Inglaterra,0,11,0.0,0.002659,0.0
+luis_chitarroni,Luis Chitarroni,author,1958.0,Argentina,0,19,0.0,0.002659,0.0
+enrique_pezzoni,Enrique Pezzoni,author,1926.0,Argentina,0,8,0.0,0.002659,0.0
+ramon_alcalde,Ramón Alcalde,author,1951.0,Argentina,0,116,0.0,0.002659,0.0
+luis_thonis,Luis Thonis,author,1949.0,Argentina,0,24,0.0,0.002659,0.0
+witold_gombrowicz,Witold Gombrowicz,author,1904.0,Polonia (Imperio Ruso),0,5,0.0,0.002659,0.0
+mario_levin,Mario Levin,author,1944.0,Argentina,0,18,0.0,0.002659,0.0
+antoine_berman,Antoine Berman,author,1942.0,Francia,0,29,0.0,0.002659,0.0

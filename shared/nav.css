@@ -1,0 +1,26 @@
+#sitio-nav {
+    display: flex;
+    gap: 2px;
+    padding: 6px 16px;
+    background: #0f1a2e;
+    border-bottom: 1px solid #0f3460;
+    font-size: 13px;
+}
+
+#sitio-nav a {
+    color: #8899aa;
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+#sitio-nav a:hover {
+    color: #eee;
+    background: #16213e;
+}
+
+#sitio-nav a.active {
+    color: #eee;
+    background: #0f3460;
+}

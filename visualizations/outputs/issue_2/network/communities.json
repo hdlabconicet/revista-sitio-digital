@@ -1,0 +1,456 @@
+[
+  {
+    "community_id": 0,
+    "size": 31,
+    "members": [
+      {
+        "id": "martinez_estrada",
+        "name": "Ezequiel Martínez Estrada"
+      },
+      {
+        "id": "osvaldo_rossler",
+        "name": "Osvaldo Rossler"
+      },
+      {
+        "id": "san_martin",
+        "name": "José de San Martín"
+      },
+      {
+        "id": "paul_groussac",
+        "name": "Paul Groussac"
+      },
+      {
+        "id": "hector_grisafi",
+        "name": "Héctor Grisafi"
+      },
+      {
+        "id": "eloisa",
+        "name": "Eloísa"
+      },
+      {
+        "id": "borges",
+        "name": "Jorge Borges"
+      },
+      {
+        "id": "costa_mendez",
+        "name": "Nicanor Costa Méndez"
+      },
+      {
+        "id": "leopoldo_lugones",
+        "name": "Leopoldo Lugones"
+      },
+      {
+        "id": "hugo_savino",
+        "name": "Hugo Savino"
+      },
+      {
+        "id": "pedro_abelardo",
+        "name": "Pedro Abelardo"
+      },
+      {
+        "id": "eduardo_gruner",
+        "name": "Eduardo Grüner"
+      },
+      {
+        "id": "napoleon",
+        "name": "Napoléon Bonaparte"
+      },
+      {
+        "id": "ramon_alcalde",
+        "name": "Ramón Alcalde"
+      },
+      {
+        "id": "julio_cortazar",
+        "name": "Julio Cortázar"
+      },
+      {
+        "id": "ricardo_piglia",
+        "name": "Ricardo Piglia"
+      },
+      {
+        "id": "rafael_alberto_arrieta",
+        "name": "Rafael Alberto Arrieta"
+      },
+      {
+        "id": "jorge_jinkis",
+        "name": "Jorge Jinkis"
+      },
+      {
+        "id": "roberto_arlt",
+        "name": "Roberto Arlt"
+      },
+      {
+        "id": "kant",
+        "name": "Immanuel Kant"
+      },
+      {
+        "id": "benjamin_menendez",
+        "name": "Mario Benjamín Menéndez"
+      },
+      {
+        "id": "ronald_reagan",
+        "name": "Ronald Reagan"
+      },
+      {
+        "id": "leonidas",
+        "name": "Leónidas I"
+      },
+      {
+        "id": "aristoteles",
+        "name": "Aristóteles"
+      },
+      {
+        "id": "juan_pablo_ii",
+        "name": "Juan Pablo II Wojtyła"
+      },
+      {
+        "id": "juan_domingo_peron",
+        "name": "Juan Domingo Perón"
+      },
+      {
+        "id": "alfredo_palacios",
+        "name": "Alfredo Palacios"
+      },
+      {
+        "id": "enrique_santos_discepolo",
+        "name": "Enrique Santos Discépolo"
+      },
+      {
+        "id": "nicomaco",
+        "name": "Nicómaco"
+      },
+      {
+        "id": "joseph_conrad",
+        "name": "Joseph Conrad"
+      },
+      {
+        "id": "bernardo_neustadt",
+        "name": "Bernardo Neustadt"
+      }
+    ]
+  },
+  {
+    "community_id": 1,
+    "size": 15,
+    "members": [
+      {
+        "id": "mika_waltari",
+        "name": "Mika Waltari"
+      },
+      {
+        "id": "manuel_puig",
+        "name": "Manuel Puig"
+      },
+      {
+        "id": "alberto_laiseca",
+        "name": "Alberto Laiseca"
+      },
+      {
+        "id": "henry_rider_haggard",
+        "name": "Henry Rider Haggard"
+      },
+      {
+        "id": "louis_ferdinand_celine",
+        "name": "Louis-Ferdinand Céline"
+      },
+      {
+        "id": "florentina_ituarte",
+        "name": "Florentina Ituarte"
+      },
+      {
+        "id": "osvaldo_lamborghini",
+        "name": "Osvaldo Lamborghini"
+      },
+      {
+        "id": "sarmiento",
+        "name": "Domingo Faustino Sarmiento"
+      },
+      {
+        "id": "luis_gusman",
+        "name": "Luis Gusmán"
+      },
+      {
+        "id": "maurice_blanchot",
+        "name": "Maurice Blanchot"
+      },
+      {
+        "id": "victoria_ocampo",
+        "name": "Victoria Ocampo"
+      },
+      {
+        "id": "stendhal",
+        "name": "Stendhal"
+      },
+      {
+        "id": "jose_hernandez",
+        "name": "José Hernández"
+      },
+      {
+        "id": "tata_ocampo",
+        "name": "Tata Ocampo"
+      },
+      {
+        "id": "manuel_ocampo",
+        "name": "Manuel S. Ocampo"
+      }
+    ]
+  },
+  {
+    "community_id": 2,
+    "size": 22,
+    "members": [
+      {
+        "id": "jesus",
+        "name": "de Nazaret Jesús"
+      },
+      {
+        "id": "edgar_allan_poe",
+        "name": "Edgar Poe"
+      },
+      {
+        "id": "heraclito",
+        "name": "Heráclito"
+      },
+      {
+        "id": "santiago_rueda",
+        "name": "Santiago Rueda"
+      },
+      {
+        "id": "freud",
+        "name": "Sigmund Freud"
+      },
+      {
+        "id": "rilke",
+        "name": "Rainer Rilke"
+      },
+      {
+        "id": "baudelaire",
+        "name": "Charles Baudelaire"
+      },
+      {
+        "id": "carl_jung",
+        "name": "Carl Gustav Jung"
+      },
+      {
+        "id": "homero",
+        "name": "Homero"
+      },
+      {
+        "id": "max_dickman",
+        "name": "Max Dickmann"
+      },
+      {
+        "id": "parmenides",
+        "name": "de Elea Parménides"
+      },
+      {
+        "id": "james_joyce",
+        "name": "James Joyce"
+      },
+      {
+        "id": "oscar_wilde",
+        "name": "Oscar Wilde"
+      },
+      {
+        "id": "william_blake",
+        "name": "William Blake"
+      },
+      {
+        "id": "paul_valery",
+        "name": "Ambroise Valéry"
+      },
+      {
+        "id": "kafka",
+        "name": "Franz Kafka"
+      },
+      {
+        "id": "mallarme",
+        "name": "Stéphane Mallarmé"
+      },
+      {
+        "id": "dante_alighieri",
+        "name": "Dante Alighieri"
+      },
+      {
+        "id": "jose_salas_subirat",
+        "name": "José Salas Subirat"
+      },
+      {
+        "id": "leonid_andreiev",
+        "name": "Leonid Andréiev"
+      },
+      {
+        "id": "rimbaud",
+        "name": "Arthur Rimbaud"
+      },
+      {
+        "id": "garcia_marquez",
+        "name": "Gabriel García Márquez"
+      }
+    ]
+  },
+  {
+    "community_id": 3,
+    "size": 3,
+    "members": [
+      {
+        "id": "alicia_gutierrez_reto",
+        "name": "Alicia Gutiérrez Reto"
+      },
+      {
+        "id": "franz_schubert",
+        "name": "Franz Schubert"
+      },
+      {
+        "id": "noemi_ulla",
+        "name": "Noemí Ulla"
+      }
+    ]
+  },
+  {
+    "community_id": 4,
+    "size": 4,
+    "members": [
+      {
+        "id": "beatriz_castillo",
+        "name": "Beatriz Castillo"
+      },
+      {
+        "id": "marcel_proust",
+        "name": "Marcel Proust"
+      },
+      {
+        "id": "jorge_cruz",
+        "name": "Jorge Cruz"
+      },
+      {
+        "id": "eduardo_mallea",
+        "name": "Eduardo Mallea"
+      }
+    ]
+  },
+  {
+    "community_id": 5,
+    "size": 3,
+    "members": [
+      {
+        "id": "sylvia_molloy",
+        "name": "Sylvia Molloy"
+      },
+      {
+        "id": "liliana_heer",
+        "name": "Liliana Heer"
+      },
+      {
+        "id": "friedrich_nietzsche",
+        "name": "Friedrich Nietzsche"
+      }
+    ]
+  },
+  {
+    "community_id": 6,
+    "size": 16,
+    "members": [
+      {
+        "id": "delia_pasini",
+        "name": "Delia Pasini"
+      },
+      {
+        "id": "andre_pieyre",
+        "name": "André Pieyre de Mandiargues"
+      },
+      {
+        "id": "alejandra_pizarnik",
+        "name": "Alejandra Pizarnik"
+      },
+      {
+        "id": "giordano_bruno",
+        "name": "Giordano Bruno"
+      },
+      {
+        "id": "yeats",
+        "name": "William Butler Yeats"
+      },
+      {
+        "id": "lautreamont",
+        "name": "Comte Lautréamont"
+      },
+      {
+        "id": "luis_chitarroni",
+        "name": "Luis Chitarroni"
+      },
+      {
+        "id": "john_donne",
+        "name": "John Donne"
+      },
+      {
+        "id": "fred_hoyle",
+        "name": "Fred Hoyle"
+      },
+      {
+        "id": "arturo_carrera",
+        "name": "Arturo Carrera"
+      },
+      {
+        "id": "olga_orozco",
+        "name": "Olga Orozco"
+      },
+      {
+        "id": "silvina_ocampo",
+        "name": "Silvina Ocampo"
+      },
+      {
+        "id": "octavio_paz",
+        "name": "Octavio Paz"
+      },
+      {
+        "id": "safo",
+        "name": "Safo"
+      },
+      {
+        "id": "roland_barthes",
+        "name": "Roland Barthes"
+      },
+      {
+        "id": "sylvia_plath",
+        "name": "Sylvia Plath"
+      }
+    ]
+  },
+  {
+    "community_id": 7,
+    "size": 2,
+    "members": [
+      {
+        "id": "goethe",
+        "name": "Johann Goethe"
+      },
+      {
+        "id": "haroldo_campos",
+        "name": "Haroldo de Campos"
+      }
+    ]
+  },
+  {
+    "community_id": 8,
+    "size": 4,
+    "members": [
+      {
+        "id": "pascal",
+        "name": "Blaise Pascal"
+      },
+      {
+        "id": "francisco_franco",
+        "name": "Francisco Franco"
+      },
+      {
+        "id": "leonora_carrington",
+        "name": "Leonora Carrington"
+      },
+      {
+        "id": "alfonso_xiii",
+        "name": "Alfonso XIII de Borbón"
+      }
+    ]
+  }
+]

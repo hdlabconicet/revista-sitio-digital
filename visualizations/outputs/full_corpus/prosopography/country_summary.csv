@@ -1,0 +1,86 @@
+country,count,median_birth_year
+Argentina,186,1926.5
+France,154,1853.0
+Germany,52,1816.5
+United Kingdom,46,1827.5
+Italy,46,1544.0
+United States,37,1911.0
+Spain,29,1891.0
+Greece,23,-470.0
+Uruguay,13,1902.0
+Switzerland,12,1884.5
+Ireland,12,1846.0
+Austria,11,1887.0
+Imperio Romano,10,6.0
+Poland,8,1891.5
+Cuba,8,1914.5
+Russia,6,1844.5
+Netherlands,6,1582.0
+Imperio Ruso,5,1883.0
+Denmark,4,1836.0
+Belgium,4,1895.5
+Chile,4,1909.5
+Mexico,4,1905.5
+Hungary,3,1860.0
+Brazil,3,1924.0
+Escocia,3,1771.0
+Imperio Austríaco,2,1857.5
+Peru,2,1919.5
+Imperio Medo,2,-614.0
+Imperio alemán,2,1889.0
+"Edimburgo, Escocia",2,1780.5
+Buenos Aires,2,1900.0
+"Moscú, Imperio Ruso",2,1819.5
+"San Petersburgo, Imperio Ruso",2,1894.0
+"Amasya, Reino del Ponto",1,-64.0
+"Andes, República Romana",1,-70.0
+"Antananarivo, Madagascar",1,1913.0
+Arabia,1,570.0
+"Dundee, Escocia",1,1872.0
+Desconocido,1,-325.0
+Czech Republic,1,1883.0
+Colombia,1,1927.0
+China,1,-369.0
+Bulgaria,1,1939.0
+Canadá,1,1874.0
+"Cartago, Túnez",1,-275.0
+"Bucarest, Rumania",1,1913.0
+"Iași, Rumania",1,1925.0
+"Highland Park, EE.UU.",1,1918.0
+"Helsinki, Finlandia",1,1908.0
+"Guthrie, Kentucky, EE. UU.",1,1905.0
+"Hipona, Imperio Romano",1,70.0
+Esparta,1,-540.0
+"El Biar, Argelia",1,1930.0
+"Melbourne, Australia",1,1916.0
+"Maesteg, Gales",1,1906.0
+Lidia,1,-596.0
+Libia,1,
+Israel,1,263.0
+Japan,1,1898.0
+Imperio Austrohúngaro,1,1875.0
+Imperio Samánida,1,980.0
+Frigia,1,
+Guatemala,1,1857.0
+"Halicarnaso, Turquía",1,-484.0
+Protectorado español de Marruecos,1,1932.0
+"Pikov, Ucrania",1,1761.0
+"Oriol, Imperio Ruso",1,1895.0
+Nicaragua,1,1867.0
+"Murray, Kentucky, EE. UU.",1,1906.0
+Roma,1,-138.0
+"Ruse, Bulgaria",1,1905.0
+República Dominicana,1,1884.0
+"Rezekne, Letonia",1,1894.0
+Reino de Rumania,1,1920.0
+"Sorochyntsi, Ucrania",1,1809.0
+"San Petesburgo, Imperio Ruso",1,1899.0
+"Sherbrooke, Canadá",1,1912.0
+"Timișoara, Rumania",1,1892.0
+"Swansea, Gales",1,1914.0
+"Sliven, Bulgaria",1,1941.0
+Toulouse,1,1848.0
+Unión Soviética,1,1932.0
+"Viena, Imperio Austrohúngaro",1,1874.0
+Virreinato de Nueva Granada,1,1780.0
+Virreinato del Río de la Plata,1,1805.0

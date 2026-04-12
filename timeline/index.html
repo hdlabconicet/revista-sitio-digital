@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista SITIO — Biografías de figuras</title>
+    <link rel="stylesheet" href="../shared/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="sitio-nav">
+        <a href="../sigma-viz/">Red</a>
+        <a href="../map/">Comunidades</a>
+        <a href="../timeline/" class="active">Figuras</a>
+        <a href="../contributors/">Afinidades</a>
+        <a href="../flows/">Flujos</a>
+        <a href="../shadows/">Resistencias</a>
+    </nav>
+
+    <header id="top-bar">
+        <div id="title-section">
+            <h1>Biografías de figuras</h1>
+            <span class="subtitle">Explorá cómo las figuras citadas aparecen en los números de Revista SITIO (1981-1987)</span>
+        </div>
+        <div id="controls-top">
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Buscar una figura..." autocomplete="off">
+                <div id="search-suggestions"></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="no-selection">
+            <p>Seleccioná una figura para explorar su biografía de citas.</p>
+            <div id="suggested-figures"></div>
+        </div>
+
+        <div id="biography" class="hidden">
+            <div id="bio-header">
+                <h2 id="bio-name"></h2>
+                <div id="bio-meta"></div>
+            </div>
+
+            <div id="bio-content">
+                <div id="bio-left">
+                    <div class="bio-section">
+                        <h3>Presencia por número</h3>
+                        <div id="issue-bars"></div>
+                    </div>
+                    <div class="bio-section">
+                        <h3>Citado por (colaboradores/as de SITIO)</h3>
+                        <div id="cited-by-list"></div>
+                    </div>
+                </div>
+                <div id="bio-right">
+                    <div class="bio-section">
+                        <h3>Vecindario intelectual</h3>
+                        <p class="section-desc">Figuras más frecuentemente citadas en los mismos textos</p>
+                        <div id="co-cited-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista SITIO — Red de citas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../shared/nav.css">
+</head>
+<body>
+    <nav id="sitio-nav">
+        <a href="../sigma-viz/" class="active">Red</a>
+        <a href="../map/">Comunidades</a>
+        <a href="../timeline/">Figuras</a>
+        <a href="../contributors/">Afinidades</a>
+        <a href="../flows/">Flujos</a>
+        <a href="../shadows/">Resistencias</a>
+    </nav>
+    <header id="top-bar">
+        <div id="title-section">
+            <h1>Revista SITIO</h1>
+            <span class="subtitle">Explorador de red (1981-1987)</span>
+        </div>
+        <div id="controls-top">
+            <div id="color-toggle">
+                <button class="color-btn active" data-mode="community">Comunidad</button>
+                <button class="color-btn" data-mode="region">Región</button>
+                <button class="color-btn" data-mode="period">Período</button>
+            </div>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Buscar una figura..." autocomplete="off">
+                <div id="search-suggestions"></div>
+            </div>
+        </div>
+    </header>
+
+    <div id="main">
+        <div id="sigma-container"></div>
+        <aside id="detail-panel" class="hidden">
+            <button id="close-panel">&times;</button>
+            <h2 id="detail-name"></h2>
+            <div id="detail-dates" class="detail-row"></div>
+            <div id="detail-country" class="detail-row"></div>
+            <div id="detail-period" class="detail-row"></div>
+            <div id="detail-community" class="detail-row"></div>
+            <div id="detail-type" class="detail-row"></div>
+            <div id="detail-degree" class="detail-row"></div>
+            <div id="detail-issues" class="detail-row"></div>
+            <div id="detail-wikidata" class="detail-row"></div>
+            <div id="detail-neighbors">
+                <h3>Conexiones</h3>
+                <ul id="neighbor-list"></ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer id="bottom-bar">
+        <div id="issue-filter">
+            <span class="filter-label">Números:</span>
+            <label><input type="checkbox" class="issue-cb" value="issue_1" checked> 1 (1981)</label>
+            <label><input type="checkbox" class="issue-cb" value="issue_2" checked> 2 (1982)</label>
+            <label><input type="checkbox" class="issue-cb" value="issue_3" checked> 3 (1983)</label>
+            <label><input type="checkbox" class="issue-cb" value="issue_4-5" checked> 4-5 (1985)</label>
+            <label><input type="checkbox" class="issue-cb" value="issue_6" checked> 6 (1987)</label>
+        </div>
+        <div id="degree-filter">
+            <span class="filter-label">Grado mínimo:</span>
+            <input type="range" id="degree-slider" min="1" max="20" value="1">
+            <span id="degree-value">1</span>
+        </div>
+        <div id="stats">
+            <span id="visible-count"></span>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphology/0.25.4/graphology.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/2.4.0/sigma.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
