@@ -1,0 +1,22 @@
+# GitHub Linguist overrides for accurate language statistics
+
+# Count XML files as detectable (TEI encoding is the core content)
+*.xml linguist-detectable=true
+*.xml linguist-language=XML
+
+# Mark generated pyvis HTML output files as "generated" so they're excluded from stats
+# These embed vis-network.js inline and skew the HTML count
+visualizations/outputs/**/*.html linguist-generated=true
+
+# Mark intermediate data files as generated (also exclude from stats)
+visualizations/outputs/**/*.csv linguist-generated=true
+visualizations/outputs/**/*.json linguist-generated=true
+visualizations/outputs/**/*.gexf linguist-generated=true
+
+# But keep the data files served by the frontend (these are deployment artifacts)
+sigma-viz/data/*.json linguist-generated=true
+map/data/*.json linguist-generated=true
+timeline/data/*.json linguist-generated=true
+contributors/data/*.json linguist-generated=true
+flows/data/*.json linguist-generated=true
+shadows/data/*.json linguist-generated=true
