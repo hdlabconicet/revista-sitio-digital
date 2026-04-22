@@ -624,7 +624,7 @@
                         comprometen en la culpabilidad impertinente de un territorio desmedido para
                         las cartografías de la lengua. </p>
 
-                    <note type="interpratation" resp="#ED" target="#Grüner_Entredichos_1_p8"
+                    <note type="interpretation" resp="#ED" target="#Grüner_Entredichos_1_p8"
                         ana="#ana_literature #ana_treason"> Esta lista de obras literarias
                         representa el canon de la escritura no inocente, que se conecta con la idea
                         de literatura y traición que se desarrolla más adelante. </note>
@@ -1026,7 +1026,7 @@
                 <div type="text" subtype="teoría">
                 <head>Escribir entre líneas, un arte olvidado</head>
                 <byline><persName ref="#leo_strauss">Leo-Strauss</persName></byline>
-                <note>Traducido por <persName ref="#jose_antonio_maravall">J.A. Maravall</persName></note>
+                <note type="translator">Traducido por <persName ref="#jose_antonio_maravall">J.A. Maravall</persName></note>
 
                 <div type="introduction">
                     <head>Nota introductoria</head>
@@ -1111,7 +1111,7 @@
                                 emancipador del espíritu, y éste es uno de los hechos más
                                 humillantes pero al mismo tiempo más indiscutibles de la
                                 historia.</quote>
-                        <bibl><persName ref="#william_lecky">>W. E. H. Lecky</persName></bibl>
+                        <bibl><persName ref="#william_lecky">W. E. H. Lecky</persName></bibl>
                     </epigraph>
                     
                     <head>I</head>
@@ -3249,7 +3249,7 @@
 
                 <head>Desencuadres</head>
                 <byline><persName ref="#pascal_bonitzer">Pascal Bonitzer</persName></byline>
-                <note>Traducido por <persName ref="#mario_levin">M. Levin</persName></note>
+                <note type="translator">Traducido por <persName ref="#mario_levin">M. Levin</persName></note>
 
                 <p>La perspectiva, el encuentro de la pintura con la óptica geométrica euclidiana,
                     el sometimiento milagroso de los cuerpos figurados a las idealidades
@@ -3422,7 +3422,7 @@
                     “rompiendo” sistemáticamente y sin arrepentimiento el espacio —hablo de
                         <persName ref="#robert_bresson">Bresson</persName> más que de <persName
                         ref="#sergei_eisenstein">Eisenstein</persName>—, se glorifica pensando el
-                    “cinematógrafo” en términos de pintura (cf: <title level="m" rend="italic:true;" ref="#eisenstein_notas"
+                    “cinematógrafo” en términos de pintura (cf: <title level="m" rend="italic:true;" ref="#bresson_notas"
                         >Notas sobre el cinematógrafo</title>). <persName ref="#straub"
                         >Straub</persName>, <persName ref="#duras">Duras</persName>, <persName
                         ref="#antonioni">Antonioni</persName> también son pintores debido al uso de
@@ -3507,7 +3507,7 @@
                             ref="#louis_althusser">Althusser</persName>, hasta el punto de verla
                         duplicada). Al mismo tiempo se puede ver en esta “ausencia”, que barre
                         también la tela con grandes líneas que se oponen a la profundidad, la
-                        inscripción pura del sujeto-mate <note resp="#levin"><hi rend="italic:true;"
+                        inscripción pura del sujeto-mate <note resp="#mario_levin"><hi rend="italic:true;"
                                 >¿sin brillo, apocado, sin profundidad?</hi></note>, evanescente,
                         del “discurso de la ciencia” donde <persName ref="#louis_althusser"
                             >Althusser</persName> tiende a ubicar los enunciados pictóricos de
@@ -6330,7 +6330,7 @@
                                 ref="#edouard_drumont">Drumont</persName> empalma con <persName
                                 ref="#shakespeare">Shakespeare</persName>, <persName
                                 ref="#walter_scott">Scott</persName>, <persName ref="#balzac"
-                                    >Balzac</persName>, los <persName ref="#edmond_goncourt #jules_goncourt">Goncourt</persName>), hermosa como se es
+                                    >Balzac</persName>, los <orgName type="family">Goncourt</orgName>), hermosa como se es
                             hermosa en <placeName>Oriente</placeName>, como <persName
                                 type="biblical_character">Esther</persName>, <persName
                                 type="biblical_character">la Reina de Saba</persName>, <persName
@@ -7713,7 +7713,7 @@
                             level="m" ref="#colleye_ame_bloy">L'âme de Léon Bloy</title>.
                                     <placeName ref="#bruselas">Bruselas</placeName>,
                                     <orgName>Desclée de Brouwer</orgName>, <date when="1930"
-                                    >1930</date>. <note>(Hay traducción: <placeName
+                                    >1930</date>. <note resp="#ramon_alcalde">(Hay traducción: <placeName
                                         ref="#buenos_aires_ciudad">Buenos Aires</placeName>,
                                         <orgName>Desclée de Brouwer</orgName>, <date when="1945"
                                         >1945</date>).</note></bibl></p>
@@ -7777,7 +7777,7 @@
                         <p><bibl><author ref="#theodor_herzl">HERZL, Theodor</author>. <title
                                     level="m" rend="italic:true" xml:lang="de"
                                     ref="#herzl_estado_judio">Der Judenstaat</title>. <date
-                                    type="original" when="1896">1896</date>. <note>(Traducción:
+                                    type="original" when="1896">1896</date>. <note resp="#ramon_alcalde">(Traducción:
                                         <placeName ref="#buenos_aires_ciudad">Buenos
                                         Aires</placeName>, <orgName>Federación Sionista
                                         Argentina</orgName>, <date>s/f</date>. Prólogo de <persName
@@ -7798,7 +7798,7 @@
                                     rend="italic:true" xml:lang="fr" ref="#jesus_israel">Jésus et
                                     Israel</title>. <placeName ref="#paris">Paris</placeName>,
                                     <orgName>Fasquelle</orgName>, <date when="1959">1959</date>.
-                                    <note>(Segunda edición; la primera es de <date when="1946"
+                                    <note resp="#ramon_alcalde">(Segunda edición; la primera es de <date when="1946"
                                         >1946</date>).</note></bibl></p>
                         <p><bibl><author ref="#charles_journet">JOURNET, Charles</author>. <title
                                     level="m" rend="italic:true" xml:lang="fr"
@@ -7811,7 +7811,7 @@
                                     ref="#lazare_fumier_job"><choice>
                                         <sic>La fumière</sic>
                                         <corr>Le fumier</corr>
-                                    </choice> de Job</title>. <note>(Obra póstuma, recogida por su
+                                    </choice> de Job</title>. <note resp="#ramon_alcalde">(Obra póstuma, recogida por su
                                     gran amigo <persName ref="#charles_peguy">Charles
                                         Péguy</persName> en <bibl><title level="j"
                                             ref="#cahiers_quinzaine">Les Cahiers de la
@@ -7826,7 +7826,7 @@
                                         <corr>pensée</corr>
                                     </choice> religieuse de Léon Bloy</title>. <placeName
                                     ref="#bruselas">Bruselas</placeName>, <orgName>Desclée de
-                                    Brouwer</orgName>, <date when="1951">1951</date>. <note>(Tesis
+                                    Brouwer</orgName>, <date when="1951">1951</date>. <note resp="#ramon_alcalde">(Tesis
                                     doctoral, con bibliografía exhaustiva hasta esa
                                 fecha.)</note></bibl></p>
                         <p><bibl><author ref="#jacques_maritain">MARITAIN, Jacques</author>. <title
@@ -7834,7 +7834,7 @@
                                     >Los judíos entre las naciones</title>. <placeName
                                     ref="#buenos_aires_ciudad">Buenos Aires</placeName>,
                                     <orgName>Sur</orgName>, <date when="1938">1938</date>.
-                                    <note>(Conferencia pronunciada en el <placeName type="venue"
+                                    <note resp="#ramon_alcalde">(Conferencia pronunciada en el <placeName type="venue"
                                         >Théatre des Ambassadeurs</placeName>, <placeName
                                         ref="#paris">Paris</placeName>, <date when="1938-02-05">5 de
                                         febrero de 1938</date>.)</note></bibl></p>
@@ -7843,7 +7843,7 @@
                                     ref="#maritain_grandes_amities">Les grandes amitiés</title>.
                                     <placeName ref="#bruselas">Bruselas</placeName>,
                                     <orgName>Desclée de Brouwer</orgName>, <date when="1943"
-                                    >1943</date>. <note>(Hay traducción: <placeName
+                                    >1943</date>. <note resp="#ramon_alcalde">(Hay traducción: <placeName
                                         ref="#buenos_aires_ciudad">Buenos Aires</placeName>,
                                         <orgName>Desclée de Brouwer</orgName>, <date when="1945"
                                         >1945</date>.)</note></bibl></p>
@@ -7859,7 +7859,7 @@
                                     >Mont-Oriol</title>
                                 <date type="original" when="1887">/1887/</date>. <placeName
                                     ref="#paris">Paris</placeName>, <orgName>Luis Conard</orgName>,
-                                    <date when="1910">1910</date>. <note>(<title level="s"
+                                    <date when="1910">1910</date>. <note resp="#ramon_alcalde">(<title level="s"
                                         ref="#maupassant_oeuvres_completes">Oeuvres Complètes de Guy
                                         de Maupassant</title>.)</note></bibl></p>
                         <p><bibl><author ref="#walter_scott">SCOTT, Walter</author>. <title
@@ -7867,7 +7867,7 @@
                                 <date type="original" when="1820">/1820/</date>. <placeName
                                     ref="#edinburgo">Edinburgo</placeName>, <orgName>Adam y Charles
                                     Black</orgName>, <date when="1877">1877</date>.
-                                            <note><bibl>(<title level="s" ref="#waverley_novels"><choice>
+                                            <note resp="#ramon_alcalde"><bibl>(<title level="s" ref="#waverley_novels"><choice>
                                                 <sic>The Wawerley Novels</sic>
                                                 <corr>The Waverley Novels</corr>
                                             </choice></title>. Author’s Edition Entire. <biblScope
@@ -7891,9 +7891,9 @@
                                         when="1944">1944</date>. <edition>(11
                                     edición.)</edition></bibl>
                                 <bibl><title level="m" rend="italic:true" ref="#wast_oro"
-                                        >Oro</title>. <note>Segunda Parte de <title level="m"
+                                        >Oro</title>. Segunda Parte de <title level="m"
                                             ref="#wast_kahal">El Kahal</title>.
-                                    (Ibídem.)</note></bibl>
+                                    (Ibídem.)</bibl>
                             </listBibl></p>
                         <p><listBibl>
                                 <bibl><author ref="#emile_zola">ZOLA, Emile</author>. <title
@@ -7904,11 +7904,9 @@
                                         >Paris</placeName>, <orgName>Francois
                                     Bernouard</orgName>.</bibl>
                                 <bibl><title level="m" rend="italic:true" xml:lang="fr"
-                                        ref="#zola_une_campagne">Une campagne</title>.
-                                        <note>(Ibidem.)</note></bibl>
+                                        ref="#zola_une_campagne">Une campagne</title>. (Ibidem.)</bibl>
                                 <bibl><title level="m" rend="italic:true" xml:lang="fr"
-                                        ref="#zola_nouvelle_campagne">Nouvelle campagne</title>.
-                                        <note>(Ibidem.)</note></bibl>
+                                        ref="#zola_nouvelle_campagne">Nouvelle campagne</title>. (Ibidem.)</bibl>
                             </listBibl></p>
 
                     </div>
@@ -10258,10 +10256,10 @@
                 </div>
 
                         <div type="text" subtype="crítica" xml:id="zola_texto_citado">
-                    <head>Notas manuscritas para <title level="m" ref="#zola_argent">L'Argent</title><note>Extracto del manuscrito conservado en la <orgName type="library">Biblioteca
+                    <head>Notas manuscritas para <title level="m" ref="#zola_argent">L'Argent</title><note resp="#hugo_savino">Extracto del manuscrito conservado en la <orgName type="library">Biblioteca
                         Nacional de París</orgName>.</note></head>
                     <byline><persName ref="#emile_zola">Emilio Zola</persName></byline>
-                    <note>Traducido por <persName ref="#hugo_savino">Hugo Savino</persName></note>
+                            <note type="translator">Traducido por <persName ref="#hugo_savino">Hugo Savino</persName></note>
 
                     <div type="introduction">
                         <byline><persName ref="#hugo_savino">Hugo Savino</persName></byline>
@@ -10466,7 +10464,7 @@
                             dos mujeres que sollozan y que sólo tienen la miseria y el abandono.
                             Todo esto no me da una gran pasión central. Será difícil encontrar una y
                             si es preciso me las arreglaré sin ella.</p>
-                        <note>(Páginas 378 a 394)</note>
+                        <p rend="italic:true">(Páginas 378 a 394)</p>
 
                     </div>
 
@@ -10507,7 +10505,7 @@
                             noble, quererlo y hacerle cometer tonterías que lo perderán. Cuidar de
                             resolver bien este personaje, que puede a partir de ahora llegar a ser
                             central.</p>
-                        <note>(Páginas 378 a 400)</note>
+                        <p rend="italic:true">(Páginas 378 a 400)</p>
 
                     </div>
 
@@ -10607,7 +10605,7 @@
                             sus lágrimas a causa de los desastres, un poco de sol en la tormenta, y
                             además su esperanza. </p>
 
-                        <note>(Páginas 404 a 412)</note>
+                        <p rend="italic:true">(Páginas 404 a 412)</p>
                     </div>
                     <div>
                         <p>La psicología de mi Saccard. Querer ganar dinero, ¿por qué? No como
@@ -10628,7 +10626,7 @@
                             sólo sueña con atacarlo: por un momento, es preciso mostrarlo a punto de
                             destruirlo. Se embriaga con su triunfo, cree que lo hará saltar o al
                             menos que lo hará vacilar.</p>
-                        <note>(Páginas 423 y 424)</note>
+                        <p rend="italic:true">(Páginas 423 y 424)</p>
 
                     </div>
 
@@ -10653,8 +10651,8 @@
                             órdenes: Saccard sabe por el corredor que el procurador la mantiene. Por
                             último poner esto; y sólo la cabeza que sale por el coche. Me gustaría
                             que fuese el corredor, futuro director del diario, quien la impulsa,
-                            mientras que el verdadero corredor va a recibir sus órdenes. (Páginas
-                            455 a 467)</p>
+                            mientras que el verdadero corredor va a recibir sus órdenes.</p>
+                        <p rend="italic:true">(Páginas 455 a 467)</p>
 
                     </div>
 
@@ -10691,7 +10689,7 @@
                         <p>Viven en la avenida Clichy. Definitivamente lanzado. Un escritor que
                             atraviesa, escéptico, este mundo de las finanzas, con desdén por el
                             dinero.</p>
-                        <note>(Páginas 324 a 326)</note>
+                        <p rend="italic:true">(Páginas 324 a 326)</p>
 
                     </div>
 
@@ -10714,7 +10712,8 @@
                             trabajo, que ni siquiera uno de sus empleados haría. Enorme fortuna, lo
                             único que hace es jugar con sus capitales; de ahí la base sólida de sus
                             operaciones. Oponerle por lo tanto a un Saccard apasionado: un ser frío
-                            y acumulador. (Páginas 341 y 342)</p>
+                            y acumulador.</p>
+                        <p rend="italic:true">(Páginas 341 y 342)</p>
 
                         <p>Massias, 30 años.— Corredor de agente de bolsa. El prototipo del
                             corredor. Busnach, Becque, otros. Un joven fuerte, apoplético,
@@ -10733,7 +10732,7 @@
                         <p>Lo haré un poco venido a menos, hijo de un magistrado de Lyon que terminó
                             mal. Hizo estudios incompletos de abogacía, o incluso se recibió, se
                             descorazonó y se encontró metido en la Bolsa. </p>
-                        <note>(Páginas 353 y 354, B.N. 10268)</note>
+                        <p rend="italic:true">(Páginas 353 y 354, B.N. 10268)</p>
                     </div>
 
                     <div>
@@ -10802,7 +10801,7 @@
                             que anuncian la futura grandeza de Alemania.— Entonces hago de mi judío
                             simplemente un Prusiano, nacido en Francia, por ese mismo hecho
                             naturalizado.</p>
-                        <note>(Páginas 54 a 57)</note>
+                        <p rend="italic:true">(Páginas 54 a 57)</p>
                     </div>
 
                 </div>
@@ -10973,7 +10972,7 @@
             <div type="prose" subtype="cuento">
                 
                 <head>Quaker</head>
-                <byline><persName ref="#hector_grifasi">Héctor Grifasi</persName></byline>
+                <byline><persName ref="#hector_grisafi">Héctor Grisafi</persName></byline>
                 <p> Hasta aquí llegué.</p>
                 <p> No sé muy bien de qué manera me fui acercando. Según parece lo hice con gracia.
                     Saltando de un episodio a otro, demorándome en cada uno apenas lo suficiente como
@@ -12643,7 +12642,7 @@
  
             </div>
             
-              <div type="text" subtype="crítica">
+              <div type="text" subtype="crítica" xml:id="molloy_dario">
                 
                   <head>Voracidad y solipsismo en la poesía de <persName ref="#ruben_dario"
                         >Darío</persName></head>
@@ -13231,7 +13230,7 @@
   <div type="text" subtype="teoría">
                 <head>El lugar de la traducción</head>
                 <byline><persName ref="#antoine_berman">Antoine Berman</persName></byline>
-                <note>Traducido por <persName ref="#beatriz_castillo">Beatriz
+                <note type="translator">Traducido por <persName ref="#beatriz_castillo">Beatriz
                     Castillo</persName></note>
 
                 <p> Al redactar este ensayo sobre la <term type="concept">teoría de la
@@ -13612,7 +13611,7 @@
             <div type="text" subtype="ver">
             <head>Abajo</head>
             <byline><persName ref="#leonora_carrington">Leonora Carrington</persName></byline>
-            <note>Traducido por <persName ref="#cesar_moro">César Moro</persName></note>
+                <note type="translator">Traducido por <persName ref="#cesar_moro">César Moro</persName></note>
 
             <div type="introduction">
                <head>Nota introductoria</head>
@@ -14213,7 +14212,7 @@
                   de liberar mis manos para dibujarlo). Aquel triángulo, para mí, explicaba
                   Todo.</p>
             </div>
-            <note>Continúa en el próximo número.</note>
+            <note rend="italic:true">Continúa en el próximo número.</note>
 
          </div>
 

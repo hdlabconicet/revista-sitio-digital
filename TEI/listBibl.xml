@@ -1993,7 +1993,7 @@
     </bibl>
     
     <bibl xml:id="ellmann_joyce_letters">
-        <editor ref="#richard_ellman">Ellmann, Richard</editor>
+        <editor ref="#richard_ellmann">Ellmann, Richard</editor>
         <title level="m">Selected Joyce Letters</title>
         <date when="1975"/>
     </bibl>
@@ -3334,12 +3334,6 @@
         <date when="1947"/>
     </bibl>
     
-    <bibl xml:id="hernandez_obras_completas">
-        <author ref="#felisberto_hernandez">Hernández, Felisberto</author>
-        <title level="m">Obras completas</title>
-        <date when="1983"/>
-    </bibl>
-    
     <bibl xml:id="saer_cicatrices">
         <author ref="#juan_jose_saer">Saer, Juan José</author>
         <title level="m">Cicatrices</title>
@@ -4129,12 +4123,140 @@
         <date when="1987-07"/>
     </bibl>
     
+    <bibl xml:id="duprey_dumas">
+        <author ref="#jacques_duprey">Jacques Duprey</author>
+        <title level="m">Alejandro Dumas, Rosas y Montevideo</title>
+        <date when="1942"/>
+    </bibl>
     
+    <bibl xml:id="dumas_intriga">
+        <author ref="#alejandro_dumas">Alejandro Dumas</author>
+        <title level="m">La intriga de amor</title>
+    </bibl>
     
+    <bibl xml:id="varetto_amalia">
+        <author ref="#elba_varetto">Elba Varetto</author>
+        <title level="a">Amalia entre la historia y la ficción</title>
+        <title level="j" ref="#revista_todo_historia">Rev. Todo es Historia</title>
+        <date when="1979-10"/>
+    </bibl>
     
+    <bibl xml:id="unamuno_idioma_argentinos">
+        <author ref="#miguel_unamuno">Miguel de Unamuno</author>
+        <title level="a">"El idioma nacional de los argentinos"</title>
+        <date when="1983">1983</date>
+    </bibl>
     
+    <bibl xml:id="rubione_criollismo">
+        <editor ref="#alfredo_rubione">Alfredo Rubione</editor>
+        <title level="m">En torno al criollismo</title>
+        <date when="1983">1983</date>
+    </bibl>
     
+    <bibl xml:id="vinias_lit_arg">
+        <author ref="#david_vinias">David Viñas</author>
+        <title level="m">Literatura argentina y realidad política</title>
+        <date when="1964">1964</date>. 
+    </bibl>
     
+    <bibl xml:id="gusman_cuerpo_velado">
+        <author ref="#luis_gusman">Luis Gusmán</author>
+        <title level="m">Cuerpo velado</title>
+        <date when="1978">1978</date>
+    </bibl>
+    
+    <bibl xml:id="hernandez_suma">
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <title level="a">La suma</title>
+    </bibl>
+    
+    <bibl xml:id="hernandez_obras_completas">
+        <author ref="#felisberto_hernandez">Felisberto Hernández</author>
+        <title level="s">Obras Completas</title>
+        <date when="1981">1981</date>
+    </bibl>
+    
+    <bibl xml:id="dario_completa2">
+        <author ref="#ruben_dario">Rubén Darío</author>
+        <title level="m">Obras poéticas completas</title>
+        <date when="1949">1949</date>
+    </bibl>
+    
+    <bibl xml:id="lugones_completas">
+        <author ref="#leopoldo_lugones">Lugones, Leopoldo</author>
+        <title level="m">Obras poéticas completas</title>
+        <date when="1974">1974</date>
+    </bibl>
+    
+    <bibl xml:id="rossler_cambalache">
+        <author ref="#osvaldo_rossler">Rossler, Osvaldo</author>
+        <title level="a">Cambalache</title>
+    </bibl>
+    
+    <bibl xml:id="anto_cuentos_bra">
+        <title level="m">Pequeña Antología de Cuentos Brasileños</title>
+        <date when="1946">1946</date>
+    </bibl>
+    
+    <bibl xml:id="revista_nac_venezuela">
+        <title level="j">Revista Nacional de Cultura</title>
+        <pubPlace ref="#caracas">Caracas, Venezuela</pubPlace>
+        <date from="1938">1973-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q139489011</idno>
+    </bibl>
+    
+    <bibl xml:id="revista_selecciones">
+        <title level="j">Selecciones del Reader's Digest</title>
+        <publisher>The Reader's Digest Association</publisher>
+        <pubPlace ref="#nueva_york">Nueva York, EE.UU. (Sede central)</pubPlace>
+        <pubPlace ref="#habana">La Habana, Cuba (Primera sede en español)</pubPlace>
+        <pubPlace ref="#buenos_aires_ciudad">Buenos Aires, Argentina (Edición local)</pubPlace>
+        <date from="1940">1940-presente</date>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2837701</idno>
+    </bibl>
+    
+    <bibl xml:id="oficio_viernes">
+        <title level="a">Oficio del Viernes Santo: Los Improperios</title>
+        <title level="m">Missale Romanum (Misal Romano)</title>
+        <author>Liturgia Romana</author>
+    </bibl>
+   
+    <bibl xml:id="cronicas_gargantua">
+        <author>Anónimo</author>
+        <title level="m">Les Grandes et Inestimables Chroniques du Grand et Énorme Géant Gargantua</title>
+        <date when="1532"/>
+    </bibl>
+    
+    <bibl xml:id="bresson_notas">
+        <author ref="#robert_bresson">Robert Bresson</author>
+        <title level="m">Notas sobre el cinematógrafo</title>
+        <date when="1975"/>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q107104483</idno>
+    </bibl>
+    
+    <bibl xml:id="eisenstein_montaje38">
+        <author ref="#sergei_eisenstein">Sergei Eisenstein</author>
+        <title level="a">Montaje 38</title>
+        <title level="m" ref="#eisenstein_reflexiones_cineasta">Reflexiones de un cineasta</title>
+        <date when="1938"/>
+    </bibl>
+    
+    <bibl xml:id="historia_lit_arg">
+        <title level="m">Historia de la Literatura Argentina</title>
+        <editor>Susana Zanetti</editor>
+        <date from="1980" to="1986">1980-1986</date>
+    </bibl>
+    
+    <bibl xml:id="vinias_escritor_gentleman">
+        <author ref="#david_vinias">David Viñas</author>
+        <title level="a">El escritor gentleman (Lucio V. Mansilla)</title>
+        <title level="m" ref="#vinias_sarmiento_cortazar">Literatura argentina y realidad política</title>
+    </bibl>
+    
+    <bibl xml:id="vinias_mirada">
+        <author ref="#david_vinias">David Viñas</author>
+        <title level="a">La mirada en el romanticismo</title>
+    </bibl>
     
     
     

@@ -586,17 +586,64 @@
         <event type="founding"><p><date when="1973"/></p></event>
     </org>
     
-
+    <org xml:id="ed_libros_mirasol">
+        <orgName>Libros del Mirasol</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1961"/></p></event>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q130643200</idno>
+    </org>
     
+    <org xml:id="ed_biblioteca_plus_ultra">
+        <orgName>Editorial Plus Ultra</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1964"/></p></event>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q127742049</idno>
+    </org>
     
+    <org xml:id="ed_garcia_cambeiro">
+        <orgName>Fernando García Cambeiro</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1955"/></p></event>
+    </org>
     
+    <org xml:id="ed_correa">
+        <orgName>Éditions Corrêa</orgName>
+        <location>
+            <country key="FR" ref="#francia">Francia</country>
+            <settlement ref="#paris">París</settlement>
+        </location>
+        <event type="founding"><p><date when="1932"/></p></event>
+        <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q2927437</idno>
+    </org>
     
+    <org xml:id="ed_nova">
+        <orgName>Editorial Nova</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1945"/></p></event>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q91581731</idno>
+    </org>
     
-    
-    
-    
-    
-    
+    <org xml:id="ed_belgrano">
+        <orgName>Editorial de Belgrano</orgName>
+        <location>
+            <country key="AR" ref="#argentina">Argentina</country>
+            <settlement ref="#buenos_aires_ciudad">Buenos Aires</settlement>
+        </location>
+        <event type="founding"><p><date when="1977"/></p></event>
+        <idno type="URI" subtype="wikidata">https://www.wikidata.org/wiki/Q130469770</idno>
+    </org>
     
     
     

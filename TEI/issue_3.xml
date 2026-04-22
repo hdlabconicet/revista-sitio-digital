@@ -127,7 +127,7 @@
 <text>
         <body>
 
-            <div type="editorial" subtype="localización" xml:id="localización_3">
+            <div type="editorial" subtype="entredichos" xml:id="localización_3">
                 <head> Localización</head>
                 <p>
                     <title level="j" rend="italic:true;" ref="#revista_sitio">Sitio</title> 3, y
@@ -4764,7 +4764,7 @@
 				mero hecho de formularse la pregunta insinúa la labilidad de ciertas conjunciones
 				puramente espaciales. Un número reciente de una fascicular <title level="m" ref="#historia_lit_arg">Historia de la
 				Literatura Argentina</title> amontona en sus apretadas páginas los nombres de <persName ref="#juan_jose_saer">Saer</persName>, <persName ref="#manuel_puig">Puig</persName>,
-				Lamborghini, <persName ref="#hector_libertella">Libertella</persName>, <persName ref="#luis_gusman">Gusmán</persName>, García, <persName ref="#ricardo_piglia">Piglia</persName>, etc. No es difícil intuir para
+			    Lamborghini, <persName ref="#hector_libertella">Libertella</persName>, <persName ref="#luis_gusman">Gusmán</persName>, <persName ref="#german_garcia">García</persName>, <persName ref="#ricardo_piglia">Piglia</persName>, etc. No es difícil intuir para
 				cualquiera que haya leído hasta una página de esos autores, que hay entre ellos una
 				“distancia” irreductible y mucho más profunda que cualquier vecindad
 				territorial.</p>
@@ -6250,13 +6250,13 @@
 				causa de una enfermedad cardíaca. (<q who="#borges">“Larga repercusión tienen las palabras”</q> escribió
 				<persName ref="#borges">Borges</persName>). Circunstancias distintas son alineadas simétricamente por una fecha: 16 de
 				junio. <title level="m" rend="italic:true;" ref="#joyce_ulises">Ulises</title>, de <persName ref="#james_joyce">Joyce</persName>, ocurre un 16 de junio ( <hi
-					rend="italic:true;">Bloomsday</hi>); <persName ref="#stanislaus_joyce">Stanislaus Joyce</persName> —memora <persName ref="#richard_ellman">Richard Ellman</persName>—
-				<q who="#richard_ellman">“murió el <date when="1955-06-16">16 de junio de 1955</date>, Día de las flores, el día en que su hermano se había
+					rend="italic:true;">Bloomsday</hi>); <persName ref="#stanislaus_joyce">Stanislaus Joyce</persName> —memora <persName ref="#richard_ellmann">Richard <choice><sic>Ellman</sic> <corr>Ellmann</corr></choice></persName>—
+				<q who="#richard_ellmann">“murió el <date when="1955-06-16">16 de junio de 1955</date>, Día de las flores, el día en que su hermano se había
 				    hecho famoso. <persName ref="#stanislaus_joyce">Stanislaus</persName> estaba acostumbrado a celebrar el aniversario con una
 				reunión. El azar colaboró para unir a los hermanos en la muerte, como lo habían
 				estado en vida”</q>,<note resp="#jorge_monteleone" n="5"><bibl><author ref="#stanislaus_joyce">Joyce, Stanislaus</author>.<title level="m"
-				    rend="italic:true;" ref="#joyce_hermano">Mi hermano James Joyce</title>. Introducción de <persName ref="#richard_ellman">Richard
-					Ellman</persName>. <pubPlace ref="#buenos_aires_ciudad">Buenos Aires</pubPlace>, <date when="1961">1961</date>; <biblScope unit="page">p. 25</biblScope></bibl>.</note> como una sombra abominable que
+				    rend="italic:true;" ref="#joyce_hermano">Mi hermano James Joyce</title>. Introducción de <persName ref="#richard_ellmann">Richard
+				        <choice><sic>Ellman</sic> <corr>Ellmann</corr></choice></persName>. <pubPlace ref="#buenos_aires_ciudad">Buenos Aires</pubPlace>, <date when="1961">1961</date>; <biblScope unit="page">p. 25</biblScope></bibl>.</note> como una sombra abominable que
 				desbarata la ficción con el horror colectivo, paralelo a otro horror semejante y más
 				cercano a nosotros, el <date when="1955-06-16">16 de junio de 1955</date> fuerzas opositoras al peronismo
 				bombardean la <placeName ref="#plaza_mayo">Plaza de Mayo</placeName>, muriendo muchos civiles inocentes. (<q who="#borges">“A la realidad le
@@ -6867,7 +6867,7 @@
                     <p> Desde <date when="1842">1842</date> <persName ref="#gustave_flaubert">Flaubert</persName> se instala en la mansión de su padre, en <placeName ref="#croisset">Croisset</placeName>, víctima de
                         una total postración nerviosa. Silencio, aislamiento, tal la consigna bajo la cual
                         compone su primera <title level="m" rend="italic:true;" ref="#flaubert_educacion">Educación Sentimental</title> . No obstante,
-                        <eventName ref="#revolucion_1848">los sucesos de <date when="1848">1848</date></eventName> que reinstaurarían la <placeName ref="#francia_ii_republica">República en Francia</placeName> lo sorprenden en
+                        <eventName>los sucesos de <date when="1848">1848</date></eventName> que reinstaurarían la <placeName ref="#francia_ii_republica">República en Francia</placeName> lo sorprenden en
                         <placeName ref="#paris">París</placeName>. <persName ref="#gustave_flaubert">Flaubert</persName> vive de cerca el levantamiento y la <hi rend="italic:true;"
                             >utilización</hi> que de dicho levantamiento hace la burguesía. En <date when="1851">1851</date>, un
                         viaje por el <placeName>Norte de Africa</placeName> proporcionará un marco casi legendario a la historia
@@ -6936,7 +6936,7 @@
                             >Salambó</title> cumple
                         el velo sagrado de <persName type="deity">Tanit</persName> estaría a cargo de unos cuantos diplomáticos en poder del
                         enemigo.</p>
-                    <p> Durante el <placeName ref="#ii_imperio_francia">Segundo Imperio</placeName>, durante <eventName ref="#guerra_crimea">la Guerra de Crimea</eventName>, <persName ref="#gustave_flaubert">Gustave Flaubert</persName> vivía en
+                    <p> Durante el <placeName ref="#ii_imperio_francia">Segundo Imperio</placeName>, durante <eventName>la Guerra de Crimea</eventName>, <persName ref="#gustave_flaubert">Gustave Flaubert</persName> vivía en
                         el <hi rend="italic:true;">apartamiento</hi> de la mansión de su padre en <placeName ref="#croisset">Croisset</placeName>,
                         <hi rend="italic:true;">refugiado</hi> en su trabajo creador: no participó de
                         los levantamientos de <placeName ref="#paris">París</placeName>, no hizo arengas, curiosamente no fue — <hi
@@ -6946,7 +6946,7 @@
                         como quien juega a la batalla naval? Curiosamente también había de ser <persName ref="#jean_paul_sartre">Sartre</persName> quien
                         un siglo más tarde dedicara a su obra el estudio más esclarecedor.</p>
                     <p> A nadie le costó mucho relacionar la versión sartreana de <title level="m" rend="italic:true;" ref="#euripides_troyanas"
-                        >Las Troyanas</title> de <persName ref="#euripides">Eurípides</persName> con la <eventName ref="#guerra_argelia">guerra de <placeName ref="#argelia">Argelia</placeName></eventName>. <title level="m"
+                        >Las Troyanas</title> de <persName ref="#euripides">Eurípides</persName> con la <eventName>guerra de <placeName ref="#argelia">Argelia</placeName></eventName>. <title level="m"
                             rend="italic:true;" ref="#sartre_troyanas">Las Troyanas</title> se presentó en <placeName ref="#buenos_aires_ciudad">Buenos Aires</placeName> y ya no
                         alcanzó <placeName ref="#argelia">Argelia</placeName>: todo el Tercer Mundo moriría si <persName type="classical_character">Astiánax</persName> moría, el último
                         descendiente de la estirpe troyana. <persName type="classical_character">Astiánax</persName> recibió las honras fúnebres y fue

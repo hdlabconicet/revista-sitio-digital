@@ -8461,7 +8461,7 @@
         <idno type="URI" subtype="wikidata">http://www.wikidata.org/entity/Q310866</idno>
     </person>
     
-    <person xml:id="richard_ellman">
+    <person xml:id="richard_ellmann">
         <persName>
             <surname>Ellmann</surname>
             <forename>Richard</forename>
@@ -14550,9 +14550,9 @@
         </persName>
     </person>
     
-    <person xml:id="norma_gentilli">
+    <person xml:id="norma_gentili">
         <persName>
-            <surname>Gentilli</surname>
+            <surname>Gentili</surname>
             <forename>Norma</forename>
         </persName>
     </person>
@@ -14683,11 +14683,103 @@
         </persName>
     </person>
     
+    <person xml:id="antonio_oviedo">
+        <persName>
+            <surname>Oviedo</surname>
+            <forename>Antonio</forename>
+        </persName>
+    </person>
     
+    <person xml:id="fernando_gentili">
+        <persName>
+            <surname>Gentili</surname>
+            <forename>Fernando</forename>
+        </persName>
+    </person>
     
+    <person xml:id="graciela_lopez">
+        <persName>
+            <surname>Lopez</surname>
+            <forename>Graciela</forename>
+        </persName>
+    </person>
     
+    <person xml:id="marcela_sola">
+        <persName>
+            <surname>Solá</surname>
+            <forename>Marcela</forename>
+        </persName>
+    </person>
     
+    <person xml:id="omar_borre">
+        <persName>
+            <surname>Borré</surname>
+            <forename>Omar</forename>
+        </persName>
+    </person>
     
+    <person xml:id="oscar_perez">
+        <persName>
+            <surname>Pérez</surname>
+            <forename>Oscar</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="oscar_scopa">
+        <persName>
+            <surname>Scopa</surname>
+            <forename>Oscar</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="rafael_diaz_guzman">
+        <persName>
+            <surname>Díaz Guzmán</surname>
+            <forename>Rafael</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="ramon_bell">
+        <persName>
+            <surname>Ramón</surname>
+            <forename>Bell</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="raul_santana">
+        <persName>
+            <surname>Santana</surname>
+            <forename>Raúl</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="ricardo_gandolfo">
+        <persName>
+            <surname>Gandolfo</surname>
+            <forename>Ricardo</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="sergio_rondan">
+        <persName>
+            <surname>Rondán</surname>
+            <forename>Sergio</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="damaso_alonso">
+        <persName>
+            <surname>Alonso</surname>
+            <forename>Dámaso</forename>
+        </persName>
+    </person>
+    
+    <person xml:id="alfredo_rubione">
+        <persName>
+            <surname>Rubione</surname>
+            <forename>Alfredo</forename>
+        </persName>
+    </person>
     
     
     

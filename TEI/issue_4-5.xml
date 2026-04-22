@@ -121,7 +121,7 @@
 	<text>
 		<body>
 
-			<div type="editorial" subtype="entredichos" xml:id="Entredichos_4-5">
+			<div type="editorial" subtype="entredichos" xml:id="sitio_entredichos_4-5">
 				<head> Entredichos</head>
 				<byline>
 					<persName ref="#ramon_alcalde">Ramón Alcalde</persName>, <persName
@@ -534,7 +534,7 @@
 					promueve, leer es reinscribir críticamente los textos en el presente político y
 					cultural, sosteniendo su potencia transformadora más allá de la mera repetición
 					o consumo ideológico. </note>
-				<note type="summary" resp="#ED" target="#Entredichos_4-5"
+				<note type="summary" resp="#ED" target="#sitio_entredichos_4-5"
 					ana="#ana_reading #ana_essay #ana_sitio #ana_truth"> Este editorial diagnostica
 					la "decadencia del ensayo argentino" como un síntoma de un problema cultural más
 					profundo en la nueva democracia. Dicha decadencia se define como el paso de una
@@ -2617,7 +2617,7 @@
 						esquizofrénico que dice ser <persName ref="#olivier_messiaen"
 							>Messiaen</persName> y <persName ref="#coco_chanel">Cocó
 							Chanel</persName>, <persName ref="#caryl_chessman">Caryl
-							Chessman</persName> y el <persName ref="#dalai_lama">Dalai
+							Chessman</persName> y el <persName>Dalai
 							Lama</persName>; un bisabuelo lombardo que elabora una teoría
 						socio-biológico-económica y transforma, para editarla, su fábrica de
 						golosinas en una editorial; un holandés hondamente sedentario y
@@ -4181,7 +4181,7 @@
 							latinoamericanístico: la hasta entonces llamada “literatura
 								comprometida”<note n="1" resp="#ramon_alcalde">Esto lo escribí antes
 								de firmar el <title level="a" rend="italic:true"
-									ref="#sitio_entredichos_4">“Entredichos”</title>, donde se
+									ref="#sitio_entredichos_4-5">“Entredichos”</title>, donde se
 								matiza ampliamente este concepto.</note>. Posición —quisiera ser
 							bien entendido— que no tiene que ver con realismo-formalismo,
 							tradición-vanguardia, ni con los cambios en la sensibilidad estética
@@ -6934,7 +6934,7 @@
 							posteriores: <q source="#lacan_escritos">“No soy, allí donde soy el juguete de mi pensamiento,
 							pienso en lo que soy, allí donde no pienso pensar”</q> (<bibl><author ref="#lacan">J. Lacan</author>, <title level="a">“La
 							instancia de la letra en el inconsciente o la razón desde Freud”</title>, <title level="m" rend="italic:true;" ref="#lacan_escritos"
-								>Escritos</title> <biblScope unit="volume">I</biblScope>, trad, de <persName ref="#tomas_segovia">Tomás Segovia</persName>, <pubPlace ref="#ciudad_mexico">México</pubPlace>, <publisher ref="#ed_siglo_xxi">Siglo XXI
+								>Escritos</title> <biblScope unit="volume">I</biblScope>, trad, de <persName ref="#tomas_segovia">Tomás Segovia</persName>, <pubPlace ref="#ciudad_mexico">México</pubPlace>, <publisher ref="#ed_sigloxxi">Siglo XXI
 							Editores</publisher>, <date when="1971">1971</date>, <biblScope unit="page">p. 202</biblScope></bibl>). Lectura fundante del Yo felisbertiano: <bibl><author ref="#ana_barrenechea">Ana
 							María Barrenechea</author>, <title level="a">“Ex-centricidad, di-vergencias y con-vergencias en
 							Felisberto Hernández”</title>, en <title level="m" rend="italic:true;" ref="#textos_hispanoamericanos">Textos
@@ -6999,7 +6999,7 @@
 							sentimiento que tengo de la vida y su misterio. Mientras tenía la
 							ilusión de poder siquiera iniciar esa aventura, me lo pasaba pensando,
 							sintiendo, haciendo y deshaciendo formas, estructuras, abstracciones,
-							etc."</quote><bibl>(<title level="s" ref="#hernandez_obras_compeltas">O.C.</title> <biblScope unit="page">p. 18</biblScope>)</bibl></cit>. Este pre-texto insiste en el <hi rend="italic:true;"
+							etc."</quote><bibl>(<title level="s" ref="#hernandez_obras_completas">O.C.</title> <biblScope unit="page">p. 18</biblScope>)</bibl></cit>. Este pre-texto insiste en el <hi rend="italic:true;"
 								>mientras</hi> (p. 189) que señala duraciones múltiples y
 							constitutivas de los relatos posteriores a <date when="1944">1944</date>: lo fantástico
 							(suspensión entre lo trivial y lo inexplicable), el proceso del Yo

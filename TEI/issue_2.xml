@@ -123,6 +123,10 @@
 			<interp xml:id="ana_truth">Verdad</interp>
 		</interpGrp>
 
+		<interpGrp type="rhetorical_marker" xml:id="irony_markers"><interp xml:id="ana_parabasis">Parabasis (interruption of discourse)</interp><interp xml:id="ana_anacoluthon">Anacoluthon (syntactic break)</interp></interpGrp><spanGrp type="irony"><span xml:id="irony_global" ana="#ana_irony" target="#sitio_entredicho_2" resp="#ED"/></spanGrp><certainty target="#irony_global" locus="value" degree="0.6" resp="#ED"/><linkGrp xml:id="lg_irony_evidence" type="irony-evidence" targFunc="claim evidence"><link target="#irony_global #irony_1"/><link target="#irony_global #irony_2"/><link target="#irony_global #irony_3"/><link target="#irony_global #irony_4"/><link target="#irony_global #irony_5"/><link target="#irony_global #irony_6"/><link target="#irony_global #anacoluthon_A1"/><link target="#irony_global #anacoluthon_A3"/><link target="#irony_global #anacoluthon_A2"/><link target="#irony_global #parabasis_P1"/><link target="#irony_global #parabasis_P3"/></linkGrp><certainty target="#irony_1" locus="value" degree="0.9" resp="#ED"/><certainty target="#irony_2" locus="value" degree="0.9" resp="#ED"/><certainty target="#irony_3" locus="value" degree="0.9" resp="#ED"/><certainty target="#irony_4" locus="value" degree="0.9" resp="#ED"/><certainty target="#irony_5" locus="value" degree="0.9" resp="#ED"/><certainty target="#irony_6" locus="value" degree="0.9" resp="#ED"/><certainty target="#parabasis_P1" locus="value" degree="0.80"/><certainty target="#parabasis_P3" locus="value" degree="0.75"/><certainty target="#anacoluthon_A1" locus="value" degree="0.65"/><certainty target="#anacoluthon_A2" locus="value" degree="0.70"/><certainty target="#anacoluthon_A3" locus="value" degree="0.65"/>
+	
+
+
 	</standOff>
 
 
@@ -338,7 +342,7 @@
 						frente al proceso nacional e internacional desencadenado, muy poca
 						relevancia. </p>
 					
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s1"
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s1"
 						ana="#ana_writing #ana_sitio"> La sección I establece la profunda ruptura
 						causada por la Guerra de las Malvinas, que hizo que la revista literaria
 						fuera inicialmente «imposible». Relata el cambio del papel histórico de
@@ -437,7 +441,7 @@
 						refuerzan este sarcasmo, cuestionando la veracidad de su cobertura. La ironía
 						funciona, así, para desautorizar la figura de <persName ref="#bernardo_neustadt">Neustadt</persName> y denunciar la
 						manipulación mediática. </note>
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s2"> La sección II
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s2"> La sección II
 						describe el «aplazamiento» de la literatura seria, en particular las formas
 						críticas y diversas defendidas por <title level="j" ref="#revista_sitio">Sitio</title>, que abordaban las difíciles
 						realidades de <date from="1976" to="1981">1976-1981</date>. El editorial satiriza las «infraliteraturas de
@@ -506,7 +510,7 @@
 						con motores Rolls Royce y fuel oil de la Shell. Reyertas pastoriles, por
 						unos ojos bellidos, de Títiros y Melibeos. </p>
 					
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s3"> La sección III
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s3"> La sección III
 						destaca el carácter único y surrealista de «nuestra» guerra, contrastando su
 						naturaleza repentina, casi de cómic («intergaláctica» o «Batman»), con las
 						representaciones literarias e históricas tradicionales de la guerra. Los
@@ -565,7 +569,7 @@
 						Boedo. <persName ref="#martinez_estrada">Martínez Estrada</persName> se
 						habría solazado: “invariantes históricas". </p>
 					
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s4"> La sección IV
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s4"> La sección IV
 						marca el abrupto fin de la guerra. Describe el colapso de la retórica
 						nacionalista y la facilidad con que el discurso mediático sustituye el
 						fervor bélico por nuevas distracciones, como el Mundial de fútbol. En este
@@ -655,7 +659,7 @@
 						funcional: aceptar una realidad imperfecta y moralmente ambigua, pero que al
 						menos sea gobernable, en lugar de aspirar a ideales inalcanzables o
 						regodearse en la ruina. </note>
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s5"> La sección V
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s5"> La sección V
 						desarrolla una detallada crítica semiótica y política al poema <title level="a">"Cambalache"</title>
 						de <persName ref="#osvaldo_rossler">Osvaldo Rossler</persName>. El editorial deconstruye la metáfora del "cambalache",
 						que representa un caos de valores inherentemente inordenable y, según los
@@ -673,7 +677,7 @@
 						que perciben en la celebración del caos. </note>
 					
 				</div>
-				<div n="VI" xml:id="Entredichos_2_s6">
+				<div n="VI" xml:id="entredichos_2_s6">
 					<head> VI </head>
 					<p>
 						<persName ref="#osvaldo_rossler">Rossler</persName>, <hi rend="italic:true;"
@@ -840,7 +844,7 @@
 						de alguna manera <hi rend="italic:true;">conyugación</hi>. <persName ref="#pedro_abelardo">Abelardo</persName> y
 						<persName ref="#eloisa">Eloísa</persName>. </p>
 					
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s6"> La sección VI está
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s6"> La sección VI está
 						dedicada por completo a una deconstrucción crítica y minuciosa del poema
 						<title level="a" ref="#borges_lopezyward">"Juan López y Juan Ward"</title> de <persName ref="#borges">Jorge Luis Borges</persName>. Adoptando un método de
 						análisis retórico y semiótico riguroso (y a la vez irónico), el entredicho
@@ -862,7 +866,7 @@
 						sutilmente, una dinámica de poder desigual. </note>
 					
 				</div>
-				<div n="VII" xml:id="Entredichos_2_s7">
+				<div n="VII" xml:id="entredichos_2_s7">
 
 					<head> VII </head>
 					<p> Muchos otros pares de guerreros jóvenes pudieron ser amigos y encanecer
@@ -903,7 +907,7 @@
 							ana="#ana_irony #ana_parabasis">—ya lo hemos visto—</seg> piensa algo semejante, sólo que
 						su Musa tiene un poco menos de Mala Pata. </p>
 					
-					<note type="interpretation" resp="#ED" target="#Sitio_Ed_s7"> La sección VII
+					<note type="interpretation" resp="#ED" target="#entredichos_2_s7"> La sección VII
 						culmina la deconstrucción del poema de <persName ref="#borges">Borges</persName> y, con ello, articula la
 						postura final de todo el editorial. El texto critica el humanismo pacifista
 						de <persName ref="#borges">Borges</persName> por considerarlo ahistórico. Introduce el concepto de propiedad
@@ -3283,8 +3287,8 @@
 						<p> Nueva York, 11 de diciembre de 1933 </p>
 					</div>
 					<div type="letter">
-						<head> UNA CARTA DE JOYCE AL EDITOR DE<hi rend="italic:true;">ULISES </hi>EN
-							ESTADOS UNIDoS </head>
+						<head> UNA CARTA DE JOYCE AL EDITOR DE <hi rend="italic:true;">ULISES</hi> EN
+							ESTADOS UNIDOS </head>
 						<dateline>
 							<placeName>
 								<hi rend="italic:true">2 avenue St. Philibert, Passy</hi>
@@ -3993,7 +3997,7 @@
 			<div type="poem" subtype="poema">
 				<head> El claustro </head>
 				<byline>
-					<persName ref="#delia_passini">Delia Passini</persName>
+					<persName ref="#delia_pasini">Delia <choice><sic>Passini</sic> <corr>Pasini</corr></choice></persName>
 				</byline>
 				<lg>
 					<l>Enterrado en la arena</l>
