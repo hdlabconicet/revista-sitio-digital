@@ -1,0 +1,25 @@
+title: Viaje al Río de la Plata 
+email: hdlabconicet@gmail.com
+description: (1534-1554). Ulrich Schmidel
+baseurl: "/viaje-al-rio-de-la-plata"
+url: "https://hdlab.space"
+github_repo: viaje-al-rio-de-la-plata/
+twitter_username: hdlabconicet
+github_username:  hdlabconicet
+facebook_username: hdlabconicet
+
+social_link: twitter
+social_username: hdlabconicet
+
+theme_color: light
+
+# Build settings
+markdown: kramdown
+
+collections:
+    pages:
+      output: true
+    recursos:
+      output: true
+    txtxpagina:
+      output: true
