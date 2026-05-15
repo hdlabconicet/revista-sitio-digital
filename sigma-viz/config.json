@@ -1,0 +1,51 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "file": "https://raw.githubusercontent.com/hdlabconicet/hdlabconicet.github.io/ba9d69f16b56e09bebdb08545a392d4c20b51905/_includes/logo-hd-iibicrit-grises-footer.svg",
+    "link": "https://hdlab.space/",
+    "text": "Grafo realizado por Romina De León para HDLAB CONICET",
+    "width": 30
+  },
+  "text": {
+    "more": "Este grafo presenta las relaciones entre personajes y pueblos originarios, mencionados a lo largo de los capítulos de la crónica <i>Viaje al Río de la Plata (1534-1554)</i> de Ulrich Schmidel. <br>El tamaño de un nodo es proporcional a la cantidad de conexiones que representa. Los colores diferenciados de nodos se debe a la importancia del personaje o pueblo. Los colores de las aristas poseen son relativos a los capítulos. <br>Mediante las lupas se podrá acercar (+), alejar (-) y centrar la imagen.",
+    "intro": "Grafo de <a href=\"https://hdlab.space/viaje-al-rio-de-la-plata\">Viaje al Río de la Plata (1534-1554)</a> de Ulrich Schmidel",
+    "title": "Personajes y pueblos originarios en <i>Viaje al Río de la Plata</i> de Ulrico Schmidel"  },
+  "legend": {
+    "colorLabel": "Capítulos",
+    "nodeLabel": "Personajes/Pueblos Originarios"
+  },
+  "features": {
+    "search": true,
+    "hoverBehavior": "default"
+  },
+  "informationPanel": {
+    "groupByEdgeDirection": true,
+    "imageAttribute": false
+  },
+  "sigma": {
+    "drawingProperties": {
+      "defaultEdgeType": "curve",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd",
+      "activeFontStyle": "bold",
+      "defaultLabelColor": "#000",
+      "labelThreshold": 10,
+      "defaultLabelHoverColor": "#fff",
+      "fontStyle": "bold",
+      "hoverFontStyle": "bold",
+      "defaultLabelSize": 14
+    },
+    "graphProperties": {
+      "maxEdgeSize": 0.5,
+      "minEdgeSize": 0.2,
+      "minNodeSize": 1,
+      "maxNodeSize": 7
+    },
+    "mouseProperties": {
+      "maxRatio": 20,
+      "minRatio": 0.75
+    }
+  }
+}

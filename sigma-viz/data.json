@@ -1,0 +1,5714 @@
+{
+  "nodes": [
+    {
+      "x": -50.869808197021484,
+      "y": 156.7451934814453,
+      "id": "Naperú",
+      "attributes": {
+        "Glosa": "Los naperus se ubicaban principalmente al oeste del cerro de San Fernando y de los payaguas, sus aliados, con quienes atacaron y destruyeron a la expedición de Ayolas. Se alimentaban a carne y pescado."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 490.5658264160156,
+      "y": 175.9395294189453,
+      "id": "Francisco de Ribera",
+      "attributes": {
+        "Glosa": "Hernando de Ribera con Francisco de Ribera , Gonzalo Pérez de Morán y otros vivían en las costas del Brasil frente a la Isla de Santa Catalina . Habían venido con la expedición de Gaboto y a su regreso a España deciden quedarse. Allí los encuentra Gonzalo de Mendoza que buscaba víveres y los trae a Nuestra Señora de Bueños Ayres . Hablaban muy bien el guaraní y su concurso como lenguaraces fue muy eficaz para la conquista."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -524.2823486328125,
+      "y": 345.12750244140625,
+      "id": "Gonzalo de Mendoza",
+      "attributes": {
+        "Glosa": "Mendoza, Gonzalo de . Baeza (Jaén), f. s. XV – Asunción (Paraguay), 1558. Conquistador y explorador"
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 193.8546142578125,
+      "y": -326.5108947753906,
+      "id": "Zechennaus Saluaischco",
+      "attributes": {
+        "Glosa": "Este pueblo también conocido como chaná salvajes y denominado yaros (o yaroes , yaroses o jaros) , antes de la fusión con los charrúas entre fines del siglo XVII y principios del siglo XVIII, habitaban ambas márgenes del bajo río Uruguay. Sobre la base de referencias históricas, Salvador Canals Frau opinó que los yaros pertenecían al grupo de los cáingangs."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -101.35775756835938,
+      "y": -551.0872802734375,
+      "id": "Francisco Ruiz Galán",
+      "attributes": {
+        "Glosa": "Ruiz Galán, Francisco . España, p. s. XVI – ?, s. XVI. Conquistador, teniente de gobernador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -812.0043334960938,
+      "y": -422.919189453125,
+      "id": "Gonzalo Pizarro Viedma",
+      "attributes": {
+        "Glosa": "Pizarro Viedma, Gonzalo . Trujillo (Cáceres), 1510 – Jaquijahuana ( Perú ), 10.IV.1548. Capitán en la conquista del Imperio de los Incas, encabezó con el título de gobernador la gran rebelión de los encomenderos del Perú (1544-1548) contra el emperador Carlos I de España y Carlos V de Alemania ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -855.0511474609375,
+      "y": -226.85986328125,
+      "id": "Miguel de Urrutia",
+      "attributes": {
+        "Glosa": "Miguel de Urrutia o Rutia, según Wernicke, fue un oficial de Irala, que al poco tiempo de la partida de Ulrico Schmidel mandó ejecutar. También menciona que junto con Nuflo de Chaves y Ruy Díaz introdujeron el ganado introdujeron el ganado ovino y caprino en el Río de la Plata."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -120.68466186523438,
+      "y": 18.480178833007812,
+      "id": "Heinrich Paimen",
+      "attributes": {
+        "Glosa": "Enrique Paime fue el capitán de la nave, factor de los Welser, lleva mercaderías. Viaja también con otros alto-alemanes y neerlandeses armados con arcabuces y ballestas. Entre ellos Karelusz Doberin ( Carlos Dubrin ), Hans Brunbecher, quien había acompañado a Caboto en su viaje de descubrimientos por el Río de la Plata."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 434.89093017578125,
+      "y": 299.6823425292969,
+      "id": "Álvar Núñez Cabeza de Vaca",
+      "attributes": {
+        "Glosa": "Núñez Cabeza de Vaca, Álvar . Jerez de la Frontera (Cádiz), c . 1495 – Sevilla, c . 1560. Descubridor, conquistador y adelantado."
+      },
+      "color": "rgb(195,106,149)",
+      "size": 20.0
+    },
+    {
+      "x": 225.8738555908203,
+      "y": -267.3711242675781,
+      "id": "Kuremagbeis",
+      "attributes": {
+        "Glosa": "Los coñamec o coñamecuaes habitaban la ribera chaqueña del río Paraguay, dentro del territorio guaycurú, con quienes compartían rasgos culturales y físicos."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -199.0354461669922,
+      "y": 240.67503356933594,
+      "id": "Ortueses",
+      "attributes": {
+        "Glosa": "Este pueblo, al momento de su primer encuentro con los españoles, habitaba en la naciente del río Paraguay."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -146.64988708496094,
+      "y": 617.2155151367188,
+      "id": "nación Karieseba",
+      "attributes": {"Glosa":"Esta nación formó parte de los tupís."},
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 116.9358139038086,
+      "y": -206.5087127685547,
+      "id": "Erasmus Schetz",
+      "attributes": {
+        "Glosa": "Erasmus Schetz (1476-1550), fue maestro de moneda del príncipe-obispo de Lieja y fundó una importante casa comercial en Amberes, que participaba en el comercio de azúcar con Brasil y en la extracción de azúcar, sílice y zinc en las minas de Kelmis. A mitad de siglo XVI se convirtió en uno de los pocos banqueros flamencos del Emperador Carlos V."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 408.0000305175781,
+      "y": 377.3363952636719,
+      "id": "Agá",
+      "attributes": {
+        "Glosa": "“Los sureños siacuá-payaguá , llamados también agaces en el siglo XVI por el nombre de su cacique principal, recorrían el curso fluvial entre los ríos Bermejo y Pilcomayo, manteniendo sus asientos más estables al norte del hábitat de los guatatá”. Posiblemente formaban parte del grupo lingüístico guaycurú."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 302.9671936035156,
+      "y": -123.2373046875,
+      "id": "Perronoss",
+      "attributes": {
+        "Glosa": "Schmidel fue el primero en mencionar a los poronos que vivían en una localidad pequeña más allá de los morronos y antes de los simenos."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -88.79161834716797,
+      "y": -329.28326416015625,
+      "id": "Juan Pavón",
+      "attributes": {
+        "Glosa": "Pavón, Juan . Badajoz, ú. t. s. XV – Asunción (Paraguay), 1556. Conquistador, alcalde mayor, gobernador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -5.7419939041137695,
+      "y": 28.44556999206543,
+      "id": "Borkenes",
+      "attributes": {
+        "Glosa": "También identificados como guorconos. Schmidel los ubica en el Chaco entre los simenos y layonos."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -139.25120544433594,
+      "y": 224.23678588867188,
+      "id": "Pedro Díaz",
+      "attributes": {
+        "Glosa": "Como detalla Wernicke Pedro Díaz vino con Cabrera y Domingo Martínez de Irala lo nombró alcalde mayor."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 128.88308715820312,
+      "y": 205.63063049316406,
+      "id": "Acharés",
+      "attributes": {
+        "Glosa": "Los yacarés fueron encontrados por la expedición de Hernando de Ribera a los xarayes en 1543. Vivían río arriba de los surucusis, a 36 leguas, probablemente cerca del río Yacareati citado por el mismo Ribera. Tuvieron buenas relaciones con los expedicionarios y les mostraron el camino hasta los xarayes. Eran llamados así por los guaraní-hablantes."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 544.9364013671875,
+      "y": 75.90203857421875,
+      "id": "Charchareis",
+      "attributes": {
+        "Glosa": "Caracara (calcara, cara cara, carcara, karchkarais, karchkareis). Su búsqueda fue el motor de las expediciones españolas desde Asunción hacia el oeste, ya que los productores de la plata, eran los qara-qara de la región de Charcas, dueños de las famosas minas de Porco."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 123.38553619384766,
+      "y": 1049.77978515625,
+      "id": "Caríos",
+      "attributes": {
+        "Glosa": "Los primeros carios encontrados por los europeos eran grupos guaraní-hablantes de la costa de Santa Catalina, Brasil; los otros eran los pobladores guaraní-hablantes de la región de Asunción, Paraguay."
+      },
+      "color": "rgb(246,30,88)",
+      "size": 22.799999237060547
+    },
+    {
+      "x": -772.9240112304688,
+      "y": -151.48239135742188,
+      "id": "Hernando Pizarro",
+      "attributes": {
+        "Glosa": "Pizarro, Hernando . Trujillo (Cáceres), c. 1502 – IX.1578 Conquistador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -290.451904296875,
+      "y": 211.79078674316406,
+      "id": "Alonso Cabrera",
+      "attributes": {
+        "Glosa": "Cabrera, Alonso . Loja (Granada), p. s. XVI – España, c. 1556. Conquistador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -101.2999038696289,
+      "y": -227.90902709960938,
+      "id": "Alonso Riquelme de Guzmán",
+      "attributes": {
+        "Glosa": "Riquelme de Guzmán, Alonso .?, 1523 – Asunción (Paraguay), 1577. Capitán y gobernador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -122.5837631225586,
+      "y": 553.79638671875,
+      "id": "Thopiss",
+      "attributes": {
+        "Glosa": "Los tupí ocupaban la parte media e inferior de la cuenca del Amazonas y de los principales afluentes de la costa occidental. Dominaban gran parte del litoral atlántico, desde la desembocadura del Amazonas hasta Cananea."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -593.6695556640625,
+      "y": -255.8411407470703,
+      "id": "Rui García",
+      "attributes": {
+        "Glosa": "Pedro de Aguayo de Córdoba, según Wernicke, vino con Álvar Núñez Cabeza de Vaca y natural de Córdoba. Fue uno de los guardianes de este adelantado que tenían orden de decapitarlo en la prisión en caso que se tratara de liberarlo por la fuerza."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -105.67210388183594,
+      "y": 392.2230529785156,
+      "id": "Lázaro Salvago",
+      "attributes": {
+        "Glosa": " "
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -179.07342529296875,
+      "y": -54.910953521728516,
+      "id": "Barenis",
+      "attributes": {
+        "Glosa": "Nombre usado por los españoles para referirse a los habitantes de las islas del Paraná."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 142.7712860107422,
+      "y": -229.89430236816406,
+      "id": "Johann vonn Hielst",
+      "attributes": {
+        "Glosa": "Johan Van Hilst, João Veniste, Juan Hilsen o Jan Van Hilst, sobrino de Erasmus Schetz y factor de los Schetz. Uno de los primeros ingenios azucareros en Brasil, el Engenho del Gobernador de San Vicente, fue inversión de Martim Afonso de Sousa, y contaba entre sus socios a Johan Van Hilst."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 298.2798156738281,
+      "y": 324.65155029296875,
+      "id": "Antonio Cabrera",
+      "attributes": {
+        "Glosa": " "
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -107.8564682006836,
+      "y": 42.30790710449219,
+      "id": "Jorge de Mendoza",
+      "attributes": {
+        "Glosa": " "
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -57.61151885986328,
+      "y": 366.640380859375,
+      "id": "Jorge Luján",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -52.28840255737305,
+      "y": -522.5457763671875,
+      "id": "Pero Hernández",
+      "attributes": {
+        "Glosa": "Hernández, Pedro . Ronda (Málaga), 1512 – ?, s. xvi. Conquistador. Lafone Quevedo aclara que el escribano es Pero (Pedro) Hernández y no Juan Hernández. Escribano de Pedro de Mendoza, cuando éste murió se convirtió en uno de los hombres de confianza de Álvar Núñez Cabeza de Vaca ."
+      },
+      "color": "rgb(204,83,111)",
+      "size": 10.0
+    },
+    {
+      "x": 131.22752380371094,
+      "y": -443.24407958984375,
+      "id": "Gulgaises",
+      "attributes": {
+        "Glosa": "Lafone Quevedo sugiere que se trata de los Quiloazas. Los quiloazas a la llegada de los españoles en siglo XVI, se ubicaban en la región central de la actual provincia de Santa Fe sobre el río Paraná en torno a la laguna Setúbal. El río San Javier fue denominado río de los Quiloazas y junto a él se fundo la primitiva ciudad de Santa Fe."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 577.2328491210938,
+      "y": -444.51287841796875,
+      "id": "Domingo Martínez de Irala",
+      "attributes": {
+        "Glosa": "Martínez de Irala, Domingo . Vergara (Guipúzcoa), 1506 – Asunción ( Paraguay ), 3.X.1556. Conquistador, gobernador del Paraguay (1537-1549, 1552-1556)."
+      },
+      "color": "rgb(213,79,125)",
+      "size": 21.600000381469727
+    },
+    {
+      "x": -433.1353759765625,
+      "y": -229.50839233398438,
+      "id": "Karckhokies",
+      "attributes": {
+        "Glosa": "Gorgotoqui, vivían, a la llegada de los españoles, en el lugar donde se fundaría luego la primera Santa Cruz y alrededores cercanos. Tenían como vecinos muy cercanos a los chaneses, los quibichicocis, y los quibaracoçis, pues algunos testimonios hablan de las “provincias de los gorgotoquis y chanes”. Poseían escasa plata y oro, que recibían de los tamacocis, los cuales lo conseguían de sus comarcanos y amigos carcaraes. La posesión del metal muestra que los gorgotoquis, como prácticamente todos los pueblos de la región, formaban parte activa del comercio prehispánico del oro y la plata."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 335.8918151855469,
+      "y": 139.42738342285156,
+      "id": "Achere",
+      "attributes": {
+        "Glosa": "Aracaré, indio principal de [A] cherery (Diquerery), que había sido ahorcado por orden Alvar Núñez Cabeza de Vaca ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 108.8931655883789,
+      "y": 251.43258666992188,
+      "id": "Scheruess",
+      "attributes": {
+        "Glosa": "Xaray, generación del Pantanal, impresionaron a los españoles de Asunción. Vivían más arriba del Puerto de los Reyes siguiendo el río Paraguay arriba, mayormente sobre la orilla oeste del río, aunque las primeras comunidades encontradas llegando del sur están asentadas en la orilla este."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 3.158633232116699,
+      "y": -542.7611083984375,
+      "id": "Antonio de Mendoza",
+      "attributes": {
+        "Glosa": "Oficial español a quien Francisco Ruiz Galán dejó al mando de la fueza de Corpus Christi (Buena Esperanza) con bastimento y 20 hombres. Muere asesinado por los Timbú en un asalto nocturno."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 258.49346923828125,
+      "y": -158.05690002441406,
+      "id": "Thohannes",
+      "attributes": {
+        "Glosa": "Al momento del encuentro con los conquistadores, este pueblo, habitaba la zona de Chiquitania en Bolivia. Formaban parte del pueblo Chiquito y eran zamuco-hablantes."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 147.7598419189453,
+      "y": -193.6609649658203,
+      "id": "Petter Rosel",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 11.199997901916504
+    },
+    {
+      "x": -109.4304428100586,
+      "y": -90.91120147705078,
+      "id": "Diego de Mendoza",
+      "attributes": {
+        "Glosa": "Mendoza, Diego de . Guadix (Granada), ú. t. s. XV – Río Luján (Argentina), 15.VI.1536. Conquistador, marino, almirante."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -565.3938598632812,
+      "y": -132.47894287109375,
+      "id": "Pedro de Oñate",
+      "attributes": {
+        "Glosa": "Pedro Oñate era sirviente de Álvar Núñez Cabeza de Vaca ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -780.5316162109375,
+      "y": -303.5887756347656,
+      "id": "Francisco Pizarro González",
+      "attributes": {
+        "Glosa": "Pizarro González, Francisco . Marqués de los Atabillos (I) . Trujillo (Cáceres), c . 1478 – Lima (Perú), 26.VI.1541. Conquistador del Imperio de los Incas, gobernador de la Nueva Castilla, fundador de Lima ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -114.5201644897461,
+      "y": -184.18447875976562,
+      "id": "Francisco Ortiz de Vergara",
+      "attributes": {
+        "Glosa": "Ortiz de Vergara, Francisco . Sevilla, 1524 – ¿Asunción (Paraguay)?, c. 1574. Conquistador y gobernador del Río de La Plata."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -67.35748291015625,
+      "y": -127.23312377929688,
+      "id": "Sebastian Neithart",
+      "attributes": {
+        "Glosa": "Sebastian Neidhart (1468-1541), banquero internacional que empieza a participar en todas las grandes empresas de los Fugger y los Welser. Al instalarse en España dará también dinero a la corona, y aun llegará a tener una mala experiencia cuando sobre una insuficiente garantía de joyas le adelante una buena suma al infante don Carlos, cuya prematura muerte dejará al banquero con las letras en la mano."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -54.435752868652344,
+      "y": 425.7322998046875,
+      "id": "Juan de Osorio",
+      "attributes": {
+        "Glosa": "Osorio, Juan . Morón de la Frontera (Sevilla), c. 1511 – Río de Janeiro (Brasil), 1536. Conquistador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 592.1194458007812,
+      "y": 435.3255920410156,
+      "id": "Yapirús",
+      "attributes": {
+        "Glosa": "Yapirus (o naperu o aperu). Habitaban cerca de la ciudad de Asunción, en territorio cario, es decir territorio de gente de habla guaraní. Eran pescadores, enemigos de los guaycurúes del interior y de los carios y amiga de los payaguas de río arriba, los noaques, los nohoagues o noceques, pescadores del Pilcomayo, y de los agaces que participaban del comercio del metal."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -49.47185516357422,
+      "y": -223.94937133789062,
+      "id": "Chriestoff Reysser",
+      "attributes": {
+        "Glosa": "Christoph Raiser o Cristóbal Raisser o Cristóbal Reisser, factor de los Fúcar en Sevilla (España)."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 39.52507781982422,
+      "y": 116.80391693115234,
+      "id": "Syeberis",
+      "attributes": {
+        "Glosa": "Siberi (sieberi), Pueblo del Pantanal, río arriba de los xarayes y debajo de los ortueses . Se trata muy probablemente de una parcialidad xaray, pues según Schmidel hablan el mimo idoma que los xarayes y tenían los mismos alimentos."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -197.13096618652344,
+      "y": -26.867795944213867,
+      "id": "Zechenais Diembus",
+      "attributes": {
+        "Glosa": "Los chaná-timbúes fueron un conjunto de pueblos nativos que en los siglos XVI y XVII habitaban las tierras e islas del río Paraná, desde su confluencia con el río Paraguay hasta ambas márgenes del Río de la Plata y el último tramo del río Uruguay. El temprano contacto con los europeos los expuso a diferentes epidemias, que fueron diezmándolos. Además, debido al reparto en encomiendas así como a las campañas militares, se fueron fusionando con guaraníes y charrúas hacia los siglos XVI y XVII. Por ello, desaparecieron como pueblo puro por mestizaje y aculturación en el conjunto de la sociedad criolla."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 131.21234130859375,
+      "y": 172.0629425048828,
+      "id": "Hernando de Ribera",
+      "attributes": {
+        "Glosa": "Ribera, Hernando de . ¿Sevilla?, p. s. XVI – ¿Asunción (Paraguay)?, s. m. s. XVI. Conquistador del Río de la Plata. Junto a Francisco de Ribera , Gonzalo Pérez de Morán y otros vivían en las costas del Brasil frente a la Isla de Santa Catalina . Habían venido con la expedición de Gaboto y a su regreso a España deciden quedarse. Allí los encuentra Gonzalo de Mendoza que buscaba víveres y los trae a Nuestra Señora de Bueños Ayres . Hablaban muy bien el guaraní y su concurso como lenguaraces fue muy eficaz para la conquista."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 511.7353210449219,
+      "y": 451.20269775390625,
+      "id": "Batatáes",
+      "attributes": {
+        "Glosa": "Los guatatáes formaban parte de los guaycurúes que habitaron en el Gran Chaco, cerca de Asunción, desde el rio Confuso hasta el riacho Siete Puntos. Mantuvieron buenas relaciones con españoles como con guaraníes. Eran cazadores-pescadores que compartieron su territorio con los Yaperúes."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 8.410018920898438,
+      "y": -643.9130249023438,
+      "id": "Suelaba",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 295.2184753417969,
+      "y": 262.35552978515625,
+      "id": "Juan de Salazar de Espinoza",
+      "attributes": {
+        "Glosa": "Salazar de Espinoza, Juan de . Espinosa de los Monteros (Burgos), 1508 – Asunción (Paraguay), 11.II.1560. Militar, conquistador y fundador de Asunción el 15 de agosto de 1537."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 272.0063781738281,
+      "y": -77.6739730834961,
+      "id": "Morronnos",
+      "attributes": {
+        "Glosa": "Los morocotos pertenecieron al grupo Zamuco-Samucu, Chamacoco Tumenehá (Timanahá), Moro (Morotoco), habitaban al Norte y al Nordeste del Chaco Boreal. Los grupos chaqueños de habla zamuca (los actuales ishir y ayoreos) comparten una compleja organización social en clanes, así como cierto tipo de organización “dualista” más notable entre los ishir, que los distinguen de las sociedades chaqueñas más sureñas."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -162.39544677734375,
+      "y": 650.7667846679688,
+      "id": "Juan Ramallo",
+      "attributes": {
+        "Glosa": "João Ramalho (1493-1582) fue un explorador y aventurero portugués conocido como el primer bandeirante. Vivió gran parte de su vida entre los nativos tupiniquim en  Brasil después de su llegada allí en 1515. Incluso se convirtió en líder de una aldea indígena después de desarrollar una amistad con Tibiriçá, un importante jefe nativo en ese momento. Jugó un papel importante en la interacción pacífica entre los portugueses y los nativos, especialmente después de la llegada de Martim Afonso de Sousa, con quien se hizo amigo después de conocerlo en São Vicente, el primer asentamiento portugués en América. Vivió en la aldea de Santo André da Borda do Campo, que en 1553 fue convertida en villa por Tomé de Sousa, entonces Gobernador General de Brasil. Se dice que Ramalho originó los primeros mamelucos (gente de ascendencia mixta portuguesa y nativa), una etnia que jugó un papel importante en los bandeirantes (expediciones hacia el interior del siglo XVII realizadas por exploradores conocidos como bandeirantes). Por esa razón, a menudo se le llama el Patriarca de los Bandeirantes. Según algunas fuentes, su nombre original era João Maldonado."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -644.9910888671875,
+      "y": -193.4581756591797,
+      "id": "Ñuflo de Chaves",
+      "attributes": {
+        "Glosa": "Chaves, Nuflo (o Ñuflo, o Nufrio) de . Santa Cruz de la Sierra (Cáceres), c. 1518 – Llanos de Chiquitos (Bolivia), IX.1568. Conquistador, explorador, descubridor del Chaco, teniente general de gobernador, fundador de ciudades."
+      },
+      "color": "rgb(195,106,149)",
+      "size": 13.199999809265137
+    },
+    {
+      "x": 75.37564849853516,
+      "y": -101.68489074707031,
+      "id": "Carlos Dubrin",
+      "attributes": {
+        "Glosa": "Wernicke menciona que este oficial de caballería vino (al Río de la Plata ) con sus propios caballos con Pedro de Mendoza . Era el hermano de leche de Carlos I de España y Carlos V de Alemania . Estima que falleción en 1541."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 241.7407989501953,
+      "y": -96.87705993652344,
+      "id": "Chané",
+      "attributes": {
+        "Glosa": "Los chané fueron un grupo étnico cultivador y con lengua diferente a los chiriguanos, quienes los sometieron en calidad de tapi'í, que en el chiriguano antiguo significa esclavo, según lo recoge Ruiz de Montoya. Los chanés vivían en sus propias comunidades al lado de los chiriguanos, obligados a adoptar el avá ñe'ë como primer requisito."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -77.40644836425781,
+      "y": -184.70460510253906,
+      "id": "Thomas Schmidel",
+      "attributes": {
+        "Glosa": "Ulrich Schmidel tuvo dos hermanos mayores, Friedrich y Thomas, hijos de su padre con su primera esposa Anna (¿Zeller?), fallecida en 1498. Thomas llegó a ser cuatro veces intendente de la ciudad y consejero del príncipe. El reencuentro de Ulrich Schmidel con su hermano Thomas, en 1554, en Straubing , es de imaginar que fue muy emotivo. Sin embargo, ocho meses después Thomas falleció. Su hermano Ulrich fue su albacea testamentario recibiendo 2000 florines, cuya renta anual debía remitir a estudiantes de la familia Schmidl, o en su defecto, a otros dos estudiantes sobresalientes de la Universidad de Ingolstadt. Por las actas de la misma Universidad consta que Ulrich cumplió la voluntad de su hermano."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 640.9362182617188,
+      "y": 463.7889404296875,
+      "id": "Macario",
+      "attributes": {
+        "Glosa": "Principal de los Caríos del pueblo de La Frontera ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 213.13294982910156,
+      "y": -289.3370361328125,
+      "id": "Mepenes",
+      "attributes": {
+        "Glosa": "Los mepenes fueron un pueblo indígena que a la llegada de los primeros exploradores españoles en el siglo XVI se hallaban en territorio que hoy es parte de la República Argentina en el hoy suroeste de la provincia de Corrientes al norte del río Corriente y en la margen derecha del río Paraná (hoy provincia de Santa Fe y provincia del Chaco) al sur del río Bermejo."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -690.7907104492188,
+      "y": -247.17001342773438,
+      "id": "Pedro Anzúrez",
+      "attributes": {
+        "Glosa": "Pedro Anzúrez Enríquez de Camporredondo , conocido también como Marqués de Campo Redondo, Peranzúrez, Peranzures, Peranzules, Pero de Anzures o Pedro Ansur de Campo Redondo (Sahagún, España, ca. 1505 – Yaguana, isla La Española, 1543) fue un conquistador y explorador español que actuó en la conquista del Perú y en las primeras fases de la guerra civil entre los conquistadores del Perú (guerra de Las Salinas y guerra de Chupas). Fundador de la Villa de la Plata de la Nueva Toledo, Chuquisaca (actual Sucre)."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -189.12904357910156,
+      "y": -196.35165405273438,
+      "id": "Diego de Abreu",
+      "attributes": {
+        "Glosa": "Abreu, Diego de . Sevilla , p. m. s. XVI – Asunción (Paraguay), 1553. Conquistador del Río de la Plata ."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -102.8333511352539,
+      "y": -42.36309051513672,
+      "id": "Charrúa",
+      "attributes": {
+        "Glosa": "Los charrúas eran un pueblo nativo americano, del tipo pámpido-patagónicos, cazadores-recolectores nómades. Durante el siglo XVI recorrían las tierras situadas al este del río Paraná, actuales provincia de Entre Ríos y Corrientes, así como parte del actual territorio de la República Oriental del Uruguay."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -65.0273208618164,
+      "y": 16.962081909179688,
+      "id": "Pedro de Mendoza",
+      "attributes": {
+        "Glosa": "Mendoza y Luján, Pedro . Guadix (Granada), 1499 – Océano Atlántico, 23.VI.1537. Gentilhombre de cámara, caballero de la Orden de Santiago, adelantado, gobernador y capitán general del Río de la Plata, fundador de Buenos Aires."
+      },
+      "color": "rgb(183,112,128)",
+      "size": 20.399999618530273
+    },
+    {
+      "x": 571.0177001953125,
+      "y": 197.8723907470703,
+      "id": "Guasarapos",
+      "attributes": {
+        "Glosa": "También denominados guachí o guasarapo , posiblemente pertenecían al tronco guaycurú, habitaban en la región del alto Paraguay"
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 40.84835433959961,
+      "y": -609.9501953125,
+      "id": "Kalterón",
+      "attributes": {
+        "Glosa": "Nativo perteneciente a los Tyembus."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 0.3804526925086975,
+      "y": 76.43093872070312,
+      "id": "Gerónimo",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -66.11698150634766,
+      "y": -460.85418701171875,
+      "id": "Rochera Wassú",
+      "attributes": {
+        "Glosa": "Principal de los Timbú a quien Juan de Ayolas le envía una camisa, un gabán, y un par de calzas y varias otras cosas. Luego de ello conduce a los conquistadores a su pueblo y los alimenta. Según Lafone Quevedo es el nombre con que los Indios Guaraní de Ayolas llamaban al principal de los Timbú y Caracará."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 107.28858947753906,
+      "y": -415.43365478515625,
+      "id": "Corondas",
+      "attributes": {
+        "Glosa": "Los corondas , corondás o corundíes, durante el siglo XVI se hallaban en el centro-sur de la actual provincia de Santa Fe sobre el río Paraná y en torno a la laguna Coronda. Eran seminómades, básicamente cazadores-recolectores y pescadores."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -69.37940216064453,
+      "y": 63.116031646728516,
+      "id": "Juan Romero",
+      "attributes": {
+        "Glosa": "Romero, Juan . Cuenca, c. 1500 – La Asunción (Paraguay), c. 1573. Conquistador y fundador. Participe de la exploración y primeros asentamiento españoles en el Río de la Plata. Seguramente llegó a las Indias como integrante de la expedición organizada en 1535 por Pedro de Mendoza para la conquista de ese territorio y fue testigo presencial de la primera fundación de Buenos Aires al año siguiente."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 360.5857238769531,
+      "y": -84.99498748779297,
+      "id": "Payhonos",
+      "attributes": {
+        "Glosa": "Schmidel ubica a los payonos en el Chaco, entre los toyanas y mayágonos. Los españoles de Irala los encontraron durante su travesía en 1548."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 73.5807113647461,
+      "y": 196.81060791015625,
+      "id": "Amossenes",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -146.4706573486328,
+      "y": -40.259552001953125,
+      "id": "Querandí",
+      "attributes": {
+        "Glosa": "Querandíes , grupo étnico del noreste de la actual Argentina, componente más septentrional del complejo Tehuelche; compartían su forma de vida cazadora, su organización social, cosmovisión y lengua. A la llegada de los primeros europeos en el siglo XVI, se encontraban entre los ríos Carcaraña, actual prov. de Santa Fe y el río Salado, actual prov. de Buenos Aires. Las comunidades querandíes tenían jefes parciales, que mantenían independencia y  dominios para la caza y la pesca. Fue una nación intermedia entre tehuelches y guaikurúes de las llanuras."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 343.29583740234375,
+      "y": -172.35372924804688,
+      "id": "Sunennos",
+      "attributes": {
+        "Glosa": "Schmidel  ubica a los simenos entre los porronos y los guorconos sobre un cerrito alto, Cerro León , que tiene rodeada su localidad por un bosque de espinas igual a un muro. Diferentes datos sugieren que eran una parcialidad de los Paysennos (Payzunos) (de hecho al oeste de Santa Cruz, viven juntos), y que fue probablemente otra parcialidad del mismo grupo la que asesinó a los soldados de Juan de Ayolas . También son descriptos como grandes intermediarios e incluso productores de metal."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 455.5556945800781,
+      "y": 89.92654418945312,
+      "id": "Payaguá",
+      "attributes": {
+        "Glosa": "Estos eran identificados como los norteños sarigué-payaguá habitaban el área alto-paraguayense, canoeros que recorrían las aguas fluviales desde el puerto de Candelaria hacia el norte. Con los mbayá-guaycurú tenían relaciones amistosas, no así con la parcialidad ceritococi-chané. Su primer contacto con los españoles fue pacífico, Juan de Ayolas fue recibido con hospitalidad fingida por el cacique Tamatiá."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 248.7327423095703,
+      "y": -1.2601690292358398,
+      "id": "Mbayá",
+      "attributes": {
+        "Glosa": "Se encontrabana en el siglo XVI al norte de Asunción y participaban de la gran cadena de trueque del metal andino."
+      },
+      "color": "rgb(183,112,128)",
+      "size": 10.0
+    },
+    {
+      "x": -331.1204528808594,
+      "y": 282.7249450683594,
+      "id": "García Vanegas",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -21.782407760620117,
+      "y": -622.2083129882812,
+      "id": "Zeiche Legemi",
+      "attributes": {
+        "Glosa": ""
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -369.6426086425781,
+      "y": 235.6068572998047,
+      "id": "Felipe de Cáceres",
+      "attributes": {
+        "Glosa": "Cáceres, Felipe de . Madrid, p. s. XVI – España, 1585. Conquistador, militar y gobernador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 25.336687088012695,
+      "y": 16.96532440185547,
+      "id": "Leichonos",
+      "attributes": {
+        "Glosa": "Los layonos se encontraban, según Schmidel, a 70 leguas al oeste del río Paraguay, en el corazón del Chaco boreal."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 337.2096862792969,
+      "y": 198.2610626220703,
+      "id": "Diego de Tovalina",
+      "attributes": {
+        "Glosa": "Wernicke detalla que Diego de Tovalina era caporal de caballería que vino con Mendoza."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -668.607666015625,
+      "y": -332.4859619140625,
+      "id": "Pedro de la Gasca",
+      "attributes": {
+        "Glosa": "Gasca, Pedro de la . Navarregadilla (Ávila), VIII.1493 – Sigüenza (Guadalajara), 10.XI.1567. Clérigo, magistrado y político, pacificador del Perú, obispo de Palencia y de Sigüenza."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 152.43760681152344,
+      "y": -397.14892578125,
+      "id": "Machkuerendes",
+      "attributes": {
+        "Glosa": "Los mocoretaes habitaron el centro de la Mesopotamia argentina en la margen izquierda del río Paraná. En el siglo XVI se hallaban principalmente en la costa e islas del departamento La Paz, en la actual provincia de Entre Ríos, al norte del arroyo Feliciano y en el extremo suroeste de Corrientes. Allí limitaban con los mepenes, con los que se encontraban emparentados."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -599.1278686523438,
+      "y": -432.8924865722656,
+      "id": "Parnau",
+      "attributes": {
+        "Glosa": "Según Wernicke supone que por la dicción de Utz corresponde leer Bernabé, y que podría tratarse de Bernaué Sánchez un oficial de Nuflo de Chaves que estuvo en campaña."
+      },
+      "color": "rgb(170,144,183)",
+      "size": 10.0
+    },
+    {
+      "x": -398.8683166503906,
+      "y": 126.34284210205078,
+      "id": "Francisco de Mendoza",
+      "attributes": {
+        "Glosa": "Mendoza, Francisco de . Castrogeriz (Burgos), 1515 – 1547. Conquistador."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 1.2953381538391113,
+      "y": -8.973347663879395,
+      "id": "Paysennos",
+      "attributes": {
+        "Glosa": "Los payzunos o payçunos, según diversas fuentes eran los principales distribuidores de metales en la zona chaqueña. Habitaban la zona en que se ubica la primera fundación de Santa Cruz de la Sierra, actual Bolivia."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 23.082319259643555,
+      "y": 184.7580108642578,
+      "id": "Jegiuss",
+      "attributes": {
+        "Glosa": "Según relata Schmidel Jegiuss parece ser un rey poderoso de una nación grande, los Amossenes (Amazones). Parecen poseer grandes riquezas y sus mujeres viven en una isla. El relato de Schmidel parecería estar estar describiendo a las tan conocidas Amazonas."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -136.2415008544922,
+      "y": 661.038818359375,
+      "id": "Biessaie",
+      "attributes": {
+        "Glosa": "Comunidad de Santa Catalina, Brasil . El pueblo Biessaie o Wiessache, se supone que fue una tribu de los Guaianás, enfrentada con los Tupís."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 641.1693115234375,
+      "y": 365.1204833984375,
+      "id": "Tabaré",
+      "attributes": {
+        "Glosa": "Dabre (Tabaré) era amigo del Principal de [A] cherery: Acheres (Aracaré), que había sido ahorcado por orden del capitán general Álvar Núñez Cabeza de Vaca."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 571.992919921875,
+      "y": 486.34619140625,
+      "id": "Carayebá",
+      "attributes": {
+        "Glosa": "Los guaraníes se retiran a un lugar llamado por Schmidel Carahiba o Aracaiba , según Ruy Díaz Guzmán. En su obra Diario del Capitán de Fragata de la Real Armada Don Juan Francisco Aguirre en la Demarcación de Límites de España y Portugal en la América Meridional, Juan Francisco Aguirre identifica a los acaraíbas con los guaraníes de los parajes de Itá, Cañabé, Añagatí, Carapeguá, Aguaí, Acaay y Tapabuy, es decir, la zona próxima a la tebicuarense, donde los indios siempre mantenían contactos estrechos con los paranáes, a quienes se atribuía que influyeron en el alzamiento de los carios."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -56.409122467041016,
+      "y": -76.50232696533203,
+      "id": "Jacobo Welser",
+      "attributes": {
+        "Glosa": "Jacob Welser en Viaje del Río de la Plata (1534-1554) Entre estos 14 navíos estaba uno de propiedad de los señores Sewastian Neithart y Jacoben Welser de Niremburgo, quienes mandaban á su factor Heinrich Paimen con mercaderías al Rieo delle Platta."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -644.0185546875,
+      "y": -19.976627349853516,
+      "id": "Machkaisies",
+      "attributes": {
+        "Glosa": "Los tamacocis vivían a orillas del río Guapay, en la región luego conocida como llanos de Grigotá. Schmidel incluso llama al río Guaypa 'río Macasíes', que es el nombre que da a los tamacocis (...) Paso obligado entre los llanos orientales y los primeros cerros del piedemonte andino, esta ubicación era estratégica y la zona fue al parecer, en la época prehipánica, un punto de avanzada de la colonización inca. Gracias a su ubicación, los tamacosis desempeñaron un papel bastante activo en el comercio del metal hacia las tierras bajas, conseguían el metal de los carcaraes, sus comarcanos y amigos, y lo entregaban luego a los gorgotoquis más al este."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 74.02063751220703,
+      "y": -38.67353057861328,
+      "id": "Mayehonas",
+      "attributes": {
+        "Glosa": "Los mayágonos fueron encontrados por la tropa de Irala al cruzar el Chaco Boreal en 1548."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 268.5876770019531,
+      "y": 163.37205505371094,
+      "id": "Suruchacuiss",
+      "attributes": {
+        "Glosa": "Surucusis. Los norteños sarigué-payaguá ubicados en el área alto-paraguayense, con recorridas fluviales desde el puerto de Candelaria hacia el norte. Mantenían relaciones amistosas con los mbayá-guaycurú, poseían algunos cautivos ceritococi-chané que acompañaban a Alejo García en su vuelta de la cordillera. El primer contacto de los sarigué con los españoles fue pacífico; el cacique Tamatiá recibió a los expedicionarios de Juan de Ayolas con hospitalidad fingida e interesada por «la novedad», siendo general una efervescencia altoparaguayense en busca del Candiré. "
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 65.42921447753906,
+      "y": 16.96919822692871,
+      "id": "Kharchkonos",
+      "attributes": {
+        "Glosa": "Los carconos son un grupo chaqueño que Schmidel ubica entre los layonos y los siberis."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": 157.16012573242188,
+      "y": 216.30348205566406,
+      "id": "Alberto V Duque de Baviera",
+      "attributes": {
+        "Glosa": "Alberto V de Baviera , llamado el Magnánimo, en alemán: Albrecht V. von Bayern, der Großmütige. Múnich, 29.02.1528 - Múnich, 24.10.1579. Fue duque de Baviera desde el año 1550 hasta su muerte."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    },
+    {
+      "x": -43.67266082763672,
+      "y": 270.03424072265625,
+      "id": "Juan de Ayolas",
+      "attributes": {
+        "Glosa": "Ayolas, Juan de . Briviesca (Burgos), c. 1510 – Chaco (Paraguay), 1538. Descubridor y conquistador en el Río de la Plata (Argentina), teniente de gobernador."
+      },
+      "color": "rgb(195,106,149)",
+      "size": 16.799999237060547
+    },
+    {
+      "x": 75.99884033203125,
+      "y": -480.1908264160156,
+      "id": "Tiembus",
+      "attributes": {
+        "Glosa": "Los timbúes formaban parte de los chaná-timbúes, esta denominación fue dada por los guaraníes, porque esta comunidad se horadaba la nariz. Habitaban, al momento del primer contacto con los conquistadores, en torno a la desembocadura de los ríos Carcarañá y Coronda, con el río Paraná, al sur de la actual provincia de Santa Fe."
+      },
+      "color": "rgb(153,153,153)",
+      "size": 10.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "Machkaisies",
+      "target": "Pedro de Oñate",
+      "id": "487",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Chriestoff Reysser",
+      "id": "520",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Querandí",
+      "id": "36",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Ñuflo de Chaves",
+      "id": "438",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Rochera Wassú",
+      "id": "113",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Kalterón",
+      "target": "Zeiche Legemi",
+      "id": "146",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Pedro Anzúrez",
+      "id": "428",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Rochera Wassú",
+      "id": "128",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Parnau",
+      "target": "Rui García",
+      "id": "503",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Macario",
+      "target": "Yapirús",
+      "id": "311",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Guasarapos",
+      "id": "195",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Pedro de la Gasca",
+      "id": "471",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Acharés",
+      "target": "Suruchacuiss",
+      "id": "224",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "13",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Tabaré",
+      "id": "205",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Erasmus Schetz",
+      "id": "542",
+      "attributes": {
+        "chapter": "51"
+      },
+      "color": "rgb(199,225,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Payaguá",
+      "id": "339",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Juan de Osorio",
+      "id": "7",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Ortueses",
+      "target": "Scheruess",
+      "id": "246",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Naperú",
+      "id": "331",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Gonzalo de Mendoza",
+      "id": "151",
+      "attributes": {
+        "chapter": "29"
+      },
+      "color": "rgb(97,200,231)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Francisco de Mendoza",
+      "id": "264",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Pedro Díaz",
+      "id": "340",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Mendoza",
+      "target": "Querandí",
+      "id": "34",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Heinrich Paimen",
+      "target": "Jorge de Mendoza",
+      "id": "3",
+      "attributes": {
+        "chapter": "2"
+      },
+      "color": "rgb(186,177,205)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Domingo Martínez de Irala",
+      "id": "153",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Rui García",
+      "id": "454",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Thomas Schmidel",
+      "id": "537",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Guasarapos",
+      "target": "Suruchacuiss",
+      "id": "213",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Hernando Pizarro",
+      "id": "455",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Yapirús",
+      "id": "290",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ruiz Galán",
+      "target": "Tiembus",
+      "id": "122",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Suelaba",
+      "id": "137",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Karckhokies",
+      "id": "512",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Carayebá",
+      "target": "Caríos",
+      "id": "298",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Yapirús",
+      "id": "285",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Payhonos",
+      "id": "355",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Leichonos",
+      "id": "383",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Domingo Martínez de Irala",
+      "id": "85",
+      "attributes": {
+        "chapter": "24"
+      },
+      "color": "rgb(109,245,217)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Caríos",
+      "id": "289",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Miguel de Urrutia",
+      "id": "475",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Hernando Pizarro",
+      "id": "445",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Machkaisies",
+      "id": "466",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio Cabrera",
+      "target": "Caríos",
+      "id": "165",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Erasmus Schetz",
+      "id": "544",
+      "attributes": {
+        "chapter": "51"
+      },
+      "color": "rgb(199,225,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Ramallo",
+      "target": "nación Karieseba",
+      "id": "554",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Tovalina",
+      "target": "Suruchacuiss",
+      "id": "173",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Suruchacuiss",
+      "id": "159",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Juan Pavón",
+      "id": "109",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Tabaré",
+      "id": "184",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Corondas",
+      "target": "Machkuerendes",
+      "id": "64",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Ribera",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "207",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Payhonos",
+      "target": "Thohannes",
+      "id": "376",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Barenis",
+      "target": "Zechenais Diembus",
+      "id": "41",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Thopiss",
+      "id": "16",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ruiz Galán",
+      "target": "Juan Pavón",
+      "id": "120",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Sebastian Neithart",
+      "id": "536",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge de Mendoza",
+      "target": "Pedro de Mendoza",
+      "id": "5",
+      "attributes": {
+        "chapter": "2"
+      },
+      "color": "rgb(186,177,205)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "202",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Pedro Anzúrez",
+      "id": "470",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Gerónimo",
+      "id": "380",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Suruchacuiss",
+      "id": "204",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Francisco Pizarro González",
+      "id": "432",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Tiembus",
+      "id": "117",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Charchareis",
+      "id": "79",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Parnau",
+      "id": "469",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Ribera",
+      "target": "Payaguá",
+      "id": "208",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Tiembus",
+      "id": "52",
+      "attributes": {
+        "chapter": "13"
+      },
+      "color": "rgb(253,223,100)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Mayehonas",
+      "id": "397",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Kharchkonos",
+      "target": "Syeberis",
+      "id": "404",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Hernando de Ribera",
+      "id": "249",
+      "attributes": {
+        "chapter": "38"
+      },
+      "color": "rgb(255,171,213)",
+      "size": 1.0
+    },
+    {
+      "source": "Kharchkonos",
+      "target": "Paysennos",
+      "id": "405",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Mendoza",
+      "target": "García Vanegas",
+      "id": "279",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro Anzúrez",
+      "target": "Pedro de la Gasca",
+      "id": "504",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Rui García",
+      "id": "443",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Sunennos",
+      "id": "363",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Ñuflo de Chaves",
+      "target": "Pedro de Oñate",
+      "id": "498",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Lázaro Salvago",
+      "target": "Pedro de Mendoza",
+      "id": "24",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Paysennos",
+      "id": "394",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Pedro de la Gasca",
+      "id": "452",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Biessaie",
+      "target": "Juan Ramallo",
+      "id": "548",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Leichonos",
+      "target": "Paysennos",
+      "id": "409",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Johann vonn Hielst",
+      "target": "Petter Rosel",
+      "id": "559",
+      "attributes": {
+        "chapter": "53"
+      },
+      "color": "rgb(0,255,238)",
+      "size": 1.0
+    },
+    {
+      "source": "Alberto V Duque de Baviera",
+      "target": "Suruchacuiss",
+      "id": "227",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Morronnos",
+      "target": "Perronoss",
+      "id": "371",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Chriestoff Reysser",
+      "target": "Diego de Abreu",
+      "id": "526",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Naperú",
+      "target": "Pedro Díaz",
+      "id": "342",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Pedro de Oñate",
+      "id": "430",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Álvar Núñez Cabeza de Vaca",
+      "id": "154",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Ñuflo de Chaves",
+      "id": "426",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Guasarapos",
+      "target": "Tabaré",
+      "id": "214",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Thopiss",
+      "id": "553",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Karckhokies",
+      "id": "456",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Oñate",
+      "target": "Rui García",
+      "id": "509",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Morronnos",
+      "id": "360",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Tiembus",
+      "id": "111",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Juan Ramallo",
+      "id": "551",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Kuremagbeis",
+      "id": "72",
+      "attributes": {
+        "chapter": "19"
+      },
+      "color": "rgb(255,190,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Francisco Ortiz de Vergara",
+      "id": "523",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Machkaisies",
+      "id": "424",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Pedro de la Gasca",
+      "id": "492",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Ortueses",
+      "id": "266",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Carayebá",
+      "target": "Tabaré",
+      "id": "301",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Payhonos",
+      "id": "348",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Machkaisies",
+      "id": "457",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Sebastian Neithart",
+      "id": "533",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Syeberis",
+      "id": "413",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Juan de Osorio",
+      "id": "12",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Scheruess",
+      "target": "Suruchacuiss",
+      "id": "230",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Pedro Anzúrez",
+      "id": "478",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Chané",
+      "id": "344",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Domingo Martínez de Irala",
+      "id": "97",
+      "attributes": {
+        "chapter": "51"
+      },
+      "color": "rgb(199,225,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Pero Hernández",
+      "id": "116",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Sunennos",
+      "id": "368",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Charchareis",
+      "id": "186",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ortiz de Vergara",
+      "target": "Sebastian Neithart",
+      "id": "538",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Leichonos",
+      "id": "390",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Karckhokies",
+      "id": "435",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Jegiuss",
+      "target": "Ortueses",
+      "id": "243",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Miguel de Urrutia",
+      "id": "425",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Erasmus Schetz",
+      "target": "Petter Rosel",
+      "id": "558",
+      "attributes": {
+        "chapter": "53"
+      },
+      "color": "rgb(0,255,238)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Antonio Cabrera",
+      "id": "160",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando de Ribera",
+      "target": "Scheruess",
+      "id": "228",
+      "attributes": {
+        "chapter": "38"
+      },
+      "color": "rgb(255,171,213)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Pedro de la Gasca",
+      "id": "462",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Kalterón",
+      "id": "140",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Parnau",
+      "id": "490",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Kharchkonos",
+      "id": "395",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Juan de Ayolas",
+      "id": "80",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Mbayá",
+      "id": "353",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Karckhokies",
+      "id": "416",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Ñuflo de Chaves",
+      "target": "Pedro de la Gasca",
+      "id": "497",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Parnau",
+      "id": "460",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Tabaré",
+      "id": "217",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkuerendes",
+      "target": "Tiembus",
+      "id": "68",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Lázaro Salvago",
+      "id": "21",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Carlos Dubrin",
+      "id": "54",
+      "attributes": {
+        "chapter": "15"
+      },
+      "color": "rgb(220,239,103)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Suruchacuiss",
+      "id": "174",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Parnau",
+      "target": "Pedro Anzúrez",
+      "id": "500",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Carlos Dubrin",
+      "target": "Domingo Martínez de Irala",
+      "id": "57",
+      "attributes": {
+        "chapter": "15"
+      },
+      "color": "rgb(220,239,103)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Mayehonas",
+      "id": "391",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Chriestoff Reysser",
+      "target": "Thomas Schmidel",
+      "id": "530",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Osorio",
+      "target": "Pedro de Mendoza",
+      "id": "19",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Payaguá",
+      "id": "215",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Felipe de Cáceres",
+      "id": "263",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Rui García",
+      "id": "431",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Juan Pavón",
+      "id": "29",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Kuremagbeis",
+      "target": "Mepenes",
+      "id": "74",
+      "attributes": {
+        "chapter": "19"
+      },
+      "color": "rgb(255,190,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de la Gasca",
+      "target": "Pedro de Oñate",
+      "id": "507",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Miguel de Urrutia",
+      "id": "458",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Rui García",
+      "id": "481",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Amossenes",
+      "target": "Hernando de Ribera",
+      "id": "234",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Mayehonas",
+      "id": "418",
+      "attributes": {
+        "chapter": "47"
+      },
+      "color": "rgb(238,195,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "189",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Paysennos",
+      "id": "93",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Pedro Díaz",
+      "id": "333",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Tabaré",
+      "id": "178",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Batatáes",
+      "id": "283",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Diego de Abreu",
+      "id": "521",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Tiembus",
+      "target": "Zeiche Legemi",
+      "id": "132",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Rui García",
+      "id": "488",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Carayebá",
+      "id": "292",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Thohannes",
+      "id": "364",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Acharés",
+      "target": "Amossenes",
+      "id": "231",
+      "attributes": {
+        "chapter": "36"
+      },
+      "color": "rgb(255,175,219)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Rochera Wassú",
+      "id": "51",
+      "attributes": {
+        "chapter": "13"
+      },
+      "color": "rgb(253,223,100)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Lázaro Salvago",
+      "id": "14",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Leichonos",
+      "id": "396",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Suelaba",
+      "id": "141",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Guasarapos",
+      "id": "201",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Syeberis",
+      "target": "Paysennos",
+      "id": "415",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "García Vanegas",
+      "id": "265",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Juan de Ayolas",
+      "id": "56",
+      "attributes": {
+        "chapter": "15"
+      },
+      "color": "rgb(220,239,103)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Syeberis",
+      "id": "251",
+      "attributes": {
+        "chapter": "39"
+      },
+      "color": "rgb(255,196,140)",
+      "size": 1.0
+    },
+    {
+      "source": "Querandí",
+      "target": "Zechenais Diembus",
+      "id": "44",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Macario",
+      "id": "304",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Macario",
+      "id": "307",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Alberto V Duque de Baviera",
+      "target": "Scheruess",
+      "id": "226",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Naperú",
+      "id": "91",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Pedro de la Gasca",
+      "id": "479",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Payhonos",
+      "id": "361",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Romero",
+      "target": "Pedro de Mendoza",
+      "id": "47",
+      "attributes": {
+        "chapter": "12"
+      },
+      "color": "rgb(117,255,174)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "nación Karieseba",
+      "id": "552",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Kharchkonos",
+      "id": "382",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Thohannes",
+      "id": "351",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Domingo Martínez de Irala",
+      "id": "55",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Ñuflo de Chaves",
+      "id": "483",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Tiembus",
+      "target": "Rochera Wassú",
+      "id": "133",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Morronnos",
+      "target": "Sunennos",
+      "id": "372",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Alberto V Duque de Baviera",
+      "target": "Hernando de Ribera",
+      "id": "225",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Mayehonas",
+      "id": "384",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Syeberis",
+      "id": "411",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Lázaro Salvago",
+      "target": "Thopiss",
+      "id": "25",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Leichonos",
+      "target": "Syeberis",
+      "id": "408",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Ñuflo de Chaves",
+      "id": "459",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Miguel de Urrutia",
+      "id": "437",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Mbayá",
+      "id": "334",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkuerendes",
+      "target": "Zechennaus Saluaischco",
+      "id": "70",
+      "attributes": {
+        "chapter": "18"
+      },
+      "color": "rgb(173,243,186)",
+      "size": 1.0
+    },
+    {
+      "source": "Sebastian Neithart",
+      "target": "Thomas Schmidel",
+      "id": "540",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Payaguá",
+      "id": "83",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Yapirús",
+      "id": "291",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Ortueses",
+      "id": "275",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Machkaisies",
+      "id": "447",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Thopiss",
+      "id": "26",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Carayebá",
+      "target": "Domingo Martínez de Irala",
+      "id": "299",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Payhonos",
+      "target": "Perronoss",
+      "id": "374",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Tiembus",
+      "id": "50",
+      "attributes": {
+        "chapter": "13"
+      },
+      "color": "rgb(253,223,100)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Sebastian Neithart",
+      "id": "2",
+      "attributes": {
+        "chapter": "1"
+      },
+      "color": "rgb(251,203,216)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Tiembus",
+      "id": "61",
+      "attributes": {
+        "chapter": "22"
+      },
+      "color": "rgb(195,241,135)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Rui García",
+      "id": "473",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Parnau",
+      "target": "Pedro de Oñate",
+      "id": "502",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Morronnos",
+      "target": "Thohannes",
+      "id": "373",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Suelaba",
+      "target": "Zeiche Legemi",
+      "id": "148",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando de Ribera",
+      "target": "Suruchacuiss",
+      "id": "229",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Tovalina",
+      "target": "Domingo Martínez de Irala",
+      "id": "172",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkuerendes",
+      "target": "Mepenes",
+      "id": "69",
+      "attributes": {
+        "chapter": "18"
+      },
+      "color": "rgb(173,243,186)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Domingo Martínez de Irala",
+      "id": "510",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Diego de Tovalina",
+      "id": "157",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando de Ribera",
+      "target": "Ortueses",
+      "id": "240",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Payaguá",
+      "target": "Tabaré",
+      "id": "219",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Pedro de Mendoza",
+      "id": "35",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Osorio",
+      "target": "Lázaro Salvago",
+      "id": "18",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Gonzalo Pizarro Viedma",
+      "id": "433",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Ñuflo de Chaves",
+      "target": "Pedro Anzúrez",
+      "id": "496",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Pedro de Oñate",
+      "id": "442",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Kalterón",
+      "target": "Suelaba",
+      "id": "144",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Chriestoff Reysser",
+      "target": "Francisco Ortiz de Vergara",
+      "id": "528",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Tabaré",
+      "target": "Yapirús",
+      "id": "312",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Pero Hernández",
+      "target": "Tiembus",
+      "id": "129",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Thomas Schmidel",
+      "id": "534",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Guasarapos",
+      "id": "188",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Perronoss",
+      "target": "Thohannes",
+      "id": "378",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio Cabrera",
+      "target": "Domingo Martínez de Irala",
+      "id": "167",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Barenis",
+      "target": "Querandí",
+      "id": "40",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Batatáes",
+      "id": "286",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Morronnos",
+      "id": "354",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Syeberis",
+      "id": "399",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Charrúa",
+      "id": "180",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Álvar Núñez Cabeza de Vaca",
+      "id": "282",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Corondas",
+      "id": "60",
+      "attributes": {
+        "chapter": "16"
+      },
+      "color": "rgb(144,239,155)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Parnau",
+      "id": "484",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Payaguá",
+      "id": "89",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Francisco Ruiz Galán",
+      "id": "114",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Domingo Martínez de Irala",
+      "id": "294",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Francisco de Ribera",
+      "id": "200",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando de Ribera",
+      "target": "Jegiuss",
+      "id": "239",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ruiz Galán",
+      "target": "Rochera Wassú",
+      "id": "124",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Naperú",
+      "target": "Paysennos",
+      "id": "95",
+      "attributes": {
+        "chapter": "25"
+      },
+      "color": "rgb(30,251,251)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Pedro de Oñate",
+      "id": "493",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Karckhokies",
+      "id": "465",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Erasmus Schetz",
+      "target": "Johann vonn Hielst",
+      "id": "546",
+      "attributes": {
+        "chapter": "53"
+      },
+      "color": "rgb(0,255,238)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Tabaré",
+      "id": "181",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Charrúa",
+      "id": "182",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Ribera",
+      "target": "Tabaré",
+      "id": "210",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Amossenes",
+      "target": "Ortueses",
+      "id": "236",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Mendoza",
+      "target": "Ortueses",
+      "id": "280",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Jegiuss",
+      "target": "Syeberis",
+      "id": "245",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Sebastian Neithart",
+      "id": "524",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Thopiss",
+      "id": "11",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Pedro de Mendoza",
+      "id": "385",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Ñuflo de Chaves",
+      "id": "449",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Payaguá",
+      "id": "190",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Osorio",
+      "target": "Thopiss",
+      "id": "20",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Ñuflo de Chaves",
+      "id": "476",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Tabaré",
+      "id": "183",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Thomas Schmidel",
+      "id": "525",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Zechenais Diembus",
+      "id": "43",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Ribera",
+      "target": "Suruchacuiss",
+      "id": "209",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro Anzúrez",
+      "target": "Rui García",
+      "id": "506",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Karckhokies",
+      "id": "446",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Naperú",
+      "target": "Payaguá",
+      "id": "94",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Machkaisies",
+      "id": "474",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Gonzalo Pizarro Viedma",
+      "id": "421",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Biessaie",
+      "target": "Thopiss",
+      "id": "550",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Pedro de Mendoza",
+      "id": "15",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Juan Pavón",
+      "id": "115",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Yapirús",
+      "id": "288",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Acharés",
+      "target": "Alberto V Duque de Baviera",
+      "id": "221",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Rochera Wassú",
+      "id": "119",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Acharés",
+      "target": "Hernando de Ribera",
+      "id": "222",
+      "attributes": {
+        "chapter": "35"
+      },
+      "color": "rgb(204,204,130)",
+      "size": 1.0
+    },
+    {
+      "source": "Amossenes",
+      "target": "Syeberis",
+      "id": "238",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Morronnos",
+      "id": "365",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Kharchkonos",
+      "target": "Pedro de Mendoza",
+      "id": "403",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Ñuflo de Chaves",
+      "id": "468",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ruiz Galán",
+      "target": "Zeiche Legemi",
+      "id": "123",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Zeiche Legemi",
+      "id": "127",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Osorio",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "17",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Francisco de Ribera",
+      "id": "187",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Perronoss",
+      "id": "362",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Pedro de Mendoza",
+      "id": "410",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Pedro Anzúrez",
+      "id": "440",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Naperú",
+      "id": "338",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "8",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Diego de Tovalina",
+      "id": "169",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Paysennos",
+      "id": "412",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Gulgaises",
+      "target": "Machkuerendes",
+      "id": "66",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Pedro de la Gasca",
+      "id": "441",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Johann vonn Hielst",
+      "id": "543",
+      "attributes": {
+        "chapter": "51"
+      },
+      "color": "rgb(199,225,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Pedro de la Gasca",
+      "id": "486",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Mendoza",
+      "target": "Juan Pavón",
+      "id": "32",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Amossenes",
+      "target": "Jegiuss",
+      "id": "235",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Thohannes",
+      "id": "369",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Biessaie",
+      "target": "nación Karieseba",
+      "id": "549",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Mayehonas",
+      "id": "345",
+      "attributes": {
+        "chapter": "47"
+      },
+      "color": "rgb(238,195,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Kharchkonos",
+      "target": "Mayehonas",
+      "id": "402",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Felipe de Cáceres",
+      "target": "Francisco de Mendoza",
+      "id": "276",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Miguel de Urrutia",
+      "id": "448",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Acharés",
+      "target": "Scheruess",
+      "id": "223",
+      "attributes": {
+        "chapter": "36"
+      },
+      "color": "rgb(255,175,219)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Parnau",
+      "id": "427",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Pedro Anzúrez",
+      "id": "491",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Miguel de Urrutia",
+      "id": "482",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Syeberis",
+      "id": "393",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Felipe de Cáceres",
+      "id": "272",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Ortueses",
+      "target": "Syeberis",
+      "id": "247",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Thohannes",
+      "id": "358",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Rui García",
+      "id": "494",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Hernando Pizarro",
+      "id": "434",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Payhonos",
+      "target": "Sunennos",
+      "id": "375",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Pedro de Mendoza",
+      "id": "10",
+      "attributes": {
+        "chapter": "10"
+      },
+      "color": "rgb(181,228,229)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Tabaré",
+      "id": "192",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Sunennos",
+      "id": "357",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Payhonos",
+      "id": "366",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Gonzalo Pizarro Viedma",
+      "id": "444",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mbayá",
+      "target": "Perronoss",
+      "id": "367",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "García Vanegas",
+      "id": "270",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Francisco Pizarro González",
+      "id": "420",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Parnau",
+      "id": "450",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Suruchacuiss",
+      "id": "171",
+      "attributes": {
+        "chapter": "39"
+      },
+      "color": "rgb(255,196,140)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Morronnos",
+      "id": "347",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Diego de Tovalina",
+      "id": "162",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Caríos",
+      "id": "161",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Pedro de Oñate",
+      "id": "463",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Parnau",
+      "id": "477",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mayehonas",
+      "target": "Mbayá",
+      "id": "359",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Payaguá",
+      "target": "Paysennos",
+      "id": "96",
+      "attributes": {
+        "chapter": "26"
+      },
+      "color": "rgb(158,222,202)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Syeberis",
+      "id": "386",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Jacobo Welser",
+      "target": "Pedro de Mendoza",
+      "id": "0",
+      "attributes": {
+        "chapter": "1"
+      },
+      "color": "rgb(251,203,216)",
+      "size": 1.0
+    },
+    {
+      "source": "Biessaie",
+      "target": "Caríos",
+      "id": "547",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Tiembus",
+      "id": "77",
+      "attributes": {
+        "chapter": "22"
+      },
+      "color": "rgb(195,241,135)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Mbayá",
+      "id": "330",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Francisco de Mendoza",
+      "id": "269",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Carayebá",
+      "target": "Macario",
+      "id": "300",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Felipe de Cáceres",
+      "target": "García Vanegas",
+      "id": "277",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Caríos",
+      "id": "156",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Tiembus",
+      "id": "126",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Barenis",
+      "target": "Charrúa",
+      "id": "39",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Corondas",
+      "target": "Tiembus",
+      "id": "62",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio Cabrera",
+      "target": "Suruchacuiss",
+      "id": "168",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Guasarapos",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "211",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Felipe de Cáceres",
+      "target": "Ortueses",
+      "id": "278",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Perronoss",
+      "target": "Sunennos",
+      "id": "377",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Pedro de Mendoza",
+      "id": "392",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Lázaro Salvago",
+      "id": "9",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de la Gasca",
+      "target": "Rui García",
+      "id": "508",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Jegiuss",
+      "target": "Scheruess",
+      "id": "244",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Morronnos",
+      "target": "Payhonos",
+      "id": "370",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Mayehonas",
+      "id": "352",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Leichonos",
+      "target": "Mayehonas",
+      "id": "406",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Leichonos",
+      "target": "Pedro de Mendoza",
+      "id": "407",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Antonio Cabrera",
+      "id": "155",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Kharchkonos",
+      "target": "Leichonos",
+      "id": "401",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Suruchacuiss",
+      "target": "Syeberis",
+      "id": "260",
+      "attributes": {
+        "chapter": "39"
+      },
+      "color": "rgb(255,196,140)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Ribera",
+      "target": "Guasarapos",
+      "id": "206",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Suruchacuiss",
+      "id": "164",
+      "attributes": {
+        "chapter": "39"
+      },
+      "color": "rgb(255,196,140)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Felipe de Cáceres",
+      "id": "268",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro Anzúrez",
+      "target": "Pedro de Oñate",
+      "id": "505",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Payaguá",
+      "id": "84",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Charrúa",
+      "id": "177",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "nación Karieseba",
+      "target": "Thopiss",
+      "id": "556",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Ortueses",
+      "id": "271",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Suruchacuiss",
+      "target": "Tabaré",
+      "id": "220",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Naperú",
+      "id": "326",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Juan de Ayolas",
+      "id": "388",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Miguel de Urrutia",
+      "target": "Ñuflo de Chaves",
+      "id": "489",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Zeiche Legemi",
+      "id": "118",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Mendoza",
+      "target": "Karckhokies",
+      "id": "517",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Francisco de Mendoza",
+      "id": "511",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Johann vonn Hielst",
+      "id": "545",
+      "attributes": {
+        "chapter": "51"
+      },
+      "color": "rgb(199,225,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Pedro Díaz",
+      "id": "337",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Parnau",
+      "id": "439",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Sunennos",
+      "target": "Thohannes",
+      "id": "379",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Pedro de la Gasca",
+      "id": "429",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Paysennos",
+      "id": "100",
+      "attributes": {
+        "chapter": "26"
+      },
+      "color": "rgb(158,222,202)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Pedro de Oñate",
+      "id": "472",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Rochera Wassú",
+      "target": "Tiembus",
+      "id": "53",
+      "attributes": {
+        "chapter": "13"
+      },
+      "color": "rgb(253,223,100)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando de Ribera",
+      "target": "Syeberis",
+      "id": "242",
+      "attributes": {
+        "chapter": "38"
+      },
+      "color": "rgb(255,171,213)",
+      "size": 1.0
+    },
+    {
+      "source": "Gerónimo",
+      "target": "Kharchkonos",
+      "id": "389",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Perronoss",
+      "id": "349",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Pero Hernández",
+      "id": "110",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Carlos Dubrin",
+      "target": "Juan de Ayolas",
+      "id": "58",
+      "attributes": {
+        "chapter": "15"
+      },
+      "color": "rgb(220,239,103)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Diego de Mendoza",
+      "id": "28",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Domingo Martínez de Irala",
+      "id": "107",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Chriestoff Reysser",
+      "target": "Sebastian Neithart",
+      "id": "529",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Suruchacuiss",
+      "id": "216",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ortiz de Vergara",
+      "target": "Thomas Schmidel",
+      "id": "539",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Heinrich Paimen",
+      "target": "Pedro de Mendoza",
+      "id": "4",
+      "attributes": {
+        "chapter": "2"
+      },
+      "color": "rgb(186,177,205)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Mendoza",
+      "target": "Pedro de Mendoza",
+      "id": "33",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Francisco Ortiz de Vergara",
+      "id": "535",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Corondas",
+      "target": "Gulgaises",
+      "id": "63",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Caríos",
+      "id": "75",
+      "attributes": {
+        "chapter": "41"
+      },
+      "color": "rgb(99,205,149)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Hernando Pizarro",
+      "id": "422",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Parnau",
+      "target": "Pedro de la Gasca",
+      "id": "501",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Jorge Luján",
+      "target": "Juan de Ayolas",
+      "id": "6",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Karckhokies",
+      "target": "Pedro de Oñate",
+      "id": "480",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Juan de Ayolas",
+      "id": "59",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Machkaisies",
+      "id": "513",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Francisco de Ribera",
+      "id": "194",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Paysennos",
+      "id": "103",
+      "attributes": {
+        "chapter": "26"
+      },
+      "color": "rgb(158,222,202)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Ruiz Galán",
+      "target": "Pero Hernández",
+      "id": "121",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Agá",
+      "target": "Mepenes",
+      "id": "73",
+      "attributes": {
+        "chapter": "19"
+      },
+      "color": "rgb(255,190,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Rochera Wassú",
+      "id": "49",
+      "attributes": {
+        "chapter": "13"
+      },
+      "color": "rgb(253,223,100)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Juan de Salazar de Espinoza",
+      "id": "196",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Suelaba",
+      "target": "Tiembus",
+      "id": "147",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Gulgaises",
+      "target": "Tiembus",
+      "id": "67",
+      "attributes": {
+        "chapter": "17"
+      },
+      "color": "rgb(255,167,96)",
+      "size": 1.0
+    },
+    {
+      "source": "Pero Hernández",
+      "target": "Rochera Wassú",
+      "id": "131",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Francisco de Mendoza",
+      "id": "273",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Rui García",
+      "id": "464",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco de Mendoza",
+      "target": "Machkaisies",
+      "id": "518",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Pedro de Oñate",
+      "id": "453",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "García Vanegas",
+      "target": "Ortueses",
+      "id": "281",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Pavón",
+      "target": "Pero Hernández",
+      "id": "125",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Tabaré",
+      "id": "296",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Scheruess",
+      "target": "Syeberis",
+      "id": "248",
+      "attributes": {
+        "chapter": "38"
+      },
+      "color": "rgb(255,171,213)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Syeberis",
+      "id": "259",
+      "attributes": {
+        "chapter": "39"
+      },
+      "color": "rgb(255,196,140)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Pedro de Mendoza",
+      "id": "22",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Cabrera",
+      "target": "Álvar Núñez Cabeza de Vaca",
+      "id": "261",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Hernando Pizarro",
+      "target": "Miguel de Urrutia",
+      "id": "467",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan Ramallo",
+      "target": "Thopiss",
+      "id": "555",
+      "attributes": {
+        "chapter": "52"
+      },
+      "color": "rgb(255,171,173)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Sunennos",
+      "id": "350",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Amossenes",
+      "target": "Scheruess",
+      "id": "233",
+      "attributes": {
+        "chapter": "37"
+      },
+      "color": "rgb(74,200,183)",
+      "size": 1.0
+    },
+    {
+      "source": "Diego de Abreu",
+      "target": "Francisco Ortiz de Vergara",
+      "id": "532",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Salazar de Espinoza",
+      "target": "Thopiss",
+      "id": "23",
+      "attributes": {
+        "chapter": "5"
+      },
+      "color": "rgb(90,251,197)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Paysennos",
+      "id": "387",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Querandí",
+      "id": "31",
+      "attributes": {
+        "chapter": "11"
+      },
+      "color": "rgb(234,158,179)",
+      "size": 1.0
+    },
+    {
+      "source": "Pero Hernández",
+      "target": "Zeiche Legemi",
+      "id": "130",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Gonzalo de Mendoza",
+      "id": "152",
+      "attributes": {
+        "chapter": "29"
+      },
+      "color": "rgb(97,200,231)",
+      "size": 1.0
+    },
+    {
+      "source": "Charrúa",
+      "target": "Pedro de Mendoza",
+      "id": "27",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Chriestoff Reysser",
+      "target": "Domingo Martínez de Irala",
+      "id": "527",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Borkenes",
+      "target": "Juan de Ayolas",
+      "id": "381",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Achere",
+      "target": "Domingo Martínez de Irala",
+      "id": "158",
+      "attributes": {
+        "chapter": "33"
+      },
+      "color": "rgb(255,171,159)",
+      "size": 1.0
+    },
+    {
+      "source": "Ñuflo de Chaves",
+      "target": "Rui García",
+      "id": "499",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Francisco Ruiz Galán",
+      "id": "108",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Chané",
+      "target": "Perronoss",
+      "id": "356",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Juan de Ayolas",
+      "target": "Juan Romero",
+      "id": "45",
+      "attributes": {
+        "chapter": "12"
+      },
+      "color": "rgb(117,255,174)",
+      "size": 1.0
+    },
+    {
+      "source": "Ñuflo de Chaves",
+      "target": "Parnau",
+      "id": "495",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Gonzalo Pizarro Viedma",
+      "target": "Pedro Anzúrez",
+      "id": "461",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Mepenes",
+      "target": "Zechennaus Saluaischco",
+      "id": "71",
+      "attributes": {
+        "chapter": "18"
+      },
+      "color": "rgb(173,243,186)",
+      "size": 1.0
+    },
+    {
+      "source": "Alonso Riquelme de Guzmán",
+      "target": "Domingo Martínez de Irala",
+      "id": "522",
+      "attributes": {
+        "chapter": "50"
+      },
+      "color": "rgb(160,200,153)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Querandí",
+      "id": "37",
+      "attributes": {
+        "chapter": "7"
+      },
+      "color": "rgb(242,213,253)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio Cabrera",
+      "target": "Diego de Tovalina",
+      "id": "166",
+      "attributes": {
+        "chapter": "32"
+      },
+      "color": "rgb(141,189,203)",
+      "size": 1.0
+    },
+    {
+      "source": "Carayebá",
+      "target": "Yapirús",
+      "id": "302",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Pedro Díaz",
+      "id": "328",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Guasarapos",
+      "target": "Payaguá",
+      "id": "212",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Charchareis",
+      "target": "Juan de Ayolas",
+      "id": "82",
+      "attributes": {
+        "chapter": "24"
+      },
+      "color": "rgb(109,245,217)",
+      "size": 1.0
+    },
+    {
+      "source": "Francisco Pizarro González",
+      "target": "Pedro Anzúrez",
+      "id": "451",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Payaguá",
+      "target": "Suruchacuiss",
+      "id": "218",
+      "attributes": {
+        "chapter": "34"
+      },
+      "color": "rgb(255,211,105)",
+      "size": 1.0
+    },
+    {
+      "source": "Macario",
+      "target": "Tabaré",
+      "id": "310",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Machkaisies",
+      "target": "Pedro Anzúrez",
+      "id": "485",
+      "attributes": {
+        "chapter": "48"
+      },
+      "color": "rgb(255,199,214)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "García Vanegas",
+      "id": "274",
+      "attributes": {
+        "chapter": "40"
+      },
+      "color": "rgb(187,193,84)",
+      "size": 1.0
+    },
+    {
+      "source": "Kalterón",
+      "target": "Tiembus",
+      "id": "145",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Álvar Núñez Cabeza de Vaca",
+      "target": "Scheruess",
+      "id": "250",
+      "attributes": {
+        "chapter": "38"
+      },
+      "color": "rgb(255,171,213)",
+      "size": 1.0
+    },
+    {
+      "source": "Payaguá",
+      "target": "Pedro Díaz",
+      "id": "343",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Yapirús",
+      "id": "309",
+      "attributes": {
+        "chapter": "43"
+      },
+      "color": "rgb(147,202,117)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Mbayá",
+      "id": "325",
+      "attributes": {
+        "chapter": "45"
+      },
+      "color": "rgb(101,240,254)",
+      "size": 1.0
+    },
+    {
+      "source": "Jacobo Welser",
+      "target": "Sebastian Neithart",
+      "id": "1",
+      "attributes": {
+        "chapter": "1"
+      },
+      "color": "rgb(251,203,216)",
+      "size": 1.0
+    },
+    {
+      "source": "Zeiche Legemi",
+      "target": "Rochera Wassú",
+      "id": "134",
+      "attributes": {
+        "chapter": "27"
+      },
+      "color": "rgb(190,211,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Batatáes",
+      "target": "Macario",
+      "id": "295",
+      "attributes": {
+        "chapter": "42"
+      },
+      "color": "rgb(142,239,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Kalterón",
+      "id": "136",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Caríos",
+      "target": "Payaguá",
+      "id": "81",
+      "attributes": {
+        "chapter": "44"
+      },
+      "color": "rgb(255,176,137)",
+      "size": 1.0
+    },
+    {
+      "source": "Pedro de Mendoza",
+      "target": "Paysennos",
+      "id": "414",
+      "attributes": {
+        "chapter": "46"
+      },
+      "color": "rgb(153,249,134)",
+      "size": 1.0
+    },
+    {
+      "source": "Antonio de Mendoza",
+      "target": "Zeiche Legemi",
+      "id": "112",
+      "attributes": {
+        "chapter": "28"
+      },
+      "color": "rgb(255,192,255)",
+      "size": 1.0
+    },
+    {
+      "source": "Domingo Martínez de Irala",
+      "target": "Machkaisies",
+      "id": "436",
+      "attributes": {
+        "chapter": "49"
+      },
+      "color": "rgb(234,188,101)",
+      "size": 1.0
+    }
+  ]
+}
