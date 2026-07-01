@@ -53,6 +53,15 @@ pip install lxml networkx pyvis pandas matplotlib fa2
 python -m visualizations.run_all
 ```
 
+### Regenerar la edición de lectura desde el XML
+
+Las páginas de lectura (`_txtxpagina/`) y el índice (`_pages/02-edicion-digital.html`)
+se generan a partir de los archivos TEI con:
+
+```bash
+python TEI/build_edition.py
+```
+
 ## Editores digitales
 
 Federico Cortés y Juan Manuel Franca.

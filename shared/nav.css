@@ -24,3 +24,16 @@
     color: #eee;
     background: #0f3460;
 }
+
+#sitio-nav a.home-link {
+    color: #b9c2cf;
+    margin-right: 10px;
+    border-right: 1px solid #0f3460;
+    padding-right: 16px;
+    border-radius: 0;
+}
+
+#sitio-nav a.home-link:hover {
+    color: #fff;
+    background: #16213e;
+}

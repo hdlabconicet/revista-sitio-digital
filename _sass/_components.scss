@@ -134,3 +134,143 @@ code {
   }
 
 }
+
+
+// Landing page — call-to-action button + visualization card grid
+.viz-cta {
+  display: inline-block;
+  background: $burgundy;
+  color: $white;
+  padding: 6px 14px;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus {
+    background: darken($burgundy, 8%);
+    color: $white;
+  }
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: $spacer-2;
+  margin: $spacer-2 0 $spacer-3;
+}
+
+.viz-card {
+  display: block;
+  padding: $spacer-2;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  text-decoration: none;
+  color: $color-body-text;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+
+  h3 {
+    margin: 0 0 0.25em;
+    color: $burgundy;
+    font-size: $h4-size;
+  }
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: $color-text-accent;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $burgundy;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+  }
+}
+
+
+// Reading edition (edición digital) — TEI-derived article pages + índice
+.reading-edition {
+  max-width: 44em;
+
+  h3.tei-head {
+    margin-top: 1.4em;
+    font-size: $h3-size;
+  }
+
+  .tei-byline {
+    font-style: italic;
+    font-weight: bold;
+    color: $gray-dark;
+    margin-bottom: 0.4em;
+  }
+}
+
+// Inline annotations
+.ann-person {
+  cursor: help;
+  border-bottom: 1px dotted $burgundy;
+}
+
+.ann-place,
+.ann-org {
+  border-bottom: 1px dotted $gray;
+}
+
+.tei-term,
+.tei-bibl,
+.tei-title,
+.tei-foreign {
+  font-style: italic;
+}
+
+// Verse
+.tei-lg {
+  margin: 1em 0;
+}
+
+// Editorial notes (collapsible)
+.ed-note {
+  margin: $spacer-2 0;
+  padding: 0.3em 0 0.3em $spacer-2;
+  border-left: 3px solid $gray-light;
+  background: #faf9f8;
+
+  summary {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $gray;
+    outline: none;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 0.4em;
+  }
+
+  &.ed-interpretation {
+    border-left-color: $burgundy;
+  }
+}
+
+// Índice (table of contents)
+.indice-issue {
+  margin-top: 1.4em;
+  color: $burgundy;
+}
+
+.indice-list {
+  li {
+    margin-bottom: 0.4em;
+  }
+}
+
+.reading-nav {
+  border-top: 1px solid $color-border;
+  margin-top: $spacer-3;
+}

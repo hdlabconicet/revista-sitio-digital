@@ -1,20 +1,24 @@
 ---
 layout: page
-title: Búsqueda
-permalink: /buscar/
-order: 10
-description: Herramienta de búsqueda textual
-icon: search
+title: Datos de la red de citas
+permalink: /datos-red/
+type: extras
+description: Descarga de la red de citas y las métricas calculadas
+icon: bar-chart
 ---
 
-<form id="site_search">
-<p class="h3 lh-condensed">Hacer una búsqueda en Viaje al Río de la Plata:</p>
-<br>
-<input id="search" type="text" name="q" autofocus></form>
+<div class="prose">
+<p>La red de citas de <i>Revista SITIO</i> conecta <b>767 figuras</b> mediante <b>1347 citas</b>, organizadas en <b>13 comunidades intelectuales</b>. De esas figuras, <b>36</b> son colaboradores/as de la revista y <b>731</b>, figuras citadas.</p>
 
-<div id="results"></div>
-<ul id="search_results"></ul>
-<script src="{{site.baseurl}}/assets/js/elasticlunr.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/search.js"></script>
+<p>Los datos derivados del análisis están disponibles para su descarga y reutilización (CC BY 4.0):</p>
 
+<ul>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/network.gexf">Red completa (GEXF)</a> — para Gephi u otras herramientas de análisis de redes.</li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/edges.csv">Aristas / citas (CSV)</a></li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/node_metrics.csv">Métricas por nodo (CSV)</a> — grado, PageRank e intermediación.</li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/communities.json">Comunidades (JSON)</a></li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/most_cited.csv">Figuras más citadas (CSV)</a></li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/prosopography/prosopography_data.csv">Datos prosopográficos (CSV)</a></li>
+  <li><a href="{{ site.baseurl }}/visualizations/outputs/full_corpus/network/network_summary.json">Resumen estadístico (JSON)</a></li>
+</ul>
+</div>

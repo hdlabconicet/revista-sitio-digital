@@ -2,21 +2,74 @@
 layout: home
 ---
 
-
-      
-
 <div class="container mx-auto px-2 py-2">
+
   <div class="py-2 mb-2 prose">
-    <p>En este sitio se alojarán las visuzalizaciones de la revista Sitio, llevadas a cabo por el Dr. Federico Cortés en el marco de una beca en el programa Georg Forster de la Fundación Alexander von Humboldt. En el proyecto ofrecemos explorar con herramientas digitales y computacionales la revista literaria y cultural Sitio, con el objetivo de exhibir y reflexionar sobre las tensiones entre lectura y ensayo. Utilizamos diferentes herramientas de edición digital y abordajes computacionales para el análisis cuantitativo, buscando destacar las dinámicas matizadas de la crítica literaria argentina durante ese periodo.
-    <br/><br/>
-      
-      Este proyecto se comparte a través de la licencia <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons 4.0 (CC BY 4.0)</a>
-      <br/><br/>
-      Citar  como:
-      <br/><br/>
-      Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel (eds.). (2026). <i>Visualizaciones de la revista Sitio</i>. HD LAB</p>
+    <p>En este sitio reunimos las visualizaciones y la edición digital de <b>Revista SITIO</b>
+      (Buenos Aires, 1981&ndash;1987), una de las revistas de crítica literaria y cultural clave
+      de los años de la dictadura y la transición democrática argentina. El proyecto, dirigido por
+      el Dr. Federico Cortés en el marco de una beca del programa Georg Forster de la Fundación
+      Alexander von Humboldt, explora con herramientas digitales y computacionales las tensiones
+      entre lectura y ensayo que caracterizaron a la revista, a partir de la codificación TEI de
+      sus seis números y del análisis de su red de citas. Puede recorrer la
+      <a href="{{ site.baseurl }}/indice/">edición digital</a> del texto o consultar los
+      <a href="{{ site.baseurl }}/recursos/">recursos</a> del proyecto.</p>
   </div>
+
+  <!-- Grafo destacado -->
+  <div class="mb-2">
+    <iframe src="{{ site.baseurl }}/sigma-viz/" width="100%" height="460"
+            style="border:1px solid #d7d5d1; border-radius:6px;"
+            title="Red de citas de Revista SITIO"></iframe>
+    <p><a class="no-underline viz-cta" href="{{ site.baseurl }}/sigma-viz/" target="_blank">Acceso al grafo &rarr;</a></p>
+  </div>
+
+  <!-- Visualizaciones -->
+  <h2 id="visualizaciones">Visualizaciones</h2>
+  <div class="col-1 sm-width-full border-top-thin py-1"></div>
+  <p class="prose">Seis maneras de recorrer la red de citas de SITIO, generadas a partir de la
+    codificación TEI de los seis números de la revista.</p>
+
+  <div class="viz-grid">
+    <a class="viz-card" href="{{ site.baseurl }}/sigma-viz/">
+      <h3>Red de citas</h3>
+      <p>Explorá la red completa de figuras citadas en SITIO (1981&ndash;1987).</p>
+    </a>
+    <a class="viz-card" href="{{ site.baseurl }}/map/">
+      <h3>Comunidades intelectuales</h3>
+      <p>Las 13 tradiciones intelectuales detectadas en la red de citas.</p>
+    </a>
+    <a class="viz-card" href="{{ site.baseurl }}/timeline/">
+      <h3>Biografías de figuras</h3>
+      <p>Cómo aparecen las figuras citadas a lo largo de los números.</p>
+    </a>
+    <a class="viz-card" href="{{ site.baseurl }}/contributors/">
+      <h3>Afinidades editoriales</h3>
+      <p>¿Qué colaboradores/as leen a las mismas figuras?</p>
+    </a>
+    <a class="viz-card" href="{{ site.baseurl }}/flows/">
+      <h3>Flujos de citación</h3>
+      <p>¿De qué tradiciones intelectuales se nutre cada colaborador/a?</p>
+    </a>
+    <a class="viz-card" href="{{ site.baseurl }}/shadows/">
+      <h3>Resistencias</h3>
+      <p>Figuras cuya importancia estructural supera su número de citas.</p>
+    </a>
+  </div>
+
+  <!-- Licencia y cita -->
+  <div class="py-2 mb-2 prose">
+    <p>Este proyecto se comparte a través de la licencia
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons 4.0 (CC BY 4.0)</a>.
+      <br/><br/>
+      Citar esta edición como:
+      <br/><br/>
+      Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel (eds.). (2026).
+      <i>Revista SITIO. Edición crítica digital</i>. HD LAB.
+      <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.url }}{{ site.baseurl }}/</a>.
+      ISSN 3072-7715 [Fecha de consulta].</p>
+    <!-- TODO: si existe un DOI de datos en Zenodo para SITIO, agregar aquí el badge:
+         <p>Repositorio de datos: <a class="no-underline" href="https://doi.org/XXXX"><img src="https://zenodo.org/badge/XXXX.svg" alt="DOI"></a></p> -->
+  </div>
+
 </div>
-	  
-
-

@@ -5,20 +5,46 @@ permalink: /acerca-de/
 type: extras
 ---
 
+<div class="prose" markdown="1">
 
-<!-- Recursos -->
-<div class="container mx-auto px-2">
-  <div class="py-1 mb-0 prose">
-   <h2 class="izquierda">
-      <svg class="bi bi-tag" width="0.8em" height="0.8em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M.5 2A1.5 1.5 0 0 1 2 .5h4.586a1.5 1.5 0 0 1 1.06.44l7 7a1.5 1.5 0 0 1 0 2.12l-4.585 4.586a1.5 1.5 0 0 1-2.122 0l-7-7A1.5 1.5 0 0 1 .5 6.586V2zM2 1.5a.5.5 0 0 0-.5.5v4.586a.5.5 0 0 0 .146.353l7 7a.5.5 0 0 0 .708 0l4.585-4.585a.5.5 0 0 0 0-.708l-7-7a.5.5 0 0 0-.353-.146H2z"/>
-        <path fill-rule="evenodd" d="M2.5 4.5a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm2-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
-      </svg> <a class="no-underline" title="Análisis textual estadístico" href="https://mybinder.org/v2/gh/rominicky/mineria-texto-python/fe49459262c5d9ba8b5daa5d72160c53ecb05b82?urlpath=lab%2Ftree%2Fulrich_exploraciones_textuales.ipynb" target="_blank">Notebook</a>
-  </h2>
-  <a class="h3 lh-condensed" href="https://mybinder.org/v2/gh/rominicky/mineria-texto-python/fe49459262c5d9ba8b5daa5d72160c53ecb05b82?urlpath=lab%2Ftree%2Fulrich_exploraciones_textuales.ipynb" target="_blank"><p>Exploración y análisis cuantitativo del Viaje al Río de la Plata</p></a></div>
+## La revista
 
-  {% for post in site.recursos %}
-    {% include post_block.html %}
-  {% endfor %}
+*Revista SITIO* fue una publicación literaria y cultural argentina aparecida en Buenos Aires entre **1981 y 1987**, dirigida por **Ramón Alcalde, Eduardo Grüner, Luis Gusmán, Jorge Jinkis, Mario Levin y Luis Thonis**. Surgida en los últimos años de la dictadura militar y la transición democrática, fue —junto a *Punto de Vista* y *Babel*— una de las revistas intelectuales clave del período.
 
-</div><!-- End Recursos -->
+Frente a la tradición "culturalista" de revistas como *Contorno* y *Punto de Vista*, que abordaban la literatura sobre todo como evidencia para el análisis social y cultural, *SITIO* propuso una reorientación radical: interpretar los fenómenos externos *a través* de la literatura, tratando la lectura como una práctica irreductible y no como un medio para acceder a un conocimiento extraliterario.
+
+## El proyecto
+
+Esta edición crítica digital explora *Revista SITIO* con herramientas de edición digital y de análisis computacional, con el objetivo de exhibir y reflexionar sobre las tensiones entre lectura y ensayo que caracterizaron a la publicación. El proyecto está dirigido por el **Dr. Federico Cortés** en el marco de una beca del programa **Georg Forster** de la **Fundación Alexander von Humboldt**, y se desarrolla en el **HD LAB** (IIBICRIT, CONICET).
+
+## Metodología
+
+La edición comprende:
+
+- La **codificación TEI-XML** de los seis números de la revista, con marcado de personas, lugares, obras y organizaciones citadas.
+- Un **pipeline de análisis** en Python que, a partir de ese marcado, construye la red de citas, detecta comunidades intelectuales y calcula medidas de centralidad.
+- Seis **visualizaciones interactivas** que ofrecen distintas lecturas de esa red.
+
+Puede consultar los detalles del procedimiento en la sección [Recursos]({{ site.baseurl }}/recursos/).
+
+## La edición en cifras
+
+- **6** números codificados (1981–1987).
+- **919** personas identificadas y **269** lugares.
+- **632** referencias bibliográficas citadas.
+- Una red de **767 figuras** conectadas por **1347 citas**, organizadas en **13 comunidades intelectuales**.
+- **36** colaboradores/as de la revista y **731** figuras citadas.
+
+## Créditos
+
+- **Dirección del proyecto:** Federico Cortés.
+- **Edición digital (TEI):** Federico Cortés y Juan Manuel Franca.
+- **Edición y coordinación:** Federico Cortés, Gimena del Rio Riande y Gabriel Calarco.
+
+Esta edición se comparte bajo licencia [Creative Commons Atribución 4.0 Internacional (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+### Cómo citar
+
+Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel (eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB. <{{ site.url }}{{ site.baseurl }}/>. ISSN 3072-7715 [Fecha de consulta].
+
+</div>

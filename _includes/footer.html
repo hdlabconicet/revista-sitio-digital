@@ -30,7 +30,8 @@
    <div class="mb-4 mt-2 clearfix" style="text-align: center;">
       <span>
      <ul>
-        <li class="no_bullet">{{ site.time | date: '%Y' }} {{ site.title | escape }}. <a href="https://n2t.net/ark:/69774/vrp2025">https://n2t.net/ark:/69774/vrp2025</a></li>
+        <!-- TODO: reemplazar por un ARK propio de Revista SITIO si se acuña uno -->
+        <li class="no_bullet">{{ site.time | date: '%Y' }} {{ site.title | escape }}. <a href="{{ site.url }}{{ site.baseurl }}/">{{ site.url }}{{ site.baseurl }}/</a></li>
         <li class="no_bullet">Biblioteca digital. ISSN 3072-7715</li>
         <li class="no_bullet">CC BY 4.0</li>
         <li class="no_bullet">Marcelo T. de Alvear 1694 – Buenos Aires (CABA) – Argentina</li>
@@ -40,6 +41,6 @@
     </span>
     </div>
     
-    <img class="right" src="https://raw.githubusercontent.com/hdlabconicet/viaje-al-rio-de-la-plata/master/assets/img/we-use-tei.png"/ style="max-width: 30%; text-align: right;"/>
+    <img class="right" src="{{ site.baseurl }}/assets/img/we-use-tei.png" alt="We use TEI" style="max-width: 30%; text-align: right;"/>
      
 </div>
