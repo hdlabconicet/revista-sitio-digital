@@ -214,9 +214,16 @@ code {
   border-bottom: 1px dotted $burgundy;
 }
 
-.ann-place,
-.ann-org {
+// Lugares enlazados a Wikidata/GeoNames (subrayado tenue; el <a> no debe
+// heredar el estilo global de enlaces).
+a.ann-place {
+  color: inherit;
   border-bottom: 1px dotted $gray;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
 }
 
 .tei-term,

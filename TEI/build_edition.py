@@ -148,6 +148,37 @@ def load_graph_keys():
     return GRAPH_NODE_KEYS
 
 
+PLACES = {}  # populated by load_places(): id -> {name, country, uri, source}
+
+
+def load_places():
+    path = TEI_DIR / "listPlaces2.xml"
+    if not path.exists():
+        return PLACES
+    root = ET.parse(str(path)).getroot()
+    for place in root.findall(".//tei:place", NS):
+        pid = place.get(XML_ID)
+        if not pid:
+            continue
+        name_el = place.find("tei:placeName", NS)
+        country_el = place.find(".//tei:country", NS)
+        uri = source = ""
+        for idno in place.findall(".//tei:idno", NS):
+            sub = idno.get("subtype") or ""
+            if idno.text and sub in ("wikidata", "geonames"):
+                # Prefer Wikidata when a place has both identifiers.
+                if not uri or sub == "wikidata":
+                    uri = idno.text.strip()
+                    source = "Wikidata" if sub == "wikidata" else "GeoNames"
+        PLACES[pid] = {
+            "name": collapse_ws("".join(name_el.itertext())) if name_el is not None else "",
+            "country": collapse_ws("".join(country_el.itertext())) if country_el is not None else "",
+            "uri": uri,
+            "source": source,
+        }
+    return PLACES
+
+
 # --- TEI -> HTML -------------------------------------------------------------
 def render_children(el):
     out = []
@@ -165,7 +196,9 @@ def person_span(el, inner):
     pid = ref[0].lstrip("#") if ref else ""
     info = PERSONS.get(pid)
     if not (info and info.get("name")):
-        return f'<span class="ann ann-person">{inner}</span>'
+        # Fictional characters and other unresolved names: plain text — an
+        # underline is a promise that something responds.
+        return inner
     tip = info["name"]
     span = life_span(info.get("birth"), info.get("death"))
     if span:
@@ -183,6 +216,28 @@ def person_span(el, inner):
     return (
         f'<span class="ann ann-person" data-balloon="{esc_attr(tip)}" '
         f'data-balloon-pos="up">{inner}</span>'
+    )
+
+
+def place_span(el, inner):
+    ref = (el.get("ref") or "").split()
+    pid = ref[0].lstrip("#") if ref else ""
+    info = PLACES.get(pid)
+    if not (info and info.get("uri")):
+        return inner
+    tip_parts = []
+    if info.get("name") and collapse_ws(info["name"]) != collapse_ws(
+        re.sub(r"<[^>]+>", "", inner)
+    ):
+        tip_parts.append(info["name"])
+    if info.get("country"):
+        tip_parts.append(info["country"])
+    tip_parts.append(f"Ver en {info['source']}")
+    tip = " · ".join(tip_parts)
+    return (
+        f'<a class="ann ann-place ann-linked" href="{esc_attr(info["uri"])}" '
+        f'target="_blank" rel="noopener" data-balloon="{esc_attr(tip)}" '
+        f'data-balloon-pos="up">{inner}</a>'
     )
 
 
@@ -431,9 +486,10 @@ def render_node(el):
     if tag == "persName":
         return person_span(el, inner)
     if tag == "placeName":
-        return f'<span class="ann ann-place">{inner}</span>'
+        return place_span(el, inner)
     if tag == "orgName":
-        return f'<span class="ann ann-org">{inner}</span>'
+        # No authority data for organizations: plain text.
+        return inner
     if tag == "term":
         return f'<em class="tei-term">{inner}</em>'
     if tag == "bibl":
@@ -569,6 +625,8 @@ def main():
     print(f"Loaded {len(PERSONS)} persons from listPerson.xml")
     load_graph_keys()
     print(f"Loaded {len(GRAPH_NODE_KEYS)} node keys from sigma_graph.json")
+    load_places()
+    print(f"Loaded {len(PLACES)} places from listPlaces2.xml")
 
     OUT_DIR.mkdir(exist_ok=True)
     IDX_DIR.mkdir(exist_ok=True)
