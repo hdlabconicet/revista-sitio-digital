@@ -274,3 +274,87 @@ code {
   border-top: 1px solid $color-border;
   margin-top: $spacer-3;
 }
+
+// Citas en la edición de lectura: bloques sobrios, sin doble sangría.
+.reading-edition .tei-text {
+  // Block quotes inside <p> make the browser close the paragraph early, so
+  // trailing sentence fragments become bare text nodes; keep them at body size.
+  font-size: $prose-font-size;
+
+  blockquote {
+    font-style: normal;
+    font-size: $prose-font-size;
+    line-height: 1.5;
+    margin: 1.25em 0;
+    padding: 0.1em 0 0.1em $spacer-2;
+    border-left: 2px solid $gray-light;
+    max-width: none;
+
+    p {
+      font-size: $prose-font-size;
+      margin-bottom: 0.6em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .tei-cit {
+    margin: 1.25em 0;
+
+    blockquote {
+      margin: 0;
+    }
+  }
+
+  .tei-cit-source {
+    margin-top: 0.35em;
+    padding-left: $spacer-2 + 2px;
+    font-size: 16px;
+    color: $gray-dark;
+
+    .tei-title {
+      font-style: italic;
+    }
+  }
+
+  .tei-cit > .tei-cit-source:first-child {
+    margin: 0 0 0.35em;
+  }
+}
+
+// Fila de insignias (licencia, TEI, ISSN) en la portada.
+.badge-row {
+  display: flex;
+  align-items: center;
+  gap: $spacer-2;
+  margin: $spacer-2 0;
+
+  img {
+    height: 31px;
+    border: 0;
+  }
+}
+
+.badge-issn {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+  font-size: 13px;
+  color: $gray-dark;
+  letter-spacing: 0.03em;
+}
+
+// Figuras enlazadas a la red de citas (el <a> no debe heredar el estilo
+// global de enlaces).
+a.ann-person {
+  color: inherit;
+  border-bottom: 1px dotted $burgundy;
+  cursor: pointer;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+}

@@ -18,6 +18,7 @@ Dependencies: lxml (already used by the visualizations pipeline).
 """
 
 import html
+import json
 import re
 from pathlib import Path
 
@@ -45,10 +46,20 @@ ISSUES = [
 NOTE_LABELS = {
     "summary": "Resumen editorial",
     "interpretation": "Interpretación",
-    "annotation": "Nota",
+    "translator": "Nota del traductor",
 }
 
+# Notes excluded from the reading edition. Types listed here are dropped
+# wholesale; individual notes can be excluded via their xml:id or @target
+# (without the leading '#') — note that most untyped (original) footnotes
+# carry neither, so per-note curation of those requires adding ids to the TEI.
+EXCLUDED_NOTE_TYPES = {"interpretation"}
+EXCLUDED_NOTE_IDS = set()
+
 PERSONS = {}  # populated by load_persons()
+
+GRAPH_JSON = REPO / "sigma-viz" / "data" / "sigma_graph.json"
+GRAPH_NODE_KEYS = set()  # populated by load_graph_keys(); keys == listPerson xml:ids
 
 
 # --- Helpers -----------------------------------------------------------------
@@ -126,6 +137,13 @@ def load_persons():
     return PERSONS
 
 
+def load_graph_keys():
+    if GRAPH_JSON.exists():
+        data = json.loads(GRAPH_JSON.read_text(encoding="utf-8"))
+        GRAPH_NODE_KEYS.update(n["key"] for n in data.get("nodes", []))
+    return GRAPH_NODE_KEYS
+
+
 # --- TEI -> HTML -------------------------------------------------------------
 def render_children(el):
     out = []
@@ -142,16 +160,33 @@ def person_span(el, inner):
     ref = (el.get("ref") or "").split()
     pid = ref[0].lstrip("#") if ref else ""
     info = PERSONS.get(pid)
-    if info and info.get("name"):
-        tip = info["name"]
-        span = life_span(info.get("birth"), info.get("death"))
-        if span:
-            tip = f"{tip} ({span})"
+    if not (info and info.get("name")):
+        return f'<span class="ann ann-person">{inner}</span>'
+    tip = info["name"]
+    span = life_span(info.get("birth"), info.get("death"))
+    if span:
+        tip = f"{tip} ({span})"
+    if pid in GRAPH_NODE_KEYS:
+        # Reading pages live at {baseurl}/ed/<slug>/, so ../../ resolves to the
+        # site root regardless of baseurl (the body is inside {% raw %}).
         return (
-            f'<span class="ann ann-person" data-balloon="{esc_attr(tip)}" '
-            f'data-balloon-pos="up">{inner}</span>'
+            f'<a class="ann ann-person ann-linked" '
+            f'href="../../sigma-viz/?node={esc_attr(pid)}" '
+            f'target="_blank" rel="noopener" '
+            f'data-balloon="{esc_attr(tip + " · Ver en la red de citas")}" '
+            f'data-balloon-pos="up">{inner}</a>'
         )
-    return f'<span class="ann ann-person">{inner}</span>'
+    return (
+        f'<span class="ann ann-person" data-balloon="{esc_attr(tip)}" '
+        f'data-balloon-pos="up">{inner}</span>'
+    )
+
+
+def note_excluded(el):
+    if (el.get("type") or "") in EXCLUDED_NOTE_TYPES:
+        return True
+    ident = el.get(XML_ID) or (el.get("target") or "").lstrip("#")
+    return bool(ident) and ident in EXCLUDED_NOTE_IDS
 
 
 def render_note(el, inner):
@@ -161,20 +196,58 @@ def render_note(el, inner):
     return f'<details class="{cls}"><summary>{label}</summary>{inner}</details>'
 
 
+def render_head(el):
+    # <details> is not phrasing content, so notes inside a <head> are rendered
+    # after the heading instead of inside it.
+    inline = [esc(el.text)] if el.text else []
+    after = []
+    for child in el:
+        if local(child) == "note":
+            if not note_excluded(child):
+                after.append(render_node(child))
+        else:
+            inline.append(render_node(child))
+        if child.tail:
+            inline.append(esc(child.tail))
+    return f'<h3 class="tei-head">{"".join(inline)}</h3>{"".join(after)}'
+
+
+def render_cit(el):
+    # A <cit> pairs a quotation with its source: one <figure> holding the
+    # <blockquote> and a <figcaption> for the <bibl>, in document order
+    # (a handful of cits are bibl-first intro phrases).
+    parts = []
+    for child in el:
+        t = local(child)
+        if t == "bibl":
+            parts.append(
+                f'<figcaption class="tei-cit-source">{render_children(child)}</figcaption>'
+            )
+        elif t in ("quote", "q"):
+            parts.append(f"<blockquote>{render_children(child)}</blockquote>")
+        else:
+            parts.append(render_node(child))
+    return f'<figure class="tei-cit">{"".join(parts)}</figure>'
+
+
 def render_node(el):
     tag = local(el)
     if tag in ("lb",):
         return "<br/>"
     if tag in ("pb", "fw", "teiHeader"):
         return ""
+    if tag == "note" and note_excluded(el):
+        return ""
+    if tag == "head":
+        return render_head(el)
+    if tag == "cit":
+        return render_cit(el)
     inner = render_children(el)
 
     if tag == "p":
         pid = el.get(XML_ID)
         idattr = f' id="{esc_attr(pid)}"' if pid else ""
         return f"<p{idattr}>{inner}</p>"
-    if tag == "head":
-        return f'<h3 class="tei-head">{inner}</h3>'
     if tag == "persName":
         return person_span(el, inner)
     if tag == "placeName":
@@ -194,8 +267,8 @@ def render_node(el):
         if "bold" in rend or "strong" in rend:
             return f"<strong>{inner}</strong>"
         return f"<em>{inner}</em>"
-    if tag in ("quote", "cit"):
-        return f"<blockquote>{inner}</blockquote>"
+    if tag == "quote":
+        return f'<blockquote class="tei-quote">{inner}</blockquote>'
     if tag in ("q", "said"):
         return f"<q>{inner}</q>"
     if tag == "byline":
@@ -234,10 +307,27 @@ TYPE_LABELS = {
 }
 
 
+TITLE_EXCLUDE = {"note", "bibl"}
+
+
+def head_title_text(el):
+    # Like itertext(), but skips note/bibl subtrees (their text is not part of
+    # the title) while keeping every element's tail.
+    parts = [el.text or ""]
+    for child in el:
+        if local(child) not in TITLE_EXCLUDE:
+            parts.append(head_title_text(child))
+        parts.append(child.tail or "")
+    return "".join(parts)
+
+
 def article_title(div):
     for child in div:
         if local(child) == "head":
-            return collapse_ws("".join(child.itertext()))
+            title = collapse_ws(head_title_text(child))
+            title = re.sub(r"\s+([.,;:!?])", r"\1", title)
+            title = re.sub(r"(?<!\.)\.$", "", title)
+            return title
     dtype = div.get("type") or ""
     return TYPE_LABELS.get(dtype, "Sección")
 
@@ -250,6 +340,11 @@ def render_article_body(div):
     for child in div:
         if not skipped_title and local(child) == "head":
             skipped_title = True
+            # The title <head> is dropped (the page layout prints the title),
+            # but any footnote attached to it must survive in the body.
+            for sub in child:
+                if local(sub) == "note":
+                    parts.append(render_node(sub))
             if child.tail:
                 parts.append(esc(child.tail))
             continue
@@ -267,6 +362,8 @@ def yaml_quote(text):
 def main():
     load_persons()
     print(f"Loaded {len(PERSONS)} persons from listPerson.xml")
+    load_graph_keys()
+    print(f"Loaded {len(GRAPH_NODE_KEYS)} node keys from sigma_graph.json")
 
     OUT_DIR.mkdir(exist_ok=True)
     # Remove previously generated pages so the build stays in sync.

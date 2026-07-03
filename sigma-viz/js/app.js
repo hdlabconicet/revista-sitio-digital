@@ -31,6 +31,7 @@
       initGraph(data);
       initUI(data);
       updateStats();
+      applyDeepLink();
     })
     .catch(function (err) {
       console.error("Failed to load graph data:", err);
@@ -84,12 +85,14 @@
     renderer.on("clickNode", function (e) {
       selectedNode = e.node;
       showDetailPanel(e.node);
+      history.replaceState(null, "", "?node=" + encodeURIComponent(e.node));
       renderer.refresh();
     });
 
     renderer.on("clickStage", function () {
       selectedNode = null;
       hideDetailPanel();
+      history.replaceState(null, "", window.location.pathname);
       renderer.refresh();
     });
 
@@ -222,9 +225,18 @@
     suggestions.style.display = "block";
   }
 
+  function applyDeepLink() {
+    var nodeKey = new URLSearchParams(window.location.search).get("node");
+    if (!nodeKey || !graph.hasNode(nodeKey)) return;
+    selectSearchResult(nodeKey);
+    var input = document.getElementById("search-input");
+    if (input) input.value = graph.getNodeAttribute(nodeKey, "label") || nodeKey;
+  }
+
   function selectSearchResult(nodeKey) {
     selectedNode = nodeKey;
     showDetailPanel(nodeKey);
+    history.replaceState(null, "", "?node=" + encodeURIComponent(nodeKey));
 
     var attrs = graph.getNodeAttributes(nodeKey);
     var camera = renderer.getCamera();
