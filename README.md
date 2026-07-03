@@ -62,9 +62,20 @@ se generan a partir de los archivos TEI con:
 python TEI/build_edition.py
 ```
 
+La página de bibliografía (`_recursos/05-biblio.md`) se genera a partir de
+`TEI/listBibl.xml` con:
+
+```bash
+python TEI/build_biblio.py
+```
+
 ## Editores digitales
 
-Federico Cortés y Juan Manuel Franca.
+Federico Cortés, Gimena del Rio Riande y Gabriel Calarco (eds.).
+
+Citar esta edición como: Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel
+(eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB.
+https://hdlab.space/revista-sitio-digital/. ISSN 3072-7715.
 
 ## Licencia
 
