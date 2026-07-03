@@ -78,10 +78,10 @@ python TEI/enrich_graph_wikidata.py
 
 ## Editores digitales
 
-Federico Cortés, Gimena del Rio Riande y Gabriel Calarco (eds.).
+Federico Cortés, Juan Manuel Franca, Gimena del Rio Riande y Gabriel Calarco (eds.).
 
-Citar esta edición como: Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel
-(eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB.
+Citar esta edición como: Cortés, Federico, Franca, Juan Manuel, del Rio Riande, Gimena,
+Calarco, Gabriel (eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB.
 https://hdlab.space/revista-sitio-digital/. ISSN 3072-7715.
 
 ## Licencia

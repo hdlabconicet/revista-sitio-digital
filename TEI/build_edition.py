@@ -263,7 +263,41 @@ def render_notes_section():
     )
 
 
+QUOTE_MARKS = "“«\"‘'"
+
+
+def cit_is_inline(el):
+    # <q> is the TEI's inline quotation element: a <cit> built on <q> (e.g.
+    # enumerations like (“…”, cap. I; “…”, cap. XII)) stays in the sentence.
+    kinds = [local(c) for c in el]
+    return "q" in kinds and "quote" not in kinds
+
+
+def render_inline_quote(el):
+    # A q/quote rendered in inline position: keep its own “…” marks, or let
+    # the HTML <q> element supply marks when the text has none.
+    inner = render_children(el)
+    text = collapse_ws("".join(el.itertext()))
+    if text[:1] in QUOTE_MARKS:
+        return f'<span class="tei-q">{inner}</span>'
+    return f"<q>{inner}</q>"
+
+
+def render_cit_inline(el):
+    parts = [esc(el.text)] if el.text else []
+    for child in el:
+        if local(child) in ("q", "quote"):
+            parts.append(render_inline_quote(child))
+        else:
+            parts.append(render_node(child))
+        if child.tail:
+            parts.append(esc(child.tail))
+    return f'<span class="tei-cit-inline">{"".join(parts)}</span>'
+
+
 def render_cit(el):
+    if cit_is_inline(el):
+        return render_cit_inline(el)
     # A <cit> pairs a quotation with its source: one <figure> holding the
     # <blockquote> and a <figcaption> for the <bibl>, in document order
     # (a handful of cits are bibl-first intro phrases).
@@ -332,7 +366,17 @@ def render_flow(el, pid=None):
             if child.tail:
                 buf.append(esc(child.tail))
             continue
-        if tag in BLOCK_IN_P or is_block_note(child):
+        # A quote right after an opening bracket is parenthetical: it must
+        # stay in the sentence no matter how it was encoded.
+        if tag in ("cit", "quote") and "".join(buf).rstrip()[-1:] in "([«“¿¡":
+            if tag == "cit":
+                buf.append(render_cit_inline(child))
+            else:
+                buf.append(render_inline_quote(child))
+            if child.tail:
+                buf.append(esc(child.tail))
+            continue
+        if (tag in BLOCK_IN_P and not (tag == "cit" and cit_is_inline(child))) or is_block_note(child):
             block_html = render_node(child)
             tail = child.tail or ""
             punct = ""
@@ -406,6 +450,11 @@ def render_node(el):
     if tag == "quote":
         return f'<blockquote class="tei-quote">{inner}</blockquote>'
     if tag in ("q", "said"):
+        # Most <q> in this corpus carry their own “…” marks; the HTML <q>
+        # element adds marks of its own, so only use it for bare text.
+        text = collapse_ws("".join(el.itertext()))
+        if text[:1] in QUOTE_MARKS:
+            return f'<span class="tei-q">{inner}</span>'
         return f"<q>{inner}</q>"
     if tag == "byline":
         return f'<p class="tei-byline">{inner}</p>'

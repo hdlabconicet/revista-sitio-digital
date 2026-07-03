@@ -11,7 +11,7 @@ type: extras
 
 *Revista SITIO* fue una publicación literaria y cultural argentina aparecida en Buenos Aires entre **1981 y 1987**, dirigida por **Ramón Alcalde, Eduardo Grüner, Luis Gusmán, Jorge Jinkis, Mario Levin y Luis Thonis**. Surgida en los últimos años de la dictadura militar y la transición democrática, fue —junto a *Punto de Vista* y *Babel*— una de las revistas intelectuales clave del período.
 
-Frente a la tradición "culturalista" de revistas como *Contorno* y *Punto de Vista*, que abordaban la literatura sobre todo como evidencia para el análisis social y cultural, *SITIO* propuso una reorientación radical: interpretar los fenómenos externos *a través* de la literatura, tratando la lectura como una práctica irreductible y no como un medio para acceder a un conocimiento extraliterario.
+Frente a la tradición de revistas que abordaban la literatura sobre todo como evidencia para el análisis social y cultural, *SITIO* propuso una reorientación radical: interpretar los fenómenos externos *a través* de la literatura, tratando la lectura como una práctica irreductible y no como un medio para acceder a un conocimiento extraliterario.
 
 ## El proyecto
 
@@ -45,6 +45,6 @@ Esta edición se comparte bajo licencia [Creative Commons Atribución 4.0 Intern
 
 ### Cómo citar
 
-Cortés, Federico, del Rio Riande, Gimena, Calarco, Gabriel (eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB. <{{ site.url }}{{ site.baseurl }}/>. ISSN 3072-7715 [Fecha de consulta].
+Cortés, Federico, Franca, Juan Manuel, del Rio Riande, Gimena, Calarco, Gabriel (eds.). (2026). *Revista SITIO. Edición crítica digital*. HD LAB. <{{ site.url }}{{ site.baseurl }}/>. ISSN 3072-7715 [Fecha de consulta].
 
 </div>
