@@ -21,6 +21,7 @@ Esta edición crítica digital explora *Revista SITIO* con herramientas de edici
 
 La edición comprende:
 
+- El **reconocimiento óptico de caracteres (OCR)** de la edición facsimilar con **Transkribus**, para el cual entrenamos un modelo específico de reconocimiento de español impreso en revistas literarias.
 - La **codificación TEI-XML** de los seis números de la revista, con marcado de personas, lugares, obras y organizaciones citadas.
 - Un **pipeline de análisis** en Python que, a partir de ese marcado, construye la red de citas, detecta comunidades intelectuales y calcula medidas de centralidad.
 - Seis **visualizaciones interactivas** que ofrecen distintas lecturas de esa red.
