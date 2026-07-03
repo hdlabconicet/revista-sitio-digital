@@ -388,6 +388,62 @@ code {
   .tei-cit > .tei-cit-source:first-child {
     margin: 0 0 0.35em;
   }
+
+  // Llamadas de nota en el texto…
+  .fn-ref {
+    line-height: 0;
+
+    a {
+      border-bottom: none;
+      padding: 0 1px;
+      color: $burgundy;
+      font-weight: bold;
+    }
+  }
+
+  // …y la sección de notas al final del texto.
+  .fn-notes {
+    margin-top: $spacer-4;
+    padding-top: $spacer-2;
+    border-top: 1px solid $color-border;
+
+    .tei-head {
+      font-size: $h4-size;
+    }
+  }
+
+  .fn-list {
+    font-size: 16px;
+    padding-left: 1.5em;
+
+    li {
+      margin-bottom: 0.7em;
+
+      > p:first-child {
+        display: inline;
+      }
+
+      &:target {
+        background: #fdf6ec;
+      }
+    }
+
+    p,
+    blockquote,
+    blockquote p,
+    .tei-cit-source {
+      font-size: 16px;
+    }
+  }
+
+  .fn-back {
+    border-bottom: none;
+  }
+
+  .fn-label {
+    font-weight: bold;
+    color: $gray-dark;
+  }
 }
 
 // Fila de insignias (licencia, TEI, ISSN) en la portada.

@@ -53,12 +53,6 @@ ISSUES = [
      "ahira": "https://ahira.com.ar/ejemplares/sitio-no-6/"},
 ]
 
-NOTE_LABELS = {
-    "summary": "Resumen editorial",
-    "interpretation": "Interpretación",
-    "translator": "Nota del traductor",
-}
-
 # Notes excluded from the reading edition. Types listed here are dropped
 # wholesale; individual notes can be excluded via their xml:id or @target
 # (without the leading '#') — note that most untyped (original) footnotes
@@ -199,27 +193,74 @@ def note_excluded(el):
     return bool(ident) and ident in EXCLUDED_NOTE_IDS
 
 
-def render_note(el, inner):
-    ntype = el.get("type") or ""
-    label = NOTE_LABELS.get(ntype, "Nota")
-    cls = "ed-note" + (f" ed-{ntype}" if ntype else "")
-    return f'<details class="{cls}"><summary>{label}</summary>{inner}</details>'
+# Notes render as superscript calls in the text; their content is gathered
+# here (reset per article) and emitted as a "Notas" section at the end.
+ARTICLE_NOTES = []
+
+FN_LABELS = {
+    "translator": "N. del T.",
+    "editorial": "N. del E.",
+    "historical_context": "N. del E.",
+}
 
 
-def render_head(el):
-    # <details> is not phrasing content, so notes inside a <head> are rendered
-    # after the heading instead of inside it.
-    inline = [esc(el.text)] if el.text else []
-    after = []
-    for child in el:
-        if local(child) == "note":
-            if not note_excluded(child):
-                after.append(render_node(child))
+def register_footnote(el, backref=True):
+    num = len(ARTICLE_NOTES) + 1
+    content = render_flow(el)
+    label = FN_LABELS.get(el.get("type") or "")
+    if label:
+        tag = f'<span class="fn-label">[{label}]</span> '
+        if content.startswith("<p"):
+            gt = content.index(">") + 1
+            content = content[:gt] + tag + content[gt:]
         else:
-            inline.append(render_node(child))
-        if child.tail:
-            inline.append(esc(child.tail))
-    return f'<h3 class="tei-head">{"".join(inline)}</h3>{"".join(after)}'
+            content = tag + content
+    ARTICLE_NOTES.append({"num": num, "content": content, "backref": backref})
+    if backref:
+        return (
+            f'<sup class="fn-ref" id="fnref-{num}">'
+            f'<a href="#fn-{num}">{num}</a></sup>'
+        )
+    return ""
+
+
+def render_note(el):
+    # Editorial summaries are abstracts: they stay in place as a collapsible
+    # box. Every other note becomes a numbered footnote; notes hanging
+    # directly from a <div> have no inline anchor, so they are listed without
+    # a marker or back-link.
+    if (el.get("type") or "") == "summary":
+        return (
+            '<details class="ed-note ed-summary"><summary>Resumen editorial'
+            f"</summary>{render_flow(el)}</details>"
+        )
+    parent = el.getparent()
+    if parent is not None and local(parent) in ("div", "body"):
+        register_footnote(el, backref=False)
+        return ""
+    return register_footnote(el, backref=True)
+
+
+def render_notes_section():
+    if not ARTICLE_NOTES:
+        return ""
+    items = []
+    for note in ARTICLE_NOTES:
+        content = note["content"]
+        if note["backref"]:
+            back = (
+                f' <a class="fn-back" href="#fnref-{note["num"]}" '
+                'aria-label="Volver al texto">&#8617;</a>'
+            )
+            if content.endswith("</p>"):
+                content = content[:-4] + back + "</p>"
+            else:
+                content += back
+        items.append(f'<li id="fn-{note["num"]}">{content}</li>')
+    return (
+        '<section class="fn-notes"><h3 class="tei-head">Notas</h3>'
+        f'<ol class="fn-list">{"".join(items)}</ol></section>'
+    )
 
 
 def render_cit(el):
@@ -241,9 +282,14 @@ def render_cit(el):
 
 
 # Elements that render as blocks and therefore cannot live inside a <p>.
-BLOCK_IN_P = {"cit", "quote", "lg", "list", "note"}
+# (Non-summary notes render as inline footnote calls, so they flow normally.)
+BLOCK_IN_P = {"cit", "quote", "lg", "list"}
 # Sentence punctuation left dangling after a displayed quote or note.
 TAIL_PUNCT = re.compile(r"^[.,;:!?…)\]»”]+")
+
+
+def is_block_note(child):
+    return local(child) == "note" and (child.get("type") or "") == "summary"
 
 
 def absorb_punct(block_html, punct):
@@ -257,13 +303,12 @@ def absorb_punct(block_html, punct):
     return block_html[:idx] + p + block_html[idx:]
 
 
-def render_paragraph(el):
-    # Block quotes and notes sit mid-sentence in the TEI, but block elements
-    # inside <p> are invalid HTML (browsers close the paragraph early and the
-    # rest becomes stray text). Split the paragraph around them and re-attach
-    # dangling punctuation: into the quote block for cit/quote, onto the
-    # preceding text for notes (whose content is displaced to an aside).
-    pid = el.get(XML_ID)
+def render_flow(el, pid=None):
+    # Block quotes sit mid-sentence in the TEI, but block elements inside <p>
+    # are invalid HTML (browsers close the paragraph early and the rest
+    # becomes stray text). Split the flow around them, wrap inline runs in
+    # real <p>, and re-attach dangling punctuation to the quote block.
+    # Used for paragraphs and for footnote/summary contents alike.
     parts = []
     buf = [esc(el.text)] if el.text else []
     state = {"first_done": False}
@@ -287,7 +332,7 @@ def render_paragraph(el):
             if child.tail:
                 buf.append(esc(child.tail))
             continue
-        if tag in BLOCK_IN_P:
+        if tag in BLOCK_IN_P or is_block_note(child):
             block_html = render_node(child)
             tail = child.tail or ""
             punct = ""
@@ -297,13 +342,13 @@ def render_paragraph(el):
                 punct = m.group(0)
                 tail = stripped[len(punct):]
             if punct and tag == "note":
+                # The summary box displaces its content: the mark belongs to
+                # the surrounding sentence (or to a preceding quote block).
                 if "".join(buf).strip():
                     buf.append(esc(punct))
                 elif parts and max(
                     parts[-1].rfind("</figcaption>"), parts[-1].rfind("</blockquote>")
                 ) != -1:
-                    # quote + note + punctuation: the mark belongs after the
-                    # quotation, not in a paragraph of its own.
                     parts[-1] = absorb_punct(parts[-1], punct)
                 else:
                     buf.append(esc(punct))
@@ -328,14 +373,15 @@ def render_node(el):
         return "<br/>"
     if tag in ("pb", "fw", "teiHeader"):
         return ""
-    if tag == "note" and note_excluded(el):
-        return ""
+    if tag == "note":
+        return "" if note_excluded(el) else render_note(el)
     if tag == "head":
-        return render_head(el)
+        # Footnote calls are phrasing content, so they can stay in the <h3>.
+        return f'<h3 class="tei-head">{render_children(el)}</h3>'
     if tag == "cit":
         return render_cit(el)
     if tag == "p":
-        return render_paragraph(el)
+        return render_flow(el, el.get(XML_ID))
     inner = render_children(el)
 
     if tag == "persName":
@@ -450,10 +496,11 @@ def render_article_body(div):
         if not skipped_title and local(child) == "head":
             skipped_title = True
             # The title <head> is dropped (the page layout prints the title),
-            # but any footnote attached to it must survive in the body.
+            # but any footnote attached to it must survive in the notes
+            # section (there is no title text to anchor a marker to).
             for sub in child:
-                if local(sub) == "note":
-                    parts.append(render_node(sub))
+                if local(sub) == "note" and not note_excluded(sub):
+                    register_footnote(sub, backref=False)
             if child.tail:
                 parts.append(esc(child.tail))
             continue
@@ -504,7 +551,8 @@ def main():
             authors = article_authors(div)
             slug = f"{issue['key']}-{i:02d}"
             permalink = f"/ed/{slug}/"
-            body_html = render_article_body(div)
+            del ARTICLE_NOTES[:]
+            body_html = render_article_body(div) + render_notes_section()
 
             page = (
                 "---\n"
@@ -579,10 +627,7 @@ def write_landing():
         "</div>",
         "",
         "<p>Edición crítica digital de los seis números de <i>Revista SITIO</i> "
-        "(Buenos Aires, 1981&ndash;1987), codificada en TEI-XML. Elija un número "
-        "para ver sus textos; cada número enlaza además a la edición facsimilar "
-        'del archivo <a href="https://ahira.com.ar/revistas/sitio/" target="_blank" '
-        'rel="noopener">AHIRA</a>.</p>',
+        "(Buenos Aires, 1981&ndash;1987), codificada en TEI-XML.</p>",
         "",
         '<div class="tapa-grid">',
     ]
@@ -596,8 +641,6 @@ def write_landing():
             f'      <h3>Número {issue["label"]} <span class="tapa-year">'
             f'({issue["year"]})</span></h3>',
             "    </a>",
-            f'    <a class="tapa-ahira" href="{esc_attr(issue["ahira"])}" '
-            'target="_blank" rel="noopener">Facsímil en AHIRA &nearr;</a>',
             "  </div>",
         ]
     lines += ["</div>", "</div>"]
