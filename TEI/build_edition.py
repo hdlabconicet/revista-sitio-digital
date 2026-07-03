@@ -166,8 +166,8 @@ def load_places():
         for idno in place.findall(".//tei:idno", NS):
             sub = idno.get("subtype") or ""
             if idno.text and sub in ("wikidata", "geonames"):
-                # Prefer Wikidata when a place has both identifiers.
-                if not uri or sub == "wikidata":
+                # Prefer GeoNames; Wikidata is the fallback.
+                if not uri or sub == "geonames":
                     uri = idno.text.strip()
                     source = "Wikidata" if sub == "wikidata" else "GeoNames"
         PLACES[pid] = {
