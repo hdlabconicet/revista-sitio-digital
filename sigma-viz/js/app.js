@@ -228,7 +228,10 @@
   function applyDeepLink() {
     var nodeKey = new URLSearchParams(window.location.search).get("node");
     if (!nodeKey || !graph.hasNode(nodeKey)) return;
-    selectSearchResult(nodeKey);
+    // Wait one frame so the renderer has computed node display data.
+    requestAnimationFrame(function () {
+      selectSearchResult(nodeKey);
+    });
     var input = document.getElementById("search-input");
     if (input) input.value = graph.getNodeAttribute(nodeKey, "label") || nodeKey;
   }
@@ -238,9 +241,13 @@
     showDetailPanel(nodeKey);
     history.replaceState(null, "", "?node=" + encodeURIComponent(nodeKey));
 
-    var attrs = graph.getNodeAttributes(nodeKey);
+    // The camera works in the framed (normalized) coordinate system, not in
+    // raw graph coordinates — getNodeDisplayData converts for us.
+    var display = renderer.getNodeDisplayData(nodeKey);
     var camera = renderer.getCamera();
-    camera.animate({ x: attrs.x, y: attrs.y, ratio: 0.3 }, { duration: 500 });
+    if (display) {
+      camera.animate({ x: display.x, y: display.y, ratio: 0.3 }, { duration: 500 });
+    }
     renderer.refresh();
   }
 
