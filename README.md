@@ -69,6 +69,13 @@ La página de bibliografía (`_recursos/05-biblio.md`) se genera a partir de
 python TEI/build_biblio.py
 ```
 
+Si se regenera el pipeline de visualizaciones, volver a cargar los enlaces a
+Wikidata en el grafo (los pierde el exportador):
+
+```bash
+python TEI/enrich_graph_wikidata.py
+```
+
 ## Editores digitales
 
 Federico Cortés, Gimena del Rio Riande y Gabriel Calarco (eds.).

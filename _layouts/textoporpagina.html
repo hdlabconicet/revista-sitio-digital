@@ -11,7 +11,7 @@
     <header class="clearfix">
       <div class="container mx-auto px-2 mt-4 mb-2 clearfix header-text">
         <p class="h5 lh-condensed" style="margin-bottom:0.3em; color:#423F38;">
-          <a class="no-underline" href="{{ site.baseurl }}/indice/">Revista SITIO</a>{% if page.issue_num %} &middot; N.&ordm; {{ page.issue_num }}{% if page.year %} ({{ page.year }}){% endif %}{% endif %}
+          <a class="no-underline" href="{{ site.baseurl }}/indice/">Revista SITIO</a>{% if page.issue_num %} &middot; {% if page.issue_slug %}<a class="no-underline" href="{{ site.baseurl }}/indice/{{ page.issue_slug }}/">N.&ordm; {{ page.issue_num }}{% if page.year %} ({{ page.year }}){% endif %}</a>{% else %}N.&ordm; {{ page.issue_num }}{% if page.year %} ({{ page.year }}){% endif %}{% endif %}{% endif %}
         </p>
         <h1 class="header-title" style="font-size:2.1em; line-height:1.15; margin-top:0;">{{ page.title | escape }}</h1>
         <div class="col-1 sm-width-full border-top-thick"></div>
@@ -42,9 +42,9 @@
     </nav>
 
     <div class="container mx-auto px-2 py-2 clearfix">
-      <a class="no-underline" style="color:#B54545;" href="{{ site.baseurl }}/indice/">
+      <a class="no-underline" style="color:#B54545;" href="{{ site.baseurl }}{% if page.issue_slug %}/indice/{{ page.issue_slug }}/{% else %}/indice/{% endif %}">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/></svg>
-        <span class="h5">Volver al Índice</span>
+        <span class="h5">Volver al índice del número</span>
       </a>
     </div>
 

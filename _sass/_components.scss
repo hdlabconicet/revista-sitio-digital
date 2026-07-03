@@ -270,6 +270,72 @@ code {
   }
 }
 
+.indice-autor {
+  color: $gray-dark;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+.issue-meta {
+  font-size: 16px;
+  color: $gray-dark;
+}
+
+// Portada de la edición digital: grilla de tapas, una por número.
+.tapa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: $spacer-3;
+  margin: $spacer-3 0;
+}
+
+.tapa-card {
+  text-align: center;
+
+  a {
+    border-bottom: none;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  a:hover img {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  }
+
+  h3 {
+    margin: 0.5em 0 0.1em;
+    font-size: $h4-size;
+    color: $burgundy;
+  }
+
+  .tapa-year {
+    color: $gray-dark;
+    font-weight: normal;
+  }
+
+  .tapa-ahira {
+    font-size: 14px;
+    color: $gray-dark;
+    border-bottom: 1px dotted $gray;
+
+    &:hover {
+      background: peachpuff;
+    }
+  }
+}
+
 .reading-nav {
   border-top: 1px solid $color-border;
   margin-top: $spacer-3;

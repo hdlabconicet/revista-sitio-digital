@@ -32,15 +32,25 @@ NS = {"tei": TEI_NS}
 TEI_DIR = Path(__file__).resolve().parent          # TEI/
 REPO = TEI_DIR.parent                               # repo root
 OUT_DIR = REPO / "_txtxpagina"
+IDX_DIR = REPO / "_indices"
 INDICE = REPO / "_pages" / "02-edicion-digital.html"
 
-# (key, filename, human issue label, year)
 ISSUES = [
-    ("issue_1", "issue_1.xml", "1", 1981),
-    ("issue_2", "issue_2.xml", "2", 1982),
-    ("issue_3", "issue_3.xml", "3", 1983),
-    ("issue_4-5", "issue_4-5.xml", "4-5", 1985),
-    ("issue_6", "issue_6.xml", "6", 1987),
+    {"key": "issue_1", "file": "issue_1.xml", "label": "1", "year": 1981,
+     "slug": "numero-1", "cover": "Sitio-1_tapa.jpg",
+     "ahira": "https://ahira.com.ar/ejemplares/sitio-no-1/"},
+    {"key": "issue_2", "file": "issue_2.xml", "label": "2", "year": 1982,
+     "slug": "numero-2", "cover": "Sitio-2_tapa-n.jpg",
+     "ahira": "https://ahira.com.ar/ejemplares/sitio-no-2/"},
+    {"key": "issue_3", "file": "issue_3.xml", "label": "3", "year": 1983,
+     "slug": "numero-3", "cover": "Sitio-3_tapa-n.jpg",
+     "ahira": "https://ahira.com.ar/ejemplares/sitio-no-3/"},
+    {"key": "issue_4-5", "file": "issue_4-5.xml", "label": "4-5", "year": 1985,
+     "slug": "numero-4-5", "cover": "Sitio-4-5_tapa.jpg",
+     "ahira": "https://ahira.com.ar/ejemplares/sitio-no-4-5/"},
+    {"key": "issue_6", "file": "issue_6.xml", "label": "6", "year": 1987,
+     "slug": "numero-6", "cover": "Sitio-6_tapa-n.jpg",
+     "ahira": "https://ahira.com.ar/ejemplares/sitio-no-6/"},
 ]
 
 NOTE_LABELS = {
@@ -230,6 +240,88 @@ def render_cit(el):
     return f'<figure class="tei-cit">{"".join(parts)}</figure>'
 
 
+# Elements that render as blocks and therefore cannot live inside a <p>.
+BLOCK_IN_P = {"cit", "quote", "lg", "list", "note"}
+# Sentence punctuation left dangling after a displayed quote or note.
+TAIL_PUNCT = re.compile(r"^[.,;:!?…)\]»”]+")
+
+
+def absorb_punct(block_html, punct):
+    # Tuck trailing sentence punctuation inside the quote block (after the
+    # quotation or its source caption) instead of orphaning it at the start
+    # of the next paragraph.
+    p = esc(punct)
+    idx = max(block_html.rfind("</figcaption>"), block_html.rfind("</blockquote>"))
+    if idx == -1:
+        return block_html + p
+    return block_html[:idx] + p + block_html[idx:]
+
+
+def render_paragraph(el):
+    # Block quotes and notes sit mid-sentence in the TEI, but block elements
+    # inside <p> are invalid HTML (browsers close the paragraph early and the
+    # rest becomes stray text). Split the paragraph around them and re-attach
+    # dangling punctuation: into the quote block for cit/quote, onto the
+    # preceding text for notes (whose content is displaced to an aside).
+    pid = el.get(XML_ID)
+    parts = []
+    buf = [esc(el.text)] if el.text else []
+    state = {"first_done": False}
+
+    def flush():
+        text = "".join(buf)
+        del buf[:]
+        if not text.strip():
+            return
+        attrs = ""
+        if not state["first_done"] and pid:
+            attrs += f' id="{esc_attr(pid)}"'
+        if state["first_done"]:
+            attrs += ' class="tei-p-cont"'
+        state["first_done"] = True
+        parts.append(f"<p{attrs}>{text}</p>")
+
+    for child in el:
+        tag = local(child)
+        if tag == "note" and note_excluded(child):
+            if child.tail:
+                buf.append(esc(child.tail))
+            continue
+        if tag in BLOCK_IN_P:
+            block_html = render_node(child)
+            tail = child.tail or ""
+            punct = ""
+            stripped = tail.lstrip()
+            m = TAIL_PUNCT.match(stripped)
+            if m:
+                punct = m.group(0)
+                tail = stripped[len(punct):]
+            if punct and tag == "note":
+                if "".join(buf).strip():
+                    buf.append(esc(punct))
+                elif parts and max(
+                    parts[-1].rfind("</figcaption>"), parts[-1].rfind("</blockquote>")
+                ) != -1:
+                    # quote + note + punctuation: the mark belongs after the
+                    # quotation, not in a paragraph of its own.
+                    parts[-1] = absorb_punct(parts[-1], punct)
+                else:
+                    buf.append(esc(punct))
+                punct = ""
+            flush()
+            if punct:
+                block_html = absorb_punct(block_html, punct)
+            parts.append(block_html)
+            if tail:
+                buf.append(esc(tail))
+        else:
+            buf.append(render_node(child))
+            if child.tail:
+                buf.append(esc(child.tail))
+    flush()
+    return "".join(parts)
+
+
 def render_node(el):
     tag = local(el)
     if tag in ("lb",):
@@ -242,12 +334,10 @@ def render_node(el):
         return render_head(el)
     if tag == "cit":
         return render_cit(el)
+    if tag == "p":
+        return render_paragraph(el)
     inner = render_children(el)
 
-    if tag == "p":
-        pid = el.get(XML_ID)
-        idattr = f' id="{esc_attr(pid)}"' if pid else ""
-        return f"<p{idattr}>{inner}</p>"
     if tag == "persName":
         return person_span(el, inner)
     if tag == "placeName":
@@ -332,6 +422,25 @@ def article_title(div):
     return TYPE_LABELS.get(dtype, "Sección")
 
 
+def article_authors(div):
+    # Firmas del artículo: bylines (y docAuthor) en cualquier nivel; los divs
+    # de tipo grupo (misceláneas, reseñas) reúnen las firmas de sus piezas.
+    names = []
+    for el in div.iter():
+        if local(el) in ("byline", "docAuthor"):
+            text = collapse_ws("".join(el.itertext()))
+            text = re.sub(r"^por\s+", "", text, flags=re.I).strip(" .,;:")
+            if text and text not in names:
+                names.append(text)
+    if not names:
+        return ""
+    if len(names) > 3:
+        return ", ".join(names[:3]) + " y otros"
+    if len(names) > 1:
+        return ", ".join(names[:-1]) + " y " + names[-1]
+    return names[0]
+
+
 def render_article_body(div):
     parts = []
     if div.text:
@@ -366,22 +475,25 @@ def main():
     print(f"Loaded {len(GRAPH_NODE_KEYS)} node keys from sigma_graph.json")
 
     OUT_DIR.mkdir(exist_ok=True)
+    IDX_DIR.mkdir(exist_ok=True)
     # Remove previously generated pages so the build stays in sync.
     for old in OUT_DIR.glob("*.html"):
         old.unlink()
+    for old in IDX_DIR.glob("*.html"):
+        old.unlink()
 
-    toc = []  # list of (issue_label, year, [(title, permalink), ...])
+    total = 0
     order = 0
 
-    for key, filename, label, year in ISSUES:
-        path = TEI_DIR / filename
+    for issue in ISSUES:
+        path = TEI_DIR / issue["file"]
         if not path.exists():
-            print(f"  WARNING: {filename} not found, skipping")
+            print(f"  WARNING: {issue['file']} not found, skipping")
             continue
         root = ET.parse(str(path)).getroot()
         body = root.find(".//tei:body", NS)
         if body is None:
-            print(f"  WARNING: no <body> in {filename}")
+            print(f"  WARNING: no <body> in {issue['file']}")
             continue
 
         articles = [c for c in body if local(c) == "div"]
@@ -389,7 +501,8 @@ def main():
         for i, div in enumerate(articles, start=1):
             order += 1
             title = article_title(div)
-            slug = f"{key}-{i:02d}"
+            authors = article_authors(div)
+            slug = f"{issue['key']}-{i:02d}"
             permalink = f"/ed/{slug}/"
             body_html = render_article_body(div)
 
@@ -397,10 +510,12 @@ def main():
                 "---\n"
                 "layout: textoporpagina\n"
                 f"title: {yaml_quote(title)}\n"
+                f"author: {yaml_quote(authors)}\n"
                 f"permalink: {permalink}\n"
-                f"issue: {yaml_quote(label)}\n"
-                f"issue_num: {yaml_quote(label)}\n"
-                f"year: {year}\n"
+                f"issue: {yaml_quote(issue['label'])}\n"
+                f"issue_num: {yaml_quote(issue['label'])}\n"
+                f"issue_slug: {yaml_quote(issue['slug'])}\n"
+                f"year: {issue['year']}\n"
                 f"order: {order}\n"
                 "type: texto\n"
                 "---\n"
@@ -409,17 +524,45 @@ def main():
                 "{% endraw %}\n"
             )
             (OUT_DIR / f"{slug}.html").write_text(page, encoding="utf-8")
-            entries.append((title, permalink))
+            entries.append((title, permalink, authors))
 
-        toc.append((label, year, entries))
-        print(f"  {filename}: {len(entries)} articles")
+        write_issue_index(issue, entries)
+        total += len(entries)
+        print(f"  {issue['file']}: {len(entries)} articles")
 
-    write_indice(toc)
-    total = sum(len(e) for _, _, e in toc)
-    print(f"Done: {total} reading pages across {len(toc)} issues.")
+    write_landing()
+    print(f"Done: {total} reading pages across {len(ISSUES)} issues.")
 
 
-def write_indice(toc):
+def write_issue_index(issue, entries):
+    lines = [
+        "---",
+        "layout: page",
+        f"title: {yaml_quote('Número ' + issue['label'] + ' (' + str(issue['year']) + ')')}",
+        f"permalink: /indice/{issue['slug']}/",
+        "---",
+        "",
+        '<div class="prose" markdown="0">',
+        '<p class="issue-meta">',
+        f'  <a href="{{{{ site.baseurl }}}}/indice/">&larr; Todos los números</a>',
+        '  &middot;',
+        f'  <a href="{esc_attr(issue["ahira"])}" target="_blank" rel="noopener">'
+        "Facsímil en AHIRA &nearr;</a>",
+        "</p>",
+        '<ol class="indice-list">',
+    ]
+    for title, permalink, authors in entries:
+        href = "{{ site.baseurl }}" + permalink
+        author_html = (
+            f' <span class="indice-autor">&mdash; {esc(authors)}</span>' if authors else ""
+        )
+        lines.append(f'  <li><a href="{href}">{esc(title)}</a>{author_html}</li>')
+    lines += ["</ol>", "</div>"]
+    out = IDX_DIR / f"{issue['slug']}.html"
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_landing():
     lines = [
         "---",
         "layout: page",
@@ -435,19 +578,29 @@ def write_indice(toc):
         "texto de su interés para resaltarlo y asociarle notas.",
         "</div>",
         "",
-        "<h2>Edición digital</h2>",
         "<p>Edición crítica digital de los seis números de <i>Revista SITIO</i> "
-        "(Buenos Aires, 1981&ndash;1987), codificada en TEI-XML. Las figuras citadas "
-        "aparecen resaltadas: pase el cursor sobre ellas para ver sus datos.</p>",
+        "(Buenos Aires, 1981&ndash;1987), codificada en TEI-XML. Elija un número "
+        "para ver sus textos; cada número enlaza además a la edición facsimilar "
+        'del archivo <a href="https://ahira.com.ar/revistas/sitio/" target="_blank" '
+        'rel="noopener">AHIRA</a>.</p>',
+        "",
+        '<div class="tapa-grid">',
     ]
-    for label, year, entries in toc:
-        lines.append(f'<h3 class="indice-issue">Número {label} ({year})</h3>')
-        lines.append('<ol class="indice-list">')
-        for title, permalink in entries:
-            href = "{{ site.baseurl }}" + permalink
-            lines.append(f'  <li><a href="{href}">{esc(title)}</a></li>')
-        lines.append("</ol>")
-    lines.append("</div>")
+    for issue in ISSUES:
+        cover = "{{ site.baseurl }}/assets/imagenes/" + issue["cover"]
+        lines += [
+            '  <div class="tapa-card">',
+            f'    <a href="{{{{ site.baseurl }}}}/indice/{issue["slug"]}/">',
+            f'      <img src="{cover}" alt="Tapa de SITIO n.º {issue["label"]} '
+            f'({issue["year"]})" loading="lazy">',
+            f'      <h3>Número {issue["label"]} <span class="tapa-year">'
+            f'({issue["year"]})</span></h3>',
+            "    </a>",
+            f'    <a class="tapa-ahira" href="{esc_attr(issue["ahira"])}" '
+            'target="_blank" rel="noopener">Facsímil en AHIRA &nearr;</a>',
+            "  </div>",
+        ]
+    lines += ["</div>", "</div>"]
     INDICE.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Wrote índice: {INDICE.relative_to(REPO)}")
 
