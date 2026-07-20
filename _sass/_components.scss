@@ -466,6 +466,21 @@ a.ann-place {
   }
 }
 
+// Fila de logos institucionales (AvH, BUW) en la portada.
+.logo-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacer-3;
+  margin: $spacer-2 0 $spacer-3;
+
+  img {
+    height: 64px;
+    width: auto;
+    border: 0;
+  }
+}
+
 .badge-issn {
   display: inline-block;
   padding: 4px 10px;
