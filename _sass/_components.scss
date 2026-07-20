@@ -475,8 +475,9 @@ a.ann-place {
   margin: $spacer-2 0 $spacer-3;
 
   img {
-    height: 48px;
-    width: auto;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
     border: 0;
   }
 }
